@@ -1,0 +1,190 @@
+{
+  "nav": {
+    "work": "Work",
+    "blog": "Blog",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "label": "[ STEALTH MODE ]",
+    "title": "Building Fast, Scalable Web Apps",
+    "titleHighlight": "Nobody Sees Coming",
+    "subtitle": "Full-Stack Developer crafting privacy-first web experiences with Next.js, React, and modern backend systems. Based in Laos, working globally.",
+    "cta": {
+      "viewWork": "View Work",
+      "getInTouch": "Get in Touch"
+    }
+  },
+  "work": {
+    "title": "Selected Work",
+    "subtitle": "Projects that combine privacy-first architecture with polished UX — a covert blend of luxury and engineering.",
+    "categories": {
+      "all": "All Projects",
+      "fintech": "FinTech",
+      "saas": "SaaS",
+      "web3": "Web3"
+    },
+    "noProjects": "No projects found in this category."
+  },
+  "blog": {
+    "sectionLabel": "[ LATEST INSIGHTS ]",
+    "articleCount": "{count} ARTICLES",
+    "title": "Recent Posts",
+    "subtitle": "Technical notes, guides, and lessons learned from the field.",
+    "viewAll": "View All Articles",
+    "readMore": "Read More",
+    "readTime": "{time} read"
+  },
+  "articles": {
+    "heroLabel": "[ TECHNICAL INSIGHTS ]",
+    "heroTitle": "Blog & Articles",
+    "heroSubtitle": "Deep dives into web development, architecture patterns, and engineering best practices. Learn from real-world experience building scalable applications.",
+    "searchPlaceholder": "Search articles...",
+    "sortBy": "Sort by:",
+    "sortOptions": {
+      "recent": "Most Recent",
+      "oldest": "Oldest First",
+      "longest": "Longest Read",
+      "shortest": "Shortest Read"
+    },
+    "categories": {
+      "all": "All Articles",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps"
+    },
+    "showing": "Showing {count} article",
+    "showingPlural": "Showing {count} articles",
+    "noResults": {
+      "title": "No articles found",
+      "message": "Try adjusting your search or filter to find what you're looking for.",
+      "clearFilters": "Clear filters"
+    }
+  },
+  "article": {
+    "breadcrumb": "Articles",
+    "shareLabel": "Share this article",
+    "allArticles": "All Articles",
+    "readingProgress": "Reading progress"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "I design and build reliable web applications that help businesses work faster, smarter, and at scale.",
+    "items": {
+      "customWebApps": {
+        "title": "Custom Web Applications",
+        "valueStatement": "Tailored web applications built around your business workflows.",
+        "desc": "I build secure, scalable web applications for businesses that need more than a simple website — from admin dashboards to customer-facing platforms.",
+        "details": [
+          "Custom features based on your requirements",
+          "Secure authentication & role-based access",
+          "Clean, maintainable code",
+          "Production-ready deployment"
+        ],
+        "tools": "Next.js, React, TypeScript, REST APIs"
+      },
+      "businessSystems": {
+        "title": "Business Systems & Internal Tools",
+        "valueStatement": "Replace spreadsheets and manual processes with real systems.",
+        "desc": "I help companies digitize internal workflows to reduce errors, save time, and improve visibility across teams.",
+        "details": [
+          "Document management systems",
+          "Internal dashboards & reporting",
+          "User roles & permissions",
+          "Workflow-based tools"
+        ],
+        "tools": "Next.js, React, PostgreSQL / MySQL, APIs"
+      },
+      "pwaApps": {
+        "title": "PWA & Mobile-First Applications",
+        "valueStatement": "Fast, installable web apps that work anywhere.",
+        "desc": "I build mobile-first web apps optimized for performance, reliability, and real-world usage — even on slow networks.",
+        "details": [
+          "Progressive Web Apps (PWA)",
+          "Offline support & caching",
+          "Mobile-first UI",
+          "Cross-device compatibility"
+        ],
+        "tools": "Next.js, PWA APIs, Service Workers"
+      },
+      "frontendArchitecture": {
+        "title": "Frontend Architecture & UI Implementation",
+        "valueStatement": "Clean, scalable interfaces built for long-term growth.",
+        "desc": "I turn designs or ideas into maintainable frontend code that's easy to extend and safe to scale.",
+        "details": [
+          "Component-based architecture",
+          "Design-to-code implementation",
+          "Performance optimization",
+          "Accessibility best practices"
+        ],
+        "tools": "React, Next.js, Tailwind / CSS Modules"
+      },
+      "ongoingSupport": {
+        "title": "Ongoing Support & Improvements",
+        "valueStatement": "Long-term support after launch.",
+        "desc": "I help maintain and improve your application over time, ensuring stability and continuous progress.",
+        "details": [
+          "Bug fixes & performance improvements",
+          "Feature enhancements",
+          "Technical guidance",
+          "Long-term collaboration"
+        ],
+        "tools": "Same stack as your project"
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind? Let's discuss how we can work together.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "reset": "Reset",
+      "hint": "We typically respond within 24 hours"
+    },
+    "success": "Message sent successfully! We'll get back to you soon.",
+    "error": "Failed to send message. Please try again.",
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "availability": "Availability"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Maxon Reid. All rights reserved.",
+    "builtWith": "Built with Next.js & TypeScript"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "locale": {
+    "switch": "Switch language",
+    "english": "English",
+    "lao": "ລາວ"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "learnMore": "Learn More"
+  },
+  "hero": {
+    "brand": "MAXON REID",
+    "location": "[ VIENTIANE : LAOS PDR ] — FULL STACK WEB DEVELOPER",
+    "heroTitle": "Let's build tools that help your business",
+    "heroTitleHighlight": "grow globally",
+    "heroSub": "Efficient. Precise. Reliable. Software that never fails its mission.",
+    "ctaStart": "START A PROJECT",
+    "ctaView": "VIEW MY WORK"
+  }
+}

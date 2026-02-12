@@ -24,3 +24,150 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Lao Language Font */
+:lang(lo),
+[lang="lo"],
+[lang^="lo-"] {
+  font-family: "Noto Sans Lao", "Phetsarath OT", "Saysettha OT", Arial, sans-serif;
+}
+
+/* Language Switcher */
+.language-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.lang-flag {
+  width: 20px;
+  height: 14px;
+  border-radius: 3px;
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+              0 0 0 1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.lang-toggle .lang-flag {
+  filter: brightness(0.95);
+}
+
+.lang-toggle:hover .lang-flag {
+  transform: scale(1.05);
+  filter: brightness(1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25),
+              0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.lang-code {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.lang-chevron {
+  transition: transform 0.2s ease;
+}
+
+.lang-chevron.open {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 140px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  box-shadow: 0 10px 38px -10px rgba(22, 23, 24, 0.35), 0 10px 20px -15px rgba(22, 23, 24, 0.2);
+  z-index: 1000;
+  animation: slideDown 0.2s ease;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.lang-option:hover:not(:disabled) {
+  background: var(--bg-secondary);
+}
+
+.lang-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.lang-option.active {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+}
+
+.lang-label {
+  flex: 1;
+  text-align: left;
+}
+
+.lang-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .lang-dropdown {
+  box-shadow: 0 10px 38px -10px rgba(0, 0, 0, 0.5), 0 10px 20px -15px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .lang-flag {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+              0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .lang-toggle:hover .lang-flag {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+              0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .lang-option:hover:not(:disabled) .lang-flag {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3),
+              0 0 0 1px rgba(255, 255, 255, 0.15);
+}
