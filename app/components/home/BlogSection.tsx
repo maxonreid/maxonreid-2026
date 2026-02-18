@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import BlogCard from './BlogCard';
 
+// Mock data: Articles
 const articles = [
   {
     id: 1,
@@ -40,6 +41,7 @@ const articles = [
 ];
 
 export default function BlogSection() {
+
   const [isLoaded, setIsLoaded] = useState(false);
   const [visibleArticles, setVisibleArticles] = useState<typeof articles>([]);
   const pathname = usePathname();
@@ -47,6 +49,7 @@ export default function BlogSection() {
   const t = useTranslations('blog');
 
   useEffect(() => {
+
     // Simulate loading state for better perceived performance
     const timer = setTimeout(() => {
       setIsLoaded(true);
@@ -62,6 +65,7 @@ export default function BlogSection() {
       className="section blog-section container"
       aria-labelledby="blog-heading"
     >
+      
       <div className="section-header">
         <div className="section-meta mono muted">
           {t('sectionLabel')} — {articles.length} {t('articleCount', { count: articles.length }).split(' ')[1]}

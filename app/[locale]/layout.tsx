@@ -37,8 +37,8 @@ const notoSansLao = Noto_Sans_Lao({
 
 export const metadata: Metadata = {
   title: {
-    default: "Maxon Reid — Full-Stack Web Developer",
-    template: "%s | Maxon Reid",
+    default: "Maximiliano Brito Torres — Full-Stack Web Developer",
+    template: "%s | Maxon Solutions",
   },
   description:
     "Next.js & Full-Stack Web Developer building fast, scalable web apps for businesses in Laos and globally.",

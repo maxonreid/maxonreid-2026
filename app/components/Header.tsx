@@ -8,6 +8,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const t = useTranslations('nav');
   
@@ -21,6 +22,31 @@ export default function Header() {
       setTheme(stored);
       document.documentElement.setAttribute('data-theme', stored);
     }
+  }, []);
+
+  // Handle scroll events for sticky header
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 10);
+      
+      // Debug: Check if header is actually sticky
+      const header = document.querySelector('.site-header');
+      if (header) {
+        const headerRect = header.getBoundingClientRect();
+        const isAtTop = headerRect.top <= 0;
+        
+        // Add data attribute for debugging
+        header.setAttribute('data-sticky-active', isAtTop.toString());
+        header.setAttribute('data-scroll-y', scrollTop.toString());
+      }
+    };
+
+    // Initial call
+    handleScroll();
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const toggleTheme = () => {
@@ -58,10 +84,10 @@ export default function Header() {
   }, [theme]);
 
   return (
-    <header className="site-header" role="banner">
+    <header className={`site-header ${isScrolled ? 'scrolled' : ''}`} role="banner">
       <div className="container header-inner">
         <div className="brand" aria-hidden="true">
-          MAXON REID
+          MS
         </div>
 
         <nav className="main-nav" aria-label="Primary navigation">
