@@ -152,12 +152,12 @@ export default function TerminalDevice() {
     term.clear();
     await localWrite('\x1b[1;96m>>> SYSTEM PROFILE LOADED <<<\x1b[0m\r\n', 10);
     term.writeln('');
-    await localWrite('\x1b[96m▸ Name:\x1b[0m \x1b[93mMaxon Reid\x1b[0m\r\n', 10);
+    await localWrite('\x1b[96m▸ Name:\x1b[0m \x1b[93mMaximiliano Brito Torres\x1b[0m\r\n', 10);
     await localWrite('\x1b[96m▸ Nationality:\x1b[0m \x1b[93mMexican\x1b[0m\r\n', 10);
     await localWrite('\x1b[96m▸ Birthday:\x1b[0m \x1b[93mJuly 24th, 1993\x1b[0m\r\n', 10);
     await localWrite('\x1b[96m▸ Role:\x1b[0m \x1b[92mFull-Stack Web Developer\x1b[0m\r\n', 10);
     await localWrite('\x1b[96m▸ Current:\x1b[0m \x1b[95mVientiane, Laos\x1b[0m\r\n', 10);
-    await localWrite('\x1b[96m▸ Worked in:\x1b[0m \x1b[36mThailand · China · Laos\x1b[0m\r\n', 10);
+    await localWrite('\x1b[96m▸ Worked in:\x1b[0m \x1b[36mThailand · Mexico · China · Laos\x1b[0m\r\n', 10);
     term.writeln('');
 
     await localWrite('\x1b[93m[*] Initializing secure channel…\x1b[0m\r\n', 16);
@@ -221,10 +221,10 @@ export default function TerminalDevice() {
       profile: async () => {
         await writeTypedLocal('\x1b[1;93m>>> USER PROFILE <<<\x1b[0m\r\n', 10);
         term.writeln('');
-        await writeTypedLocal('\x1b[96m▸ Name:\x1b[0m \x1b[93mMaxon Reid\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Name:\x1b[0m \x1b[93mMaximiliano Brito Torres\x1b[0m\r\n', 8);
         await writeTypedLocal('\x1b[96m▸ Role:\x1b[0m \x1b[92mFull-Stack Web Developer\x1b[0m\r\n', 8);
         await writeTypedLocal('\x1b[96m▸ Location:\x1b[0m \x1b[95mVientiane, Laos\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Specialties:\x1b[0m \x1b[36mSaaS · Security · Performance\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Specialties:\x1b[0m \x1b[36mSoftware · Web · API · UI/UX · Performance\x1b[0m\r\n', 8);
         await writeTypedLocal('\x1b[96m▸ Availability:\x1b[0m \x1b[92mRemote / Consultancy\x1b[0m\r\n', 8);
         term.writeln('');
       },
@@ -432,7 +432,7 @@ export default function TerminalDevice() {
 
     // Initialize
     term.clear();
-    await writeTypedLocal('\x1b[1;92m>>> MAXON REID INTERACTIVE TERMINAL <<<\x1b[0m\r\n', 10);
+    await writeTypedLocal('\x1b[1;92m>>> MAXON SOLUTIONS INTERACTIVE TERMINAL <<<\x1b[0m\r\n', 10);
     term.writeln('');
     await writeTypedLocal('\x1b[93m[!]\x1b[0m Type \x1b[92m"help"\x1b[0m or use command chips below\r\n', 10);
     term.writeln('');

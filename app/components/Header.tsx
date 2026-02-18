@@ -1,19 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
+import Navbar from './Navbar';
 
 export default function Header() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [isScrolled, setIsScrolled] = useState(false);
-  const pathname = usePathname();
-  const t = useTranslations('nav');
-  
-  // Extract locale from pathname
-  const locale = pathname?.startsWith('/lo') ? '/lo' : '/en';
 
   useEffect(() => {
     // Load theme from localStorage on mount
@@ -27,19 +20,7 @@ export default function Header() {
   // Handle scroll events for sticky header
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 10);
-      
-      // Debug: Check if header is actually sticky
-      const header = document.querySelector('.site-header');
-      if (header) {
-        const headerRect = header.getBoundingClientRect();
-        const isAtTop = headerRect.top <= 0;
-        
-        // Add data attribute for debugging
-        header.setAttribute('data-sticky-active', isAtTop.toString());
-        header.setAttribute('data-scroll-y', scrollTop.toString());
-      }
+      setIsScrolled(window.scrollY > 10);
     };
 
     // Initial call
@@ -90,23 +71,7 @@ export default function Header() {
           MS
         </div>
 
-        <nav className="main-nav" aria-label="Primary navigation">
-          <a className="nav-link" href="#work">
-            {t('work')}
-          </a>
-          <Link href={`${locale}/articles`} className="nav-link">
-            {t('blog')}
-          </Link>
-          <a className="nav-link" href="#about">
-            {t('about')}
-          </a>
-          <a className="nav-link" href="#services">
-            {t('services')}
-          </a>
-          <a className="nav-link" href="#contact">
-            {t('contact')}
-          </a>
-        </nav>
+        <Navbar />
 
         <div className="header-actions">
           <LanguageSwitcher />
