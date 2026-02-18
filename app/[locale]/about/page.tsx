@@ -43,7 +43,7 @@ function HeroSection() {
           <div className="about-hero-image">
             <div className="profile-image-wrapper">
               <img 
-                src="/images/profile.jpg" 
+                src="/about-pic.jpg" 
                 alt="Maxon Reid"
                 className="profile-image"
               />

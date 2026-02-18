@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="site-footer" role="contentinfo" aria-label="Footer">
       <div className="container footer-grid">
         <div className="footer-left">
-          <div className="footer-brand mono">MAXON REID</div>
+          <div className="footer-brand mono">MAXON SOLUTIONS</div>
           <div className="footer-sub muted">
             Software Engineer · Web Platforms · Security
           </div>
@@ -31,7 +31,7 @@ export default function Footer() {
               GitHub
             </a>
           </div>
-          <div className="footer-copy muted">© 2025 Maxon Reid</div>
+          <div className="footer-copy muted">© 2026 Maximiliano Brito Torres</div>
         </div>
       </div>
     </footer>

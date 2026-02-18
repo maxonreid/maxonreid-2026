@@ -26,25 +26,36 @@ export default function AboutSection() {
             <p className="about-intro">{t.intro}</p>
             <p className="about-description">{t.description}</p>
             
+            <div className="about-stats">
+              <div className="stat-card">
+                <div className="stat-value">{t.stats.experience}</div>
+                <div className="stat-label">{t.stats.experienceLabel}</div>
+              </div>
+              <div className="stat-card">
+                <div className="stat-value">{t.stats.projects}</div>
+                <div className="stat-label">{t.stats.projectsLabel}</div>
+              </div>
+              <div className="stat-card">
+                <div className="stat-value">{t.stats.technologies}</div>
+                <div className="stat-label">{t.stats.technologiesLabel}</div>
+              </div>
+            </div>
+            
             <Link href="/about" className="cta">
               {t.learnMore}
             </Link>
           </div>
 
-          <div className="about-stats">
-            <div className="stat-card">
-              <div className="stat-value">{t.stats.experience}</div>
-              <div className="stat-label">{t.stats.experienceLabel}</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-value">{t.stats.projects}</div>
-              <div className="stat-label">{t.stats.projectsLabel}</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-value">{t.stats.technologies}</div>
-              <div className="stat-label">{t.stats.technologiesLabel}</div>
+          <div className="about-image">
+            <div className="image-container">
+              <img 
+                src="/images/profile.jpg" 
+                alt="Maximiliano Torres - Full Stack Developer"
+                className="profile-image"
+              />
             </div>
           </div>
+
         </div>
       </div>
     </section>

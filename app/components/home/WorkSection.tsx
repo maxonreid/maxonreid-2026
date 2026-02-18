@@ -59,9 +59,8 @@ export default function WorkSection() {
 
   const categories = [
     { id: 'all', label: t('categories.all') },
-    { id: 'fintech', label: t('categories.fintech') },
-    { id: 'saas', label: t('categories.saas') },
-    { id: 'web3', label: t('categories.web3') },
+    { id: 'category1', label: t('categories.category1') },
+    { id: 'category2', label: t('categories.category2') },
   ];
 
   const filteredProjects =
@@ -76,13 +75,8 @@ export default function WorkSection() {
       aria-labelledby="work-heading"
     >
       <div className="work-header">
-        <div className="work-header-content">
-          <h2 id="work-heading" className="section-title">
-            {t('title')}
-          </h2>
-          <p className="section-sub">
-            {t('subtitle')}
-          </p>
+        <div className="spy-label">
+          [ MY WORK ]
         </div>
 
         <div className="work-filters" role="tablist" aria-label="Filter projects by category">

@@ -9,7 +9,7 @@
   "hero": {
     "brand": "MAXON SOLUTIONS",
     "location": "[ VIENTIANE : LAOS PDR ] — FULL STACK WEB DEVELOPER",
-    "heroTitle": "Let's build tools that help your business",
+    "heroTitle": "Build Web Software that help your business",
     "heroTitleHighlight": "grow globally",
     "heroSub": "Automate your work | Upgrade your results.",
     "ctaStart": "START A PROJECT",
@@ -20,9 +20,8 @@
     "subtitle": "Projects that combine privacy-first architecture with polished UX — a covert blend of luxury and engineering.",
     "categories": {
       "all": "All Projects",
-      "fintech": "FinTech",
-      "saas": "SaaS",
-      "web3": "Web3"
+      "category1": "Desktop",
+      "category2": "Mobile"
     },
     "noProjects": "No projects found in this category."
   },
@@ -38,41 +37,59 @@
   "aboutHome": {
     "label": "[ WHO I AM ]",
     "title": "About Me",
-    "intro": "Full-stack developer based in Vientiane, Laos, specializing in building reliable web applications that scale.",
-    "description": "I help businesses solve real problems with clean code, secure architecture, and user-focused design. From custom dashboards to complete web platforms — I build tools that work.",
+    "intro": "I’m Maximiliano Torres, a Full-Stack Software Developer based in Vientiane, Laos, focused on building robust and organized scalable web applications.",
+    "description": "I help businesses turn ideas into reliable digital business tools — from internal dashboards to full-scale platforms — combining clean architecture, performance, and user-focused design.",
     "learnMore": "More About Me",
     "stats": {
-      "experience": "5+",
+      "experience": "9+",
       "experienceLabel": "Years Experience",
-      "projects": "20+",
+      "projects": "40+",
       "projectsLabel": "Projects Delivered",
-      "technologies": "10+",
+      "technologies": "9+",
       "technologiesLabel": "Technologies"
     }
   },
   "about": {
     "heroLabel": "[ DEVELOPER PROFILE ]",
     "heroTitle": "About Me",
-    "heroSubtitle": "Full-stack developer specializing in building reliable, scalable web applications that solve real business problems.",
+    "heroSubtitle": "React & Next.js Specialist | Full-Stack Developer since 2017",
     "bio": {
-      "title": "Building Solutions That Work",
-      "p1": "I'm a full-stack developer based in Vientiane, Laos, focused on creating web applications that are reliable, scalable, and built to last. My work centers on solving real problems with clean code and thoughtful design.",
-      "p2": "With over 5 years of experience, I specialize in Next.js, React, and TypeScript on the frontend, paired with Node.js and modern databases on the backend. I build everything from custom dashboards to complete web platforms, always prioritizing security, performance, and user experience.",
-      "p3": "Whether it's a business system, a customer-facing application, or an internal tool, I approach each project with the same goal: deliver something that works well, scales smoothly, and provides real value to the people using it."
+      "title": "Building Reliable, Scalable Web Systems",
+      "p1": "I’m Maximiliano Torres, a Full-Stack Developer based in Southeast Asia, specializing in building production-ready web applications with React and Next.js. Since 2017, I’ve been creating tools and systems that prioritize clean architecture, performance, and maintainability.",
+      "p2": "I design and develop digital solutions that automate workflows, manage complex data, and support business growth — from internal dashboards to full web platforms. My focus is delivering reliable systems that solve real operational challenges.",
+      "p3": "In addition to development, I have experience teaching IT and Web Design at different Universities in China and Laos. I collaborate with international clients and remote teams, ensuring consistent delivery and long-term success."
     },
     "skills": {
       "title": "Technologies & Tools",
       "frontend": {
         "title": "Frontend",
-        "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML/CSS"]
+        "items": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "HTML/CSS"
+        ]
       },
       "backend": {
         "title": "Backend",
-        "items": ["Node.js", "Express", "PostgreSQL", "MySQL", "REST APIs"]
+        "items": [
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "MySQL",
+          "REST APIs"
+        ]
       },
       "tools": {
         "title": "Tools & DevOps",
-        "items": ["Git", "Docker", "Vercel", "AWS", "Linux"]
+        "items": [
+          "Git",
+          "Docker",
+          "Vercel",
+          "AWS",
+          "Linux"
+        ]
       }
     },
     "cta": {
@@ -85,7 +102,7 @@
   "articles": {
     "heroLabel": "[ TECHNICAL INSIGHTS ]",
     "heroTitle": "Blog & Articles",
-    "heroSubtitle": "Deep dives into web development, architecture patterns, and engineering best practices. Learn from real-world experience building scalable applications.",
+    "heroSubtitle": "Deep dives into web development, architecture patterns, and engineering best practices. Learned from my own experience.",
     "searchPlaceholder": "Search articles...",
     "sortBy": "Sort by:",
     "sortOptions": {
