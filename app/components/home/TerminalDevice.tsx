@@ -165,7 +165,7 @@ export default function TerminalDevice() {
     await localWrite('\x1b[92m[✓] Handshake complete — AES-256\x1b[0m\r\n', 12);
     await sleep(260);
     await localWrite(
-      '\x1b[95m[DEPLOY]\x1b[0m maxon-reid/launch-kit \x1b[92m— SUCCESS\x1b[0m \x1b[90m(2026-02-07 10:18 UTC)\x1b[0m\r\n',
+      '\x1b[95m[DEPLOY]\x1b[0m maxon-torres/launch-kit \x1b[92m— SUCCESS\x1b[0m \x1b[90m(2026-02-07 10:18 UTC)\x1b[0m\r\n',
       12
     );
     await sleep(260);
@@ -349,39 +349,19 @@ export default function TerminalDevice() {
     const buildCommandBar = () => {
       if (commandBarRef.current || document.getElementById('terminal-commands')) return;
       
-      const content = document.querySelector('.hero .hero-content');
+      const content = document.querySelector('.hero-content');
       if (!content) return;
 
       const bar = document.createElement('div');
       bar.id = 'terminal-commands';
-      bar.style.display = 'flex';
-      bar.style.gap = '8px';
-      bar.style.marginTop = '18px';
-      bar.style.flexWrap = 'wrap';
+      bar.className = 'flex gap-2 mt-6 flex-wrap';
 
       const quick = ['help', 'profile', 'projects', 'services', 'contact', 'ping edge.cdn', 'deploy demo-app', 'whoami', 'clear'];
       quick.forEach(q => {
         const btn = document.createElement('button');
-        btn.className = 'cmd-chip';
+        btn.className = 'px-3 py-2 rounded-lg bg-white/[0.03] text-[#9ea0a8] border border-white/[0.06] font-mono text-[13px] cursor-pointer transition-all hover:bg-white/[0.06] hover:text-[#d6b46b] hover:border-[#d6b46b]/30';
         btn.type = 'button';
         btn.textContent = q;
-        btn.style.padding = '8px 10px';
-        btn.style.borderRadius = '10px';
-        btn.style.background = 'rgba(255,255,255,0.03)';
-        btn.style.color = 'var(--muted)';
-        btn.style.border = '1px solid rgba(255,255,255,0.04)';
-        btn.style.fontFamily = 'var(--mono)';
-        btn.style.fontSize = '13px';
-        btn.style.cursor = 'pointer';
-        btn.style.transition = 'all 0.2s ease';
-        btn.addEventListener('mouseenter', () => {
-          btn.style.background = 'rgba(255,255,255,0.06)';
-          btn.style.color = 'var(--gold)';
-        });
-        btn.addEventListener('mouseleave', () => {
-          btn.style.background = 'rgba(255,255,255,0.03)';
-          btn.style.color = 'var(--muted)';
-        });
         btn.addEventListener('click', () => execCommandLine(q));
         bar.appendChild(btn);
       });
@@ -389,14 +369,7 @@ export default function TerminalDevice() {
       const input = document.createElement('input');
       input.type = 'text';
       input.placeholder = 'Type a command (press Enter)';
-      input.style.minWidth = '220px';
-      input.style.padding = '8px 10px';
-      input.style.borderRadius = '10px';
-      input.style.border = '1px solid rgba(255,255,255,0.06)';
-      input.style.background = 'rgba(0,0,0,0.06)';
-      input.style.color = 'var(--text)';
-      input.style.fontFamily = 'var(--mono)';
-      input.style.fontSize = '13px';
+      input.className = 'min-w-[220px] px-3 py-2 rounded-lg border border-white/[0.06] bg-black/[0.06] text-[#e6e7ea] font-mono text-[13px] focus:outline-none focus:border-[#d6b46b] transition-colors';
 
       const history: string[] = [];
       let historyIndex = -1;
@@ -432,7 +405,7 @@ export default function TerminalDevice() {
 
     // Initialize
     term.clear();
-    await writeTypedLocal('\x1b[1;92m>>> MAXON SOLUTIONS INTERACTIVE TERMINAL <<<\x1b[0m\r\n', 10);
+    await writeTypedLocal('\x1b[1;92m>>> MAXON INTERACTIVE TERMINAL <<<\x1b[0m\r\n', 10);
     term.writeln('');
     await writeTypedLocal('\x1b[93m[!]\x1b[0m Type \x1b[92m"help"\x1b[0m or use command chips below\r\n', 10);
     term.writeln('');
@@ -441,17 +414,21 @@ export default function TerminalDevice() {
   };
 
   return (
-    <div className="device" role="img" aria-label="Terminal mockup card">
-      <div className="device-screen">
+    <div className="relative w-full max-w-[420px]" role="img" aria-label="Terminal mockup card">
+      <div className="bg-[#1a1d23] rounded-xl border border-white/[0.08] shadow-2xl overflow-hidden">
         <div
           id="xterm"
-          className="xterm-container"
+          className="h-[340px] p-4 overflow-hidden"
           role="group"
           aria-label="Demo terminal"
           ref={terminalRef}
+          style={{
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none'
+          }}
         ></div>
       </div>
-      <div className="device-base" aria-hidden="true"></div>
+      <div className="h-4 bg-gradient-to-b from-[#0a0a0c]/20 to-transparent mt-2 rounded-b-xl" aria-hidden="true"></div>
     </div>
   );
 }

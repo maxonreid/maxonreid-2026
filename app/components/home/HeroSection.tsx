@@ -20,7 +20,7 @@ export default function HeroSection() {
   return (
     <section className="py-24 px-0 pb-30 relative overflow-hidden" aria-labelledby="hero-heading">
       <div className="w-[92%] max-w-[1200px] mx-auto grid gap-9 grid-cols-1 lg:grid-cols-[1fr_420px] items-center">
-        <div className="max-w-[720px]">
+        <div className="max-w-[720px] hero-content">
           <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-2">{t.brand}</div>
           <div className="font-mono text-[13px] text-[#9ea0a8] tracking-[2px] mb-4">
             {t.location}

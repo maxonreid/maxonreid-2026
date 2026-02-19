@@ -38,6 +38,88 @@
   }
 }
 
+/* Theme Colors */
+:root,
+[data-theme="dark"] {
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #0f1113;
+  --text-primary: #e6e7ea;
+  --text-secondary: #9ea0a8;
+  --border-color: rgba(255, 255, 255, 0.06);
+  --card-bg: rgba(255, 255, 255, 0.02);
+  --hover-bg: rgba(255, 255, 255, 0.03);
+}
+
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --text-primary: #000000;
+  --text-secondary: #3a3a3c;
+  --border-color: rgba(0, 0, 0, 0.12);
+  --card-bg: rgba(0, 0, 0, 0.03);
+  --hover-bg: rgba(0, 0, 0, 0.05);
+}
+
+/* Override hardcoded colors in light theme */
+[data-theme="light"] {
+  /* Text overrides */
+  .text-\[\#9ea0a8\],
+  [class*="text-[#9ea0a8]"] {
+    color: #3a3a3c !important;
+  }
+  
+  .text-\[\#e6e7ea\],
+  [class*="text-[#e6e7ea]"] {
+    color: #000000 !important;
+  }
+  
+  /* Background overrides */
+  .bg-\[\#0a0a0c\],
+  [class*="bg-[#0a0a0c]"] {
+    background-color: #ffffff !important;
+  }
+  
+  .bg-\[\#1a1d23\],
+  [class*="bg-[#1a1d23]"] {
+    background-color: #f0f0f0 !important;
+  }
+  
+  /* Border overrides */
+  [class*="border-white/"] {
+    border-color: rgba(0, 0, 0, 0.12) !important;
+  }
+  
+  /* Card backgrounds */
+  [class*="bg-white/[0.02]"],
+  [class*="bg-white/[0.03]"] {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  /* Hover states */
+  [class*="hover:bg-white/[0.03]"]:hover,
+  [class*="hover:bg-white/[0.06]"]:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  /* Gradients */
+  [class*="from-[#0a0a0c]"] {
+    --tw-gradient-from: #ffffff !important;
+  }
+  
+  [class*="to-[#0a0a0c]"] {
+    --tw-gradient-to: #f5f5f7 !important;
+  }
+}
+
+/* Hide scrollbars for terminal */
+#xterm::-webkit-scrollbar {
+  display: none;
+}
+
+#xterm .xterm-viewport::-webkit-scrollbar {
+  display: none;
+}
+
 /* Lao Language Font */
 :lang(lo),
 [lang="lo"],

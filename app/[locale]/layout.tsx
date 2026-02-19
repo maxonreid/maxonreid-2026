@@ -67,7 +67,11 @@ export default async function LocaleLayout({
         <meta name="theme-color" content="#0a0a0c" id="meta-theme-color" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${ibmPlexMono.variable} ${notoSansLao.variable} antialiased bg-[#0a0a0c] text-[#e6e7ea] min-h-screen overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${ibmPlexMono.variable} ${notoSansLao.variable} antialiased min-h-screen overflow-x-hidden transition-colors duration-300`}
+        style={{
+          backgroundColor: 'var(--bg-primary)',
+          color: 'var(--text-primary)'
+        }}
       >
         <NextIntlClientProvider messages={messages}>
           {children}
