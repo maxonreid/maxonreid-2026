@@ -96,20 +96,20 @@ export default function Navbar() {
 
   return (
     <nav className="flex gap-[18px] items-center" aria-label="Primary navigation">
-      <a
+      {/* <a
         href={`/${locale}#work`}
         className={`nav-link ${activeSection === 'work' ? 'nav-link-active' : ''}`}
         onClick={(e) => handleHashClick(e, 'work')}
       >
         {t('work')}
-      </a>
-      <Link 
+      </a> */}
+      {/* <Link 
         href="/articles" 
         className={`nav-link ${pathname?.includes('/articles') ? 'nav-link-active' : ''}`}
         locale={locale}
       >
         {t('blog')}
-      </Link>
+      </Link> */}
       <Link 
         href="/about" 
         className={`nav-link ${pathname?.includes('/about') ? 'nav-link-active' : ''}`}

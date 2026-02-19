@@ -98,6 +98,10 @@
       "subtitle": "Let's discuss how we can work together to build something great.",
       "contact": "Get In Touch",
       "services": "View Services"
+    },
+    "cv": {
+      "viewCV": "View Full CV",
+      "downloadCV": "Download Resume"
     }
   },
   "articles": {

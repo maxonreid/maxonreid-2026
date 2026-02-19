@@ -79,6 +79,7 @@ export default function Header() {
       <div className="w-[92%] max-w-[1200px] mx-auto flex items-center justify-between py-3.5">
 
 
+        {/* That big logo that always takes you home */}
         <Link href="/" aria-label="Go to homepage">
           <Image
             src="/logo-maxontorres.png"
