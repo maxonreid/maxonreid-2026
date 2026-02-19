@@ -95,7 +95,7 @@ export default function ContactSection() {
                   GitHub
                 </a>
                 <span className="text-[#9ea0a8]">·</span>
-                <a href="#" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
+                <a href="https://www.linkedin.com/in/maxontorres/" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
                   LinkedIn
                 </a>
               </div>

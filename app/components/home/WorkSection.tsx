@@ -7,7 +7,7 @@ import ProjectCard from './ProjectCard';
 const projects = [
   {
     id: 1,
-    title: 'Global Payments Dashboard',
+    title: 'E-Commerce Marketplace PWA',
     year: '2025',
     image: 'https://picsum.photos/id/1015/1600/900',
     images: [
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'SaaS Analytics Platform',
+    title: 'Platform to Track Construction Materials',
     year: '2024',
     image: 'https://picsum.photos/id/180/1600/900',
     images: [
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Crypto Wallet Interface',
+    title: 'Booking Appointments Website with Dashboard ',
     year: '2024',
     image: 'https://picsum.photos/id/10/1600/900',
     images: [
@@ -46,21 +46,15 @@ const projects = [
   },
 ];
 
-const categories = [
-  { id: 'all', label: 'All Projects' },
-  { id: 'fintech', label: 'FinTech' },
-  { id: 'saas', label: 'SaaS' },
-  { id: 'web3', label: 'Web3' },
-];
-
 export default function WorkSection() {
   const [activeFilter, setActiveFilter] = useState('all');
   const t = useTranslations('work');
 
   const categories = [
     { id: 'all', label: t('categories.all') },
-    { id: 'category1', label: t('categories.category1') },
-    { id: 'category2', label: t('categories.category2') },
+    { id: 'fintech', label: t('categories.fintech') },
+    { id: 'saas', label: t('categories.saas') },
+    { id: 'web3', label: t('categories.web3') },
   ];
 
   const filteredProjects =

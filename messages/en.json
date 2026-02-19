@@ -9,7 +9,7 @@
   "hero": {
     "brand": "MAXON TORRES",
     "location": "[ VIENTIANE : LAOS PDR ] — FULL STACK WEB DEVELOPER",
-    "heroTitle": "Build Web Software that help your business",
+    "heroTitle": "Build Software that help your business",
     "heroTitleHighlight": "grow globally",
     "heroSub": "Automate your work | Upgrade your results.",
     "ctaStart": "START A PROJECT",
@@ -20,8 +20,9 @@
     "subtitle": "Projects that combine privacy-first architecture with polished UX — a covert blend of luxury and engineering.",
     "categories": {
       "all": "All Projects",
-      "category1": "Desktop",
-      "category2": "Mobile"
+      "fintech": "FinTech",
+      "saas": "SaaS",
+      "web3": "Web3"
     },
     "noProjects": "No projects found in this category."
   },

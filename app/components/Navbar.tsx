@@ -47,7 +47,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Handle hash navigation on page load
+  // Handle hash navigation on page load with smooth scroll
   useEffect(() => {
     const hash = window.location.hash.slice(1);
     if (hash) {
@@ -57,14 +57,19 @@ export default function Navbar() {
           const headerHeight = 100;
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
           const offsetPosition = elementPosition - headerHeight;
-          window.scrollTo(0, offsetPosition);
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+          
           setActiveSection(hash);
         }
       }, 100);
     }
   }, [pathname]);
 
-  // Hash link click handler
+  // Hash link click handler with smooth scroll
   const handleHashClick = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
     e.preventDefault();
     
@@ -78,7 +83,12 @@ export default function Navbar() {
       const headerHeight = 100;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - headerHeight;
-      window.scrollTo(0, offsetPosition);
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      
       window.history.pushState(null, '', `/${locale}#${hash}`);
       setActiveSection(hash);
     }
@@ -88,35 +98,35 @@ export default function Navbar() {
     <nav className="flex gap-[18px] items-center" aria-label="Primary navigation">
       <a
         href={`/${locale}#work`}
-        className={`text-[#9ea0a8] no-underline text-sm py-2 px-3 rounded-lg transition-all font-semibold tracking-wide relative overflow-hidden hover:text-[#d6b46b] hover:bg-white/[0.03] hover:-translate-y-0.5 focus:outline-none ${activeSection === 'work' ? 'text-[#d6b46b] bg-white/[0.03] shadow-[inset_0_-2px_0_#d6b46b]' : ''}`}
+        className={`nav-link ${activeSection === 'work' ? 'nav-link-active' : ''}`}
         onClick={(e) => handleHashClick(e, 'work')}
       >
         {t('work')}
       </a>
       <Link 
         href="/articles" 
-        className={`text-[#9ea0a8] no-underline text-sm py-2 px-3 rounded-lg transition-all font-semibold tracking-wide relative overflow-hidden hover:text-[#d6b46b] hover:bg-white/[0.03] hover:-translate-y-0.5 focus:outline-none ${pathname?.includes('/articles') ? 'text-[#d6b46b] bg-white/[0.03] shadow-[inset_0_-2px_0_#d6b46b]' : ''}`}
+        className={`nav-link ${pathname?.includes('/articles') ? 'nav-link-active' : ''}`}
         locale={locale}
       >
         {t('blog')}
       </Link>
       <Link 
         href="/about" 
-        className={`text-[#9ea0a8] no-underline text-sm py-2 px-3 rounded-lg transition-all font-semibold tracking-wide relative overflow-hidden hover:text-[#d6b46b] hover:bg-white/[0.03] hover:-translate-y-0.5 focus:outline-none ${pathname?.includes('/about') ? 'text-[#d6b46b] bg-white/[0.03] shadow-[inset_0_-2px_0_#d6b46b]' : ''}`}
+        className={`nav-link ${pathname?.includes('/about') ? 'nav-link-active' : ''}`}
         locale={locale}
       >
         {t('about')}
       </Link>
       <a
         href={`/${locale}#services`}
-        className={`text-[#9ea0a8] no-underline text-sm py-2 px-3 rounded-lg transition-all font-semibold tracking-wide relative overflow-hidden hover:text-[#d6b46b] hover:bg-white/[0.03] hover:-translate-y-0.5 focus:outline-none ${activeSection === 'services' ? 'text-[#d6b46b] bg-white/[0.03] shadow-[inset_0_-2px_0_#d6b46b]' : ''}`}
+        className={`nav-link ${activeSection === 'services' ? 'nav-link-active' : ''}`}
         onClick={(e) => handleHashClick(e, 'services')}
       >
         {t('services')}
       </a>
       <a
         href={`/${locale}#contact`}
-        className={`text-[#9ea0a8] no-underline text-sm py-2 px-3 rounded-lg transition-all font-semibold tracking-wide relative overflow-hidden hover:text-[#d6b46b] hover:bg-white/[0.03] hover:-translate-y-0.5 focus:outline-none ${activeSection === 'contact' ? 'text-[#d6b46b] bg-white/[0.03] shadow-[inset_0_-2px_0_#d6b46b]' : ''}`}
+        className={`nav-link ${activeSection === 'contact' ? 'nav-link-active' : ''}`}
         onClick={(e) => handleHashClick(e, 'contact')}
       >
         {t('contact')}

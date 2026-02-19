@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import LanguageSwitcher from './LanguageSwitcher';
 import Navbar from './Navbar';
 
@@ -25,7 +26,7 @@ export default function Header() {
 
     // Initial call
     handleScroll();
-    
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -35,7 +36,7 @@ export default function Header() {
     setTheme(newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('mr_theme_pref', newTheme);
-    
+
     // Update meta theme color
     const metaTheme = document.getElementById('meta-theme-color');
     if (metaTheme) {
@@ -52,9 +53,9 @@ export default function Header() {
         (active.tagName === 'INPUT' ||
           active.tagName === 'TEXTAREA' ||
           (active as HTMLElement).isContentEditable);
-      
+
       if (typing) return;
-      
+
       if (e.key && e.key.toLowerCase() === 't') {
         toggleTheme();
       }
@@ -65,7 +66,7 @@ export default function Header() {
   }, [theme]);
 
   return (
-    <header 
+    <header
       className={`sticky top-0 z-[9999] min-h-[72px] backdrop-blur-md border-b transition-all ${isScrolled ? 'shadow-[0_6px_20px_rgba(0,0,0,0.12)]' : ''}`}
       style={{
         backgroundColor: 'rgba(var(--bg-primary-rgb, 10, 10, 12), 0.6)',
@@ -74,14 +75,24 @@ export default function Header() {
       role="banner"
     >
       <div className="w-[92%] max-w-[1200px] mx-auto flex items-center justify-between py-3.5">
-        <div className="font-mono tracking-[10px] font-semibold" style={{ color: 'var(--text-secondary)' }} aria-hidden="true">
-          MS
-        </div>
+
+
+        <Image
+          src="/logo-maxontorres.png"
+          alt="Maxon Torres"
+          width={40}
+          height={40}
+          priority
+        />
 
         <Navbar />
 
         <div className="flex gap-3 items-center">
+          
+          
           <LanguageSwitcher />
+
+          {/* Theme Switcher */}
           <button
             className="bg-transparent border-none p-2 rounded-lg cursor-pointer inline-flex items-center gap-2 transition-colors hover:bg-[var(--hover-bg)] focus:outline-2 focus:outline-[#d6b46b]/20 focus:outline-offset-2"
             style={{ color: 'var(--text-secondary)' }}
@@ -125,6 +136,7 @@ export default function Header() {
               </svg>
             )}
           </button>
+
         </div>
       </div>
     </header>

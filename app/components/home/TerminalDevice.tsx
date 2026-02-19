@@ -5,8 +5,11 @@ import { useEffect, useRef, useState } from 'react';
 export default function TerminalDevice() {
   const terminalRef = useRef<HTMLDivElement>(null);
   const xtermInstance = useRef<any>(null);
-  const commandBarRef = useRef<HTMLDivElement>(null);
   const [isMounted, setIsMounted] = useState(false);
+  const currentLineRef = useRef('');
+  const commandHistoryRef = useRef<string[]>([]);
+  const historyIndexRef = useRef(-1);
+  const isReadyRef = useRef(false);
 
   useEffect(() => {
     setIsMounted(true);
@@ -25,7 +28,7 @@ export default function TerminalDevice() {
       cursorBlink: true,
       fontFamily: '"IBM Plex Mono", monospace',
       fontSize: 13,
-      disableStdin: true,
+      disableStdin: false,
       scrollback: 300,
       allowTransparency: true,
       theme: {
@@ -83,6 +86,7 @@ export default function TerminalDevice() {
     // Run initial demo, then install commands
     runInitialDemo(term).then(() => {
       installInteractiveCommands(term, writeTyped);
+      setupTerminalInput(term);
     });
 
         // Cleanup
@@ -193,12 +197,6 @@ export default function TerminalDevice() {
         return Promise.resolve();
       }
       return writeTypedFn(term, text, delay);
-    };
-
-    const runCommandTyped = (command: string, outputFn: () => Promise<void>) => {
-      return writeTypedLocal(`\x1b[33m> ${command}\x1b[0m\r\n`, 8).then(() => {
-        if (typeof outputFn === 'function') return outputFn();
-      });
     };
 
     // Command handlers
@@ -336,71 +334,11 @@ export default function TerminalDevice() {
       const cmd = parts[0].toLowerCase();
       const args = parts.slice(1);
       if (handlers[cmd]) {
-        await runCommandTyped(line, () => handlers[cmd](args));
+        await handlers[cmd](args);
       } else {
-        await runCommandTyped(line, async () => {
-          await writeTypedLocal(`Command not found: ${cmd}\r\n`, 8);
-          await writeTypedLocal('Type "help" to list available commands.\r\n', 8);
-        });
+        await writeTypedLocal(`Command not found: ${cmd}\r\n`, 8);
+        await writeTypedLocal('Type "help" to list available commands.\r\n', 8);
       }
-    };
-
-    // Build command bar
-    const buildCommandBar = () => {
-      if (commandBarRef.current || document.getElementById('terminal-commands')) return;
-      
-      const content = document.querySelector('.hero-content');
-      if (!content) return;
-
-      const bar = document.createElement('div');
-      bar.id = 'terminal-commands';
-      bar.className = 'flex gap-2 mt-6 flex-wrap';
-
-      const quick = ['help', 'profile', 'projects', 'services', 'contact', 'ping edge.cdn', 'deploy demo-app', 'whoami', 'clear'];
-      quick.forEach(q => {
-        const btn = document.createElement('button');
-        btn.className = 'px-3 py-2 rounded-lg bg-white/[0.03] text-[#9ea0a8] border border-white/[0.06] font-mono text-[13px] cursor-pointer transition-all hover:bg-white/[0.06] hover:text-[#d6b46b] hover:border-[#d6b46b]/30';
-        btn.type = 'button';
-        btn.textContent = q;
-        btn.addEventListener('click', () => execCommandLine(q));
-        bar.appendChild(btn);
-      });
-
-      const input = document.createElement('input');
-      input.type = 'text';
-      input.placeholder = 'Type a command (press Enter)';
-      input.className = 'min-w-[220px] px-3 py-2 rounded-lg border border-white/[0.06] bg-black/[0.06] text-[#e6e7ea] font-mono text-[13px] focus:outline-none focus:border-[#d6b46b] transition-colors';
-
-      const history: string[] = [];
-      let historyIndex = -1;
-      input.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-          const v = input.value.trim();
-          if (v) {
-            execCommandLine(v);
-            history.unshift(v);
-            historyIndex = -1;
-            input.value = '';
-          }
-        } else if (e.key === 'ArrowUp') {
-          if (history.length && historyIndex < history.length - 1) {
-            historyIndex++;
-            input.value = history[historyIndex];
-          }
-        } else if (e.key === 'ArrowDown') {
-          if (historyIndex > 0) {
-            historyIndex--;
-            input.value = history[historyIndex];
-          } else {
-            historyIndex = -1;
-            input.value = '';
-          }
-        }
-      });
-
-      bar.appendChild(input);
-      content.appendChild(bar);
-      commandBarRef.current = bar;
     };
 
     // Initialize
@@ -410,17 +348,268 @@ export default function TerminalDevice() {
     await writeTypedLocal('\x1b[93m[!]\x1b[0m Type \x1b[92m"help"\x1b[0m or use command chips below\r\n', 10);
     term.writeln('');
     await handlers.profile([]);
-    buildCommandBar();
+    
+    // Mark as ready for input
+    isReadyRef.current = true;
+    term.write('\x1b[92m$\x1b[0m ');
+  };
+
+  const setupTerminalInput = (term: any) => {
+    term.onData((data: string) => {
+      if (!isReadyRef.current) return;
+
+      const code = data.charCodeAt(0);
+
+      // Handle Enter
+      if (code === 13) {
+        term.write('\r\n');
+        const command = currentLineRef.current.trim();
+        if (command) {
+          commandHistoryRef.current.unshift(command);
+          historyIndexRef.current = -1;
+          executeCommand(term, command);
+        } else {
+          term.write('\x1b[92m$\x1b[0m ');
+        }
+        currentLineRef.current = '';
+        return;
+      }
+
+      // Handle Backspace/Delete
+      if (code === 127 || code === 8) {
+        if (currentLineRef.current.length > 0) {
+          currentLineRef.current = currentLineRef.current.slice(0, -1);
+          term.write('\b \b');
+        }
+        return;
+      }
+
+      // Handle Ctrl+C
+      if (code === 3) {
+        term.write('^C\r\n');
+        currentLineRef.current = '';
+        term.write('\x1b[92m$\x1b[0m ');
+        return;
+      }
+
+      // Handle Ctrl+L (clear)
+      if (code === 12) {
+        term.clear();
+        currentLineRef.current = '';
+        term.write('\x1b[92m$\x1b[0m ');
+        return;
+      }
+
+      // Handle Arrow Up (history prev)
+      if (data === '\x1b[A') {
+        if (commandHistoryRef.current.length > 0 && historyIndexRef.current < commandHistoryRef.current.length - 1) {
+          // Clear current line
+          term.write('\r\x1b[K');
+          term.write('\x1b[92m$\x1b[0m ');
+          
+          historyIndexRef.current++;
+          currentLineRef.current = commandHistoryRef.current[historyIndexRef.current];
+          term.write(currentLineRef.current);
+        }
+        return;
+      }
+
+      // Handle Arrow Down (history next)
+      if (data === '\x1b[B') {
+        // Clear current line
+        term.write('\r\x1b[K');
+        term.write('\x1b[92m$\x1b[0m ');
+        
+        if (historyIndexRef.current > 0) {
+          historyIndexRef.current--;
+          currentLineRef.current = commandHistoryRef.current[historyIndexRef.current];
+          term.write(currentLineRef.current);
+        } else {
+          historyIndexRef.current = -1;
+          currentLineRef.current = '';
+        }
+        return;
+      }
+
+      // Ignore other escape sequences
+      if (code === 27) {
+        return;
+      }
+
+      // Handle printable characters
+      if (code >= 32 && code < 127) {
+        currentLineRef.current += data;
+        term.write(data);
+      }
+    });
+  };
+
+  const executeCommand = async (term: any, command: string) => {
+    const parts = command.trim().split(/\s+/).filter(Boolean);
+    if (parts.length === 0) return;
+    const cmd = parts[0].toLowerCase();
+    const args = parts.slice(1);
+
+    const reduceMotion =
+      window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const writeTypedLocal = (text: string, delay = 12) => {
+      if (reduceMotion) {
+        term.writeln(text.replace(/\r?\n$/, ''));
+        return Promise.resolve();
+      }
+      return writeTyped(term, text, delay);
+    };
+
+    // Command handlers (same as before)
+    const handlers: Record<string, (args: string[]) => Promise<void>> = {
+      help: async () => {
+        await writeTypedLocal('\x1b[1;95m>>> AVAILABLE COMMANDS <<<\x1b[0m\r\n', 8);
+        term.writeln('');
+        await writeTypedLocal('\x1b[92m▸ help\x1b[0m            \x1b[90m—\x1b[0m \x1b[96mshow this help\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[92m▸ profile\x1b[0m         \x1b[90m—\x1b[0m \x1b[96mshow profile summary\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[92m▸ projects\x1b[0m        \x1b[90m—\x1b[0m \x1b[96mlist projects\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[92m▸ services\x1b[0m        \x1b[90m—\x1b[0m \x1b[96mlist services offered\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[92m▸ contact\x1b[0m         \x1b[90m—\x1b[0m \x1b[96mshow contact info\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[92m▸ ping\x1b[0m \x1b[93m<host>\x1b[0m     \x1b[90m—\x1b[0m \x1b[96msimulate ping\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[92m▸ deploy\x1b[0m \x1b[93m<name>\x1b[0m   \x1b[90m—\x1b[0m \x1b[96msimulate deploy\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[92m▸ whoami\x1b[0m          \x1b[90m—\x1b[0m \x1b[96mshow client info\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[92m▸ clear\x1b[0m           \x1b[90m—\x1b[0m \x1b[96mclear terminal\x1b[0m\r\n', 6);
+        term.writeln('');
+      },
+
+      profile: async () => {
+        await writeTypedLocal('\x1b[1;93m>>> USER PROFILE <<<\x1b[0m\r\n', 10);
+        term.writeln('');
+        await writeTypedLocal('\x1b[96m▸ Name:\x1b[0m \x1b[93mMaximiliano Brito Torres\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Role:\x1b[0m \x1b[92mFull-Stack Web Developer\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Location:\x1b[0m \x1b[95mVientiane, Laos\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Specialties:\x1b[0m \x1b[36mSoftware · Web · API · UI/UX · Performance\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Availability:\x1b[0m \x1b[92mRemote / Consultancy\x1b[0m\r\n', 8);
+        term.writeln('');
+      },
+
+      projects: async () => {
+        const cards = Array.from(document.querySelectorAll('.project-card'));
+        if (!cards.length) {
+          await writeTypedLocal('No projects found on the page.\r\n', 8);
+          return;
+        }
+        await writeTypedLocal('\r\nProjects:\r\n', 8);
+        for (const c of cards) {
+          const title = (c as HTMLElement).dataset.title || (c.querySelector('.project-title')?.textContent?.trim()) || 'Untitled';
+          const year = (c as HTMLElement).dataset.year || (c.querySelector('.project-date')?.textContent?.trim()) || '';
+          const desc = (c as HTMLElement).dataset.desc || (c.querySelector('.project-desc')?.textContent?.trim()) || '';
+          await writeTypedLocal(`  • ${title} ${year ? `(${year})` : ''}\r\n`, 6);
+          if (desc) await writeTypedLocal(`      ${desc}\r\n`, 5);
+        }
+        term.writeln('');
+      },
+
+      services: async () => {
+        const svcEls = Array.from(document.querySelectorAll('.service-card h3'));
+        if (!svcEls.length) {
+          await writeTypedLocal('No services found on the page.\r\n', 8);
+          return;
+        }
+        await writeTypedLocal('\r\nServices (summary):\r\n', 8);
+        for (const h of svcEls) {
+          const title = h.textContent?.trim() || '';
+          const card = h.closest('.service-card');
+          const lead = card?.querySelector('.short')?.textContent?.trim() ||
+                       card?.querySelector('p')?.textContent?.trim() || '';
+          await writeTypedLocal(`  • ${title}\r\n`, 6);
+          if (lead) await writeTypedLocal(`      ${lead}\r\n`, 5);
+        }
+        term.writeln('');
+      },
+
+      contact: async () => {
+        const email = document.querySelector('.contact-card a[href^="mailto:"]')?.textContent?.trim() || 'hello@maxonreid.com';
+        const phone = document.querySelector('.contact-card a[href^="tel:"]')?.textContent?.trim() || '';
+        const locationCards = Array.from(document.querySelectorAll('.contact-card'));
+        const location = locationCards.find(c => c.textContent?.includes('LOCATION'))?.querySelector('.contact-value')?.textContent?.trim() || '';
+        await writeTypedLocal('\r\nContact:\r\n', 8);
+        await writeTypedLocal(`  Email: ${email}\r\n`, 6);
+        if (phone) await writeTypedLocal(`  Phone: ${phone}\r\n`, 6);
+        if (location) await writeTypedLocal(`  Location: ${location}\r\n`, 6);
+        term.writeln('');
+      },
+
+      ping: async (args: string[]) => {
+        const host = args[0] || 'edge.example';
+        await writeTypedLocal(`\r\nPING ${host} (${host}) 56(84) bytes of data.\r\n`, 8);
+        await new Promise(r => setTimeout(r, 250));
+        const latency = randomLatency();
+        await writeTypedLocal(`64 bytes from ${host}: icmp_seq=1 ttl=54 time=${latency} ms\r\n`, 8);
+        await writeTypedLocal(`--- ${host} ping statistics ---\r\n`, 8);
+        await writeTypedLocal(`1 packets transmitted, 1 received, 0% packet loss, time 0ms\r\n`, 8);
+        term.writeln('');
+      },
+
+      deploy: async (args: string[]) => {
+        const name = args[0] || 'demo-app';
+        await writeTypedLocal(`\r\nStarting deploy: ${name}\r\n`, 8);
+        await writeTypedLocal('> building…\r\n', 10);
+        await new Promise(r => setTimeout(r, 700));
+        await writeTypedLocal('> running tests…\r\n', 10);
+        await new Promise(r => setTimeout(r, 900));
+        await writeTypedLocal('\x1b[32m> SUCCESS: build & tests passed\x1b[0m\r\n', 10);
+        await writeTypedLocal(`> rolling out ${name} to prod…\r\n`, 10);
+        await new Promise(r => setTimeout(r, 700));
+        await writeTypedLocal('\x1b[32m> DEPLOY OK — ' + new Date().toISOString() + '\x1b[0m\r\n', 10);
+        term.writeln('');
+      },
+
+      clear: async () => {
+        term.clear();
+      },
+
+      whoami: async () => {
+        const ua = navigator.userAgent || 'unknown';
+        const platform = navigator.platform || 'unknown';
+        const languages = navigator.languages ? navigator.languages.join(', ') : (navigator.language || 'unknown');
+        const theme = document.documentElement.getAttribute('data-theme') || 'dark';
+        const online = navigator.onLine ? 'online' : 'offline';
+        const cookies = navigator.cookieEnabled ? 'enabled' : 'disabled';
+        const timezone = (Intl && Intl.DateTimeFormat) ? Intl.DateTimeFormat().resolvedOptions().timeZone || 'unknown' : 'unknown';
+        const viewport = `${window.innerWidth}×${window.innerHeight}`;
+        const now = new Date().toLocaleString();
+
+        await writeTypedLocal('User client info:\r\n', 8);
+        await writeTypedLocal(`  User Agent: ${ua}\r\n`, 6);
+        await writeTypedLocal(`  Platform: ${platform}\r\n`, 6);
+        await writeTypedLocal(`  Languages: ${languages}\r\n`, 6);
+        await writeTypedLocal(`  Timezone: ${timezone}\r\n`, 6);
+        await writeTypedLocal(`  Viewport: ${viewport}\r\n`, 6);
+        await writeTypedLocal(`  Theme: ${theme}\r\n`, 6);
+        await writeTypedLocal(`  Online: ${online}\r\n`, 6);
+        await writeTypedLocal(`  Cookies: ${cookies}\r\n`, 6);
+        await writeTypedLocal(`  Local time: ${now}\r\n`, 6);
+        term.writeln('');
+      }
+    };
+
+    if (handlers[cmd]) {
+      await handlers[cmd](args);
+    } else {
+      await writeTypedLocal(`Command not found: ${cmd}\r\n`, 8);
+      await writeTypedLocal('Type "help" to list available commands.\r\n', 8);
+    }
+    
+    // Show prompt again
+    term.write('\x1b[92m$\x1b[0m ');
   };
 
   return (
-    <div className="relative w-full max-w-[420px]" role="img" aria-label="Terminal mockup card">
-      <div className="bg-[#1a1d23] rounded-xl border border-white/[0.08] shadow-2xl overflow-hidden">
+    <div className="relative w-full  max-w-[900px]" role="img" aria-label="Terminal mockup card">
+      <div className="bg-[#1a1d23]  rounded-xl border border-white/[0.08] overflow-hidden">
         <div
           id="xterm"
-          className="h-[340px] p-4 overflow-hidden"
+          className="h-[480px] m-2 overflow-hidden"
           role="group"
-          aria-label="Demo terminal"
+          aria-label="Interactive terminal"
           ref={terminalRef}
           style={{
             scrollbarWidth: 'none',
@@ -428,7 +617,6 @@ export default function TerminalDevice() {
           }}
         ></div>
       </div>
-      <div className="h-4 bg-gradient-to-b from-[#0a0a0c]/20 to-transparent mt-2 rounded-b-xl" aria-hidden="true"></div>
     </div>
   );
 }

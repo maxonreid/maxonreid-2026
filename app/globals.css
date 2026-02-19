@@ -48,6 +48,9 @@
   --border-color: rgba(255, 255, 255, 0.06);
   --card-bg: rgba(255, 255, 255, 0.02);
   --hover-bg: rgba(255, 255, 255, 0.03);
+  --nav-text: #9ea0a8;
+  --nav-active: #d6b46b;
+  --nav-hover-bg: rgba(255, 255, 255, 0.03);
 }
 
 [data-theme="light"] {
@@ -58,18 +61,23 @@
   --border-color: rgba(0, 0, 0, 0.12);
   --card-bg: rgba(0, 0, 0, 0.03);
   --hover-bg: rgba(0, 0, 0, 0.05);
+  
+  /* Navbar colors - Much darker for better visibility */
+  --nav-text: #1a1a1a;
+  --nav-active: #b8860b;
+  --nav-hover-bg: rgba(184, 134, 11, 0.1);
 }
 
-/* Override hardcoded colors in light theme */
+/* Override hardcoded colors in light theme (for legacy components) */
 [data-theme="light"] {
-  /* Text overrides */
-  .text-\[\#9ea0a8\],
-  [class*="text-[#9ea0a8]"] {
+  /* Text overrides - excluding nav-link class */
+  .text-\[\#9ea0a8\]:not(.nav-link),
+  [class*="text-[#9ea0a8]"]:not(.nav-link) {
     color: #3a3a3c !important;
   }
   
-  .text-\[\#e6e7ea\],
-  [class*="text-[#e6e7ea]"] {
+  .text-\[\#e6e7ea\]:not(.nav-link),
+  [class*="text-[#e6e7ea]"]:not(.nav-link) {
     color: #000000 !important;
   }
   
@@ -89,15 +97,17 @@
     border-color: rgba(0, 0, 0, 0.12) !important;
   }
   
-  /* Card backgrounds */
-  [class*="bg-white/[0.02]"],
-  [class*="bg-white/[0.03]"] {
+  /* Card backgrounds - excluding nav-link class */
+  .bg-white\/\[0\.02\]:not(.nav-link),
+  .bg-white\/\[0\.03\]:not(.nav-link),
+  [class*="bg-white/[0.02]"]:not(.nav-link),
+  [class*="bg-white/[0.03]"]:not(.nav-link) {
     background-color: rgba(0, 0, 0, 0.03) !important;
   }
   
-  /* Hover states */
-  [class*="hover:bg-white/[0.03]"]:hover,
-  [class*="hover:bg-white/[0.06]"]:hover {
+  /* Hover states - excluding nav-link class */
+  [class*="hover:bg-white/[0.03]"]:hover:not(.nav-link),
+  [class*="hover:bg-white/[0.06]"]:hover:not(.nav-link) {
     background-color: rgba(0, 0, 0, 0.05) !important;
   }
   
@@ -118,6 +128,34 @@
 
 #xterm .xterm-viewport::-webkit-scrollbar {
   display: none;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: var(--nav-text) !important;
+  text-decoration: none !important;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  color: var(--nav-active) !important;
+  background-color: var(--nav-hover-bg) !important;
+  transform: translateY(-2px);
+}
+
+.nav-link-active {
+  color: var(--nav-active) !important;
+  background-color: var(--nav-hover-bg) !important;
+  box-shadow: inset 0 -2px 0 var(--nav-active);
 }
 
 /* Lao Language Font */
