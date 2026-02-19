@@ -85,38 +85,38 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="main-nav" aria-label="Primary navigation">
+    <nav className="flex gap-[18px] items-center" aria-label="Primary navigation">
       <a
         href={`/${locale}#work`}
-        className={`nav-link ${activeSection === 'work' ? 'active' : ''}`}
+        className={`text-[#9ea0a8] no-underline text-sm py-2 px-3 rounded-lg transition-all font-semibold tracking-wide relative overflow-hidden hover:text-[#d6b46b] hover:bg-white/[0.03] hover:-translate-y-0.5 focus:outline-none ${activeSection === 'work' ? 'text-[#d6b46b] bg-white/[0.03] shadow-[inset_0_-2px_0_#d6b46b]' : ''}`}
         onClick={(e) => handleHashClick(e, 'work')}
       >
         {t('work')}
       </a>
       <Link 
         href="/articles" 
-        className={`nav-link ${pathname?.includes('/articles') ? 'active' : ''}`}
+        className={`text-[#9ea0a8] no-underline text-sm py-2 px-3 rounded-lg transition-all font-semibold tracking-wide relative overflow-hidden hover:text-[#d6b46b] hover:bg-white/[0.03] hover:-translate-y-0.5 focus:outline-none ${pathname?.includes('/articles') ? 'text-[#d6b46b] bg-white/[0.03] shadow-[inset_0_-2px_0_#d6b46b]' : ''}`}
         locale={locale}
       >
         {t('blog')}
       </Link>
       <Link 
         href="/about" 
-        className={`nav-link ${pathname?.includes('/about') ? 'active' : ''}`}
+        className={`text-[#9ea0a8] no-underline text-sm py-2 px-3 rounded-lg transition-all font-semibold tracking-wide relative overflow-hidden hover:text-[#d6b46b] hover:bg-white/[0.03] hover:-translate-y-0.5 focus:outline-none ${pathname?.includes('/about') ? 'text-[#d6b46b] bg-white/[0.03] shadow-[inset_0_-2px_0_#d6b46b]' : ''}`}
         locale={locale}
       >
         {t('about')}
       </Link>
       <a
         href={`/${locale}#services`}
-        className={`nav-link ${activeSection === 'services' ? 'active' : ''}`}
+        className={`text-[#9ea0a8] no-underline text-sm py-2 px-3 rounded-lg transition-all font-semibold tracking-wide relative overflow-hidden hover:text-[#d6b46b] hover:bg-white/[0.03] hover:-translate-y-0.5 focus:outline-none ${activeSection === 'services' ? 'text-[#d6b46b] bg-white/[0.03] shadow-[inset_0_-2px_0_#d6b46b]' : ''}`}
         onClick={(e) => handleHashClick(e, 'services')}
       >
         {t('services')}
       </a>
       <a
         href={`/${locale}#contact`}
-        className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
+        className={`text-[#9ea0a8] no-underline text-sm py-2 px-3 rounded-lg transition-all font-semibold tracking-wide relative overflow-hidden hover:text-[#d6b46b] hover:bg-white/[0.03] hover:-translate-y-0.5 focus:outline-none ${activeSection === 'contact' ? 'text-[#d6b46b] bg-white/[0.03] shadow-[inset_0_-2px_0_#d6b46b]' : ''}`}
         onClick={(e) => handleHashClick(e, 'contact')}
       >
         {t('contact')}

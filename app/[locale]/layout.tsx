@@ -4,7 +4,6 @@ import { Inter, IBM_Plex_Mono, Noto_Sans_Lao } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import "../globals.css";
-import "../theme.css";
 import "xterm/css/xterm.css";
 
 const geistSans = Geist({
@@ -68,7 +67,7 @@ export default async function LocaleLayout({
         <meta name="theme-color" content="#0a0a0c" id="meta-theme-color" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${ibmPlexMono.variable} ${notoSansLao.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${ibmPlexMono.variable} ${notoSansLao.variable} antialiased bg-[#0a0a0c] text-[#e6e7ea] min-h-screen overflow-x-hidden`}
       >
         <NextIntlClientProvider messages={messages}>
           {children}

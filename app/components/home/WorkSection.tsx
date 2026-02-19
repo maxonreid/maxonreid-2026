@@ -71,22 +71,26 @@ export default function WorkSection() {
   return (
     <section
       id="work"
-      className="section work container"
+      className="py-24 px-0 w-[92%] max-w-[1200px] mx-auto"
       aria-labelledby="work-heading"
     >
-      <div className="work-header">
-        <div className="spy-label">
+      <div className="mb-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold">
           [ MY WORK ]
         </div>
 
-        <div className="work-filters" role="tablist" aria-label="Filter projects by category">
+        <div className="flex gap-2 flex-wrap" role="tablist" aria-label="Filter projects by category">
           {categories.map((cat) => (
             <button
               key={cat.id}
               role="tab"
               aria-selected={activeFilter === cat.id}
               aria-controls="projects-grid"
-              className={`filter-btn ${activeFilter === cat.id ? 'active' : ''}`}
+              className={`px-4 py-2 rounded-lg border font-mono text-sm transition-all ${
+                activeFilter === cat.id
+                  ? 'bg-[#d6b46b]/10 border-[#d6b46b] text-[#d6b46b]'
+                  : 'bg-transparent border-white/[0.06] text-[#9ea0a8] hover:border-[#d6b46b]/50 hover:text-[#e6e7ea]'
+              }`}
               onClick={() => setActiveFilter(cat.id)}
             >
               {cat.label}
@@ -95,7 +99,7 @@ export default function WorkSection() {
         </div>
       </div>
 
-      <div className="grid projects" id="projects-grid" role="tabpanel">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid" role="tabpanel">
         {filteredProjects.map((project, index) => (
           <ProjectCard
             key={project.id}
@@ -108,8 +112,8 @@ export default function WorkSection() {
       </div>
 
       {filteredProjects.length === 0 && (
-        <div className="no-projects">
-          <p>{t('noProjects')}</p>
+        <div className="text-center py-12">
+          <p className="text-[#9ea0a8]">{t('noProjects')}</p>
         </div>
       )}
     </section>

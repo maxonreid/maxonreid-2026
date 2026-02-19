@@ -18,38 +18,37 @@ export default function HeroSection() {
   const t = messages[locale].hero;
 
   return (
-    <section className="hero" aria-labelledby="hero-heading">
-      <div className="container hero-grid">
-        <div className="hero-content">
-          <div className="brand small">{t.brand}</div>
-          <div className="spy-label">
+    <section className="py-24 px-0 pb-30 relative overflow-hidden" aria-labelledby="hero-heading">
+      <div className="w-[92%] max-w-[1200px] mx-auto grid gap-9 grid-cols-1 lg:grid-cols-[1fr_420px] items-center">
+        <div className="max-w-[720px]">
+          <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-2">{t.brand}</div>
+          <div className="font-mono text-[13px] text-[#9ea0a8] tracking-[2px] mb-4">
             {t.location}
           </div>
 
-          <h1 id="hero-heading" className="hero-title">
+          <h1 id="hero-heading" className="text-[52px] leading-tight my-1.5 font-bold tracking-tight">
             {t.heroTitle}{' '}
-            <span className="gold">{t.heroTitleHighlight}</span>.
+            <span className="text-[#d6b46b]">{t.heroTitleHighlight}</span>.
           </h1>
 
-          <p className="hero-sub">
+          <p className="text-[#9ea0a8] max-w-[560px] mb-4.5">
             {t.heroSub}
           </p>
 
-          <div className="cta-container">
-            <a className="cta" href="#contact">
+          <div className="flex gap-3.5 mt-4.5">
+            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#d6b46b] no-underline font-mono tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#d6b46b]/[0.06] hover:to-transparent hover:text-[#e6e7ea] hover:border-[#d6b46b]" href="#contact">
               {t.ctaStart}
             </a>
-            <a className="cta ghost" href="#work">
+            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#e6e7ea] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#d6b46b]/[0.06] hover:to-transparent hover:border-[#d6b46b]" href="#work">
               {t.ctaView}
             </a>
           </div>
         </div>
 
-        <div className="hero-visual" aria-hidden="false">
+        <div className="flex justify-center items-center" aria-hidden="false">
           <TerminalDevice />
         </div>
       </div>
-      <div className="scan-overlay" aria-hidden="true"></div>
     </section>
   );
 }

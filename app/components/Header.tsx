@@ -65,18 +65,21 @@ export default function Header() {
   }, [theme]);
 
   return (
-    <header className={`site-header ${isScrolled ? 'scrolled' : ''}`} role="banner">
-      <div className="container header-inner">
-        <div className="brand" aria-hidden="true">
+    <header 
+      className={`sticky top-0 z-[9999] min-h-[72px] backdrop-blur-md bg-[#0a0a0c]/60 border-b border-white/[0.03] transition-all ${isScrolled ? 'shadow-[0_6px_20px_rgba(0,0,0,0.12)]' : ''}`} 
+      role="banner"
+    >
+      <div className="w-[92%] max-w-[1200px] mx-auto flex items-center justify-between py-3.5">
+        <div className="font-mono tracking-[10px] font-semibold text-[#9ea0a8]" aria-hidden="true">
           MS
         </div>
 
         <Navbar />
 
-        <div className="header-actions">
+        <div className="flex gap-3 items-center">
           <LanguageSwitcher />
           <button
-            className="btn-ghost"
+            className="bg-transparent border-none text-[#9ea0a8] p-2 rounded-lg cursor-pointer inline-flex items-center gap-2 hover:bg-white/[0.03] focus:outline-2 focus:outline-[#d6b46b]/20 focus:outline-offset-2"
             id="theme-toggle"
             aria-pressed={theme === 'light'}
             aria-label="Toggle light and dark theme"
@@ -84,7 +87,6 @@ export default function Header() {
             onClick={toggleTheme}
           >
             <svg
-              className="icon-sun"
               width="18"
               height="18"
               viewBox="0 0 24 24"

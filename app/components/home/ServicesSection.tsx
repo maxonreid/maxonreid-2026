@@ -72,17 +72,17 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="section services container"
+      className="py-24 px-0 w-[92%] max-w-[1200px] mx-auto"
       aria-labelledby="services-heading"
     >
-      <h2 id="services-heading" className="section-title">
+      <h2 id="services-heading" className="text-4xl md:text-5xl font-bold text-center mb-4">
         {t.title}
       </h2>
-      <p className="section-sub">
+      <p className="text-xl text-[#9ea0a8] text-center max-w-2xl mx-auto mb-12">
         {t.subtitle}
       </p>
 
-      <div className="grid services-grid">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
           <ServiceCard key={service.id} service={service} />
         ))}

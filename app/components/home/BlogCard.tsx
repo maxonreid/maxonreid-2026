@@ -22,48 +22,46 @@ export default function BlogCard({ article }: BlogCardProps) {
   const locale = pathname?.startsWith('/lo') ? '/lo' : '/en';
   
   return (
-    <Link href={`${locale}/articles/${article.id}`} className="blog-card-link">
-      <article className="blog-card" tabIndex={0}>
-      <div className="blog-card-image">
+    <Link href={`${locale}/articles/${article.id}`} className="block group">
+      <article className="bg-white/[0.02] border border-white/[0.06] rounded-xl overflow-hidden hover:border-[#d6b46b]/50 hover:-translate-y-1 transition-all hover:shadow-[0_12px_40px_rgba(214,180,107,0.1)]" tabIndex={0}>
+      <div className="relative aspect-video overflow-hidden">
         <img 
           src={article.image} 
           alt={article.title}
           loading="lazy"
-          className="blog-image"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="blog-image-overlay" aria-hidden="true"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"></div>
       </div>
-      <div className="blog-card-inner">
-        <div className="blog-meta mono muted">
-          <span className="blog-date">{article.date}</span>
-          <span className="blog-separator">·</span>
-          <span className="blog-read-time">{article.readTime} read</span>
+      <div className="p-6">
+        <div className="font-mono text-xs text-[#9ea0a8] mb-3 flex items-center gap-2">
+          <span>{article.date}</span>
+          <span>·</span>
+          <span>{article.readTime} read</span>
         </div>
         
-        <h3 className="blog-title">
-          <span className="blog-title-text">
-            {article.title}
-          </span>
+        <h3 className="text-xl font-bold text-[#e6e7ea] mb-3 group-hover:text-[#d6b46b] transition-colors">
+          {article.title}
         </h3>
         
         <p 
-          className="blog-excerpt" 
+          className="text-[#9ea0a8] leading-relaxed mb-4"
           id={`blog-excerpt-${article.id}`}
         >
           {article.excerpt}
         </p>
         
-        <div className="blog-footer">
-          <div className="blog-tags mono">
+        <div className="flex items-center justify-between">
+          <div className="font-mono text-xs flex gap-2">
             {article.tags.map((tag, i) => (
-              <span key={i} className="blog-tag">
+              <span key={i} className="bg-white/[0.03] border border-white/[0.06] text-[#9ea0a8] px-3 py-1 rounded-full">
                 {tag}
               </span>
             ))}
           </div>
           
-          <div className="blog-action">
-            <span className="blog-cta mono">
+          <div>
+            <span className="font-mono text-sm text-[#d6b46b] inline-flex items-center gap-2">
               Read More
               <svg
                 width="12"
@@ -86,7 +84,7 @@ export default function BlogCard({ article }: BlogCardProps) {
         </div>
       </div>
       
-      <div className="blog-card-glow" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-[#d6b46b]/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-xl" aria-hidden="true"></div>
     </article>
     </Link>
   );

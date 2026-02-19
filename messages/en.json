@@ -7,7 +7,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "brand": "MAXON SOLUTIONS",
+    "brand": "MAXON TORRES",
     "location": "[ VIENTIANE : LAOS PDR ] — FULL STACK WEB DEVELOPER",
     "heroTitle": "Build Web Software that help your business",
     "heroTitleHighlight": "grow globally",
@@ -29,7 +29,7 @@
     "sectionLabel": "[ LATEST INSIGHTS ]",
     "articleCount": "{count} ARTICLES",
     "title": "Recent Posts",
-    "subtitle": "Technical notes, guides, and lessons learned from the field.",
+    "subtitle": "Technical notes, guides, and lessons learned from my own experience.",
     "viewAll": "View All Articles",
     "readMore": "Read More",
     "readTime": "{time} read"
@@ -219,7 +219,7 @@
     }
   },
   "footer": {
-    "copyright": "© {year} Maxon Reid. All rights reserved.",
+    "copyright": "© {year} Maxon Torres. All rights reserved.",
     "builtWith": "Built with Next.js & TypeScript"
   },
   "theme": {
