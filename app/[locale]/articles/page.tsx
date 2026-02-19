@@ -208,7 +208,9 @@ export default function ArticlesPage() {
 
   return (
     <>
+      
       <Header />
+
       <main className="articles-page">
         {/* Hero Section */}
         <section className="articles-hero">
@@ -380,7 +382,9 @@ export default function ArticlesPage() {
           </div>
         </section>
       </main>
+
       <Footer />
+      
     </>
   );
 }

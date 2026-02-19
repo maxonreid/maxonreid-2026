@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { Link } from '@/routing';
+
 import LanguageSwitcher from './LanguageSwitcher';
 import Navbar from './Navbar';
 
@@ -77,13 +79,15 @@ export default function Header() {
       <div className="w-[92%] max-w-[1200px] mx-auto flex items-center justify-between py-3.5">
 
 
-        <Image
-          src="/logo-maxontorres.png"
-          alt="Maxon Torres"
-          width={40}
-          height={40}
-          priority
-        />
+        <Link href="/" aria-label="Go to homepage">
+          <Image
+            src="/logo-maxontorres.png"
+            alt="Maxon Torres"
+            width={40}
+            height={40}
+            priority
+          />
+        </Link>
 
         <Navbar />
 
