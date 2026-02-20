@@ -60,12 +60,110 @@
       "p1": "ຂ້ອຍແມ່ນ Maximiliano Torres, Full-Stack Developer ຢູ່ເອຊີຕາເວັນອອກສຽງໃຕ້, ຊ່ຽວຊານໃນການພັດທະນາ Web Application ດ້ວຍ React ແລະ Next.js.",
       "p2": "ຂ້ອຍອອກແບບ ແລະ ພັດທະນາໂຊລູຊັນດິຈິຕອນເພື່ອອັດຕະໂນມັດ workflow ແລະ ຊ່ວຍໃຫ້ທຸລະກິດເຕີບໂຕ.",
       "p3": "ນອກເໜືອຈາກການພັດທະນາ, ຂ້ອຍຍັງມີປະສົບການສອນດ້ານ IT ແລະ Web Design ທີ່ມະຫາວິທະຍາໄລໃນຈີນ ແລະ ລາວ."
+    },
+    "skills": {
+      "title": "ເຕັກໂນໂລຊີ ແລະ ເຄື່ອງມື",
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "HTML/CSS"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": [
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "MySQL",
+          "REST APIs"
+        ]
+      },
+      "tools": {
+        "title": "ເຄື່ອງມື & DevOps",
+        "items": [
+          "GIT",
+          "AWS",
+          "Linux"
+        ]
+      }
+    },
+    "cta": {
+      "title": "ພ້ອມເລີ່ມໂຄງການຂອງທ່ານບໍ?",
+      "subtitle": "ມາລົມກັນວ່າພວກເຮົາຈະຮ່ວມມືກັນສ້າງສິ່ງທີ່ຍິ່ງໃຫຍ່ໄດ້ແນວໃດ.",
+      "contact": "ຕິດຕໍ່",
+      "services": "ເບິ່ງບໍລິການ"
+    },
+    "cv": {
+      "viewCV": "ເບິ່ງ CV ທັງໝົດ",
+      "downloadCV": "ດາວໂຫຼດ Resume"
     }
   },
   "services": {
     "title": "ບໍລິການ",
     "subtitle": "ອອກແບບ ແລະ ພັດທະນາ SaaS ແລະ Marketplace ທີ່ຂະຫຍາຍໄດ້.",
-    "deliverLabel": "ສິ່ງທີ່ຂ້ອຍສົ່ງມອບ"
+    "subtitleSecondary": "ຕັ້ງແຕ່ MVP ໄປຫາ production, ຂ້ອຍຊ່ວຍໃຫ້ founder ປ່ຽນໄອເດຍໃຫ້ເປັນແອັບເວັບທີ່ເຊື່ອຖືໄດ້ ແລະ ຂະຫຍາຍໄດ້.",
+    "deliverLabel": "ສິ່ງທີ່ຂ້ອຍສົ່ງມອບ",
+    "toolsLabel": "ເຄື່ອງມື:",
+    "items": {
+      "customWebApps": {
+        "title": "ພັດທະນາຜະລິດຕະພັນ SaaS",
+        "valueStatement": "ພັດທະນາ SaaS ທັນສະໄໝແບບ end-to-end ສໍາລັບຜູ້ໃຊ້ຫຼາຍລາຍ.",
+        "desc": "ຂ້ອຍສ້າງລະບົບທີ່ມີໂຄງສ້າງດີ ເພື່ອຮອງຮັບການເຕີບໂຕ, ປະສິດທິພາບ ແລະ ການບໍາລຸງຮັກສາໃນໄລຍະຍາວ.",
+        "details": [
+          "ສະຖາປັດຕະຍະກໍາ SaaS ແບບ multi-tenant",
+          "ລະບົບ authentication ແລະ role-based access control",
+          "Admin dashboard ແລະ user portal",
+          "ການເຊື່ອມຕໍ່ backend ແບບ API-driven",
+          "ການ deploy ທີ່ພ້ອມໃຊ້ງານຈິງ"
+        ],
+        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
+      },
+      "businessSystems": {
+        "title": "Marketplace ແລະ Multi-Sided Platforms",
+        "valueStatement": "Platform ທີ່ເຊື່ອມຕໍ່ຜູ້ໃຊ້, ຜູ້ຂາຍ ຫຼື ຜູ້ໃຫ້ບໍລິການ.",
+        "desc": "ອອກແບບໃຫ້ຂະຫຍາຍໄດ້, ປະສິດທິພາບດີ ແລະ ຄວບຄຸມການດໍາເນີນງານໄດ້ຊັດເຈນ.",
+        "details": [
+          "ລະບົບຈັດການຜູ້ຂາຍ ແລະ ຜູ້ໃຊ້",
+          "Workflow ດ້ານທຸລະກໍາ",
+          "ລະບົບ review ແລະ rating",
+          "Dashboard ສໍາລັບ moderation",
+          "ສະຖາປັດຕະຍະກໍາ platform ທີ່ຂະຫຍາຍໄດ້"
+        ],
+        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
+      },
+      "pwaApps": {
+        "title": "MVP Development ສໍາລັບ Startup",
+        "valueStatement": "ເປີດຕົວໄວ. ທົດສອບໄວ. ຂະຫຍາຍໄດ້ມັ່ນໃຈ.",
+        "desc": "ຂ້ອຍຊ່ວຍ founder ສ້າງ MVP ທີ່ lean ແຕ່ແຂງແຮງ ດ້ວຍພື້ນຖານທາງເທັກນິກທີ່ດີ.",
+        "details": [
+          "ໂຄງສ້າງ MVP ແບບໄວ",
+          "Codebase ທີ່ສະອາດ ແລະ ບໍາລຸງຮັກສາງ່າຍ",
+          "Frontend ທີ່ເນັ້ນປະສິດທິພາບ",
+          "ໂຄງສ້າງລະບົບທີ່ຂະຫຍາຍໄດ້",
+          "ຄໍາແນະນໍາດ້ານເທັກນິກເຊີງຍຸດທະສາດ"
+        ],
+        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
+      },
+      "frontendArchitecture": {
+        "title": "Core Stack",
+        "valueStatement": "Next.js · React · TypeScript · PostgreSQL · REST APIs",
+        "desc": "",
+        "details": [],
+        "tools": ""
+      },
+      "ongoingSupport": {
+        "title": "ການຮ່ວມມືໄລຍະຍາວ",
+        "valueStatement": "ປັບປຸງຫຼັງເປີດໃຊ້ງານ, ເພີ່ມຟີເຈີ ແລະ ຮ່ວມມືດ້ານເທັກນິກສໍາລັບຜະລິດຕະພັນທີ່ກໍາລັງເຕີບໂຕ.",
+        "desc": "",
+        "details": [],
+        "tools": ""
+      }
+    }
   },
   "contact": {
     "home": {
@@ -76,6 +174,22 @@
         "location": "ສະຖານທີ່",
         "connect": "ຊ່ອງທາງຕິດຕໍ່",
         "phoneWhatsapp": "ໂທ / WhatsApp"
+      },
+      "location": {
+        "city": "ວຽງຈັນ, ສປປ ລາວ",
+        "timezone": "GMT+7 (ເຮັດວຽກໄລຍະໄກໄດ້)"
+      },
+      "links": {
+        "linkedin": "LinkedIn"
+      },
+      "card": {
+        "title": "ຕິດຕໍ່ໂດຍກົງ",
+        "subtitle": "ກະລຸນາຕິດຕໍ່ຜ່ານ WhatsApp, ໂທລະສັບ ຫຼື ອີເມວ.",
+        "numberLabel": "ເບີໂທ / WhatsApp:"
+      },
+      "cta": {
+        "whatsapp": "WhatsApp",
+        "callNow": "ໂທດຽວນີ້"
       }
     },
     "form": {

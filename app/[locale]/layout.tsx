@@ -37,11 +37,11 @@ const notoSansLao = Noto_Sans_Lao({
 export const metadata: Metadata = {
   title: {
     default:
-      "Maximiliano Brito Torres | Senior Full-Stack Developer (Next.js, React, Node.js) — Remote",
+      "Maximiliano Brito Torres | Full-Stack Developer (Next.js, React, Node.js) — Remote",
     template: "%s | Maxon Torres",
   },
   description:
-    "Senior Full-Stack Developer specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture. Building scalable, high-performance web applications for global companies. Available for remote work.",
+    "Full-Stack Developer specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture. Building scalable, high-performance web applications for global companies. Available for remote work.",
   keywords: [
     "Senior Full Stack Developer",
     "Web Developer Vientiane",
