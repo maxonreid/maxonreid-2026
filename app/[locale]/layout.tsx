@@ -44,6 +44,7 @@ export const metadata: Metadata = {
     "Senior Full-Stack Developer specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture. Building scalable, high-performance web applications for global companies. Available for remote work.",
   keywords: [
     "Senior Full Stack Developer",
+    "Web Developer Vientiane",
     "Next.js Developer",
     "React Developer",
     "Node.js Developer",
