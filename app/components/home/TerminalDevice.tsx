@@ -12,6 +12,16 @@ export default function TerminalDevice() {
   const historyIndexRef = useRef(-1);
   const isReadyRef = useRef(false);
 
+  const normalizeTerminalText = (value: string) => {
+    return value
+      .normalize('NFKC')
+      .replace(/[▸•]/g, '>')
+      .replace(/✓/g, 'OK')
+      .replace(/—/g, '-')
+      .replace(/…/g, '...')
+      .replace(/·/g, '|');
+  };
+
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -27,8 +37,10 @@ export default function TerminalDevice() {
         // Create terminal instance
         const term = new Terminal({
           cursorBlink: true,
-          fontFamily: '"IBM Plex Mono", monospace',
-          fontSize: 13,
+          fontFamily: 'var(--font-ibm-plex-mono), "JetBrains Mono", "Consolas", "Courier New", monospace',
+          fontSize: 14,
+          lineHeight: 1.2,
+          letterSpacing: 0,
           disableStdin: false,
           scrollback: 300,
           allowTransparency: true,
@@ -105,26 +117,27 @@ export default function TerminalDevice() {
     text: string,
     delay = 12
   ): Promise<void> => {
+    const safeText = normalizeTerminalText(text);
     const reduceMotion =
       window.matchMedia &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (reduceMotion) {
-      term.writeln(text.replace(/\r?\n$/, ''));
+      term.writeln(safeText.replace(/\r?\n$/, ''));
       return Promise.resolve();
     }
 
     return new Promise((resolve) => {
       let i = 0;
       const interval = setInterval(() => {
-        const ch = text[i];
+        const ch = safeText[i];
         if (ch === '\n') {
           term.write('\r\n');
         } else {
           term.write(ch);
         }
         i++;
-        if (i >= text.length) {
+        if (i >= safeText.length) {
           clearInterval(interval);
           resolve();
         }
@@ -148,7 +161,7 @@ export default function TerminalDevice() {
 
     const localWrite = (text: string, delay = 12) => {
       if (reduceMotion) {
-        term.writeln(text.replace(/\r?\n$/, ''));
+        term.writeln(normalizeTerminalText(text).replace(/\r?\n$/, ''));
         return Promise.resolve();
       }
       return writeTyped(term, text, delay);
@@ -194,7 +207,7 @@ export default function TerminalDevice() {
 
     const writeTypedLocal = (text: string, delay = 12) => {
       if (reduceMotion) {
-        term.writeln(text.replace(/\r?\n$/, ''));
+        term.writeln(normalizeTerminalText(text).replace(/\r?\n$/, ''));
         return Promise.resolve();
       }
       return writeTypedFn(term, text, delay);
@@ -311,7 +324,7 @@ export default function TerminalDevice() {
         const cookies = navigator.cookieEnabled ? 'enabled' : 'disabled';
         const timezone = (Intl && Intl.DateTimeFormat) ? Intl.DateTimeFormat().resolvedOptions().timeZone || 'unknown' : 'unknown';
         const viewport = `${window.innerWidth}×${window.innerHeight}`;
-        const now = new Date().toLocaleString();
+        const now = new Date().toLocaleString('en-US');
 
         await writeTypedLocal('User client info:\r\n', 8);
         await writeTypedLocal(`  User Agent: ${ua}\r\n`, 6);
@@ -455,7 +468,7 @@ export default function TerminalDevice() {
 
     const writeTypedLocal = (text: string, delay = 12) => {
       if (reduceMotion) {
-        term.writeln(text.replace(/\r?\n$/, ''));
+        term.writeln(normalizeTerminalText(text).replace(/\r?\n$/, ''));
         return Promise.resolve();
       }
       return writeTyped(term, text, delay);
@@ -574,7 +587,7 @@ export default function TerminalDevice() {
         const cookies = navigator.cookieEnabled ? 'enabled' : 'disabled';
         const timezone = (Intl && Intl.DateTimeFormat) ? Intl.DateTimeFormat().resolvedOptions().timeZone || 'unknown' : 'unknown';
         const viewport = `${window.innerWidth}×${window.innerHeight}`;
-        const now = new Date().toLocaleString();
+        const now = new Date().toLocaleString('en-US');
 
         await writeTypedLocal('User client info:\r\n', 8);
         await writeTypedLocal(`  User Agent: ${ua}\r\n`, 6);
@@ -602,7 +615,7 @@ export default function TerminalDevice() {
   };
 
   return (
-    <div className="relative w-full  max-w-[900px]" role="img" aria-label="Terminal mockup card">
+    <div className="terminal-en-only relative w-full  max-w-[900px]" role="img" aria-label="Terminal mockup card" lang="en" dir="ltr" translate="no">
       <div className="bg-[#1a1d23]  rounded-xl border border-white/[0.08] overflow-hidden">
         <div
           id="xterm"

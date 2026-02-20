@@ -164,3 +164,27 @@
 [lang^="lo-"] {
   font-family: "Noto Sans Lao", "Phetsarath OT", "Saysettha OT", Arial, sans-serif;
 }
+
+.terminal-en-only,
+.terminal-en-only * {
+  font-family: "IBM Plex Mono", "Consolas", "Courier New", monospace !important;
+}
+
+.locale-lao .terminal-en-only,
+.locale-lao .terminal-en-only * {
+  font-family: "IBM Plex Mono", "Consolas", "Courier New", monospace !important;
+  font-feature-settings: "liga" 0;
+}
+
+.terminal-en-only #xterm .xterm-rows {
+  line-height: 1.18 !important;
+  letter-spacing: 0 !important;
+}
+
+.terminal-en-only #xterm .xterm,
+.terminal-en-only #xterm .xterm-screen,
+.terminal-en-only #xterm .xterm-rows {
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,6 +1,7 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { NextIntlClientProvider, useTranslations } from 'next-intl';
+import enMessages from '@/messages/en.json';
 import TerminalDevice from './TerminalDevice';
 
 export default function HeroSection() {
@@ -34,8 +35,11 @@ export default function HeroSection() {
           </div>
         </div>
 
+        {/* Terminal still looks ugly when locale is lo. ill deal with this later */}
         <div className="flex justify-center items-center" aria-hidden="false">
-          <TerminalDevice />
+          <NextIntlClientProvider locale="en">
+            <TerminalDevice />
+          </NextIntlClientProvider>
         </div>
       </div>
     </section>
