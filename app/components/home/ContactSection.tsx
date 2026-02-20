@@ -57,7 +57,7 @@ export default function ContactSection() {
             <div className="flex-1">
               <div className="font-mono text-xs text-[#9ea0a8] tracking-wider mb-1">{t('labels.connect')}</div>
               <div className="text-[#e6e7ea] flex gap-2">
-                <a href="#" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
+                <a href="https://github.com/maxonreid" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
                   GitHub
                 </a>
                 <span className="text-[#9ea0a8]">·</span>

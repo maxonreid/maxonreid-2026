@@ -35,6 +35,7 @@ const notoSansLao = Noto_Sans_Lao({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com'),
   title: {
     default:
       "Maximiliano Brito Torres | Full-Stack Developer (Next.js, React, Node.js) — Remote",

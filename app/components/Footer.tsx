@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="space-y-3">
           <div className="flex flex-col gap-2">
             <a href="mailto:hello@maxonreid.com" className="text-sm text-[#e6e7ea] hover:text-[#d6b46b] transition-colors">hello@maxontorres.com</a>
-            <a href="#" className="text-sm text-[#9ea0a8] hover:text-[#d6b46b] transition-colors">
+            <a href="https://github.com/maxonreid" className="text-sm text-[#9ea0a8] hover:text-[#d6b46b] transition-colors">
               GitHub
             </a>
           </div>

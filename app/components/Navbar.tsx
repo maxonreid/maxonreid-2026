@@ -1,12 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/routing';
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const t = useTranslations('nav');
   
@@ -69,12 +71,17 @@ export default function Navbar() {
     }
   }, [pathname]);
 
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
   // Hash link click handler with smooth scroll
   const handleHashClick = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
     e.preventDefault();
     
     if (!isHomePage) {
       window.location.href = `/${locale}#${hash}`;
+      setIsMenuOpen(false);
       return;
     }
     
@@ -91,46 +98,96 @@ export default function Navbar() {
       
       window.history.pushState(null, '', `/${locale}#${hash}`);
       setActiveSection(hash);
+      setIsMenuOpen(false);
     }
   };
 
   return (
-    <nav className="flex gap-[18px] items-center" aria-label="Primary navigation">
-      {/* <a
-        href={`/${locale}#work`}
-        className={`nav-link ${activeSection === 'work' ? 'nav-link-active' : ''}`}
-        onClick={(e) => handleHashClick(e, 'work')}
-      >
-        {t('work')}
-      </a> */}
-      {/* <Link 
-        href="/articles" 
-        className={`nav-link ${pathname?.includes('/articles') ? 'nav-link-active' : ''}`}
-        locale={locale}
-      >
-        {t('blog')}
-      </Link> */}
-      <Link 
-        href="/about" 
-        className={`nav-link ${pathname?.includes('/about') ? 'nav-link-active' : ''}`}
-        locale={locale}
-      >
-        {t('about')}
-      </Link>
-      <a
-        href={`/${locale}#services`}
-        className={`nav-link ${activeSection === 'services' ? 'nav-link-active' : ''}`}
-        onClick={(e) => handleHashClick(e, 'services')}
-      >
-        {t('services')}
-      </a>
-      <a
-        href={`/${locale}#contact`}
-        className={`nav-link ${activeSection === 'contact' ? 'nav-link-active' : ''}`}
-        onClick={(e) => handleHashClick(e, 'contact')}
-      >
-        {t('contact')}
-      </a>
+    <nav className="relative" aria-label="Primary navigation">
+      <div className="flex items-center gap-[18px]">
+        <div className="hidden md:flex gap-[18px] items-center">
+          {/* <a
+            href={`/${locale}#work`}
+            className={`nav-link ${activeSection === 'work' ? 'nav-link-active' : ''}`}
+            onClick={(e) => handleHashClick(e, 'work')}
+          >
+            {t('work')}
+          </a> */}
+          {/* <Link 
+            href="/articles" 
+            className={`nav-link ${pathname?.includes('/articles') ? 'nav-link-active' : ''}`}
+            locale={locale}
+          >
+            {t('blog')}
+          </Link> */}
+          <Link 
+            href="/about" 
+            className={`nav-link ${pathname?.includes('/about') ? 'nav-link-active' : ''}`}
+            locale={locale}
+          >
+            {t('about')}
+          </Link>
+          <a
+            href={`/${locale}#services`}
+            className={`nav-link ${activeSection === 'services' ? 'nav-link-active' : ''}`}
+            onClick={(e) => handleHashClick(e, 'services')}
+          >
+            {t('services')}
+          </a>
+          <a
+            href={`/${locale}#contact`}
+            className={`nav-link ${activeSection === 'contact' ? 'nav-link-active' : ''}`}
+            onClick={(e) => handleHashClick(e, 'contact')}
+          >
+            {t('contact')}
+          </a>
+        </div>
+
+        <button
+          type="button"
+          className="nav-link inline-flex items-center justify-center p-2 md:hidden"
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-navigation"
+          aria-label="Toggle navigation menu"
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+        >
+          {isMenuOpen ? <X size={18} strokeWidth={1.75} aria-hidden="true" /> : <Menu size={18} strokeWidth={1.75} aria-hidden="true" />}
+        </button>
+      </div>
+
+      {isMenuOpen && (
+        <div
+          id="mobile-navigation"
+          className="fixed right-2 top-[4.5rem] z-50 flex w-56 max-w-[calc(100vw-1rem)] origin-top-right flex-col gap-1 rounded-xl border p-2 shadow-[0_12px_30px_rgba(0,0,0,0.18)] backdrop-blur-md md:hidden"
+          style={{
+            backgroundColor: 'var(--bg-secondary)',
+            borderColor: 'var(--border-color)'
+          }}
+        >
+          <Link 
+            href="/about" 
+            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors ${pathname?.includes('/about') ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
+            locale={locale}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t('about')}
+          </Link>
+          <a
+            href={`/${locale}#services`}
+            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors ${activeSection === 'services' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
+            onClick={(e) => handleHashClick(e, 'services')}
+          >
+            {t('services')}
+          </a>
+          <a
+            href={`/${locale}#contact`}
+            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors ${activeSection === 'contact' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
+            onClick={(e) => handleHashClick(e, 'contact')}
+          >
+            {t('contact')}
+          </a>
+        </div>
+      )}
     </nav>
   );
 }
