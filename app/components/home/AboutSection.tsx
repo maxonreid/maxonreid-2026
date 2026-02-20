@@ -49,7 +49,7 @@ export default function AboutSection() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <img 
-                src="/images/profile.jpg" 
+                src="/profile.jpg" 
                 alt="Maximiliano Torres - Full Stack Developer"
                 className="w-full max-w-md rounded-2xl shadow-2xl"
               />

@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="font-mono text-xs text-[#9ea0a8] flex gap-3">
             <span className="text-[#d6b46b]">[CONFIDENTIAL]</span>
             <span>|</span>
-            <span>Encrypted · Private · Audit-ready</span>
+            <span>Encrypted · Private · Secure</span>
           </div>
         </div>
 
