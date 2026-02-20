@@ -17,7 +17,7 @@
   },
   "work": {
     "title": "Selected Work",
-    "subtitle": "Projects that combine privacy-first architecture with polished UX — a covert blend of luxury and engineering.",
+    "subtitle": " Projects I have done",
     "categories": {
       "all": "All Projects",
       "fintech": "FinTech",
@@ -40,13 +40,14 @@
     "title": "About Me",
     "intro": "I’m Maximiliano Torres, a Full-Stack Software Developer based in Vientiane, Laos, focused on building robust and organized scalable web applications.",
     "description": "I help businesses turn ideas into reliable digital business tools — from internal dashboards to full-scale platforms — combining clean architecture, performance, and user-focused design.",
+    "imageAlt": "Maximiliano Torres - Full Stack Developer",
     "learnMore": "More About Me",
     "stats": {
-      "experience": "9+",
+      "experience": "10+",
       "experienceLabel": "Years Experience",
       "projects": "40+",
       "projectsLabel": "Projects Delivered",
-      "technologies": "9+",
+      "technologies": "10+",
       "technologiesLabel": "Technologies"
     }
   },
@@ -85,9 +86,7 @@
       "tools": {
         "title": "Tools & DevOps",
         "items": [
-          "Git",
-          "Docker",
-          "Vercel",
+          "GIT",
           "AWS",
           "Linux"
         ]
@@ -138,73 +137,95 @@
   },
   "services": {
     "title": "Services",
-    "subtitle": "I design and build reliable web applications that help businesses work faster, smarter, and at scale.",
+    "subtitle": "I design and build scalable SaaS and marketplace platforms for early-stage startups ready to launch and grow.",
+    "subtitleSecondary": "From MVP to production, I help founders turn product ideas into structured, reliable web applications built for scale.",
+    "deliverLabel": "What I deliver",
+    "toolsLabel": "Tools:",
     "items": {
       "customWebApps": {
-        "title": "Custom Web Applications",
-        "valueStatement": "Tailored web applications built around your business workflows.",
-        "desc": "I build secure, scalable web applications for businesses that need more than a simple website — from admin dashboards to customer-facing platforms.",
+        "title": "SaaS Product Development",
+        "valueStatement": "End-to-end development of modern, multi-user SaaS platforms.",
+        "desc": "I build structured systems designed for growth, performance, and long-term maintainability.",
         "details": [
-          "Custom features based on your requirements",
-          "Secure authentication & role-based access",
-          "Clean, maintainable code",
+          "Multi-tenant SaaS architecture",
+          "Role-based authentication & access control",
+          "Admin dashboards & user portals",
+          "API-driven backend integrations",
           "Production-ready deployment"
         ],
-        "tools": "Next.js, React, TypeScript, REST APIs"
+        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
       },
       "businessSystems": {
-        "title": "Business Systems & Internal Tools",
-        "valueStatement": "Replace spreadsheets and manual processes with real systems.",
-        "desc": "I help companies digitize internal workflows to reduce errors, save time, and improve visibility across teams.",
+        "title": "Marketplace & Multi-Sided Platforms",
+        "valueStatement": "Platforms that connect users, vendors, or service providers.",
+        "desc": "Designed for scalability, performance, and clear operational control.",
         "details": [
-          "Document management systems",
-          "Internal dashboards & reporting",
-          "User roles & permissions",
-          "Workflow-based tools"
+          "Vendor & user management systems",
+          "Transactional workflows",
+          "Review & rating systems",
+          "Moderation dashboards",
+          "Scalable platform architecture"
         ],
-        "tools": "Next.js, React, PostgreSQL / MySQL, APIs"
+        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
       },
       "pwaApps": {
-        "title": "PWA & Mobile-First Applications",
-        "valueStatement": "Fast, installable web apps that work anywhere.",
-        "desc": "I build mobile-first web apps optimized for performance, reliability, and real-world usage — even on slow networks.",
+        "title": "MVP Development for Startups",
+        "valueStatement": "Launch fast. Validate early. Scale confidently.",
+        "desc": "I help founders ship lean but solid MVPs with a strong technical foundation.",
         "details": [
-          "Progressive Web Apps (PWA)",
-          "Offline support & caching",
-          "Mobile-first UI",
-          "Cross-device compatibility"
+          "Rapid MVP architecture",
+          "Clean, maintainable codebase",
+          "Performance-focused frontend",
+          "Scalable system structure",
+          "Strategic technical guidance"
         ],
-        "tools": "Next.js, PWA APIs, Service Workers"
+        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
       },
       "frontendArchitecture": {
-        "title": "Frontend Architecture & UI Implementation",
-        "valueStatement": "Clean, scalable interfaces built for long-term growth.",
-        "desc": "I turn designs or ideas into maintainable frontend code that's easy to extend and safe to scale.",
-        "details": [
-          "Component-based architecture",
-          "Design-to-code implementation",
-          "Performance optimization",
-          "Accessibility best practices"
-        ],
-        "tools": "React, Next.js, Tailwind / CSS Modules"
+        "title": "Core Stack",
+        "valueStatement": "Next.js · React · TypeScript · PostgreSQL · REST APIs",
+        "desc": "",
+        "details": [],
+        "tools": ""
       },
       "ongoingSupport": {
-        "title": "Ongoing Support & Improvements",
-        "valueStatement": "Long-term support after launch.",
-        "desc": "I help maintain and improve your application over time, ensuring stability and continuous progress.",
-        "details": [
-          "Bug fixes & performance improvements",
-          "Feature enhancements",
-          "Technical guidance",
-          "Long-term collaboration"
-        ],
-        "tools": "Same stack as your project"
+        "title": "Long-Term Collaboration",
+        "valueStatement": "Post-launch improvements, feature expansion, and technical partnership for growing products.",
+        "desc": "",
+        "details": [],
+        "tools": ""
       }
     }
   },
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Have a project in mind? Let's discuss how we can work together.",
+    "home": {
+      "title": "Get In Touch",
+      "subtitle": "Available for new projects, consulting engagements, and technical partnerships. Reach out directly by email, call, or WhatsApp.",
+      "labels": {
+        "email": "EMAIL",
+        "location": "LOCATION",
+        "connect": "CONNECT",
+        "phoneWhatsapp": "PHONE / WHATSAPP"
+      },
+      "location": {
+        "city": "Vientiane, Laos PDR",
+        "timezone": "GMT+7 (Remote-friendly)"
+      },
+      "links": {
+        "linkedin": "LinkedIn"
+      },
+      "card": {
+        "title": "Direct Contact",
+        "subtitle": "Please reach out directly via WhatsApp, phone, or email.",
+        "numberLabel": "Number / WhatsApp:"
+      },
+      "cta": {
+        "whatsapp": "WhatsApp",
+        "callNow": "Call Now"
+      }
+    },
     "form": {
       "name": "Name",
       "email": "Email",

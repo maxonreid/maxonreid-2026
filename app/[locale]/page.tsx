@@ -1,11 +1,11 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import HeroSection from '../components/home/HeroSection';
-import WorkSection from '../components/home/WorkSection';
-import AboutSection from '../components/home/AboutSection';
-import BlogSection from '../components/home/BlogSection';
-import ServicesSection from '../components/home/ServicesSection';
-import ContactSection from '../components/home/ContactSection';
+import Header from '@/app/components/Header';
+import Footer from '@/app/components/Footer';
+import HeroSection from '@/app/components/home/HeroSection';
+import WorkSection from '@/app/components/home/WorkSection';
+import AboutSection from '@/app/components/home/AboutSection';
+import BlogSection from '@/app/components/home/BlogSection';
+import ServicesSection from '@/app/components/home/ServicesSection';
+import ContactSection from '@/app/components/home/ContactSection';
 
 export default function HomePage() {
   return (

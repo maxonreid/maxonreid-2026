@@ -5,22 +5,22 @@ export default function Footer() {
         <div className="space-y-3">
           <div className="font-mono tracking-[8px] font-semibold text-sm text-[#e6e7ea]">MAXON TORRES</div>
           <div className="text-sm text-[#9ea0a8]">
-            Software Engineer · Web Platforms · Security
+            Next.js SaaS & Marketplace Development
           </div>
         </div>
 
         <div className="space-y-4">
           <nav className="flex gap-6" aria-label="Footer navigation">
-            <a href="#work" className="text-sm text-[#9ea0a8] hover:text-[#d6b46b] transition-colors">Work</a>
-            <a href="#blog" className="text-sm text-[#9ea0a8] hover:text-[#d6b46b] transition-colors">Blog</a>
+            {/* <a href="#work" className="text-sm text-[#9ea0a8] hover:text-[#d6b46b] transition-colors">Work</a> */}
+            {/* <a href="#blog" className="text-sm text-[#9ea0a8] hover:text-[#d6b46b] transition-colors">Blog</a> */}
             <a href="#services" className="text-sm text-[#9ea0a8] hover:text-[#d6b46b] transition-colors">Services</a>
             <a href="#contact" className="text-sm text-[#9ea0a8] hover:text-[#d6b46b] transition-colors">Contact</a>
           </nav>
 
           <div className="font-mono text-xs text-[#9ea0a8] flex gap-3">
             <span className="text-[#d6b46b]">[CONFIDENTIAL]</span>
-            <span>|</span>
-            <span>Encrypted · Private · Secure</span>
+            {/* <span>|</span>
+            <span>Encrypted · Private · Secure</span> */}
           </div>
         </div>
 

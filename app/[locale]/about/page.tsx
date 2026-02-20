@@ -1,12 +1,12 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '@/app/components/Header';
+import Footer from '@/app/components/Footer';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/routing';
 import { FileText, ArrowRight } from 'lucide-react';
-import HeroSection from '../../components/about/HeroSection';
-import BioSection from '../../components/about/BioSection';
-import SkillsSection from '../../components/about/SkillsSection';
-import CTASection from '../../components/about/CTASection';
+import HeroSection from '@/app/components/about/HeroSection';
+import BioSection from '@/app/components/about/BioSection';
+import SkillsSection from '@/app/components/about/SkillsSection';
+import CTASection from '@/app/components/about/CTASection';
 
 export async function generateMetadata() {
   const t = await getTranslations('about');
@@ -25,10 +25,7 @@ export default async function AboutPage() {
       <main>
         <HeroSection />
 
-
-
         <BioSection />
-
 
         <SkillsSection />
 
@@ -61,7 +58,7 @@ export default async function AboutPage() {
           </div>
         </section>
 
-        <CTASection />
+        {/* <CTASection /> */}
       </main>
       <Footer />
     </>

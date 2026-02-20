@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 export default function TerminalDevice() {
+
   const terminalRef = useRef<HTMLDivElement>(null);
   const xtermInstance = useRef<any>(null);
   const [isMounted, setIsMounted] = useState(false);
@@ -25,69 +26,69 @@ export default function TerminalDevice() {
 
         // Create terminal instance
         const term = new Terminal({
-      cursorBlink: true,
-      fontFamily: '"IBM Plex Mono", monospace',
-      fontSize: 13,
-      disableStdin: false,
-      scrollback: 300,
-      allowTransparency: true,
-      theme: {
-        background: 'transparent',
-        foreground: '#00ff9f',
-        cursor: '#ff007f',
-        cursorAccent: '#00ff9f',
-        selectionBackground: 'rgba(0,255,159,0.18)',
-        black: '#0a0e14',
-        red: '#ff3366',
-        green: '#00ff9f',
-        yellow: '#ffcc00',
-        blue: '#00d4ff',
-        magenta: '#ff007f',
-        cyan: '#00ffff',
-        white: '#e6e7ea',
-        brightBlack: '#4a5568',
-        brightRed: '#ff5588',
-        brightGreen: '#33ffbb',
-        brightYellow: '#ffdd33',
-        brightBlue: '#33e6ff',
-        brightMagenta: '#ff33aa',
-        brightCyan: '#66ffff',
-        brightWhite: '#ffffff',
-      },
-    });
+          cursorBlink: true,
+          fontFamily: '"IBM Plex Mono", monospace',
+          fontSize: 13,
+          disableStdin: false,
+          scrollback: 300,
+          allowTransparency: true,
+          theme: {
+            background: 'transparent',
+            foreground: '#00ff9f',
+            cursor: '#ff007f',
+            cursorAccent: '#00ff9f',
+            selectionBackground: 'rgba(0,255,159,0.18)',
+            black: '#0a0e14',
+            red: '#ff3366',
+            green: '#00ff9f',
+            yellow: '#ffcc00',
+            blue: '#00d4ff',
+            magenta: '#ff007f',
+            cyan: '#00ffff',
+            white: '#e6e7ea',
+            brightBlack: '#4a5568',
+            brightRed: '#ff5588',
+            brightGreen: '#33ffbb',
+            brightYellow: '#ffdd33',
+            brightBlue: '#33e6ff',
+            brightMagenta: '#ff33aa',
+            brightCyan: '#66ffff',
+            brightWhite: '#ffffff',
+          },
+        });
 
-    // Create and load fit addon
-    const fitAddon = new FitAddon();
-    term.loadAddon(fitAddon);
+        // Create and load fit addon
+        const fitAddon = new FitAddon();
+        term.loadAddon(fitAddon);
 
-    // Open terminal
-    term.open(terminalRef.current);
+        // Open terminal
+        term.open(terminalRef.current);
 
-    // Fit terminal to container
-    const tryFit = () => {
-      try {
-        fitAddon.fit();
-      } catch (e) {
-        // Ignore fit errors
-      }
-    };
+        // Fit terminal to container
+        const tryFit = () => {
+          try {
+            fitAddon.fit();
+          } catch (e) {
+            // Ignore fit errors
+          }
+        };
 
-    tryFit();
-    requestAnimationFrame(tryFit);
-    setTimeout(tryFit, 80);
+        tryFit();
+        requestAnimationFrame(tryFit);
+        setTimeout(tryFit, 80);
 
-    // Handle window resize
-    const handleResize = () => tryFit();
-    window.addEventListener('resize', handleResize);
+        // Handle window resize
+        const handleResize = () => tryFit();
+        window.addEventListener('resize', handleResize);
 
-    // Store instance
-    xtermInstance.current = term;
+        // Store instance
+        xtermInstance.current = term;
 
-    // Run initial demo, then install commands
-    runInitialDemo(term).then(() => {
-      installInteractiveCommands(term, writeTyped);
-      setupTerminalInput(term);
-    });
+        // Run initial demo, then install commands
+        runInitialDemo(term).then(() => {
+          installInteractiveCommands(term, writeTyped);
+          setupTerminalInput(term);
+        });
 
         // Cleanup
         return () => {
@@ -140,7 +141,7 @@ export default function TerminalDevice() {
   const runInitialDemo = async (term: any) => {
     const sleep = (ms: number) =>
       new Promise((resolve) => setTimeout(resolve, ms));
-    
+
     const reduceMotion =
       window.matchMedia &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -206,24 +207,24 @@ export default function TerminalDevice() {
         term.writeln('');
         await writeTypedLocal('\x1b[92m▸ help\x1b[0m            \x1b[90m—\x1b[0m \x1b[96mshow this help\x1b[0m\r\n', 6);
         await writeTypedLocal('\x1b[92m▸ profile\x1b[0m         \x1b[90m—\x1b[0m \x1b[96mshow profile summary\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[92m▸ projects\x1b[0m        \x1b[90m—\x1b[0m \x1b[96mlist projects\x1b[0m\r\n', 6);
+        // await writeTypedLocal('\x1b[92m▸ projects\x1b[0m        \x1b[90m—\x1b[0m \x1b[96mlist projects\x1b[0m\r\n', 6);
         await writeTypedLocal('\x1b[92m▸ services\x1b[0m        \x1b[90m—\x1b[0m \x1b[96mlist services offered\x1b[0m\r\n', 6);
         await writeTypedLocal('\x1b[92m▸ contact\x1b[0m         \x1b[90m—\x1b[0m \x1b[96mshow contact info\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[92m▸ ping\x1b[0m \x1b[93m<host>\x1b[0m     \x1b[90m—\x1b[0m \x1b[96msimulate ping\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[92m▸ deploy\x1b[0m \x1b[93m<name>\x1b[0m   \x1b[90m—\x1b[0m \x1b[96msimulate deploy\x1b[0m\r\n', 6);
         await writeTypedLocal('\x1b[92m▸ whoami\x1b[0m          \x1b[90m—\x1b[0m \x1b[96mshow client info\x1b[0m\r\n', 6);
         await writeTypedLocal('\x1b[92m▸ clear\x1b[0m           \x1b[90m—\x1b[0m \x1b[96mclear terminal\x1b[0m\r\n', 6);
         term.writeln('');
       },
 
+      // Profile
       profile: async () => {
-        await writeTypedLocal('\x1b[1;93m>>> USER PROFILE <<<\x1b[0m\r\n', 10);
+        await writeTypedLocal('\x1b[1;93m>>> PLATFORM ENGINEER PROFILE <<<\x1b[0m\r\n', 10);
         term.writeln('');
-        await writeTypedLocal('\x1b[96m▸ Name:\x1b[0m \x1b[93mMaximiliano Brito Torres\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Role:\x1b[0m \x1b[92mFull-Stack Web Developer\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Location:\x1b[0m \x1b[95mVientiane, Laos\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Specialties:\x1b[0m \x1b[36mSoftware · Web · API · UI/UX · Performance\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Availability:\x1b[0m \x1b[92mRemote / Consultancy\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Name:\x1b[0m \x1b[93mMaxon Torres\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Role:\x1b[0m \x1b[92mSaaS & Marketplace Architect\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Experience:\x1b[0m \x1b[93m8+ years building scalable web platforms\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Focus:\x1b[0m \x1b[36mNext.js · Multi-User Systems · API Architecture\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Mission:\x1b[0m \x1b[92mBuild fast. Scale clean. Grow sustainably.\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Availability:\x1b[0m \x1b[92mRemote · Global Startups\x1b[0m\r\n', 8);
         term.writeln('');
       },
 
@@ -245,26 +246,24 @@ export default function TerminalDevice() {
       },
 
       services: async () => {
-        const svcEls = Array.from(document.querySelectorAll('.service-card h3'));
-        if (!svcEls.length) {
-          await writeTypedLocal('No services found on the page.\r\n', 8);
-          return;
-        }
-        await writeTypedLocal('\r\nServices (summary):\r\n', 8);
-        for (const h of svcEls) {
-          const title = h.textContent?.trim() || '';
-          const card = h.closest('.service-card');
-          const lead = card?.querySelector('.short')?.textContent?.trim() ||
-                       card?.querySelector('p')?.textContent?.trim() || '';
-          await writeTypedLocal(`  • ${title}\r\n`, 6);
-          if (lead) await writeTypedLocal(`      ${lead}\r\n`, 5);
-        }
+        await writeTypedLocal('\x1b[1;95m>>> SERVICES <<<\x1b[0m\r\n', 8);
         term.writeln('');
+
+        await writeTypedLocal('\x1b[92m1. SaaS Product Development\x1b[0m\r\n', 6);
+        await writeTypedLocal('   Scalable multi-user platforms built for growth.\r\n\r\n', 4);
+
+        await writeTypedLocal('\x1b[92m2. Marketplace Platforms\x1b[0m\r\n', 6);
+        await writeTypedLocal('   Multi-sided systems connecting users, vendors, or services.\r\n\r\n', 4);
+
+        await writeTypedLocal('\x1b[92m3. MVP Development\x1b[0m\r\n', 6);
+        await writeTypedLocal('   Lean, production-ready MVPs for early-stage startups.\r\n\r\n', 4);
+
+        await writeTypedLocal('\x1b[90mType "contact" to start a collaboration.\x1b[0m\r\n', 4);
       },
 
       contact: async () => {
-        const email = document.querySelector('.contact-card a[href^="mailto:"]')?.textContent?.trim() || 'hello@maxonreid.com';
-        const phone = document.querySelector('.contact-card a[href^="tel:"]')?.textContent?.trim() || '';
+        const email = document.querySelector('a[href^="mailto:"]')?.textContent?.trim() || 'hello@maxontorres.com';
+        const phone = document.querySelector('a[href^="tel:"]')?.textContent?.trim() || '+856 20 52 373 435';
         const locationCards = Array.from(document.querySelectorAll('.contact-card'));
         const location = locationCards.find(c => c.textContent?.includes('LOCATION'))?.querySelector('.contact-value')?.textContent?.trim() || '';
         await writeTypedLocal('\r\nContact:\r\n', 8);
@@ -345,10 +344,10 @@ export default function TerminalDevice() {
     term.clear();
     await writeTypedLocal('\x1b[1;92m>>> MAXON INTERACTIVE TERMINAL <<<\x1b[0m\r\n', 10);
     term.writeln('');
-    await writeTypedLocal('\x1b[93m[!]\x1b[0m Type \x1b[92m"help"\x1b[0m or use command chips below\r\n', 10);
+    await writeTypedLocal('\x1b[93m[!]\x1b[0m Type \x1b[92m"help"\x1b[0m\r\n', 10);
     term.writeln('');
     await handlers.profile([]);
-    
+
     // Mark as ready for input
     isReadyRef.current = true;
     term.write('\x1b[92m$\x1b[0m ');
@@ -406,7 +405,7 @@ export default function TerminalDevice() {
           // Clear current line
           term.write('\r\x1b[K');
           term.write('\x1b[92m$\x1b[0m ');
-          
+
           historyIndexRef.current++;
           currentLineRef.current = commandHistoryRef.current[historyIndexRef.current];
           term.write(currentLineRef.current);
@@ -419,7 +418,7 @@ export default function TerminalDevice() {
         // Clear current line
         term.write('\r\x1b[K');
         term.write('\x1b[92m$\x1b[0m ');
-        
+
         if (historyIndexRef.current > 0) {
           historyIndexRef.current--;
           currentLineRef.current = commandHistoryRef.current[historyIndexRef.current];
@@ -485,7 +484,9 @@ export default function TerminalDevice() {
         await writeTypedLocal('\x1b[96m▸ Name:\x1b[0m \x1b[93mMaximiliano Brito Torres\x1b[0m\r\n', 8);
         await writeTypedLocal('\x1b[96m▸ Role:\x1b[0m \x1b[92mFull-Stack Web Developer\x1b[0m\r\n', 8);
         await writeTypedLocal('\x1b[96m▸ Location:\x1b[0m \x1b[95mVientiane, Laos\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Experience:\x1b[0m \x1b[93m8+ years across Mexico · Thailand · China · Laos\x1b[0m\r\n', 8);
         await writeTypedLocal('\x1b[96m▸ Specialties:\x1b[0m \x1b[36mSoftware · Web · API · UI/UX · Performance\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Highlight:\x1b[0m \x1b[92mAWS Rekognition tooling — 99.9% uptime\x1b[0m\r\n', 8);
         await writeTypedLocal('\x1b[96m▸ Availability:\x1b[0m \x1b[92mRemote / Consultancy\x1b[0m\r\n', 8);
         term.writeln('');
       },
@@ -508,26 +509,24 @@ export default function TerminalDevice() {
       },
 
       services: async () => {
-        const svcEls = Array.from(document.querySelectorAll('.service-card h3'));
-        if (!svcEls.length) {
-          await writeTypedLocal('No services found on the page.\r\n', 8);
-          return;
-        }
-        await writeTypedLocal('\r\nServices (summary):\r\n', 8);
-        for (const h of svcEls) {
-          const title = h.textContent?.trim() || '';
-          const card = h.closest('.service-card');
-          const lead = card?.querySelector('.short')?.textContent?.trim() ||
-                       card?.querySelector('p')?.textContent?.trim() || '';
-          await writeTypedLocal(`  • ${title}\r\n`, 6);
-          if (lead) await writeTypedLocal(`      ${lead}\r\n`, 5);
-        }
+        await writeTypedLocal('\x1b[1;95m>>> SERVICES <<<\x1b[0m\r\n', 8);
         term.writeln('');
+
+        await writeTypedLocal('\x1b[92m1. SaaS Product Development\x1b[0m\r\n', 6);
+        await writeTypedLocal('   Scalable multi-user platforms built for growth.\r\n\r\n', 4);
+
+        await writeTypedLocal('\x1b[92m2. Marketplace Platforms\x1b[0m\r\n', 6);
+        await writeTypedLocal('   Multi-sided systems connecting users, vendors, or services.\r\n\r\n', 4);
+
+        await writeTypedLocal('\x1b[92m3. MVP Development\x1b[0m\r\n', 6);
+        await writeTypedLocal('   Lean, production-ready MVPs for early-stage startups.\r\n\r\n', 4);
+
+        await writeTypedLocal('\x1b[90mType "contact" to start a collaboration.\x1b[0m\r\n', 4);
       },
 
       contact: async () => {
-        const email = document.querySelector('.contact-card a[href^="mailto:"]')?.textContent?.trim() || 'hello@maxonreid.com';
-        const phone = document.querySelector('.contact-card a[href^="tel:"]')?.textContent?.trim() || '';
+        const email = document.querySelector('a[href^="mailto:"]')?.textContent?.trim() || 'hello@maxontorres.com';
+        const phone = document.querySelector('a[href^="tel:"]')?.textContent?.trim() || '+856 20 52 373 435';
         const locationCards = Array.from(document.querySelectorAll('.contact-card'));
         const location = locationCards.find(c => c.textContent?.includes('LOCATION'))?.querySelector('.contact-value')?.textContent?.trim() || '';
         await writeTypedLocal('\r\nContact:\r\n', 8);
@@ -597,7 +596,7 @@ export default function TerminalDevice() {
       await writeTypedLocal(`Command not found: ${cmd}\r\n`, 8);
       await writeTypedLocal('Type "help" to list available commands.\r\n', 8);
     }
-    
+
     // Show prompt again
     term.write('\x1b[92m$\x1b[0m ');
   };
