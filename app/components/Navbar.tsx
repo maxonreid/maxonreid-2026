@@ -145,7 +145,7 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="nav-link inline-flex items-center justify-center p-2 md:hidden"
+          className="inline-flex items-center justify-center rounded-lg p-2 text-[var(--nav-text)] transition-colors hover:bg-[var(--nav-hover-bg)] hover:text-[var(--nav-active)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] md:hidden"
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
           aria-label="Toggle navigation menu"
@@ -166,7 +166,7 @@ export default function Navbar() {
         >
           <Link 
             href="/about" 
-            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors ${pathname?.includes('/about') ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
+            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${pathname?.includes('/about') ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
             locale={locale}
             onClick={() => setIsMenuOpen(false)}
           >
@@ -174,14 +174,14 @@ export default function Navbar() {
           </Link>
           <a
             href={`/${locale}#services`}
-            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors ${activeSection === 'services' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
+            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${activeSection === 'services' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
             onClick={(e) => handleHashClick(e, 'services')}
           >
             {t('services')}
           </a>
           <a
             href={`/${locale}#contact`}
-            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors ${activeSection === 'contact' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
+            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${activeSection === 'contact' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
             onClick={(e) => handleHashClick(e, 'contact')}
           >
             {t('contact')}
