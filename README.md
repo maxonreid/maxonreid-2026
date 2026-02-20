@@ -1,4 +1,4 @@
-# Maxon Reid Portfolio 2026
+# Maxon Torres Portfolio 2026
 
 A modern, bilingual portfolio website built with Next.js 16, featuring internationalization support for English and Lao languages.
 
@@ -7,7 +7,7 @@ A modern, bilingual portfolio website built with Next.js 16, featuring internati
 - 🌍 **Internationalization**: Full support for English (en) and Lao (lo) languages using `next-intl`
 - 📱 **Responsive Design**: Built with Tailwind CSS v4 for seamless mobile and desktop experiences
 - 🎨 **Modern UI**: Clean interface with Lucide React icons and smooth animations
-- 💼 **Portfolio Sections**: 
+- 💼 **Portfolio Sections**:
   - Hero/Landing section
   - About section
   - Projects showcase with detailed project pages
@@ -21,7 +21,7 @@ A modern, bilingual portfolio website built with Next.js 16, featuring internati
 
 ### Prerequisites
 
-- Node.js 20+ 
+- Node.js 20+
 - npm, yarn, pnpm, or bun
 
 ### Installation
@@ -46,6 +46,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) to view the site.
 
 The app supports locale routing:
+
 - English: `http://localhost:3000/en`
 - Lao: `http://localhost:3000/lo`
 
@@ -92,10 +93,12 @@ npm start
 ## 🌐 Adding Translations
 
 Edit the translation files in the `messages/` directory:
+
 - `messages/en.json` for English
 - `messages/lo.json` for Lao
 
 To add a new locale:
+
 1. Add translation file to `messages/` directory
 2. Update `routing.ts` to include the new locale
 3. Update `i18n.ts` if needed

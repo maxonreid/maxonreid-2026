@@ -36,19 +36,44 @@ const notoSansLao = Noto_Sans_Lao({
 
 export const metadata: Metadata = {
   title: {
-    default: "Maximiliano Brito Torres — Full-Stack Web Developer",
-    template: "%s | Maxon Solutions",
+    default:
+      "Maximiliano Brito Torres | Senior Full-Stack Developer (Next.js, React, Node.js) — Remote",
+    template: "%s | Maxon Torres",
   },
   description:
-    "Next.js & Full-Stack Web Developer building fast, scalable web apps for businesses in Laos and globally.",
+    "Senior Full-Stack Developer specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture. Building scalable, high-performance web applications for global companies. Available for remote work.",
   keywords: [
+    "Senior Full Stack Developer",
     "Next.js Developer",
     "React Developer",
-    "Full Stack Developer",
-    "Software Developer Laos",
-    "Web Developer Laos",
-    "Freelance Web Developer",
+    "Node.js Developer",
+    "GraphQL Developer",
+    "AWS Serverless Developer",
+    "Remote Software Engineer",
+    "JavaScript Engineer",
+    "Full Stack Developer Laos",
   ],
+  openGraph: {
+    title:
+      "Maximiliano Brito Torres | Senior Full-Stack Developer (Next.js, React, Node.js)",
+    description:
+      "Building scalable web applications with Next.js, React, Node.js and AWS. Available for remote opportunities worldwide.",
+    url: "https://maxontorres.com",
+    siteName: "Maxon Torres",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Maximiliano Brito Torres - Full Stack Developer",
+      },
+    ],
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default async function LocaleLayout({

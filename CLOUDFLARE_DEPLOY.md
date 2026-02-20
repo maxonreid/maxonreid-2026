@@ -8,6 +8,10 @@ This project is ready for Cloudflare Pages deployment.
 2. ✅ Added `.node-version` file to specify Node.js 20
 3. ✅ Build tested successfully
 
+## ⚠️ Important Note
+
+The `package-lock.json` has been regenerated to ensure clean dependency installation on Cloudflare Pages.
+
 ## Deployment Steps
 
 ### 1. Push to Git Repository
