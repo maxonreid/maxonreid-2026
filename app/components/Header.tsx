@@ -87,7 +87,6 @@ export default function Header() {
             width={40}
             height={40}
             priority
-            unoptimized
           />
         </Link>
 
