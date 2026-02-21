@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/routing';
 
@@ -10,6 +10,7 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   const t = useTranslations('nav');
   
   // Extract locale from pathname
@@ -80,7 +81,8 @@ export default function Navbar() {
     e.preventDefault();
     
     if (!isHomePage) {
-      window.location.href = `/${locale}#${hash}`;
+      // Use Next.js router for client-side navigation
+      router.push(`/${locale}#${hash}`);
       setIsMenuOpen(false);
       return;
     }
@@ -127,20 +129,22 @@ export default function Navbar() {
           >
             {t('about')}
           </Link>
-          <a
-            href={`/${locale}#services`}
+          <Link
+            href={`/#services`}
             className={`nav-link ${activeSection === 'services' ? 'nav-link-active' : ''}`}
             onClick={(e) => handleHashClick(e, 'services')}
+            locale={locale}
           >
             {t('services')}
-          </a>
-          <a
-            href={`/${locale}#contact`}
+          </Link>
+          <Link
+            href={`/#contact`}
             className={`nav-link ${activeSection === 'contact' ? 'nav-link-active' : ''}`}
             onClick={(e) => handleHashClick(e, 'contact')}
+            locale={locale}
           >
             {t('contact')}
-          </a>
+          </Link>
         </div>
 
         <button
@@ -172,20 +176,22 @@ export default function Navbar() {
           >
             {t('about')}
           </Link>
-          <a
-            href={`/${locale}#services`}
+          <Link
+            href={`/#services`}
             className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${activeSection === 'services' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
             onClick={(e) => handleHashClick(e, 'services')}
+            locale={locale}
           >
             {t('services')}
-          </a>
-          <a
-            href={`/${locale}#contact`}
+          </Link>
+          <Link
+            href={`/#contact`}
             className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${activeSection === 'contact' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
             onClick={(e) => handleHashClick(e, 'contact')}
+            locale={locale}
           >
             {t('contact')}
-          </a>
+          </Link>
         </div>
       )}
     </nav>
