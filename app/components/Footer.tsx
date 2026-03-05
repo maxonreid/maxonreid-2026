@@ -19,14 +19,12 @@ export default function Footer() {
 
           <div className="font-mono text-xs text-[#9ea0a8] flex gap-3">
             <span className="text-[#d6b46b]">[CONFIDENTIAL]</span>
-            {/* <span>|</span>
-            <span>Encrypted · Private · Secure</span> */}
           </div>
         </div>
 
         <div className="space-y-3">
           <div className="flex flex-col gap-2">
-            <a href="mailto:hello@maxontorres.com" className="text-sm text-[#e6e7ea] hover:text-[#d6b46b] transition-colors">hello@maxontorres.com</a>
+            <a href="mailto:hello@maxontorres.com" className="text-sm text-[#e6e7ea] hover:text-[#d6b46b] transition-colors">hello@MaxonTorres.com</a>
             <a href="https://github.com/maxonreid" className="text-sm text-[#9ea0a8] hover:text-[#d6b46b] transition-colors">
               GitHub
             </a>

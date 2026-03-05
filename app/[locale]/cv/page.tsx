@@ -50,10 +50,6 @@ export default function CV() {
                         border: none !important;
                     }
 
-                    .print-break {
-                        page-break-before: always;
-                    }
-
                     a {
                         color: inherit !important;
                         text-decoration: none !important;
@@ -65,8 +61,27 @@ export default function CV() {
                     }
 
                     .cv-paper {
-                        font-size: 10.75pt;
+                        font-size: 12pt;
                         line-height: 1.45;
+                    }
+
+                    .cv-section-title {
+                        font-size: 11pt;
+                    }
+
+                    .cv-paper .text-sm,
+                    .cv-paper .text-\[0\.96rem\],
+                    .cv-paper .text-\[0\.98rem\] {
+                        font-size: 11pt !important;
+                    }
+
+                    .cv-paper .text-base {
+                        font-size: 12pt !important;
+                    }
+
+                    .cv-paper .text-3xl {
+                        font-size: 21pt !important;
+                        line-height: 1.2;
                     }
                 }
             `}</style>
@@ -98,13 +113,13 @@ export default function CV() {
                                     MAXIMILIANO BRITO TORRES
                                 </h1>
                                 <h2 className="text-base font-medium text-gray-700 mb-3">
-                                    Full Stack Engineer | Cloud Solutions Architect
+                                    Full Stack Engineer | Next.js, React, Node.js
                                 </h2>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-sm text-gray-600">
                                     <span>Vientiane, Laos (GMT+7)</span>
                                     <span>+856 20 52 373 435</span>
-                                    <a href="mailto:britomaximiliano83@outlook.com" className="hover:text-slate-900">
-                                        hello@maxontorres.com
+                                    <a href="mailto:hello@maxontorres.com" className="hover:text-slate-900">
+                                        hello@MaxonTorres.com
                                     </a>
                                     <a href="https://maxontorres.com" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900">
                                         MaxonTorres.com
@@ -182,7 +197,7 @@ export default function CV() {
                         {/* ComCenter College */}
                         <div className="mb-5">
                             <div className="flex justify-between items-baseline gap-3 mb-1">
-                                <h4 className="text-base font-bold text-gray-900">ComCenter College | IT Lecturer & Technical Consultant</h4>
+                                <h4 className="text-base font-bold text-gray-900">ComCenter College | IT Lecturer (Web & UI/UX)</h4>
                                 <span className="text-sm text-gray-600">Jan 2024 – Oct 2025</span>
                             </div>
                             <p className="text-sm text-gray-600 mb-2 italic">Vientiane, Laos</p>
@@ -206,7 +221,7 @@ export default function CV() {
                         </div>
 
                         {/* TISCO Financial Group */}
-                        <div className="mb-5 print-break">
+                        <div className="mb-5">
                             <div className="flex justify-between items-baseline gap-3 mb-1">
                                 <h4 className="text-base font-bold text-gray-900">TISCO Financial Group | Full Stack Developer (Cloud Focus)</h4>
                                 <span className="text-sm text-gray-600">Oct 2019 – Jan 2021</span>

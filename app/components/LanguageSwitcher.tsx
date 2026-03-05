@@ -2,18 +2,17 @@
 
 import { useState, useTransition } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
-import { US } from 'country-flag-icons/react/3x2';
-import { LA } from 'country-flag-icons/react/3x2';
+import { US, LA } from 'country-flag-icons/react/3x2';
 
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
   const router = useRouter();
-  
+
   // Detect current locale from pathname
   const currentLocale = pathname?.startsWith('/lo') ? 'lo' : 'en';
-  
+
   const languages = [
     { code: 'en', label: 'English', flag: US },
     { code: 'lo', label: 'ລາວ', flag: LA }
@@ -24,14 +23,14 @@ export default function LanguageSwitcher() {
 
   const switchLanguage = (locale: string) => {
     if (locale === currentLocale) return;
-    
+
     const currentPath = pathname || '';
     let newPath: string;
-    
+
     console.log('Current path:', currentPath);
     console.log('Current locale:', currentLocale);
     console.log('Switching to locale:', locale);
-    
+
     // Remove current locale prefix if it exists
     let pathWithoutLocale = currentPath;
     if (currentPath.startsWith('/lo/') || currentPath === '/lo') {
@@ -39,26 +38,26 @@ export default function LanguageSwitcher() {
     } else if (currentPath.startsWith('/en/') || currentPath === '/en') {
       pathWithoutLocale = currentPath.replace(/^\/en/, '');
     }
-    
+
     // Ensure pathWithoutLocale starts with / if it's not empty
     if (pathWithoutLocale && !pathWithoutLocale.startsWith('/')) {
       pathWithoutLocale = '/' + pathWithoutLocale;
     }
-    
+
     // If path is empty, make it root
     if (!pathWithoutLocale) {
       pathWithoutLocale = '/';
     }
-    
+
     console.log('Path without locale:', pathWithoutLocale);
-    
+
     // Add new locale prefix (both locales need prefix now)
     newPath = `/${locale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
-    
+
     console.log('New path:', newPath);
-    
+
     setIsOpen(false);
-    
+
     // Use startTransition for better UX
     startTransition(() => {
       router.push(newPath);
@@ -94,7 +93,7 @@ export default function LanguageSwitcher() {
           />
         </svg>
       </button>
-      
+
       {isOpen && (
         <div className="absolute top-[calc(100%+8px)] right-0 min-w-[140px] bg-[#0f1113] border border-white/10 rounded-lg p-1.5 shadow-[0_8px_24px_rgba(0,0,0,0.3)] z-[100] animate-[slideDown_0.2s_ease]">
           {languages.map((lang) => {
@@ -103,8 +102,8 @@ export default function LanguageSwitcher() {
               <button
                 key={lang.code}
                 className={`flex items-center gap-2.5 w-full p-2.5 pl-3 bg-transparent border-none rounded-lg text-sm cursor-pointer transition-all ${
-                  lang.code === currentLocale 
-                    ? 'bg-[#d6b46b]/10 text-[#d6b46b] font-semibold' 
+                  lang.code === currentLocale
+                    ? 'bg-[#d6b46b]/10 text-[#d6b46b] font-semibold'
                     : 'text-[#e6e7ea] hover:bg-white/[0.03]'
                 } disabled:opacity-50 disabled:cursor-not-allowed`}
                 onClick={() => switchLanguage(lang.code)}
@@ -117,7 +116,7 @@ export default function LanguageSwitcher() {
           })}
         </div>
       )}
-      
+
       {isOpen && (
         <div
           className="fixed inset-0 z-[99]"
