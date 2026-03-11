@@ -2,389 +2,204 @@
 
 import { useState, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
+import { Search, X } from 'lucide-react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import BlogCard from '../../components/home/BlogCard';
+import { articles as allArticles } from '@/app/lib/articles';
 
-// Mock articles data - expand with more articles
-const allArticles = [
-  {
-    id: 1,
-    title: 'Building Secure APIs at Scale',
-    excerpt:
-      'How to design modern REST APIs with proper authentication, rate-limiting, and observability from day one.',
-    date: 'Dec 10, 2024',
-    readTime: '8 min',
-    tags: ['Security', 'Backend', 'API'],
-    image: 'https://picsum.photos/id/60/400/240',
-    category: 'backend',
-  },
-  {
-    id: 2,
-    title: 'Zero Downtime Deployments with Docker',
-    excerpt:
-      'A practical guide to rolling updates and blue/green strategies for containerized web apps.',
-    date: 'Nov 22, 2024',
-    readTime: '6 min',
-    tags: ['DevOps', 'Docker'],
-    image: 'https://picsum.photos/id/1/400/240',
-    category: 'devops',
-  },
-  {
-    id: 3,
-    title: 'React Server Components Explained',
-    excerpt:
-      'An in-depth look at how RSC works under the hood, plus real-world patterns for Next.js.',
-    date: 'Nov 5, 2024',
-    readTime: '10 min',
-    tags: ['React', 'Next.js'],
-    image: 'https://picsum.photos/id/326/400/240',
-    category: 'frontend',
-  },
-  {
-    id: 4,
-    title: 'TypeScript Best Practices for 2025',
-    excerpt:
-      'Advanced TypeScript patterns and practices for building maintainable large-scale applications.',
-    date: 'Jan 15, 2025',
-    readTime: '12 min',
-    tags: ['TypeScript', 'Best Practices'],
-    image: 'https://picsum.photos/id/180/400/240',
-    category: 'frontend',
-  },
-  {
-    id: 5,
-    title: 'Database Optimization Techniques',
-    excerpt:
-      'Proven strategies for optimizing PostgreSQL queries and improving database performance at scale.',
-    date: 'Jan 8, 2025',
-    readTime: '9 min',
-    tags: ['Database', 'PostgreSQL', 'Performance'],
-    image: 'https://picsum.photos/id/1011/400/240',
-    category: 'backend',
-  },
-  {
-    id: 6,
-    title: 'Building Real-Time Features with WebSockets',
-    excerpt:
-      'Implementing live updates, chat, and collaborative features with WebSocket connections.',
-    date: 'Dec 28, 2024',
-    readTime: '7 min',
-    tags: ['WebSockets', 'Real-time'],
-    image: 'https://picsum.photos/id/1015/400/240',
-    category: 'backend',
-  },
-  {
-    id: 7,
-    title: 'CSS Grid vs Flexbox: When to Use Each',
-    excerpt:
-      'A comprehensive comparison of CSS layout systems with practical examples and use cases.',
-    date: 'Dec 5, 2024',
-    readTime: '5 min',
-    tags: ['CSS', 'Frontend'],
-    image: 'https://picsum.photos/id/169/400/240',
-    category: 'frontend',
-  },
-  {
-    id: 8,
-    title: 'Microservices Architecture Patterns',
-    excerpt:
-      'Design patterns and best practices for building scalable microservices-based systems.',
-    date: 'Nov 18, 2024',
-    readTime: '11 min',
-    tags: ['Architecture', 'Microservices'],
-    image: 'https://picsum.photos/id/3/400/240',
-    category: 'backend',
-  },
-  {
-    id: 9,
-    title: 'CI/CD Pipeline with GitHub Actions',
-    excerpt:
-      'Complete guide to setting up automated testing and deployment workflows for modern web apps.',
-    date: 'Nov 10, 2024',
-    readTime: '8 min',
-    tags: ['CI/CD', 'GitHub', 'DevOps'],
-    image: 'https://picsum.photos/id/10/400/240',
-    category: 'devops',
-  },
-];
-
-const categories = [
-  { id: 'all', label: 'All Articles', count: allArticles.length },
-  { 
-    id: 'frontend', 
-    label: 'Frontend', 
-    count: allArticles.filter(a => a.category === 'frontend').length 
-  },
-  { 
-    id: 'backend', 
-    label: 'Backend', 
-    count: allArticles.filter(a => a.category === 'backend').length 
-  },
-  { 
-    id: 'devops', 
-    label: 'DevOps', 
-    count: allArticles.filter(a => a.category === 'devops').length 
-  },
-];
-
-const sortOptions = [
-  { id: 'recent', label: 'Most Recent' },
-  { id: 'oldest', label: 'Oldest First' },
-  { id: 'longest', label: 'Longest Read' },
-  { id: 'shortest', label: 'Shortest Read' },
-];
+const SORT_OPTIONS = ['recent', 'oldest', 'longest', 'shortest'] as const;
+type SortOption = typeof SORT_OPTIONS[number];
 
 export default function ArticlesPage() {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [sortBy, setSortBy] = useState('recent');
+  const [sortBy, setSortBy] = useState<SortOption>('recent');
   const [searchQuery, setSearchQuery] = useState('');
   const t = useTranslations('articles');
 
   const categories = [
-    { id: 'all', label: t('categories.all'), count: allArticles.length },
-    { 
-      id: 'frontend', 
-      label: t('categories.frontend'), 
-      count: allArticles.filter(a => a.category === 'frontend').length 
-    },
-    { 
-      id: 'backend', 
-      label: t('categories.backend'), 
-      count: allArticles.filter(a => a.category === 'backend').length 
-    },
-    { 
-      id: 'devops', 
-      label: t('categories.devops'), 
-      count: allArticles.filter(a => a.category === 'devops').length 
-    },
+    { id: 'all',      label: t('categories.all'),      count: allArticles.length },
+    { id: 'frontend', label: t('categories.frontend'), count: allArticles.filter(a => a.category === 'frontend').length },
+    { id: 'backend',  label: t('categories.backend'),  count: allArticles.filter(a => a.category === 'backend').length },
+    { id: 'devops',   label: t('categories.devops'),   count: allArticles.filter(a => a.category === 'devops').length },
   ];
 
-  const sortOptions = [
-    { id: 'recent', label: t('sortOptions.recent') },
-    { id: 'oldest', label: t('sortOptions.oldest') },
-    { id: 'longest', label: t('sortOptions.longest') },
-    { id: 'shortest', label: t('sortOptions.shortest') },
-  ];
-
-  // Filter and sort articles
   const filteredArticles = useMemo(() => {
-    let filtered = allArticles;
+    let result = allArticles;
 
-    // Filter by category
     if (activeCategory !== 'all') {
-      filtered = filtered.filter(article => article.category === activeCategory);
+      result = result.filter(a => a.category === activeCategory);
     }
 
-    // Filter by search query
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-      filtered = filtered.filter(
-        article =>
-          article.title.toLowerCase().includes(query) ||
-          article.excerpt.toLowerCase().includes(query) ||
-          article.tags.some(tag => tag.toLowerCase().includes(query))
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase();
+      result = result.filter(
+        a =>
+          a.title.toLowerCase().includes(q) ||
+          a.excerpt.toLowerCase().includes(q) ||
+          a.tags.some(tag => tag.toLowerCase().includes(q))
       );
     }
 
-    // Sort articles
-    const sorted = [...filtered].sort((a, b) => {
+    return [...result].sort((a, b) => {
       switch (sortBy) {
-        case 'recent':
-          return new Date(b.date).getTime() - new Date(a.date).getTime();
-        case 'oldest':
-          return new Date(a.date).getTime() - new Date(b.date).getTime();
-        case 'longest':
-          return parseInt(b.readTime) - parseInt(a.readTime);
-        case 'shortest':
-          return parseInt(a.readTime) - parseInt(b.readTime);
-        default:
-          return 0;
+        case 'recent':  return new Date(b.date).getTime() - new Date(a.date).getTime();
+        case 'oldest':  return new Date(a.date).getTime() - new Date(b.date).getTime();
+        case 'longest': return parseInt(b.readTime) - parseInt(a.readTime);
+        case 'shortest':return parseInt(a.readTime) - parseInt(b.readTime);
+        default:        return 0;
       }
     });
-
-    return sorted;
   }, [activeCategory, sortBy, searchQuery]);
 
   return (
     <>
-      
       <Header />
 
-      <main className="articles-page">
-        {/* Hero Section */}
-        <section className="articles-hero">
-          <div className="container">
-            <div className="articles-hero-content">
-              <div className="hero-label mono muted">
-                {t('heroLabel')} — {allArticles.length} {t('articleCount', { count: allArticles.length }).split(' ')[1]}
-              </div>
-              <h1 className="articles-hero-title">
-                {t('heroTitle').split(' & ')[0]} & <span className="gold">{t('heroTitle').split(' & ')[1]}</span>
-              </h1>
-              <p className="articles-hero-sub">
-                {t('heroSubtitle')}
-              </p>
-            </div>
+      <main style={{ background: 'var(--bg-primary)' }}>
+
+        {/* ── Hero ─────────────────────────────────────────────────────────── */}
+        <section className="pt-32 pb-16 w-[92%] max-w-[1200px] mx-auto">
+          <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-6">
+            {t('heroLabel')} — {allArticles.length} {allArticles.length === 1 ? 'ARTICLE' : 'ARTICLES'}
           </div>
+          <h1 className="text-5xl md:text-7xl font-bold text-[#e6e7ea] leading-none mb-6">
+            {t('heroTitle').split(' & ')[0]}{' '}
+            &{' '}
+            <span className="text-[#d6b46b]">{t('heroTitle').split(' & ')[1]}</span>
+          </h1>
+          <p className="text-xl text-[#9ea0a8] max-w-2xl leading-relaxed">
+            {t('heroSubtitle')}
+          </p>
         </section>
 
-        {/* Filters & Search */}
-        <section className="articles-controls">
-          <div className="container">
-            <div className="controls-grid">
+        {/* ── Controls ─────────────────────────────────────────────────────── */}
+        <section className="border-t border-white/[0.06] py-6 sticky top-[72px] z-30 backdrop-blur-md"
+          style={{ backgroundColor: 'color-mix(in srgb, var(--bg-primary) 85%, transparent)' }}
+        >
+          <div className="w-[92%] max-w-[1200px] mx-auto flex flex-col gap-4">
+
+            {/* Search + Sort row */}
+            <div className="flex flex-col sm:flex-row gap-3">
               {/* Search */}
-              <div className="search-wrapper">
-                <svg
-                  className="search-icon"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
+              <div className="relative flex-1">
+                <Search
+                  size={16}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-[#9ea0a8] pointer-events-none"
                   aria-hidden="true"
-                >
-                  <circle
-                    cx="11"
-                    cy="11"
-                    r="8"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                  <path
-                    d="M21 21l-4.35-4.35"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                </svg>
+                />
                 <input
                   type="search"
-                  className="search-input"
                   placeholder={t('searchPlaceholder')}
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   aria-label="Search articles"
+                  className="w-full pl-9 pr-9 py-2.5 rounded-lg border border-white/[0.06] bg-white/[0.02] text-[#e6e7ea] text-sm font-mono placeholder:text-[#9ea0a8] focus:outline-none focus:border-[#d6b46b]/50 transition-colors"
                 />
                 {searchQuery && (
                   <button
-                    className="search-clear"
                     onClick={() => setSearchQuery('')}
                     aria-label="Clear search"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-[#9ea0a8] hover:text-[#e6e7ea] transition-colors"
                   >
-                    ×
+                    <X size={14} />
                   </button>
                 )}
               </div>
 
-              {/* Sort Dropdown */}
-              <div className="sort-wrapper">
-                <label htmlFor="sort-select" className="sort-label mono">
+              {/* Sort */}
+              <div className="flex items-center gap-2 shrink-0">
+                <span className="font-mono text-xs text-[#9ea0a8] whitespace-nowrap">
                   {t('sortBy')}
-                </label>
+                </span>
                 <select
-                  id="sort-select"
-                  className="sort-select mono"
                   value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value)}
+                  onChange={(e) => setSortBy(e.target.value as SortOption)}
+                  className="bg-white/[0.02] border border-white/[0.06] text-[#9ea0a8] text-sm font-mono rounded-lg px-3 py-2.5 focus:outline-none focus:border-[#d6b46b]/50 transition-colors cursor-pointer"
+                  style={{ backgroundColor: 'var(--bg-secondary)' }}
                 >
-                  {sortOptions.map((option) => (
-                    <option key={option.id} value={option.id}>
-                      {option.label}
+                  {SORT_OPTIONS.map((id) => (
+                    <option key={id} value={id}>
+                      {t(`sortOptions.${id}`)}
                     </option>
                   ))}
                 </select>
               </div>
             </div>
 
-            {/* Category Filters */}
-            <div className="category-filters" role="tablist" aria-label="Filter by category">
+            {/* Category pills */}
+            <div className="flex gap-2 flex-wrap" role="tablist" aria-label="Filter by category">
               {categories.map((cat) => (
                 <button
                   key={cat.id}
                   role="tab"
                   aria-selected={activeCategory === cat.id}
-                  className={`category-btn ${
-                    activeCategory === cat.id ? 'active' : ''
-                  }`}
                   onClick={() => setActiveCategory(cat.id)}
+                  className={`px-4 py-2 rounded-lg border font-mono text-sm transition-all flex items-center gap-2 ${
+                    activeCategory === cat.id
+                      ? 'bg-[#d6b46b]/10 border-[#d6b46b] text-[#d6b46b]'
+                      : 'bg-transparent border-white/[0.06] text-[#9ea0a8] hover:border-[#d6b46b]/50 hover:text-[#e6e7ea]'
+                  }`}
                 >
                   {cat.label}
-                  <span className="category-count mono">{cat.count}</span>
+                  <span className={`text-xs px-1.5 py-0.5 rounded-full font-mono ${
+                    activeCategory === cat.id
+                      ? 'bg-[#d6b46b]/20 text-[#d6b46b]'
+                      : 'bg-white/[0.06] text-[#9ea0a8]'
+                  }`}>
+                    {cat.count}
+                  </span>
                 </button>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Articles Grid */}
-        <section className="articles-content">
-          <div className="container">
-            {filteredArticles.length > 0 ? (
-              <>
-                <div className="articles-meta mono muted">
-                  {filteredArticles.length === 1 
-                    ? t('showing', { count: filteredArticles.length })
-                    : t('showingPlural', { count: filteredArticles.length })
-                  }
-                </div>
-                <div className="grid blog-cards" role="tabpanel">
-                  {filteredArticles.map((article, index) => (
-                    <div
-                      key={article.id}
-                      className="blog-card-wrapper"
-                      style={{
-                        animationDelay: `${index * 80}ms`,
-                      }}
-                    >
-                      <BlogCard article={article} />
-                    </div>
-                  ))}
-                </div>
-              </>
-            ) : (
-              <div className="no-results">
-                <svg
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="no-results-icon"
-                >
-                  <circle
-                    cx="11"
-                    cy="11"
-                    r="8"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                  <path
-                    d="M21 21l-4.35-4.35"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <h3>{t('noResults.title')}</h3>
-                <p>
-                  {t('noResults.message')}
-                </p>
-                <button
-                  className="cta ghost"
-                  onClick={() => {
-                    setSearchQuery('');
-                    setActiveCategory('all');
-                  }}
-                >
-                  {t('noResults.clearFilters')}
-                </button>
+        {/* ── Grid ─────────────────────────────────────────────────────────── */}
+        <section className="py-16 w-[92%] max-w-[1200px] mx-auto" role="tabpanel">
+          {filteredArticles.length > 0 ? (
+            <>
+              <p className="font-mono text-xs text-[#9ea0a8] mb-8">
+                {filteredArticles.length === 1
+                  ? t('showing', { count: filteredArticles.length })
+                  : t('showingPlural', { count: filteredArticles.length })}
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredArticles.map((article, index) => (
+                  <div
+                    key={article.id}
+                    className="animate-[fadeInUp_0.5s_ease-out_forwards] opacity-0"
+                    style={{ animationDelay: `${index * 80}ms` }}
+                  >
+                    <BlogCard article={article} />
+                  </div>
+                ))}
               </div>
-            )}
-          </div>
+            </>
+          ) : (
+            <div className="flex flex-col items-center justify-center py-24 text-center gap-4">
+              <div className="w-16 h-16 rounded-full border border-white/[0.06] flex items-center justify-center mb-2">
+                <Search size={24} className="text-[#9ea0a8]" aria-hidden="true" />
+              </div>
+              <h3 className="text-xl font-bold text-[#e6e7ea]">
+                {t('noResults.title')}
+              </h3>
+              <p className="text-[#9ea0a8] max-w-sm leading-relaxed">
+                {t('noResults.message')}
+              </p>
+              <button
+                onClick={() => { setSearchQuery(''); setActiveCategory('all'); }}
+                className="mt-2 px-5 py-2.5 rounded-lg border border-white/[0.06] font-mono text-sm text-[#9ea0a8] hover:border-[#d6b46b]/50 hover:text-[#e6e7ea] transition-all"
+              >
+                {t('noResults.clearFilters')}
+              </button>
+            </div>
+          )}
         </section>
+
       </main>
 
       <Footer />
-      
     </>
   );
 }

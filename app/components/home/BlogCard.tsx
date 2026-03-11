@@ -2,16 +2,10 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { ArrowRight } from 'lucide-react';
 
-interface Article {
-  id: number;
-  title: string;
-  excerpt: string;
-  date: string;
-  readTime: string;
-  tags: string[];
-  image: string;
-}
+import type { Article } from '@/app/lib/articles';
 
 interface BlogCardProps {
   article: Article;
@@ -20,10 +14,11 @@ interface BlogCardProps {
 export default function BlogCard({ article }: BlogCardProps) {
   const pathname = usePathname();
   const locale = pathname?.startsWith('/lo') ? '/lo' : '/en';
+  const t = useTranslations('blog');
   
   return (
-    <Link href={`${locale}/articles/${article.id}`} className="block group">
-      <article className="bg-white/[0.02] border border-white/[0.06] rounded-xl overflow-hidden hover:border-[#d6b46b]/50 hover:-translate-y-1 transition-all hover:shadow-[0_12px_40px_rgba(214,180,107,0.1)]" tabIndex={0}>
+    <Link href={`${locale}/articles/${article.slug}`} className="block group">
+      <article className="relative bg-white/[0.02] border border-white/[0.06] rounded-xl overflow-hidden hover:border-[#d6b46b]/50 hover:-translate-y-1 transition-all hover:shadow-[0_12px_40px_rgba(214,180,107,0.1)]" tabIndex={0}>
       <div className="relative aspect-video overflow-hidden">
         <img 
           src={article.image} 
@@ -62,23 +57,8 @@ export default function BlogCard({ article }: BlogCardProps) {
           
           <div>
             <span className="font-mono text-sm text-[#d6b46b] inline-flex items-center gap-2">
-              Read More
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path
-                  d="M3 6H9M9 6L6 3M9 6L6 9"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              {t('readMore')}
+              <ArrowRight size={12} />
             </span>
           </div>
         </div>

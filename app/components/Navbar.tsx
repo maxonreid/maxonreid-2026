@@ -118,8 +118,9 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/work"
-            className={`nav-link ${pathname?.includes('/work') ? 'nav-link-active' : ''}`}
+            href={`/#work`}
+            className={`nav-link ${activeSection === 'work' ? 'nav-link-active' : ''}`}
+            onClick={(e) => handleHashClick(e, 'work')}
             locale={locale}
           >
             {t('work')}
