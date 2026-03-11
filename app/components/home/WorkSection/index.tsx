@@ -7,42 +7,20 @@ import ProjectCard from './ProjectCard';
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Marketplace PWA',
-    year: '2025',
-    image: 'https://picsum.photos/id/1015/1600/900',
+    title: 'OrderBridge',
+    year: '2026',
+    image: '/images/projects/orderbridge/orderbridge-cover.png',
     images: [
-      'https://picsum.photos/id/1015/1600/900',
-      'https://picsum.photos/id/1015/1200/675',
+      '/images/projects/orderbridge/orderbridge-cover.png',
+      '/images/projects/orderbridge/orderbridge-dashboard.png',
+      '/images/projects/orderbridge/orderbridge-mock-pos.png',
+      '/images/projects/orderbridge/orderbridge-simulator.png',
     ],
-    desc: 'Realtime analytics and secure settlement flows for cross-border merchants — focused on security and reconciliation.',
-    tags: ['Next.js', 'Node.js', 'Postgres'],
-    category: 'fintech',
-  },
-  {
-    id: 2,
-    title: 'Platform to Track Construction Materials',
-    year: '2024',
-    image: 'https://picsum.photos/id/180/1600/900',
-    images: [
-      'https://picsum.photos/id/180/1600/900',
-      'https://picsum.photos/id/180/1200/675',
-    ],
-    desc: 'Custom dashboard for real-time product metrics, user cohorts, and revenue tracking. Built with modern stack for speed.',
-    tags: ['React', 'TypeScript', 'PostgreSQL'],
-    category: 'saas',
-  },
-  {
-    id: 3,
-    title: 'Booking Appointments Website with Dashboard ',
-    year: '2024',
-    image: 'https://picsum.photos/id/10/1600/900',
-    images: [
-      'https://picsum.photos/id/10/1600/900',
-      'https://picsum.photos/id/10/1200/675',
-    ],
-    desc: 'Non-custodial wallet UI prioritizing privacy and performance — carefully designed transaction flows.',
-    tags: ['Web3', 'Next.js', 'Ethers.js'],
-    category: 'web3',
+    desc: 'A middleware system that connects food delivery platforms like DoorDash and Uber Eats directly to restaurant POS systems — eliminating manual order entry and reducing errors in high-volume kitchens.',
+    tags: ['React', 'Node.js', 'PostgreSQL', 'WebSockets', 'OAuth 2.0'],
+    category: 'automation',
+    caseStudyUrl: '/projects/orderbridge',
+    liveUrl: 'https://orderbridge.maxontorres.com',
   },
 ];
 
@@ -51,10 +29,10 @@ export default function WorkSection() {
   const t = useTranslations('work');
 
   const categories = [
-    { id: 'all', label: t('categories.all') },
-    { id: 'fintech', label: t('categories.fintech') },
-    { id: 'saas', label: t('categories.saas') },
-    { id: 'web3', label: t('categories.web3') },
+    { id: 'all',         label: t('categories.all') },
+    { id: 'automation',  label: t('categories.automation') },
+    { id: 'integration', label: t('categories.integration') },
+    { id: 'tools',       label: t('categories.tools') },
   ];
 
   const filteredProjects =
@@ -93,14 +71,16 @@ export default function WorkSection() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid" role="tabpanel">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start"
+        id="projects-grid"
+        role="tabpanel"
+      >
         {filteredProjects.map((project, index) => (
           <ProjectCard
             key={project.id}
             project={project}
-            style={{
-              animationDelay: `${index * 0.1}s`,
-            }}
+            style={{ animationDelay: `${index * 0.1}s` }}
           />
         ))}
       </div>

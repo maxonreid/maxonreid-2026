@@ -115,10 +115,39 @@
   [class*="from-[#0a0a0c]"] {
     --tw-gradient-from: #ffffff !important;
   }
-  
+
   [class*="to-[#0a0a0c]"] {
     --tw-gradient-to: #f5f5f7 !important;
   }
+
+  /* Gold accent text — darken for WCAG contrast on white */
+  .text-\[\#d6b46b\] {
+    color: #8B6914 !important;
+  }
+
+  /* Step number decorators (20% / 40% opacity gold) — boost opacity on white */
+  .text-\[\#d6b46b\]\/20 {
+    color: rgba(139, 105, 20, 0.35) !important;
+  }
+
+  .group:hover .group-hover\:text-\[\#d6b46b\]\/40 {
+    color: rgba(139, 105, 20, 0.55) !important;
+  }
+
+  /* Gold hover borders — darken for visibility */
+  [class*="hover:border-[#d6b46b]"]:hover {
+    border-color: rgba(139, 105, 20, 0.5) !important;
+  }
+}
+
+/* ── Architecture flow node colours ───────────────────────────────────────── */
+.arch-node-platform   { color: #ff3008; border-color: rgba(255, 48,   8, 0.25); }
+.arch-node-middleware { color: #d6b46b; border-color: rgba(214, 180, 107, 0.25); }
+.arch-node-pos        { color: #16a34a; border-color: rgba(22,  163,  74, 0.25); }
+
+[data-theme="light"] .arch-node-middleware {
+  color: #8B6914;
+  border-color: rgba(139, 105, 20, 0.35);
 }
 
 /* Hide scrollbars for terminal */

@@ -31,7 +31,7 @@ export default function ContactSection() {
               <div className="font-mono text-xs text-[#9ea0a8] tracking-wider mb-1">{t('labels.email')}</div>
               <div className="text-[#e6e7ea]">
                 <a href="mailto:hello@maxontorres.com" className="hover:text-[#d6b46b] transition-colors">
-                  hello@maxontorres.com
+                  hello@MaxonTorres.com
                 </a>
               </div>
             </div>

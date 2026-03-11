@@ -9,9 +9,8 @@
   "hero": {
     "brand": "MAXON TORRES",
     "location": "[ VIENTIANE : LAOS PDR ] — FULL STACK WEB DEVELOPER",
-    "heroTitle": "Build Software that helps your business",
-    "heroTitleHighlight": "grow globally",
-    "heroSub": "Automate your work | Upgrade your results.",
+    "heroTitle": "I <highlight>automate</highlight> the work your team shouldn't be doing manually.",
+    "heroSub": "Custom integrations, workflow automation, and internal tools.",
     "ctaStart": "START A PROJECT",
     "ctaView": "VIEW MY WORK"
   },
@@ -19,12 +18,12 @@
     "title": "Selected Work",
     "subtitle": " Projects I have done",
     "categories": {
-      "all": "All Projects",
-      "fintech": "FinTech",
-      "saas": "SaaS",
-      "web3": "Web3"
+      "all": "All",
+      "automation": "Automation",
+      "integration": "Integration",
+      "tools": "Tools"
     },
-    "noProjects": "No projects found in this category."
+    "noProjects": "No projects in this category yet."
   },
   "blog": {
     "sectionLabel": "[ LATEST INSIGHTS ]",

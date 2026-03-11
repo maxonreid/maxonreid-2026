@@ -18,8 +18,9 @@ export default function HeroSection() {
           </div>
 
           <h1 id="hero-heading" className="text-[52px] leading-tight my-1.5 font-bold tracking-tight">
-            {t('heroTitle')}{' '}
-            <span className="text-[#d6b46b]">{t('heroTitleHighlight')}</span>.
+            {t.rich('heroTitle', {
+              highlight: (chunks) => <span className="text-[#d6b46b]">{chunks}</span>,
+            })}
           </h1>
 
           <p className="text-[#9ea0a8] max-w-[560px] mb-4.5">
@@ -34,9 +35,9 @@ export default function HeroSection() {
             </a>
 
             {/* View my work */}
-            {/* <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#e6e7ea] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#d6b46b]/[0.06] hover:to-transparent hover:border-[#d6b46b]" href="#work">
+            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#e6e7ea] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#d6b46b]/[0.06] hover:to-transparent hover:border-[#d6b46b]" href="#work">
               {t('ctaView')}
-            </a> */}
+            </a>
 
           </div>
         </div>

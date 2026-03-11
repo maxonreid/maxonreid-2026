@@ -9,8 +9,7 @@
   "hero": {
     "brand": "MAXON TORRES",
     "location": "[ ວຽງຈັນ : ສປປ ລາວ ] — ນັກພັດທະນາເວັບ Full Stack",
-    "heroTitle": "ພັດທະນາຊອບແວທີ່ຊ່ວຍໃຫ້ທຸລະກິດຂອງທ່ານ",
-    "heroTitleHighlight": "ເຕີບໂຕໄປທົ່ວໂລກ",
+    "heroTitle": "ພັດທະນາຊອບແວທີ່ຊ່ວຍໃຫ້ທຸລະກິດຂອງທ່ານ <highlight>ເຕີບໂຕໄປທົ່ວໂລກ</highlight>.",
     "heroSub": "ອັດຕະໂນມັດການເຮັດວຽກ | ຍົກລະດັບຜົນລັບ.",
     "ctaStart": "ເລີ່ມໂຄງການ",
     "ctaView": "ເບິ່ງຜົນງານ"
@@ -19,12 +18,12 @@
     "title": "ຜົນງານທີ່ເລືອກ",
     "subtitle": "ໂຄງການທີ່ຂ້ອຍເຄີຍເຮັດ",
     "categories": {
-      "all": "ທຸກໂຄງການ",
-      "fintech": "FinTech",
-      "saas": "SaaS",
-      "web3": "Web3"
+      "all": "ທັງໝົດ",
+      "automation": "ອັດຕະໂນມັດ",
+      "integration": "ການເຊື່ອມຕໍ່",
+      "tools": "ເຄື່ອງມື"
     },
-    "noProjects": "ບໍ່ພົບໂຄງການໃນໝວດນີ້."
+    "noProjects": "ຍັງບໍ່ມີໂຄງການໃນໝວດນີ້."
   },
   "blog": {
     "sectionLabel": "[ ບົດຄວາມລ່າສຸດ ]",
