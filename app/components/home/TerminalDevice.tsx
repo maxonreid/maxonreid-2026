@@ -244,9 +244,9 @@ export default function TerminalDevice() {
       projects: async () => {
         await writeTypedLocal('\x1b[1;95m>>> PROJECTS <<<\x1b[0m\r\n', 8);
         term.writeln('');
-        await writeTypedLocal('\x1b[1;93mOrderBridge\x1b[0m \x1b[90m— 2025\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[1;93mOrderBridge\x1b[0m \x1b[90m— 2026\x1b[0m\r\n', 8);
         await writeTypedLocal('\x1b[96m▸ Type:\x1b[0m \x1b[93mSaaS Middleware Platform\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[96m▸ Stack:\x1b[0m \x1b[36mReact 18 · Vite · Fastify · PostgreSQL · Prisma · WebSockets\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[96m▸ Stack:\x1b[0m \x1b[36mReact 19 · Vite · Fastify · PostgreSQL · Prisma · WebSockets\x1b[0m\r\n', 6);
         await writeTypedLocal('\x1b[96m▸ Security:\x1b[0m \x1b[36mOAuth 2.0 · AES-256 encryption · HMAC-SHA256 webhooks\x1b[0m\r\n', 6);
         await writeTypedLocal('\x1b[96m▸ About:\x1b[0m Unified middleware that bridges delivery platforms\r\n', 6);
         await writeTypedLocal('         (UberEats, Grab, etc.) to POS systems in real-time.\r\n', 4);
