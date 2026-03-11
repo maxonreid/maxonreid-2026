@@ -29,8 +29,8 @@ const galleryImages: GalleryImage[] = [
   },
   {
     src: '/images/projects/orderbridge/orderbridge-mock-pos.png',
-    alt: 'BridgePOS mock terminal showing injected orders',
-    caption: 'BridgePOS terminal — orders arriving automatically from OrderBridge',
+    alt: 'MockPOS mock terminal showing injected orders',
+    caption: 'MockPOS terminal — orders arriving automatically from OrderBridge',
   },
   {
     src: '/images/projects/orderbridge/orderbridge-simulator.png',

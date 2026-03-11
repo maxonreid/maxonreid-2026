@@ -12,7 +12,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations('nav');
-  
+
   // Extract locale from pathname
   const locale = pathname?.startsWith('/lo') ? 'lo' : 'en';
 
@@ -24,7 +24,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      
+
       // Track active section for hash links
       const sections = ['work', 'services', 'contact'];
       const current = sections.find(id => {
@@ -35,7 +35,7 @@ export default function Navbar() {
         }
         return false;
       });
-      
+
       if (current) {
         setActiveSection(current);
       } else if (scrollTop < 100) {
@@ -45,7 +45,7 @@ export default function Navbar() {
 
     // Initial call
     handleScroll();
-    
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -60,12 +60,12 @@ export default function Navbar() {
           const headerHeight = 100;
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
           const offsetPosition = elementPosition - headerHeight;
-          
+
           window.scrollTo({
             top: offsetPosition,
             behavior: 'smooth'
           });
-          
+
           setActiveSection(hash);
         }
       }, 100);
@@ -79,25 +79,25 @@ export default function Navbar() {
   // Hash link click handler with smooth scroll
   const handleHashClick = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
     e.preventDefault();
-    
+
     if (!isHomePage) {
       // Use Next.js router for client-side navigation
       router.push(`/${locale}#${hash}`);
       setIsMenuOpen(false);
       return;
     }
-    
+
     const element = document.getElementById(hash);
     if (element) {
       const headerHeight = 100;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - headerHeight;
-      
+
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
       });
-      
+
       window.history.pushState(null, '', `/${locale}#${hash}`);
       setActiveSection(hash);
       setIsMenuOpen(false);
@@ -108,13 +108,23 @@ export default function Navbar() {
     <nav className="relative" aria-label="Primary navigation">
       <div className="flex items-center gap-[18px]">
         <div className="hidden md:flex gap-[18px] items-center">
-          {/* <a
-            href={`/${locale}#work`}
-            className={`nav-link ${activeSection === 'work' ? 'nav-link-active' : ''}`}
-            onClick={(e) => handleHashClick(e, 'work')}
+
+          <Link
+            href="/about"
+            className={`nav-link ${pathname?.includes('/about') ? 'nav-link-active' : ''}`}
+            locale={locale}
+          >
+            {t('about')}
+          </Link>
+
+          <Link
+            href="/work"
+            className={`nav-link ${pathname?.includes('/work') ? 'nav-link-active' : ''}`}
+            locale={locale}
           >
             {t('work')}
-          </a> */}
+          </Link>
+
           {/* <Link 
             href="/articles" 
             className={`nav-link ${pathname?.includes('/articles') ? 'nav-link-active' : ''}`}
@@ -122,13 +132,7 @@ export default function Navbar() {
           >
             {t('blog')}
           </Link> */}
-          <Link 
-            href="/about" 
-            className={`nav-link ${pathname?.includes('/about') ? 'nav-link-active' : ''}`}
-            locale={locale}
-          >
-            {t('about')}
-          </Link>
+
           <Link
             href={`/#services`}
             className={`nav-link ${activeSection === 'services' ? 'nav-link-active' : ''}`}
@@ -168,8 +172,8 @@ export default function Navbar() {
             borderColor: 'var(--border-color)'
           }}
         >
-          <Link 
-            href="/about" 
+          <Link
+            href="/about"
             className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${pathname?.includes('/about') ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
             locale={locale}
             onClick={() => setIsMenuOpen(false)}

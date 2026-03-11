@@ -242,19 +242,22 @@ export default function TerminalDevice() {
       },
 
       projects: async () => {
-        const cards = Array.from(document.querySelectorAll('.project-card'));
-        if (!cards.length) {
-          await writeTypedLocal('No projects found on the page.\r\n', 8);
-          return;
-        }
-        await writeTypedLocal('\r\nProjects:\r\n', 8);
-        for (const c of cards) {
-          const title = (c as HTMLElement).dataset.title || (c.querySelector('.project-title')?.textContent?.trim()) || 'Untitled';
-          const year = (c as HTMLElement).dataset.year || (c.querySelector('.project-date')?.textContent?.trim()) || '';
-          const desc = (c as HTMLElement).dataset.desc || (c.querySelector('.project-desc')?.textContent?.trim()) || '';
-          await writeTypedLocal(`  • ${title} ${year ? `(${year})` : ''}\r\n`, 6);
-          if (desc) await writeTypedLocal(`      ${desc}\r\n`, 5);
-        }
+        await writeTypedLocal('\x1b[1;95m>>> PROJECTS <<<\x1b[0m\r\n', 8);
+        term.writeln('');
+        await writeTypedLocal('\x1b[1;93mOrderBridge\x1b[0m \x1b[90m— 2025\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Type:\x1b[0m \x1b[93mSaaS Middleware Platform\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[96m▸ Stack:\x1b[0m \x1b[36mReact 18 · Vite · Fastify · PostgreSQL · Prisma · WebSockets\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[96m▸ Security:\x1b[0m \x1b[36mOAuth 2.0 · AES-256 encryption · HMAC-SHA256 webhooks\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[96m▸ About:\x1b[0m Unified middleware that bridges delivery platforms\r\n', 6);
+        await writeTypedLocal('         (UberEats, Grab, etc.) to POS systems in real-time.\r\n', 4);
+        term.writeln('');
+        await writeTypedLocal('\x1b[96m▸ Metrics:\x1b[0m\r\n', 6);
+        await writeTypedLocal('   \x1b[92m<800ms\x1b[0m  end-to-end order processing\r\n', 5);
+        await writeTypedLocal('   \x1b[92m5\x1b[0m       delivery platforms supported\r\n', 5);
+        await writeTypedLocal('   \x1b[92m3\x1b[0m       POS systems integrated\r\n', 5);
+        await writeTypedLocal('   \x1b[92m0\x1b[0m       manual steps required\r\n', 5);
+        term.writeln('');
+        await writeTypedLocal('\x1b[96m▸ Pipeline:\x1b[0m Webhook → Translate → Inject → Real-Time Sync\r\n', 6);
         term.writeln('');
       },
 
@@ -505,19 +508,22 @@ export default function TerminalDevice() {
       },
 
       projects: async () => {
-        const cards = Array.from(document.querySelectorAll('.project-card'));
-        if (!cards.length) {
-          await writeTypedLocal('No projects found on the page.\r\n', 8);
-          return;
-        }
-        await writeTypedLocal('\r\nProjects:\r\n', 8);
-        for (const c of cards) {
-          const title = (c as HTMLElement).dataset.title || (c.querySelector('.project-title')?.textContent?.trim()) || 'Untitled';
-          const year = (c as HTMLElement).dataset.year || (c.querySelector('.project-date')?.textContent?.trim()) || '';
-          const desc = (c as HTMLElement).dataset.desc || (c.querySelector('.project-desc')?.textContent?.trim()) || '';
-          await writeTypedLocal(`  • ${title} ${year ? `(${year})` : ''}\r\n`, 6);
-          if (desc) await writeTypedLocal(`      ${desc}\r\n`, 5);
-        }
+        await writeTypedLocal('\x1b[1;95m>>> PROJECTS <<<\x1b[0m\r\n', 8);
+        term.writeln('');
+        await writeTypedLocal('\x1b[1;93mOrderBridge\x1b[0m \x1b[90m— 2025\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Type:\x1b[0m \x1b[93mSaaS Middleware Platform\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[96m▸ Stack:\x1b[0m \x1b[36mReact 18 · Vite · Fastify · PostgreSQL · Prisma · WebSockets\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[96m▸ Security:\x1b[0m \x1b[36mOAuth 2.0 · AES-256 encryption · HMAC-SHA256 webhooks\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[96m▸ About:\x1b[0m Unified middleware that bridges delivery platforms\r\n', 6);
+        await writeTypedLocal('         (UberEats, Grab, etc.) to POS systems in real-time.\r\n', 4);
+        term.writeln('');
+        await writeTypedLocal('\x1b[96m▸ Metrics:\x1b[0m\r\n', 6);
+        await writeTypedLocal('   \x1b[92m<800ms\x1b[0m  end-to-end order processing\r\n', 5);
+        await writeTypedLocal('   \x1b[92m5\x1b[0m       delivery platforms supported\r\n', 5);
+        await writeTypedLocal('   \x1b[92m3\x1b[0m       POS systems integrated\r\n', 5);
+        await writeTypedLocal('   \x1b[92m0\x1b[0m       manual steps required\r\n', 5);
+        term.writeln('');
+        await writeTypedLocal('\x1b[96m▸ Pipeline:\x1b[0m Webhook → Translate → Inject → Real-Time Sync\r\n', 6);
         term.writeln('');
       },
 
