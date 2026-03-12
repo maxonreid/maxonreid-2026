@@ -1,21 +1,107 @@
-'use client';
-
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { use } from 'react';
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import { articles } from '@/app/lib/articles';
 
-export default function ArticlePage({
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com';
+
+type ArticleRouteParams = {
+  slug: string;
+  locale: string;
+};
+
+function getArticleBySlug(slug: string) {
+  return articles.find((a) => a.slug === slug && a.published);
+}
+
+function toISODate(value: string) {
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
+}
+
+export function generateStaticParams() {
+  const locales = ['en', 'lo'];
+  const publishedArticles = articles.filter((a) => a.published);
+
+  return publishedArticles.flatMap((article) =>
+    locales.map((locale) => ({
+      locale,
+      slug: article.slug,
+    }))
+  );
+}
+
+export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string; locale: string }>;
-}) {
-  const { slug, locale } = use(params);
-  const article = articles.find((a) => a.slug === slug);
+  params: Promise<ArticleRouteParams>;
+}): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const article = getArticleBySlug(slug);
 
-  if (!article || !article.published) {
+  if (!article) {
+    return {
+      title: 'Article Not Found',
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
+  const canonicalPath = `/${locale}/articles/${article.slug}`;
+  const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
+  const publishedTime = toISODate(article.date);
+
+  return {
+    title: article.title,
+    description: article.excerpt,
+    keywords: article.tags,
+    alternates: {
+      canonical: canonicalPath,
+      languages: {
+        en: `/en/articles/${article.slug}`,
+        lo: `/lo/articles/${article.slug}`,
+      },
+    },
+    openGraph: {
+      type: 'article',
+      url: canonicalUrl,
+      title: article.title,
+      description: article.excerpt,
+      siteName: 'Maxon Torres',
+      locale: locale === 'lo' ? 'lo_LA' : 'en_US',
+      publishedTime,
+      images: [
+        {
+          url: article.image,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.title,
+      description: article.excerpt,
+      images: [article.image],
+    },
+  };
+}
+
+export default async function ArticlePage({
+  params,
+}: {
+  params: Promise<ArticleRouteParams>;
+}) {
+  const { slug, locale } = await params;
+  const article = getArticleBySlug(slug);
+
+  if (!article) {
     notFound();
   }
 
@@ -36,22 +122,87 @@ function OrderBridgeArticle({
   locale: string;
   article: (typeof articles)[0];
 }) {
+  const articleUrl = new URL(`/${locale}/articles/${article.slug}`, SITE_URL).toString();
+  const articleImage = new URL(article.image, SITE_URL).toString();
+  const publishedTime = toISODate(article.date);
+
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.excerpt,
+    image: [articleImage],
+    datePublished: publishedTime,
+    dateModified: publishedTime,
+    mainEntityOfPage: articleUrl,
+    author: {
+      '@type': 'Person',
+      name: 'Maximiliano Brito Torres',
+      url: SITE_URL,
+    },
+    publisher: {
+      '@type': 'Person',
+      name: 'Maximiliano Brito Torres',
+      url: SITE_URL,
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: new URL(`/${locale}`, SITE_URL).toString(),
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Articles',
+        item: new URL(`/${locale}/articles`, SITE_URL).toString(),
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: article.title,
+        item: articleUrl,
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Header />
       <main className="min-h-screen" style={{ background: 'var(--bg-primary)' }}>
+        <article>
 
         {/* ── Hero ────────────────────────────────────────────────────────── */}
         <section className="pt-32 pb-0 w-[92%] max-w-[860px] mx-auto">
 
           {/* Breadcrumb */}
-          <div className="flex items-center gap-2 font-mono text-sm text-[#9ea0a8] mb-10">
-            <Link href={`/${locale}`} className="hover:text-[#d6b46b] transition-colors">Home</Link>
-            <span>/</span>
-            <Link href={`/${locale}/articles`} className="hover:text-[#d6b46b] transition-colors">Articles</Link>
-            <span>/</span>
-            <span className="text-[#d6b46b] truncate max-w-[200px]">How I Built OrderBridge</span>
-          </div>
+          <nav aria-label="Breadcrumb" className="mb-10">
+            <ol className="flex items-center gap-2 font-mono text-sm text-[#9ea0a8]">
+              <li>
+                <Link href={`/${locale}`} className="hover:text-[#d6b46b] transition-colors">Home</Link>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li>
+                <Link href={`/${locale}/articles`} className="hover:text-[#d6b46b] transition-colors">Articles</Link>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li className="text-[#d6b46b] truncate max-w-[200px]" aria-current="page">How I Built OrderBridge</li>
+            </ol>
+          </nav>
 
           {/* Tags + meta */}
           <div className="flex flex-wrap items-center gap-3 mb-6">
@@ -854,6 +1005,7 @@ function OrderBridgeArticle({
           </section>
 
         </div>
+        </article>
       </main>
       <Footer />
     </>
@@ -862,7 +1014,7 @@ function OrderBridgeArticle({
 
 // ─── Helpers ───────────────────────────────────────────────────────────────
 
-function SectionLabel({ children }: { children: React.ReactNode }) {
+function SectionLabel({ children }: { children: ReactNode }) {
   return (
     <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-4">
       {children}
