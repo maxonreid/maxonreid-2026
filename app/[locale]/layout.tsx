@@ -92,6 +92,12 @@ export default async function LocaleLayout({
     <html lang={locale} data-theme="dark" className={locale === 'lo' ? 'locale-lao' : 'locale-en'}>
       <head>
         <meta name="theme-color" content="#0a0a0c" id="meta-theme-color" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Maxon Torres — Articles"
+          href="/rss.xml"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${ibmPlexMono.variable} ${notoSansLao.variable} antialiased min-h-screen overflow-x-hidden transition-colors duration-300`}
