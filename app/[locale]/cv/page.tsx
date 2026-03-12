@@ -55,9 +55,9 @@ export async function generateMetadata({ params }: CVPageProps): Promise<Metadat
     robots: {
       index: true,
       follow: true,
-      maxSnippet: -1,
-      maxImagePreview: "large",
-      maxVideoPreview: -1,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
     },
   };
 }
