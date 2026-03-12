@@ -153,10 +153,10 @@ export default function CV() {
                             Professional Summary
                         </h3>
                         <p className="text-gray-700 text-[0.98rem] leading-relaxed">
-                            Strategic Full Stack Developer with 8+ years of international experience (Mexico, Thailand, China, Laos)
-                            building scalable web architectures. Expert in Modern JavaScript Ecosystems (Next.js, React, Node.js) and
+                            Full Stack Developer with 8+ years of international experience (Mexico, Thailand, China, Laos)
+                            building scalable web architectures. Experience in JavaScript Ecosystems (Next.js, React, Node.js), PHP Laravel, Python Django and
                             AWS Serverless environments. Proven track record of transitioning traditional businesses into high-performance
-                            digital entities and mentoring the next generation of technical talent.
+                            digital entities and mentoring the next generation of technical talent (Yango University, China and ComCenter College, Laos).
                         </p>
                     </section>
 
