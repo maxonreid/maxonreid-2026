@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="space-y-3">
           <div className="font-mono tracking-[8px] font-semibold text-sm text-[#e6e7ea]">MAXON TORRES</div>
           <div className="text-sm text-[#9ea0a8]">
-            Next.js SaaS & Marketplace Development
+            Workflow Automation & Integration Development
           </div>
         </div>
 
@@ -18,7 +18,9 @@ export default function Footer() {
           </nav>
 
           <div className="font-mono text-xs text-[#9ea0a8] flex gap-3">
-            <span className="text-[#d6b46b]">[CONFIDENTIAL]</span>
+            <span className="text-[#d6b46b]">
+              Connecting systems. Eliminating manual work. Remote from Vientiane, Laos.
+            </span>
           </div>
         </div>
 

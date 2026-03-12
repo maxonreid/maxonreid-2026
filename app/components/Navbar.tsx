@@ -126,13 +126,13 @@ export default function Navbar() {
             {t('work')}
           </Link>
 
-          {/* <Link 
+          <Link 
             href="/articles" 
             className={`nav-link ${pathname?.includes('/articles') ? 'nav-link-active' : ''}`}
             locale={locale}
           >
             {t('blog')}
-          </Link> */}
+          </Link>
 
           <Link
             href={`/#services`}
