@@ -81,6 +81,19 @@ function OrderBridgeArticle({
             platforms and their own POS system with an automated OAuth 2.0 handshake.
           </p>
 
+          <div className="prose-article mb-12 max-w-none">
+            <p>
+              This project started as a real client brief. The request came in Spanish:{' '}
+              <em lang="es">
+                "Queremos conectar los servicios de domicilios de nuestros clientes (DoorDash, etc.)
+                a StreamOrder utilizando OAuth. Una vez que StreamOrder esté conectado y autenticado,
+                las cuentas de los servicios de entrega de los clientes se conectarán a nuestro sistema
+                POS."
+              </em>
+              In short: they needed to connect their clients' delivery accounts to their POS system through StreamOrder's partner API — automatically, via OAuth, with no manual intervention. I analysed the requirements, read through the StreamOrder partner documentation, and got to work.
+            </p>
+          </div>
+
           {/* Hero image */}
           <div className="rounded-2xl overflow-hidden border border-white/[0.06] shadow-[0_32px_80px_rgba(0,0,0,0.5)] mb-20">
             <img
@@ -94,6 +107,233 @@ function OrderBridgeArticle({
         {/* ── Body ─────────────────────────────────────────────────────────── */}
         <div className="w-[92%] max-w-[860px] mx-auto pb-24 space-y-20">
 
+          {/* Section: The Brief */}
+          <section>
+            <SectionLabel>[ THE BRIEF ]</SectionLabel>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+              The Client Proposal
+            </h2>
+            <div className="prose-article mb-8">
+              <p>
+                Before writing a single line of code, I put together a formal proposal. It forced
+                clarity on both sides — the client understood exactly what they were getting, and I
+                understood exactly what I was building.
+              </p>
+            </div>
+
+            {/* Proposal document card */}
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-2xl overflow-hidden mb-8">
+
+              {/* Document header */}
+              <div className="border-b border-white/[0.06] px-6 py-5 flex items-start justify-between gap-4">
+                <div>
+                  <p className="font-mono text-xs text-[#9ea0a8] mb-1">PROJECT PROPOSAL</p>
+                  <h3 className="text-lg font-bold text-[#e6e7ea]">
+                    Delivery Apps to POS Integration
+                  </h3>
+                  <p className="font-mono text-xs text-[#9ea0a8] mt-1">
+                    Middleware API · StreamOrder · OAuth 2.0
+                  </p>
+                </div>
+                <div className="text-right shrink-0">
+                  <p className="font-mono text-xs text-[#9ea0a8]">Maximiliano B. Torres</p>
+                  <p className="font-mono text-xs text-[#9ea0a8]">February 27, 2026</p>
+                </div>
+              </div>
+
+              <div className="p-6 space-y-6">
+
+                {/* Description */}
+                <div>
+                  <p className="font-mono text-xs text-[#d6b46b] mb-2">DESCRIPTION</p>
+                  <p className="text-sm text-[#9ea0a8] leading-relaxed">
+                    This project establishes a secure, automated &ldquo;Digital Bridge&rdquo; — a
+                    Middleware API between the StreamOrder aggregator and the client&apos;s Point of
+                    Sale (POS) system, enabling delivery orders to flow automatically into the POS
+                    with no manual intervention.
+                  </p>
+                </div>
+
+                {/* Objective */}
+                <div>
+                  <p className="font-mono text-xs text-[#d6b46b] mb-2">OBJECTIVE</p>
+                  <p className="text-sm text-[#9ea0a8] leading-relaxed mb-3">
+                    Implement OAuth 2.0 as the authentication layer, ensuring data remains secure
+                    while allowing orders to sync automatically from delivery platforms into the POS.
+                  </p>
+                  <div className="space-y-2">
+                    {[
+                      {
+                        label: 'Secure Connection',
+                        desc: 'OAuth handshake — no shared passwords, data protected by encrypted digital keys.',
+                      },
+                      {
+                        label: 'Automatic Sync',
+                        desc: 'Every DoorDash and delivery platform order appears in the POS instantly.',
+                      },
+                    ].map((item) => (
+                      <div key={item.label} className="flex gap-3 text-sm">
+                        <span className="text-[#d6b46b] mt-0.5 shrink-0">→</span>
+                        <span>
+                          <span className="text-[#e6e7ea] font-medium">{item.label}:</span>{' '}
+                          <span className="text-[#9ea0a8]">{item.desc}</span>
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Architecture flow */}
+                <div>
+                  <p className="font-mono text-xs text-[#d6b46b] mb-3">ARCHITECTURE FLOW</p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    {[
+                      'Delivery Platforms',
+                      'StreamOrder',
+                      'Middleware API',
+                      'POS System',
+                      'Dashboard',
+                    ].map((node, i, arr) => (
+                      <div key={node} className="flex items-center gap-2">
+                        <div
+                          className={`font-mono text-xs px-3 py-1.5 rounded-lg border ${
+                            i === 2
+                              ? 'bg-[#d6b46b]/10 border-[#d6b46b]/40 text-[#d6b46b]'
+                              : 'border-white/[0.06] text-[#9ea0a8]'
+                          }`}
+                        >
+                          {node}
+                        </div>
+                        {i < arr.length - 1 && (
+                          <span className="text-[#9ea0a8]/40 text-xs">→</span>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Timeline */}
+            <h3 className="text-lg font-bold text-[#e6e7ea] mb-4">4-Week Timeline</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              {[
+                {
+                  week: 'Week 1',
+                  title: 'Security & The Digital Handshake',
+                  goal: 'Securely connect the client accounts.',
+                  result:
+                    'StreamOrder officially linked; data protected by encrypted OAuth keys.',
+                },
+                {
+                  week: 'Week 2',
+                  title: 'The Automation Bridge',
+                  goal: 'Make the systems communicate.',
+                  result:
+                    'Translator and webhook listener live in a test environment — orders captured and translated instantly.',
+                },
+                {
+                  week: 'Week 3',
+                  title: 'Dashboard & Live Launch',
+                  goal: 'Visibility and production readiness.',
+                  result:
+                    'Bridge active, orders printing in the POS, live monitoring dashboard delivered.',
+                },
+                {
+                  week: 'Week 4',
+                  title: 'Refinement & Monitoring',
+                  goal: 'Stability under real-world conditions.',
+                  result:
+                    '7-day live monitoring window; API changes from StreamOrder or delivery platforms patched immediately.',
+                },
+              ].map((w) => (
+                <div
+                  key={w.week}
+                  className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/30 transition-colors"
+                >
+                  <p className="font-mono text-xs text-[#d6b46b] mb-1">{w.week}</p>
+                  <h4 className="text-sm font-bold text-[#e6e7ea] mb-3">{w.title}</h4>
+                  <p className="text-xs text-[#9ea0a8] leading-relaxed mb-1">
+                    <span className="text-[#e6e7ea]">Goal:</span> {w.goal}
+                  </p>
+                  <p className="text-xs text-[#9ea0a8] leading-relaxed">
+                    <span className="text-[#e6e7ea]">Result:</span> {w.result}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Core deliverables */}
+            <h3 className="text-lg font-bold text-[#e6e7ea] mb-4">Core Deliverables</h3>
+            <div className="space-y-3 mb-8">
+              {[
+                {
+                  name: 'OAuth 2.0 Integration',
+                  desc: 'Authentication layer connecting all accounts without sharing private passwords.',
+                },
+                {
+                  name: 'Real-Time Order Injection',
+                  desc: 'Orders detected via webhook and pushed directly into the POS within seconds.',
+                },
+                {
+                  name: 'Automated Translator',
+                  desc: 'Intelligent menu mapping ensuring every item, modifier, and customer note matches the POS format.',
+                },
+                {
+                  name: 'Automatic Token Refresh',
+                  desc: 'Self-maintaining security — OAuth tokens renew automatically so the connection never expires.',
+                },
+                {
+                  name: 'Reliability Monitoring',
+                  desc: 'Error-tracking that alerts immediately if an order fails to sync.',
+                },
+                {
+                  name: 'Live Connection Dashboard',
+                  desc: 'Web view to monitor bridge status and verify the most recent successful syncs.',
+                },
+              ].map((d) => (
+                <div
+                  key={d.name}
+                  className="flex gap-3 bg-white/[0.02] border border-white/[0.06] rounded-xl p-4"
+                >
+                  <span className="text-[#d6b46b] mt-0.5 shrink-0 font-mono text-sm">✓</span>
+                  <div className="text-sm">
+                    <span className="font-medium text-[#e6e7ea]">{d.name}</span>
+                    <span className="text-[#9ea0a8]"> — {d.desc}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Prerequisites callout */}
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 mb-8">
+              <p className="font-mono text-xs text-[#d6b46b] mb-3">PROJECT PREREQUISITES</p>
+              <div className="space-y-2">
+                {[
+                  'StreamOrder Developer access with Partner API enabled.',
+                  'POS developer portal credentials with write permissions.',
+                  'Menu / SKU list exported from the POS (CSV or Excel).',
+                  'A named technical point of contact authorised to approve the OAuth handshake.',
+                ].map((req) => (
+                  <div key={req} className="flex gap-3 text-sm">
+                    <span className="text-[#9ea0a8]/40 mt-0.5 shrink-0">—</span>
+                    <span className="text-[#9ea0a8]">{req}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* PDF download */}
+            <a
+              href="/docs/projects/orderbridge/orderbridge-proposal.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-white/[0.06] text-[#9ea0a8] px-5 py-2.5 rounded-lg font-mono text-sm hover:border-[#d6b46b]/50 hover:text-[#e6e7ea] transition-all"
+            >
+              ↓ Download Original Proposal (PDF)
+            </a>
+          </section>
+
           {/* Section: The Pain Point */}
           <section>
             <SectionLabel>[ THE PAIN POINT ]</SectionLabel>
@@ -102,7 +342,7 @@ function OrderBridgeArticle({
             </h2>
             <div className="prose-article">
               <p>
-                Before we automated this, the workflow was boring and painful. 
+                Before we automated this, the workflow was boring and painful.
                 Most busy kitchens have a counter full of tablets from different delivery apps.
               </p>
               <p>A staff member has to:</p>
@@ -178,12 +418,69 @@ function OrderBridgeArticle({
             </div>
           </section>
 
-          <div>
-            <p >
-              I started with a Software Requirements Specification (SRS) because 
-              it is much easier to fix a mistake in a document than it is to rewrite code later.
-            </p>
-          </div>
+          {/* Section: The SRS */}
+          <section>
+            <SectionLabel>[ THE PROCESS ]</SectionLabel>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+              Writing the Spec First
+            </h2>
+            <div className="prose-article mb-8">
+              <p>
+                I started with a Software Requirements Specification (SRS) before writing a single
+                line of code. It&apos;s much easier to fix a mistake in a document than to rewrite
+                production code later. The SRS forced both me and the client to agree on exactly
+                what &ldquo;done&rdquo; looked like — no ambiguity, no scope creep.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                {
+                  label: 'FR-01',
+                  title: 'OAuth 2.0 Server',
+                  desc: 'System must act as an OAuth 2.0 provider — issuing, validating, and refreshing tokens per RFC 6749.',
+                },
+                {
+                  label: 'FR-02',
+                  title: 'Webhook Ingestion',
+                  desc: 'System must accept HTTPS POST webhooks from delivery platforms and verify each request with HMAC-SHA256 signature validation.',
+                },
+                {
+                  label: 'FR-03',
+                  title: 'Schema Translation',
+                  desc: 'System must map all incoming delivery payloads to a unified POS format, with graceful failure and logging on unmapped SKUs.',
+                },
+                {
+                  label: 'FR-04',
+                  title: 'POS Injection',
+                  desc: 'System must POST translated orders to the POS API with exponential-backoff retry on failure — no order dropped silently.',
+                },
+                {
+                  label: 'NFR-01',
+                  title: 'Real-Time Updates',
+                  desc: 'Dashboard must reflect order status changes via WebSocket push. No polling.',
+                },
+                {
+                  label: 'NFR-02',
+                  title: 'Token Persistence',
+                  desc: 'OAuth tokens must survive server restarts, stored encrypted at rest.',
+                },
+              ].map((r) => (
+                <div
+                  key={r.label}
+                  className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/30 transition-colors"
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="font-mono text-xs text-[#d6b46b] bg-[#d6b46b]/10 px-2 py-0.5 rounded">
+                      {r.label}
+                    </span>
+                    <span className="text-sm font-bold text-[#e6e7ea]">{r.title}</span>
+                  </div>
+                  <p className="text-xs text-[#9ea0a8] leading-relaxed">{r.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
 
           {/* Screenshot: Dashboard */}
           <figure className="rounded-xl overflow-hidden border border-white/[0.06]">
@@ -227,6 +524,77 @@ function OrderBridgeArticle({
                   <p className="text-sm text-[#9ea0a8] leading-relaxed">{t.body}</p>
                 </div>
               ))}
+            </div>
+          </section>
+
+          {/* Section: Deployment */}
+          <section>
+            <SectionLabel>[ DEPLOYMENT ]</SectionLabel>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+              Infrastructure
+            </h2>
+            <div className="prose-article mb-8">
+              <p>
+                The three services are independently deployed — each with its own host, its own
+                domain, and its own responsibility. This mirrors how a real production integration
+                would be structured.
+              </p>
+            </div>
+
+            {/* Infrastructure diagram */}
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 mb-8">
+              <p className="font-mono text-xs text-[#d6b46b] mb-5">INFRASTRUCTURE OVERVIEW</p>
+              <div className="space-y-3">
+                {[
+                  {
+                    host: 'Vercel',
+                    service: 'OrderBridge Dashboard',
+                    detail: 'Real-time monitoring UI — edge-deployed, globally available.',
+                    tag: 'Frontend',
+                  },
+                  {
+                    host: 'Railway',
+                    service: 'OrderBridge API + PostgreSQL',
+                    detail: 'Core middleware engine with the OAuth server, webhook ingestion, schema translator, and POS injector. PostgreSQL stores OAuth tokens, menu mappings, and order logs.',
+                    tag: 'Backend',
+                  },
+                  {
+                    host: 'Railway',
+                    service: 'MockPOS Server',
+                    detail: 'Isolated POS simulator running as a completely separate service — its own OAuth consent flow, its own order terminal.',
+                    tag: 'Simulator',
+                  },
+                ].map((s) => (
+                  <div
+                    key={s.service}
+                    className="flex gap-4 bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 hover:border-[#d6b46b]/30 transition-colors"
+                  >
+                    <div className="shrink-0 text-right w-16 pt-0.5">
+                      <span className="font-mono text-xs text-[#d6b46b]">{s.host}</span>
+                    </div>
+                    <div className="w-px bg-white/[0.06] shrink-0" />
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-sm font-bold text-[#e6e7ea]">{s.service}</span>
+                        <span className="font-mono text-xs text-[#9ea0a8] border border-white/[0.06] px-2 py-0.5 rounded-full">
+                          {s.tag}
+                        </span>
+                      </div>
+                      <p className="text-xs text-[#9ea0a8] leading-relaxed">{s.detail}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Why separate */}
+            <div className="bg-[#d6b46b]/5 border-l-2 border-[#d6b46b] rounded-r-xl p-6">
+              <p className="font-mono text-xs text-[#9ea0a8] mb-1">WHY SEPARATE SERVICES</p>
+              <p className="text-[#e6e7ea] text-sm leading-relaxed">
+                Keeping MockPOS on its own Railway service wasn&apos;t just convenient — it was
+                the point. It proves the integration works across a real network boundary, not just
+                between two functions in the same process.
+              </p>
             </div>
           </section>
 
@@ -287,21 +655,35 @@ function OrderBridgeArticle({
                 {
                   name: 'Backend',
                   body: 'Fastify, TypeScript, and WebSockets.',
+                  github: 'https://github.com/maxonreid/orderbridge-api',
+                },
+                {
+                  name: 'Dashboard',
+                  body: 'Real-time monitoring and control UI for the OrderBridge system.',
+                  github: 'https://github.com/maxonreid/orderbridge-dashboard/',
                 },
                 {
                   name: 'POS Simulator (MockPOS)',
                   body: "A secondary app representing a fictional restaurant called Phing Kai Kitchen. It acts as the 'target' POS, complete with its own OAuth consent screen and live order terminal.",
+                  github: 'https://github.com/maxonreid/mock-pos-server',
                 },
-                // {
-                //   name: 'Visual Distinction',
-                //   body: 'MockPOS intentionally uses a different aesthetic (navy and amber) from the OrderBridge dashboard. Side by side, it\'s immediately clear these are two separate systems communicating over the wire.',
-                // },
               ].map((t) => (
                 <div
                   key={t.name}
                   className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/30 transition-colors"
                 >
-                  <div className="font-mono text-sm font-semibold text-[#d6b46b] mb-2">{t.name}</div>
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="font-mono text-sm font-semibold text-[#d6b46b]">{t.name}</div>
+                    <a
+                      href={t.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#9ea0a8] hover:text-[#d6b46b] transition-colors"
+                      aria-label={`View ${t.name} on GitHub`}
+                    >
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                  </div>
                   <p className="text-sm text-[#9ea0a8] leading-relaxed">{t.body}</p>
                 </div>
               ))}
@@ -338,17 +720,112 @@ function OrderBridgeArticle({
             </div>
           </section> */}
 
+          {/* Section: Source Code */}
+          <section>
+            <SectionLabel>[ SOURCE CODE ]</SectionLabel>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+              The Complete Codebase
+            </h2>
+            <p className="text-[#9ea0a8] mb-8 leading-relaxed">
+              All three core components are open-source and available on GitHub:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+              {[
+                {
+                  title: 'OrderBridge API',
+                  desc: 'Core middleware engine with OAuth 2.0, webhook ingestion, and schema translation.',
+                  url: 'https://github.com/maxonreid/orderbridge-api',
+                },
+                {
+                  title: 'OrderBridge Dashboard',
+                  desc: 'Real-time monitoring UI with live order feed and connection status.',
+                  url: 'https://github.com/maxonreid/orderbridge-dashboard/',
+                },
+                {
+                  title: 'MockPOS Server',
+                  desc: 'POS simulator demonstrating the complete integration flow.',
+                  url: 'https://github.com/maxonreid/mock-pos-server',
+                },
+              ].map((repo) => (
+                <a
+                  key={repo.url}
+                  href={repo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/50 hover:bg-white/[0.04] transition-all group"
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <h3 className="text-sm font-bold text-[#e6e7ea] group-hover:text-[#d6b46b] transition-colors">
+                      {repo.title}
+                    </h3>
+                    <svg className="w-4 h-4 text-[#9ea0a8] group-hover:text-[#d6b46b] transition-colors flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </div>
+                  <p className="text-xs text-[#9ea0a8] leading-relaxed group-hover:text-[#b8bcc4] transition-colors">
+                    {repo.desc}
+                  </p>
+                </a>
+              ))}
+            </div>
+          </section>
+
+          {/* Section: Live Demos */}
+          <section>
+            <SectionLabel>[ LIVE DEMOS ]</SectionLabel>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+              Try It Out
+            </h2>
+            <p className="text-[#9ea0a8] mb-8 leading-relaxed">
+              Both services are live and ready to use:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              {[
+                {
+                  name: 'OrderBridge Dashboard',
+                  desc: 'Real-time monitoring interface. Watch orders flow through the pipeline as they arrive.',
+                  url: 'https://orderbridge.maxontorres.com/',
+                  icon: '📊',
+                },
+                {
+                  name: 'MockPOS Server',
+                  desc: 'Live orders page from the fictional Phing Kai Kitchen POS system. See orders injected in real time.',
+                  url: 'https://mock-pos-server-production.up.railway.app/orders',
+                  icon: '🍜',
+                },
+              ].map((demo) => (
+                <a
+                  key={demo.url}
+                  href={demo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/50 hover:bg-white/[0.04] transition-all group"
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <h3 className="text-sm font-bold text-[#e6e7ea] group-hover:text-[#d6b46b] transition-colors">
+                      {demo.name}
+                    </h3>
+                    <span className="text-lg mt-0.5">🔗</span>
+                  </div>
+                  <p className="text-xs text-[#9ea0a8] leading-relaxed group-hover:text-[#b8bcc4] transition-colors mb-3">
+                    {demo.desc}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-xs text-[#d6b46b] font-mono">
+                    Visit →
+                  </span>
+                </a>
+              ))}
+            </div>
+          </section>
+
           {/* CTA */}
           <section className="border-t border-white/[0.06] pt-16">
             <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-6">
               [ SEE IT IN ACTION ]
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-4">
-              Check Out the Live Demo
+              Ready to Explore?
             </h2>
             <p className="text-[#9ea0a8] mb-10 leading-relaxed max-w-xl">
-              The code is open on GitHub if you want to dive into the schema mapping. And if
-              your business is currently drowning in "tablet farm" chaos — let's talk.
+              Dive into the source code, watch the live systems in action, or check out the full case study.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

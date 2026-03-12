@@ -41,7 +41,7 @@ const galleryImages: GalleryImage[] = [
 
 const techStack = [
   {
-    name: 'React 18 + Vite',
+    name: 'React 19 + Vite',
     reason: 'Fast dev experience, React Query for server state, no SSR overhead needed for a dashboard.',
   },
   {
@@ -245,6 +245,13 @@ export default function OrderBridgeCaseStudy() {
               View Live Demo
               <span aria-hidden="true">→</span>
             </a>
+            <Link
+              href="/articles/how-i-built-orderbridge"
+              className="inline-flex items-center gap-2 border border-white/[0.06] text-[#9ea0a8] px-6 py-3 rounded-lg font-mono text-sm hover:border-[#d6b46b]/50 hover:text-[#e6e7ea] transition-all"
+            >
+              Read the Build Article
+              <span aria-hidden="true">↗</span>
+            </Link>
             {/* <a
               href="https://github.com/maxonreid/orderbridge-dashboard"
               target="_blank"

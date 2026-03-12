@@ -107,6 +107,7 @@ export default function Navbar() {
   return (
     <nav className="relative" aria-label="Primary navigation">
       <div className="flex items-center gap-[18px]">
+        {/* Desktop menu */}
         <div className="hidden md:flex gap-[18px] items-center">
 
           <Link
@@ -152,6 +153,7 @@ export default function Navbar() {
           </Link>
         </div>
 
+        {/* Mobile menu toggle */}
         <button
           type="button"
           className="inline-flex items-center justify-center rounded-lg p-2 text-[var(--nav-text)] transition-colors hover:bg-[var(--nav-hover-bg)] hover:text-[var(--nav-active)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] md:hidden"
@@ -164,6 +166,7 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Mobile menu */}
       {isMenuOpen && (
         <div
           id="mobile-navigation"
@@ -180,6 +183,22 @@ export default function Navbar() {
             onClick={() => setIsMenuOpen(false)}
           >
             {t('about')}
+          </Link>
+          <Link
+            href={`/#work`}
+            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${activeSection === 'work' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
+            onClick={(e) => handleHashClick(e, 'work')}
+            locale={locale}
+          >
+            {t('work')}
+          </Link>
+          <Link
+            href="/articles"
+            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${pathname?.includes('/articles') ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
+            locale={locale}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t('blog')}
           </Link>
           <Link
             href={`/#services`}
