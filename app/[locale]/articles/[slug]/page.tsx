@@ -222,7 +222,7 @@ function OrderBridgeArticle({
           {/* Title */}
           <h1 className="text-4xl md:text-5xl font-bold text-[#e6e7ea] leading-tight mb-6">
             How I Built OrderBridge: Solving the{' '}
-            <span className="text-[#d6b46b]">Delivery-to-POS Middleware Gap</span>
+            <span className="text-[#d6b46b]">Delivery-to-POS Connection</span>
           </h1>
 
           {/* Lede */}
@@ -544,6 +544,18 @@ function OrderBridgeArticle({
                 bulletproof:
               </p>
             </div>
+
+            <figure className="rounded-xl overflow-hidden border border-white/[0.06] my-8">
+              <img
+                src="/images/projects/orderbridge/orderbridge-diagram.png"
+                alt="OrderBridge architecture diagram showing delivery platforms flowing through OrderBridge into a restaurant POS"
+                className="w-full object-cover"
+                loading="lazy"
+              />
+              <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
+                High-level flow: delivery platforms → OrderBridge → restaurant POS
+              </figcaption>
+            </figure>
 
             {/* Pipeline steps */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">

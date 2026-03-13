@@ -57,7 +57,7 @@
   --bg-primary: #ffffff;
   --bg-secondary: #f5f5f7;
   --text-primary: #000000;
-  --text-secondary: #3a3a3c;
+  --text-secondary: #2d2f35;
   --border-color: rgba(0, 0, 0, 0.12);
   --card-bg: rgba(0, 0, 0, 0.03);
   --hover-bg: rgba(0, 0, 0, 0.05);
@@ -73,12 +73,28 @@
   /* Text overrides - excluding nav-link class */
   .text-\[\#9ea0a8\]:not(.nav-link),
   [class*="text-[#9ea0a8]"]:not(.nav-link) {
-    color: #3a3a3c !important;
+    color: #2d2f35 !important;
+  }
+
+  .text-\[\#9ea0a8\]\/40:not(.nav-link),
+  [class*="text-[#9ea0a8]/40"]:not(.nav-link) {
+    color: rgba(45, 47, 53, 0.68) !important;
+  }
+
+  .text-\[\#9ea0a8\]\/30:not(.nav-link),
+  [class*="text-[#9ea0a8]/30"]:not(.nav-link) {
+    color: rgba(45, 47, 53, 0.6) !important;
   }
   
   .text-\[\#e6e7ea\]:not(.nav-link),
   [class*="text-[#e6e7ea]"]:not(.nav-link) {
     color: #000000 !important;
+  }
+
+  .text-\[\#b8bcc4\]:not(.nav-link),
+  [class*="text-[#b8bcc4]"]:not(.nav-link),
+  .group:hover .group-hover\:text-\[\#b8bcc4\] {
+    color: #4a4d55 !important;
   }
   
   /* Background overrides */
@@ -166,6 +182,14 @@
 .prose-article em {
   color: #c8cad0;
   font-style: italic;
+}
+
+[data-theme="light"] .prose-article {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .prose-article em {
+  color: #1f2126;
 }
 
 /* ── Architecture flow node colours ───────────────────────────────────────── */

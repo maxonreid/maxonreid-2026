@@ -40,8 +40,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: 'article',
       images: [
         {
-          url: '/images/projects/orderbridge/orderbridge-cover.png',
-          alt: 'OrderBridge dashboard overview',
+          url: '/images/projects/orderbridge/orderbridge-diagram.png',
+          width: 2400,
+          height: 1260,
+          alt: 'OrderBridge architecture diagram showing delivery platforms flowing through OrderBridge into a restaurant POS',
         },
       ],
     },
@@ -50,7 +52,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: 'OrderBridge Case Study: Delivery-to-POS Automation',
       description:
         'Architecture, stack, and outcomes of a real-time restaurant integration middleware.',
-      images: ['/images/projects/orderbridge/orderbridge-cover.png'],
+      images: ['/images/projects/orderbridge/orderbridge-diagram.png'],
     },
     robots: {
       index: true,
@@ -78,7 +80,7 @@ export default async function OrderBridgePage({ params }: PageProps) {
     mainEntityOfPage: pageUrl,
     datePublished: '2026-01-01',
     dateModified: '2026-03-12',
-    image: `${SITE_URL}/images/projects/orderbridge/orderbridge-cover.png`,
+    image: `${SITE_URL}/images/projects/orderbridge/orderbridge-diagram.png`,
     about: [
       'Restaurant automation',
       'POS API integration',

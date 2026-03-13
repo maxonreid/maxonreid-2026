@@ -264,13 +264,29 @@ export default function OrderBridgeCaseStudy() {
           </div>
 
           {/* Hero image */}
-          <div className="rounded-2xl overflow-hidden border border-white/[0.06] shadow-[0_32px_80px_rgba(0,0,0,0.5)]">
+          {/* <div className="rounded-2xl overflow-hidden border border-white/[0.06] shadow-[0_32px_80px_rgba(0,0,0,0.5)]">
             <img
               src="/images/projects/orderbridge/orderbridge-cover.png"
               alt="OrderBridge dashboard overview"
               className="w-full object-cover"
             />
-          </div>
+          </div> */}
+
+          <figure className="rounded-2xl overflow-hidden border border-white/[0.06] mt-8">
+            <img
+              src="/images/projects/orderbridge/orderbridge-diagram.png"
+              alt="OrderBridge architecture diagram showing delivery platforms flowing through OrderBridge into a restaurant POS"
+              className="w-full object-cover"
+              width={2400}
+              height={1260}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
+            <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
+              High-level flow: delivery platforms {'->'} OrderBridge {'->'} restaurant POS
+            </figcaption>
+          </figure>
         </section>
 
         {/* ── Outcomes ─────────────────────────────────────────────────────── */}
