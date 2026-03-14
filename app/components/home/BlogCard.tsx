@@ -36,7 +36,7 @@ export default function BlogCard({ article }: BlogCardProps) {
         </div>
         
         <h3 className="text-xl font-bold text-[#e6e7ea] mb-3 group-hover:text-[#d6b46b] transition-colors">
-          {article.title}
+          {article.title} 
         </h3>
         
         <p 
@@ -46,19 +46,22 @@ export default function BlogCard({ article }: BlogCardProps) {
           {article.excerpt}
         </p>
         
-        <div className="flex items-center justify-between">
-          <div className="font-mono text-xs flex gap-2">
+        <div className="flex items-end justify-between gap-4 pt-2 border-t border-white/[0.06]">
+          <div className="font-mono text-xs flex flex-wrap gap-2 min-w-0">
             {article.tags.map((tag, i) => (
-              <span key={i} className="bg-white/[0.03] border border-white/[0.06] text-[#9ea0a8] px-3 py-1 rounded-full">
+              <span
+                key={i}
+                className="bg-white/[0.04] border border-white/[0.08] text-[#b6b9c3] px-2.5 py-1 rounded-full whitespace-nowrap"
+              >
                 {tag}
               </span>
             ))}
           </div>
           
-          <div>
-            <span className="font-mono text-sm text-[#d6b46b] inline-flex items-center gap-2">
+          <div className="shrink-0">
+            <span className="font-mono text-sm text-[#d6b46b] inline-flex items-center gap-2 transition-transform duration-300 group-hover:translate-x-1">
               {t('readMore')}
-              <ArrowRight size={12} />
+              <ArrowRight size={13} className="transition-transform duration-300 group-hover:translate-x-0.5" />
             </span>
           </div>
         </div>
