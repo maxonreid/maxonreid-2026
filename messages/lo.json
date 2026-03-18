@@ -253,7 +253,8 @@
   "locale": {
     "switch": "ປ່ຽນພາສາ",
     "english": "English",
-    "lao": "ລາວ"
+    "lao": "ລາວ",
+    "spanish": "Español"
   },
   "common": {
     "loading": "ກຳລັງໂຫຼດ...",

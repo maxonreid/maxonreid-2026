@@ -1,0 +1,636 @@
+{
+  "nav": {
+    "work": "Proyectos",
+    "blog": "Blog",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "referral": "Gana dinero"
+  },
+  "hero": {
+    "brand": "MAXON TORRES",
+    "location": "[ VIENTIANE : LAOS PDR ] — DESARROLLADOR WEB FULL STACK",
+    "heroTitle": "Yo <highlight>automatizo</highlight> el trabajo que tu equipo no debería estar haciendo a mano.",
+    "heroSub": "Integraciones personalizadas, automatización de flujos y herramientas internas.",
+    "ctaStart": "INICIAR UN PROYECTO",
+    "ctaView": "VER MI TRABAJO"
+  },
+  "work": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Proyectos que he desarrollado",
+    "sectionLabel": "[ MI TRABAJO ]",
+    "caseStudy": "Caso de Estudio →",
+    "categories": {
+      "all": "Todos",
+      "automation": "Automatización",
+      "integration": "Integración",
+      "tools": "Herramientas"
+    },
+    "noProjects": "Aún no hay proyectos en esta categoría.",
+    "projects": {
+      "orderbridge": {
+        "desc": "Un sistema middleware que conecta plataformas de delivery como DoorDash y Uber Eats directamente a los sistemas POS de restaurantes — eliminando la entrada manual de pedidos y reduciendo errores en cocinas de alto volumen."
+      }
+    }
+  },
+  "blog": {
+    "sectionLabel": "[ ÚLTIMAS PUBLICACIONES ]",
+    "articleCount": "{count} ARTÍCULOS",
+    "title": "Artículos Recientes",
+    "subtitle": "Notas técnicas, guías y lecciones aprendidas de mi propia experiencia.",
+    "viewAll": "Ver Todos los Artículos",
+    "readMore": "Leer Más",
+    "readTime": "{time} de lectura"
+  },
+  "aboutHome": {
+    "label": "[ QUIÉN SOY ]",
+    "title": "Acerca de Mí",
+    "intro": "Soy Maximiliano Torres, Desarrollador de Software Full-Stack con base en Vientiane, Laos, enfocado en construir aplicaciones web robustas, organizadas y escalables.",
+    "description": "Ayudo a negocios a convertir ideas en herramientas digitales confiables — desde dashboards internos hasta plataformas completas — combinando arquitectura limpia, rendimiento y diseño centrado en el usuario.",
+    "imageAlt": "Maximiliano Torres - Desarrollador Full Stack",
+    "learnMore": "Más Sobre Mí",
+    "stats": {
+      "experience": "10+",
+      "experienceLabel": "Años de Experiencia",
+      "projects": "40+",
+      "projectsLabel": "Proyectos Entregados",
+      "technologies": "10+",
+      "technologiesLabel": "Tecnologías"
+    }
+  },
+  "about": {
+    "heroLabel": "[ PERFIL DEL DESARROLLADOR ]",
+    "heroTitle": "Acerca de Mí",
+    "heroSubtitle": "Especialista en React & Next.js | Desarrollador Full-Stack desde 2017",
+    "bio": {
+      "title": "Construyendo Sistemas Web Confiables y Escalables",
+      "p1": "Soy Maximiliano Torres, Desarrollador Full-Stack con base en el Sudeste Asiático, especializado en construir aplicaciones web listas para producción con React y Next.js. Desde 2017, he creado herramientas y sistemas que priorizan arquitectura limpia, rendimiento y mantenibilidad.",
+      "p2": "Diseño y desarrollo soluciones digitales que automatizan flujos de trabajo, gestionan datos complejos y apoyan el crecimiento del negocio — desde dashboards internos hasta plataformas web completas. Mi enfoque es entregar sistemas confiables que resuelvan retos operativos reales.",
+      "p3": "Además del desarrollo, tengo experiencia enseñando TI y Diseño Web en distintas universidades en China y Laos. Colaboro con clientes internacionales y equipos remotos, garantizando entregas consistentes y éxito a largo plazo."
+    },
+    "skills": {
+      "title": "Tecnologías y Herramientas",
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "HTML/CSS"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": [
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "MySQL",
+          "REST APIs"
+        ]
+      },
+      "tools": {
+        "title": "Herramientas & DevOps",
+        "items": [
+          "GIT",
+          "AWS",
+          "Linux"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Iniciar tu Proyecto?",
+      "subtitle": "Platicamos cómo podemos trabajar juntos para construir algo genial.",
+      "contact": "Contáctame",
+      "services": "Ver Servicios"
+    },
+    "cv": {
+      "viewCV": "Ver CV Completo",
+      "downloadCV": "Descargar Currículum",
+      "experienceTitle": "Experiencia Profesional",
+      "experienceSubtitle": "Ve mi experiencia profesional completa, expertise técnico e historial de carrera"
+    }
+  },
+  "articles": {
+    "heroLabel": "[ CONOCIMIENTO TÉCNICO ]",
+    "heroTitle": "Blog y Artículos",
+    "heroSubtitle": "Análisis profundos sobre desarrollo web, patrones de arquitectura y buenas prácticas de ingeniería. Aprendidos de mi propia experiencia.",
+    "searchPlaceholder": "Buscar artículos...",
+    "sortBy": "Ordenar por:",
+    "sortOptions": {
+      "recent": "Más Recientes",
+      "oldest": "Más Antiguos",
+      "longest": "Lectura más larga",
+      "shortest": "Lectura más corta"
+    },
+    "categories": {
+      "all": "Todos los Artículos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps"
+    },
+    "showing": "Mostrando {count} artículo",
+    "showingPlural": "Mostrando {count} artículos",
+    "articleSingular": "ARTÍCULO",
+    "articlePlural": "ARTÍCULOS",
+    "noResults": {
+      "title": "No se encontraron artículos",
+      "message": "Intenta ajustar tu búsqueda o filtro para encontrar lo que buscas.",
+      "clearFilters": "Limpiar filtros"
+    }
+  },
+  "article": {
+    "breadcrumb": "Artículos",
+    "shareLabel": "Compartir este artículo",
+    "allArticles": "Todos los Artículos",
+    "readingProgress": "Progreso de lectura"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Diseño y construyo plataformas SaaS y marketplaces escalables para startups en etapa temprana listas para lanzar y crecer.",
+    "subtitleSecondary": "Del MVP a producción, ayudo a fundadores a convertir ideas de producto en aplicaciones web estructuradas y confiables, construidas para escalar.",
+    "deliverLabel": "Lo que entrego",
+    "toolsLabel": "Herramientas:",
+    "items": {
+      "customWebApps": {
+        "title": "Desarrollo de Productos SaaS",
+        "valueStatement": "Desarrollo end-to-end de plataformas SaaS modernas y multiusuario.",
+        "desc": "Construyo sistemas estructurados diseñados para el crecimiento, el rendimiento y la mantenibilidad a largo plazo.",
+        "details": [
+          "Arquitectura SaaS multi-tenant",
+          "Autenticación y control de acceso basado en roles",
+          "Dashboards de administración y portales de usuario",
+          "Integraciones de backend orientadas a API",
+          "Despliegue listo para producción"
+        ],
+        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
+      },
+      "businessSystems": {
+        "title": "Marketplaces y Plataformas Multi-Lado",
+        "valueStatement": "Plataformas que conectan usuarios, vendedores o proveedores de servicios.",
+        "desc": "Diseñadas para escalabilidad, rendimiento y control operativo claro.",
+        "details": [
+          "Sistemas de gestión de vendedores y usuarios",
+          "Flujos de trabajo transaccionales",
+          "Sistemas de reseñas y calificaciones",
+          "Dashboards de moderación",
+          "Arquitectura de plataforma escalable"
+        ],
+        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
+      },
+      "pwaApps": {
+        "title": "Desarrollo de MVP para Startups",
+        "valueStatement": "Lanza rápido. Valida pronto. Escala con confianza.",
+        "desc": "Ayudo a fundadores a lanzar MVPs ágiles pero sólidos con una base técnica fuerte.",
+        "details": [
+          "Arquitectura rápida de MVP",
+          "Código limpio y mantenible",
+          "Frontend enfocado en rendimiento",
+          "Estructura de sistema escalable",
+          "Orientación técnica estratégica"
+        ],
+        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
+      },
+      "frontendArchitecture": {
+        "title": "Stack Principal",
+        "valueStatement": "Next.js · React · TypeScript · PostgreSQL · REST APIs",
+        "desc": "",
+        "details": [],
+        "tools": ""
+      },
+      "ongoingSupport": {
+        "title": "Colaboración a Largo Plazo",
+        "valueStatement": "Mejoras post-lanzamiento, expansión de funcionalidades y asociación técnica para productos en crecimiento.",
+        "desc": "",
+        "details": [],
+        "tools": ""
+      }
+    }
+  },
+  "contact": {
+    "home": {
+      "title": "Contáctame",
+      "subtitle": "Disponible para nuevos proyectos, consultoría y alianzas técnicas. Escríbeme directamente por correo, llamada o WhatsApp.",
+      "labels": {
+        "email": "CORREO",
+        "location": "UBICACIÓN",
+        "connect": "CONECTAR",
+        "phoneWhatsapp": "TELÉFONO / WHATSAPP"
+      },
+      "location": {
+        "city": "Vientiane, Laos PDR",
+        "timezone": "GMT+7 (Trabajo remoto sin problema)"
+      },
+      "links": {
+        "linkedin": "LinkedIn"
+      },
+      "card": {
+        "title": "Contacto Directo",
+        "subtitle": "Escríbeme directo por WhatsApp, teléfono o correo.",
+        "numberLabel": "Número / WhatsApp:"
+      },
+      "cta": {
+        "whatsapp": "WhatsApp",
+        "callNow": "Llamar Ahora"
+      }
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "reset": "Limpiar",
+      "hint": "Normalmente respondemos en menos de 24 horas"
+    },
+    "success": "¡Mensaje enviado con éxito! Te respondemos pronto.",
+    "error": "Error al enviar el mensaje. Por favor intenta de nuevo.",
+    "info": {
+      "email": "Correo",
+      "location": "Ubicación",
+      "availability": "Disponibilidad"
+    }
+  },
+  "referral": {
+    "label": "[ PROGRAMA DE REFERIDOS ]",
+    "title": "Refiere un cliente.",
+    "titleAlt": "Gana dinero.",
+    "desc": "¿Conoces a alguien que necesite un sitio web o una integración? Mándamelo — y yo me encargo de que valga la pena. Sin formularios, sin procesos. Solo un mensaje.",
+    "stepsLabel": "// CÓMO FUNCIONA",
+    "steps": [
+      "Cuéntale a un amigo sobre mis servicios",
+      "Ellos contactan a Maxon y mencionan tu nombre",
+      "Firman — tú cobras tu recompensa"
+    ],
+    "cta": "WhatsApp a Maxon",
+    "phone": "+856 20 52 373 435 · maxontorres.com",
+    "earn": {
+      "label": "// DOS FORMAS DE GANAR"
+    },
+    "optionA": {
+      "label": "OPCIÓN A",
+      "amount": "$50 USD",
+      "unit": "EFECTIVO",
+      "desc": "Refiere a alguien que firme un proyecto de desarrollo y recibe <highlight>$50 en efectivo</highlight> cuando pague su primera factura.",
+      "footer": "Se paga en la primera factura"
+    },
+    "optionB": {
+      "label": "OPCIÓN B",
+      "amount": "3",
+      "unit": "MESES GRATIS",
+      "desc": "Refiere a alguien que firme cualquier paquete web — obtienes <highlight>3 meses de mantenimiento gratis</highlight> de inmediato cuando firmen.",
+      "footer": "Se acredita al momento de firmar"
+    },
+    "fine": "Sin vencimiento · Aplica para todos · Un premio por referido",
+    "modal": {
+      "ariaLabel": "Programa de referidos",
+      "badge": "PROGRAMA DE REFERIDOS · ACTIVO",
+      "dismiss": "CERRAR"
+    }
+  },
+  "footer": {
+    "tagline": "Automatización de Flujos e Integración de Sistemas",
+    "connect": "Conectando sistemas. Eliminando trabajo manual. Remoto desde Vientiane, Laos.",
+    "copyright": "© {year} Maxon Torres. Todos los derechos reservados.",
+    "builtWith": "Construido con Next.js & TypeScript"
+  },
+  "theme": {
+    "toggle": "Cambiar tema",
+    "light": "Modo claro",
+    "dark": "Modo oscuro"
+  },
+  "locale": {
+    "switch": "Cambiar idioma",
+    "english": "English",
+    "lao": "ລາວ",
+    "spanish": "Español"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "learnMore": "Saber Más"
+  },
+  "articlesMeta": {
+    "teaching-web-development-china-yango-university": {
+      "title": "Enseñando Desarrollo Web en China @ Universidad Yango",
+      "excerpt": "Cómo enseñar fundamentos de HTML, CSS y JavaScript en Fuzhou, China me enseñó a ser mejor desarrollador. Lecciones sobre educación intercultural, comunicación y por qué los fundamentos sólidos importan más que cualquier framework."
+    },
+    "how-i-built-orderbridge": {
+      "title": "Cómo Construí OrderBridge: Resolviendo el Gap de Middleware Delivery-a-POS",
+      "excerpt": "Construyendo un sistema middleware OAuth 2.0 que conecta automáticamente DoorDash, Uber Eats y plataformas de delivery a los sistemas POS de restaurantes. Análisis técnico de ingesta de webhooks, traducción de schemas y sincronización de pedidos en tiempo real."
+    }
+  },
+  "yangoArticle": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbArticles": "Artículos",
+    "breadcrumbCurrent": "Enseñando en la Universidad Yango",
+    "titleMain": "Enseñando Desarrollo Web en China @",
+    "titleHighlight": "Universidad Yango",
+    "lede": "Poco después del fin de la era Covid, pasé un tiempo enseñando desarrollo web en la Universidad Yango en la ciudad de Fuzhou, Fujian. Siempre había querido probar la vida y el trabajo en China.",
+    "curriculum": {
+      "label": "[ EL CURRÍCULO ]",
+      "heading": "Enseñando los Fundamentos de la Web",
+      "p1": "Mi rol era introducir a los estudiantes a los fundamentos del desarrollo web.",
+      "p2": "Nos enfocamos en cosas como:",
+      "topics": [
+        "HTML y estructura semántica de página",
+        "CSS y diseño responsivo",
+        "Fundamentos de JavaScript",
+        "Cómo funcionan los navegadores",
+        "Qué es Internet",
+        "El modelo cliente–servidor detrás de las aplicaciones web"
+      ],
+      "p3": "En lugar de solo enseñar teoría, intenté mantener las cosas prácticas en la medida de lo posible. Las clases tenían que ser divertidas, eso es lo que más motiva a los estudiantes. El objetivo siempre fue lograr que los alumnos construyeran algo que pudieran ver funcionando en el navegador.",
+      "p4": "Incluso una landing page sencilla o una interfaz interactiva era suficiente para que la gente se emocionara con la programación."
+    },
+    "figStudentPresenting": "Estudiante presentando su proyecto a la clase",
+    "challenge": {
+      "label": "[ EL DESAFÍO ]",
+      "heading": "Enseñar en una Cultura Diferente",
+      "p1": "Enseñar en China tuvo algunos desafíos únicos.",
+      "p2": "Las diferencias de idioma hacían que las explicaciones técnicas largas no siempre funcionaran bien. Yo impartía mis clases en inglés y no todos los estudiantes podían entender. Por eso me apoyé mucho en demostraciones visuales, programación en vivo, muchos diagramas y ejemplos.",
+      "p3": "Algo que noté rápido es que el código en sí se convierte en el idioma común. Una vez que los estudiantes empiezan a experimentar y ven resultados en el navegador, la barrera desaparece."
+    },
+    "insight": {
+      "label": "[ EL APRENDIZAJE ]",
+      "heading": "Por Qué Enseñar Te Hace Mejor Desarrollador",
+      "p1": "Enseñar programación te obliga a entender las cosas a un nivel más profundo.",
+      "p2": "Cuando tienes que explicar conceptos como:",
+      "concepts": [
+        "Cómo funcionan las solicitudes HTTP",
+        "Cómo se manipula el DOM",
+        "Por qué los layouts de CSS se comportan como lo hacen"
+      ],
+      "p3": "Rápidamente descubres qué partes entiendes de verdad y cuáles no.",
+      "p4": "Ese proceso me hizo mejor desarrollador en varios sentidos:",
+      "benefits": [
+        { "title": "Pensamiento Más Claro", "desc": "Sobre cómo funcionan los sistemas" },
+        { "title": "Fundamentos Más Sólidos", "desc": "Conceptos clave por encima de frameworks" },
+        { "title": "Mejor Comunicación", "desc": "De ideas técnicas" }
+      ],
+      "p5": "Todas esas habilidades importan tanto como escribir código."
+    },
+    "figStudentsPresenting": "Estudiantes presentando su proyecto final",
+    "figCollaborative": "Sesión de programación colaborativa",
+    "perspective": {
+      "label": "[ PERSPECTIVA ]",
+      "heading": "Una Industria Global",
+      "p1": "Algo que me llamó la atención mientras enseñaba en China fue lo verdaderamente global que es el desarrollo de software.",
+      "p2": "Los estudiantes en Fuzhou aprendían las mismas tecnologías base que usan los desarrolladores de todo el mundo: estándares web, JavaScript, APIs y herramientas modernas.",
+      "p3": "Los problemas en los que trabajan los desarrolladores son sorprendentemente similares sin importar dónde estés en el mundo.",
+      "p4": "Eso sí, la infraestructura es bastante diferente y confusa."
+    },
+    "reflection": {
+      "label": "[ REFLEXIÓN ]",
+      "heading": "Mirando Hacia Atrás",
+      "p1": "Enseñar desarrollo web fue una experiencia que me marcó. Reforzó algo en lo que todavía creo fuertemente: los fundamentos sólidos y el pensamiento claro importan más que cualquier framework o herramienta.",
+      "p2": "Y esos fundamentos son los mismos ya sea que estés enseñando en un salón de clases o construyendo software real.",
+      "calloutLabel": "CONCLUSIÓN CLAVE",
+      "calloutText": "Los fundamentos sólidos y el pensamiento claro importan más que cualquier framework o herramienta."
+    },
+    "cta": {
+      "label": "[ MÁS ARTÍCULOS ]",
+      "heading": "Sigue Leyendo",
+      "subtitle": "Revisa más notas técnicas, guías y lecciones aprendidas de mi experiencia.",
+      "viewAll": "Ver Todos los Artículos",
+      "backHome": "← Volver al Inicio"
+    }
+  },
+  "orderbridgeArticle": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbArticles": "Artículos",
+    "breadcrumbCurrent": "Cómo Construí OrderBridge",
+    "titleMain": "Cómo Construí OrderBridge: Resolviendo la",
+    "titleHighlight": "Conexión Delivery-a-POS",
+    "lede": "Hace unos meses, un cliente llegó a mí con un problema simple de describir y que parecía bastante directo. Necesitaban conectar las principales plataformas de delivery con su propio sistema POS mediante un handshake automatizado con OAuth 2.0.",
+    "introP1Pre": "Este proyecto comenzó como un brief real de cliente. La solicitud llegó en español:",
+    "introP1Post": "En resumen: necesitaban conectar las cuentas de delivery de sus clientes a su sistema POS a través de la API de socios de StreamOrder — de forma automática, vía OAuth, sin intervención manual. Analicé los requisitos, leí la documentación del partner de StreamOrder y me puse a trabajar.",
+    "brief": {
+      "label": "[ EL BRIEF ]",
+      "heading": "La Propuesta al Cliente",
+      "p1": "Antes de escribir una sola línea de código, preparé una propuesta formal. Eso forzó claridad en ambos lados — el cliente entendía exactamente lo que iba a recibir, y yo entendía exactamente lo que iba a construir.",
+      "proposalLabel": "PROPUESTA DE PROYECTO",
+      "proposalTitle": "Integración de Apps de Delivery al POS",
+      "proposalSubtitle": "Middleware API · StreamOrder · OAuth 2.0",
+      "descriptionLabel": "DESCRIPCIÓN",
+      "descriptionText": "Este proyecto establece un \"Puente Digital\" seguro y automatizado — una Middleware API entre el agregador StreamOrder y el sistema de Punto de Venta (POS) del cliente, permitiendo que los pedidos de delivery fluyan automáticamente al POS sin intervención manual.",
+      "objectiveLabel": "OBJETIVO",
+      "objectiveText": "Implementar OAuth 2.0 como capa de autenticación, garantizando que los datos permanezcan seguros mientras los pedidos se sincronizan automáticamente desde las plataformas de delivery al POS.",
+      "objectives": [
+        { "label": "Conexión Segura", "desc": "Handshake OAuth — sin contraseñas compartidas, datos protegidos por llaves digitales cifradas." },
+        { "label": "Sincronización Automática", "desc": "Cada pedido de DoorDash y plataformas de delivery aparece en el POS al instante." }
+      ],
+      "architectureLabel": "FLUJO DE ARQUITECTURA",
+      "archNodes": ["Plataformas de Delivery", "StreamOrder", "Middleware API", "Sistema POS", "Dashboard"],
+      "timelineHeading": "Cronograma de 4 Semanas",
+      "goalLabel": "Objetivo",
+      "resultLabel": "Resultado",
+      "weeks": [
+        { "week": "Semana 1", "title": "Seguridad y el Handshake Digital", "goal": "Conectar las cuentas del cliente de forma segura.", "result": "StreamOrder oficialmente vinculado; datos protegidos por llaves OAuth cifradas." },
+        { "week": "Semana 2", "title": "El Puente de Automatización", "goal": "Hacer que los sistemas se comuniquen.", "result": "Traductor y listener de webhooks funcionando en entorno de prueba — pedidos capturados y traducidos al instante." },
+        { "week": "Semana 3", "title": "Dashboard y Lanzamiento en Vivo", "goal": "Visibilidad y preparación para producción.", "result": "Puente activo, pedidos imprimiéndose en el POS, dashboard de monitoreo en vivo entregado." },
+        { "week": "Semana 4", "title": "Refinamiento y Monitoreo", "goal": "Estabilidad bajo condiciones reales.", "result": "Ventana de monitoreo en vivo de 7 días; cambios de API de StreamOrder o plataformas de delivery parcheados de inmediato." }
+      ],
+      "deliverablesHeading": "Entregables Principales",
+      "deliverables": [
+        { "name": "Integración OAuth 2.0", "desc": "Capa de autenticación que conecta todas las cuentas sin compartir contraseñas privadas." },
+        { "name": "Inyección de Pedidos en Tiempo Real", "desc": "Pedidos detectados vía webhook e inyectados directamente al POS en segundos." },
+        { "name": "Traductor Automatizado", "desc": "Mapeo inteligente de menú que asegura que cada artículo, modificador y nota del cliente coincida con el formato del POS." },
+        { "name": "Renovación Automática de Tokens", "desc": "Seguridad autogestionada — los tokens OAuth se renuevan automáticamente para que la conexión nunca expire." },
+        { "name": "Monitoreo de Confiabilidad", "desc": "Rastreo de errores que alerta de inmediato si un pedido falla al sincronizarse." },
+        { "name": "Dashboard de Conexión en Vivo", "desc": "Vista web para monitorear el estado del puente y verificar las sincronizaciones más recientes." }
+      ],
+      "prerequisitesLabel": "PRERREQUISITOS DEL PROYECTO",
+      "prerequisites": [
+        "Acceso de desarrollador a StreamOrder con la API de Partner habilitada.",
+        "Credenciales del portal de desarrollador del POS con permisos de escritura.",
+        "Lista de menú / SKU exportada del POS (CSV o Excel).",
+        "Un contacto técnico designado con autorización para aprobar el handshake OAuth."
+      ],
+      "downloadProposal": "↓ Descargar Propuesta Original (PDF)"
+    },
+    "painPoint": {
+      "label": "[ EL PROBLEMA ]",
+      "heading": "El Caos de los Pedidos Manuales",
+      "p1": "Antes de automatizar esto, el flujo de trabajo era tedioso y doloroso. La mayoría de las cocinas ocupadas tienen un mostrador lleno de tablets de diferentes apps de delivery.",
+      "listIntro": "Un empleado tenía que:",
+      "listItems": [
+        "Leer el pedido en la tablet.",
+        "Escribirlo manualmente en el POS.",
+        "Esperar no haberse saltado un modificador como \"sin cebolla\"."
+      ],
+      "p2": "En una tienda tranquila es aburrido. En una cocina con 80+ pedidos al día, es un problema operativo muy doloroso.",
+      "mathLabel": "LAS MATEMÁTICAS",
+      "mathPre": "50 pedidos al día × 2.5 minutos de captura manual × $18/hr =",
+      "mathHighlight": "más de $1,100 perdidos cada mes",
+      "mathPost": "en una tarea que no debería involucrar a ningún humano."
+    },
+    "figOrders": "Página de pedidos — filtrable, ordenable, actualizaciones en tiempo real",
+    "engineering": {
+      "label": "[ INGENIERÍA ]",
+      "heading": "Construyendo el Pipeline",
+      "p1": "Una vez que el ROI quedó claro, diseñé el pipeline. La lógica tenía que ser a prueba de fallos:",
+      "figDiagram": "Flujo general: plataformas de delivery → OrderBridge → POS del restaurante",
+      "steps": [
+        { "n": "01", "title": "Ingerir webhooks de delivery", "desc": "Recibir POST HTTPS de cada plataforma de delivery." },
+        { "n": "02", "title": "Verificar firmas", "desc": "Verificación HMAC-SHA256 — seguridad antes que todo." },
+        { "n": "03", "title": "Traducir schemas", "desc": "Mapear payloads JSON dispares a un formato POS unificado." },
+        { "n": "04", "title": "Inyectar el pedido", "desc": "POST a la API del POS con reintentos de backoff exponencial." },
+        { "n": "05", "title": "Transmitir actualizaciones", "desc": "Push WebSocket al dashboard en vivo — sin polling." }
+      ]
+    },
+    "process": {
+      "label": "[ EL PROCESO ]",
+      "heading": "Primero Escribir el Spec",
+      "p1": "Empecé con una Especificación de Requisitos de Software (SRS) antes de escribir una sola línea de código. Es mucho más fácil corregir un error en un documento que reescribir código de producción después. El SRS forzó tanto a mí como al cliente a acordar exactamente qué significaba \"listo\" — sin ambigüedad, sin cambios de alcance.",
+      "requirements": [
+        { "label": "FR-01", "title": "Servidor OAuth 2.0", "desc": "El sistema debe actuar como proveedor OAuth 2.0 — emitiendo, validando y renovando tokens conforme al RFC 6749." },
+        { "label": "FR-02", "title": "Ingesta de Webhooks", "desc": "El sistema debe aceptar webhooks HTTPS POST de plataformas de delivery y verificar cada solicitud con validación de firma HMAC-SHA256." },
+        { "label": "FR-03", "title": "Traducción de Schema", "desc": "El sistema debe mapear todos los payloads de delivery entrantes a un formato POS unificado, con fallo elegante y logging en SKUs no mapeados." },
+        { "label": "FR-04", "title": "Inyección al POS", "desc": "El sistema debe hacer POST de pedidos traducidos a la API del POS con reintentos de backoff exponencial — ningún pedido se pierde en silencio." },
+        { "label": "NFR-01", "title": "Actualizaciones en Tiempo Real", "desc": "El dashboard debe reflejar cambios de estado de pedidos vía push WebSocket. Sin polling." },
+        { "label": "NFR-02", "title": "Persistencia de Tokens", "desc": "Los tokens OAuth deben sobrevivir reinicios del servidor, almacenados cifrados en reposo." }
+      ]
+    },
+    "figDashboard": "Dashboard en vivo — feed de pedidos en tiempo real con seguimiento de estado",
+    "techStack": {
+      "label": "[ TECH STACK ]",
+      "heading": "El Tech Stack",
+      "subtitle": "Qué herramientas usaría para este tipo de proyecto:",
+      "items": [
+        { "name": "Node.js & TypeScript", "body": "Estoy seguro de que Python también hubiera funcionado muy bien aquí. Personalmente prefiero trabajar con módulos de node y npm antes que con pip y entornos virtuales." },
+        { "name": "Fastify (No Express)", "body": "Express es el default de siempre, pero Fastify está construido para el rendimiento moderno. Validación JSON schema integrada, menor sobrecarga. Para una Middleware API donde cada milisegundo cuenta, Fastify gana." }
+      ]
+    },
+    "deployment": {
+      "label": "[ DESPLIEGUE ]",
+      "heading": "Infraestructura",
+      "p1": "Los tres servicios están desplegados de forma independiente — cada uno con su propio host, su propio dominio y su propia responsabilidad. Esto refleja cómo se estructuraría una integración de producción real.",
+      "infrastructureLabel": "VISIÓN GENERAL DE INFRAESTRUCTURA",
+      "services": [
+        { "host": "Vercel", "service": "Dashboard de OrderBridge", "detail": "UI de monitoreo en tiempo real — desplegada en edge, disponible globalmente.", "tag": "Frontend" },
+        { "host": "Railway", "service": "API de OrderBridge + PostgreSQL", "detail": "Motor middleware principal con el servidor OAuth, ingesta de webhooks, traductor de schemas e inyector al POS. PostgreSQL almacena tokens OAuth, mapeos de menú y logs de pedidos.", "tag": "Backend" },
+        { "host": "Railway", "service": "Servidor MockPOS", "detail": "Simulador de POS aislado ejecutándose como un servicio completamente separado — su propio flujo de consentimiento OAuth, su propio terminal de pedidos.", "tag": "Simulador" }
+      ],
+      "whySeparateLabel": "POR QUÉ SERVICIOS SEPARADOS",
+      "whySeparate": "Mantener MockPOS en su propio servicio de Railway no era solo conveniente — era el punto. Demuestra que la integración funciona a través de un límite de red real, no solo entre dos funciones en el mismo proceso."
+    },
+    "hardParts": {
+      "label": "[ LO DIFÍCIL ]",
+      "heading": "Traducción y Confianza",
+      "p1": "El Traductor fue la parte más difícil de este proyecto. DoorDash, Uber Eats y GrabFood tienen ideas muy distintas de cómo describir una \"hamburguesa sin pepinillos\". Mapear estos payloads inconsistentes a un SKU de POS estandarizado mientras se mantiene una tabla de MenuMapping requirió un manejo profundo de casos extremos. Si el mapeo falla, el sistema tiene que fallar elegantemente — no dejar caer el pedido en el vacío.",
+      "p2": "Luego estaba el Servidor OAuth 2.0. Una cosa es usar OAuth; otra muy distinta es ser el proveedor. Construir los endpoints de autorización, la lógica de tokens y el almacenamiento cifrado conforme a las especificaciones RFC costó más canas que el resto de la app combinado."
+    },
+    "figMockPos": "Phing Kai Kitchen [Simulador POS] — pedidos llegando automáticamente desde OrderBridge",
+    "portfolio": {
+      "label": "[ EL BUILD DE PORTAFOLIO ]",
+      "heading": "Presentando OrderBridge",
+      "p1": "Disfruté tanto la arquitectura del proyecto del cliente que construí OrderBridge — una versión refinada e independiente para mi portafolio. No es solo una copia; es una evolución. Un demo end-to-end completo que simula todo el flujo sin necesitar infraestructura real.",
+      "repos": [
+        { "name": "Backend", "body": "Fastify, TypeScript y WebSockets." },
+        { "name": "Dashboard", "body": "UI de monitoreo y control en tiempo real para el sistema OrderBridge." },
+        { "name": "Simulador POS (MockPOS)", "body": "Una aplicación secundaria que representa un restaurante ficticio llamado Phing Kai Kitchen. Actúa como el POS 'objetivo', completo con su propia pantalla de consentimiento OAuth y terminal de pedidos en vivo." }
+      ]
+    },
+    "figSimulator": "Simulador — lanza pedidos de prueba desde cualquier plataforma de delivery con un clic",
+    "sourceCode": {
+      "label": "[ CÓDIGO FUENTE ]",
+      "heading": "El Codebase Completo",
+      "subtitle": "Los tres componentes principales son open-source y están disponibles en GitHub:",
+      "repos": [
+        { "title": "API de OrderBridge", "desc": "Motor middleware principal con OAuth 2.0, ingesta de webhooks y traducción de schemas." },
+        { "title": "Dashboard de OrderBridge", "desc": "UI de monitoreo en tiempo real con feed de pedidos en vivo y estado de conexión." },
+        { "title": "Servidor MockPOS", "desc": "Simulador de POS que demuestra el flujo de integración completo." }
+      ]
+    },
+    "liveDemos": {
+      "label": "[ DEMOS EN VIVO ]",
+      "heading": "Pruébalo",
+      "subtitle": "Ambos servicios están activos y listos para usar:",
+      "demos": [
+        { "name": "Dashboard de OrderBridge", "desc": "Interfaz de monitoreo en tiempo real. Observa cómo fluyen los pedidos por el pipeline a medida que llegan." },
+        { "name": "Servidor MockPOS", "desc": "Página de pedidos en vivo del ficticio POS de Phing Kai Kitchen. Ve los pedidos inyectados en tiempo real." }
+      ],
+      "visitLabel": "Visitar →"
+    },
+    "cta": {
+      "label": "[ VÉLO EN ACCIÓN ]",
+      "heading": "¿Listo para Explorar?",
+      "subtitle": "Explora el código fuente, observa los sistemas en vivo, o revisa el caso de estudio completo.",
+      "viewLiveDemo": "Ver Demo en Vivo",
+      "fullCaseStudy": "Caso de Estudio Completo",
+      "allArticles": "← Todos los Artículos"
+    }
+  },
+  "orderbridgeCaseStudy": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbWork": "Trabajo",
+    "tagline": "Un sistema middleware que conecta plataformas de delivery con sistemas POS de restaurantes — eliminando la captura manual de pedidos.",
+    "viewLiveDemo": "Ver Demo en Vivo",
+    "readBuildArticle": "Leer el Artículo",
+    "diagramCaption": "Flujo general: plataformas de delivery → OrderBridge → POS del restaurante",
+    "outcomes": [
+      { "value": "<800ms", "label": "Procesamiento extremo a extremo" },
+      { "value": "5", "label": "Plataformas de delivery soportadas" },
+      { "value": "3", "label": "Sistemas POS integrados" },
+      { "value": "0", "label": "Pasos manuales requeridos" }
+    ],
+    "problem": {
+      "sectionLabel": "[ EL PROBLEMA ]",
+      "p1": "Cada vez que llega un pedido de DoorDash, Uber Eats o Grubhub, alguien en el restaurante tiene que leerlo en una tablet y escribirlo manualmente en el POS. Con 50 pedidos al día, son más de dos horas de trabajo — cada día.",
+      "p2": "La captura manual genera errores. Un modificador omitido, una cantidad incorrecta, un artículo saltado. En una cocina de alto volumen, un pedido incorrecto desencadena quejas de clientes, reembolsos y desperdicio de comida.",
+      "p3": "La matemática es simple: con 50 pedidos por día, 2.5 minutos de captura cada uno y $18/hr de costo laboral — eso son más de",
+      "p3Highlight": "$1,100 perdidos cada mes",
+      "p3End": "en un problema que debería estar automatizado."
+    },
+    "solution": {
+      "sectionLabel": "[ LA SOLUCIÓN ]",
+      "p1": "OrderBridge se ubica entre las plataformas de delivery y el POS. Cuando llega un pedido, recibe el webhook, traduce el payload al formato del POS e inyecta el pedido automáticamente — en menos de 800ms, sin intervención humana.",
+      "archTitle": "FLUJO DE ARQUITECTURA",
+      "archNodes": ["Plataforma\nDelivery", "Receptor\nWebhook", "Traductor", "Inyector", "Sistema\nPOS"],
+      "wsLabel": "Transmisión WebSocket → Dashboard (tiempo real)"
+    },
+    "howItWorks": {
+      "sectionLabel": "[ CÓMO FUNCIONA ]",
+      "steps": [
+        { "step": "01", "title": "Recepción del Webhook", "desc": "Cada plataforma de delivery envía un HTTPS POST a un endpoint compartido. El servidor verifica la firma HMAC-SHA256, rechaza payloads inválidos inmediatamente y deduplica por ID de pedido." },
+        { "step": "02", "title": "Traducción", "desc": "Un handler específico por plataforma mapea el esquema de delivery a un payload estandarizado para el POS. Cada artículo se resuelve contra una tabla MenuMapping que vincula IDs de la plataforma con SKUs del POS." },
+        { "step": "03", "title": "Inyección", "desc": "El payload traducido se envía al POS API con reintento exponencial. Al tener éxito, se guarda el ID del pedido en el POS. Tras alcanzar el máximo de reintentos, el pedido se marca como FALLIDO y se señala para revisión manual." },
+        { "step": "04", "title": "Sincronización en Tiempo Real", "desc": "Cada cambio de estado se persiste en PostgreSQL y se transmite vía WebSocket a todos los clientes del dashboard conectados — sin polling, sin refrescar la página." }
+      ]
+    },
+    "screenshots": {
+      "sectionLabel": "[ CAPTURAS ]",
+      "images": [
+        { "alt": "Dashboard de OrderBridge mostrando el flujo de pedidos en vivo", "caption": "Dashboard en vivo — flujo de pedidos en tiempo real con seguimiento de estado" },
+        { "alt": "Página de pedidos de OrderBridge con filtros", "caption": "Página de pedidos — filtrable, ordenable, exportación CSV" },
+        { "alt": "Terminal MockPOS mostrando pedidos inyectados", "caption": "Terminal MockPOS — pedidos llegando automáticamente desde OrderBridge" },
+        { "alt": "Página del simulador de OrderBridge", "caption": "Simulador — envía pedidos de prueba desde cualquier plataforma de delivery" }
+      ]
+    },
+    "techStack": {
+      "sectionLabel": "[ STACK TECNOLÓGICO ]",
+      "items": [
+        { "name": "React 19 + Vite", "reason": "Experiencia de desarrollo ágil, React Query para estado del servidor, sin overhead de SSR para un dashboard." },
+        { "name": "Fastify + TypeScript", "reason": "Menor overhead que Express, validación basada en esquemas integrada, excelente soporte para TypeScript." },
+        { "name": "PostgreSQL + Prisma", "reason": "Los datos relacionales encajan bien con el esquema de pedidos/tokens/mapeos. Prisma mantiene las migraciones seguras y tipadas." },
+        { "name": "WebSockets (ws)", "reason": "WebSocket nativo — sin el overhead de Socket.io para un canal de broadcast único." },
+        { "name": "OAuth 2.0 + AES-256", "reason": "Flujo de autenticación POS estándar de la industria. Tokens cifrados en reposo antes de escribirse en la base de datos." },
+        { "name": "HMAC-SHA256", "reason": "Verificación de firma de webhook — solo se procesan los payloads legítimos de las plataformas de delivery." }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "[ TRABAJEMOS JUNTOS ]",
+      "heading": "¿Tienes un problema similar de integración?",
+      "subtitle": "Construyo sistemas de automatización e integración a medida para empresas cansadas de flujos manuales. Precio fijo, código limpio, entrega rápida.",
+      "talkButton": "Hablemos",
+      "backToWork": "← Volver al Trabajo"
+    }
+  }
+}

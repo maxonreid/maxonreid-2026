@@ -13,7 +13,7 @@ export default function Navbar() {
   const router = useRouter();
   const t = useTranslations('nav');
 
-  const locale = pathname?.startsWith('/lo') ? 'lo' : 'en';
+  const locale = pathname?.startsWith('/lo') ? 'lo' : pathname?.startsWith('/es') ? 'es' : 'en';
 
   const normalizedPath = pathname?.replace(/\/$/, '') || '';
   const isHomePage = normalizedPath === `/${locale}` || normalizedPath === '' || normalizedPath === '/';
@@ -127,15 +127,6 @@ export default function Navbar() {
             {t('services')}
           </Link>
 
-          <Link
-            href={`/#contact`}
-            className={`nav-link ${activeSection === 'contact' ? 'nav-link-active' : ''}`}
-            onClick={(e) => handleHashClick(e, 'contact')}
-            locale={locale}
-          >
-            {t('contact')}
-          </Link>
-
           {/* ── REFERRAL LINK ── */}
           <Link
             href={`/#referral`}
@@ -150,6 +141,17 @@ export default function Navbar() {
             </span>
             {t('referral')}
           </Link>
+
+          <Link
+            href={`/#contact`}
+            className={`nav-link ${activeSection === 'contact' ? 'nav-link-active' : ''}`}
+            onClick={(e) => handleHashClick(e, 'contact')}
+            locale={locale}
+          >
+            {t('contact')}
+          </Link>
+
+
 
         </div>
 

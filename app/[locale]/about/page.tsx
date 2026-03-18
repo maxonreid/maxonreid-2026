@@ -6,7 +6,6 @@ import { FileText, ArrowRight } from 'lucide-react';
 import HeroSection from '@/app/components/about/HeroSection';
 import BioSection from '@/app/components/about/BioSection';
 import SkillsSection from '@/app/components/about/SkillsSection';
-import CTASection from '@/app/components/about/CTASection';
 
 export async function generateMetadata() {
   const t = await getTranslations('about');
@@ -39,10 +38,10 @@ export default async function AboutPage() {
             
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
-                Professional Experience
+                {t('experienceTitle')}
               </h2>
               <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
-                View my complete professional background, technical expertise, and career history
+                {t('experienceSubtitle')}
               </p>
               
               <Link 
@@ -58,7 +57,6 @@ export default async function AboutPage() {
           </div>
         </section>
 
-        {/* <CTASection /> */}
       </main>
       <Footer />
     </>

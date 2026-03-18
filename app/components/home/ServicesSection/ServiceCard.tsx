@@ -10,7 +10,6 @@ interface Service {
   desc?: string;
   details?: string[];
   tools?: string;
-  projectLink?: string;
   optional?: boolean;
 }
 
@@ -57,23 +56,6 @@ export default function ServiceCard({ service, deliverLabel = 'What I deliver', 
             </ul>
           </>
         )}
-        
-        {/* {service.tools && (
-          <div className="text-sm text-[#9ea0a8]">
-            <strong className="text-[#e6e7ea]">{toolsLabel}</strong> {service.tools}
-          </div>
-        )} */}
-          
-          {/* {service.projectLink && (
-            <a className="inline-flex items-center gap-2 text-sm text-[#d6b46b] hover:text-[#b99046] transition-colors" href={service.projectLink}>
-              View related project →
-            </a>
-          )}
-          
-          <a className="inline-block mt-4 py-2 px-4 rounded-lg bg-transparent border border-white/[0.06] text-[#e6e7ea] text-sm font-mono hover:border-[#d6b46b] hover:text-[#d6b46b] transition-all" href="#contact">
-            Get in Touch
-          </a> */}
-
       </div>
     </article>
   );

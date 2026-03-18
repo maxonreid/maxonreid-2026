@@ -4,29 +4,29 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import ProjectCard from './ProjectCard';
 
-const projects = [
-  {
-    id: 1,
-    title: 'OrderBridge',
-    year: '2026',
-    image: '/images/projects/orderbridge/orderbridge-cover.png',
-    images: [
-      '/images/projects/orderbridge/orderbridge-cover.png',
-      '/images/projects/orderbridge/orderbridge-dashboard.png',
-      '/images/projects/orderbridge/orderbridge-mock-pos.png',
-      '/images/projects/orderbridge/orderbridge-simulator.png',
-    ],
-    desc: 'A middleware system that connects food delivery platforms like DoorDash and Uber Eats directly to restaurant POS systems — eliminating manual order entry and reducing errors in high-volume kitchens.',
-    tags: ['React', 'Node.js', 'PostgreSQL', 'WebSockets', 'OAuth 2.0'],
-    category: 'automation',
-    caseStudyUrl: '/projects/orderbridge',
-    liveUrl: 'https://orderbridge.maxontorres.com',
-  },
-];
-
 export default function WorkSection() {
   const [activeFilter, setActiveFilter] = useState('all');
   const t = useTranslations('work');
+
+  const projects = [
+    {
+      id: 1,
+      title: 'OrderBridge',
+      year: '2026',
+      image: '/images/projects/orderbridge/orderbridge-cover.png',
+      images: [
+        '/images/projects/orderbridge/orderbridge-cover.png',
+        '/images/projects/orderbridge/orderbridge-dashboard.png',
+        '/images/projects/orderbridge/orderbridge-mock-pos.png',
+        '/images/projects/orderbridge/orderbridge-simulator.png',
+      ],
+      desc: t('projects.orderbridge.desc'),
+      tags: ['React', 'Node.js', 'PostgreSQL', 'WebSockets', 'OAuth 2.0'],
+      category: 'automation',
+      caseStudyUrl: '/projects/orderbridge',
+      liveUrl: 'https://orderbridge.maxontorres.com',
+    },
+  ];
 
   const categories = [
     { id: 'all',         label: t('categories.all') },
@@ -48,7 +48,7 @@ export default function WorkSection() {
     >
       <div className="mb-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold">
-          [ MY WORK ]
+          {t('sectionLabel')}
         </div>
 
         <div className="flex gap-2 flex-wrap" role="tablist" aria-label="Filter projects by category">

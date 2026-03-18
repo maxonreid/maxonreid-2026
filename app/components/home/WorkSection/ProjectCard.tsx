@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { useTranslations } from 'next-intl';
 import { Link } from '@/routing';
 
 interface Project {
@@ -22,6 +23,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, style }: ProjectCardProps) {
+  const t = useTranslations('work');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -104,7 +106,7 @@ export default function ProjectCard({ project, style }: ProjectCardProps) {
               className="bg-[#d6b46b] text-[#0a0a0c] px-4 py-2 rounded-lg font-semibold flex items-center gap-2 hover:bg-[#b99046] transition-colors text-sm"
               aria-hidden="true"
             >
-              Case Study →
+              {t('caseStudy')}
             </div>
           </div>
 

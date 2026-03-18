@@ -61,7 +61,7 @@ export default function ArticlesPage() {
         {/* ── Hero ─────────────────────────────────────────────────────────── */}
         <section className="pt-32 pb-16 w-[92%] max-w-[1200px] mx-auto">
           <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-6">
-            {t('heroLabel')} — {allArticles.length} {allArticles.length === 1 ? 'ARTICLE' : 'ARTICLES'}
+            {t('heroLabel')} — {allArticles.length} {allArticles.length === 1 ? t('articleSingular') : t('articlePlural')}
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-[#e6e7ea] leading-none mb-6">
             {t('heroTitle').split(' & ')[0]}{' '}

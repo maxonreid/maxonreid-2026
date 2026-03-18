@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
-import { US, LA } from 'country-flag-icons/react/3x2';
+import { US, LA, MX } from 'country-flag-icons/react/3x2';
 
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +11,11 @@ export default function LanguageSwitcher() {
   const router = useRouter();
 
   // Detect current locale from pathname
-  const currentLocale = pathname?.startsWith('/lo') ? 'lo' : 'en';
+  const currentLocale = pathname?.startsWith('/lo') ? 'lo' : pathname?.startsWith('/es') ? 'es' : 'en';
 
   const languages = [
     { code: 'en', label: 'English', flag: US },
+    { code: 'es', label: 'Español', flag: MX },
     { code: 'lo', label: 'ລາວ', flag: LA }
   ];
 
@@ -27,14 +28,12 @@ export default function LanguageSwitcher() {
     const currentPath = pathname || '';
     let newPath: string;
 
-    console.log('Current path:', currentPath);
-    console.log('Current locale:', currentLocale);
-    console.log('Switching to locale:', locale);
-
     // Remove current locale prefix if it exists
     let pathWithoutLocale = currentPath;
     if (currentPath.startsWith('/lo/') || currentPath === '/lo') {
       pathWithoutLocale = currentPath.replace(/^\/lo/, '');
+    } else if (currentPath.startsWith('/es/') || currentPath === '/es') {
+      pathWithoutLocale = currentPath.replace(/^\/es/, '');
     } else if (currentPath.startsWith('/en/') || currentPath === '/en') {
       pathWithoutLocale = currentPath.replace(/^\/en/, '');
     }
@@ -49,12 +48,8 @@ export default function LanguageSwitcher() {
       pathWithoutLocale = '/';
     }
 
-    console.log('Path without locale:', pathWithoutLocale);
-
     // Add new locale prefix (both locales need prefix now)
     newPath = `/${locale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
-
-    console.log('New path:', newPath);
 
     setIsOpen(false);
 

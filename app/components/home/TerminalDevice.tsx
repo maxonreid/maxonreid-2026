@@ -213,156 +213,13 @@ export default function TerminalDevice() {
       return writeTypedFn(term, text, delay);
     };
 
-    // Command handlers
-    const handlers: Record<string, (args: string[]) => Promise<void>> = {
-      help: async () => {
-        await writeTypedLocal('\x1b[1;95m>>> AVAILABLE COMMANDS <<<\x1b[0m\r\n', 8);
-        term.writeln('');
-        await writeTypedLocal('\x1b[92m▸ help\x1b[0m            \x1b[90m—\x1b[0m \x1b[96mshow this help\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[92m▸ profile\x1b[0m         \x1b[90m—\x1b[0m \x1b[96mshow profile summary\x1b[0m\r\n', 6);
-        // await writeTypedLocal('\x1b[92m▸ projects\x1b[0m        \x1b[90m—\x1b[0m \x1b[96mlist projects\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[92m▸ services\x1b[0m        \x1b[90m—\x1b[0m \x1b[96mlist services offered\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[92m▸ contact\x1b[0m         \x1b[90m—\x1b[0m \x1b[96mshow contact info\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[92m▸ whoami\x1b[0m          \x1b[90m—\x1b[0m \x1b[96mshow client info\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[92m▸ clear\x1b[0m           \x1b[90m—\x1b[0m \x1b[96mclear terminal\x1b[0m\r\n', 6);
-        term.writeln('');
-      },
-
-      // Profile
-      profile: async () => {
-        await writeTypedLocal('\x1b[1;93m>>> PLATFORM ENGINEER PROFILE <<<\x1b[0m\r\n', 10);
-        term.writeln('');
-        await writeTypedLocal('\x1b[96m▸ Name:\x1b[0m \x1b[93mMaxon Torres\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Role:\x1b[0m \x1b[92mSaaS & Marketplace Architect\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Experience:\x1b[0m \x1b[93m8+ years building scalable web platforms\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Focus:\x1b[0m \x1b[36mNext.js · Multi-User Systems · API Architecture\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Mission:\x1b[0m \x1b[92mBuild fast. Scale clean. Grow sustainably.\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Availability:\x1b[0m \x1b[92mRemote · Global Startups\x1b[0m\r\n', 8);
-        term.writeln('');
-      },
-
-      projects: async () => {
-        await writeTypedLocal('\x1b[1;95m>>> PROJECTS <<<\x1b[0m\r\n', 8);
-        term.writeln('');
-        await writeTypedLocal('\x1b[1;93mOrderBridge\x1b[0m \x1b[90m— 2026\x1b[0m\r\n', 8);
-        await writeTypedLocal('\x1b[96m▸ Type:\x1b[0m \x1b[93mSaaS Middleware Platform\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[96m▸ Stack:\x1b[0m \x1b[36mReact 19 · Vite · Fastify · PostgreSQL · Prisma · WebSockets\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[96m▸ Security:\x1b[0m \x1b[36mOAuth 2.0 · AES-256 encryption · HMAC-SHA256 webhooks\x1b[0m\r\n', 6);
-        await writeTypedLocal('\x1b[96m▸ About:\x1b[0m Unified middleware that bridges delivery platforms\r\n', 6);
-        await writeTypedLocal('         (UberEats, Grab, etc.) to POS systems in real-time.\r\n', 4);
-        term.writeln('');
-        await writeTypedLocal('\x1b[96m▸ Metrics:\x1b[0m\r\n', 6);
-        await writeTypedLocal('   \x1b[92m<800ms\x1b[0m  end-to-end order processing\r\n', 5);
-        await writeTypedLocal('   \x1b[92m5\x1b[0m       delivery platforms supported\r\n', 5);
-        await writeTypedLocal('   \x1b[92m3\x1b[0m       POS systems integrated\r\n', 5);
-        await writeTypedLocal('   \x1b[92m0\x1b[0m       manual steps required\r\n', 5);
-        term.writeln('');
-        await writeTypedLocal('\x1b[96m▸ Pipeline:\x1b[0m Webhook → Translate → Inject → Real-Time Sync\r\n', 6);
-        term.writeln('');
-      },
-
-      services: async () => {
-        await writeTypedLocal('\x1b[1;95m>>> SERVICES <<<\x1b[0m\r\n', 8);
-        term.writeln('');
-
-        await writeTypedLocal('\x1b[92m1. SaaS Product Development\x1b[0m\r\n', 6);
-        await writeTypedLocal('   Scalable multi-user platforms built for growth.\r\n\r\n', 4);
-
-        await writeTypedLocal('\x1b[92m2. Marketplace Platforms\x1b[0m\r\n', 6);
-        await writeTypedLocal('   Multi-sided systems connecting users, vendors, or services.\r\n\r\n', 4);
-
-        await writeTypedLocal('\x1b[92m3. MVP Development\x1b[0m\r\n', 6);
-        await writeTypedLocal('   Lean, production-ready MVPs for early-stage startups.\r\n\r\n', 4);
-
-        await writeTypedLocal('\x1b[90mType "contact" to start a collaboration.\x1b[0m\r\n', 4);
-      },
-
-      contact: async () => {
-        const email = document.querySelector('a[href^="mailto:"]')?.textContent?.trim() || 'hello@maxontorres.com';
-        const phone = document.querySelector('a[href^="tel:"]')?.textContent?.trim() || '+856 20 52 373 435';
-        const locationCards = Array.from(document.querySelectorAll('.contact-card'));
-        const location = locationCards.find(c => c.textContent?.includes('LOCATION'))?.querySelector('.contact-value')?.textContent?.trim() || '';
-        await writeTypedLocal('\r\nContact:\r\n', 8);
-        await writeTypedLocal(`  Email: ${email}\r\n`, 6);
-        if (phone) await writeTypedLocal(`  Phone: ${phone}\r\n`, 6);
-        if (location) await writeTypedLocal(`  Location: ${location}\r\n`, 6);
-        term.writeln('');
-      },
-
-      ping: async (args: string[]) => {
-        const host = args[0] || 'edge.example';
-        await writeTypedLocal(`\r\nPING ${host} (${host}) 56(84) bytes of data.\r\n`, 8);
-        await new Promise(r => setTimeout(r, 250));
-        const latency = randomLatency();
-        await writeTypedLocal(`64 bytes from ${host}: icmp_seq=1 ttl=54 time=${latency} ms\r\n`, 8);
-        await writeTypedLocal(`--- ${host} ping statistics ---\r\n`, 8);
-        await writeTypedLocal(`1 packets transmitted, 1 received, 0% packet loss, time 0ms\r\n`, 8);
-        term.writeln('');
-      },
-
-      deploy: async (args: string[]) => {
-        const name = args[0] || 'demo-app';
-        await writeTypedLocal(`\r\nStarting deploy: ${name}\r\n`, 8);
-        await writeTypedLocal('> building…\r\n', 10);
-        await new Promise(r => setTimeout(r, 700));
-        await writeTypedLocal('> running tests…\r\n', 10);
-        await new Promise(r => setTimeout(r, 900));
-        await writeTypedLocal('\x1b[32m> SUCCESS: build & tests passed\x1b[0m\r\n', 10);
-        await writeTypedLocal(`> rolling out ${name} to prod…\r\n`, 10);
-        await new Promise(r => setTimeout(r, 700));
-        await writeTypedLocal('\x1b[32m> DEPLOY OK — ' + new Date().toISOString() + '\x1b[0m\r\n', 10);
-        term.writeln('');
-      },
-
-      clear: async () => {
-        term.clear();
-      },
-
-      whoami: async () => {
-        const ua = navigator.userAgent || 'unknown';
-        const platform = navigator.platform || 'unknown';
-        const languages = navigator.languages ? navigator.languages.join(', ') : (navigator.language || 'unknown');
-        const theme = document.documentElement.getAttribute('data-theme') || 'dark';
-        const online = navigator.onLine ? 'online' : 'offline';
-        const cookies = navigator.cookieEnabled ? 'enabled' : 'disabled';
-        const timezone = (Intl && Intl.DateTimeFormat) ? Intl.DateTimeFormat().resolvedOptions().timeZone || 'unknown' : 'unknown';
-        const viewport = `${window.innerWidth}×${window.innerHeight}`;
-        const now = new Date().toLocaleString('en-US');
-
-        await writeTypedLocal('User client info:\r\n', 8);
-        await writeTypedLocal(`  User Agent: ${ua}\r\n`, 6);
-        await writeTypedLocal(`  Platform: ${platform}\r\n`, 6);
-        await writeTypedLocal(`  Languages: ${languages}\r\n`, 6);
-        await writeTypedLocal(`  Timezone: ${timezone}\r\n`, 6);
-        await writeTypedLocal(`  Viewport: ${viewport}\r\n`, 6);
-        await writeTypedLocal(`  Theme: ${theme}\r\n`, 6);
-        await writeTypedLocal(`  Online: ${online}\r\n`, 6);
-        await writeTypedLocal(`  Cookies: ${cookies}\r\n`, 6);
-        await writeTypedLocal(`  Local time: ${now}\r\n`, 6);
-        term.writeln('');
-      }
-    };
-
-    const execCommandLine = async (line: string) => {
-      const parts = (line || '').trim().split(/\s+/).filter(Boolean);
-      if (parts.length === 0) return;
-      const cmd = parts[0].toLowerCase();
-      const args = parts.slice(1);
-      if (handlers[cmd]) {
-        await handlers[cmd](args);
-      } else {
-        await writeTypedLocal(`Command not found: ${cmd}\r\n`, 8);
-        await writeTypedLocal('Type "help" to list available commands.\r\n', 8);
-      }
-    };
-
     // Initialize
     term.clear();
     await writeTypedLocal('\x1b[1;92m>>> MAXON INTERACTIVE TERMINAL <<<\x1b[0m\r\n', 10);
     term.writeln('');
     await writeTypedLocal('\x1b[93m[!]\x1b[0m Type \x1b[92m"help"\x1b[0m\r\n', 10);
     term.writeln('');
-    await handlers.profile([]);
+    await executeCommand(term, 'profile');
 
     // Mark as ready for input
     isReadyRef.current = true;
@@ -477,7 +334,6 @@ export default function TerminalDevice() {
       return writeTyped(term, text, delay);
     };
 
-    // Command handlers (same as before)
     const handlers: Record<string, (args: string[]) => Promise<void>> = {
       help: async () => {
         await writeTypedLocal('\x1b[1;95m>>> AVAILABLE COMMANDS <<<\x1b[0m\r\n', 8);

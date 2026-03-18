@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: path,
       languages: {
         en: '/en/projects/orderbridge',
+        es: '/es/projects/orderbridge',
         lo: '/lo/projects/orderbridge',
       },
     },

@@ -21,7 +21,7 @@ function toISODate(value: string) {
 }
 
 export function generateStaticParams() {
-  const locales = ['en', 'lo'];
+  const locales = ['en', 'lo', 'es'];
   const publishedArticles = articles.filter((a) => a.published);
 
   return publishedArticles.flatMap((article) =>
@@ -67,6 +67,7 @@ export async function generateMetadata({
       languages: {
         en: `/en/articles/${article.slug}`,
         lo: `/lo/articles/${article.slug}`,
+        es: `/es/articles/${article.slug}`,
       },
     },
     openGraph: {

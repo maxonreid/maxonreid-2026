@@ -13,16 +13,21 @@ interface BlogCardProps {
 
 export default function BlogCard({ article }: BlogCardProps) {
   const pathname = usePathname();
-  const locale = pathname?.startsWith('/lo') ? '/lo' : '/en';
+  const localePrefix = pathname?.startsWith('/lo') ? '/lo' : pathname?.startsWith('/es') ? '/es' : '/en';
   const t = useTranslations('blog');
+  const tMeta = useTranslations('articlesMeta');
+
+  const slug = article.slug as 'teaching-web-development-china-yango-university' | 'how-i-built-orderbridge';
+  const title = tMeta(`${slug}.title`);
+  const excerpt = tMeta(`${slug}.excerpt`);
   
   return (
-    <Link href={`${locale}/articles/${article.slug}`} className="block group">
+    <Link href={`${localePrefix}/articles/${article.slug}`} className="block group">
       <article className="relative bg-white/[0.02] border border-white/[0.06] rounded-xl overflow-hidden hover:border-[#d6b46b]/50 hover:-translate-y-1 transition-all hover:shadow-[0_12px_40px_rgba(214,180,107,0.1)]" tabIndex={0}>
       <div className="relative aspect-video overflow-hidden">
         <img 
           src={article.image} 
-          alt={article.title}
+          alt={title}
           loading="lazy"
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
@@ -32,18 +37,18 @@ export default function BlogCard({ article }: BlogCardProps) {
         <div className="font-mono text-xs text-[#9ea0a8] mb-3 flex items-center gap-2">
           <span>{article.date}</span>
           <span>·</span>
-          <span>{article.readTime} read</span>
+          <span>{t('readTime', { time: article.readTime })}</span>
         </div>
         
         <h3 className="text-xl font-bold text-[#e6e7ea] mb-3 group-hover:text-[#d6b46b] transition-colors">
-          {article.title} 
+          {title}
         </h3>
-        
-        <p 
+
+        <p
           className="text-[#9ea0a8] leading-relaxed mb-4"
           id={`blog-excerpt-${article.id}`}
         >
-          {article.excerpt}
+          {excerpt}
         </p>
         
         <div className="flex items-end justify-between gap-4 pt-2 border-t border-white/[0.06]">
