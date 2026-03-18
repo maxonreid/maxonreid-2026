@@ -91,7 +91,11 @@ export default function ReferralSection() {
             </div>
             <div className="h-px bg-white/[0.06] mb-4" />
             <p className="text-sm text-[#9ea0a8] leading-relaxed mb-3">
-              {t('optionA.desc')}
+              {t.rich('optionA.desc', {
+                highlight: (chunks) => (
+                  <span className="text-[#d6b46b] font-semibold">{chunks}</span>
+                ),
+              })}
             </p>
             <p className="font-mono text-[0.6rem] tracking-wide text-[#d6b46b]/60">
               {t('optionA.footer')}
@@ -115,7 +119,11 @@ export default function ReferralSection() {
             </div>
             <div className="h-px bg-white/[0.06] mb-4" />
             <p className="text-sm text-[#9ea0a8] leading-relaxed mb-3">
-              {t('optionB.desc')}
+              {t.rich('optionB.desc', {
+                highlight: (chunks) => (
+                  <span className="text-[#d6b46b] font-semibold">{chunks}</span>
+                ),
+              })}
             </p>
             <p className="font-mono text-[0.6rem] tracking-wide text-[#d6b46b]/60">
               {t('optionB.footer')}

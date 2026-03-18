@@ -139,12 +139,12 @@ export default function Navbar() {
           {/* ── REFERRAL LINK ── */}
           <Link
             href={`/#referral`}
-            className={`nav-link flex items-center gap-1.5 ${activeSection === 'referral' ? 'nav-link-active' : ''}`}
+            className={`nav-link ${activeSection === 'referral' ? 'nav-link-active' : ''}`}
             onClick={(e) => handleHashClick(e, 'referral')}
             locale={locale}
           >
             {/* pulsing $ badge */}
-            <span className="relative flex items-center justify-center w-3.5 h-3.5">
+            <span className="relative inline-flex items-center justify-center w-3.5 h-3.5">
               <span className="absolute inline-flex w-full h-full rounded-full bg-current opacity-20 animate-ping" />
               <span className="relative font-mono text-[0.6rem] font-bold leading-none">$</span>
             </span>
@@ -223,11 +223,11 @@ export default function Navbar() {
           {/* ── REFERRAL LINK (mobile) ── */}
           <Link
             href={`/#referral`}
-            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] flex items-center gap-2 ${activeSection === 'referral' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
+            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] inline-flex items-center gap-2 ${activeSection === 'referral' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
             onClick={(e) => handleHashClick(e, 'referral')}
             locale={locale}
           >
-            <span className="relative flex items-center justify-center w-3.5 h-3.5 shrink-0">
+            <span className="relative inline-flex items-center justify-center w-3.5 h-3.5 shrink-0">
               <span className="absolute inline-flex w-full h-full rounded-full bg-current opacity-20 animate-ping" />
               <span className="relative font-mono text-[0.6rem] font-bold leading-none">$</span>
             </span>

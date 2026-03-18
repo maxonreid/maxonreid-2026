@@ -262,14 +262,14 @@
       "label": "OPTION A · BUILD PROJECT ONLY",
       "amount": "$50",
       "unit": "CASH",
-      "desc": "Refer anyone who signs a build project — get <highlight>$50 cash paid</highlight> to you when they pay their first invoice.",
+      "desc": "Refer anyone who signs a build project and get <highlight>$50 cash</highlight> once they pay their first invoice.",
       "footer": "Paid on first invoice"
     },
     "optionB": {
       "label": "OPTION B · ANY PACKAGE",
       "amount": "3",
       "unit": "MONTHS FREE",
-      "desc": "Refer anyone who signs any web package — your next 3 months of maintenance are credited immediately when they sign.",
+      "desc": "Refer anyone who signs any web package — you get <highlight>3 months of free maintenance</highlight> immediately when they sign.",
       "footer": "Credited immediately on signing"
     },
     "fine": "No expiry · Anyone can apply · One reward per referral",
