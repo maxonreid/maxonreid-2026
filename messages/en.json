@@ -259,14 +259,14 @@
       "label": "// TWO WAYS TO EARN"
     },
     "optionA": {
-      "label": "OPTION A · BUILD PROJECT ONLY",
+      "label": "OPTION A",
       "amount": "$50",
       "unit": "CASH",
       "desc": "Refer anyone who signs a build project and get <highlight>$50 cash</highlight> once they pay their first invoice.",
       "footer": "Paid on first invoice"
     },
     "optionB": {
-      "label": "OPTION B · ANY PACKAGE",
+      "label": "OPTION B",
       "amount": "3",
       "unit": "MONTHS FREE",
       "desc": "Refer anyone who signs any web package — you get <highlight>3 months of free maintenance</highlight> immediately when they sign.",

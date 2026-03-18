@@ -33,14 +33,14 @@ export default function ReferralModal() {
 
   return (
     <div
-      className="fixed inset-0 bg-black/70 z-[999] flex items-center justify-center p-4 animate-[fadeIn_0.3s_ease_both] max-sm:items-end max-sm:p-0"
+      className="fixed inset-0 bg-black/70 z-[10000] flex items-center justify-center p-4 animate-[fadeIn_0.3s_ease_both] max-sm:items-end max-sm:p-0"
       onClick={dismiss}
       role="dialog"
       aria-modal="true"
       aria-label={t('modal.ariaLabel')}
     >
       <div
-        className="w-full max-w-[460px] max-h-[90vh] overflow-y-auto bg-[#0f1113] border border-white/[0.08] rounded-xl relative shadow-[0_40px_80px_rgba(0,0,0,0.8)] animate-[modalIn_0.35s_cubic-bezier(0.16,1,0.3,1)_both] max-sm:max-w-full max-sm:rounded-b-none"
+        className="w-full max-w-[560px] bg-[#0f1113] border border-white/[0.08] rounded-xl relative shadow-[0_40px_80px_rgba(0,0,0,0.8)] animate-[modalIn_0.35s_cubic-bezier(0.16,1,0.3,1)_both] max-sm:max-w-full max-sm:rounded-b-none"
         onClick={(e) => e.stopPropagation()}
       >
         {/* ── TOP BAR ── */}
@@ -114,7 +114,13 @@ export default function ReferralModal() {
               </div>
               <div className="h-px bg-white/[0.06] mb-3" />
               <p className="text-sm text-[#9ea0a8] leading-relaxed">
-                {t('optionB.desc')}
+                {t.rich('optionB.desc', {
+                  highlight: (chunks) => (
+                    <span className="font-semibold text-[#d6b46b] bg-[#d6b46b]/12 px-1.5 py-0.5 rounded">
+                      {chunks}
+                    </span>
+                  ),
+                })}
               </p>
             </div>
 

@@ -70,34 +70,34 @@ export default function ReferralSection() {
 
         {/* ── RIGHT — Two options ── */}
         <div className="flex flex-col gap-4">
-          <div className="font-mono text-xs text-[#9ea0a8] tracking-widest">
+          <div className="font-mono text-xs text-[#374151] dark:text-[#9ea0a8] tracking-widest">
             {t('earn.label')}
           </div>
 
           {/* Option A */}
           <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 hover:bg-white/[0.03] transition-colors flex-1">
             <div className="flex justify-between items-start mb-4">
-              <span className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8]">
+              <span className="font-mono text-[0.6rem] tracking-widest text-[#4b5563] dark:text-[#9ea0a8]">
                 {t('optionA.label')}
               </span>
               <div className="text-right">
                 <span className="font-mono text-4xl font-bold text-[#d6b46b] leading-none block">
                   {t('optionA.amount')}
                 </span>
-                <span className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8]">
+                <span className="font-mono text-[0.6rem] tracking-widest text-[#4b5563] dark:text-[#9ea0a8]">
                   {t('optionA.unit')}
                 </span>
               </div>
             </div>
             <div className="h-px bg-white/[0.06] mb-4" />
-            <p className="text-sm text-[#9ea0a8] leading-relaxed mb-3">
+            <p className="text-sm text-[#374151] dark:text-[#9ea0a8] leading-relaxed mb-3">
               {t.rich('optionA.desc', {
                 highlight: (chunks) => (
                   <span className="text-[#d6b46b] font-semibold">{chunks}</span>
                 ),
               })}
             </p>
-            <p className="font-mono text-[0.6rem] tracking-wide text-[#d6b46b]/60">
+            <p className="font-mono text-[0.6rem] tracking-wide !text-[#966D33] dark:text-[#c9a962]/75">
               {t('optionA.footer')}
             </p>
           </div>
@@ -105,32 +105,32 @@ export default function ReferralSection() {
           {/* Option B */}
           <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 hover:bg-white/[0.03] transition-colors flex-1">
             <div className="flex justify-between items-start mb-4">
-              <span className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8]">
+              <span className="font-mono text-[0.6rem] tracking-widest text-[#4b5563] dark:text-[#9ea0a8]">
                 {t('optionB.label')}
               </span>
               <div className="text-right">
                 <span className="font-mono text-4xl font-bold text-[#d6b46b] leading-none block">
                   {t('optionB.amount')}
                 </span>
-                <span className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8]">
+                <span className="font-mono text-[0.6rem] tracking-widest text-[#4b5563] dark:text-[#9ea0a8]">
                   {t('optionB.unit')}
                 </span>
               </div>
             </div>
             <div className="h-px bg-white/[0.06] mb-4" />
-            <p className="text-sm text-[#9ea0a8] leading-relaxed mb-3">
+            <p className="text-sm text-[#374151] dark:text-[#9ea0a8] leading-relaxed mb-3">
               {t.rich('optionB.desc', {
                 highlight: (chunks) => (
                   <span className="text-[#d6b46b] font-semibold">{chunks}</span>
                 ),
               })}
             </p>
-            <p className="font-mono text-[0.6rem] tracking-wide text-[#d6b46b]/60">
+            <p className="font-mono text-[0.6rem] tracking-wide !text-[#966D33] dark:text-[#c9a962]/75">
               {t('optionB.footer')}
             </p>
           </div>
 
-          <p className="font-mono text-[0.6rem] text-[#9ea0a8]/60 tracking-wide">
+          <p className="font-mono text-[0.6rem] text-[#374151] dark:text-[#9ea0a8]/70 tracking-wide">
             {t('fine')}
           </p>
         </div>
