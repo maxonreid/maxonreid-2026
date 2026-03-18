@@ -4,7 +4,8 @@
     "blog": "Blog",
     "about": "About",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "referral": "Get Paid"
   },
   "hero": {
     "brand": "MAXON TORRES",
@@ -239,6 +240,43 @@
       "email": "Email",
       "location": "Location",
       "availability": "Availability"
+    }
+  },
+  "referral": {
+    "label": "[ REFERRAL PROGRAM ]",
+    "title": "Refer a client.",
+    "titleAlt": "Get paid.",
+    "desc": "Know someone who needs a website or integration? Send them my way — and I'll make it worth your time. No forms, no process. Just a message.",
+    "stepsLabel": "// HOW IT WORKS",
+    "steps": [
+      "Tell a friend about my services",
+      "They contact Maxon and mention your name",
+      "They sign — you collect your reward"
+    ],
+    "cta": "WhatsApp Maxon",
+    "phone": "+856 20 52 373 435 · maxontorres.com",
+    "earn": {
+      "label": "// TWO WAYS TO EARN"
+    },
+    "optionA": {
+      "label": "OPTION A · BUILD PROJECT ONLY",
+      "amount": "$50",
+      "unit": "CASH",
+      "desc": "Refer anyone who signs a build project — get <highlight>$50 cash paid</highlight> to you when they pay their first invoice.",
+      "footer": "Paid on first invoice"
+    },
+    "optionB": {
+      "label": "OPTION B · ANY PACKAGE",
+      "amount": "3",
+      "unit": "MONTHS FREE",
+      "desc": "Refer anyone who signs any web package — your next 3 months of maintenance are credited immediately when they sign.",
+      "footer": "Credited immediately on signing"
+    },
+    "fine": "No expiry · Anyone can apply · One reward per referral",
+    "modal": {
+      "ariaLabel": "Referral program",
+      "badge": "REFERRAL PROGRAM · ACTIVE",
+      "dismiss": "DISMISS"
     }
   },
   "footer": {

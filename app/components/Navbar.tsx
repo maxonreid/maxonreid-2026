@@ -13,20 +13,17 @@ export default function Navbar() {
   const router = useRouter();
   const t = useTranslations('nav');
 
-  // Extract locale from pathname
   const locale = pathname?.startsWith('/lo') ? 'lo' : 'en';
 
-  // Check if we're on the home page - normalize trailing slashes
   const normalizedPath = pathname?.replace(/\/$/, '') || '';
   const isHomePage = normalizedPath === `/${locale}` || normalizedPath === '' || normalizedPath === '/';
 
-  // Handle scroll events for active section tracking
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
 
-      // Track active section for hash links
-      const sections = ['work', 'services', 'contact'];
+      // Added 'referral' to tracked sections
+      const sections = ['work', 'services', 'referral', 'contact'];
       const current = sections.find(id => {
         const element = document.getElementById(id);
         if (element) {
@@ -43,14 +40,11 @@ export default function Navbar() {
       }
     };
 
-    // Initial call
     handleScroll();
-
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Handle hash navigation on page load with smooth scroll
   useEffect(() => {
     const hash = window.location.hash.slice(1);
     if (hash) {
@@ -60,12 +54,7 @@ export default function Navbar() {
           const headerHeight = 100;
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
           const offsetPosition = elementPosition - headerHeight;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
           setActiveSection(hash);
         }
       }, 100);
@@ -76,12 +65,10 @@ export default function Navbar() {
     setIsMenuOpen(false);
   }, [pathname]);
 
-  // Hash link click handler with smooth scroll
   const handleHashClick = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
     e.preventDefault();
 
     if (!isHomePage) {
-      // Use Next.js router for client-side navigation
       router.push(`/${locale}#${hash}`);
       setIsMenuOpen(false);
       return;
@@ -92,12 +79,7 @@ export default function Navbar() {
       const headerHeight = 100;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - headerHeight;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
       window.history.pushState(null, '', `/${locale}#${hash}`);
       setActiveSection(hash);
       setIsMenuOpen(false);
@@ -107,6 +89,7 @@ export default function Navbar() {
   return (
     <nav className="relative" aria-label="Primary navigation">
       <div className="flex items-center gap-[18px]">
+
         {/* Desktop menu */}
         <div className="hidden md:flex gap-[18px] items-center">
 
@@ -127,8 +110,8 @@ export default function Navbar() {
             {t('work')}
           </Link>
 
-          <Link 
-            href="/articles" 
+          <Link
+            href="/articles"
             className={`nav-link ${pathname?.includes('/articles') ? 'nav-link-active' : ''}`}
             locale={locale}
           >
@@ -143,6 +126,7 @@ export default function Navbar() {
           >
             {t('services')}
           </Link>
+
           <Link
             href={`/#contact`}
             className={`nav-link ${activeSection === 'contact' ? 'nav-link-active' : ''}`}
@@ -151,6 +135,22 @@ export default function Navbar() {
           >
             {t('contact')}
           </Link>
+
+          {/* ── REFERRAL LINK ── */}
+          <Link
+            href={`/#referral`}
+            className={`nav-link flex items-center gap-1.5 ${activeSection === 'referral' ? 'nav-link-active' : ''}`}
+            onClick={(e) => handleHashClick(e, 'referral')}
+            locale={locale}
+          >
+            {/* pulsing $ badge */}
+            <span className="relative flex items-center justify-center w-3.5 h-3.5">
+              <span className="absolute inline-flex w-full h-full rounded-full bg-current opacity-20 animate-ping" />
+              <span className="relative font-mono text-[0.6rem] font-bold leading-none">$</span>
+            </span>
+            {t('referral')}
+          </Link>
+
         </div>
 
         {/* Mobile menu toggle */}
@@ -162,7 +162,9 @@ export default function Navbar() {
           aria-label="Toggle navigation menu"
           onClick={() => setIsMenuOpen((prev) => !prev)}
         >
-          {isMenuOpen ? <X size={18} strokeWidth={1.75} aria-hidden="true" /> : <Menu size={18} strokeWidth={1.75} aria-hidden="true" />}
+          {isMenuOpen
+            ? <X size={18} strokeWidth={1.75} aria-hidden="true" />
+            : <Menu size={18} strokeWidth={1.75} aria-hidden="true" />}
         </button>
       </div>
 
@@ -171,10 +173,7 @@ export default function Navbar() {
         <div
           id="mobile-navigation"
           className="fixed right-2 top-[4.5rem] z-50 flex w-56 max-w-[calc(100vw-1rem)] origin-top-right flex-col gap-1 rounded-xl border p-2 shadow-[0_12px_30px_rgba(0,0,0,0.18)] backdrop-blur-md md:hidden"
-          style={{
-            backgroundColor: 'var(--bg-secondary)',
-            borderColor: 'var(--border-color)'
-          }}
+          style={{ backgroundColor: 'var(--bg-secondary)', borderColor: 'var(--border-color)' }}
         >
           <Link
             href="/about"
@@ -184,6 +183,7 @@ export default function Navbar() {
           >
             {t('about')}
           </Link>
+
           <Link
             href={`/#work`}
             className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${activeSection === 'work' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
@@ -192,6 +192,7 @@ export default function Navbar() {
           >
             {t('work')}
           </Link>
+
           <Link
             href="/articles"
             className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${pathname?.includes('/articles') ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
@@ -200,6 +201,7 @@ export default function Navbar() {
           >
             {t('blog')}
           </Link>
+
           <Link
             href={`/#services`}
             className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${activeSection === 'services' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
@@ -208,6 +210,7 @@ export default function Navbar() {
           >
             {t('services')}
           </Link>
+
           <Link
             href={`/#contact`}
             className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${activeSection === 'contact' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
@@ -216,6 +219,21 @@ export default function Navbar() {
           >
             {t('contact')}
           </Link>
+
+          {/* ── REFERRAL LINK (mobile) ── */}
+          <Link
+            href={`/#referral`}
+            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] flex items-center gap-2 ${activeSection === 'referral' ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
+            onClick={(e) => handleHashClick(e, 'referral')}
+            locale={locale}
+          >
+            <span className="relative flex items-center justify-center w-3.5 h-3.5 shrink-0">
+              <span className="absolute inline-flex w-full h-full rounded-full bg-current opacity-20 animate-ping" />
+              <span className="relative font-mono text-[0.6rem] font-bold leading-none">$</span>
+            </span>
+            {t('referral')}
+          </Link>
+
         </div>
       )}
     </nav>

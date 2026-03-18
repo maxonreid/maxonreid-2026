@@ -1,0 +1,171 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
+import { MessageCircle, X } from 'lucide-react'
+
+export default function ReferralModal() {
+  const t = useTranslations('referral')
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const seen = sessionStorage.getItem('referral_modal_seen')
+    if (!seen) {
+      const timer = setTimeout(() => setVisible(true), 2500)
+      return () => clearTimeout(timer)
+    }
+  }, [])
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') dismiss()
+    }
+    if (visible) document.addEventListener('keydown', handleKey)
+    return () => document.removeEventListener('keydown', handleKey)
+  }, [visible])
+
+  const dismiss = () => {
+    sessionStorage.setItem('referral_modal_seen', '1')
+    setVisible(false)
+  }
+
+  if (!visible) return null
+
+  return (
+    <div
+      className="fixed inset-0 bg-black/70 z-[999] flex items-center justify-center p-4 animate-[fadeIn_0.3s_ease_both] max-sm:items-end max-sm:p-0"
+      onClick={dismiss}
+      role="dialog"
+      aria-modal="true"
+      aria-label={t('modal.ariaLabel')}
+    >
+      <div
+        className="w-full max-w-[460px] max-h-[90vh] overflow-y-auto bg-[#0f1113] border border-white/[0.08] rounded-xl relative shadow-[0_40px_80px_rgba(0,0,0,0.8)] animate-[modalIn_0.35s_cubic-bezier(0.16,1,0.3,1)_both] max-sm:max-w-full max-sm:rounded-b-none"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* ── TOP BAR ── */}
+        <div className="flex justify-between items-center pl-5 pr-12 py-3 border-b border-white/[0.06] rounded-t-xl bg-white/[0.02]">
+          <span className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8]">
+            MAXONTORRES.COM
+          </span>
+          <div className="flex items-center gap-1.5 font-mono text-[0.6rem] text-[#d6b46b]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#d6b46b] animate-[blink_2s_step-end_infinite]" />
+            {t('modal.badge')}
+          </div>
+        </div>
+
+        {/* ── CONTENT ── */}
+        <div className="px-6 pt-6">
+          <span className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8] block mb-5">
+            {t('label')}
+          </span>
+
+          <h2 className="text-2xl font-bold text-[#e6e7ea] leading-snug tracking-tight mb-4">
+            {t('title')}{' '}
+            <span className="text-[#d6b46b]">{t('titleAlt')}</span>
+          </h2>
+
+          <div className="h-px bg-white/[0.06] -mx-6 mb-5" />
+
+          {/* Options */}
+          <div className="flex flex-col gap-3 mb-5">
+
+            {/* Option A - cash */}
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 hover:bg-white/[0.03] transition-colors">
+              <div className="flex justify-between items-start mb-3">
+                <span className="font-mono text-[0.55rem] tracking-widest text-[#9ea0a8]">
+                  {t('optionA.label')}
+                </span>
+                <div className="text-right leading-none">
+                  <span className="font-mono text-3xl font-bold text-[#d6b46b] tracking-tight block">
+                    {t('optionA.amount')}
+                  </span>
+                  <span className="font-mono text-[0.55rem] tracking-widest text-[#9ea0a8]">
+                    {t('optionA.unit')}
+                  </span>
+                </div>
+              </div>
+              <div className="h-px bg-white/[0.06] mb-3" />
+              <p className="text-sm text-[#9ea0a8] leading-relaxed">
+                {t.rich('optionA.desc', {
+                  highlight: (chunks) => (
+                    <span className="font-semibold text-[#d6b46b] bg-[#d6b46b]/12 px-1.5 py-0.5 rounded">
+                      {chunks}
+                    </span>
+                  ),
+                })}
+              </p>
+            </div>
+
+            {/* Option B */}
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 hover:bg-white/[0.03] transition-colors">
+              <div className="flex justify-between items-start mb-3">
+                <span className="font-mono text-[0.55rem] tracking-widest text-[#9ea0a8]">
+                  {t('optionB.label')}
+                </span>
+                <div className="text-right leading-none">
+                  <span className="font-mono text-3xl font-bold text-[#d6b46b] tracking-tight block">
+                    {t('optionB.amount')}
+                  </span>
+                  <span className="font-mono text-[0.55rem] tracking-widest text-[#9ea0a8]">
+                    {t('optionB.unit')}
+                  </span>
+                </div>
+              </div>
+              <div className="h-px bg-white/[0.06] mb-3" />
+              <p className="text-sm text-[#9ea0a8] leading-relaxed">
+                {t('optionB.desc')}
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        {/* ── CTA ── */}
+        <div className="px-6 pb-6 flex flex-col gap-3">
+          <a
+            href="https://wa.me/8562052373435"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-3 px-6 rounded-lg font-semibold transition-all bg-[#d6b46b] hover:bg-[#b99046] text-[#0a0a0c] flex items-center justify-center gap-2"
+            onClick={dismiss}
+          >
+            <MessageCircle size={18} strokeWidth={2} aria-hidden="true" />
+            {t('cta')}
+          </a>
+          <div className="flex justify-between items-center">
+            <span className="font-mono text-[0.6rem] text-[#9ea0a8] tracking-wide">
+              {t('phone')}
+            </span>
+            <button
+              onClick={dismiss}
+              className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8] bg-transparent border-none cursor-pointer transition-colors hover:text-[#e6e7ea]"
+            >
+              {t('modal.dismiss')}
+            </button>
+          </div>
+        </div>
+
+        {/* ── FOOTER BAR ── */}
+        <div className="flex justify-between items-center px-5 py-3 border-t border-white/[0.06] rounded-b-xl bg-white/[0.02]">
+          <span className="font-mono text-[0.55rem] text-[#9ea0a8] tracking-wide">
+            MAXON TORRES · VIENTIANE : LAOS PDR
+          </span>
+          <span className="font-mono text-[0.55rem] text-[#9ea0a8]/60">
+            {t('fine')}
+          </span>
+        </div>
+
+        {/* Close button */}
+        <button
+          onClick={dismiss}
+          aria-label="Close"
+          className="absolute top-3 right-4 text-[#9ea0a8] bg-transparent border-none cursor-pointer p-0.5 transition-colors hover:text-[#e6e7ea]"
+        >
+          <X size={14} strokeWidth={2} />
+        </button>
+
+      </div>
+    </div>
+  )
+}

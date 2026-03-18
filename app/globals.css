@@ -36,6 +36,27 @@
       transform: translateY(0);
     }
   }
+
+  @keyframes modalIn {
+    from {
+      opacity: 0;
+      transform: translateY(24px) scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.15;
+    }
+  }
 }
 
 /* Theme Colors */
@@ -224,7 +245,8 @@
   position: relative;
   overflow: hidden;
   outline: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-link:hover {
