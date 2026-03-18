@@ -40,7 +40,7 @@ export default function ReferralModal() {
       aria-label={t('modal.ariaLabel')}
     >
       <div
-        className="w-full max-w-[560px] bg-[#0f1113] border border-white/[0.08] rounded-xl relative shadow-[0_40px_80px_rgba(0,0,0,0.8)] animate-[modalIn_0.35s_cubic-bezier(0.16,1,0.3,1)_both] max-sm:max-w-full max-sm:rounded-b-none"
+        className="w-full max-w-[560px] bg-[#0f1113] border border-white/[0.08] rounded-xl relative shadow-[0_40px_80px_rgba(0,0,0,0.8)] animate-[modalIn_0.35s_cubic-bezier(0.16,1,0.3,1)_both] max-sm:max-w-full max-sm:rounded-b-none max-sm:max-h-[92dvh] max-sm:overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* ── TOP BAR ── */}
@@ -55,7 +55,7 @@ export default function ReferralModal() {
         </div>
 
         {/* ── CONTENT ── */}
-        <div className="px-6 pt-6">
+        <div className="px-6 pt-6 max-sm:px-4 max-sm:pt-4">
           <span className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8] block mb-5">
             {t('label')}
           </span>
@@ -68,7 +68,7 @@ export default function ReferralModal() {
           <div className="h-px bg-white/[0.06] -mx-6 mb-5" />
 
           {/* Options */}
-          <div className="flex flex-col gap-3 mb-5">
+          <div className="flex flex-col gap-3 mb-5 max-sm:gap-2 max-sm:mb-3">
 
             {/* Option A - cash */}
             <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 hover:bg-white/[0.03] transition-colors">
@@ -77,7 +77,7 @@ export default function ReferralModal() {
                   {t('optionA.label')}
                 </span>
                 <div className="text-right leading-none">
-                  <span className="font-mono text-3xl font-bold text-[#d6b46b] tracking-tight block">
+                  <span className="font-mono text-3xl font-bold text-[#d6b46b] tracking-tight block max-sm:text-2xl">
                     {t('optionA.amount')}
                   </span>
                   <span className="font-mono text-[0.55rem] tracking-widest text-[#9ea0a8]">
@@ -104,7 +104,7 @@ export default function ReferralModal() {
                   {t('optionB.label')}
                 </span>
                 <div className="text-right leading-none">
-                  <span className="font-mono text-3xl font-bold text-[#d6b46b] tracking-tight block">
+                  <span className="font-mono text-3xl font-bold text-[#d6b46b] tracking-tight block max-sm:text-2xl">
                     {t('optionB.amount')}
                   </span>
                   <span className="font-mono text-[0.55rem] tracking-widest text-[#9ea0a8]">
@@ -128,7 +128,7 @@ export default function ReferralModal() {
         </div>
 
         {/* ── CTA ── */}
-        <div className="px-6 pb-6 flex flex-col gap-3">
+        <div className="px-6 pb-6 flex flex-col gap-3 max-sm:px-4 max-sm:pb-4">
           <a
             href="https://wa.me/8562052373435"
             target="_blank"
