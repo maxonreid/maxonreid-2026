@@ -28,7 +28,7 @@ export default function WorkSection() {
     },
     {
       id: 2,
-      title: 'Lao Mai Travel',
+      title: 'Travel Agency Website',
       year: '2025',
       image: '/images/projects/laomaitravel/hero-section.png',
       images: [
