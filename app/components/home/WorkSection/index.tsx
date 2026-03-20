@@ -26,6 +26,23 @@ export default function WorkSection() {
       caseStudyUrl: '/projects/orderbridge',
       liveUrl: 'https://orderbridge.maxontorres.com',
     },
+    {
+      id: 2,
+      title: 'Lao Mai Travel',
+      year: '2025',
+      image: '/images/projects/laomaitravel/hero-section.png',
+      images: [
+        '/images/projects/laomaitravel/hero-section.png',
+        '/images/projects/laomaitravel/destinations.png',
+        '/images/projects/laomaitravel/umami-main-dashboard.png',
+        '/images/projects/laomaitravel/umami-locations.png',
+      ],
+      desc: t('projects.laomaitravel.desc'),
+      tags: ['Next.js 15', 'TypeScript', 'next-intl', 'Umami', 'Resend'],
+      category: 'web',
+      caseStudyUrl: '/projects/tourism-website-seo',
+      liveUrl: 'https://laomaitravel.com',
+    },
   ];
 
   const categories = [
@@ -33,6 +50,7 @@ export default function WorkSection() {
     { id: 'automation',  label: t('categories.automation') },
     { id: 'integration', label: t('categories.integration') },
     { id: 'tools',       label: t('categories.tools') },
+    { id: 'web',         label: t('categories.web') },
   ];
 
   const filteredProjects =

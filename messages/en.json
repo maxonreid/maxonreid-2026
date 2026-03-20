@@ -24,12 +24,16 @@
       "all": "All",
       "automation": "Automation",
       "integration": "Integration",
-      "tools": "Tools"
+      "tools": "Tools",
+      "web": "Web"
     },
     "noProjects": "No projects in this category yet.",
     "projects": {
       "orderbridge": {
         "desc": "A middleware system that connects food delivery platforms like DoorDash and Uber Eats directly to restaurant POS systems — eliminating manual order entry and reducing errors in high-volume kitchens."
+      },
+      "laomaitravel": {
+        "desc": "A bilingual EN/TH tourism website for a Vientiane-based tour operator — built for SEO, booking inquiries, and real-time web analytics via Umami."
       }
     }
   },
@@ -629,6 +633,102 @@
       "sectionLabel": "[ WORK TOGETHER ]",
       "heading": "Have a similar integration problem?",
       "subtitle": "I build custom automation and integration systems for businesses tired of manual workflows. Fixed price, clean code, fast delivery.",
+      "talkButton": "Let's Talk",
+      "backToWork": "← Back to Work"
+    }
+  },
+  "laomaitravelCaseStudy": {
+    "breadcrumbHome": "Home",
+    "breadcrumbWork": "Work",
+    "tagline": "A bilingual EN/TH tourism website built for SEO, privacy-first analytics, and booking inquiries — no backend required.",
+    "viewLive": "Visit laomaitravel.com",
+    "heroImageAlt": "Lao Mai Travel hero section — temple at dusk with navy and gold design",
+    "outcomes": [
+      { "value": "EN + TH", "label": "Bilingual first-class routing" },
+      { "value": "100%", "label": "Server-rendered HTML for SEO" },
+      { "value": "0", "label": "Cookie banners or consent popups" },
+      { "value": "1 link", "label": "Client analytics dashboard access" }
+    ],
+    "problem": {
+      "sectionLabel": "[ THE PROBLEM ]",
+      "p1": "Before this site, Lao Mai Travel had no idea if their website was working. No data on who visited, where they came from, what they looked at, or what device they used. Every business decision about the site was a guess.",
+      "p2": "They also had no bilingual routing — visitors arriving in Lao had no way to read the site in their own language. And the only way to contact them was a phone number buried at the bottom of the page.",
+      "p3": "Three problems that needed solving:",
+      "problems": [
+        "No visibility into who was visiting or what was working",
+        "No bilingual support for Lao-speaking visitors",
+        "No booking inquiry system — just a phone number"
+      ]
+    },
+    "design": {
+      "sectionLabel": "[ THE DESIGN ]",
+      "p1": "The brief was premium, local, trustworthy. Not generic travel-site bright colors.",
+      "p2": "Navy and gold — navy reads as serious and professional, gold references Lao temple architecture and Buddhist heritage directly. The combination earns trust before a word is read.",
+      "p3": "Typography in three layers: Cinzel for navigation (classical, carved-stone quality), Cormorant Garamond for headlines (high-contrast, luxury editorial feel), Montserrat for body text (clean, readable). Each has a job. None compete.",
+      "p4": "The hero puts a temple photograph full-screen at dusk with the headline split between white roman and gold italic. The site immediately feels like the place it's selling."
+    },
+    "nextjs": {
+      "sectionLabel": "[ WHY NEXT.JS ]",
+      "intro": "Three reasons: SEO, bilingual routing, no backend to maintain.",
+      "reasons": [
+        {
+          "title": "SEO-first rendering",
+          "desc": "Every tour and destination page renders as full HTML on the server. Search engines index it all — no JavaScript required. For a business where customers search \"Laos trekking tours\" or \"Bolaven Plateau homestay\", that's directly tied to bookings."
+        },
+        {
+          "title": "Bilingual routing that's first-class",
+          "desc": "The App Router handles bilingual routing cleanly — all pages live under app/[locale]/, so /en and /th are proper first-class routes with their own metadata, not a hack on top of a single-language site. next-intl manages translations."
+        },
+        {
+          "title": "No backend to maintain",
+          "desc": "Resend handles the booking form emails. Vercel handles deployment — no server to configure, no maintenance, no downtime to manage. The client's site runs itself."
+        }
+      ]
+    },
+    "analytics": {
+      "sectionLabel": "[ ANALYTICS WITH UMAMI ]",
+      "heading": "From guessing to knowing.",
+      "p1": "Umami tracks every visit in real time — pages viewed, time on site, country of origin, referrer source (Google, Instagram, direct link), and device type. The client sees all of it in a clean dashboard with no technical knowledge required.",
+      "p2": "Umami is also privacy-first — no cookies, no personal data stored, GDPR compliant out of the box. No consent banner cluttering the site. For a business serving international tourists from Europe and beyond, that's not just ethical — it avoids a legal headache.",
+      "p3": "The client accesses their dashboard through a single shared link. No account, no password, no monthly subscription. They check it like they check their WhatsApp — independently, on their own time, without calling me.",
+      "questionsLabel": "QUESTIONS THAT UMAMI NOW ANSWERS:",
+      "questions": [
+        "The Bolaven Plateau tour page gets 600 views a month but almost no inquiries — is the pricing too high, or is the page not converting?",
+        "65% of visitors are on mobile — is the booking form easy enough to fill out on a phone?",
+        "Traffic spikes every November and December — that's when to push promotions.",
+        "Traffic is coming from Australia and France but almost nothing from the US — where should social media efforts focus?"
+      ],
+      "images": [
+        { "alt": "Umami analytics main dashboard showing visits and page views", "caption": "Main dashboard — real-time visits, bounce rate, and session duration" },
+        { "alt": "Umami pages and traffic sources breakdown", "caption": "Pages & sources — which tours get traffic and where it comes from" },
+        { "alt": "Umami visitor locations map", "caption": "Visitor locations — knowing where to focus marketing efforts" }
+      ]
+    },
+    "screenshots": {
+      "sectionLabel": "[ SCREENSHOTS ]",
+      "images": [
+        { "alt": "Lao Mai Travel destinations page", "caption": "Destinations — off-the-beaten-path locations across Laos" },
+        { "alt": "Lao Mai Travel tour packages page", "caption": "Tour packages — highland treks, Mekong islands, cultural homestays" },
+        { "alt": "Lao Mai Travel booking inquiry form", "caption": "Booking form — powered by Resend, delivered straight to the client" },
+        { "alt": "Thai language version of the site", "caption": "Thai language routing — full /th route with its own metadata" }
+      ]
+    },
+    "techStack": {
+      "sectionLabel": "[ TECH STACK ]",
+      "items": [
+        { "name": "Next.js 15 + App Router", "reason": "Server-rendered pages for SEO, locale-first routing via app/[locale]/, and edge-ready deployment on Vercel." },
+        { "name": "TypeScript", "reason": "Type-safe development across the full codebase — catches errors before they reach production." },
+        { "name": "CSS Modules", "reason": "Scoped styles without runtime overhead. Ideal for a design-heavy site with layered typography and a strong visual identity." },
+        { "name": "next-intl", "reason": "First-class bilingual routing with per-locale metadata, full EN/TH translation coverage, and no locale hacks." },
+        { "name": "Resend", "reason": "Handles booking inquiry emails via a clean API — no backend server needed, reliable delivery." },
+        { "name": "Umami", "reason": "Privacy-first analytics — no cookies, GDPR compliant, self-hostable. Client accesses their dashboard via a single shared link." },
+        { "name": "Vercel", "reason": "Zero-config deployment with automatic previews, instant rollbacks, and no infrastructure to manage." }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "[ WORK TOGETHER ]",
+      "heading": "Need a website that works for your business?",
+      "subtitle": "I build bilingual, SEO-first websites for businesses that need a real web presence — clean code, no backend complexity, and real analytics from day one.",
       "talkButton": "Let's Talk",
       "backToWork": "← Back to Work"
     }

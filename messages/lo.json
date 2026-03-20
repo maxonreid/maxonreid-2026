@@ -18,13 +18,24 @@
   "work": {
     "title": "ຜົນງານທີ່ເລືອກ",
     "subtitle": "ໂຄງການທີ່ຂ້ອຍເຄີຍເຮັດ",
+    "sectionLabel": "[ ຜົນງານຂອງຂ້ອຍ ]",
+    "caseStudy": "ກໍລະນີສຶກສາ →",
     "categories": {
       "all": "ທັງໝົດ",
       "automation": "ອັດຕະໂນມັດ",
       "integration": "ການເຊື່ອມຕໍ່",
-      "tools": "ເຄື່ອງມື"
+      "tools": "ເຄື່ອງມື",
+      "web": "ເວັບ"
     },
-    "noProjects": "ຍັງບໍ່ມີໂຄງການໃນໝວດນີ້."
+    "noProjects": "ຍັງບໍ່ມີໂຄງການໃນໝວດນີ້.",
+    "projects": {
+      "orderbridge": {
+        "desc": "ລະບົບ middleware ທີ່ເຊື່ອມຕໍ່ແພລດຟອມສັ່ງອາຫານໂດຍກົງໄປຫາ POS ຂອງຮ້ານ — ລຶບການປ້ອນຂໍ້ມູນດ້ວຍມືອອກທັງໝົດ."
+      },
+      "laomaitravel": {
+        "desc": "ເວັບໄຊທ໌ທ່ອງທ່ຽວສອງພາສາ (ອັງກິດ/ໄທ) ສຳລັບ operator ທ່ອງທ່ຽວໃນວຽງຈັນ — ສ້າງດ້ວຍ SEO, ລະບົບຈອງ ແລະ analytics ແບບ real-time."
+      }
+    }
   },
   "blog": {
     "sectionLabel": "[ ບົດຄວາມລ່າສຸດ ]",
@@ -264,5 +275,101 @@
     "next": "ຕໍ່ໄປ",
     "previous": "ກ່ອນໜ້າ",
     "learnMore": "ຮຽນຮູ້ເພີ່ມ"
+  },
+  "laomaitravelCaseStudy": {
+    "breadcrumbHome": "ໜ້າຫຼັກ",
+    "breadcrumbWork": "ຜົນງານ",
+    "tagline": "ເວັບໄຊທ໌ທ່ອງທ່ຽວສອງພາສາ (EN/TH) ສ້າງດ້ວຍ SEO, analytics ທີ່ບໍ່ໃຊ້ cookie ແລະ ລະບົບຮັບການຈອງ — ບໍ່ຕ້ອງການ backend.",
+    "viewLive": "ເຂົ້າເບິ່ງ laomaitravel.com",
+    "heroImageAlt": "Lao Mai Travel hero section — temple at dusk with navy and gold design",
+    "outcomes": [
+      { "value": "EN + TH", "label": "ເສັ້ນທາງສອງພາສາ" },
+      { "value": "100%", "label": "HTML ທີ່ render ຈາກ server ເພື່ອ SEO" },
+      { "value": "0", "label": "ປ້າຍ cookie ຫຼື popup" },
+      { "value": "1 ລິ້ງ", "label": "ການເຂົ້າເຖິງ dashboard analytics ຂອງລູກຄ້າ" }
+    ],
+    "problem": {
+      "sectionLabel": "[ ບັນຫາ ]",
+      "p1": "ກ່ອນທີ່ຈະມີເວັບໄຊທ໌ນີ້, Lao Mai Travel ບໍ່ຮູ້ວ່າເວັບໄຊທ໌ຂອງພວກເຂົາໃຊ້ງານໄດ້ຫຼືບໍ່. ບໍ່ມີຂໍ້ມູນກ່ຽວກັບຜູ້ເຂົ້າຊົມ, ແຫຼ່ງທີ່ມາ, ສິ່ງທີ່ເຂົາເຈົ້າເບິ່ງ ຫຼື ອຸປະກອນທີ່ໃຊ້.",
+      "p2": "ນອກຈາກນັ້ນ, ບໍ່ມີການ routing ສອງພາສາ ແລະ ບໍ່ມີລະບົບຮັບການຈອງ.",
+      "p3": "ສາມບັນຫາທີ່ຕ້ອງແກ້:",
+      "problems": [
+        "ບໍ່ມີຂໍ້ມູນກ່ຽວກັບຜູ້ໃຊ້ ຫຼື ສິ່ງທີ່ໃຊ້ງານໄດ້",
+        "ບໍ່ມີການຮອງຮັບພາສາລາວ",
+        "ບໍ່ມີລະບົບຈອງ — ມີແຕ່ເບີໂທລະສັບ"
+      ]
+    },
+    "design": {
+      "sectionLabel": "[ ການອອກແບບ ]",
+      "p1": "Brief ແມ່ນ premium, local, trustworthy. ບໍ່ແມ່ນສີສົດໃສທົ່ວໄປຂອງເວັບທ່ອງທ່ຽວ.",
+      "p2": "Navy ແລະ gold — navy ເບິ່ງດູຈິງຈັງ ແລະ ເປັນມືອາຊີບ, gold ອ້າງອິງສະຖາປັດຕະຍະກຳວັດ ແລະ ມໍລະດົກພຸດທະສາສະໜາລາວ.",
+      "p3": "Typography ສາມຊັ້ນ: Cinzel ສຳລັບ navigation, Cormorant Garamond ສຳລັບ headline, Montserrat ສຳລັບ body text.",
+      "p4": "Hero section ໃຊ້ຮູບພາບວັດຕອນຕາເວັນຕົກ ພ້ອມ headline ທີ່ແຍກລະຫວ່າງສີຂາວ roman ແລະ gold italic."
+    },
+    "nextjs": {
+      "sectionLabel": "[ ເປັນຫຍັງຈຶ່ງໃຊ້ NEXT.JS ]",
+      "intro": "ສາມເຫດຜົນ: SEO, bilingual routing, ບໍ່ຕ້ອງ maintain backend.",
+      "reasons": [
+        {
+          "title": "Render ດ້ວຍ server ເພື່ອ SEO",
+          "desc": "ທຸກໜ້າ tour ແລະ destination render ເປັນ HTML ສົມບູນຈາກ server. ເຄື່ອງມືຄົ້ນຫາ index ທັງໝົດ — ບໍ່ຕ້ອງການ JavaScript."
+        },
+        {
+          "title": "Bilingual routing ທີ່ເປັນ first-class",
+          "desc": "App Router ຈັດການ bilingual routing ຢ່າງສະອາດ — ທຸກໜ້າຢູ່ພາຍໃຕ້ app/[locale]/, ດັ່ງນັ້ນ /en ແລະ /th ແມ່ນ route ທີ່ແທ້ຈິງ. next-intl ຈັດການ translations."
+        },
+        {
+          "title": "ບໍ່ຕ້ອງ maintain backend",
+          "desc": "Resend ຈັດການ email ຈາກຟອມຈອງ. Vercel ຈັດການ deployment — ບໍ່ຕ້ອງ configure server, ບໍ່ຕ້ອງ maintenance."
+        }
+      ]
+    },
+    "analytics": {
+      "sectionLabel": "[ ANALYTICS ດ້ວຍ UMAMI ]",
+      "heading": "ຈາກການຄາດຄະເນ ສູ່ ການຮູ້ຂໍ້ເທັດຈິງ.",
+      "p1": "Umami track ທຸກການເຂົ້າຊົມແບບ real time — ໜ້າທີ່ເບິ່ງ, ເວລາໃນ site, ປະເທດທີ່ມາ, ແຫຼ່ງ referrer ແລະ ປະເພດອຸປະກອນ. ລູກຄ້າເຫັນທັງໝົດໃນ dashboard ທີ່ສະອາດ.",
+      "p2": "Umami ຍັງ privacy-first — ບໍ່ມີ cookie, ບໍ່ເກັບຂໍ້ມູນສ່ວນຕົວ, GDPR compliant ໂດຍ default. ບໍ່ມີ banner ທີ່ລົບກວນ site.",
+      "p3": "ລູກຄ້າເຂົ້າ dashboard ດ້ວຍລິ້ງດຽວ. ບໍ່ຕ້ອງ account, ບໍ່ຕ້ອງລະຫັດ, ບໍ່ຕ້ອງ subscription ລາຍເດືອນ.",
+      "questionsLabel": "ຄຳຖາມທີ່ UMAMI ຕອບໄດ້ດຽວນີ້:",
+      "questions": [
+        "ໜ້າ Bolaven Plateau tour ໄດ້ 600 views ຕໍ່ເດືອນ ແຕ່ແທບບໍ່ມີການຈອງ — ລາຄາສູງເກີນໄປ ຫຼື ໜ້ານັ້ນສ້າງຄວາມໄວ້ວາງໃຈບໍ່ພໍ?",
+        "65% ຂອງຜູ້ເຂົ້າຊົມໃຊ້ mobile — ຟອມຈອງງ່າຍພໍສຳລັບໂທລະສັບຫຼືບໍ່?",
+        "Traffic ເພີ່ມຂຶ້ນທຸກເດືອນພະຈິກ ແລະ ທັນວາ — ນັ້ນແມ່ນເວລາທີ່ຄວນ push promotions.",
+        "Traffic ມາຈາກ Australia ແລະ France ແຕ່ແທບບໍ່ມີຈາກ US — ຄວນ focus social media ຢູ່ໃສ?"
+      ],
+      "images": [
+        { "alt": "Umami analytics main dashboard", "caption": "Dashboard ຫຼັກ — visits, bounce rate ແລະ session duration ແບບ real-time" },
+        { "alt": "Umami pages and traffic sources", "caption": "ໜ້າ ແລະ ແຫຼ່ງ — tour ໃດໄດ້ traffic ແລະ ມາຈາກໃສ" },
+        { "alt": "Umami visitor locations map", "caption": "ທີ່ຢູ່ຜູ້ເຂົ້າຊົມ — ຮູ້ວ່າຄວນ focus marketing ຢູ່ໃສ" }
+      ]
+    },
+    "screenshots": {
+      "sectionLabel": "[ ຮູບໜ້າຈໍ ]",
+      "images": [
+        { "alt": "ໜ້າ destinations ຂອງ Lao Mai Travel", "caption": "Destinations — ສະຖານທີ່ທ່ອງທ່ຽວທີ່ຫຼົງລືມໃນລາວ" },
+        { "alt": "ໜ້າ tour packages ຂອງ Lao Mai Travel", "caption": "Tour packages — trek, Mekong islands, homestay ທາງວັດທະນະທຳ" },
+        { "alt": "ຟອມຈອງຂອງ Lao Mai Travel", "caption": "ຟອມຈອງ — ສົ່ງໄປຫາລູກຄ້າໂດຍກົງຜ່ານ Resend" },
+        { "alt": "ເວັບໄຊທ໌ສະບັບພາສາໄທ", "caption": "ພາສາໄທ — /th route ພ້ອມ metadata ຂອງຕົນເອງ" }
+      ]
+    },
+    "techStack": {
+      "sectionLabel": "[ TECH STACK ]",
+      "items": [
+        { "name": "Next.js 15 + App Router", "reason": "ໜ້າ render ຈາກ server ເພື່ອ SEO, locale-first routing ແລະ deployment ເທິງ Vercel." },
+        { "name": "TypeScript", "reason": "ການພັດທະນາທີ່ type-safe ທົ່ວ codebase — ຈັບ error ກ່ອນຈະ deploy." },
+        { "name": "CSS Modules", "reason": "Styles ທີ່ scoped ໂດຍບໍ່ມີ runtime overhead. ເໝາະສຳລັບ site ທີ່ design-heavy." },
+        { "name": "next-intl", "reason": "Bilingual routing first-class ພ້ອມ metadata ຕໍ່ locale ແລະ translations EN/TH ທີ່ຄົບຖ້ວນ." },
+        { "name": "Resend", "reason": "ຈັດການ email ຈາກຟອມຈອງ — ບໍ່ຕ້ອງການ backend server." },
+        { "name": "Umami", "reason": "Analytics ທີ່ privacy-first — ບໍ່ມີ cookie, GDPR compliant. ລູກຄ້າເຂົ້າ dashboard ດ້ວຍລິ້ງດຽວ." },
+        { "name": "Vercel", "reason": "Deployment ທີ່ zero-config ພ້ອມ auto previews ແລະ rollbacks ທັນທີ." }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "[ ເຮັດວຽກຮ່ວມກັນ ]",
+      "heading": "ຕ້ອງການເວັບໄຊທ໌ທີ່ໃຊ້ງານໄດ້ຈິງສຳລັບທຸລະກິດຂອງທ່ານ?",
+      "subtitle": "ຂ້ອຍສ້າງເວັບໄຊທ໌ສອງພາສາທີ່ SEO-first ສຳລັບທຸລະກິດທີ່ຕ້ອງການ presence ທາງ web ທີ່ແທ້ຈິງ.",
+      "talkButton": "ລົມກັນ",
+      "backToWork": "← ກັບຜົນງານ"
+    }
   }
 }
