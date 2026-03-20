@@ -37,6 +37,40 @@
       }
     }
   },
+  "articles": {
+    "heroLabel": "[ ບົດຄວາມເທັກນິກ ]",
+    "heroTitle": "ບລອກ ແລະ ບົດຄວາມ",
+    "heroSubtitle": "ການວິເຄາະຄ້ານ web development, architecture ແລະ best practices. ຮຽນຮູ້ຈາກປະສົບການຂອງຂ້ອຍ.",
+    "searchPlaceholder": "ຄົ້ນຫາບົດຄວາມ...",
+    "sortBy": "ຈັດລຽງຕາມ:",
+    "sortOptions": {
+      "recent": "ຫຼ້າສຸດ",
+      "oldest": "ເກົ່າສຸດ",
+      "longest": "ອ່ານຍາວທີ່ສຸດ",
+      "shortest": "ອ່ານສັ້ນທີ່ສຸດ"
+    },
+    "categories": {
+      "all": "ທຸກບົດຄວາມ",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps"
+    },
+    "showing": "ສະແດງ {count} ບົດຄວາມ",
+    "showingPlural": "ສະແດງ {count} ບົດຄວາມ",
+    "articleSingular": "ບົດຄວາມ",
+    "articlePlural": "ບົດຄວາມ",
+    "noResults": {
+      "title": "ບໍ່ພົບບົດຄວາມ",
+      "message": "ລອງປ່ຽນການຄົ້ນຫາ ຫຼື ໃສ່ filter ໃໝ່.",
+      "clearFilters": "ລ້າງ filter"
+    }
+  },
+  "article": {
+    "breadcrumb": "ບົດຄວາມ",
+    "shareLabel": "ແບ່ງປັນບົດຄວາມນີ້",
+    "allArticles": "ທຸກບົດຄວາມ",
+    "readingProgress": "ຄວາມຄືບໜ້າການອ່ານ"
+  },
   "blog": {
     "sectionLabel": "[ ບົດຄວາມລ່າສຸດ ]",
     "articleCount": "{count} ບົດຄວາມ",
@@ -253,6 +287,8 @@
     }
   },
   "footer": {
+    "tagline": "Workflow Automation & Integration Development",
+    "connect": "ເຊື່ອມລະບົບ. ລຶບການເຮັດວຽກດ້ວຍມື. Remote ຈາກວຽງຈັນ, ລາວ.",
     "copyright": "© {year} Maxon Torres. ສະຫງວນລິຂະສິດ.",
     "builtWith": "ສ້າງດ້ວຍ Next.js & TypeScript"
   },
@@ -266,6 +302,323 @@
     "english": "English",
     "lao": "ລາວ",
     "spanish": "Español"
+  },
+  "yangoArticle": {
+    "breadcrumbHome": "Home",
+    "breadcrumbArticles": "Articles",
+    "breadcrumbCurrent": "Teaching at Yango University",
+    "titleMain": "Teaching Web Development in China @",
+    "titleHighlight": "Yango University",
+    "lede": "Shortly after the end of the Covid Era, I spent time teaching web development at Yango University in the city of Fuzhou, Fujian. I had always wanted to try life and work in China.",
+    "curriculum": {
+      "label": "[ THE CURRICULUM ]",
+      "heading": "Teaching the Foundations of the Web",
+      "p1": "My role was to introduce students to the fundamentals of web development.",
+      "p2": "We focused on things like:",
+      "topics": [
+        "HTML and semantic page structure",
+        "CSS and responsive layout",
+        "JavaScript basics",
+        "How browsers work",
+        "What is the Internet",
+        "The client–server model behind web applications"
+      ],
+      "p3": "Instead of only teaching theory, I tried to keep things practical as much as possible, classes needed to be fun, that is what motivates students the most. The goal was always to get students building something they could see working in the browser.",
+      "p4": "Even a simple landing page or interactive UI was enough to get people excited about programming."
+    },
+    "figStudentPresenting": "Student presenting their project to the class",
+    "challenge": {
+      "label": "[ THE CHALLENGE ]",
+      "heading": "Teaching in a Different Culture",
+      "p1": "Teaching in China came with some unique challenges.",
+      "p2": "Language differences meant that long technical explanations didn't always work well, I taught my classes in English, and not every student could understand. So I relied heavily on visual demonstrations, live coding, lots of diagrams, and examples.",
+      "p3": "One thing I noticed quickly is that code itself becomes the common language. Once students start experimenting and seeing results in the browser, the barrier disappears."
+    },
+    "insight": {
+      "label": "[ THE INSIGHT ]",
+      "heading": "Why Teaching Makes You a Better Developer",
+      "p1": "Teaching programming forces you to understand things at a deeper level.",
+      "p2": "When you have to explain concepts like:",
+      "concepts": [
+        "How HTTP requests work",
+        "How the DOM is manipulated",
+        "Why CSS layouts behave the way they do"
+      ],
+      "p3": "You quickly discover which parts you truly understand and which parts you don't.",
+      "p4": "That process made me a better developer in several ways:",
+      "benefits": [
+        { "title": "Clearer Thinking", "desc": "About how systems work" },
+        { "title": "Stronger Fundamentals", "desc": "Core concepts over frameworks" },
+        { "title": "Better Communication", "desc": "Of technical ideas" }
+      ],
+      "p5": "All of those skills matter just as much as writing code."
+    },
+    "figStudentsPresenting": "Students presenting their final project",
+    "figCollaborative": "Collaborative coding session",
+    "perspective": {
+      "label": "[ PERSPECTIVE ]",
+      "heading": "A Global Industry",
+      "p1": "One thing that stood out to me while teaching in China was how global software development really is.",
+      "p2": "Students in Fuzhou were learning the same core technologies used by developers everywhere: web standards, JavaScript, APIs, and modern development tools.",
+      "p3": "The problems developers work on are surprisingly similar no matter where you are in the world.",
+      "p4": "But yeah, infrastructure is quite different and confusing."
+    },
+    "reflection": {
+      "label": "[ REFLECTION ]",
+      "heading": "Looking Back",
+      "p1": "Teaching web development was an experience that stayed with me. It reinforced something that I still believe strongly: strong fundamentals and clear thinking matter more than any particular framework or tool.",
+      "p2": "And those fundamentals are the same whether you are teaching in a classroom or building real software.",
+      "calloutLabel": "KEY TAKEAWAY",
+      "calloutText": "Strong fundamentals and clear thinking matter more than any particular framework or tool."
+    },
+    "cta": {
+      "label": "[ MORE ARTICLES ]",
+      "heading": "Keep Reading",
+      "subtitle": "Check out more technical notes, guides, and lessons learned from my experience.",
+      "viewAll": "View All Articles",
+      "backHome": "← Back Home"
+    }
+  },
+  "orderbridgeArticle": {
+    "breadcrumbHome": "Home",
+    "breadcrumbArticles": "Articles",
+    "breadcrumbCurrent": "How I Built OrderBridge",
+    "titleMain": "How I Built OrderBridge: Solving the",
+    "titleHighlight": "Delivery-to-POS Connection",
+    "lede": "A few months ago, a client came to me with a problem that was simple to describe and it seemed quite straightforward. They needed to bridge the gap between major delivery platforms and their own POS system with an automated OAuth 2.0 handshake.",
+    "introP1Pre": "This project started as a real client brief. The request came in Spanish:",
+    "introP1Post": "In short: they needed to connect their clients' delivery accounts to their POS system through StreamOrder's partner API — automatically, via OAuth, with no manual intervention. I analysed the requirements, read through the StreamOrder partner documentation, and got to work.",
+    "brief": {
+      "label": "[ THE BRIEF ]",
+      "heading": "The Client Proposal",
+      "p1": "Before writing a single line of code, I put together a formal proposal. It forced clarity on both sides — the client understood exactly what they were getting, and I understood exactly what I was building.",
+      "proposalLabel": "PROJECT PROPOSAL",
+      "proposalTitle": "Delivery Apps to POS Integration",
+      "proposalSubtitle": "Middleware API · StreamOrder · OAuth 2.0",
+      "descriptionLabel": "DESCRIPTION",
+      "descriptionText": "This project establishes a secure, automated \"Digital Bridge\" — a Middleware API between the StreamOrder aggregator and the client's Point of Sale (POS) system, enabling delivery orders to flow automatically into the POS with no manual intervention.",
+      "objectiveLabel": "OBJECTIVE",
+      "objectiveText": "Implement OAuth 2.0 as the authentication layer, ensuring data remains secure while allowing orders to sync automatically from delivery platforms into the POS.",
+      "objectives": [
+        { "label": "Secure Connection", "desc": "OAuth handshake — no shared passwords, data protected by encrypted digital keys." },
+        { "label": "Automatic Sync", "desc": "Every DoorDash and delivery platform order appears in the POS instantly." }
+      ],
+      "architectureLabel": "ARCHITECTURE FLOW",
+      "archNodes": ["Delivery Platforms", "StreamOrder", "Middleware API", "POS System", "Dashboard"],
+      "timelineHeading": "4-Week Timeline",
+      "goalLabel": "Goal",
+      "resultLabel": "Result",
+      "weeks": [
+        { "week": "Week 1", "title": "Security & The Digital Handshake", "goal": "Securely connect the client accounts.", "result": "StreamOrder officially linked; data protected by encrypted OAuth keys." },
+        { "week": "Week 2", "title": "The Automation Bridge", "goal": "Make the systems communicate.", "result": "Translator and webhook listener live in a test environment — orders captured and translated instantly." },
+        { "week": "Week 3", "title": "Dashboard & Live Launch", "goal": "Visibility and production readiness.", "result": "Bridge active, orders printing in the POS, live monitoring dashboard delivered." },
+        { "week": "Week 4", "title": "Refinement & Monitoring", "goal": "Stability under real-world conditions.", "result": "7-day live monitoring window; API changes from StreamOrder or delivery platforms patched immediately." }
+      ],
+      "deliverablesHeading": "Core Deliverables",
+      "deliverables": [
+        { "name": "OAuth 2.0 Integration", "desc": "Authentication layer connecting all accounts without sharing private passwords." },
+        { "name": "Real-Time Order Injection", "desc": "Orders detected via webhook and pushed directly into the POS within seconds." },
+        { "name": "Automated Translator", "desc": "Intelligent menu mapping ensuring every item, modifier, and customer note matches the POS format." },
+        { "name": "Automatic Token Refresh", "desc": "Self-maintaining security — OAuth tokens renew automatically so the connection never expires." },
+        { "name": "Reliability Monitoring", "desc": "Error-tracking that alerts immediately if an order fails to sync." },
+        { "name": "Live Connection Dashboard", "desc": "Web view to monitor bridge status and verify the most recent successful syncs." }
+      ],
+      "prerequisitesLabel": "PROJECT PREREQUISITES",
+      "prerequisites": [
+        "StreamOrder Developer access with Partner API enabled.",
+        "POS developer portal credentials with write permissions.",
+        "Menu / SKU list exported from the POS (CSV or Excel).",
+        "A named technical point of contact authorised to approve the OAuth handshake."
+      ],
+      "downloadProposal": "↓ Download Original Proposal (PDF)"
+    },
+    "painPoint": {
+      "label": "[ THE PAIN POINT ]",
+      "heading": "Keeping Track of All the Orders",
+      "p1": "Before we automated this, the workflow was boring and painful. Most busy kitchens have a counter full of tablets from different delivery apps.",
+      "listIntro": "A staff member has to:",
+      "listItems": [
+        "Read the order off a tablet.",
+        "Manually type it into the POS.",
+        "Hope they didn't miss a \"no onions\" modifier or something."
+      ],
+      "p2": "In a quiet shop, it's boring. In a kitchen doing 80+ orders a day, it's a painful operational problem.",
+      "mathLabel": "THE MATH",
+      "mathPre": "50 orders a day × 2.5 minutes of manual entry × $18/hr =",
+      "mathHighlight": "$1,100+ lost every month",
+      "mathPost": "to a task that shouldn't involve a human at all."
+    },
+    "figOrders": "Orders page — filterable, sortable, real-time status updates",
+    "engineering": {
+      "label": "[ ENGINEERING ]",
+      "heading": "Engineering the Pipeline",
+      "p1": "Once the ROI was clear, I mapped out the pipeline. The logic needed to be bulletproof:",
+      "figDiagram": "High-level flow: delivery platforms → OrderBridge → restaurant POS",
+      "steps": [
+        { "n": "01", "title": "Ingest delivery webhooks", "desc": "Receive HTTPS POST from each delivery platform." },
+        { "n": "02", "title": "Verify signatures", "desc": "HMAC-SHA256 check — security before anything else." },
+        { "n": "03", "title": "Translate schemas", "desc": "Map disparate JSON payloads into a unified POS format." },
+        { "n": "04", "title": "Inject the order", "desc": "POST to the POS API with exponential-backoff retry." },
+        { "n": "05", "title": "Broadcast updates", "desc": "WebSocket push to the live dashboard — no polling." }
+      ]
+    },
+    "process": {
+      "label": "[ THE PROCESS ]",
+      "heading": "Writing the Spec First",
+      "p1": "I started with a Software Requirements Specification (SRS) before writing a single line of code. It's much easier to fix a mistake in a document than to rewrite production code later. The SRS forced both me and the client to agree on exactly what \"done\" looked like — no ambiguity, no scope creep.",
+      "requirements": [
+        { "label": "FR-01", "title": "OAuth 2.0 Server", "desc": "System must act as an OAuth 2.0 provider — issuing, validating, and refreshing tokens per RFC 6749." },
+        { "label": "FR-02", "title": "Webhook Ingestion", "desc": "System must accept HTTPS POST webhooks from delivery platforms and verify each request with HMAC-SHA256 signature validation." },
+        { "label": "FR-03", "title": "Schema Translation", "desc": "System must map all incoming delivery payloads to a unified POS format, with graceful failure and logging on unmapped SKUs." },
+        { "label": "FR-04", "title": "POS Injection", "desc": "System must POST translated orders to the POS API with exponential-backoff retry on failure — no order dropped silently." },
+        { "label": "NFR-01", "title": "Real-Time Updates", "desc": "Dashboard must reflect order status changes via WebSocket push. No polling." },
+        { "label": "NFR-02", "title": "Token Persistence", "desc": "OAuth tokens must survive server restarts, stored encrypted at rest." }
+      ]
+    },
+    "figDashboard": "Live dashboard — real-time order feed with status tracking",
+    "techStack": {
+      "label": "[ TECH STACK ]",
+      "heading": "The Tech Stack",
+      "subtitle": "What tools would I use for this kind of project:",
+      "items": [
+        { "name": "Node.js & TypeScript", "body": "I am sure that Python would've also worked wonders here. Personally I prefer working with node modules and npm over pip and virtual environments." },
+        { "name": "Fastify (Not Express)", "body": "Express is the legacy default, but Fastify is built for modern performance. Built-in JSON schema validation, lower overhead. For a middleware API where every millisecond counts, Fastify wins." }
+      ]
+    },
+    "deployment": {
+      "label": "[ DEPLOYMENT ]",
+      "heading": "Infrastructure",
+      "p1": "The three services are independently deployed — each with its own host, its own domain, and its own responsibility. This mirrors how a real production integration would be structured.",
+      "infrastructureLabel": "INFRASTRUCTURE OVERVIEW",
+      "services": [
+        { "host": "Vercel", "service": "OrderBridge Dashboard", "detail": "Real-time monitoring UI — edge-deployed, globally available.", "tag": "Frontend" },
+        { "host": "Railway", "service": "OrderBridge API + PostgreSQL", "detail": "Core middleware engine with the OAuth server, webhook ingestion, schema translator, and POS injector. PostgreSQL stores OAuth tokens, menu mappings, and order logs.", "tag": "Backend" },
+        { "host": "Railway", "service": "MockPOS Server", "detail": "Isolated POS simulator running as a completely separate service — its own OAuth consent flow, its own order terminal.", "tag": "Simulator" }
+      ],
+      "whySeparateLabel": "WHY SEPARATE SERVICES",
+      "whySeparate": "Keeping MockPOS on its own Railway service wasn't just convenient — it was the point. It proves the integration works across a real network boundary, not just between two functions in the same process."
+    },
+    "hardParts": {
+      "label": "[ THE HARD PARTS ]",
+      "heading": "Translation and Trust",
+      "p1": "The Translator was the hardest part of this project. DoorDash, Uber Eats, and GrabFood all have wildly different ideas of how to describe a \"Cheeseburger with no pickles.\" Mapping these inconsistent payloads to a standardised POS SKU while maintaining a MenuMapping table required deep edge-case handling. If the mapping fails, the system has to fail gracefully — not drop the order into a void.",
+      "p2": "Then there was the OAuth 2.0 Server. It's one thing to use OAuth; it's another to be the provider. Building the authorization endpoints, token logic, and encrypted storage according to the RFC specs took more gray hair than the rest of the app combined."
+    },
+    "figMockPos": "Phing Kai Kitchen [POS Simulator] — orders arriving automatically from OrderBridge",
+    "portfolio": {
+      "label": "[ THE PORTFOLIO BUILD ]",
+      "heading": "Introducing OrderBridge",
+      "p1": "I enjoyed the architecture of the client project so much that I built OrderBridge — a refined, standalone version for my portfolio. It's not just a copy; it's an evolution. A complete end-to-end demo that simulates the entire flow without needing real-world infrastructure.",
+      "repos": [
+        { "name": "Backend", "body": "Fastify, TypeScript, and WebSockets." },
+        { "name": "Dashboard", "body": "Real-time monitoring and control UI for the OrderBridge system." },
+        { "name": "POS Simulator (MockPOS)", "body": "A secondary app representing a fictional restaurant called Phing Kai Kitchen. It acts as the 'target' POS, complete with its own OAuth consent screen and live order terminal." }
+      ]
+    },
+    "figSimulator": "Simulator — fire test orders from any delivery platform with one click",
+    "sourceCode": {
+      "label": "[ SOURCE CODE ]",
+      "heading": "The Complete Codebase",
+      "subtitle": "All three core components are open-source and available on GitHub:",
+      "repos": [
+        { "title": "OrderBridge API", "desc": "Core middleware engine with OAuth 2.0, webhook ingestion, and schema translation." },
+        { "title": "OrderBridge Dashboard", "desc": "Real-time monitoring UI with live order feed and connection status." },
+        { "title": "MockPOS Server", "desc": "POS simulator demonstrating the complete integration flow." }
+      ]
+    },
+    "liveDemos": {
+      "label": "[ LIVE DEMOS ]",
+      "heading": "Try It Out",
+      "subtitle": "Both services are live and ready to use:",
+      "demos": [
+        { "name": "OrderBridge Dashboard", "desc": "Real-time monitoring interface. Watch orders flow through the pipeline as they arrive." },
+        { "name": "MockPOS Server", "desc": "Live orders page from the fictional Phing Kai Kitchen POS system. See orders injected in real time." }
+      ],
+      "visitLabel": "Visit →"
+    },
+    "cta": {
+      "label": "[ SEE IT IN ACTION ]",
+      "heading": "Ready to Explore?",
+      "subtitle": "Dive into the source code, watch the live systems in action, or check out the full case study.",
+      "viewLiveDemo": "View Live Demo",
+      "fullCaseStudy": "Full Case Study",
+      "allArticles": "← All Articles"
+    }
+  },
+  "orderbridgeCaseStudy": {
+    "breadcrumbHome": "ໜ້າຫຼັກ",
+    "breadcrumbWork": "ຜົນງານ",
+    "tagline": "ລະບົບ middleware ທີ່ເຊື່ອມຕໍ່ platform delivery ໄປຫາ POS ຂອງຮ້ານ — ລຶບການປ້ອນຂໍ້ມູນດ້ວຍມືທັງໝົດ.",
+    "viewLiveDemo": "ເບິ່ງ Live Demo",
+    "readBuildArticle": "ອ່ານບົດຄວາມ",
+    "diagramCaption": "ຮູບແບບລວມ: delivery platforms → OrderBridge → restaurant POS",
+    "outcomes": [
+      { "value": "<800ms", "label": "ການປະມວນຜົນ order ຈາກຕົ້ນຈົນຈົບ" },
+      { "value": "5", "label": "Delivery platforms ທີ່ຮອງຮັບ" },
+      { "value": "3", "label": "POS systems ທີ່ເຊື່ອມຕໍ່" },
+      { "value": "0", "label": "ຂັ້ນຕອນດ້ວຍມືທີ່ຕ້ອງການ" }
+    ],
+    "problem": {
+      "sectionLabel": "[ ບັນຫາ ]",
+      "p1": "ທຸກຄັ້ງທີ່ order ມາຈາກ DoorDash ຫຼື Uber Eats, ພະນັກງານຕ້ອງອ່ານຈາກ tablet ແລ້ວພິມໃສ່ POS ດ້ວຍມື. ທີ 50 orders ຕໍ່ວັນ, ນັ້ນແມ່ນເວລາ 2 ຊົ່ວໂມງທຸກໆວັນ.",
+      "p2": "ການປ້ອນດ້ວຍມືນຳມາຊຶ່ງຄວາມຜິດພາດ. modifier ທີ່ພາດ, ປະລິມານຜິດ, item ທີ່ຂາດ.",
+      "p3": "ຄະນິດສາດ: 50 orders × 2.5 ນາທີ × $18/ຊົ່ວໂມງ =",
+      "p3Highlight": "ເສຍ $1,100+ ທຸກເດືອນ",
+      "p3End": "ສຳລັບວຽກທີ່ຄວນ automate."
+    },
+    "solution": {
+      "sectionLabel": "[ ວິທີແກ້ ]",
+      "p1": "OrderBridge ຢູ່ລະຫວ່າງ delivery platforms ແລະ POS. ເມື່ອ order ມາຮອດ, ມັນຮັບ webhook, ແປ payload ໄປເປັນຮູບແບບ POS ແລະ inject order ໂດຍອັດຕະໂນມັດ — ໃນເວລາຕ່ຳກວ່າ 800ms.",
+      "archTitle": "ARCHITECTURE FLOW",
+      "archNodes": ["Delivery\nPlatform", "Webhook\nReceiver", "Translator", "Injector", "POS\nSystem"],
+      "wsLabel": "WebSocket broadcast → Dashboard (real-time)"
+    },
+    "howItWorks": {
+      "sectionLabel": "[ ວິທີທີ່ໃຊ້ງານ ]",
+      "steps": [
+        { "step": "01", "title": "Webhook Reception", "desc": "ແຕ່ລະ delivery platform ສົ່ງ HTTPS POST ໄປຫາ webhook endpoint. Server ກວດສອບລາຍເຊັນ HMAC-SHA256 ແລະ deduplicate ຕາມ order ID." },
+        { "step": "02", "title": "Translation", "desc": "Handler ສະເພາະ platform ແປ schema delivery ໄປເປັນ POS payload ມາດຕະຖານ ໂດຍໃຊ້ MenuMapping table." },
+        { "step": "03", "title": "Injection", "desc": "Payload ທີ່ແປແລ້ວຖືກ POST ໄປຫາ POS API ດ້ວຍ exponential backoff retry. ເມື່ອ order ລົ້ມ, ມັນຖືກ flag ສຳລັບ manual review." },
+        { "step": "04", "title": "Real-Time Sync", "desc": "ທຸກການປ່ຽນແປງ state ຖືກ persist ໄປ PostgreSQL ແລະ broadcast ຜ່ານ WebSocket ໄປຫາ dashboard — ບໍ່ polling." }
+      ]
+    },
+    "screenshots": {
+      "sectionLabel": "[ ຮູບໜ້າຈໍ ]",
+      "images": [
+        { "alt": "OrderBridge dashboard showing live order feed", "caption": "Live dashboard — real-time order feed with status tracking" },
+        { "alt": "OrderBridge orders page with filters", "caption": "Orders page — filterable, sortable, CSV export" },
+        { "alt": "MockPOS mock terminal showing injected orders", "caption": "MockPOS terminal — orders arriving automatically from OrderBridge" },
+        { "alt": "OrderBridge simulator page", "caption": "Simulator — fire test orders from any delivery platform" }
+      ]
+    },
+    "techStack": {
+      "sectionLabel": "[ TECH STACK ]",
+      "items": [
+        { "name": "React 19 + Vite", "reason": "Fast dev experience, React Query for server state, no SSR overhead needed for a dashboard." },
+        { "name": "Fastify + TypeScript", "reason": "Lower overhead than Express, schema-based validation built in, excellent TypeScript support." },
+        { "name": "PostgreSQL + Prisma", "reason": "Relational data fits the order/token/mapping schema well. Prisma keeps migrations safe and typed." },
+        { "name": "WebSockets (ws)", "reason": "Native WebSocket — no Socket.io overhead for a single broadcast channel." },
+        { "name": "OAuth 2.0 + AES-256", "reason": "Industry-standard POS auth flow. Tokens encrypted at rest before writing to the database." },
+        { "name": "HMAC-SHA256", "reason": "Webhook signature verification — only legitimate delivery platform payloads are processed." }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "[ ເຮັດວຽກຮ່ວມກັນ ]",
+      "heading": "ມີບັນຫາ integration ຄ້າຍຄືກັນ?",
+      "subtitle": "ຂ້ອຍສ້າງລະບົບ automation ແລະ integration ສຳລັບທຸລະກິດທີ່ເບື່ອກັບ workflow ດ້ວຍມື.",
+      "talkButton": "ລົມກັນ",
+      "backToWork": "← ກັບຜົນງານ"
+    }
+  },
+  "articlesMeta": {
+    "teaching-web-development-china-yango-university": {
+      "title": "ສອນພັດທະນາເວັບໃນຈີນ @ Yango University",
+      "excerpt": "ການສອນ HTML, CSS ແລະ JavaScript ຂັ້ນພື້ນຖານໃນເມືອງ Fuzhou ປະເທດຈີນ ສອນໃຫ້ຂ້ອຍເປັນນັກພັດທະນາທີ່ດີຂຶ້ນ. ບົດຮຽນກ່ຽວກັບການສຶກສາຂ້າມວັດທະນະທຳ ແລະ ເຫດຜົນທີ່ທ່ານສາດຂັ້ນພື້ນຖານມີຄວາມສຳຄັນຫຼາຍກວ່າ framework."
+    },
+    "how-i-built-orderbridge": {
+      "title": "ຂ້ອຍສ້າງ OrderBridge ແນວໃດ: ແກ້ບັນຫາ Middleware ລະຫວ່າງ Delivery ແລະ POS",
+      "excerpt": "ການສ້າງລະບົບ middleware OAuth 2.0 ທີ່ເຊື່ອມ DoorDash, Uber Eats ແລະ platform delivery ໄປຫາ POS ຂອງຮ້ານອາຫານ. ການວິເຄາະເທັກນິກຄ້ານ webhook ingestion, schema translation ແລະ real-time order sync."
+    }
   },
   "common": {
     "loading": "ກຳລັງໂຫຼດ...",

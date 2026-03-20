@@ -48,8 +48,8 @@ export default function WorkSection() {
   const categories = [
     { id: 'all',         label: t('categories.all') },
     { id: 'automation',  label: t('categories.automation') },
-    { id: 'integration', label: t('categories.integration') },
-    { id: 'tools',       label: t('categories.tools') },
+    // { id: 'integration', label: t('categories.integration') },
+    // { id: 'tools',       label: t('categories.tools') },
     { id: 'web',         label: t('categories.web') },
   ];
 
