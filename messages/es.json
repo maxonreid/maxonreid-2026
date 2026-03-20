@@ -721,7 +721,7 @@
         { "name": "CSS Modules", "reason": "Estilos encapsulados sin overhead en runtime. Ideal para un sitio con identidad visual fuerte." },
         { "name": "next-intl", "reason": "Rutas bilingües de primer nivel con metadata por locale y cobertura completa EN/TH." },
         { "name": "Resend", "reason": "Gestiona los emails del formulario de reservas — sin servidor backend necesario." },
-        { "name": "Umami", "reason": "Analíticas privacy-first — sin cookies, cumple GDPR. El cliente accede al dashboard con un enlace." },
+        { "name": "Umami", "reason": "Analíticas privadas — sin cookies, cumple GDPR. El cliente accede al dashboard con un enlace." },
         { "name": "Vercel", "reason": "Despliegue zero-config con previews automáticos y rollbacks instantáneos." }
       ]
     },

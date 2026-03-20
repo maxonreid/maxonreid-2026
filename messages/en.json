@@ -640,7 +640,7 @@
   "laomaitravelCaseStudy": {
     "breadcrumbHome": "Home",
     "breadcrumbWork": "Work",
-    "tagline": "A bilingual EN/TH tourism website built for SEO, privacy-first analytics, and booking inquiries — no backend required.",
+    "tagline": "A bilingual EN/TH tourism website built for SEO, web traffic analytics, and booking inquiries — no backend required.",
     "viewLive": "Visit laomaitravel.com",
     "heroImageAlt": "Lao Mai Travel hero section — temple at dusk with navy and gold design",
     "outcomes": [
@@ -721,7 +721,7 @@
         { "name": "CSS Modules", "reason": "Scoped styles without runtime overhead. Ideal for a design-heavy site with layered typography and a strong visual identity." },
         { "name": "next-intl", "reason": "First-class bilingual routing with per-locale metadata, full EN/TH translation coverage, and no locale hacks." },
         { "name": "Resend", "reason": "Handles booking inquiry emails via a clean API — no backend server needed, reliable delivery." },
-        { "name": "Umami", "reason": "Privacy-first analytics — no cookies, GDPR compliant, self-hostable. Client accesses their dashboard via a single shared link." },
+        { "name": "Umami", "reason": "Web Traffic Analytics — no cookies, GDPR compliant, self-hostable. Client accesses their dashboard via a single shared link." },
         { "name": "Vercel", "reason": "Zero-config deployment with automatic previews, instant rollbacks, and no infrastructure to manage." }
       ]
     },

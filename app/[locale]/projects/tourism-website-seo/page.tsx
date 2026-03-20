@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: 'Bilingual Tourism Website Case Study | SEO & Analytics with Next.js',
     description:
-      'How I built a bilingual EN/TH tourism website for a Vientiane-based tour operator — with server-side SEO, privacy-first analytics via Umami, and a booking inquiry system using Resend.',
+      'How I built a bilingual EN/TH tourism website for a Vientiane-based tour operator — with server-side SEO, web traffic analytics via Umami, and a booking inquiry system using Resend.',
     keywords: [
       'bilingual tourism website',
       'Next.js tourism website',
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       },
     },
     openGraph: {
-      title: 'Bilingual Tourism Website: SEO & Privacy-First Analytics with Next.js',
+      title: 'Bilingual Tourism Website: SEO & Web Traffic Analytics with Next.js',
       description:
         'A Next.js 15 website built for a Vientiane tour operator — bilingual EN/TH routing, server-rendered SEO, and Umami analytics so the client finally knows who is visiting.',
       url: path,
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: 'Bilingual Tourism Website with SEO & Analytics',
       description:
-        'Bilingual EN/TH tourism site with server-side SEO, privacy-first analytics, and booking inquiries via Resend.',
+        'Bilingual EN/TH tourism site with server-side SEO, web traffic analytics, and booking inquiries via Resend.',
       images: ['/images/projects/laomaitravel/hero-section.png'],
     },
     robots: {
@@ -84,7 +84,7 @@ export default async function LaoMaiTravelPage({ params }: PageProps) {
     about: [
       'Bilingual website development',
       'Tourism SEO',
-      'Privacy-first analytics',
+      'Web Traffic Analytics',
       'Next.js App Router',
     ],
   };
