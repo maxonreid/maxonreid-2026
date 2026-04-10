@@ -98,6 +98,7 @@ export default async function LocaleLayout({
           title="Maxon Torres — Articles"
           href="/rss.xml"
         />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="8e2ec7e3-5bce-4088-b18c-966a6ba4f468"></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${ibmPlexMono.variable} ${notoSansLao.variable} antialiased min-h-screen overflow-x-hidden transition-colors duration-300`}
