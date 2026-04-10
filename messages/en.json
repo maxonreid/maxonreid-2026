@@ -732,5 +732,13 @@
       "talkButton": "Let's Talk",
       "backToWork": "← Back to Work"
     }
+  },
+  "notFound": {
+    "label": "ERROR // 404",
+    "title": "Lost in <highlight>Space</highlight>",
+    "subtitle": "Page not found",
+    "description": "The page you're looking for has drifted beyond the edge of the known universe. It may have been moved, deleted, or perhaps it never existed.",
+    "ctaHome": "GO HOME",
+    "ctaWork": "VIEW MY WORK"
   }
 }

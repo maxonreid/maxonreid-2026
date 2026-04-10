@@ -223,7 +223,6 @@ export default function TerminalDevice() {
 
     // Mark as ready for input
     isReadyRef.current = true;
-    term.write('\x1b[92m$\x1b[0m ');
   };
 
   const setupTerminalInput = (term: any) => {
@@ -380,6 +379,19 @@ export default function TerminalDevice() {
         await writeTypedLocal('   \x1b[92m0\x1b[0m       manual steps required\r\n', 5);
         term.writeln('');
         await writeTypedLocal('\x1b[96m▸ Pipeline:\x1b[0m Webhook → Translate → Inject → Real-Time Sync\r\n', 6);
+        term.writeln('');
+        await writeTypedLocal('\x1b[1;93mLao Mai Travel\x1b[0m \x1b[90m— 2025\x1b[0m\r\n', 8);
+        await writeTypedLocal('\x1b[96m▸ Type:\x1b[0m \x1b[93mBilingual Tourism Website\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[96m▸ Stack:\x1b[0m \x1b[36mNext.js 15 · TypeScript · next-intl · Resend · Umami · Vercel\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[96m▸ Analytics:\x1b[0m \x1b[36mUmami — privacy-first, GDPR compliant, no cookies\x1b[0m\r\n', 6);
+        await writeTypedLocal('\x1b[96m▸ About:\x1b[0m EN/TH bilingual site for a Vientiane tour operator —\r\n', 6);
+        await writeTypedLocal('         SEO, booking inquiries & real-time web analytics.\r\n', 4);
+        term.writeln('');
+        await writeTypedLocal('\x1b[96m▸ Metrics:\x1b[0m\r\n', 6);
+        await writeTypedLocal('   \x1b[92mEN + TH\x1b[0m  bilingual first-class routing\r\n', 5);
+        await writeTypedLocal('   \x1b[92m100%\x1b[0m    server-rendered HTML for SEO\r\n', 5);
+        await writeTypedLocal('   \x1b[92m0\x1b[0m       cookie banners or consent popups\r\n', 5);
+        await writeTypedLocal('   \x1b[92m1 link\x1b[0m  client analytics dashboard access\r\n', 5);
         term.writeln('');
       },
 

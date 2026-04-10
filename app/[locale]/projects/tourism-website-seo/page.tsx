@@ -29,7 +29,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: path,
       languages: {
         en: '/en/projects/tourism-website-seo',
-        th: '/th/projects/tourism-website-seo',
+        lo: '/lo/projects/tourism-website-seo',
+        es: '/es/projects/tourism-website-seo',
       },
     },
     openGraph: {

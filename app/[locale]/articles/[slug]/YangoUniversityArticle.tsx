@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 import { Link } from '@/routing';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
@@ -129,14 +130,13 @@ export default async function YangoUniversityArticle({
 
           {/* Hero image */}
           <figure className="rounded-2xl overflow-hidden border border-white/[0.06] shadow-[0_32px_80px_rgba(0,0,0,0.5)] mb-20" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img
+            <Image
               src="/images/articles/yango-university-china/students-coding.jpeg"
               alt="Students learning web development and coding at Yango University in Fuzhou, China"
+              width={1200}
+              height={630}
+              priority
               className="w-full object-cover"
-              width="1200"
-              height="630"
-              loading="eager"
-              fetchPriority="high"
               itemProp="url contentUrl"
             />
             <meta itemProp="description" content="Students coding at Yango University" />
@@ -175,13 +175,13 @@ export default async function YangoUniversityArticle({
 
           {/* Image: Student presenting */}
           <figure className="rounded-xl overflow-hidden border border-white/[0.06]" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img
+            <Image
               src="/images/articles/yango-university-china/student-presenting-a-topic.jpeg"
               alt="Student presenting web development project and topic at Yango University class"
-              className="w-full object-cover"
+              width={1200}
+              height={675}
               loading="lazy"
-              width="1200"
-              height="675"
+              className="w-full object-cover"
               itemProp="url contentUrl"
             />
             <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
@@ -206,25 +206,25 @@ export default async function YangoUniversityArticle({
           {/* Image grid: Students coding */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <figure className="rounded-xl overflow-hidden border border-white/[0.06]" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-              <img
+              <Image
                 src="/images/articles/yango-university-china/female-student-coding.jpeg"
                 alt="Female student working on web development HTML CSS JavaScript exercise at Yango University"
-                className="w-full object-cover h-64 md:h-80"
+                width={600}
+                height={400}
                 loading="lazy"
-                width="600"
-                height="400"
+                className="w-full object-cover h-64 md:h-80"
                 itemProp="url contentUrl"
               />
               <meta itemProp="description" content="Female student coding at Yango University" />
             </figure>
             <figure className="rounded-xl overflow-hidden border border-white/[0.06]" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-              <img
+              <Image
                 src="/images/articles/yango-university-china/male-student-coding.jpeg"
                 alt="Male student working on web development HTML CSS JavaScript exercise at Yango University"
-                className="w-full object-cover h-64 md:h-80"
+                width={600}
+                height={400}
                 loading="lazy"
-                width="600"
-                height="400"
+                className="w-full object-cover h-64 md:h-80"
                 itemProp="url contentUrl"
               />
               <meta itemProp="description" content="Male student coding at Yango University" />
@@ -272,13 +272,13 @@ export default async function YangoUniversityArticle({
 
           {/* Image: Group presentation */}
           <figure className="rounded-xl overflow-hidden border border-white/[0.06]" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img
+            <Image
               src="/images/articles/yango-university-china/students-presenting-a-topic.jpeg"
               alt="Students presenting their web development final project at Yango University in Fuzhou China"
-              className="w-full object-cover"
+              width={1200}
+              height={675}
               loading="lazy"
-              width="1200"
-              height="675"
+              className="w-full object-cover"
               itemProp="url contentUrl"
             />
             <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
@@ -303,13 +303,13 @@ export default async function YangoUniversityArticle({
 
           {/* Image: Students working together */}
           <figure className="rounded-xl overflow-hidden border border-white/[0.06]" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img
+            <Image
               src="/images/articles/yango-university-china/female-and-male-student-coding.jpeg"
               alt="Students collaborating on web development project learning HTML CSS JavaScript at Yango University"
-              className="w-full object-cover"
+              width={1200}
+              height={675}
               loading="lazy"
-              width="1200"
-              height="675"
+              className="w-full object-cover"
               itemProp="url contentUrl"
             />
             <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/routing';
 
@@ -59,12 +60,14 @@ export default function ProjectCard({ project, style }: ProjectCardProps) {
         {/* Image */}
         <div className="relative aspect-video overflow-hidden" aria-hidden="true">
           {images.map((src, i) => (
-            <img
+            <Image
               key={src}
+              fill
               loading="lazy"
               alt={i === 0 ? `${project.title} screenshot` : ''}
               src={src}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className={`object-cover transition-opacity duration-700 ${
                 i === currentIndex ? 'opacity-100' : 'opacity-0'
               } ${isHovered ? '' : 'group-hover:scale-110'} transition-transform duration-500`}
             />

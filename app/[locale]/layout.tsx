@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com'),
   title: {
     default:
-      "Maximiliano Brito Torres | Full-Stack Developer (Next.js, React, Node.js) — Remote",
+      "Maximiliano Brito Torres | Full-Stack Developer — Remote",
     template: "%s | Maxon Torres",
   },
   description:
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "Maximiliano Brito Torres | Senior Full-Stack Developer (Next.js, React, Node.js)",
+      "Maximiliano Brito Torres | Full-Stack Developer",
     description:
       "Building scalable web applications with Next.js, React, Node.js and AWS. Available for remote opportunities worldwide.",
     url: "https://maxontorres.com",

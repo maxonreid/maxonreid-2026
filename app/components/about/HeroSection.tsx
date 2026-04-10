@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 export default function HeroSection() {
@@ -15,10 +16,12 @@ export default function HeroSection() {
           
           <div className="flex justify-center lg:justify-end">
             <div className="relative w-80 h-80">
-              <img 
-                src="/about-pic.jpg" 
+              <Image
+                src="/about-pic.jpg"
                 alt="Maxon Torres"
-                className="w-full h-full object-cover rounded-2xl shadow-2xl relative z-10"
+                fill
+                priority
+                className="object-cover rounded-2xl shadow-2xl relative z-10"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-[#d6b46b]/20 to-transparent rounded-2xl blur-2xl -z-10"></div>
             </div>

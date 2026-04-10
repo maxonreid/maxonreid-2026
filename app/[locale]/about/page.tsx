@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import { getTranslations } from 'next-intl/server';
@@ -7,19 +8,89 @@ import HeroSection from '@/app/components/about/HeroSection';
 import BioSection from '@/app/components/about/BioSection';
 import SkillsSection from '@/app/components/about/SkillsSection';
 
-export async function generateMetadata() {
-  const t = await getTranslations('about');
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'about' });
+  const path = `/${locale}/about`;
+
   return {
     title: t('heroTitle'),
     description: t('heroSubtitle'),
+    alternates: {
+      canonical: path,
+      languages: {
+        en: '/en/about',
+        lo: '/lo/about',
+        es: '/es/about',
+      },
+    },
+    openGraph: {
+      title: t('heroTitle'),
+      description: t('heroSubtitle'),
+      url: `${SITE_URL}${path}`,
+      siteName: 'Maxon Torres',
+      type: 'profile',
+      images: [
+        {
+          url: '/about-pic.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'Maximiliano Brito Torres — Full Stack Developer',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('heroTitle'),
+      description: t('heroSubtitle'),
+      images: ['/about-pic.jpg'],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+    },
   };
 }
 
-export default async function AboutPage() {
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations('about.cv');
+
+  const personSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    mainEntity: {
+      '@type': 'Person',
+      '@id': `${SITE_URL}/#person`,
+      name: 'Maximiliano Brito Torres',
+      url: `${SITE_URL}/${locale}/about`,
+      description:
+        'Full-Stack Developer based in Vientiane, Laos, specializing in Next.js, React, and Node.js.',
+      sameAs: [
+        'https://www.linkedin.com/in/maxontorres/',
+        'https://github.com/maxonreid',
+      ],
+    },
+  };
   
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       <Header />
       <main>
         <HeroSection />

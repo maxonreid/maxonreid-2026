@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 import { Link } from '@/routing';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
@@ -166,15 +167,14 @@ export default async function OrderBridgeArticle({
 
           {/* Hero image */}
           <figure className="rounded-2xl overflow-hidden border border-white/[0.06] shadow-[0_32px_80px_rgba(0,0,0,0.5)] mb-20" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img
+            <Image
               src="/images/projects/orderbridge/orderbridge-cover.png"
               alt="OrderBridge OAuth 2.0 middleware dashboard showing real-time order synchronization between delivery platforms and POS systems"
+              width={1200}
+              height={630}
+              priority
               className="w-full object-cover"
               itemProp="url contentUrl"
-              width="1200"
-              height="630"
-              loading="eager"
-              fetchPriority="high"
             />
             <meta itemProp="description" content="OrderBridge dashboard interface" />
             <meta itemProp="name" content="OrderBridge Dashboard Cover Image" />
@@ -327,13 +327,13 @@ export default async function OrderBridgeArticle({
 
           {/* Screenshot: Orders page */}
           <figure className="rounded-xl overflow-hidden border border-white/[0.06]" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img
+            <Image
               src="/images/projects/orderbridge/orderbridge-orders.png"
               alt="OrderBridge orders page with live order feed showing real-time filtering and status updates"
-              className="w-full object-cover"
+              width={1200}
+              height={675}
               loading="lazy"
-              width="1200"
-              height="675"
+              className="w-full object-cover"
               itemProp="url contentUrl"
             />
             <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
@@ -353,13 +353,13 @@ export default async function OrderBridgeArticle({
             </div>
 
             <figure className="rounded-xl overflow-hidden border border-white/[0.06] my-8" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-              <img
+              <Image
                 src="/images/projects/orderbridge/orderbridge-diagram.png"
                 alt="OrderBridge architecture diagram showing delivery platforms flowing through OrderBridge middleware into restaurant POS system"
-                className="w-full object-cover"
+                width={1200}
+                height={675}
                 loading="lazy"
-                width="1200"
-                height="675"
+                className="w-full object-cover"
                 itemProp="url contentUrl"
               />
               <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
@@ -404,13 +404,13 @@ export default async function OrderBridgeArticle({
 
           {/* Screenshot: Dashboard */}
           <figure className="rounded-xl overflow-hidden border border-white/[0.06]" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img
+            <Image
               src="/images/projects/orderbridge/orderbridge-dashboard.png"
               alt="OrderBridge live dashboard showing real-time order feed with WebSocket updates and status tracking"
-              className="w-full object-cover"
+              width={1200}
+              height={675}
               loading="lazy"
-              width="1200"
-              height="675"
+              className="w-full object-cover"
               itemProp="url contentUrl"
             />
             <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
@@ -488,13 +488,13 @@ export default async function OrderBridgeArticle({
 
           {/* Screenshot: MockPOS */}
           <figure className="rounded-xl overflow-hidden border border-white/[0.06]" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img
+            <Image
               src="/images/projects/orderbridge/orderbridge-mock-pos.png"
               alt="MockPOS terminal showing automated order injection from OrderBridge middleware"
-              className="w-full object-cover"
+              width={1200}
+              height={675}
               loading="lazy"
-              width="1200"
-              height="675"
+              className="w-full object-cover"
               itemProp="url contentUrl"
             />
             <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
@@ -530,13 +530,13 @@ export default async function OrderBridgeArticle({
 
           {/* Screenshot: Simulator */}
           <figure className="rounded-xl overflow-hidden border border-white/[0.06]" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img
+            <Image
               src="/images/projects/orderbridge/orderbridge-simulator.png"
               alt="OrderBridge order simulator page for testing delivery platform webhook integration"
-              className="w-full object-cover"
+              width={1200}
+              height={675}
               loading="lazy"
-              width="1200"
-              height="675"
+              className="w-full object-cover"
               itemProp="url contentUrl"
             />
             <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">

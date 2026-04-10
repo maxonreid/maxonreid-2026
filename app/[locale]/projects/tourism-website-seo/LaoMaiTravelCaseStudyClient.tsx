@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/routing';
 
@@ -55,9 +56,11 @@ function Lightbox({
         className="max-w-5xl w-full mx-16 flex flex-col gap-4"
         onClick={(e) => e.stopPropagation()}
       >
-        <img
+        <Image
           src={images[activeIndex].src}
           alt={images[activeIndex].alt}
+          width={1200}
+          height={750}
           className="w-full rounded-xl border border-white/[0.06]"
         />
         <p className="text-center font-mono text-sm text-[#9ea0a8]">
@@ -199,13 +202,13 @@ export default function LaoMaiTravelCaseStudy() {
 
           {/* Hero image */}
           <figure className="rounded-2xl overflow-hidden border border-white/[0.06] mt-8">
-            <img
+            <Image
               src="/images/projects/laomaitravel/hero-section.png"
               alt={t('heroImageAlt')}
+              width={1200}
+              height={800}
+              priority
               className="w-full object-cover"
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
             />
           </figure>
         </section>
@@ -338,10 +341,12 @@ export default function LaoMaiTravelCaseStudy() {
                   onClick={() => setAnalyticsLightbox(i)}
                   aria-label={`View analytics screenshot: ${img.caption}`}
                 >
-                  <img
+                  <Image
+                    fill
                     src={img.src}
                     alt={img.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
@@ -367,10 +372,12 @@ export default function LaoMaiTravelCaseStudy() {
                   onClick={() => setScreenshotLightbox(i)}
                   aria-label={`View screenshot: ${img.caption}`}
                 >
-                  <img
+                  <Image
+                    fill
                     src={img.src}
                     alt={img.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">

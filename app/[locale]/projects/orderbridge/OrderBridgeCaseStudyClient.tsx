@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/routing';
 
@@ -55,9 +56,11 @@ function Lightbox({
         className="max-w-5xl w-full mx-16 flex flex-col gap-4"
         onClick={(e) => e.stopPropagation()}
       >
-        <img
+        <Image
           src={images[activeIndex].src}
           alt={images[activeIndex].alt}
+          width={1200}
+          height={750}
           className="w-full rounded-xl border border-white/[0.06]"
         />
         <p className="text-center font-mono text-sm text-[#9ea0a8]">
@@ -199,15 +202,13 @@ export default function OrderBridgeCaseStudy() {
           </div>
 
           <figure className="rounded-2xl overflow-hidden border border-white/[0.06] mt-8">
-            <img
+            <Image
               src="/images/projects/orderbridge/orderbridge-diagram.png"
               alt="OrderBridge architecture diagram showing delivery platforms flowing through OrderBridge into a restaurant POS"
-              className="w-full object-cover"
               width={2400}
               height={1260}
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
+              priority
+              className="w-full object-cover"
             />
             <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
               {t('diagramCaption')}
@@ -338,10 +339,12 @@ export default function OrderBridgeCaseStudy() {
                   onClick={() => openLightbox(i)}
                   aria-label={`View screenshot: ${img.caption}`}
                 >
-                  <img
+                  <Image
+                    fill
                     src={img.src}
                     alt={img.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">

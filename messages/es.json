@@ -732,5 +732,13 @@
       "talkButton": "Hablemos",
       "backToWork": "← Volver al Trabajo"
     }
+  },
+  "notFound": {
+    "label": "ERROR // 404",
+    "title": "Perdido en el <highlight>Espacio</highlight>",
+    "subtitle": "Página no encontrada",
+    "description": "La página que buscas se ha ido más allá del borde del universo conocido. Puede haber sido movida, eliminada, o quizás nunca existió.",
+    "ctaHome": "IR AL INICIO",
+    "ctaWork": "VER MI TRABAJO"
   }
 }

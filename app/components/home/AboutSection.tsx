@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/routing';
 
@@ -39,9 +40,12 @@ export default function AboutSection() {
 
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <img 
-                src="/profile.jpg" 
+              <Image
+                src="/profile.jpg"
                 alt={t('imageAlt')}
+                width={500}
+                height={600}
+                priority
                 className="w-full max-w-md rounded-2xl shadow-2xl"
               />
             </div>

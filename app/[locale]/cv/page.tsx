@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: CVPageProps): Promise<Metadat
       languages: {
         en: "/en/cv",
         lo: "/lo/cv",
+        es: "/es/cv",
       },
     },
     openGraph: {
@@ -82,7 +83,7 @@ export default async function CVPage({ params }: CVPageProps) {
           addressLocality: "Vientiane",
           addressCountry: "Laos",
         },
-        sameAs: ["https://www.linkedin.com/in/maxontorres/"],
+        sameAs: ["https://www.linkedin.com/in/maxontorres/", "https://github.com/maxonreid"],
         knowsAbout: [
           "Next.js",
           "React",
@@ -95,8 +96,8 @@ export default async function CVPage({ params }: CVPageProps) {
       },
       {
         "@type": "WebPage",
-        "@id": `${siteUrl}${locale === "en" ? "/en/cv" : "/lo/cv"}#webpage`,
-        url: `${siteUrl}${locale === "en" ? "/en/cv" : "/lo/cv"}`,
+        "@id": `${siteUrl}/${locale}/cv#webpage`,
+        url: `${siteUrl}/${locale}/cv`,
         name: "Curriculum Vitae | Maximiliano Brito Torres",
         description:
           "Curriculum Vitae of Maximiliano Brito Torres, Full Stack Engineer with international experience in web architecture and cloud applications.",
