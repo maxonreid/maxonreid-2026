@@ -79,29 +79,13 @@ export default function ProofSection() {
                 className={styles.analyticsChart}
               />
             </div>
-            <div className={styles.analyticsStats}>
-              <div className={styles.stat}>
-                <span className={styles.statNum}>12k+</span>
-                <span className={styles.statLabel}>Monthly visitors (combined)</span>
-              </div>
-              <div className={styles.stat}>
-                <span className={styles.statNum}>94</span>
-                <span className={styles.statLabel}>Average Lighthouse score</span>
-              </div>
-              <div className={styles.stat}>
-                <span className={styles.statNum}>&lt; 1.8s</span>
-                <span className={styles.statLabel}>Average load time</span>
-              </div>
-            </div>
+
+
           </div>
         </div>
 
-        <p className={styles.closer}>
-          Delivered. Working. Yours.{' '}
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" style={{ display: 'inline', verticalAlign: 'middle' }}>
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="#c8943a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </p>
+
+
       </div>
     </section>
   );
