@@ -94,7 +94,6 @@ export default function Header() {
 
         <div className="flex gap-3 items-center">
           
-          
           <LanguageSwitcher />
 
           {/* Theme Switcher */}

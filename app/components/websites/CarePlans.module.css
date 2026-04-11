@@ -158,8 +158,6 @@
 }
 
 .quip {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
-  font-style: italic;
   font-size: 0.95rem;
   color: #7a7671;
   margin: 0 0 24px;
@@ -193,7 +191,7 @@
   color: #c8943a;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -211,4 +209,20 @@
   .section {
     padding: 64px 20px;
   }
+}
+
+/* Scroll reveal */
+.cardHidden {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.cardVisible {
+  animation: reveal-fade-up 0.6s ease-out both;
+  animation-delay: calc(var(--i, 0) * 120ms + 100ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardHidden { opacity: 1; transform: none; }
+  .cardVisible { animation: none; }
 }

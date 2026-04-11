@@ -5,7 +5,8 @@
     "about": "Acerca de",
     "services": "Servicios",
     "contact": "Contacto",
-    "referral": "Gana dinero"
+    "referral": "Gana dinero",
+    "websites": "Sitios Web"
   },
   "hero": {
     "brand": "MAXON TORRES",
@@ -754,5 +755,158 @@
     "description": "La página que buscas se ha ido más allá del borde del universo conocido. Puede haber sido movida, eliminada, o quizás nunca existió.",
     "ctaHome": "IR AL INICIO",
     "ctaWork": "VER MI TRABAJO"
+  },
+  "websites": {
+    "hero": {
+      "eyebrow": "Desarrollo web · Vientiane, Laos",
+      "headline": "Tu competencia tiene un sitio web.",
+      "headlineItalic": "¿Y tú?",
+      "sub": "En Vientiane, turistas y expatriados buscan en Google antes de reservar, comer o comprar. Si tu negocio solo existe en Facebook, están encontrando a alguien más.",
+      "cta": "Obtén tu auditoría web gratuita"
+    },
+    "urgency": {
+      "text": "Cada día sin un sitio web es un cliente que no sabías que perdiste."
+    },
+    "benefits": {
+      "eyebrow": "Lo que obtienes",
+      "title": "Lo que un sitio web profesional hace por tu negocio",
+      "intro": "Verás cuántas personas visitan, de dónde son y qué miran más.",
+      "items": {
+        "googleFound": {
+          "title": "Encontrado en Google",
+          "desc": "Clientes buscando \"hospedaje Vientiane\" o \"tour Luang Prabang\" te encuentran a ti, no a tu competencia. Las páginas de Facebook nunca aparecen en esos resultados."
+        },
+        "multiLanguage": {
+          "title": "Todos los idiomas que necesites",
+          "desc": "Tu sitio funciona en lao, inglés y tailandés. Cada tipo de cliente, cada mercado, manejado automáticamente sin duplicar tu trabajo."
+        },
+        "ownership": {
+          "title": "Es tuyo",
+          "desc": "Facebook puede restringir tu página mañana. Tu sitio web te pertenece. Sin algoritmo, sin dependencia, sin riesgo de perder todo de la noche a la mañana."
+        },
+        "analytics": {
+          "title": "Ve tu tráfico",
+          "desc": "Sabe cuántas personas visitaron, de dónde vinieron y qué miraron. Un panel simple y amigable con la privacidad incluido desde el primer día."
+        },
+        "trust": {
+          "title": "Se ve serio, genera confianza",
+          "desc": "Un sitio web profesional les dice a los clientes que estás establecido antes de que te contacten. Las primeras impresiones ahora pasan en línea, no en la puerta."
+        },
+        "delivered": {
+          "title": "Entregado terminado",
+          "desc": "No es una plantilla que descifras tú mismo. Recibes un producto completo y funcional: diseño, desarrollo y lanzamiento, listo desde el primer día."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "Construido en Laos",
+      "title": "Proyectos reales, aquí mismo en Vientiane",
+      "intro": "Ambos en vivo. Ambos funcionando. Ambos construidos para el mercado lao.",
+      "projects": {
+        "laomaitravel": {
+          "name": "Lao Mai Travel",
+          "category": "Sitio web turístico bilingüe · Vientiane"
+        },
+        "pmlaos": {
+          "name": "PM Real Estate Laos",
+          "category": "Plataforma de listados trilingüe · Vientiane"
+        }
+      },
+      "analyticsTitle": "Umami Analytics · tu dashboard de tráfico",
+      "analyticsExplainer": "El tráfico web te dice quién está visitando, de dónde son y qué están mirando. Convierte adivinar en saber — para que puedas enfocar tu tiempo y dinero en lo que realmente funciona."
+    },
+    "pwa": {
+      "eyebrow": "Aplicaciones web de plataforma",
+      "title": "Gestiona tu negocio",
+      "titleItalic": "desde cualquier lugar.",
+      "body1": "Tu plataforma funciona como una aplicación en tu teléfono. No se requiere descarga. Consulta listados, actualiza inventario y responde a clientes potenciales desde donde estés.",
+      "body2": "Agrégala a tu pantalla de inicio y se abre al instante, como cualquier otra aplicación. Funciona en iPhone y Android.",
+      "chip": "No se necesita App Store"
+    },
+    "pricing": {
+      "eyebrow": "Inversión",
+      "title": "Precios simples y transparentes",
+      "intro": "Una tarifa plana. Sin costos ocultos. Sin sorpresas.",
+      "banner": "Recién lanzado — precios introductorios. Estos precios son más bajos de lo que serán. Una vez que se llenen los primeros espacios para clientes, las tarifas subirán. Si lo estás considerando, ahora es el momento adecuado.",
+      "tiers": {
+        "website": {
+          "label": "Presencia",
+          "name": "Sitio Web",
+          "regularPrice": "$800",
+          "price": "$400",
+          "tagline": "Para hoteles, restaurantes, operadores turísticos y cualquier negocio que necesite ser encontrado en línea.",
+          "includes": [
+            "5–8 páginas, completamente diseñadas",
+            "Todos los idiomas que necesites",
+            "Optimizado para SEO en Google",
+            "Analíticas Umami integradas",
+            "Listo para móviles en todos los dispositivos",
+            "Entregado en 2–3 semanas"
+          ],
+          "cta": "Comienza tu sitio web"
+        },
+        "webapp": {
+          "label": "Plataforma",
+          "name": "Aplicación Web",
+          "regularPrice": "$1,800",
+          "price": "$900",
+          "tagline": "Para negocios que gestionan datos — listados, reservas, inventario, acceso de equipo y clientes potenciales.",
+          "includes": [
+            "Base de datos completa y panel de administración",
+            "Roles de usuario e inicio de sesión seguro",
+            "Sistema de listados, CRM o inventario",
+            "Funciona como una aplicación en tu teléfono",
+            "Todos los idiomas que necesites",
+            "Entregado en 4–5 semanas"
+          ],
+          "cta": "Comienza tu aplicación web"
+        }
+      },
+      "badge": "Más popular",
+      "priceNote": "USD · pago único · espacios limitados",
+      "platformNote": "¿No estás seguro de cuál necesitas? Envíame tu página de Facebook por WhatsApp y te diré exactamente qué tiene sentido para tu negocio. Gratis, sin compromiso."
+    },
+    "carePlans": {
+      "eyebrow": "Soporte mensual",
+      "title": "Mantén tu sitio funcionando. Siempre.",
+      "subtitle": "Planes de cuidado opcionales para que tu sitio web se mantenga actualizado y nunca tengas que preocuparte por él.",
+      "plans": {
+        "basic": {
+          "name": "Cuidado Básico",
+          "price": "$30",
+          "period": "/mes",
+          "for": "Para sitios web de presencia",
+          "includes": [
+            "Alojamiento cubierto",
+            "Monitoreo de disponibilidad",
+            "1 actualización de contenido por mes",
+            "Soporte por correo electrónico"
+          ],
+          "quip": "🍺 Más barato que una noche en MAHASAN. Tu sitio web se mantiene en línea 24/7 de cualquier manera ... al menos uno de ellos te recuerda por la mañana."
+        },
+        "active": {
+          "name": "Cuidado Activo",
+          "price": "$80",
+          "period": "/mes",
+          "for": "Para aplicaciones web de plataforma",
+          "includes": [
+            "Alojamiento y base de datos cubiertos",
+            "Soporte prioritario en 24h",
+            "Hasta 5 actualizaciones por mes",
+            "Reporte mensual de analíticas"
+          ],
+          "quip": "Menos que una publicación de Facebook promocionada que desaparece en 3 días. Esto mantiene tu plataforma funcionando y actualizada todo el mes."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Trabajemos juntos",
+      "title": "¿Listo para superar",
+      "titleItalic": "a la competencia?",
+      "sub1": "La primera auditoría es gratis. Sin presentación, sin compromiso.",
+      "sub2": "Solo 10 minutos en WhatsApp y sabrás exactamente dónde está tu sitio.",
+      "cta": "Escríbeme en WhatsApp →",
+      "note": "¿Prefieres correo? hello@maxontorres.com"
+    }
   }
 }

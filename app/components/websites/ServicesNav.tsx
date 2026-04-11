@@ -1,3 +1,7 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '../LanguageSwitcher';
 import styles from './ServicesNav.module.css';
 
 const WA_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '';
@@ -8,20 +12,25 @@ interface Props {
 }
 
 export default function ServicesNav({ locale }: Props) {
+  const t = useTranslations('websites.hero');
+  
   return (
     <nav className={styles.nav}>
       <div className={styles.inner}>
         <a href={`/${locale}`} className={styles.logo} aria-label="Back to maxontorres.com">
-          maxon<span className={styles.dot}>.</span>
+          maxon <span className={styles.dot}>websites</span>
         </a>
-        <a
-          href={WA_HREF}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.cta}
-        >
-          Free website audit
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', position: 'relative', zIndex: 10001 }}>
+          <LanguageSwitcher />
+          <a
+            href={WA_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.cta}
+          >
+            {t('cta')}
+          </a>
+        </div>
       </div>
     </nav>
   );

@@ -151,6 +151,14 @@ export default function Navbar() {
             {t('contact')}
           </Link>
 
+          {/* Websites Link */}
+          <Link
+            href="/websites"
+            className={`nav-link ${pathname?.includes('/websites') ? 'nav-link-active' : ''}`}
+            locale={locale}
+          >
+            {t('websites')}
+          </Link>
 
 
         </div>

@@ -5,7 +5,8 @@
     "about": "About",
     "services": "Services",
     "contact": "Contact",
-    "referral": "Get Paid"
+    "referral": "Get Paid",
+    "websites": "Websites"
   },
   "hero": {
     "brand": "MAXON TORRES",
@@ -754,5 +755,158 @@
     "description": "The page you're looking for has drifted beyond the edge of the known universe. It may have been moved, deleted, or perhaps it never existed.",
     "ctaHome": "GO HOME",
     "ctaWork": "VIEW MY WORK"
+  },
+  "websites": {
+    "hero": {
+      "eyebrow": "Web development · Vientiane, Laos",
+      "headline": "Your competitor has a website.",
+      "headlineItalic": "Do you?",
+      "sub": "In Vientiane, tourists and expats search Google before they book, eat, or buy. If your business only exists on Facebook, they are finding someone else.",
+      "cta": "Get your free website audit"
+    },
+    "urgency": {
+      "text": "Every day without a website is a customer you didn't know you lost."
+    },
+    "benefits": {
+      "eyebrow": "What you get",
+      "title": "What a proper website does for your business",
+      "intro": "You will see how many people visit, where are they from and what they look at the most.",
+      "items": {
+        "googleFound": {
+          "title": "Found on Google",
+          "desc": "Customers searching \"guesthouse Vientiane\" or \"tour Luang Prabang\" find you, not your competitor. Facebook pages never appear in those results."
+        },
+        "multiLanguage": {
+          "title": "As many languages as you need",
+          "desc": "Your site works in Lao, English, and Thai. Every customer type, every market, handled automatically without duplicating your work."
+        },
+        "ownership": {
+          "title": "You own it",
+          "desc": "Facebook can restrict your page tomorrow. Your website belongs to you. No algorithm, no dependency, no risk of losing everything overnight."
+        },
+        "analytics": {
+          "title": "See your traffic",
+          "desc": "Know how many people visited, where they came from, and what they looked at. A simple, privacy-friendly dashboard built in from day one."
+        },
+        "trust": {
+          "title": "Looks serious, builds trust",
+          "desc": "A professional website tells customers you are established before they ever contact you. First impressions happen online now, not at the door."
+        },
+        "delivered": {
+          "title": "Delivered finished",
+          "desc": "Not a template you figure out yourself. You receive a complete, working product: design, development, and launch, ready from day one."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "Built in Laos",
+      "title": "Real projects, right here in Vientiane",
+      "intro": "Both live. Both working. Both built for the Lao market.",
+      "projects": {
+        "laomaitravel": {
+          "name": "Lao Mai Travel",
+          "category": "Bilingual tourism website · Vientiane"
+        },
+        "pmlaos": {
+          "name": "PM Real Estate Laos",
+          "category": "Trilingual listing platform · Vientiane"
+        }
+      },
+      "analyticsTitle": "Umami Analytics · your traffic dashboard",
+      "analyticsExplainer": "Web traffic tells you who's visiting, where they're from, and what they're looking at. It turns guessing into knowing — so you can focus your time and money on what actually works."
+    },
+    "pwa": {
+      "eyebrow": "Platform web apps",
+      "title": "Manage your business",
+      "titleItalic": "from anywhere.",
+      "body1": "Your platform works like an app on your phone. No download required. Check listings, update inventory, and respond to leads from wherever you are.",
+      "body2": "Add it to your home screen and it opens instantly, just like any other app. Works on iPhone and Android.",
+      "chip": "No App Store needed"
+    },
+    "pricing": {
+      "eyebrow": "Investment",
+      "title": "Simple, transparent pricing",
+      "intro": "One flat fee. No hidden costs. No surprises.",
+      "banner": "Just launched — introductory prices. These prices are lower than they will be. Once the first client slots are filled, rates go up. If you are considering it, now is the right time.",
+      "tiers": {
+        "website": {
+          "label": "Presence",
+          "name": "Website",
+          "regularPrice": "$800",
+          "price": "$400",
+          "tagline": "For hotels, restaurants, tour operators, and any business that needs to be found online.",
+          "includes": [
+            "5–8 pages, fully designed",
+            "As many languages as you need",
+            "SEO-optimised for Google",
+            "Umami analytics built in",
+            "Mobile-ready on all devices",
+            "Delivered in 2–3 weeks"
+          ],
+          "cta": "Start your website"
+        },
+        "webapp": {
+          "label": "Platform",
+          "name": "Web App",
+          "regularPrice": "$1,800",
+          "price": "$900",
+          "tagline": "For businesses that manage data — listings, bookings, inventory, team access, and leads.",
+          "includes": [
+            "Full database and admin panel",
+            "User roles and secure login",
+            "Listings, CRM, or inventory system",
+            "Works as an app on your phone",
+            "As many languages as you need",
+            "Delivered in 4–5 weeks"
+          ],
+          "cta": "Start your web app"
+        }
+      },
+      "badge": "Most popular",
+      "priceNote": "USD · one-time · limited slots",
+      "platformNote": "Not sure which one you need? Send me your Facebook page on WhatsApp and I will tell you exactly what makes sense for your business. Free, no obligation."
+    },
+    "carePlans": {
+      "eyebrow": "Monthly support",
+      "title": "Keep your site running. Always.",
+      "subtitle": "Optional care plans so your website stays updated and you never have to worry about it.",
+      "plans": {
+        "basic": {
+          "name": "Basic Care",
+          "price": "$30",
+          "period": "/month",
+          "for": "For presence websites",
+          "includes": [
+            "Hosting covered",
+            "Uptime monitoring",
+            "1 content update per month",
+            "Email support"
+          ],
+          "quip": "🍺 Cheaper than one night at MAHASAN. Your website stays online 24/7 either way ... at least one of them remembers you in the morning."
+        },
+        "active": {
+          "name": "Active Care",
+          "price": "$80",
+          "period": "/month",
+          "for": "For platform web apps",
+          "includes": [
+            "Hosting and database covered",
+            "Priority support within 24h",
+            "Up to 5 updates per month",
+            "Monthly analytics report"
+          ],
+          "quip": "Less than one boosted Facebook post that disappears in 3 days. This keeps your platform running and updated all month."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Let's work together",
+      "title": "Ready to outpace",
+      "titleItalic": "the competition?",
+      "sub1": "First audit is free. No pitch deck, no commitment.",
+      "sub2": "Just 10 minutes on WhatsApp and you'll know exactly where your site stands.",
+      "cta": "Message me on WhatsApp →",
+      "note": "Prefer email? hello@maxontorres.com"
+    }
   }
 }

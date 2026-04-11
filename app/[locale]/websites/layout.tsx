@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { DM_Sans, Playfair_Display } from 'next/font/google';
+import { DM_Sans, Playfair_Display, Noto_Sans_Lao } from 'next/font/google';
 
 const dmSans = DM_Sans({
   variable: '--font-dm-sans',
@@ -12,6 +12,12 @@ const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
   style: ['normal', 'italic'],
+});
+
+const notoSansLao = Noto_Sans_Lao({
+  variable: '--font-noto-sans-lao',
+  subsets: ['lao'],
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -37,13 +43,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ServicesLayout({
+export default async function ServicesLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  const isLao = locale === 'lo';
+
   return (
-    <div className={`${dmSans.variable} ${playfairDisplay.variable}`}>
+    <div className={`${isLao ? notoSansLao.variable : `${dmSans.variable} ${playfairDisplay.variable}`}`}>
       {children}
     </div>
   );

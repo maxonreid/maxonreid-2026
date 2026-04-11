@@ -1,7 +1,7 @@
 .nav {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 10000;
   background-color: #0f0e0c;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
 }
@@ -14,6 +14,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.inner::-webkit-scrollbar {
+  display: none;
 }
 
 .logo {
@@ -23,6 +31,8 @@
   color: #e8e5df;
   text-decoration: none;
   letter-spacing: -0.02em;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .dot {
@@ -38,6 +48,8 @@
   border: 0.5px solid #c8943a;
   padding: 8px 18px;
   transition: background-color 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .cta:hover {

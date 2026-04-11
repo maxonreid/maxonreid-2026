@@ -1,69 +1,64 @@
+'use client';
+
+import React from 'react';
+import { useTranslations } from 'next-intl';
+import { useInView } from '@/app/hooks/useInView';
 import styles from './PricingSection.module.css';
 
 const WA_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '';
 const WA_HREF = `https://wa.me/${WA_NUMBER}?text=Hi%20Maxon%2C%20I%20would%20like%20a%20free%20website%20audit.`;
 
-const tiers = [
-  {
-    label: 'Presence',
-    name: 'Website',
-    regularPrice: '$800',
-    price: '$400',
-    tagline: 'For hotels, restaurants, tour operators, and any business that needs to be found online.',
-    includes: [
-      '5\u20138 pages, fully designed',
-      'As many languages as you need',
-      'SEO-optimised for Google',
-      'Umami analytics built in',
-      'Mobile-ready on all devices',
-      'Delivered in 2\u20133 weeks',
-    ],
-    cta: 'Start your website',
-  },
-  {
-    label: 'Platform',
-    name: 'Web App',
-    regularPrice: '$1,800',
-    price: '$900',
-    tagline: 'For businesses that manage data — listings, bookings, inventory, team access, and leads.',
-    includes: [
-      'Full database and admin panel',
-      'User roles and secure login',
-      'Listings, CRM, or inventory system',
-      'Works as an app on your phone',
-      'As many languages as you need',
-      'Delivered in 4\u20135 weeks',
-    ],
-    cta: 'Start your web app',
-    highlight: true,
-  },
-];
-
 export default function PricingSection() {
+  const t = useTranslations('websites.pricing');
+  const { ref: sectionRef, inView } = useInView();
+
+  const tiers = [
+    {
+      label: t('tiers.website.label'),
+      name: t('tiers.website.name'),
+      regularPrice: t('tiers.website.regularPrice'),
+      price: t('tiers.website.price'),
+      tagline: t('tiers.website.tagline'),
+      includes: t.raw('tiers.website.includes') as string[],
+      cta: t('tiers.website.cta'),
+    },
+    {
+      label: t('tiers.webapp.label'),
+      name: t('tiers.webapp.name'),
+      regularPrice: t('tiers.webapp.regularPrice'),
+      price: t('tiers.webapp.price'),
+      tagline: t('tiers.webapp.tagline'),
+      includes: t.raw('tiers.webapp.includes') as string[],
+      cta: t('tiers.webapp.cta'),
+      highlight: true,
+    },
+  ];
+
   return (
-    <section className={styles.section}>
+    <section className={styles.section} ref={sectionRef as React.RefObject<HTMLElement>}>
       <div className={styles.inner}>
-        <header className={styles.header}>
-          <p className={styles.eyebrow}>Investment</p>
-          <h2 className={styles.title}>Simple, transparent pricing</h2>
-          <p className={styles.intro}>One flat fee. No hidden costs. No surprises.</p>
+        <header className={`${styles.header} ${inView ? styles.headerVisible : styles.headerHidden}`}>
+          <p className={styles.eyebrow}>{t('eyebrow')}</p>
+          <h2 className={styles.title}>{t('title')}</h2>
+          <p className={styles.intro}>{t('intro')}</p>
         </header>
 
         <div className={styles.banner}>
           <span className={styles.pulse} />
           <p className={styles.bannerText}>
-            Just launched — introductory prices. These prices are lower than they will be. Once the first client slots are filled, rates go up. If you are considering it, now is the right time.
+            {t('banner')}
           </p>
         </div>
 
         <div className={styles.tiers}>
-          {tiers.map((tier) => (
+          {tiers.map((tier, i) => (
             <div
               key={tier.name}
-              className={tier.highlight ? `${styles.tierCard} ${styles.tierHighlight}` : styles.tierCard}
+              className={`${tier.highlight ? `${styles.tierCard} ${styles.tierHighlight}` : styles.tierCard} ${inView ? styles.tierCardVisible : styles.tierCardHidden}`}
+              style={{ '--i': i } as React.CSSProperties}
             >
               {tier.highlight && (
-                <div className={styles.badge}>Most popular</div>
+                <div className={styles.badge}>{t('badge')}</div>
               )}
               <div className={styles.tierHeader}>
                 <p className={styles.tierLabel}>{tier.label}</p>
@@ -72,7 +67,7 @@ export default function PricingSection() {
                 <div className={styles.priceRow}>
                   <span className={styles.regularPrice}>{tier.regularPrice}</span>
                   <span className={styles.price}>{tier.price}</span>
-                  <span className={styles.priceNote}>USD &middot; one-time &middot; limited slots</span>
+                  <span className={styles.priceNote}>{t('priceNote')}</span>
                 </div>
               </div>
               <ul className={styles.includesList} role="list">
@@ -100,8 +95,7 @@ export default function PricingSection() {
         </div>
 
         <div className={styles.platformNote}>
-          <strong>Not sure which one you need?</strong>{' '}
-          Send me your Facebook page on WhatsApp and I will tell you exactly what makes sense for your business. Free, no obligation.
+          {t('platformNote')}
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import "@/app/globals.css";
 import "xterm/css/xterm.css";
+import WhatsAppWidget from '@/app/components/WhatsAppWidget';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -109,6 +110,7 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider messages={messages}>
           {children}
+          <WhatsAppWidget />
         </NextIntlClientProvider>
       </body>
     </html>

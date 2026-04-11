@@ -1,12 +1,14 @@
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useState, useTransition, useRef, useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { US, LA, MX } from 'country-flag-icons/react/3x2';
 
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const [isPending, startTransition] = useTransition();
+  const [dropdownPos, setDropdownPos] = useState({ top: 0, right: 0 });
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -21,6 +23,16 @@ export default function LanguageSwitcher() {
 
   const currentLanguage = languages.find(lang => lang.code === currentLocale) || languages[0];
   const CurrentFlag = currentLanguage.flag;
+
+  useEffect(() => {
+    if (isOpen && buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      setDropdownPos({
+        top: rect.bottom + 8,
+        right: window.innerWidth - rect.right,
+      });
+    }
+  }, [isOpen]);
 
   const switchLanguage = (locale: string) => {
     if (locale === currentLocale) return;
@@ -62,7 +74,8 @@ export default function LanguageSwitcher() {
   return (
     <div className="relative inline-block">
       <button
-        className="bg-transparent border-none text-[#9ea0a8] p-2 rounded-lg cursor-pointer inline-flex items-center gap-2 hover:bg-white/[0.03]"
+        ref={buttonRef}
+        className="bg-transparent border-none text-[#9ea0a8] p-2 rounded-lg cursor-pointer inline-flex items-center gap-2 hover:bg-white/[0.03] relative"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-label="Switch language"
@@ -90,7 +103,10 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-[calc(100%+8px)] right-0 min-w-[140px] bg-[#0f1113] border border-white/10 rounded-lg p-1.5 shadow-[0_8px_24px_rgba(0,0,0,0.3)] z-[100] animate-[slideDown_0.2s_ease]">
+        <div 
+          className="fixed min-w-[140px] bg-[#0f1113] border border-white/10 rounded-lg p-1.5 shadow-[0_8px_24px_rgba(0,0,0,0.3)] z-[10003] animate-[slideDown_0.2s_ease]"
+          style={{ top: `${dropdownPos.top}px`, right: `${dropdownPos.right}px` }}
+        >
           {languages.map((lang) => {
             const FlagComponent = lang.flag;
             return (
@@ -114,7 +130,7 @@ export default function LanguageSwitcher() {
 
       {isOpen && (
         <div
-          className="fixed inset-0 z-[99]"
+          className="fixed inset-0 z-[10001]"
           onClick={() => setIsOpen(false)}
           aria-hidden="true"
         />

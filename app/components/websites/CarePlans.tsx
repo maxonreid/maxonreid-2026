@@ -1,55 +1,54 @@
+'use client';
+
+import React from 'react';
+import { useTranslations } from 'next-intl';
+import { useInView } from '@/app/hooks/useInView';
 import styles from './CarePlans.module.css';
 
 const WA_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '';
 const WA_HREF = `https://wa.me/${WA_NUMBER}?text=Hi%20Maxon%2C%20I%20would%20like%20a%20free%20website%20audit.`;
 
-const plans = [
-  {
-    name: 'Basic Care',
-    price: '$30',
-    period: '/month',
-    for: 'For presence websites',
-    includes: [
-      'Hosting covered',
-      'Uptime monitoring',
-      '1 content update per month',
-      'Email support',
-    ],
-    quip: "🍺 One night at Tully's. Your website stays online 24/7 either way — at least one of them remembers you in the morning.",
-  },
-  {
-    name: 'Active Care',
-    price: '$80',
-    period: '/month',
-    for: 'For platform web apps',
-    includes: [
-      'Hosting and database covered',
-      'Priority support within 24h',
-      'Up to 5 updates per month',
-      'Monthly analytics report',
-    ],
-    quip: 'Less than one boosted Facebook post that disappears in 3 days. This keeps your platform running and updated all month.',
-    highlight: true,
-  },
-];
-
 export default function CarePlans() {
+  const t = useTranslations('websites.carePlans');
+  const { ref: sectionRef, inView } = useInView();
+
+  const plans = [
+    {
+      name: t('plans.basic.name'),
+      price: t('plans.basic.price'),
+      period: t('plans.basic.period'),
+      for: t('plans.basic.for'),
+      includes: t.raw('plans.basic.includes') as string[],
+      quip: t('plans.basic.quip'),
+    },
+    {
+      name: t('plans.active.name'),
+      price: t('plans.active.price'),
+      period: t('plans.active.period'),
+      for: t('plans.active.for'),
+      includes: t.raw('plans.active.includes') as string[],
+      quip: t('plans.active.quip'),
+      highlight: true,
+    },
+  ];
+
   return (
-    <section className={styles.section}>
+    <section className={styles.section} ref={sectionRef as React.RefObject<HTMLElement>}>
       <div className={styles.inner}>
         <header className={styles.header}>
-          <p className={styles.eyebrow}>Monthly support</p>
-          <h2 className={styles.title}>Keep your site running. Always.</h2>
+          <p className={styles.eyebrow}>{t('eyebrow')}</p>
+          <h2 className={styles.title}>{t('title')}</h2>
           <p className={styles.subtitle}>
-            Optional care plans so your website stays updated and you never have to worry about it.
+            {t('subtitle')}
           </p>
         </header>
 
         <div className={styles.grid}>
-          {plans.map((plan) => (
+          {plans.map((plan, i) => (
             <div
               key={plan.name}
-              className={plan.highlight ? `${styles.card} ${styles.cardHighlight}` : styles.card}
+              className={`${plan.highlight ? `${styles.card} ${styles.cardHighlight}` : styles.card} ${inView ? styles.cardVisible : styles.cardHidden}`}
+              style={{ '--i': i } as React.CSSProperties}
             >
               <div className={styles.cardTop}>
                 <h3 className={styles.planName}>{plan.name}</h3>
@@ -71,14 +70,8 @@ export default function CarePlans() {
 
               <div className={styles.cardBottom}>
                 <p className={styles.quip}>{plan.quip}</p>
-                {/* <a
-                  href={WA_HREF}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={plan.highlight ? `${styles.cta} ${styles.ctaSolid}` : styles.cta}
-                >
-                  Add to project &rarr;
-                </a> */}
+
+
               </div>
             </div>
           ))}

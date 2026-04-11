@@ -13,6 +13,23 @@ export default function ServicesSection() {
   const services = [
     {
       id: 1,
+      icon: <Globe size={24} />,
+      title: t('items.websiteDev.title'),
+      valueStatement: t('items.websiteDev.valueStatement'),
+      desc: t('items.websiteDev.desc'),
+      details: [
+        t('items.websiteDev.details.0'),
+        t('items.websiteDev.details.1'),
+        t('items.websiteDev.details.2'),
+        t('items.websiteDev.details.3'),
+        t('items.websiteDev.details.4'),
+        t('items.websiteDev.details.5'),
+      ],
+      tools: t('items.websiteDev.tools'),
+      projectLink: '/websites',
+    },
+    {
+      id: 2,
       icon: <Monitor size={24} />,
       title: t('items.customWebApps.title'),
       valueStatement: t('items.customWebApps.valueStatement'),
@@ -28,7 +45,7 @@ export default function ServicesSection() {
       projectLink: '#projects',
     },
     {
-      id: 2,
+      id: 3,
       icon: <Settings size={24} />,
       title: t('items.businessSystems.title'),
       valueStatement: t('items.businessSystems.valueStatement'),
@@ -44,7 +61,7 @@ export default function ServicesSection() {
       projectLink: '#projects',
     },
     {
-      id: 3,
+      id: 4,
       icon: <Smartphone size={24} />,
       title: t('items.pwaApps.title'),
       valueStatement: t('items.pwaApps.valueStatement'),
@@ -57,22 +74,6 @@ export default function ServicesSection() {
         t('items.pwaApps.details.4'),
       ],
       tools: t('items.pwaApps.tools'),
-    },
-    {
-      id: 4,
-      icon: <Globe size={24} />,
-      title: t('items.websiteDev.title'),
-      valueStatement: t('items.websiteDev.valueStatement'),
-      desc: t('items.websiteDev.desc'),
-      details: [
-        t('items.websiteDev.details.0'),
-        t('items.websiteDev.details.1'),
-        t('items.websiteDev.details.2'),
-        t('items.websiteDev.details.3'),
-        t('items.websiteDev.details.4'),
-        t('items.websiteDev.details.5'),
-      ],
-      tools: t('items.websiteDev.tools'),
     },
     {
       id: 5,

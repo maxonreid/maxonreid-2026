@@ -1,6 +1,7 @@
 'use client';
 
 import { ReactNode } from 'react';
+import { Link } from '@/routing';
 
 interface Service {
   id: number;
@@ -11,6 +12,7 @@ interface Service {
   details?: string[];
   tools?: string;
   optional?: boolean;
+  projectLink?: string;
 }
 
 interface ServiceCardProps {
@@ -20,14 +22,8 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ service, deliverLabel = 'What I deliver', toolsLabel = 'Tools:' }: ServiceCardProps) {
-  return (
-    <article
-      className={`bg-white/[0.02] border rounded-xl p-6 transition-all ${
-        'border-white/[0.06] hover:border-[#d6b46b]/50'
-      } ${
-        service.optional ? 'opacity-80 hover:opacity-100' : ''
-      }`}
-    >
+  const cardContent = (
+    <>
       <div className="flex items-start gap-4 mb-4">
         <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#d6b46b]/10 flex items-center justify-center text-[#d6b46b]" aria-hidden="true">
           {service.icon}
@@ -57,6 +53,33 @@ export default function ServiceCard({ service, deliverLabel = 'What I deliver', 
           </>
         )}
       </div>
+    </>
+  );
+
+  if (service.projectLink && service.projectLink.startsWith('/')) {
+    return (
+      <Link
+        href={service.projectLink}
+        className={`block bg-white/[0.02] border rounded-xl p-6 transition-all ${
+          'border-white/[0.06] hover:border-[#d6b46b]/50'
+        } ${
+          service.optional ? 'opacity-80 hover:opacity-100' : ''
+        }`}
+      >
+        {cardContent}
+      </Link>
+    );
+  }
+
+  return (
+    <article
+      className={`bg-white/[0.02] border rounded-xl p-6 transition-all ${
+        'border-white/[0.06] hover:border-[#d6b46b]/50'
+      } ${
+        service.optional ? 'opacity-80 hover:opacity-100' : ''
+      }`}
+    >
+      {cardContent}
     </article>
   );
 }

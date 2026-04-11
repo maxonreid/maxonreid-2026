@@ -40,9 +40,45 @@ export default function ReferralModal() {
       aria-label={t('modal.ariaLabel')}
     >
       <div
-        className="w-full max-w-[560px] bg-[#0f1113] border border-white/[0.08] rounded-xl relative shadow-[0_40px_80px_rgba(0,0,0,0.8)] animate-[modalIn_0.35s_cubic-bezier(0.16,1,0.3,1)_both] max-sm:max-w-full max-sm:rounded-b-none max-sm:max-h-[92dvh] max-sm:overflow-y-auto"
+        className="w-full max-w-[560px] bg-[#0f1113] border border-white/[0.08] rounded-xl relative shadow-[0_40px_80px_rgba(0,0,0,0.8)] animate-[modalIn_0.35s_cubic-bezier(0.16,1,0.3,1)_both] max-sm:max-w-full max-sm:rounded-b-none max-sm:max-h-[92dvh] max-sm:overflow-y-auto overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* ── DECORATIVE DOLLAR SIGN ── */}
+        <svg
+          className="absolute top-0 right-0 w-[280px] h-[280px] opacity-[0.08] pointer-events-none max-sm:w-[200px] max-sm:h-[200px]"
+          viewBox="0 0 100 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <defs>
+            <linearGradient id="dollarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#d6b46b" stopOpacity="1" />
+              <stop offset="50%" stopColor="#f4d799" stopOpacity="1" />
+              <stop offset="100%" stopColor="#d6b46b" stopOpacity="1" />
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+              <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <text
+            x="50"
+            y="70"
+            fontSize="80"
+            fontWeight="bold"
+            textAnchor="middle"
+            fill="url(#dollarGradient)"
+            filter="url(#glow)"
+            fontFamily="system-ui, -apple-system, sans-serif"
+          >
+            $
+          </text>
+        </svg>
+
         {/* ── TOP BAR ── */}
         <div className="flex justify-between items-center pl-5 pr-12 py-3 border-b border-white/[0.06] rounded-t-xl bg-white/[0.02]">
           <span className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8]">

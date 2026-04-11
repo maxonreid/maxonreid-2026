@@ -1,56 +1,51 @@
+'use client';
+
+import React from 'react';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { useInView } from '@/app/hooks/useInView';
 import styles from './PWASection.module.css';
 
 const WA_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '';
 const WA_HREF = `https://wa.me/${WA_NUMBER}?text=Hi%20Maxon%2C%20I%20would%20like%20a%20free%20website%20audit.`;
 
 export default function PWASection() {
+  const t = useTranslations('websites.pwa');
+  const { ref: sectionRef, inView } = useInView();
+
   return (
-    <section className={styles.section}>
+    <section className={styles.section} ref={sectionRef as React.RefObject<HTMLElement>}>
       <div className={styles.inner}>
-        <div className={styles.content}>
-          <p className={styles.eyebrow}>Platform web apps</p>
+        <div className={`${styles.content} ${inView ? styles.contentVisible : styles.contentHidden}`}>
+          <p className={styles.eyebrow}>{t('eyebrow')}</p>
           <h2 className={styles.title}>
-            Manage your business
+            {t('title')}
             <br />
-            <em className={styles.italic}>from anywhere.</em>
+            <em className={styles.italic}>{t('titleItalic')}</em>
           </h2>
           <p className={styles.body}>
-            Your platform works like an app on your phone. No download required.
-            Check listings, update inventory, and respond to leads from wherever you are.
+            {t('body1')}
           </p>
           <p className={styles.body}>
-            Add it to your home screen and it opens instantly, just like any other app.
-            Works on iPhone and Android.
+            {t('body2')}
           </p>
-          <span className={styles.chip}>No App Store needed</span>
-          <a href={WA_HREF} target="_blank" rel="noopener noreferrer" className={styles.cta}>
+          <span className={styles.chip}>{t('chip')}</span>
+          {/* <a href={WA_HREF} target="_blank" rel="noopener noreferrer" className={styles.cta}>
             Ask about PWA add-on &rarr;
-          </a>
+          </a> */}
         </div>
 
-        <div className={styles.phoneWrap} aria-hidden="true">
+        <div className={`${styles.phoneWrap} ${inView ? styles.phoneVisible : styles.phoneHidden}`} aria-hidden="true">
           <div className={styles.phone}>
             <div className={styles.phoneNotch} />
             <div className={styles.phoneScreen}>
-              <div className={styles.appHeader}>
-                <span className={styles.appDot} />
-                <span className={styles.appTitle}>My Business</span>
-              </div>
-              <div className={styles.appNav}>
-                {['Home', 'Services', 'Contact'].map((label) => (
-                  <span key={label} className={styles.appNavItem}>{label}</span>
-                ))}
-              </div>
-              <div className={styles.appContent}>
-                <div className={styles.appHeroBlock} />
-                <div className={styles.appCardRow}>
-                  <div className={styles.appCard} />
-                  <div className={styles.appCard} />
-                </div>
-                <div className={styles.appTextLine} style={{ width: '80%' }} />
-                <div className={styles.appTextLine} style={{ width: '60%' }} />
-                <div className={styles.appCta} />
-              </div>
+              <Image
+                src="/images/projects/pmlaos/PM_Real_Estate_Laos-Admin_Dashboard_Mobile_View.png"
+                alt="PM Real Estate Laos admin dashboard"
+                fill
+                style={{ objectFit: 'cover', objectPosition: 'top' }}
+                sizes="(max-width: 768px) clamp(180px, 55vw, 240px), 260px"
+              />
             </div>
             <div className={styles.phoneButton} />
           </div>
