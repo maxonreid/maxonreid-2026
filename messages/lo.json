@@ -194,6 +194,20 @@
         ],
         "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
       },
+      "websiteDev": {
+        "title": "ພັດທະນາເວັບໄຊ",
+        "valueStatement": "ເວັບໄຊທ໌ທີ່ເປັນມືອາຊີບ ທີ່ເຮັດວຽກໃຫ້ທຸລະກິດຂອງທ່ານ 24/7.",
+        "desc": "ມອບທີ່ຢູ່ອອນໄລນ໌ທີ່ໜ້າເຊື່ອຖື — ສ້າງເພື່ອດຶງດູດລູກຄ້າ ແລະ ຂະຫຍາຍຕົວທົ່ວໂລກ.",
+        "details": [
+          "ເຂົ້າເຖິງລູກຄ້າທົ່ວໂລກ",
+          "ສະຖິຕິການເຂົ້າຊົມເວັບ",
+          "ຮອງຮັບຫຼາຍພາສາ",
+          "ຂໍ້ມູນທຸລະກິດທັງໝົດ, ອອນໄລນ໌ຕະຫຼອດ",
+          "ສ້າງຄວາມໄວ້ວາງໃຈ ແລະ ຄວາມນ່າເຊື່ອຖື",
+          "ເສີມສ້າງຕົວຕົນຂອງແບຣນ"
+        ],
+        "tools": ""
+      },
       "frontendArchitecture": {
         "title": "Core Stack",
         "valueStatement": "Next.js · React · TypeScript · PostgreSQL · REST APIs",

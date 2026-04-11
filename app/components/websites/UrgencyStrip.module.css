@@ -1,0 +1,18 @@
+.strip {
+  background-color: #c8943a;
+  padding: 14px 24px;
+  text-align: center;
+}
+
+.text {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #0f0e0c;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.text strong {
+  font-weight: 700;
+}

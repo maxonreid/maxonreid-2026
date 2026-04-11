@@ -1,0 +1,244 @@
+.section {
+  padding: 96px 24px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  align-items: center;
+  gap: 80px;
+}
+
+.eyebrow {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c8943a;
+  margin: 0 0 20px;
+}
+
+.title {
+  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: #e8e5df;
+  margin: 0 0 28px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.italic {
+  font-style: italic;
+  color: #c8943a;
+}
+
+.body {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #7a7671;
+  margin: 0 0 16px;
+}
+
+.chip {
+  display: inline-block;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c8943a;
+  border: 0.5px solid rgba(200, 148, 58, 0.3);
+  padding: 5px 10px;
+  margin-bottom: 28px;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.featureList li {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #e8e5df;
+  padding-left: 20px;
+  position: relative;
+}
+
+.featureList li::before {
+  content: '\2013';
+  position: absolute;
+  left: 0;
+  color: #c8943a;
+}
+
+.cta {
+  display: inline-block;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #c8943a;
+  text-decoration: none;
+  border: 0.5px solid #c8943a;
+  padding: 12px 22px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta:hover {
+  background-color: #c8943a;
+  color: #0f0e0c;
+}
+
+/* Phone frame */
+.phoneWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  width: 240px;
+  height: 490px;
+  background-color: #161410;
+  border: 0.5px solid rgba(200, 148, 58, 0.35);
+  border-radius: 36px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 16px 0 0;
+}
+
+.phoneNotch {
+  width: 72px;
+  height: 22px;
+  background-color: #0f0e0c;
+  border-radius: 0 0 14px 14px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.phoneScreen {
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneButton {
+  width: 40px;
+  height: 4px;
+  background-color: rgba(200, 148, 58, 0.3);
+  border-radius: 2px;
+  margin: 10px 0 16px;
+}
+
+/* Simulated app UI */
+.appHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.06);
+}
+
+.appDot {
+  width: 22px;
+  height: 22px;
+  background-color: rgba(200, 148, 58, 0.25);
+  border-radius: 4px;
+  display: block;
+}
+
+.appTitle {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #e8e5df;
+}
+
+.appNav {
+  display: flex;
+  gap: 12px;
+  padding: 8px 16px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.06);
+}
+
+.appNavItem {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  color: #7a7671;
+}
+
+.appNavItem:first-child {
+  color: #c8943a;
+}
+
+.appContent {
+  flex: 1;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.appHeroBlock {
+  height: 80px;
+  background-color: rgba(200, 148, 58, 0.1);
+  border: 0.5px solid rgba(200, 148, 58, 0.2);
+  border-radius: 4px;
+}
+
+.appCardRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.appCard {
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 0.5px solid rgba(255, 255, 255, 0.07);
+  border-radius: 4px;
+}
+
+.appTextLine {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+}
+
+.appCta {
+  height: 28px;
+  background-color: rgba(200, 148, 58, 0.4);
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+@media (max-width: 800px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .phoneWrap {
+    order: -1;
+  }
+
+  .section {
+    padding: 64px 20px;
+  }
+}

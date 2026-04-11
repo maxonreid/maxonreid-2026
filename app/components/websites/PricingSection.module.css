@@ -1,0 +1,288 @@
+.section {
+  padding: 96px 24px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Urgency banner */
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 0.5px solid rgba(200, 148, 58, 0.35);
+  padding: 14px 20px;
+  margin-bottom: 56px;
+  background-color: rgba(200, 148, 58, 0.06);
+}
+
+.pulse {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #c8943a;
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.75); }
+}
+
+.bannerText {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #e8e5df;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c8943a;
+  margin: 0 0 16px;
+}
+
+.title {
+  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: #e8e5df;
+  margin: 0 0 12px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.intro {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #7a7671;
+  margin: 0;
+}
+
+/* Tier cards */
+.tiers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 24px;
+}
+
+.tierCard {
+  padding: 44px 40px;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.tierCard:last-child {
+  border-right: none;
+}
+
+.tierHighlight {
+  background-color: rgba(200, 148, 58, 0.04);
+  border-left: 0.5px solid rgba(200, 148, 58, 0.35) !important;
+}
+
+.badge {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0f0e0c;
+  background-color: #c8943a;
+  padding: 4px 10px;
+  position: absolute;
+  top: -1px;
+  right: 40px;
+}
+
+.tierHeader {
+  margin-bottom: 32px;
+}
+
+.tierLabel {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7a7671;
+  margin: 0 0 10px;
+}
+
+.tierName {
+  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e8e5df;
+  margin: 0 0 10px;
+}
+
+.tierTagline {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #7a7671;
+  margin: 0 0 24px;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.regularPrice {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4a4440;
+  text-decoration: line-through;
+  align-self: center;
+}
+
+.price {
+  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #c8943a;
+  line-height: 1;
+}
+
+.priceNote {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #7a7671;
+  letter-spacing: 0.04em;
+}
+
+.platformNote {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #7a7671;
+  line-height: 1.65;
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 24px;
+  margin-top: 0;
+}
+
+.platformNote strong {
+  color: #e8e5df;
+  font-weight: 500;
+}
+
+/* Includes list */
+.includesList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.includesItem {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #e8e5df;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.check {
+  display: block;
+  width: 16px;
+  height: 16px;
+  color: #c8943a;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.check svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* CTA */
+.tierCta {
+  display: block;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #c8943a;
+  text-decoration: none;
+  border: 0.5px solid #c8943a;
+  padding: 14px 20px;
+  text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tierCta:hover {
+  background-color: rgba(200, 148, 58, 0.1);
+}
+
+.tierCtaSolid {
+  background-color: #c8943a;
+  color: #0f0e0c;
+}
+
+.tierCtaSolid:hover {
+  background-color: transparent;
+  color: #c8943a;
+}
+
+.currencyNote {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #7a7671;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .tiers {
+    grid-template-columns: 1fr;
+  }
+
+  .tierCard {
+    border-right: none;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+    padding: 36px 24px;
+  }
+
+  .tierCard:last-child {
+    border-bottom: none;
+  }
+
+  .badge {
+    right: 24px;
+  }
+
+  .section {
+    padding: 64px 20px;
+  }
+}

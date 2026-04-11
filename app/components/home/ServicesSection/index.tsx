@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import ServiceCard from './ServiceCard';
-import { Monitor, Settings, Smartphone, Palette, Wrench } from 'lucide-react';
+import { Monitor, Settings, Smartphone, Palette, Wrench, Globe } from 'lucide-react';
 
 export default function ServicesSection() {
   const t = useTranslations('services');
@@ -60,6 +60,22 @@ export default function ServicesSection() {
     },
     {
       id: 4,
+      icon: <Globe size={24} />,
+      title: t('items.websiteDev.title'),
+      valueStatement: t('items.websiteDev.valueStatement'),
+      desc: t('items.websiteDev.desc'),
+      details: [
+        t('items.websiteDev.details.0'),
+        t('items.websiteDev.details.1'),
+        t('items.websiteDev.details.2'),
+        t('items.websiteDev.details.3'),
+        t('items.websiteDev.details.4'),
+        t('items.websiteDev.details.5'),
+      ],
+      tools: t('items.websiteDev.tools'),
+    },
+    {
+      id: 5,
       icon: <Palette size={24} />,
       title: t('items.frontendArchitecture.title'),
       valueStatement: t('items.frontendArchitecture.valueStatement'),
@@ -68,7 +84,7 @@ export default function ServicesSection() {
       tools: t('items.frontendArchitecture.tools'),
     },
     {
-      id: 5,
+      id: 6,
       icon: <Wrench size={24} />,
       title: t('items.ongoingSupport.title'),
       valueStatement: t('items.ongoingSupport.valueStatement'),
@@ -111,7 +127,7 @@ export default function ServicesSection() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         {supportingServices.map((service) => (
           <ServiceCard
             key={service.id}

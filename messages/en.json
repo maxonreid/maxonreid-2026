@@ -196,6 +196,20 @@
         ],
         "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
       },
+      "websiteDev": {
+        "title": "Website Development",
+        "valueStatement": "A professional website that works for your business 24/7.",
+        "desc": "Give your business a permanent, credible home online — built to attract clients and grow your presence globally.",
+        "details": [
+          "Reach clients internationally",
+          "Web traffic analytics & insights",
+          "Multilanguage support",
+          "All your business info, always online",
+          "Builds trust & credibility",
+          "Strengthens your brand identity"
+        ],
+        "tools": ""
+      },
       "frontendArchitecture": {
         "title": "Core Stack",
         "valueStatement": "Next.js · React · TypeScript · PostgreSQL · REST APIs",
