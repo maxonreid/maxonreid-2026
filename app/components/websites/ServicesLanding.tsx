@@ -23,18 +23,19 @@ export default function ServicesLanding({ locale }: Props) {
       <main className={styles.main}>
         <HeroSection />
 
-        // The component with the Marquee
+        {/* The component with the Marquee */}
         <UrgencyStrip />
         
         <BenefitsGrid />
         <ProofSection />
         <PWASection />
         
-        // Build Pricing
+        {/* Build Pricing */}
         <PricingSection />
 
-        // Monthly Pricing
+        {/* Monthly Pricing */}
         <CarePlans />
+        
         <CTASection />
       </main>
       <ServicesFooter locale={locale} />
