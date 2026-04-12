@@ -16,15 +16,15 @@ export default function ProofSection() {
     {
       name: t('projects.laomaitravel.name'),
       category: t('projects.laomaitravel.category'),
-      tags: ['English', 'Lao', 'Next.js 15'],
+      tags: ['English', 'Lao'],
       url: 'https://laomaitravel.com',
       image: '/images/projects/laomaitravel/hero-section.png',
     },
     {
       name: t('projects.pmlaos.name'),
       category: t('projects.pmlaos.category'),
-      tags: ['English', 'Lao', 'Thai'],
-      url: '#',
+      tags: ['English', 'Lao', 'Chinese'],
+      url: 'https://www.pmlaos.com',
       image: '/images/projects/pmlaos/Listings_Gallery_Multiple_Properties.png',
     },
   ];
@@ -87,7 +87,7 @@ export default function ProofSection() {
           <div className={styles.analyticsCard}>
             <div className={styles.analyticsHeader}>
               <span className={styles.analyticsDot} aria-hidden="true" />
-              <span className={styles.analyticsTitle}>Umami Analytics &middot; your traffic dashboard</span>
+              <span className={styles.analyticsTitle}>{t('analyticsTitle')}</span>
             </div>
             <div className={styles.analyticsPlaceholder} style={{ position: 'relative' }}>
               {!analyticsLoaded && (
@@ -95,7 +95,7 @@ export default function ProofSection() {
               )}
               <Image
                 src="/images/projects/laomaitravel/umami-locations.png"
-                alt="Umami analytics — locations dashboard"
+                alt={t('analyticsAlt')}
                 width={900}
                 height={320}
                 className={styles.analyticsChart}
@@ -103,8 +103,7 @@ export default function ProofSection() {
               />
             </div>
             <p className={styles.analyticsExplainer}>
-              Web traffic tells you who's visiting, where they're from, and what they're looking at. 
-              It turns guessing into knowing — so you can focus your time and money on what actually works.
+              {t('analyticsExplainer')}
             </p>
           </div>
         </div>

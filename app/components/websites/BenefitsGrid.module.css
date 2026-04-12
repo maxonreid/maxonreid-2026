@@ -57,11 +57,28 @@
   padding: 40px 36px;
   border-right: 0.5px solid rgba(255, 255, 255, 0.08);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
-  transition: background-color 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(200, 148, 58, 0.08), transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .card:hover {
   background-color: rgba(200, 148, 58, 0.04);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(200, 148, 58, 0.12);
+}
+
+.card:hover::before {
+  opacity: 1;
 }
 
 .icon {
@@ -70,6 +87,11 @@
   height: 28px;
   color: #c8943a;
   margin-bottom: 20px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .icon svg {
@@ -122,4 +144,8 @@
 @media (prefers-reduced-motion: reduce) {
   .cardHidden { opacity: 1; transform: none; }
   .cardVisible { animation: none; }
+  .card { transition: none; }
+  .card:hover { transform: none; }
+  .icon { transition: none; }
+  .card:hover .icon { transform: none; }
 }

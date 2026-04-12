@@ -813,6 +813,7 @@
         }
       },
       "analyticsTitle": "Umami Analytics · tu dashboard de tráfico",
+      "analyticsAlt": "Umami analytics — dashboard de ubicaciones",
       "analyticsExplainer": "El tráfico web te dice quién está visitando, de dónde son y qué están mirando. Convierte adivinar en saber — para que puedas enfocar tu tiempo y dinero en lo que realmente funciona."
     },
     "pwa": {

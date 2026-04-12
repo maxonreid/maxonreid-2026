@@ -803,7 +803,10 @@
           "name": "PM Real Estate Laos",
           "category": "Platform listing ສາມພາສາ · ວຽງຈັນ"
         }
-      }
+      },
+      "analyticsTitle": "Umami Analytics · dashboard ການເຂົ້າໃຊ້ຂອງທ່ານ",
+      "analyticsAlt": "Umami analytics — dashboard ສະຖານທີ່",
+      "analyticsExplainer": "ການເຂົ້າໃຊ້ເວັບບອກທ່ານວ່າໃຜກຳລັງເຂົ້າມາ, ພວກເຂົາມາຈາກໃສ, ແລະພວກເຂົາເບິ່ງຫຍັງ. ມັນປ່ຽນການເດົາໃຫ້ກາຍເປັນການຮູ້ — ເພື່ອໃຫ້ທ່ານສາມາດເນັ້ນເວລາແລະເງິນຂອງທ່ານໃສ່ສິ່ງທີ່ແທ້ຈິງເຮັດວຽກ."
     },
     "pwa": {
       "eyebrow": "Platform web apps",

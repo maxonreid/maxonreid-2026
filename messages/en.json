@@ -813,6 +813,7 @@
         }
       },
       "analyticsTitle": "Umami Analytics · your traffic dashboard",
+      "analyticsAlt": "Umami analytics — locations dashboard",
       "analyticsExplainer": "Web traffic tells you who's visiting, where they're from, and what they're looking at. It turns guessing into knowing — so you can focus your time and money on what actually works."
     },
     "pwa": {

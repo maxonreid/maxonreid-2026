@@ -19,7 +19,10 @@ interface Props {
 export default function ServicesLanding({ locale }: Props) {
   return (
     <div className={styles.root}>
+
+      {/* The Navbar */}
       <ServicesNav locale={locale} />
+      
       <main className={styles.main}>
         
         <HeroSection />

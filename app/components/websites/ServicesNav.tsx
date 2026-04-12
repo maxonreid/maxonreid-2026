@@ -22,14 +22,16 @@ export default function ServicesNav({ locale }: Props) {
         </a>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', position: 'relative', zIndex: 10001 }}>
           <LanguageSwitcher />
-          <a
+          
+          {/* <a
             href={WA_HREF}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.cta}
           >
             {t('cta')}
-          </a>
+          </a> */}
+
         </div>
       </div>
     </nav>
