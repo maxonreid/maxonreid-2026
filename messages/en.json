@@ -10,9 +10,9 @@
   },
   "hero": {
     "brand": "MAXON TORRES",
-    "location": "[ VIENTIANE : LAOS PDR ] — FULL STACK WEB DEVELOPER",
+    "location": "[ VIENTIANE : LAOS PDR ] — FREELANCE SOFTWARE DEVELOPER",
     "heroTitle": "I <highlight>automate</highlight> the work your team shouldn't be doing manually.",
-    "heroSub": "Custom integrations, workflow automation, and internal tools.",
+    "heroSub": "Custom integrations, workflow automation, and internal tools. Freelance Software Developer in Vientiane offering web development services.",
     "ctaStart": "START A PROJECT",
     "ctaView": "VIEW MY WORK"
   },
@@ -50,9 +50,9 @@
   "aboutHome": {
     "label": "[ WHO I AM ]",
     "title": "About Me",
-    "intro": "I’m Maximiliano Torres, a Full-Stack Software Developer based in Vientiane, Laos, focused on building robust and organized scalable web applications.",
-    "description": "I help businesses turn ideas into reliable digital business tools — from internal dashboards to full-scale platforms — combining clean architecture, performance, and user-focused design.",
-    "imageAlt": "Maximiliano Torres - Full Stack Developer",
+    "intro": "I’m Maximiliano Torres, a Freelance Software Developer in Vientiane, Laos, specializing in building robust and scalable web applications for businesses worldwide.",
+    "description": "As a freelance developer based in Vientiane, I help businesses turn ideas into reliable digital tools — from internal dashboards to full-scale platforms — combining clean architecture, performance, and user-focused design.",
+    "imageAlt": "Maximiliano Torres - Freelance Software Developer in Vientiane",
     "learnMore": "More About Me",
     "stats": {
       "experience": "10+",
@@ -66,11 +66,11 @@
   "about": {
     "heroLabel": "[ DEVELOPER PROFILE ]",
     "heroTitle": "About Me",
-    "heroSubtitle": "React & Next.js Specialist | Full-Stack Developer since 2017",
+    "heroSubtitle": "Freelance Software Developer in Vientiane | React & Next.js Specialist | Full-Stack Developer since 2017",
     "bio": {
       "title": "Building Reliable, Scalable Web Systems",
       "p1": "I’m Maximiliano Torres, a Full-Stack Developer based in Southeast Asia, specializing in building production-ready web applications with React and Next.js. Since 2017, I’ve been creating tools and systems that prioritize clean architecture, performance, and maintainability.",
-      "p2": "I design and develop digital solutions that automate workflows, manage complex data, and support business growth — from internal dashboards to full web platforms. My focus is delivering reliable systems that solve real operational challenges.",
+      "p2": "As a freelance software developer in Vientiane, I design and develop digital solutions that automate workflows, manage complex data, and support business growth — from internal dashboards to full web platforms. My focus is delivering reliable systems that solve real operational challenges.",
       "p3": "In addition to development, I have experience teaching IT and Web Design at different Universities in China and Laos. I collaborate with international clients and remote teams, ensuring consistent delivery and long-term success."
     },
     "skills": {

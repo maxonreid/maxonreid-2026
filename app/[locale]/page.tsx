@@ -46,7 +46,7 @@ export default async function HomePage({
         url: SITE_URL,
         name: 'Maxon Torres',
         description:
-          'Full-Stack Developer specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture.',
+          'Freelance Software Developer in Vientiane, Laos specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture.',
         inLanguage: locale,
       },
       {
@@ -56,7 +56,17 @@ export default async function HomePage({
         alternateName: 'Maxon Torres',
         url: SITE_URL,
         image: `${SITE_URL}/profile.jpg`,
-        jobTitle: 'Full Stack Engineer',
+        jobTitle: 'Freelance Software Developer',
+        description: 'Freelance Software Developer in Vientiane, Laos specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture',
+        workLocation: {
+          '@type': 'Place',
+          name: 'Vientiane',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Vientiane',
+            addressCountry: 'LA',
+          },
+        },
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Vientiane',
@@ -67,6 +77,29 @@ export default async function HomePage({
           'https://github.com/maxonreid',
         ],
         knowsAbout: ['Next.js', 'React', 'Node.js', 'GraphQL', 'AWS Serverless', 'TypeScript'],
+        hasOccupation: {
+          '@type': 'Occupation',
+          name: 'Freelance Software Developer',
+          occupationLocation: {
+            '@type': 'City',
+            name: 'Vientiane',
+          },
+        },
+      },
+      {
+        '@type': 'ProfessionalService',
+        '@id': `${SITE_URL}/#service`,
+        name: 'Freelance Software Development Services',
+        description: 'Professional freelance software development services in Vientiane, Laos. Specializing in web application development, full-stack development, and cloud solutions.',
+        provider: {
+          '@id': `${SITE_URL}/#person`,
+        },
+        areaServed: {
+          '@type': 'City',
+          name: 'Vientiane',
+          '@id': 'https://www.wikidata.org/wiki/Q9326',
+        },
+        serviceType: ['Web Development', 'Software Development', 'Full Stack Development', 'Freelance Development'],
       },
     ],
   };

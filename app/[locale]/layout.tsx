@@ -39,14 +39,18 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com'),
   title: {
     default:
-      "Maximiliano Brito Torres | Full-Stack Developer — Remote",
+      "Maximiliano Brito Torres | Freelance Software Developer in Vientiane",
     template: "%s | Maxon Torres",
   },
   description:
-    "Full-Stack Developer specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture. Building scalable, high-performance web applications for global companies. Available for remote work.",
+    "Freelance Software Developer in Vientiane, Laos specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture. Building scalable, high-performance web applications for global companies. Available for remote work and local projects in Vientiane.",
   keywords: [
-    "Senior Full Stack Developer",
+    "Freelance Software Developer in Vientiane",
+    "Freelance Developer Vientiane",
+    "Software Developer Vientiane",
     "Web Developer Vientiane",
+    "Freelance Web Developer Vientiane Laos",
+    "Senior Full Stack Developer",
     "Next.js Developer",
     "React Developer",
     "Node.js Developer",
@@ -55,20 +59,23 @@ export const metadata: Metadata = {
     "Remote Software Engineer",
     "JavaScript Engineer",
     "Full Stack Developer Laos",
+    "Software Engineer Vientiane",
+    "Freelance Programmer Vientiane",
   ],
   openGraph: {
     title:
-      "Maximiliano Brito Torres | Full-Stack Developer",
+      "Maximiliano Brito Torres | Freelance Software Developer in Vientiane",
     description:
-      "Building scalable web applications with Next.js, React, Node.js and AWS. Available for remote opportunities worldwide.",
+      "Freelance Software Developer in Vientiane, Laos. Building scalable web applications with Next.js, React, Node.js and AWS. Available for remote opportunities worldwide and local projects in Vientiane.",
     url: "https://maxontorres.com",
     siteName: "Maxon Torres",
+    locale: "en_US",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Maximiliano Brito Torres - Full Stack Developer",
+        alt: "Maximiliano Brito Torres - Freelance Software Developer in Vientiane",
       },
     ],
     type: "website",
