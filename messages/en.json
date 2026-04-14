@@ -10,7 +10,7 @@
   },
   "hero": {
     "brand": "MAXON TORRES",
-    "location": "[ VIENTIANE : LAOS PDR ] — FREELANCE SOFTWARE DEVELOPER",
+    "location": "[ VIENTIANE : LAOS PDR ]  -  FREELANCE SOFTWARE DEVELOPER",
     "heroTitle": "I <highlight>automate</highlight> the work your team shouldn't be doing manually.",
     "heroSub": "Custom integrations, workflow automation, and internal tools. Freelance Software Developer in Vientiane offering web development services.",
     "ctaStart": "START A PROJECT",
@@ -31,10 +31,10 @@
     "noProjects": "No projects in this category yet.",
     "projects": {
       "orderbridge": {
-        "desc": "A middleware system that connects food delivery platforms like DoorDash and Uber Eats directly to restaurant POS systems — eliminating manual order entry and reducing errors in high-volume kitchens."
+        "desc": "A middleware system that connects food delivery platforms like DoorDash and Uber Eats directly to restaurant POS systems  -  eliminating manual order entry and reducing errors in high-volume kitchens."
       },
       "laomaitravel": {
-        "desc": "A bilingual EN/TH tourism website for a Vientiane-based tour operator — built for SEO, booking inquiries, and real-time web analytics via Umami."
+        "desc": "A bilingual EN/TH tourism website for a Vientiane-based tour operator  -  built for SEO, booking inquiries, and real-time web analytics via Umami."
       }
     }
   },
@@ -51,7 +51,7 @@
     "label": "[ WHO I AM ]",
     "title": "About Me",
     "intro": "I’m Maximiliano Torres, a Freelance Software Developer in Vientiane, Laos, specializing in building robust and scalable web applications for businesses worldwide.",
-    "description": "As a freelance developer based in Vientiane, I help businesses turn ideas into reliable digital tools — from internal dashboards to full-scale platforms — combining clean architecture, performance, and user-focused design.",
+    "description": "As a freelance developer based in Vientiane, I help businesses turn ideas into reliable digital tools  -  from internal dashboards to full-scale platforms  -  combining clean architecture, performance, and user-focused design.",
     "imageAlt": "Maximiliano Torres - Freelance Software Developer in Vientiane",
     "learnMore": "More About Me",
     "stats": {
@@ -70,7 +70,7 @@
     "bio": {
       "title": "Building Reliable, Scalable Web Systems",
       "p1": "I’m Maximiliano Torres, a Full-Stack Developer based in Southeast Asia, specializing in building production-ready web applications with React and Next.js. Since 2017, I’ve been creating tools and systems that prioritize clean architecture, performance, and maintainability.",
-      "p2": "As a freelance software developer in Vientiane, I design and develop digital solutions that automate workflows, manage complex data, and support business growth — from internal dashboards to full web platforms. My focus is delivering reliable systems that solve real operational challenges.",
+      "p2": "As a freelance software developer in Vientiane, I design and develop digital solutions that automate workflows, manage complex data, and support business growth  -  from internal dashboards to full web platforms. My focus is delivering reliable systems that solve real operational challenges.",
       "p3": "In addition to development, I have experience teaching IT and Web Design at different Universities in China and Laos. I collaborate with international clients and remote teams, ensuring consistent delivery and long-term success."
     },
     "skills": {
@@ -200,7 +200,7 @@
       "websiteDev": {
         "title": "Website Development",
         "valueStatement": "A professional website that works for your business 24/7.",
-        "desc": "Give your business a permanent, credible home online — built to attract clients and grow your presence globally.",
+        "desc": "Give your business a permanent, credible home online  -  built to attract clients and grow your presence globally.",
         "details": [
           "Reach clients internationally",
           "Web traffic analytics & insights",
@@ -276,12 +276,12 @@
     "label": "[ REFERRAL PROGRAM ]",
     "title": "Refer a client.",
     "titleAlt": "Get paid.",
-    "desc": "Know someone who needs a website or integration? Send them my way — and I'll make it worth your time. No forms, no process. Just a message.",
+    "desc": "Know someone who needs a website or integration? Send them my way  -  and I'll make it worth your time. No forms, no process. Just a message.",
     "stepsLabel": "// HOW IT WORKS",
     "steps": [
       "Tell a friend about my services",
       "They contact Maxon and mention your name",
-      "They sign — you collect your reward"
+      "They sign  -  you collect your reward"
     ],
     "cta": "WhatsApp Maxon",
     "phone": "+856 20 52 373 435 · maxontorres.com",
@@ -299,7 +299,7 @@
       "label": "OPTION B",
       "amount": "3",
       "unit": "MONTHS FREE",
-      "desc": "Refer anyone who signs any web package — you get <highlight>3 months of free maintenance</highlight> immediately when they sign.",
+      "desc": "Refer anyone who signs any web package  -  you get <highlight>3 months of free maintenance</highlight> immediately when they sign.",
       "footer": "Credited immediately on signing"
     },
     "fine": "No expiry · Anyone can apply · One reward per referral",
@@ -429,20 +429,20 @@
     "titleHighlight": "Delivery-to-POS Connection",
     "lede": "A few months ago, a client came to me with a problem that was simple to describe and it seemed quite straightforward. They needed to bridge the gap between major delivery platforms and their own POS system with an automated OAuth 2.0 handshake.",
     "introP1Pre": "This project started as a real client brief. The request came in Spanish:",
-    "introP1Post": "In short: they needed to connect their clients' delivery accounts to their POS system through StreamOrder's partner API — automatically, via OAuth, with no manual intervention. I analysed the requirements, read through the StreamOrder partner documentation, and got to work.",
+    "introP1Post": "In short: they needed to connect their clients' delivery accounts to their POS system through StreamOrder's partner API  -  automatically, via OAuth, with no manual intervention. I analysed the requirements, read through the StreamOrder partner documentation, and got to work.",
     "brief": {
       "label": "[ THE BRIEF ]",
       "heading": "The Client Proposal",
-      "p1": "Before writing a single line of code, I put together a formal proposal. It forced clarity on both sides — the client understood exactly what they were getting, and I understood exactly what I was building.",
+      "p1": "Before writing a single line of code, I put together a formal proposal. It forced clarity on both sides  -  the client understood exactly what they were getting, and I understood exactly what I was building.",
       "proposalLabel": "PROJECT PROPOSAL",
       "proposalTitle": "Delivery Apps to POS Integration",
       "proposalSubtitle": "Middleware API · StreamOrder · OAuth 2.0",
       "descriptionLabel": "DESCRIPTION",
-      "descriptionText": "This project establishes a secure, automated \"Digital Bridge\" — a Middleware API between the StreamOrder aggregator and the client's Point of Sale (POS) system, enabling delivery orders to flow automatically into the POS with no manual intervention.",
+      "descriptionText": "This project establishes a secure, automated \"Digital Bridge\"  -  a Middleware API between the StreamOrder aggregator and the client's Point of Sale (POS) system, enabling delivery orders to flow automatically into the POS with no manual intervention.",
       "objectiveLabel": "OBJECTIVE",
       "objectiveText": "Implement OAuth 2.0 as the authentication layer, ensuring data remains secure while allowing orders to sync automatically from delivery platforms into the POS.",
       "objectives": [
-        { "label": "Secure Connection", "desc": "OAuth handshake — no shared passwords, data protected by encrypted digital keys." },
+        { "label": "Secure Connection", "desc": "OAuth handshake  -  no shared passwords, data protected by encrypted digital keys." },
         { "label": "Automatic Sync", "desc": "Every DoorDash and delivery platform order appears in the POS instantly." }
       ],
       "architectureLabel": "ARCHITECTURE FLOW",
@@ -452,7 +452,7 @@
       "resultLabel": "Result",
       "weeks": [
         { "week": "Week 1", "title": "Security & The Digital Handshake", "goal": "Securely connect the client accounts.", "result": "StreamOrder officially linked; data protected by encrypted OAuth keys." },
-        { "week": "Week 2", "title": "The Automation Bridge", "goal": "Make the systems communicate.", "result": "Translator and webhook listener live in a test environment — orders captured and translated instantly." },
+        { "week": "Week 2", "title": "The Automation Bridge", "goal": "Make the systems communicate.", "result": "Translator and webhook listener live in a test environment  -  orders captured and translated instantly." },
         { "week": "Week 3", "title": "Dashboard & Live Launch", "goal": "Visibility and production readiness.", "result": "Bridge active, orders printing in the POS, live monitoring dashboard delivered." },
         { "week": "Week 4", "title": "Refinement & Monitoring", "goal": "Stability under real-world conditions.", "result": "7-day live monitoring window; API changes from StreamOrder or delivery platforms patched immediately." }
       ],
@@ -461,7 +461,7 @@
         { "name": "OAuth 2.0 Integration", "desc": "Authentication layer connecting all accounts without sharing private passwords." },
         { "name": "Real-Time Order Injection", "desc": "Orders detected via webhook and pushed directly into the POS within seconds." },
         { "name": "Automated Translator", "desc": "Intelligent menu mapping ensuring every item, modifier, and customer note matches the POS format." },
-        { "name": "Automatic Token Refresh", "desc": "Self-maintaining security — OAuth tokens renew automatically so the connection never expires." },
+        { "name": "Automatic Token Refresh", "desc": "Self-maintaining security  -  OAuth tokens renew automatically so the connection never expires." },
         { "name": "Reliability Monitoring", "desc": "Error-tracking that alerts immediately if an order fails to sync." },
         { "name": "Live Connection Dashboard", "desc": "Web view to monitor bridge status and verify the most recent successful syncs." }
       ],
@@ -490,7 +490,7 @@
       "mathHighlight": "$1,100+ lost every month",
       "mathPost": "to a task that shouldn't involve a human at all."
     },
-    "figOrders": "Orders page — filterable, sortable, real-time status updates",
+    "figOrders": "Orders page  -  filterable, sortable, real-time status updates",
     "engineering": {
       "label": "[ ENGINEERING ]",
       "heading": "Engineering the Pipeline",
@@ -498,26 +498,26 @@
       "figDiagram": "High-level flow: delivery platforms → OrderBridge → restaurant POS",
       "steps": [
         { "n": "01", "title": "Ingest delivery webhooks", "desc": "Receive HTTPS POST from each delivery platform." },
-        { "n": "02", "title": "Verify signatures", "desc": "HMAC-SHA256 check — security before anything else." },
+        { "n": "02", "title": "Verify signatures", "desc": "HMAC-SHA256 check  -  security before anything else." },
         { "n": "03", "title": "Translate schemas", "desc": "Map disparate JSON payloads into a unified POS format." },
         { "n": "04", "title": "Inject the order", "desc": "POST to the POS API with exponential-backoff retry." },
-        { "n": "05", "title": "Broadcast updates", "desc": "WebSocket push to the live dashboard — no polling." }
+        { "n": "05", "title": "Broadcast updates", "desc": "WebSocket push to the live dashboard  -  no polling." }
       ]
     },
     "process": {
       "label": "[ THE PROCESS ]",
       "heading": "Writing the Spec First",
-      "p1": "I started with a Software Requirements Specification (SRS) before writing a single line of code. It's much easier to fix a mistake in a document than to rewrite production code later. The SRS forced both me and the client to agree on exactly what \"done\" looked like — no ambiguity, no scope creep.",
+      "p1": "I started with a Software Requirements Specification (SRS) before writing a single line of code. It's much easier to fix a mistake in a document than to rewrite production code later. The SRS forced both me and the client to agree on exactly what \"done\" looked like  -  no ambiguity, no scope creep.",
       "requirements": [
-        { "label": "FR-01", "title": "OAuth 2.0 Server", "desc": "System must act as an OAuth 2.0 provider — issuing, validating, and refreshing tokens per RFC 6749." },
+        { "label": "FR-01", "title": "OAuth 2.0 Server", "desc": "System must act as an OAuth 2.0 provider  -  issuing, validating, and refreshing tokens per RFC 6749." },
         { "label": "FR-02", "title": "Webhook Ingestion", "desc": "System must accept HTTPS POST webhooks from delivery platforms and verify each request with HMAC-SHA256 signature validation." },
         { "label": "FR-03", "title": "Schema Translation", "desc": "System must map all incoming delivery payloads to a unified POS format, with graceful failure and logging on unmapped SKUs." },
-        { "label": "FR-04", "title": "POS Injection", "desc": "System must POST translated orders to the POS API with exponential-backoff retry on failure — no order dropped silently." },
+        { "label": "FR-04", "title": "POS Injection", "desc": "System must POST translated orders to the POS API with exponential-backoff retry on failure  -  no order dropped silently." },
         { "label": "NFR-01", "title": "Real-Time Updates", "desc": "Dashboard must reflect order status changes via WebSocket push. No polling." },
         { "label": "NFR-02", "title": "Token Persistence", "desc": "OAuth tokens must survive server restarts, stored encrypted at rest." }
       ]
     },
-    "figDashboard": "Live dashboard — real-time order feed with status tracking",
+    "figDashboard": "Live dashboard  -  real-time order feed with status tracking",
     "techStack": {
       "label": "[ TECH STACK ]",
       "heading": "The Tech Stack",
@@ -530,34 +530,34 @@
     "deployment": {
       "label": "[ DEPLOYMENT ]",
       "heading": "Infrastructure",
-      "p1": "The three services are independently deployed — each with its own host, its own domain, and its own responsibility. This mirrors how a real production integration would be structured.",
+      "p1": "The three services are independently deployed  -  each with its own host, its own domain, and its own responsibility. This mirrors how a real production integration would be structured.",
       "infrastructureLabel": "INFRASTRUCTURE OVERVIEW",
       "services": [
-        { "host": "Vercel", "service": "OrderBridge Dashboard", "detail": "Real-time monitoring UI — edge-deployed, globally available.", "tag": "Frontend" },
+        { "host": "Vercel", "service": "OrderBridge Dashboard", "detail": "Real-time monitoring UI  -  edge-deployed, globally available.", "tag": "Frontend" },
         { "host": "Railway", "service": "OrderBridge API + PostgreSQL", "detail": "Core middleware engine with the OAuth server, webhook ingestion, schema translator, and POS injector. PostgreSQL stores OAuth tokens, menu mappings, and order logs.", "tag": "Backend" },
-        { "host": "Railway", "service": "MockPOS Server", "detail": "Isolated POS simulator running as a completely separate service — its own OAuth consent flow, its own order terminal.", "tag": "Simulator" }
+        { "host": "Railway", "service": "MockPOS Server", "detail": "Isolated POS simulator running as a completely separate service  -  its own OAuth consent flow, its own order terminal.", "tag": "Simulator" }
       ],
       "whySeparateLabel": "WHY SEPARATE SERVICES",
-      "whySeparate": "Keeping MockPOS on its own Railway service wasn't just convenient — it was the point. It proves the integration works across a real network boundary, not just between two functions in the same process."
+      "whySeparate": "Keeping MockPOS on its own Railway service wasn't just convenient  -  it was the point. It proves the integration works across a real network boundary, not just between two functions in the same process."
     },
     "hardParts": {
       "label": "[ THE HARD PARTS ]",
       "heading": "Translation and Trust",
-      "p1": "The Translator was the hardest part of this project. DoorDash, Uber Eats, and GrabFood all have wildly different ideas of how to describe a \"Cheeseburger with no pickles.\" Mapping these inconsistent payloads to a standardised POS SKU while maintaining a MenuMapping table required deep edge-case handling. If the mapping fails, the system has to fail gracefully — not drop the order into a void.",
+      "p1": "The Translator was the hardest part of this project. DoorDash, Uber Eats, and GrabFood all have wildly different ideas of how to describe a \"Cheeseburger with no pickles.\" Mapping these inconsistent payloads to a standardised POS SKU while maintaining a MenuMapping table required deep edge-case handling. If the mapping fails, the system has to fail gracefully  -  not drop the order into a void.",
       "p2": "Then there was the OAuth 2.0 Server. It's one thing to use OAuth; it's another to be the provider. Building the authorization endpoints, token logic, and encrypted storage according to the RFC specs took more gray hair than the rest of the app combined."
     },
-    "figMockPos": "Phing Kai Kitchen [POS Simulator] — orders arriving automatically from OrderBridge",
+    "figMockPos": "Phing Kai Kitchen [POS Simulator]  -  orders arriving automatically from OrderBridge",
     "portfolio": {
       "label": "[ THE PORTFOLIO BUILD ]",
       "heading": "Introducing OrderBridge",
-      "p1": "I enjoyed the architecture of the client project so much that I built OrderBridge — a refined, standalone version for my portfolio. It's not just a copy; it's an evolution. A complete end-to-end demo that simulates the entire flow without needing real-world infrastructure.",
+      "p1": "I enjoyed the architecture of the client project so much that I built OrderBridge  -  a refined, standalone version for my portfolio. It's not just a copy; it's an evolution. A complete end-to-end demo that simulates the entire flow without needing real-world infrastructure.",
       "repos": [
         { "name": "Backend", "body": "Fastify, TypeScript, and WebSockets." },
         { "name": "Dashboard", "body": "Real-time monitoring and control UI for the OrderBridge system." },
         { "name": "POS Simulator (MockPOS)", "body": "A secondary app representing a fictional restaurant called Phing Kai Kitchen. It acts as the 'target' POS, complete with its own OAuth consent screen and live order terminal." }
       ]
     },
-    "figSimulator": "Simulator — fire test orders from any delivery platform with one click",
+    "figSimulator": "Simulator  -  fire test orders from any delivery platform with one click",
     "sourceCode": {
       "label": "[ SOURCE CODE ]",
       "heading": "The Complete Codebase",
@@ -590,7 +590,7 @@
   "orderbridgeCaseStudy": {
     "breadcrumbHome": "Home",
     "breadcrumbWork": "Work",
-    "tagline": "A middleware system that connects food delivery platforms to restaurant POS systems — eliminating manual order entry entirely.",
+    "tagline": "A middleware system that connects food delivery platforms to restaurant POS systems  -  eliminating manual order entry entirely.",
     "viewLiveDemo": "View Live Demo",
     "readBuildArticle": "Read the Build Article",
     "diagramCaption": "High-level flow: delivery platforms → OrderBridge → restaurant POS",
@@ -602,15 +602,15 @@
     ],
     "problem": {
       "sectionLabel": "[ THE PROBLEM ]",
-      "p1": "Every time an order arrives from DoorDash, Uber Eats, or Grubhub, someone at the restaurant has to manually read it off a tablet and type it into their POS system. At 50 orders a day, that's over two hours of labour — every single day.",
+      "p1": "Every time an order arrives from DoorDash, Uber Eats, or Grubhub, someone at the restaurant has to manually read it off a tablet and type it into their POS system. At 50 orders a day, that's over two hours of labour  -  every single day.",
       "p2": "Manual entry introduces errors. A missed modifier, a wrong quantity, a skipped item. In a high-volume kitchen, one wrong order ripples into customer complaints, refunds, and wasted food.",
-      "p3": "The economics are straightforward: at 50 orders per day, 2.5 minutes of manual entry each, and $18/hr labour cost — that's over",
+      "p3": "The economics are straightforward: at 50 orders per day, 2.5 minutes of manual entry each, and $18/hr labour cost  -  that's over",
       "p3Highlight": "$1,100 lost every month",
       "p3End": "to a problem that should be automated."
     },
     "solution": {
       "sectionLabel": "[ THE SOLUTION ]",
-      "p1": "OrderBridge sits between delivery platforms and the POS. When an order arrives, it receives the webhook, translates the payload into the POS format, and injects the order automatically — in under 800ms, with no human in the loop.",
+      "p1": "OrderBridge sits between delivery platforms and the POS. When an order arrives, it receives the webhook, translates the payload into the POS format, and injects the order automatically  -  in under 800ms, with no human in the loop.",
       "archTitle": "ARCHITECTURE FLOW",
       "archNodes": ["Delivery\nPlatform", "Webhook\nReceiver", "Translator", "Injector", "POS\nSystem"],
       "wsLabel": "WebSocket broadcast → Dashboard (real-time)"
@@ -621,16 +621,16 @@
         { "step": "01", "title": "Webhook Reception", "desc": "Each delivery platform sends an HTTPS POST to a shared webhook endpoint. The server verifies the HMAC-SHA256 signature, rejects invalid payloads immediately, and deduplicates by order ID." },
         { "step": "02", "title": "Translation", "desc": "A platform-specific handler maps the delivery schema to a standardised POS payload. Each item is resolved against a MenuMapping table that links platform item IDs to POS SKUs." },
         { "step": "03", "title": "Injection", "desc": "The translated payload is POSTed to the POS API with exponential backoff retry. On success, the POS order ID is stored. On failure after max retries, the order is marked FAILED and flagged for manual review." },
-        { "step": "04", "title": "Real-Time Sync", "desc": "Every state change is persisted to PostgreSQL and broadcast via WebSocket to all connected dashboard clients — no polling, no page refreshes." }
+        { "step": "04", "title": "Real-Time Sync", "desc": "Every state change is persisted to PostgreSQL and broadcast via WebSocket to all connected dashboard clients  -  no polling, no page refreshes." }
       ]
     },
     "screenshots": {
       "sectionLabel": "[ SCREENSHOTS ]",
       "images": [
-        { "alt": "OrderBridge dashboard showing live order feed", "caption": "Live dashboard — real-time order feed with status tracking" },
-        { "alt": "OrderBridge orders page with filters", "caption": "Orders page — filterable, sortable, CSV export" },
-        { "alt": "MockPOS mock terminal showing injected orders", "caption": "MockPOS terminal — orders arriving automatically from OrderBridge" },
-        { "alt": "OrderBridge simulator page", "caption": "Simulator — fire test orders from any delivery platform" }
+        { "alt": "OrderBridge dashboard showing live order feed", "caption": "Live dashboard  -  real-time order feed with status tracking" },
+        { "alt": "OrderBridge orders page with filters", "caption": "Orders page  -  filterable, sortable, CSV export" },
+        { "alt": "MockPOS mock terminal showing injected orders", "caption": "MockPOS terminal  -  orders arriving automatically from OrderBridge" },
+        { "alt": "OrderBridge simulator page", "caption": "Simulator  -  fire test orders from any delivery platform" }
       ]
     },
     "techStack": {
@@ -639,9 +639,9 @@
         { "name": "React 19 + Vite", "reason": "Fast dev experience, React Query for server state, no SSR overhead needed for a dashboard." },
         { "name": "Fastify + TypeScript", "reason": "Lower overhead than Express, schema-based validation built in, excellent TypeScript support." },
         { "name": "PostgreSQL + Prisma", "reason": "Relational data fits the order/token/mapping schema well. Prisma keeps migrations safe and typed." },
-        { "name": "WebSockets (ws)", "reason": "Native WebSocket — no Socket.io overhead for a single broadcast channel." },
+        { "name": "WebSockets (ws)", "reason": "Native WebSocket  -  no Socket.io overhead for a single broadcast channel." },
         { "name": "OAuth 2.0 + AES-256", "reason": "Industry-standard POS auth flow. Tokens encrypted at rest before writing to the database." },
-        { "name": "HMAC-SHA256", "reason": "Webhook signature verification — only legitimate delivery platform payloads are processed." }
+        { "name": "HMAC-SHA256", "reason": "Webhook signature verification  -  only legitimate delivery platform payloads are processed." }
       ]
     },
     "cta": {
@@ -655,9 +655,9 @@
   "laomaitravelCaseStudy": {
     "breadcrumbHome": "Home",
     "breadcrumbWork": "Work",
-    "tagline": "A bilingual EN/TH tourism website built for SEO, web traffic analytics, and booking inquiries — no backend required.",
+    "tagline": "A bilingual EN/TH tourism website built for SEO, web traffic analytics, and booking inquiries  -  no backend required.",
     "viewLive": "Visit laomaitravel.com",
-    "heroImageAlt": "Lao Mai Travel hero section — temple at dusk with navy and gold design",
+    "heroImageAlt": "Lao Mai Travel hero section  -  temple at dusk with navy and gold design",
     "outcomes": [
       { "value": "EN + TH", "label": "Bilingual first-class routing" },
       { "value": "100%", "label": "Server-rendered HTML for SEO" },
@@ -667,18 +667,18 @@
     "problem": {
       "sectionLabel": "[ THE PROBLEM ]",
       "p1": "Before this site, Lao Mai Travel had no idea if their website was working. No data on who visited, where they came from, what they looked at, or what device they used. Every business decision about the site was a guess.",
-      "p2": "They also had no bilingual routing — visitors arriving in Lao had no way to read the site in their own language. And the only way to contact them was a phone number buried at the bottom of the page.",
+      "p2": "They also had no bilingual routing  -  visitors arriving in Lao had no way to read the site in their own language. And the only way to contact them was a phone number buried at the bottom of the page.",
       "p3": "Three problems that needed solving:",
       "problems": [
         "No visibility into who was visiting or what was working",
         "No bilingual support for Lao-speaking visitors",
-        "No booking inquiry system — just a phone number"
+        "No booking inquiry system  -  just a phone number"
       ]
     },
     "design": {
       "sectionLabel": "[ THE DESIGN ]",
       "p1": "The brief was premium, local, trustworthy. Not generic travel-site bright colors.",
-      "p2": "Navy and gold — navy reads as serious and professional, gold references Lao temple architecture and Buddhist heritage directly. The combination earns trust before a word is read.",
+      "p2": "Navy and gold  -  navy reads as serious and professional, gold references Lao temple architecture and Buddhist heritage directly. The combination earns trust before a word is read.",
       "p3": "Typography in three layers: Cinzel for navigation (classical, carved-stone quality), Cormorant Garamond for headlines (high-contrast, luxury editorial feel), Montserrat for body text (clean, readable). Each has a job. None compete.",
       "p4": "The hero puts a temple photograph full-screen at dusk with the headline split between white roman and gold italic. The site immediately feels like the place it's selling."
     },
@@ -688,62 +688,62 @@
       "reasons": [
         {
           "title": "SEO-first rendering",
-          "desc": "Every tour and destination page renders as full HTML on the server. Search engines index it all — no JavaScript required. For a business where customers search \"Laos trekking tours\" or \"Bolaven Plateau homestay\", that's directly tied to bookings."
+          "desc": "Every tour and destination page renders as full HTML on the server. Search engines index it all  -  no JavaScript required. For a business where customers search \"Laos trekking tours\" or \"Bolaven Plateau homestay\", that's directly tied to bookings."
         },
         {
           "title": "Bilingual routing that's first-class",
-          "desc": "The App Router handles bilingual routing cleanly — all pages live under app/[locale]/, so /en and /th are proper first-class routes with their own metadata, not a hack on top of a single-language site. next-intl manages translations."
+          "desc": "The App Router handles bilingual routing cleanly  -  all pages live under app/[locale]/, so /en and /th are proper first-class routes with their own metadata, not a hack on top of a single-language site. next-intl manages translations."
         },
         {
           "title": "No backend to maintain",
-          "desc": "Resend handles the booking form emails. Vercel handles deployment — no server to configure, no maintenance, no downtime to manage. The client's site runs itself."
+          "desc": "Resend handles the booking form emails. Vercel handles deployment  -  no server to configure, no maintenance, no downtime to manage. The client's site runs itself."
         }
       ]
     },
     "analytics": {
       "sectionLabel": "[ ANALYTICS WITH UMAMI ]",
       "heading": "From guessing to knowing.",
-      "p1": "Umami tracks every visit in real time — pages viewed, time on site, country of origin, referrer source (Google, Instagram, direct link), and device type. The client sees all of it in a clean dashboard with no technical knowledge required.",
-      "p2": "Umami is also privacy-first — no cookies, no personal data stored, GDPR compliant out of the box. No consent banner cluttering the site. For a business serving international tourists from Europe and beyond, that's not just ethical — it avoids a legal headache.",
-      "p3": "The client accesses their dashboard through a single shared link. No account, no password, no monthly subscription. They check it like they check their WhatsApp — independently, on their own time, without calling me.",
+      "p1": "Umami tracks every visit in real time  -  pages viewed, time on site, country of origin, referrer source (Google, Instagram, direct link), and device type. The client sees all of it in a clean dashboard with no technical knowledge required.",
+      "p2": "Umami is also privacy-first  -  no cookies, no personal data stored, GDPR compliant out of the box. No consent banner cluttering the site. For a business serving international tourists from Europe and beyond, that's not just ethical  -  it avoids a legal headache.",
+      "p3": "The client accesses their dashboard through a single shared link. No account, no password, no monthly subscription. They check it like they check their WhatsApp  -  independently, on their own time, without calling me.",
       "questionsLabel": "QUESTIONS THAT UMAMI NOW ANSWERS:",
       "questions": [
-        "The Bolaven Plateau tour page gets 600 views a month but almost no inquiries — is the pricing too high, or is the page not converting?",
-        "65% of visitors are on mobile — is the booking form easy enough to fill out on a phone?",
-        "Traffic spikes every November and December — that's when to push promotions.",
-        "Traffic is coming from Australia and France but almost nothing from the US — where should social media efforts focus?"
+        "The Bolaven Plateau tour page gets 600 views a month but almost no inquiries  -  is the pricing too high, or is the page not converting?",
+        "65% of visitors are on mobile  -  is the booking form easy enough to fill out on a phone?",
+        "Traffic spikes every November and December  -  that's when to push promotions.",
+        "Traffic is coming from Australia and France but almost nothing from the US  -  where should social media efforts focus?"
       ],
       "images": [
-        { "alt": "Umami analytics main dashboard showing visits and page views", "caption": "Main dashboard — real-time visits, bounce rate, and session duration" },
-        { "alt": "Umami pages and traffic sources breakdown", "caption": "Pages & sources — which tours get traffic and where it comes from" },
-        { "alt": "Umami visitor locations map", "caption": "Visitor locations — knowing where to focus marketing efforts" }
+        { "alt": "Umami analytics main dashboard showing visits and page views", "caption": "Main dashboard  -  real-time visits, bounce rate, and session duration" },
+        { "alt": "Umami pages and traffic sources breakdown", "caption": "Pages & sources  -  which tours get traffic and where it comes from" },
+        { "alt": "Umami visitor locations map", "caption": "Visitor locations  -  knowing where to focus marketing efforts" }
       ]
     },
     "screenshots": {
       "sectionLabel": "[ SCREENSHOTS ]",
       "images": [
-        { "alt": "Lao Mai Travel destinations page", "caption": "Destinations — off-the-beaten-path locations across Laos" },
-        { "alt": "Lao Mai Travel tour packages page", "caption": "Tour packages — highland treks, Mekong islands, cultural homestays" },
-        { "alt": "Lao Mai Travel booking inquiry form", "caption": "Booking form — powered by Resend, delivered straight to the client" },
-        { "alt": "Thai language version of the site", "caption": "Thai language routing — full /th route with its own metadata" }
+        { "alt": "Lao Mai Travel destinations page", "caption": "Destinations  -  off-the-beaten-path locations across Laos" },
+        { "alt": "Lao Mai Travel tour packages page", "caption": "Tour packages  -  highland treks, Mekong islands, cultural homestays" },
+        { "alt": "Lao Mai Travel booking inquiry form", "caption": "Booking form  -  powered by Resend, delivered straight to the client" },
+        { "alt": "Thai language version of the site", "caption": "Thai language routing  -  full /th route with its own metadata" }
       ]
     },
     "techStack": {
       "sectionLabel": "[ TECH STACK ]",
       "items": [
         { "name": "Next.js 15 + App Router", "reason": "Server-rendered pages for SEO, locale-first routing via app/[locale]/, and edge-ready deployment on Vercel." },
-        { "name": "TypeScript", "reason": "Type-safe development across the full codebase — catches errors before they reach production." },
+        { "name": "TypeScript", "reason": "Type-safe development across the full codebase  -  catches errors before they reach production." },
         { "name": "CSS Modules", "reason": "Scoped styles without runtime overhead. Ideal for a design-heavy site with layered typography and a strong visual identity." },
         { "name": "next-intl", "reason": "First-class bilingual routing with per-locale metadata, full EN/TH translation coverage, and no locale hacks." },
-        { "name": "Resend", "reason": "Handles booking inquiry emails via a clean API — no backend server needed, reliable delivery." },
-        { "name": "Umami", "reason": "Web Traffic Analytics — no cookies, GDPR compliant, self-hostable. Client accesses their dashboard via a single shared link." },
+        { "name": "Resend", "reason": "Handles booking inquiry emails via a clean API  -  no backend server needed, reliable delivery." },
+        { "name": "Umami", "reason": "Web Traffic Analytics  -  no cookies, GDPR compliant, self-hostable. Client accesses their dashboard via a single shared link." },
         { "name": "Vercel", "reason": "Zero-config deployment with automatic previews, instant rollbacks, and no infrastructure to manage." }
       ]
     },
     "cta": {
       "sectionLabel": "[ WORK TOGETHER ]",
       "heading": "Need a website that works for your business?",
-      "subtitle": "I build bilingual, SEO-first websites for businesses that need a real web presence — clean code, no backend complexity, and real analytics from day one.",
+      "subtitle": "I build bilingual, SEO-first websites for businesses that need a real web presence  -  clean code, no backend complexity, and real analytics from day one.",
       "talkButton": "Let's Talk",
       "backToWork": "← Back to Work"
     }
@@ -762,7 +762,8 @@
       "headline": "Your competitor has a website.",
       "headlineItalic": "Do you?",
       "sub": "In Vientiane, tourists and expats search Google before they book, eat, or buy. If your business only exists on Facebook, they are finding someone else.",
-      "cta": "Get your free website audit"
+      "cta": "Get your free website audit",
+      "ctaNote": "Free audit · No commitment"
     },
     "urgency": {
       "text": "Every day without a website is a customer you didn't know you lost."
@@ -813,8 +814,8 @@
         }
       },
       "analyticsTitle": "Umami Analytics · your traffic dashboard",
-      "analyticsAlt": "Umami analytics — locations dashboard",
-      "analyticsExplainer": "Web traffic tells you who's visiting, where they're from, and what they're looking at. It turns guessing into knowing — so you can focus your time and money on what actually works."
+      "analyticsAlt": "Umami analytics  -  locations dashboard",
+      "analyticsExplainer": "Web traffic tells you who's visiting, where they're from, and what they're looking at. It turns guessing into knowing  -  so you can focus your time and money on what actually works."
     },
     "pwa": {
       "eyebrow": "Platform web apps",
@@ -828,7 +829,7 @@
       "eyebrow": "Investment",
       "title": "Simple, transparent pricing",
       "intro": "One flat fee. No hidden costs. No surprises.",
-      "banner": "Just launched — introductory prices. These prices are lower than they will be. Once the first client slots are filled, rates go up. If you are considering it, now is the right time.",
+      "banner": "Just launched  -  introductory prices. These prices are lower than they will be. Once the first client slots are filled, rates go up. If you are considering it, now is the right time.",
       "tiers": {
         "website": {
           "label": "Presence",
@@ -851,7 +852,7 @@
           "name": "Web App",
           "regularPrice": "$1,800",
           "price": "$900",
-          "tagline": "For businesses that manage data — listings, bookings, inventory, team access, and leads.",
+          "tagline": "For businesses that manage data  -  listings, bookings, inventory, team access, and leads.",
           "includes": [
             "Full database and admin panel",
             "User roles and secure login",

@@ -40,6 +40,14 @@ export const metadata: Metadata = {
       'Fast, modern websites for small businesses. SEO-ready, mobile-first, multilingual. Starting at $400.',
     url: 'https://maxontorres.com/en/websites',
     type: 'website',
+    images: [
+      {
+        url: '/og/websites.png',
+        width: 1200,
+        height: 630,
+        alt: 'Web Design & Development Services | Maxon Torres',
+      },
+    ],
   },
 };
 
@@ -48,7 +56,7 @@ export default async function ServicesLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: Promise<Record<string, string>>;
 }) {
   const { locale } = await params;
   const isLao = locale === 'lo';

@@ -68,6 +68,7 @@ export default function HeroSection() {
             </svg>
             {t('cta')}
           </a>
+          <p className={styles.ctaNote}>{t('ctaNote')}</p>
         </div>
 
         <div className={styles.illustrationWrap}>

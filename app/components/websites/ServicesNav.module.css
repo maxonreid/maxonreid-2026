@@ -2,7 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 10000;
-  background-color: #0f0e0c;
+  background-color: rgba(15, 14, 12, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
 }
 

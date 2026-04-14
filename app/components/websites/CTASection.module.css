@@ -2,6 +2,15 @@
   padding: 112px 24px;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
   text-align: center;
+  position: relative;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 100%, rgba(200, 148, 58, 0.06), transparent 60%);
+  pointer-events: none;
 }
 
 .inner {
@@ -64,8 +73,9 @@
 }
 
 .cta:hover {
-  background-color: transparent;
+  background-color: rgba(200, 148, 58, 0.12);
   color: #c8943a;
+  box-shadow: 0 0 0 1px rgba(200, 148, 58, 0.4);
 }
 
 .note {

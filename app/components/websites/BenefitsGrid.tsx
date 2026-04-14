@@ -101,6 +101,12 @@ export default function BenefitsGrid() {
               key={b.title}
               className={`${styles.card} ${inView ? styles.cardVisible : styles.cardHidden}`}
               style={{ '--i': i } as React.CSSProperties}
+              onMouseMove={(e) => {
+                const el = e.currentTarget;
+                const { left, top, width, height } = el.getBoundingClientRect();
+                el.style.setProperty('--mouse-x', `${((e.clientX - left) / width) * 100}%`);
+                el.style.setProperty('--mouse-y', `${((e.clientY - top) / height) * 100}%`);
+              }}
             >
               <span className={styles.icon}>{b.icon}</span>
               <h3 className={styles.cardTitle}>{b.title}</h3>

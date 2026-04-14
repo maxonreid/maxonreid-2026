@@ -11,7 +11,7 @@ export default function UrgencyStrip() {
   return (
     <div className={styles.strip} role="banner">
       <Marquee className={styles.text}>
-        {t('text')}
+        {t('text')}<span aria-hidden="true"> &nbsp;·&nbsp; </span>
       </Marquee>
     </div>
   );

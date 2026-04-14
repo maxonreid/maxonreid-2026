@@ -101,6 +101,16 @@
   border-left: 0.5px solid rgba(200, 148, 58, 0.35) !important;
 }
 
+.tierHighlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #c8943a, rgba(200, 148, 58, 0.3));
+}
+
 .badge {
   font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   font-size: 0.65rem;

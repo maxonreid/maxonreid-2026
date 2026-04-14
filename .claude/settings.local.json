@@ -5,7 +5,10 @@
       "Bash(grep -r useTranslations /c/Users/maxon/Documents/MAX-WEB-LABS/maxonreid-2026/app --include=*.tsx --include=*.ts)",
       "Bash(find:*)",
       "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''C:/Users/USER/Desktop/PROJECTS/maxonreid-2026/messages/en.json'', ''utf8''\\)\\); console.log\\(''en.json OK''\\)\")",
-      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''C:/Users/USER/Desktop/PROJECTS/maxonreid-2026/messages/lo.json'', ''utf8''\\)\\); console.log\\(''lo.json OK''\\)\")"
+      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''C:/Users/USER/Desktop/PROJECTS/maxonreid-2026/messages/lo.json'', ''utf8''\\)\\); console.log\\(''lo.json OK''\\)\")",
+      "Bash(node:*)",
+      "Bash(npx postcss:*)",
+      "Bash(wait)"
     ]
   }
 }
