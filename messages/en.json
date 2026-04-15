@@ -35,6 +35,9 @@
       },
       "laomaitravel": {
         "desc": "A bilingual EN/TH tourism website for a Vientiane-based tour operator  -  built for SEO, booking inquiries, and real-time web analytics via Umami."
+      },
+      "pmlaos": {
+        "desc": "A trilingual EN/LO/ZH real estate listing platform for a Vientiane agency  -  with a full admin dashboard, property gallery, and Google OAuth-secured CMS."
       }
     }
   },
@@ -909,6 +912,94 @@
       "sub2": "Just 10 minutes on WhatsApp and you'll know exactly where your site stands.",
       "cta": "Message me on WhatsApp →",
       "note": "Prefer email? hello@maxontorres.com"
+    }
+  },
+  "pmlaosCaseStudy": {
+    "breadcrumbHome": "Home",
+    "breadcrumbWork": "Work",
+    "tagline": "A trilingual EN/LO/ZH real estate platform  -  installable as a PWA, Google OAuth-secured admin, and server-rendered property pages built for Vientiane.",
+    "viewLive": "Visit pmlaos.com",
+    "heroImageAlt": "PM Real Estate Laos homepage  -  property listings with clean professional layout",
+    "outcomes": [
+      { "value": "EN + LO + ZH", "label": "Trilingual first-class routing" },
+      { "value": "100%", "label": "Server-rendered listing pages" },
+      { "value": "Google OAuth", "label": "Secure admin login" },
+      { "value": "PWA", "label": "Installs like a native app" }
+    ],
+    "problem": {
+      "sectionLabel": "[ THE PROBLEM ]",
+      "p1": "Before this platform, PM Real Estate Laos managed their listings across social media posts and PDF catalogs. There was no central place where buyers could browse all available properties, filter by area, or view high-quality photos  -  and every update meant editing a file and resending it manually.",
+      "p2": "The agency also had no system for tracking clients or deals. Pipeline status lived in spreadsheets, follow-ups were missed, and there was no way to see at a glance which properties were active, pending, or sold.",
+      "p3": "Three problems that needed solving:",
+      "problems": [
+        "No central listing platform  -  properties scattered across Facebook and PDF files",
+        "No client or deal pipeline  -  everything tracked in disconnected spreadsheets",
+        "No multilingual support  -  missing the Chinese-speaking and international buyer segments entirely"
+      ]
+    },
+    "design": {
+      "sectionLabel": "[ THE DESIGN ]",
+      "p1": "The brief was professional, trustworthy, and built for an international audience. Real estate buyers  -  especially foreign investors  -  make decisions based on perceived legitimacy before they ever see a property.",
+      "p2": "Clean layouts with large property photography at the centre. The UI stays out of the way and lets the listings do the work. Consistent typographic hierarchy ensures property details are scannable at a glance.",
+      "p3": "The admin dashboard mirrors the public-facing design language  -  dark, minimal, data-dense. Using the same visual system for both sides means the client feels at home in the CMS from day one."
+    },
+    "nextjs": {
+      "sectionLabel": "[ WHY NEXT.JS ]",
+      "intro": "Three reasons: SEO for individual listings, trilingual routing, and a backend API without a separate server.",
+      "reasons": [
+        {
+          "title": "SEO-first listing pages",
+          "desc": "Every property page is server-rendered with full metadata, structured data, and Open Graph tags. When buyers search 'apartment for rent Vientiane' or 'land for sale Laos', individual listing pages show up  -  not just the homepage."
+        },
+        {
+          "title": "Trilingual routing that's first-class",
+          "desc": "All pages live under app/[locale]/ with EN, LO, and ZH as proper first-class routes. next-intl handles translations and locale detection. No redirect hacks, no duplicated templates."
+        },
+        {
+          "title": "Admin API in the same codebase",
+          "desc": "Next.js Route Handlers power the entire CMS backend. No separate Express server to deploy, no CORS to configure. The admin dashboard is part of the same deployment as the public site."
+        }
+      ]
+    },
+    "screenshots": {
+      "sectionLabel": "[ THE WEBSITE ]",
+      "images": [
+        { "alt": "PM Real Estate Laos homepage with property listings", "caption": "Homepage  -  property listings with search and filter" },
+        { "alt": "Multiple property listings in gallery view", "caption": "Listings gallery  -  grid view with property thumbnails" },
+        { "alt": "Individual property listing full page", "caption": "Listing detail page  -  photos, specs, and contact form" }
+      ]
+    },
+    "admin": {
+      "sectionLabel": "[ THE ADMIN DASHBOARD ]",
+      "heading": "A full CMS, built in",
+      "p1": "The agency needed more than a website  -  they needed a system. The admin dashboard is a full property management tool: add and edit listings, manage clients, track deal pipeline, and control which areas appear on the site.",
+      "p2": "Authentication is handled via Google OAuth. No password management, no forgotten credentials  -  the team signs in with their existing Google accounts.",
+      "images": [
+        { "alt": "Admin main dashboard overview", "caption": "Main dashboard  -  key metrics at a glance" },
+        { "alt": "Admin deals management page", "caption": "Deals pipeline  -  track every property transaction" },
+        { "alt": "Admin clients management page", "caption": "Client management  -  buyer and seller database" },
+        { "alt": "Admin area management page", "caption": "Area management  -  control which zones appear on the site" },
+        { "alt": "Admin Google OAuth login screen", "caption": "Google OAuth login  -  no passwords to manage" },
+        { "alt": "Admin dashboard mobile view", "caption": "Mobile-responsive admin  -  manage listings from anywhere" }
+      ]
+    },
+    "techStack": {
+      "sectionLabel": "[ TECH STACK ]",
+      "items": [
+        { "name": "Next.js 15 + TypeScript", "reason": "Server-rendered listing pages with App Router. TypeScript across the entire codebase  -  no runtime surprises in the admin or the API." },
+        { "name": "next-intl", "reason": "Trilingual EN/LO/ZH routing baked in from day one. Each locale is a first-class route with its own metadata and translated content." },
+        { "name": "Prisma + PostgreSQL", "reason": "Relational schema for properties, clients, deals, and areas. Prisma keeps migrations safe and typed  -  no raw SQL in the codebase." },
+        { "name": "Google OAuth", "reason": "Admin authentication without password management. The client uses their existing Google account  -  no security liability, no reset emails." },
+        { "name": "CSS Modules", "reason": "Scoped styles per component  -  no class-name collisions across a large trilingual app. Each page and component owns its styles without leaking into anything else." },
+        { "name": "PWA + Service Worker", "reason": "The site installs to the homescreen like a native app. Property agents in the field open it without a browser  -  and cached listings load even on a weak Lao 4G signal." }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "[ WORK TOGETHER ]",
+      "heading": "Need a platform like this?",
+      "subtitle": "I build web platforms for Vientiane businesses  -  property, tourism, services. Full-stack, multilingual, and built to be managed by the client, not a developer.",
+      "talkButton": "Let's Talk",
+      "backToWork": "← Back to Work"
     }
   }
 }

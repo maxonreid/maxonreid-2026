@@ -43,6 +43,23 @@ export default function WorkSection() {
       caseStudyUrl: '/projects/tourism-website-seo',
       liveUrl: 'https://laomaitravel.com',
     },
+    {
+      id: 3,
+      title: 'PM Real Estate Laos',
+      year: '2025',
+      image: '/images/projects/pmlaos/pmlaos.com_homepage.png',
+      images: [
+        '/images/projects/pmlaos/pmlaos.com_homepage.png',
+        '/images/projects/pmlaos/Listings_Gallery_Multiple_Properties.png',
+        '/images/projects/pmlaos/www.pmlaos.com_individual_listing_full_page.png',
+        '/images/projects/pmlaos/www.pmlaos.com_admin_main_dashboard.png',
+      ],
+      desc: t('projects.pmlaos.desc'),
+      tags: ['Next.js 15', 'TypeScript', 'next-intl', 'Prisma', 'Google OAuth'],
+      category: 'web',
+      caseStudyUrl: '/projects/real-estate-website-laos',
+      liveUrl: 'https://www.pmlaos.com/en',
+    },
   ];
 
   const categories = [
