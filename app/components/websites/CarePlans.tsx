@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import { useInView } from '@/app/hooks/useInView';
@@ -35,13 +36,28 @@ export default function CarePlans() {
   return (
     <section className={styles.section} ref={sectionRef as React.RefObject<HTMLElement>}>
       <div className={styles.inner}>
-        <header className={styles.header}>
-          <p className={styles.eyebrow}>{t('eyebrow')}</p>
-          <h2 className={styles.title}>{t('title')}</h2>
-          <p className={styles.subtitle}>
-            {t('subtitle')}
-          </p>
-        </header>
+        <div className={styles.hero}>
+          <div className={styles.heroContent}>
+            <p className={styles.eyebrow}>{t('eyebrow')}</p>
+            <h2 className={styles.title}>{t('title')}</h2>
+            <p className={styles.subtitle}>
+              {t('subtitle')}
+            </p>
+          </div>
+          <figure className={styles.heroMedia}>
+            <div className={styles.mediaFrame}>
+              <Image
+                src="/images/websites/maxon-torres-coding-on-the-train.jpg"
+                alt="Wherever I am, I make sure your business keeps running without interruptions."
+                width={1100}
+                height={733}
+                className={styles.mediaImage}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 560px"
+              />
+            </div>
+            <figcaption className={styles.mediaCaption}>Wherever I am, I make sure your business keeps running without interruptions.</figcaption>
+          </figure>
+        </div>
 
         <div className={styles.grid}>
           {plans.map((plan, i) => (
@@ -50,19 +66,26 @@ export default function CarePlans() {
               className={`${plan.highlight ? `${styles.card} ${styles.cardHighlight}` : styles.card} ${inView ? styles.cardVisible : styles.cardHidden}`}
               style={{ '--i': i } as React.CSSProperties}
             >
+              {plan.highlight && (
+                <div className={styles.badge}>{t('badge')}</div>
+              )}
               <div className={styles.cardTop}>
                 <h3 className={styles.planName}>{plan.name}</h3>
+                <p className={styles.planFor}>{plan.for}</p>
                 <div className={styles.priceRow}>
                   <span className={styles.price}>{plan.price}</span>
                   <span className={styles.period}>{plan.period}</span>
                 </div>
-                <p className={styles.planFor}>{plan.for}</p>
               </div>
 
               <ul className={styles.list} role="list">
                 {plan.includes.map((item) => (
                   <li key={item} className={styles.listItem}>
-                    <span className={styles.dot} aria-hidden="true" />
+                    <span className={styles.check} aria-hidden="true">
+                      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l3.5 3.5L13 4" />
+                      </svg>
+                    </span>
                     {item}
                   </li>
                 ))}
@@ -70,8 +93,6 @@ export default function CarePlans() {
 
               <div className={styles.cardBottom}>
                 <p className={styles.quip}>{plan.quip}</p>
-
-
               </div>
             </div>
           ))}

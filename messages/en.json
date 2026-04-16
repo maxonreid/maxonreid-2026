@@ -11,8 +11,8 @@
   "hero": {
     "brand": "MAXON TORRES",
     "location": "[ VIENTIANE : LAOS PDR ]  -  FREELANCE SOFTWARE DEVELOPER",
-    "heroTitle": "I <highlight>automate</highlight> the work your team shouldn't be doing manually.",
-    "heroSub": "Custom integrations, workflow automation, and internal tools. Freelance Software Developer in Vientiane offering web development services.",
+    "heroTitle": "I build websites that <highlight>get international buyers</highlight>.",
+    "heroSub": "From high-converting websites to custom tools and automation, I help you grow without wasting time on manual work.",
     "ctaStart": "START A PROJECT",
     "ctaView": "VIEW MY WORK"
   },
@@ -53,15 +53,15 @@
   "aboutHome": {
     "label": "[ WHO I AM ]",
     "title": "About Me",
-    "intro": "I’m Maximiliano Torres, a Freelance Software Developer in Vientiane, Laos, specializing in building robust and scalable web applications for businesses worldwide.",
-    "description": "As a freelance developer based in Vientiane, I help businesses turn ideas into reliable digital tools  -  from internal dashboards to full-scale platforms  -  combining clean architecture, performance, and user-focused design.",
-    "imageAlt": "Maximiliano Torres - Freelance Software Developer in Vientiane",
+    "intro": "I’m Maximiliano Brito Torres, a Freelance Software Developer in Vientiane, Laos, specializing in building robust and scalable web applications for businesses worldwide.",
+    "description": "As a freelance developer based in Vientiane, I help businesses turn ideas into reliable digital tools  -  from high-converting websites to internal dashboards to full-scale platforms  -  combining clean architecture, performance, and user-focused design.",
+    "imageAlt": "Maximiliano Brito Torres - Freelance Software Developer in Vientiane",
     "learnMore": "More About Me",
     "stats": {
       "experience": "10+",
       "experienceLabel": "Years Experience",
-      "projects": "40+",
-      "projectsLabel": "Projects Delivered",
+      "projects": "5+",
+      "projectsLabel": "Freelance Projects Delivered",
       "technologies": "10+",
       "technologiesLabel": "Technologies"
     }
@@ -156,52 +156,25 @@
   },
   "services": {
     "title": "Services",
-    "subtitle": "I design and build scalable SaaS and marketplace platforms for early-stage startups ready to launch and grow.",
+    "subtitle": "I design and build scalable software tools.",
     "subtitleSecondary": "From MVP to production, I help founders turn product ideas into structured, reliable web applications built for scale.",
     "deliverLabel": "What I deliver",
     "toolsLabel": "Tools:",
     "items": {
-      "customWebApps": {
-        "title": "SaaS Product Development",
-        "valueStatement": "End-to-end development of modern, multi-user SaaS platforms.",
-        "desc": "I build structured systems designed for growth, performance, and long-term maintainability.",
+      "webApps": {
+        "valueStatement": "Manage operations, clients, and data from anywhere.",
+        "desc": "Custom web applications that streamline your business processes and give you complete control.",
         "details": [
-          "Multi-tenant SaaS architecture",
-          "Role-based authentication & access control",
-          "Admin dashboards & user portals",
-          "API-driven backend integrations",
-          "Production-ready deployment"
+          "Client & project management systems",
+          "Real-time data dashboards",
+          "Automated workflows & notifications",
+          "Role-based access control",
+          "Cloud-based - access from any device"
         ],
-        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
-      },
-      "businessSystems": {
-        "title": "Marketplace & Multi-Sided Platforms",
-        "valueStatement": "Platforms that connect users, vendors, or service providers.",
-        "desc": "Designed for scalability, performance, and clear operational control.",
-        "details": [
-          "Vendor & user management systems",
-          "Transactional workflows",
-          "Review & rating systems",
-          "Moderation dashboards",
-          "Scalable platform architecture"
-        ],
-        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
-      },
-      "pwaApps": {
-        "title": "MVP Development for Startups",
-        "valueStatement": "Launch fast. Validate early. Scale confidently.",
-        "desc": "I help founders ship lean but solid MVPs with a strong technical foundation.",
-        "details": [
-          "Rapid MVP architecture",
-          "Clean, maintainable codebase",
-          "Performance-focused frontend",
-          "Scalable system structure",
-          "Strategic technical guidance"
-        ],
-        "tools": "Next.js · React · TypeScript · PostgreSQL · REST APIs"
+        "tools": "",
+        "title": "Web Apps for Your Business"
       },
       "websiteDev": {
-        "title": "Website Development",
         "valueStatement": "A professional website that works for your business 24/7.",
         "desc": "Give your business a permanent, credible home online  -  built to attract clients and grow your presence globally.",
         "details": [
@@ -212,21 +185,21 @@
           "Builds trust & credibility",
           "Strengthens your brand identity"
         ],
-        "tools": ""
+        "tools": "",
+        "title": "Website Development"
       },
-      "frontendArchitecture": {
-        "title": "Core Stack",
-        "valueStatement": "Next.js · React · TypeScript · PostgreSQL · REST APIs",
-        "desc": "",
-        "details": [],
-        "tools": ""
-      },
-      "ongoingSupport": {
-        "title": "Long-Term Collaboration",
-        "valueStatement": "Post-launch improvements, feature expansion, and technical partnership for growing products.",
-        "desc": "",
-        "details": [],
-        "tools": ""
+      "automation": {
+        "valueStatement": "Connect your platforms and eliminate manual work.",
+        "desc": "I connect your platforms and automate repetitive tasks so your business runs smoothly without manual work.",
+        "details": [
+          "API integrations between platforms",
+          "Automated data syncing",
+          "Custom workflows & triggers",
+          "Reduce errors & save time",
+          "Focus on growth, not admin tasks"
+        ],
+        "tools": "",
+        "title": "Automation & Integration"
       }
     }
   },
@@ -392,9 +365,18 @@
       "p3": "You quickly discover which parts you truly understand and which parts you don't.",
       "p4": "That process made me a better developer in several ways:",
       "benefits": [
-        { "title": "Clearer Thinking", "desc": "About how systems work" },
-        { "title": "Stronger Fundamentals", "desc": "Core concepts over frameworks" },
-        { "title": "Better Communication", "desc": "Of technical ideas" }
+        {
+          "title": "Clearer Thinking",
+          "desc": "About how systems work"
+        },
+        {
+          "title": "Stronger Fundamentals",
+          "desc": "Core concepts over frameworks"
+        },
+        {
+          "title": "Better Communication",
+          "desc": "Of technical ideas"
+        }
       ],
       "p5": "All of those skills matter just as much as writing code."
     },
@@ -445,28 +427,78 @@
       "objectiveLabel": "OBJECTIVE",
       "objectiveText": "Implement OAuth 2.0 as the authentication layer, ensuring data remains secure while allowing orders to sync automatically from delivery platforms into the POS.",
       "objectives": [
-        { "label": "Secure Connection", "desc": "OAuth handshake  -  no shared passwords, data protected by encrypted digital keys." },
-        { "label": "Automatic Sync", "desc": "Every DoorDash and delivery platform order appears in the POS instantly." }
+        {
+          "label": "Secure Connection",
+          "desc": "OAuth handshake  -  no shared passwords, data protected by encrypted digital keys."
+        },
+        {
+          "label": "Automatic Sync",
+          "desc": "Every DoorDash and delivery platform order appears in the POS instantly."
+        }
       ],
       "architectureLabel": "ARCHITECTURE FLOW",
-      "archNodes": ["Delivery Platforms", "StreamOrder", "Middleware API", "POS System", "Dashboard"],
+      "archNodes": [
+        "Delivery Platforms",
+        "StreamOrder",
+        "Middleware API",
+        "POS System",
+        "Dashboard"
+      ],
       "timelineHeading": "4-Week Timeline",
       "goalLabel": "Goal",
       "resultLabel": "Result",
       "weeks": [
-        { "week": "Week 1", "title": "Security & The Digital Handshake", "goal": "Securely connect the client accounts.", "result": "StreamOrder officially linked; data protected by encrypted OAuth keys." },
-        { "week": "Week 2", "title": "The Automation Bridge", "goal": "Make the systems communicate.", "result": "Translator and webhook listener live in a test environment  -  orders captured and translated instantly." },
-        { "week": "Week 3", "title": "Dashboard & Live Launch", "goal": "Visibility and production readiness.", "result": "Bridge active, orders printing in the POS, live monitoring dashboard delivered." },
-        { "week": "Week 4", "title": "Refinement & Monitoring", "goal": "Stability under real-world conditions.", "result": "7-day live monitoring window; API changes from StreamOrder or delivery platforms patched immediately." }
+        {
+          "week": "Week 1",
+          "title": "Security & The Digital Handshake",
+          "goal": "Securely connect the client accounts.",
+          "result": "StreamOrder officially linked; data protected by encrypted OAuth keys."
+        },
+        {
+          "week": "Week 2",
+          "title": "The Automation Bridge",
+          "goal": "Make the systems communicate.",
+          "result": "Translator and webhook listener live in a test environment  -  orders captured and translated instantly."
+        },
+        {
+          "week": "Week 3",
+          "title": "Dashboard & Live Launch",
+          "goal": "Visibility and production readiness.",
+          "result": "Bridge active, orders printing in the POS, live monitoring dashboard delivered."
+        },
+        {
+          "week": "Week 4",
+          "title": "Refinement & Monitoring",
+          "goal": "Stability under real-world conditions.",
+          "result": "7-day live monitoring window; API changes from StreamOrder or delivery platforms patched immediately."
+        }
       ],
       "deliverablesHeading": "Core Deliverables",
       "deliverables": [
-        { "name": "OAuth 2.0 Integration", "desc": "Authentication layer connecting all accounts without sharing private passwords." },
-        { "name": "Real-Time Order Injection", "desc": "Orders detected via webhook and pushed directly into the POS within seconds." },
-        { "name": "Automated Translator", "desc": "Intelligent menu mapping ensuring every item, modifier, and customer note matches the POS format." },
-        { "name": "Automatic Token Refresh", "desc": "Self-maintaining security  -  OAuth tokens renew automatically so the connection never expires." },
-        { "name": "Reliability Monitoring", "desc": "Error-tracking that alerts immediately if an order fails to sync." },
-        { "name": "Live Connection Dashboard", "desc": "Web view to monitor bridge status and verify the most recent successful syncs." }
+        {
+          "name": "OAuth 2.0 Integration",
+          "desc": "Authentication layer connecting all accounts without sharing private passwords."
+        },
+        {
+          "name": "Real-Time Order Injection",
+          "desc": "Orders detected via webhook and pushed directly into the POS within seconds."
+        },
+        {
+          "name": "Automated Translator",
+          "desc": "Intelligent menu mapping ensuring every item, modifier, and customer note matches the POS format."
+        },
+        {
+          "name": "Automatic Token Refresh",
+          "desc": "Self-maintaining security  -  OAuth tokens renew automatically so the connection never expires."
+        },
+        {
+          "name": "Reliability Monitoring",
+          "desc": "Error-tracking that alerts immediately if an order fails to sync."
+        },
+        {
+          "name": "Live Connection Dashboard",
+          "desc": "Web view to monitor bridge status and verify the most recent successful syncs."
+        }
       ],
       "prerequisitesLabel": "PROJECT PREREQUISITES",
       "prerequisites": [
@@ -500,11 +532,31 @@
       "p1": "Once the ROI was clear, I mapped out the pipeline. The logic needed to be bulletproof:",
       "figDiagram": "High-level flow: delivery platforms → OrderBridge → restaurant POS",
       "steps": [
-        { "n": "01", "title": "Ingest delivery webhooks", "desc": "Receive HTTPS POST from each delivery platform." },
-        { "n": "02", "title": "Verify signatures", "desc": "HMAC-SHA256 check  -  security before anything else." },
-        { "n": "03", "title": "Translate schemas", "desc": "Map disparate JSON payloads into a unified POS format." },
-        { "n": "04", "title": "Inject the order", "desc": "POST to the POS API with exponential-backoff retry." },
-        { "n": "05", "title": "Broadcast updates", "desc": "WebSocket push to the live dashboard  -  no polling." }
+        {
+          "n": "01",
+          "title": "Ingest delivery webhooks",
+          "desc": "Receive HTTPS POST from each delivery platform."
+        },
+        {
+          "n": "02",
+          "title": "Verify signatures",
+          "desc": "HMAC-SHA256 check  -  security before anything else."
+        },
+        {
+          "n": "03",
+          "title": "Translate schemas",
+          "desc": "Map disparate JSON payloads into a unified POS format."
+        },
+        {
+          "n": "04",
+          "title": "Inject the order",
+          "desc": "POST to the POS API with exponential-backoff retry."
+        },
+        {
+          "n": "05",
+          "title": "Broadcast updates",
+          "desc": "WebSocket push to the live dashboard  -  no polling."
+        }
       ]
     },
     "process": {
@@ -512,12 +564,36 @@
       "heading": "Writing the Spec First",
       "p1": "I started with a Software Requirements Specification (SRS) before writing a single line of code. It's much easier to fix a mistake in a document than to rewrite production code later. The SRS forced both me and the client to agree on exactly what \"done\" looked like  -  no ambiguity, no scope creep.",
       "requirements": [
-        { "label": "FR-01", "title": "OAuth 2.0 Server", "desc": "System must act as an OAuth 2.0 provider  -  issuing, validating, and refreshing tokens per RFC 6749." },
-        { "label": "FR-02", "title": "Webhook Ingestion", "desc": "System must accept HTTPS POST webhooks from delivery platforms and verify each request with HMAC-SHA256 signature validation." },
-        { "label": "FR-03", "title": "Schema Translation", "desc": "System must map all incoming delivery payloads to a unified POS format, with graceful failure and logging on unmapped SKUs." },
-        { "label": "FR-04", "title": "POS Injection", "desc": "System must POST translated orders to the POS API with exponential-backoff retry on failure  -  no order dropped silently." },
-        { "label": "NFR-01", "title": "Real-Time Updates", "desc": "Dashboard must reflect order status changes via WebSocket push. No polling." },
-        { "label": "NFR-02", "title": "Token Persistence", "desc": "OAuth tokens must survive server restarts, stored encrypted at rest." }
+        {
+          "label": "FR-01",
+          "title": "OAuth 2.0 Server",
+          "desc": "System must act as an OAuth 2.0 provider  -  issuing, validating, and refreshing tokens per RFC 6749."
+        },
+        {
+          "label": "FR-02",
+          "title": "Webhook Ingestion",
+          "desc": "System must accept HTTPS POST webhooks from delivery platforms and verify each request with HMAC-SHA256 signature validation."
+        },
+        {
+          "label": "FR-03",
+          "title": "Schema Translation",
+          "desc": "System must map all incoming delivery payloads to a unified POS format, with graceful failure and logging on unmapped SKUs."
+        },
+        {
+          "label": "FR-04",
+          "title": "POS Injection",
+          "desc": "System must POST translated orders to the POS API with exponential-backoff retry on failure  -  no order dropped silently."
+        },
+        {
+          "label": "NFR-01",
+          "title": "Real-Time Updates",
+          "desc": "Dashboard must reflect order status changes via WebSocket push. No polling."
+        },
+        {
+          "label": "NFR-02",
+          "title": "Token Persistence",
+          "desc": "OAuth tokens must survive server restarts, stored encrypted at rest."
+        }
       ]
     },
     "figDashboard": "Live dashboard  -  real-time order feed with status tracking",
@@ -526,8 +602,14 @@
       "heading": "The Tech Stack",
       "subtitle": "What tools would I use for this kind of project:",
       "items": [
-        { "name": "Node.js & TypeScript", "body": "I am sure that Python would've also worked wonders here. Personally I prefer working with node modules and npm over pip and virtual environments." },
-        { "name": "Fastify (Not Express)", "body": "Express is the legacy default, but Fastify is built for modern performance. Built-in JSON schema validation, lower overhead. For a middleware API where every millisecond counts, Fastify wins." }
+        {
+          "name": "Node.js & TypeScript",
+          "body": "I am sure that Python would've also worked wonders here. Personally I prefer working with node modules and npm over pip and virtual environments."
+        },
+        {
+          "name": "Fastify (Not Express)",
+          "body": "Express is the legacy default, but Fastify is built for modern performance. Built-in JSON schema validation, lower overhead. For a middleware API where every millisecond counts, Fastify wins."
+        }
       ]
     },
     "deployment": {
@@ -536,9 +618,24 @@
       "p1": "The three services are independently deployed  -  each with its own host, its own domain, and its own responsibility. This mirrors how a real production integration would be structured.",
       "infrastructureLabel": "INFRASTRUCTURE OVERVIEW",
       "services": [
-        { "host": "Vercel", "service": "OrderBridge Dashboard", "detail": "Real-time monitoring UI  -  edge-deployed, globally available.", "tag": "Frontend" },
-        { "host": "Railway", "service": "OrderBridge API + PostgreSQL", "detail": "Core middleware engine with the OAuth server, webhook ingestion, schema translator, and POS injector. PostgreSQL stores OAuth tokens, menu mappings, and order logs.", "tag": "Backend" },
-        { "host": "Railway", "service": "MockPOS Server", "detail": "Isolated POS simulator running as a completely separate service  -  its own OAuth consent flow, its own order terminal.", "tag": "Simulator" }
+        {
+          "host": "Vercel",
+          "service": "OrderBridge Dashboard",
+          "detail": "Real-time monitoring UI  -  edge-deployed, globally available.",
+          "tag": "Frontend"
+        },
+        {
+          "host": "Railway",
+          "service": "OrderBridge API + PostgreSQL",
+          "detail": "Core middleware engine with the OAuth server, webhook ingestion, schema translator, and POS injector. PostgreSQL stores OAuth tokens, menu mappings, and order logs.",
+          "tag": "Backend"
+        },
+        {
+          "host": "Railway",
+          "service": "MockPOS Server",
+          "detail": "Isolated POS simulator running as a completely separate service  -  its own OAuth consent flow, its own order terminal.",
+          "tag": "Simulator"
+        }
       ],
       "whySeparateLabel": "WHY SEPARATE SERVICES",
       "whySeparate": "Keeping MockPOS on its own Railway service wasn't just convenient  -  it was the point. It proves the integration works across a real network boundary, not just between two functions in the same process."
@@ -555,9 +652,18 @@
       "heading": "Introducing OrderBridge",
       "p1": "I enjoyed the architecture of the client project so much that I built OrderBridge  -  a refined, standalone version for my portfolio. It's not just a copy; it's an evolution. A complete end-to-end demo that simulates the entire flow without needing real-world infrastructure.",
       "repos": [
-        { "name": "Backend", "body": "Fastify, TypeScript, and WebSockets." },
-        { "name": "Dashboard", "body": "Real-time monitoring and control UI for the OrderBridge system." },
-        { "name": "POS Simulator (MockPOS)", "body": "A secondary app representing a fictional restaurant called Phing Kai Kitchen. It acts as the 'target' POS, complete with its own OAuth consent screen and live order terminal." }
+        {
+          "name": "Backend",
+          "body": "Fastify, TypeScript, and WebSockets."
+        },
+        {
+          "name": "Dashboard",
+          "body": "Real-time monitoring and control UI for the OrderBridge system."
+        },
+        {
+          "name": "POS Simulator (MockPOS)",
+          "body": "A secondary app representing a fictional restaurant called Phing Kai Kitchen. It acts as the 'target' POS, complete with its own OAuth consent screen and live order terminal."
+        }
       ]
     },
     "figSimulator": "Simulator  -  fire test orders from any delivery platform with one click",
@@ -566,9 +672,18 @@
       "heading": "The Complete Codebase",
       "subtitle": "All three core components are open-source and available on GitHub:",
       "repos": [
-        { "title": "OrderBridge API", "desc": "Core middleware engine with OAuth 2.0, webhook ingestion, and schema translation." },
-        { "title": "OrderBridge Dashboard", "desc": "Real-time monitoring UI with live order feed and connection status." },
-        { "title": "MockPOS Server", "desc": "POS simulator demonstrating the complete integration flow." }
+        {
+          "title": "OrderBridge API",
+          "desc": "Core middleware engine with OAuth 2.0, webhook ingestion, and schema translation."
+        },
+        {
+          "title": "OrderBridge Dashboard",
+          "desc": "Real-time monitoring UI with live order feed and connection status."
+        },
+        {
+          "title": "MockPOS Server",
+          "desc": "POS simulator demonstrating the complete integration flow."
+        }
       ]
     },
     "liveDemos": {
@@ -576,8 +691,14 @@
       "heading": "Try It Out",
       "subtitle": "Both services are live and ready to use:",
       "demos": [
-        { "name": "OrderBridge Dashboard", "desc": "Real-time monitoring interface. Watch orders flow through the pipeline as they arrive." },
-        { "name": "MockPOS Server", "desc": "Live orders page from the fictional Phing Kai Kitchen POS system. See orders injected in real time." }
+        {
+          "name": "OrderBridge Dashboard",
+          "desc": "Real-time monitoring interface. Watch orders flow through the pipeline as they arrive."
+        },
+        {
+          "name": "MockPOS Server",
+          "desc": "Live orders page from the fictional Phing Kai Kitchen POS system. See orders injected in real time."
+        }
       ],
       "visitLabel": "Visit →"
     },
@@ -598,10 +719,22 @@
     "readBuildArticle": "Read the Build Article",
     "diagramCaption": "High-level flow: delivery platforms → OrderBridge → restaurant POS",
     "outcomes": [
-      { "value": "<800ms", "label": "End-to-end order processing" },
-      { "value": "5", "label": "Delivery platforms supported" },
-      { "value": "3", "label": "POS systems integrated" },
-      { "value": "0", "label": "Manual steps required" }
+      {
+        "value": "<800ms",
+        "label": "End-to-end order processing"
+      },
+      {
+        "value": "5",
+        "label": "Delivery platforms supported"
+      },
+      {
+        "value": "3",
+        "label": "POS systems integrated"
+      },
+      {
+        "value": "0",
+        "label": "Manual steps required"
+      }
     ],
     "problem": {
       "sectionLabel": "[ THE PROBLEM ]",
@@ -615,36 +748,88 @@
       "sectionLabel": "[ THE SOLUTION ]",
       "p1": "OrderBridge sits between delivery platforms and the POS. When an order arrives, it receives the webhook, translates the payload into the POS format, and injects the order automatically  -  in under 800ms, with no human in the loop.",
       "archTitle": "ARCHITECTURE FLOW",
-      "archNodes": ["Delivery\nPlatform", "Webhook\nReceiver", "Translator", "Injector", "POS\nSystem"],
+      "archNodes": [
+        "Delivery\nPlatform",
+        "Webhook\nReceiver",
+        "Translator",
+        "Injector",
+        "POS\nSystem"
+      ],
       "wsLabel": "WebSocket broadcast → Dashboard (real-time)"
     },
     "howItWorks": {
       "sectionLabel": "[ HOW IT WORKS ]",
       "steps": [
-        { "step": "01", "title": "Webhook Reception", "desc": "Each delivery platform sends an HTTPS POST to a shared webhook endpoint. The server verifies the HMAC-SHA256 signature, rejects invalid payloads immediately, and deduplicates by order ID." },
-        { "step": "02", "title": "Translation", "desc": "A platform-specific handler maps the delivery schema to a standardised POS payload. Each item is resolved against a MenuMapping table that links platform item IDs to POS SKUs." },
-        { "step": "03", "title": "Injection", "desc": "The translated payload is POSTed to the POS API with exponential backoff retry. On success, the POS order ID is stored. On failure after max retries, the order is marked FAILED and flagged for manual review." },
-        { "step": "04", "title": "Real-Time Sync", "desc": "Every state change is persisted to PostgreSQL and broadcast via WebSocket to all connected dashboard clients  -  no polling, no page refreshes." }
+        {
+          "step": "01",
+          "title": "Webhook Reception",
+          "desc": "Each delivery platform sends an HTTPS POST to a shared webhook endpoint. The server verifies the HMAC-SHA256 signature, rejects invalid payloads immediately, and deduplicates by order ID."
+        },
+        {
+          "step": "02",
+          "title": "Translation",
+          "desc": "A platform-specific handler maps the delivery schema to a standardised POS payload. Each item is resolved against a MenuMapping table that links platform item IDs to POS SKUs."
+        },
+        {
+          "step": "03",
+          "title": "Injection",
+          "desc": "The translated payload is POSTed to the POS API with exponential backoff retry. On success, the POS order ID is stored. On failure after max retries, the order is marked FAILED and flagged for manual review."
+        },
+        {
+          "step": "04",
+          "title": "Real-Time Sync",
+          "desc": "Every state change is persisted to PostgreSQL and broadcast via WebSocket to all connected dashboard clients  -  no polling, no page refreshes."
+        }
       ]
     },
     "screenshots": {
       "sectionLabel": "[ SCREENSHOTS ]",
       "images": [
-        { "alt": "OrderBridge dashboard showing live order feed", "caption": "Live dashboard  -  real-time order feed with status tracking" },
-        { "alt": "OrderBridge orders page with filters", "caption": "Orders page  -  filterable, sortable, CSV export" },
-        { "alt": "MockPOS mock terminal showing injected orders", "caption": "MockPOS terminal  -  orders arriving automatically from OrderBridge" },
-        { "alt": "OrderBridge simulator page", "caption": "Simulator  -  fire test orders from any delivery platform" }
+        {
+          "alt": "OrderBridge dashboard showing live order feed",
+          "caption": "Live dashboard  -  real-time order feed with status tracking"
+        },
+        {
+          "alt": "OrderBridge orders page with filters",
+          "caption": "Orders page  -  filterable, sortable, CSV export"
+        },
+        {
+          "alt": "MockPOS mock terminal showing injected orders",
+          "caption": "MockPOS terminal  -  orders arriving automatically from OrderBridge"
+        },
+        {
+          "alt": "OrderBridge simulator page",
+          "caption": "Simulator  -  fire test orders from any delivery platform"
+        }
       ]
     },
     "techStack": {
       "sectionLabel": "[ TECH STACK ]",
       "items": [
-        { "name": "React 19 + Vite", "reason": "Fast dev experience, React Query for server state, no SSR overhead needed for a dashboard." },
-        { "name": "Fastify + TypeScript", "reason": "Lower overhead than Express, schema-based validation built in, excellent TypeScript support." },
-        { "name": "PostgreSQL + Prisma", "reason": "Relational data fits the order/token/mapping schema well. Prisma keeps migrations safe and typed." },
-        { "name": "WebSockets (ws)", "reason": "Native WebSocket  -  no Socket.io overhead for a single broadcast channel." },
-        { "name": "OAuth 2.0 + AES-256", "reason": "Industry-standard POS auth flow. Tokens encrypted at rest before writing to the database." },
-        { "name": "HMAC-SHA256", "reason": "Webhook signature verification  -  only legitimate delivery platform payloads are processed." }
+        {
+          "name": "React 19 + Vite",
+          "reason": "Fast dev experience, React Query for server state, no SSR overhead needed for a dashboard."
+        },
+        {
+          "name": "Fastify + TypeScript",
+          "reason": "Lower overhead than Express, schema-based validation built in, excellent TypeScript support."
+        },
+        {
+          "name": "PostgreSQL + Prisma",
+          "reason": "Relational data fits the order/token/mapping schema well. Prisma keeps migrations safe and typed."
+        },
+        {
+          "name": "WebSockets (ws)",
+          "reason": "Native WebSocket  -  no Socket.io overhead for a single broadcast channel."
+        },
+        {
+          "name": "OAuth 2.0 + AES-256",
+          "reason": "Industry-standard POS auth flow. Tokens encrypted at rest before writing to the database."
+        },
+        {
+          "name": "HMAC-SHA256",
+          "reason": "Webhook signature verification  -  only legitimate delivery platform payloads are processed."
+        }
       ]
     },
     "cta": {
@@ -662,10 +847,22 @@
     "viewLive": "Visit laomaitravel.com",
     "heroImageAlt": "Lao Mai Travel hero section  -  temple at dusk with navy and gold design",
     "outcomes": [
-      { "value": "EN + TH", "label": "Bilingual first-class routing" },
-      { "value": "100%", "label": "Server-rendered HTML for SEO" },
-      { "value": "0", "label": "Cookie banners or consent popups" },
-      { "value": "1 link", "label": "Client analytics dashboard access" }
+      {
+        "value": "EN + TH",
+        "label": "Bilingual first-class routing"
+      },
+      {
+        "value": "100%",
+        "label": "Server-rendered HTML for SEO"
+      },
+      {
+        "value": "0",
+        "label": "Cookie banners or consent popups"
+      },
+      {
+        "value": "1 link",
+        "label": "Client analytics dashboard access"
+      }
     ],
     "problem": {
       "sectionLabel": "[ THE PROBLEM ]",
@@ -717,30 +914,72 @@
         "Traffic is coming from Australia and France but almost nothing from the US  -  where should social media efforts focus?"
       ],
       "images": [
-        { "alt": "Umami analytics main dashboard showing visits and page views", "caption": "Main dashboard  -  real-time visits, bounce rate, and session duration" },
-        { "alt": "Umami pages and traffic sources breakdown", "caption": "Pages & sources  -  which tours get traffic and where it comes from" },
-        { "alt": "Umami visitor locations map", "caption": "Visitor locations  -  knowing where to focus marketing efforts" }
+        {
+          "alt": "Umami analytics main dashboard showing visits and page views",
+          "caption": "Main dashboard  -  real-time visits, bounce rate, and session duration"
+        },
+        {
+          "alt": "Umami pages and traffic sources breakdown",
+          "caption": "Pages & sources  -  which tours get traffic and where it comes from"
+        },
+        {
+          "alt": "Umami visitor locations map",
+          "caption": "Visitor locations  -  knowing where to focus marketing efforts"
+        }
       ]
     },
     "screenshots": {
       "sectionLabel": "[ SCREENSHOTS ]",
       "images": [
-        { "alt": "Lao Mai Travel destinations page", "caption": "Destinations  -  off-the-beaten-path locations across Laos" },
-        { "alt": "Lao Mai Travel tour packages page", "caption": "Tour packages  -  highland treks, Mekong islands, cultural homestays" },
-        { "alt": "Lao Mai Travel booking inquiry form", "caption": "Booking form  -  powered by Resend, delivered straight to the client" },
-        { "alt": "Thai language version of the site", "caption": "Thai language routing  -  full /th route with its own metadata" }
+        {
+          "alt": "Lao Mai Travel destinations page",
+          "caption": "Destinations  -  off-the-beaten-path locations across Laos"
+        },
+        {
+          "alt": "Lao Mai Travel tour packages page",
+          "caption": "Tour packages  -  highland treks, Mekong islands, cultural homestays"
+        },
+        {
+          "alt": "Lao Mai Travel booking inquiry form",
+          "caption": "Booking form  -  powered by Resend, delivered straight to the client"
+        },
+        {
+          "alt": "Thai language version of the site",
+          "caption": "Thai language routing  -  full /th route with its own metadata"
+        }
       ]
     },
     "techStack": {
       "sectionLabel": "[ TECH STACK ]",
       "items": [
-        { "name": "Next.js 15 + App Router", "reason": "Server-rendered pages for SEO, locale-first routing via app/[locale]/, and edge-ready deployment on Vercel." },
-        { "name": "TypeScript", "reason": "Type-safe development across the full codebase  -  catches errors before they reach production." },
-        { "name": "CSS Modules", "reason": "Scoped styles without runtime overhead. Ideal for a design-heavy site with layered typography and a strong visual identity." },
-        { "name": "next-intl", "reason": "First-class bilingual routing with per-locale metadata, full EN/TH translation coverage, and no locale hacks." },
-        { "name": "Resend", "reason": "Handles booking inquiry emails via a clean API  -  no backend server needed, reliable delivery." },
-        { "name": "Umami", "reason": "Web Traffic Analytics  -  no cookies, GDPR compliant, self-hostable. Client accesses their dashboard via a single shared link." },
-        { "name": "Vercel", "reason": "Zero-config deployment with automatic previews, instant rollbacks, and no infrastructure to manage." }
+        {
+          "name": "Next.js 15 + App Router",
+          "reason": "Server-rendered pages for SEO, locale-first routing via app/[locale]/, and edge-ready deployment on Vercel."
+        },
+        {
+          "name": "TypeScript",
+          "reason": "Type-safe development across the full codebase  -  catches errors before they reach production."
+        },
+        {
+          "name": "CSS Modules",
+          "reason": "Scoped styles without runtime overhead. Ideal for a design-heavy site with layered typography and a strong visual identity."
+        },
+        {
+          "name": "next-intl",
+          "reason": "First-class bilingual routing with per-locale metadata, full EN/TH translation coverage, and no locale hacks."
+        },
+        {
+          "name": "Resend",
+          "reason": "Handles booking inquiry emails via a clean API  -  no backend server needed, reliable delivery."
+        },
+        {
+          "name": "Umami",
+          "reason": "Web Traffic Analytics  -  no cookies, GDPR compliant, self-hostable. Client accesses their dashboard via a single shared link."
+        },
+        {
+          "name": "Vercel",
+          "reason": "Zero-config deployment with automatic previews, instant rollbacks, and no infrastructure to manage."
+        }
       ]
     },
     "cta": {
@@ -764,7 +1003,7 @@
       "eyebrow": "Web development · Vientiane, Laos",
       "headline": "Your competitor has a website.",
       "headlineItalic": "Do you?",
-      "sub": "In Vientiane, tourists and expats search Google before they book, eat, or buy. If your business only exists on Facebook, they are finding someone else.",
+      "sub": "People search on Google before they book, eat, or buy. If your business only exists on Facebook, you are losing customers.",
       "cta": "Get your free website audit",
       "ctaNote": "Free audit · No commitment"
     },
@@ -778,15 +1017,15 @@
       "items": {
         "googleFound": {
           "title": "Found on Google",
-          "desc": "Customers searching \"guesthouse Vientiane\" or \"tour Luang Prabang\" find you, not your competitor. Facebook pages never appear in those results."
+          "desc": "Customers searching \"guesthouse Vientiane\" or \"tour Luang Prabang\" find you, not your competitor. Not everyone has Facebook."
         },
         "multiLanguage": {
           "title": "As many languages as you need",
-          "desc": "Your site works in Lao, English, and Thai. Every customer type, every market, handled automatically without duplicating your work."
+          "desc": "Your site works in Lao, English, Thai, Chinese, Spanish (or any language you want). Without duplicating your work."
         },
         "ownership": {
           "title": "You own it",
-          "desc": "Facebook can restrict your page tomorrow. Your website belongs to you. No algorithm, no dependency, no risk of losing everything overnight."
+          "desc": "You did something Facebook did not like? Facebook can delete your page tomorrow. Your website belongs to you. No algorithm, no dependency, no risk of losing everything overnight."
         },
         "analytics": {
           "title": "See your traffic",
@@ -798,14 +1037,14 @@
         },
         "delivered": {
           "title": "Delivered finished",
-          "desc": "Not a template you figure out yourself. You receive a complete, working product: design, development, and launch, ready from day one."
+          "desc": "You receive a complete, working product: design, development, and launch, ready from day one."
         }
       }
     },
     "proof": {
       "eyebrow": "Built in Laos",
-      "title": "Real projects, right here in Vientiane",
-      "intro": "Both live. Both working. Both built for the Lao market.",
+      "title": "Real projects",
+      "intro": "All live. All working. All built for real customers.",
       "projects": {
         "laomaitravel": {
           "name": "Lao Mai Travel",
@@ -818,20 +1057,20 @@
       },
       "analyticsTitle": "Umami Analytics · your traffic dashboard",
       "analyticsAlt": "Umami analytics  -  locations dashboard",
-      "analyticsExplainer": "Web traffic tells you who's visiting, where they're from, and what they're looking at. It turns guessing into knowing  -  so you can focus your time and money on what actually works."
+      "analyticsExplainer": "You will know who's visiting, where they're from, and what they're looking at."
     },
     "pwa": {
-      "eyebrow": "Platform web apps",
+      "eyebrow": "Progressive Web Apps",
       "title": "Manage your business",
       "titleItalic": "from anywhere.",
-      "body1": "Your platform works like an app on your phone. No download required. Check listings, update inventory, and respond to leads from wherever you are.",
+      "body1": "Your platform works like an app on your phone. No download required. Check listings, update inventory, and respond to customers from wherever you are.",
       "body2": "Add it to your home screen and it opens instantly, just like any other app. Works on iPhone and Android.",
       "chip": "No App Store needed"
     },
     "pricing": {
       "eyebrow": "Investment",
       "title": "Simple, transparent pricing",
-      "intro": "One flat fee. No hidden costs. No surprises.",
+      "intro": "No hidden costs. No surprises.",
       "banner": "Just launched  -  introductory prices. These prices are lower than they will be. Once the first client slots are filled, rates go up. If you are considering it, now is the right time.",
       "tiers": {
         "website": {
@@ -844,7 +1083,7 @@
             "5–8 pages, fully designed",
             "As many languages as you need",
             "SEO-optimised for Google",
-            "Umami analytics built in",
+            "Web Traffic analytics built in",
             "Mobile-ready on all devices",
             "Delivered in 2–3 weeks"
           ],
@@ -874,7 +1113,8 @@
     "carePlans": {
       "eyebrow": "Monthly support",
       "title": "Keep your site running. Always.",
-      "subtitle": "Optional care plans so your website stays updated and you never have to worry about it.",
+      "subtitle": "Optional care plans so your website stays online and updated and you never have to worry about it.",
+      "badge": "Popular",
       "plans": {
         "basic": {
           "name": "Basic Care",
@@ -887,7 +1127,7 @@
             "1 content update per month",
             "Email support"
           ],
-          "quip": "🍺 Cheaper than one night at MAHASAN. Your website stays online 24/7 either way ... at least one of them remembers you in the morning."
+          "quip": "🍺 Cheaper than one evening at MAHASAN."
         },
         "active": {
           "name": "Active Care",
@@ -900,7 +1140,7 @@
             "Up to 5 updates per month",
             "Monthly analytics report"
           ],
-          "quip": "Less than one boosted Facebook post that disappears in 3 days. This keeps your platform running and updated all month."
+          "quip": "Less than one boosted Facebook post that disappears in 3 days."
         }
       }
     },
@@ -908,31 +1148,39 @@
       "eyebrow": "Let's work together",
       "title": "Ready to outpace",
       "titleItalic": "the competition?",
-      "sub1": "First audit is free. No pitch deck, no commitment.",
-      "sub2": "Just 10 minutes on WhatsApp and you'll know exactly where your site stands.",
+      "sub1": "First audit is free. No commitment.",
+      "sub2": "Just 10 minutes on WhatsApp and you'll know how I can help you.",
       "cta": "Message me on WhatsApp →",
-      "note": "Prefer email? hello@maxontorres.com"
+      "note": "Prefer email? hello@MaxonTorres.com"
     }
   },
   "pmlaosCaseStudy": {
     "breadcrumbHome": "Home",
     "breadcrumbWork": "Work",
-    "tagline": "A trilingual EN/LO/ZH real estate platform  -  installable as a PWA, Google OAuth-secured admin, and server-rendered property pages built for Vientiane.",
+    "tagline": "A multi-language EN/LO/ZH real estate platform.  Installable as an App (PWA), Google OAuth-secured admin, and server-rendered property pages built for a business in Vientiane.",
     "viewLive": "Visit pmlaos.com",
     "heroImageAlt": "PM Real Estate Laos homepage  -  property listings with clean professional layout",
     "outcomes": [
-      { "value": "EN + LO + ZH", "label": "Trilingual first-class routing" },
-      { "value": "100%", "label": "Server-rendered listing pages" },
-      { "value": "Google OAuth", "label": "Secure admin login" },
-      { "value": "PWA", "label": "Installs like a native app" }
+      {
+        "value": "EN + LO + ZH",
+        "label": "Three languages, or as many as needed"
+      },
+      {
+        "value": "Google OAuth",
+        "label": "Easily login with your Google Account"
+      },
+      {
+        "value": "PWA",
+        "label": "You can install this website like an app"
+      }
     ],
     "problem": {
       "sectionLabel": "[ THE PROBLEM ]",
-      "p1": "Before this platform, PM Real Estate Laos managed their listings across social media posts and PDF catalogs. There was no central place where buyers could browse all available properties, filter by area, or view high-quality photos  -  and every update meant editing a file and resending it manually.",
-      "p2": "The agency also had no system for tracking clients or deals. Pipeline status lived in spreadsheets, follow-ups were missed, and there was no way to see at a glance which properties were active, pending, or sold.",
+      "p1": "Before this platform, PM Real Estate Laos managed their listings across social media posts. There was no central place where buyers could browse all available properties, filter by area, or view high-quality photos  -  and every update meant editing a file and resending it manually.",
+      "p2": "The agency also had no system for tracking clients or deals. Pipeline status lived in spreadsheets and WhatsApp (BAD IDEA), follow-ups were missed, and there was no way to see at a glance which properties were active, pending, or sold.",
       "p3": "Three problems that needed solving:",
       "problems": [
-        "No central listing platform  -  properties scattered across Facebook and PDF files",
+        "No central listing platform  -  properties scattered across Facebook and WhatsApp",
         "No client or deal pipeline  -  everything tracked in disconnected spreadsheets",
         "No multilingual support  -  missing the Chinese-speaking and international buyer segments entirely"
       ]
@@ -952,7 +1200,7 @@
           "desc": "Every property page is server-rendered with full metadata, structured data, and Open Graph tags. When buyers search 'apartment for rent Vientiane' or 'land for sale Laos', individual listing pages show up  -  not just the homepage."
         },
         {
-          "title": "Trilingual routing that's first-class",
+          "title": "Multi-language routing",
           "desc": "All pages live under app/[locale]/ with EN, LO, and ZH as proper first-class routes. next-intl handles translations and locale detection. No redirect hacks, no duplicated templates."
         },
         {
@@ -964,34 +1212,79 @@
     "screenshots": {
       "sectionLabel": "[ THE WEBSITE ]",
       "images": [
-        { "alt": "PM Real Estate Laos homepage with property listings", "caption": "Homepage  -  property listings with search and filter" },
-        { "alt": "Multiple property listings in gallery view", "caption": "Listings gallery  -  grid view with property thumbnails" },
-        { "alt": "Individual property listing full page", "caption": "Listing detail page  -  photos, specs, and contact form" }
+        {
+          "alt": "PM Real Estate Laos homepage with property listings",
+          "caption": "Homepage  -  property listings with search and filter"
+        },
+        {
+          "alt": "Multiple property listings in gallery view",
+          "caption": "Listings gallery  -  grid view with property thumbnails"
+        },
+        {
+          "alt": "Individual property listing full page",
+          "caption": "Listing detail page  -  photos, specs, and contact form"
+        }
       ]
     },
     "admin": {
       "sectionLabel": "[ THE ADMIN DASHBOARD ]",
       "heading": "A full CMS, built in",
       "p1": "The agency needed more than a website  -  they needed a system. The admin dashboard is a full property management tool: add and edit listings, manage clients, track deal pipeline, and control which areas appear on the site.",
-      "p2": "Authentication is handled via Google OAuth. No password management, no forgotten credentials  -  the team signs in with their existing Google accounts.",
+      "p2": "Authentication is handled via username and password and by Google OAuth. The team can sign-in with their existing Google accounts.",
       "images": [
-        { "alt": "Admin main dashboard overview", "caption": "Main dashboard  -  key metrics at a glance" },
-        { "alt": "Admin deals management page", "caption": "Deals pipeline  -  track every property transaction" },
-        { "alt": "Admin clients management page", "caption": "Client management  -  buyer and seller database" },
-        { "alt": "Admin area management page", "caption": "Area management  -  control which zones appear on the site" },
-        { "alt": "Admin Google OAuth login screen", "caption": "Google OAuth login  -  no passwords to manage" },
-        { "alt": "Admin dashboard mobile view", "caption": "Mobile-responsive admin  -  manage listings from anywhere" }
+        {
+          "alt": "Admin main dashboard overview",
+          "caption": "Main dashboard"
+        },
+        {
+          "alt": "Admin deals management page",
+          "caption": "Track every property transaction"
+        },
+        {
+          "alt": "Admin clients management page",
+          "caption": "Client management  -  buyer and seller database"
+        },
+        {
+          "alt": "Admin area management page",
+          "caption": "Area management  -  control which zones appear on the site"
+        },
+        {
+          "alt": "Admin Google OAuth login screen",
+          "caption": "Google OAuth login"
+        },
+        {
+          "alt": "Admin dashboard mobile view",
+          "caption": "Mobile-responsive admin  -  manage listings from anywhere"
+        }
       ]
     },
     "techStack": {
       "sectionLabel": "[ TECH STACK ]",
       "items": [
-        { "name": "Next.js 15 + TypeScript", "reason": "Server-rendered listing pages with App Router. TypeScript across the entire codebase  -  no runtime surprises in the admin or the API." },
-        { "name": "next-intl", "reason": "Trilingual EN/LO/ZH routing baked in from day one. Each locale is a first-class route with its own metadata and translated content." },
-        { "name": "Prisma + PostgreSQL", "reason": "Relational schema for properties, clients, deals, and areas. Prisma keeps migrations safe and typed  -  no raw SQL in the codebase." },
-        { "name": "Google OAuth", "reason": "Admin authentication without password management. The client uses their existing Google account  -  no security liability, no reset emails." },
-        { "name": "CSS Modules", "reason": "Scoped styles per component  -  no class-name collisions across a large trilingual app. Each page and component owns its styles without leaking into anything else." },
-        { "name": "PWA + Service Worker", "reason": "The site installs to the homescreen like a native app. Property agents in the field open it without a browser  -  and cached listings load even on a weak Lao 4G signal." }
+        {
+          "name": "Next.js 15 + TypeScript",
+          "reason": "Server-rendered listing pages with App Router. TypeScript across the entire codebase  -  no runtime surprises in the admin or the API."
+        },
+        {
+          "name": "next-intl",
+          "reason": "Trilingual EN/LO/ZH routing baked in from day one. Each locale is a first-class route with its own metadata and translated content."
+        },
+        {
+          "name": "Prisma + PostgreSQL",
+          "reason": "Relational schema for properties, clients, deals, and areas. Prisma keeps migrations safe and typed  -  no raw SQL in the codebase."
+        },
+        {
+          "name": "Google OAuth",
+          "reason": "The client uses their existing Google account or username and password."
+        },
+        {
+          "name": "CSS Modules",
+          "reason": "Scoped styles per component. No Tailwind"
+        },
+        {
+          "name": "PWA + Service Worker",
+          "reason": "The site installs to the homescreen like a native app. Property agents in the field open it without a browser  -  and cached listings load even on a weak signal."
+        }
       ]
     },
     "cta": {

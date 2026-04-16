@@ -16,7 +16,7 @@ export default function ProofSection() {
     {
       name: t('projects.laomaitravel.name'),
       category: t('projects.laomaitravel.category'),
-      tags: ['English', 'Lao'],
+      tags: ['English', 'Thai'],
       url: 'https://laomaitravel.com',
       image: '/images/projects/laomaitravel/hero-section.png',
     },

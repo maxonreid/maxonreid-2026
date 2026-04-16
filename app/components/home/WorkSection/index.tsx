@@ -29,7 +29,7 @@ export default function WorkSection() {
     {
       id: 2,
       title: 'Travel Agency Website',
-      year: '2025',
+      year: '2026',
       image: '/images/projects/laomaitravel/hero-section.png',
       images: [
         '/images/projects/laomaitravel/hero-section.png',
@@ -46,7 +46,7 @@ export default function WorkSection() {
     {
       id: 3,
       title: 'PM Real Estate Laos',
-      year: '2025',
+      year: '2026',
       image: '/images/projects/pmlaos/pmlaos.com_homepage.png',
       images: [
         '/images/projects/pmlaos/pmlaos.com_homepage.png',

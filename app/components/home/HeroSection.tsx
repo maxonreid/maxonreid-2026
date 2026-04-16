@@ -3,10 +3,17 @@
 import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl';
 import enMessages from '@/messages/en.json';
 import TerminalDevice from './TerminalDevice';
+import { useTypewriter } from './useTypewriter';
 
 export default function HeroSection() {
   const t = useTranslations('hero');
   const locale = useLocale();
+  
+  const highlightTexts = [
+    'get international buyers',
+    'get worldwide customers and automate their operations'
+  ];
+  const typewriterText = useTypewriter(highlightTexts, 80, 3000, 15);
 
   return (
     <section className="py-24 px-0 pb-30 relative overflow-hidden" aria-labelledby="hero-heading">
@@ -17,10 +24,13 @@ export default function HeroSection() {
             {t('location')}
           </div>
 
+          {/* The Main Webasite Headline */}
           <h1 id="hero-heading" className="text-[52px] leading-tight my-1.5 font-bold tracking-tight">
-            {t.rich('heroTitle', {
-              highlight: (chunks) => <span className="text-[#d6b46b]">{chunks}</span>,
-            })}
+            I build websites that{' '}
+            <span className="text-[#d6b46b] inline-block min-w-[420px]">
+              {typewriterText}
+              <span className="inline-block w-[3px] h-[1.1em] bg-[#d6b46b] ml-[2px] align-middle animate-[blink_1s_step-end_infinite]"></span>
+            </span>
           </h1>
 
           <p className="text-[#9ea0a8] max-w-[560px] mb-4.5">

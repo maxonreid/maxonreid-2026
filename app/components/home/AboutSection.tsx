@@ -27,10 +27,10 @@ export default function AboutSection() {
                 <div className="text-3xl font-bold text-[#d6b46b] mb-2">{t('stats.projects')}</div>
                 <div className="text-sm text-[#9ea0a8]">{t('stats.projectsLabel')}</div>
               </div>
-              <div className="bg-white/[0.02] border border-white/[0.06] rounded-lg p-4 text-center">
+              {/* <div className="bg-white/[0.02] border border-white/[0.06] rounded-lg p-4 text-center">
                 <div className="text-3xl font-bold text-[#d6b46b] mb-2">{t('stats.technologies')}</div>
                 <div className="text-sm text-[#9ea0a8]">{t('stats.technologiesLabel')}</div>
-              </div>
+              </div> */}
             </div>
             
             <Link href="/about" className="inline-block py-3 px-6 rounded-lg bg-transparent border border-white/[0.06] text-[#d6b46b] font-mono hover:bg-[#d6b46b]/10 hover:border-[#d6b46b] transition-all">

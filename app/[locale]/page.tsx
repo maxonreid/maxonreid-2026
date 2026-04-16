@@ -46,7 +46,7 @@ export default async function HomePage({
         url: SITE_URL,
         name: 'Maxon Torres',
         description:
-          'Freelance Software Developer in Vientiane, Laos specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture.',
+          'Freelance Software Developer in Vientiane, Laos specializing in Next.js, React, Node.js.',
         inLanguage: locale,
       },
       {
@@ -57,7 +57,7 @@ export default async function HomePage({
         url: SITE_URL,
         image: `${SITE_URL}/profile.jpg`,
         jobTitle: 'Freelance Software Developer',
-        description: 'Freelance Software Developer in Vientiane, Laos specializing in Next.js, React, Node.js, GraphQL, and AWS Serverless architecture',
+        description: 'Freelance Software Developer in Vientiane, Laos specializing in Next.js, React, Node.js',
         workLocation: {
           '@type': 'Place',
           name: 'Vientiane',
@@ -76,7 +76,7 @@ export default async function HomePage({
           'https://www.linkedin.com/in/maxontorres/',
           'https://github.com/maxonreid',
         ],
-        knowsAbout: ['Next.js', 'React', 'Node.js', 'GraphQL', 'AWS Serverless', 'TypeScript'],
+        knowsAbout: ['Next.js', 'React', 'Node.js', 'TypeScript'],
         hasOccupation: {
           '@type': 'Occupation',
           name: 'Freelance Software Developer',
@@ -90,7 +90,7 @@ export default async function HomePage({
         '@type': 'ProfessionalService',
         '@id': `${SITE_URL}/#service`,
         name: 'Freelance Software Development Services',
-        description: 'Professional freelance software development services in Vientiane, Laos. Specializing in web application development, full-stack development, and cloud solutions.',
+        description: 'Professional freelance software development services in Vientiane, Laos. Specializing in web application development, full-stack development.',
         provider: {
           '@id': `${SITE_URL}/#person`,
         },

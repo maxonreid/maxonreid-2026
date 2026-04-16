@@ -25,7 +25,7 @@ export default function ServicesFooter({ locale }: Props) {
         </nav>
 
         <p className={styles.copy}>
-          &copy; {new Date().getFullYear()} Maximiliano Brito Torres &middot; Built with Next.js
+          &copy; {new Date().getFullYear()} Maximiliano Brito Torres &middot; Freelance Web Developer in Vientiane
         </p>
       </div>
     </footer>
