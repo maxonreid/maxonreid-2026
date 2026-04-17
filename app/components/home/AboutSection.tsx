@@ -23,10 +23,10 @@ export default function AboutSection() {
                 <div className="text-3xl font-bold text-[#d6b46b] mb-2">{t('stats.experience')}</div>
                 <div className="text-sm text-[#9ea0a8]">{t('stats.experienceLabel')}</div>
               </div>
-              <div className="bg-white/[0.02] border border-white/[0.06] rounded-lg p-4 text-center">
+              {/* <div className="bg-white/[0.02] border border-white/[0.06] rounded-lg p-4 text-center">
                 <div className="text-3xl font-bold text-[#d6b46b] mb-2">{t('stats.projects')}</div>
                 <div className="text-sm text-[#9ea0a8]">{t('stats.projectsLabel')}</div>
-              </div>
+              </div> */}
               {/* <div className="bg-white/[0.02] border border-white/[0.06] rounded-lg p-4 text-center">
                 <div className="text-3xl font-bold text-[#d6b46b] mb-2">{t('stats.technologies')}</div>
                 <div className="text-sm text-[#9ea0a8]">{t('stats.technologiesLabel')}</div>
