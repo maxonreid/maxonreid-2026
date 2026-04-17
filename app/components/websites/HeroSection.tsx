@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import styles from './HeroSection.module.css';
 
@@ -10,40 +9,12 @@ const WA_HREF = `https://wa.me/${WA_NUMBER}?text=Hi%20Maxon%2C%20I%20would%20lik
 
 export default function HeroSection() {
   const t = useTranslations('websites.hero');
-  const mockupRef = useRef<HTMLDivElement>(null);
-  const [tilt, setTilt] = useState({ rx: 0, ry: 0 });
-  const [isHovering, setIsHovering] = useState(false);
-
-  function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
-    const el = mockupRef.current;
-    if (!el) return;
-    const { left, top, width, height } = el.getBoundingClientRect();
-    const x = (e.clientX - left) / width - 0.5;   // -0.5 → +0.5
-    const y = (e.clientY - top) / height - 0.5;
-    setTilt({ rx: -y * 12, ry: x * 16 });
-    setIsHovering(true);
-  }
-
-  function handleMouseLeave() {
-    setTilt({ rx: 0, ry: 0 });
-    setIsHovering(false);
-  }
-
-  function handleTouchMove(e: React.TouchEvent<HTMLDivElement>) {
-    const el = mockupRef.current;
-    if (!el) return;
-    const touch = e.touches[0];
-    const { left, top, width, height } = el.getBoundingClientRect();
-    const x = (touch.clientX - left) / width - 0.5;
-    const y = (touch.clientY - top) / height - 0.5;
-    setTilt({ rx: -y * 8, ry: x * 10 });
-    setIsHovering(true);
-  }
-
-  function handleTouchEnd() {
-    setTilt({ rx: 0, ry: 0 });
-    setIsHovering(false);
-  }
+  const headline = t('headline');
+  const headlineItalic = t('headlineItalic');
+  const hasHeadlinePlaceholder = headline.includes('...');
+  const [headlineStart, headlineEnd = ''] = hasHeadlinePlaceholder
+    ? headline.split('...')
+    : [headline, ''];
 
   return (
     <section className={styles.hero}>
@@ -51,8 +22,9 @@ export default function HeroSection() {
         <div className={styles.content}>
           <p className={styles.eyebrow}>{t('eyebrow')}</p>
           <h1 className={styles.headline}>
-            {t('headline')}{' '}
-            <em className={styles.italic}>{t('headlineItalic')}</em>
+            {headlineStart}
+            <em className={styles.italic}>{headlineItalic}</em>
+            {hasHeadlinePlaceholder ? headlineEnd : null}
           </h1>
           <p className={styles.sub}>
             {t('sub')}
@@ -73,18 +45,7 @@ export default function HeroSection() {
 
         <div className={styles.illustrationWrap}>
           <div
-            ref={mockupRef}
             className={styles.browserMockup}
-            style={{
-              transform: `perspective(900px) rotateX(${tilt.rx}deg) rotateY(${tilt.ry}deg)`,
-              transition: isHovering
-                ? 'transform 0.12s ease-out'
-                : 'transform 0.55s ease-out',
-            }}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
           >
             {/* Chrome top bar */}
             <div className={styles.browserBar}>
