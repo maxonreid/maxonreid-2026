@@ -4,6 +4,7 @@ import Footer from '@/app/components/Footer';
 import HeroSection from '@/app/components/home/HeroSection';
 import WorkSection from '@/app/components/home/WorkSection';
 import AboutSection from '@/app/components/home/AboutSection';
+import SocialProofSection from '@/app/components/home/SocialProofSection';
 import BlogSection from '@/app/components/home/BlogSection';
 import ServicesSection from '@/app/components/home/ServicesSection';
 import ReferralSection from '@/app/components/home/ReferralSection';
@@ -115,6 +116,7 @@ export default async function HomePage({
         <HeroSection />
         <AboutSection />
         <WorkSection />
+        <SocialProofSection />
         <BlogSection />
         <ServicesSection />
         <ReferralSection />

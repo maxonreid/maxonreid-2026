@@ -1298,5 +1298,23 @@
       "talkButton": "Hablemos",
       "backToWork": "← Volver al Trabajo"
     }
+  },
+  "socialProof": {
+    "label": "[ RESULTADOS DE CLIENTES ]",
+    "title": "Lo que dicen los clientes.",
+    "subtitle": "Proyectos reales. Resultados medibles. Clientes que pueden hablar por sí mismos.",
+    "testimonials": [
+      {
+        "quote": "Ahora sabemos exactamente quién visita nuestro sitio, de dónde vienen y qué miran. El panel de análisis cambió por completo cómo pensamos en nuestro marketing.",
+        "author": "Mr. Lath",
+        "role": "Fundador, Lao Mai Travel"
+      },
+      {
+        "quote": "Antes gestionábamos todo en WhatsApp y hojas de cálculo. Ahora todo el equipo inicia sesión, actualiza propiedades y hace seguimiento de negocios desde un solo lugar.",
+        "author": "Ping Silavong",
+        "role": "Director, PM Real Estate"
+      }
+    ],
+    "viewProject": "Ver proyecto"
   }
 }

@@ -49,10 +49,11 @@ export default function CarePlans() {
               <Image
                 src="/images/websites/maxon-torres-coding-on-the-train.jpg"
                 alt="Wherever I am, I make sure your business keeps running without interruptions."
-                width={1100}
-                height={733}
+                width={733}
+                height={1100}
                 className={styles.mediaImage}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 560px"
+                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 40vw, 380px"
+                style={{ objectFit: 'cover', objectPosition: 'center 15%' }}
               />
             </div>
             <figcaption className={styles.mediaCaption}>Wherever I am, I make sure your business keeps running without interruptions.</figcaption>

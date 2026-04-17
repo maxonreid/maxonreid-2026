@@ -1294,5 +1294,23 @@
       "talkButton": "Let's Talk",
       "backToWork": "← Back to Work"
     }
+  },
+  "socialProof": {
+    "label": "[ CLIENT RESULTS ]",
+    "title": "What clients say.",
+    "subtitle": "Real projects. Measurable outcomes. Clients who can speak for themselves.",
+    "testimonials": [
+      {
+        "quote": "Max helped us set up our professional website for our business. The web analytics are very useful, now we know where people visit us from and what they are interested in.",
+        "author": "Mr. Lath",
+        "role": "Founder, Lao Mai Travel"
+      },
+      {
+        "quote": "With the platform that Mr. Max made, I can now manage my Real Estate Business from my phone and the customers can see the properties by themselves and download the app.",
+        "author": "Ping",
+        "role": "Main Agent, PM Real Estate"
+      }
+    ],
+    "viewProject": "View project"
   }
 }

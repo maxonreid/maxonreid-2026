@@ -1,0 +1,203 @@
+.section {
+  padding: 96px 0;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+.inner {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Header ─────────────────────────────────────────── */
+.header {
+  margin-bottom: 56px;
+}
+
+.sectionLabel {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9ea0a8;
+  margin: 0 0 16px;
+}
+
+.title {
+  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #e6e7ea;
+  margin: 0 0 12px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.65;
+  color: #9ea0a8;
+  margin: 0;
+  max-width: 560px;
+}
+
+/* ── Testimonial grid ───────────────────────────────── */
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 0.5px solid rgba(255, 255, 255, 0.06);
+}
+
+.card {
+  background-color: #0a0a0c;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: background-color 0.25s ease;
+}
+
+.card:hover {
+  background-color: rgba(214, 180, 107, 0.03);
+}
+
+/* ── Quote ──────────────────────────────────────────── */
+.quote {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #e6e7ea;
+  margin: 0;
+  flex: 1;
+}
+
+.quoteOpenMark {
+  font-family: var(--font-playfair), serif;
+  font-size: 3rem;
+  color: rgba(214, 180, 107, 0.2);
+  line-height: 0;
+  vertical-align: -0.6rem;
+  margin-right: 2px;
+}
+
+/* ── Card footer ────────────────────────────────────── */
+.cardFooter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.06);
+  flex-wrap: wrap;
+}
+
+.projectLink {
+  margin-left: auto;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #d6b46b;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.projectLink:hover {
+  color: #b99046;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid rgba(214, 180, 107, 0.2);
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.authorName {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #e6e7ea;
+  display: block;
+}
+
+.authorRole {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9ea0a8;
+  display: block;
+}
+
+/* ── Scroll-reveal animations ───────────────────────── */
+.cardHidden {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.cardVisible {
+  animation: reveal-fade-up 0.6s ease-out both;
+  animation-delay: calc(var(--i, 0) * 120ms);
+}
+
+@keyframes reveal-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Responsive ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 28px 20px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+/* ── Reduced motion ─────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .cardHidden {
+    opacity: 1;
+    transform: none;
+  }
+
+  .cardVisible {
+    animation: none;
+  }
+
+  .card {
+    transition: none;
+  }
+}
