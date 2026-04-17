@@ -10,8 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/about', priority: 0.8, freq: 'monthly' },
     { path: '/articles', priority: 0.8, freq: 'weekly' },
     { path: '/cv', priority: 0.8, freq: 'monthly' },
+    { path: '/websites', priority: 0.8, freq: 'monthly' },
   ]
-  const projectSlugs = ['orderbridge', 'tourism-website-seo']
+  const projectSlugs = ['orderbridge', 'tourism-website-seo', 'real-estate-website-laos']
   const publishedArticles = articles.filter((a) => a.published)
 
   return [
