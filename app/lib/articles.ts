@@ -21,7 +21,8 @@ export const articles: Article[] = [
     date: 'Apr 18, 2026',
     readTime: '4 min',
     tags: ['Business', 'Web Design', 'Vientiane', 'SEO', 'Laos', 'Website', 'Digital Marketing'],
-    image: '/images/articles/why-businesses-in-vientiane-need-a-website/pmlaos-on-google-results.png',
+    image: '/images/projects/laomaitravel/hero-section.png',
+
     category: 'experience',
     published: true,
   },
