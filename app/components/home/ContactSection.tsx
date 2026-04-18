@@ -64,6 +64,14 @@ export default function ContactSection() {
                 <a href="https://www.linkedin.com/in/maxontorres/" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
                   {t('links.linkedin')}
                 </a>
+                <span className="text-[#9ea0a8]">·</span>
+                <a href="https://www.facebook.com/maxontorresweb" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
+                  Facebook
+                </a>
+                <span className="text-[#9ea0a8]">·</span>
+                <a href="https://www.instagram.com/maxontorresweb/" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
+                  Instagram
+                </a>
               </div>
             </div>
           </div>
