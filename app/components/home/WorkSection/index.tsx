@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import ProjectCard from './ProjectCard';
+import SectionContainer from '@/app/components/shared/SectionContainer';
 
 export default function WorkSection() {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -76,13 +77,9 @@ export default function WorkSection() {
       : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section
-      id="work"
-      className="py-24 px-0 w-[92%] max-w-[1200px] mx-auto"
-      aria-labelledby="work-heading"
-    >
+    <SectionContainer id="work" ariaLabelledBy="work-heading">
       <div className="mb-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-        <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold">
+        <div className="font-mono text-sm text-text-secondary tracking-[8px] font-semibold">
           {t('sectionLabel')}
         </div>
 
@@ -95,8 +92,8 @@ export default function WorkSection() {
               aria-controls="projects-grid"
               className={`px-4 py-2 rounded-lg border font-mono text-sm transition-all ${
                 activeFilter === cat.id
-                  ? 'bg-[#d6b46b]/10 border-[#d6b46b] text-[#d6b46b]'
-                  : 'bg-transparent border-white/[0.06] text-[#9ea0a8] hover:border-[#d6b46b]/50 hover:text-[#e6e7ea]'
+                  ? 'bg-[#d6b46b]/10 border-[#d6b46b] text-gold'
+                  : 'bg-transparent border-white/[0.06] text-text-secondary hover:border-[#d6b46b]/50 hover:text-text-primary'
               }`}
               onClick={() => setActiveFilter(cat.id)}
             >
@@ -122,9 +119,9 @@ export default function WorkSection() {
 
       {filteredProjects.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-[#9ea0a8]">{t('noProjects')}</p>
+          <p className="text-text-secondary">{t('noProjects')}</p>
         </div>
       )}
-    </section>
+    </SectionContainer>
   );
 }

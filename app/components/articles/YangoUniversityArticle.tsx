@@ -1,25 +1,14 @@
-import type { ReactNode } from 'react';
 import Image from 'next/image';
 import { Link } from '@/routing';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import { getTranslations } from 'next-intl/server';
 import { articles } from '@/app/lib/articles';
+import { toISODate } from '@/app/lib/articleUtils';
+import SectionLabel from './shared/SectionLabel';
+import ArticleCallout from './shared/ArticleCallout';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com';
-
-function toISODate(value: string) {
-  const parsed = new Date(value);
-  return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
-}
-
-function SectionLabel({ children }: { children: ReactNode }) {
-  return (
-    <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-4">
-      {children}
-    </div>
-  );
-}
 
 export default async function YangoUniversityArticle({
   locale,
@@ -97,34 +86,34 @@ export default async function YangoUniversityArticle({
 
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-10">
-            <ol className="flex items-center gap-2 font-mono text-sm text-[#9ea0a8]">
-              <li><Link href="/" className="hover:text-[#d6b46b] transition-colors">{t('breadcrumbHome')}</Link></li>
+            <ol className="flex items-center gap-2 font-mono text-sm text-text-secondary">
+              <li><Link href="/" className="hover:text-gold transition-colors">{t('breadcrumbHome')}</Link></li>
               <li aria-hidden="true">/</li>
-              <li><Link href="/articles" className="hover:text-[#d6b46b] transition-colors">{t('breadcrumbArticles')}</Link></li>
+              <li><Link href="/articles" className="hover:text-gold transition-colors">{t('breadcrumbArticles')}</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-[#d6b46b] truncate max-w-[200px]" aria-current="page">{t('breadcrumbCurrent')}</li>
+              <li className="text-gold truncate max-w-[200px]" aria-current="page">{t('breadcrumbCurrent')}</li>
             </ol>
           </nav>
 
           {/* Tags + meta */}
           <div className="flex flex-wrap items-center gap-3 mb-6">
             {article.tags.map((tag) => (
-              <span key={tag} className="font-mono text-xs border border-white/[0.06] text-[#9ea0a8] px-3 py-1 rounded-full" itemProp="keywords">
+              <span key={tag} className="font-mono text-xs border border-white/[0.06] text-text-secondary px-3 py-1 rounded-full" itemProp="keywords">
                 {tag}
               </span>
             ))}
-            <time dateTime={publishedTime} itemProp="datePublished" className="font-mono text-xs text-[#9ea0a8]">
+            <time dateTime={publishedTime} itemProp="datePublished" className="font-mono text-xs text-text-secondary">
               {article.date} · {tBlog('readTime', { time: article.readTime })}
             </time>
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-[#e6e7ea] leading-tight mb-6" itemProp="headline">
-            {t('titleMain')} <span className="text-[#d6b46b]">{t('titleHighlight')}</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-text-primary leading-tight mb-6" itemProp="headline">
+            {t('titleMain')} <span className="text-gold">{t('titleHighlight')}</span>
           </h1>
 
           {/* Lede */}
-          <p className="text-xl text-[#9ea0a8] leading-relaxed mb-12 max-w-2xl" itemProp="abstract">
+          <p className="text-xl text-text-secondary leading-relaxed mb-12 max-w-2xl" itemProp="abstract">
             {t('lede')}
           </p>
 
@@ -150,7 +139,7 @@ export default async function YangoUniversityArticle({
           {/* Section: Teaching the Foundations */}
           <section>
             <SectionLabel>{t('curriculum.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6" itemProp="alternativeHeadline">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6" itemProp="alternativeHeadline">
               {t('curriculum.heading')}
             </h2>
             <div className="prose-article mb-8">
@@ -161,8 +150,8 @@ export default async function YangoUniversityArticle({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
               {topics.map((topic) => (
                 <div key={topic} className="flex gap-3 bg-white/[0.02] border border-white/[0.06] rounded-xl p-4">
-                  <span className="text-[#d6b46b] mt-0.5 shrink-0 font-mono text-sm">→</span>
-                  <span className="text-sm text-[#e6e7ea]">{topic}</span>
+                  <span className="text-gold mt-0.5 shrink-0 font-mono text-sm">→</span>
+                  <span className="text-sm text-text-primary">{topic}</span>
                 </div>
               ))}
             </div>
@@ -184,7 +173,7 @@ export default async function YangoUniversityArticle({
               className="w-full object-cover"
               itemProp="url contentUrl"
             />
-            <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
+            <figcaption className="font-mono text-xs text-text-secondary text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
               {t('figStudentPresenting')}
             </figcaption>
             <meta itemProp="description" content="Student presenting at Yango University" />
@@ -193,7 +182,7 @@ export default async function YangoUniversityArticle({
           {/* Section: Teaching in a Different Culture */}
           <section>
             <SectionLabel>{t('challenge.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('challenge.heading')}
             </h2>
             <div className="prose-article">
@@ -234,7 +223,7 @@ export default async function YangoUniversityArticle({
           {/* Section: Why Teaching Makes You Better */}
           <section>
             <SectionLabel>{t('insight.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('insight.heading')}
             </h2>
             <div className="prose-article mb-8">
@@ -245,8 +234,8 @@ export default async function YangoUniversityArticle({
             <div className="space-y-3 mb-8">
               {concepts.map((concept) => (
                 <div key={concept} className="flex gap-3 bg-white/[0.02] border border-white/[0.06] rounded-xl p-4">
-                  <span className="text-[#d6b46b] mt-0.5 shrink-0 font-mono text-sm">→</span>
-                  <span className="text-sm text-[#e6e7ea]">{concept}</span>
+                  <span className="text-gold mt-0.5 shrink-0 font-mono text-sm">→</span>
+                  <span className="text-sm text-text-primary">{concept}</span>
                 </div>
               ))}
             </div>
@@ -258,9 +247,9 @@ export default async function YangoUniversityArticle({
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {benefits.map((benefit) => (
-                <div key={benefit.title} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/30 transition-colors">
-                  <h3 className="text-sm font-bold text-[#e6e7ea] mb-1">{benefit.title}</h3>
-                  <p className="text-xs text-[#9ea0a8] leading-relaxed">{benefit.desc}</p>
+                <div key={benefit.title} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-gold/30 transition-colors">
+                  <h3 className="text-sm font-bold text-text-primary mb-1">{benefit.title}</h3>
+                  <p className="text-xs text-text-secondary leading-relaxed">{benefit.desc}</p>
                 </div>
               ))}
             </div>
@@ -281,7 +270,7 @@ export default async function YangoUniversityArticle({
               className="w-full object-cover"
               itemProp="url contentUrl"
             />
-            <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
+            <figcaption className="font-mono text-xs text-text-secondary text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
               {t('figStudentsPresenting')}
             </figcaption>
             <meta itemProp="description" content="Students presenting at Yango University" />
@@ -290,7 +279,7 @@ export default async function YangoUniversityArticle({
           {/* Section: A Global Industry */}
           <section>
             <SectionLabel>{t('perspective.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('perspective.heading')}
             </h2>
             <div className="prose-article">
@@ -312,7 +301,7 @@ export default async function YangoUniversityArticle({
               className="w-full object-cover"
               itemProp="url contentUrl"
             />
-            <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
+            <figcaption className="font-mono text-xs text-text-secondary text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
               {t('figCollaborative')}
             </figcaption>
             <meta itemProp="description" content="Collaborative coding at Yango University" />
@@ -321,7 +310,7 @@ export default async function YangoUniversityArticle({
           {/* Section: Looking Back */}
           <section>
             <SectionLabel>{t('reflection.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('reflection.heading')}
             </h2>
             <div className="prose-article">
@@ -329,34 +318,33 @@ export default async function YangoUniversityArticle({
               <p>{t('reflection.p2')}</p>
             </div>
 
-            <div className="my-8 bg-[#d6b46b]/5 border-l-2 border-[#d6b46b] rounded-r-xl p-6">
-              <p className="font-mono text-sm text-[#9ea0a8] mb-1">{t('reflection.calloutLabel')}</p>
-              <p className="text-[#e6e7ea] text-lg leading-relaxed">{t('reflection.calloutText')}</p>
-            </div>
+            <ArticleCallout label={t('reflection.calloutLabel')}>
+              {t('reflection.calloutText')}
+            </ArticleCallout>
           </section>
 
           {/* CTA */}
           <section className="border-t border-white/[0.06] pt-16">
-            <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-6">
+            <div className="font-mono text-sm text-text-secondary tracking-[8px] font-semibold mb-6">
               {t('cta.label')}
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
               {t('cta.heading')}
             </h2>
-            <p className="text-[#9ea0a8] mb-10 leading-relaxed max-w-xl">
+            <p className="text-text-secondary mb-10 leading-relaxed max-w-xl">
               {t('cta.subtitle')}
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/articles"
-                className="inline-flex items-center gap-2 bg-[#d6b46b] text-[#0a0a0c] px-6 py-3 rounded-lg font-semibold hover:bg-[#b99046] transition-colors"
+                className="inline-flex items-center gap-2 bg-gold text-bg-dark px-6 py-3 rounded-lg font-semibold hover:bg-gold-strong transition-colors"
               >
                 {t('cta.viewAll')}
                 <span aria-hidden="true">→</span>
               </Link>
               <Link
                 href="/"
-                className="inline-flex items-center gap-2 border border-white/[0.06] text-[#9ea0a8] px-6 py-3 rounded-lg font-mono text-sm hover:border-[#d6b46b]/50 hover:text-[#e6e7ea] transition-all"
+                className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-6 py-3 rounded-lg font-mono text-sm hover:border-gold/50 hover:text-text-primary transition-all"
               >
                 {t('cta.backHome')}
               </Link>

@@ -2,6 +2,7 @@
 
 import { useState, useTransition, useRef, useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import { US, LA, MX } from 'country-flag-icons/react/3x2';
 
 export default function LanguageSwitcher() {
@@ -11,9 +12,7 @@ export default function LanguageSwitcher() {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const router = useRouter();
-
-  // Detect current locale from pathname
-  const currentLocale = pathname?.startsWith('/lo') ? 'lo' : pathname?.startsWith('/es') ? 'es' : 'en';
+  const currentLocale = useLocale();
 
   const languages = [
     { code: 'en', label: 'English', flag: US },

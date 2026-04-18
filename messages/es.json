@@ -1060,12 +1060,19 @@
       "analyticsExplainer": "El tráfico web te dice quién está visitando, de dónde son y qué están mirando. Convierte adivinar en saber — para que puedas enfocar tu tiempo y dinero en lo que realmente funciona."
     },
     "pwa": {
-      "eyebrow": "Aplicaciones web de plataforma",
+      "eyebrow": "Funciona como una app en tu teléfono",
       "title": "Gestiona tu negocio",
       "titleItalic": "desde cualquier lugar.",
-      "body1": "Tu plataforma funciona como una aplicación en tu teléfono. No se requiere descarga. Consulta listados, actualiza inventario y responde a clientes potenciales desde donde estés.",
-      "body2": "Agrégala a tu pantalla de inicio y se abre al instante, como cualquier otra aplicación. Funciona en iPhone y Android.",
-      "chip": "No se necesita App Store"
+      "body1": "Tu página web funciona como una app en tu teléfono. Sin descargas, sin app store. Revisa tu negocio, responde clientes y actualiza tu información desde donde estés.",
+      "body2": "Agrégala a tu teléfono con un toque. Se abre al instante. Funciona en iPhone y Android.",
+      "chip": "No se necesita App Store",
+      "features": [
+        "Funciona aunque el internet sea lento o no haya",
+        "Agrégala al teléfono — sin App Store",
+        "Recibe aviso cuando algo cambie",
+        "Se abre al instante, siempre"
+      ],
+      "cta": "Pide una demo gratis para tu negocio"
     },
     "pricing": {
       "eyebrow": "Inversión",
@@ -1152,6 +1159,13 @@
       "sub2": "Solo 10 minutos en WhatsApp y sabrás exactamente dónde está tu sitio.",
       "cta": "Escríbeme en WhatsApp →",
       "note": "¿Prefieres correo? hello@maxontorres.com"
+    },
+    "meta": {
+      "title": "Diseño y Desarrollo Web en Vientiane | Maxon Torres",
+      "description": "Sitios web modernos y rápidos para pequeñas empresas en Laos, América Latina y más. Optimizados para SEO, mobile-first, multilingüe. Desde $400.",
+      "ogTitle": "Diseño y Desarrollo Web | Maxon Torres",
+      "ogDescription": "Sitios web modernos para pequeñas empresas. Listos para SEO, mobile-first, multilingüe. Desde $400.",
+      "ogImageAlt": "Diseño y Desarrollo Web | Maxon Torres"
     }
   },
   "pmlaosCaseStudy": {

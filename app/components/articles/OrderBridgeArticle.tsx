@@ -1,25 +1,20 @@
-import type { ReactNode } from 'react';
 import Image from 'next/image';
 import { Link } from '@/routing';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import { getTranslations } from 'next-intl/server';
 import { articles } from '@/app/lib/articles';
+import { toISODate } from '@/app/lib/articleUtils';
+import SectionLabel from './shared/SectionLabel';
+import ArticleCallout from './shared/ArticleCallout';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com';
 
-function toISODate(value: string) {
-  const parsed = new Date(value);
-  return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
-}
-
-function SectionLabel({ children }: { children: ReactNode }) {
-  return (
-    <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-4">
-      {children}
-    </div>
-  );
-}
+const githubIcon = (
+  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+  </svg>
+);
 
 export default async function OrderBridgeArticle({
   locale,
@@ -84,12 +79,6 @@ export default async function OrderBridgeArticle({
     ],
   };
 
-  const githubIcon = (
-    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-    </svg>
-  );
-
   const sourceReposWithUrls = [
     { ...sourceRepos[0], url: 'https://github.com/maxonreid/orderbridge-api' },
     { ...sourceRepos[1], url: 'https://github.com/maxonreid/orderbridge-dashboard/' },
@@ -120,35 +109,35 @@ export default async function OrderBridgeArticle({
 
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-10">
-            <ol className="flex items-center gap-2 font-mono text-sm text-[#9ea0a8]">
-              <li><Link href="/" className="hover:text-[#d6b46b] transition-colors">{t('breadcrumbHome')}</Link></li>
+            <ol className="flex items-center gap-2 font-mono text-sm text-text-secondary">
+              <li><Link href="/" className="hover:text-gold transition-colors">{t('breadcrumbHome')}</Link></li>
               <li aria-hidden="true">/</li>
-              <li><Link href="/articles" className="hover:text-[#d6b46b] transition-colors">{t('breadcrumbArticles')}</Link></li>
+              <li><Link href="/articles" className="hover:text-gold transition-colors">{t('breadcrumbArticles')}</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-[#d6b46b] truncate max-w-[200px]" aria-current="page">{t('breadcrumbCurrent')}</li>
+              <li className="text-gold truncate max-w-[200px]" aria-current="page">{t('breadcrumbCurrent')}</li>
             </ol>
           </nav>
 
           {/* Tags + meta */}
           <div className="flex flex-wrap items-center gap-3 mb-6">
             {article.tags.map((tag) => (
-              <span key={tag} className="font-mono text-xs border border-white/[0.06] text-[#9ea0a8] px-3 py-1 rounded-full" itemProp="keywords">
+              <span key={tag} className="font-mono text-xs border border-white/[0.06] text-text-secondary px-3 py-1 rounded-full" itemProp="keywords">
                 {tag}
               </span>
             ))}
-            <time dateTime={publishedTime} itemProp="datePublished" className="font-mono text-xs text-[#9ea0a8]">
+            <time dateTime={publishedTime} itemProp="datePublished" className="font-mono text-xs text-text-secondary">
               {article.date} · {tBlog('readTime', { time: article.readTime })}
             </time>
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-[#e6e7ea] leading-tight mb-6" itemProp="headline">
+          <h1 className="text-4xl md:text-5xl font-bold text-text-primary leading-tight mb-6" itemProp="headline">
             {t('titleMain')}{' '}
-            <span className="text-[#d6b46b]">{t('titleHighlight')}</span>
+            <span className="text-gold">{t('titleHighlight')}</span>
           </h1>
 
           {/* Lede */}
-          <p className="text-xl text-[#9ea0a8] leading-relaxed mb-12 max-w-2xl" itemProp="abstract">
+          <p className="text-xl text-text-secondary leading-relaxed mb-12 max-w-2xl" itemProp="abstract">
             {t('lede')}
           </p>
 
@@ -187,7 +176,7 @@ export default async function OrderBridgeArticle({
           {/* Section: The Brief */}
           <section>
             <SectionLabel>{t('brief.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6" itemProp="alternativeHeadline">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6" itemProp="alternativeHeadline">
               {t('brief.heading')}
             </h2>
             <div className="prose-article mb-8">
@@ -198,32 +187,32 @@ export default async function OrderBridgeArticle({
             <div className="bg-white/[0.02] border border-white/[0.06] rounded-2xl overflow-hidden mb-8">
               <div className="border-b border-white/[0.06] px-6 py-5 flex items-start justify-between gap-4">
                 <div>
-                  <p className="font-mono text-xs text-[#9ea0a8] mb-1">{t('brief.proposalLabel')}</p>
-                  <h3 className="text-lg font-bold text-[#e6e7ea]">{t('brief.proposalTitle')}</h3>
-                  <p className="font-mono text-xs text-[#9ea0a8] mt-1">{t('brief.proposalSubtitle')}</p>
+                  <p className="font-mono text-xs text-text-secondary mb-1">{t('brief.proposalLabel')}</p>
+                  <h3 className="text-lg font-bold text-text-primary">{t('brief.proposalTitle')}</h3>
+                  <p className="font-mono text-xs text-text-secondary mt-1">{t('brief.proposalSubtitle')}</p>
                 </div>
                 <div className="text-right shrink-0">
-                  <p className="font-mono text-xs text-[#9ea0a8]">Maximiliano B. Torres</p>
-                  <p className="font-mono text-xs text-[#9ea0a8]">February 27, 2026</p>
+                  <p className="font-mono text-xs text-text-secondary">Maximiliano B. Torres</p>
+                  <p className="font-mono text-xs text-text-secondary">February 27, 2026</p>
                 </div>
               </div>
 
               <div className="p-6 space-y-6">
                 <div>
-                  <p className="font-mono text-xs text-[#d6b46b] mb-2">{t('brief.descriptionLabel')}</p>
-                  <p className="text-sm text-[#9ea0a8] leading-relaxed">{t('brief.descriptionText')}</p>
+                  <p className="font-mono text-xs text-gold mb-2">{t('brief.descriptionLabel')}</p>
+                  <p className="text-sm text-text-secondary leading-relaxed">{t('brief.descriptionText')}</p>
                 </div>
 
                 <div>
-                  <p className="font-mono text-xs text-[#d6b46b] mb-2">{t('brief.objectiveLabel')}</p>
-                  <p className="text-sm text-[#9ea0a8] leading-relaxed mb-3">{t('brief.objectiveText')}</p>
+                  <p className="font-mono text-xs text-gold mb-2">{t('brief.objectiveLabel')}</p>
+                  <p className="text-sm text-text-secondary leading-relaxed mb-3">{t('brief.objectiveText')}</p>
                   <div className="space-y-2">
                     {objectives.map((item) => (
                       <div key={item.label} className="flex gap-3 text-sm">
-                        <span className="text-[#d6b46b] mt-0.5 shrink-0">→</span>
+                        <span className="text-gold mt-0.5 shrink-0">→</span>
                         <span>
-                          <span className="text-[#e6e7ea] font-medium">{item.label}:</span>{' '}
-                          <span className="text-[#9ea0a8]">{item.desc}</span>
+                          <span className="text-text-primary font-medium">{item.label}:</span>{' '}
+                          <span className="text-text-secondary">{item.desc}</span>
                         </span>
                       </div>
                     ))}
@@ -231,14 +220,14 @@ export default async function OrderBridgeArticle({
                 </div>
 
                 <div>
-                  <p className="font-mono text-xs text-[#d6b46b] mb-3">{t('brief.architectureLabel')}</p>
+                  <p className="font-mono text-xs text-gold mb-3">{t('brief.architectureLabel')}</p>
                   <div className="flex flex-wrap items-center gap-2">
                     {archNodes.map((node, i, arr) => (
                       <div key={node} className="flex items-center gap-2">
-                        <div className={`font-mono text-xs px-3 py-1.5 rounded-lg border ${i === 2 ? 'bg-[#d6b46b]/10 border-[#d6b46b]/40 text-[#d6b46b]' : 'border-white/[0.06] text-[#9ea0a8]'}`}>
+                        <div className={`font-mono text-xs px-3 py-1.5 rounded-lg border ${i === 2 ? 'bg-gold/10 border-gold/40 text-gold' : 'border-white/[0.06] text-text-secondary'}`}>
                           {node}
                         </div>
-                        {i < arr.length - 1 && <span className="text-[#9ea0a8]/40 text-xs">→</span>}
+                        {i < arr.length - 1 && <span className="text-text-secondary/40 text-xs">→</span>}
                       </div>
                     ))}
                   </div>
@@ -247,31 +236,31 @@ export default async function OrderBridgeArticle({
             </div>
 
             {/* Timeline */}
-            <h3 className="text-lg font-bold text-[#e6e7ea] mb-4">{t('brief.timelineHeading')}</h3>
+            <h3 className="text-lg font-bold text-text-primary mb-4">{t('brief.timelineHeading')}</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               {weeks.map((w) => (
-                <div key={w.week} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/30 transition-colors">
-                  <p className="font-mono text-xs text-[#d6b46b] mb-1">{w.week}</p>
-                  <h4 className="text-sm font-bold text-[#e6e7ea] mb-3">{w.title}</h4>
-                  <p className="text-xs text-[#9ea0a8] leading-relaxed mb-1">
-                    <span className="text-[#e6e7ea]">{t('brief.goalLabel')}:</span> {w.goal}
+                <div key={w.week} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-gold/30 transition-colors">
+                  <p className="font-mono text-xs text-gold mb-1">{w.week}</p>
+                  <h4 className="text-sm font-bold text-text-primary mb-3">{w.title}</h4>
+                  <p className="text-xs text-text-secondary leading-relaxed mb-1">
+                    <span className="text-text-primary">{t('brief.goalLabel')}:</span> {w.goal}
                   </p>
-                  <p className="text-xs text-[#9ea0a8] leading-relaxed">
-                    <span className="text-[#e6e7ea]">{t('brief.resultLabel')}:</span> {w.result}
+                  <p className="text-xs text-text-secondary leading-relaxed">
+                    <span className="text-text-primary">{t('brief.resultLabel')}:</span> {w.result}
                   </p>
                 </div>
               ))}
             </div>
 
             {/* Core deliverables */}
-            <h3 className="text-lg font-bold text-[#e6e7ea] mb-4">{t('brief.deliverablesHeading')}</h3>
+            <h3 className="text-lg font-bold text-text-primary mb-4">{t('brief.deliverablesHeading')}</h3>
             <div className="space-y-3 mb-8">
               {deliverables.map((d) => (
                 <div key={d.name} className="flex gap-3 bg-white/[0.02] border border-white/[0.06] rounded-xl p-4">
-                  <span className="text-[#d6b46b] mt-0.5 shrink-0 font-mono text-sm">✓</span>
+                  <span className="text-gold mt-0.5 shrink-0 font-mono text-sm">✓</span>
                   <div className="text-sm">
-                    <span className="font-medium text-[#e6e7ea]">{d.name}</span>
-                    <span className="text-[#9ea0a8]"> — {d.desc}</span>
+                    <span className="font-medium text-text-primary">{d.name}</span>
+                    <span className="text-text-secondary"> — {d.desc}</span>
                   </div>
                 </div>
               ))}
@@ -279,12 +268,12 @@ export default async function OrderBridgeArticle({
 
             {/* Prerequisites */}
             <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 mb-8">
-              <p className="font-mono text-xs text-[#d6b46b] mb-3">{t('brief.prerequisitesLabel')}</p>
+              <p className="font-mono text-xs text-gold mb-3">{t('brief.prerequisitesLabel')}</p>
               <div className="space-y-2">
                 {prerequisites.map((req) => (
                   <div key={req} className="flex gap-3 text-sm">
-                    <span className="text-[#9ea0a8]/40 mt-0.5 shrink-0">—</span>
-                    <span className="text-[#9ea0a8]">{req}</span>
+                    <span className="text-text-secondary/40 mt-0.5 shrink-0">—</span>
+                    <span className="text-text-secondary">{req}</span>
                   </div>
                 ))}
               </div>
@@ -294,7 +283,7 @@ export default async function OrderBridgeArticle({
               href="/docs/projects/orderbridge/orderbridge-proposal.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-white/[0.06] text-[#9ea0a8] px-5 py-2.5 rounded-lg font-mono text-sm hover:border-[#d6b46b]/50 hover:text-[#e6e7ea] transition-all"
+              className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-5 py-2.5 rounded-lg font-mono text-sm hover:border-gold/50 hover:text-text-primary transition-all"
             >
               {t('brief.downloadProposal')}
             </a>
@@ -303,7 +292,7 @@ export default async function OrderBridgeArticle({
           {/* Section: The Pain Point */}
           <section>
             <SectionLabel>{t('painPoint.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('painPoint.heading')}
             </h2>
             <div className="prose-article">
@@ -315,14 +304,11 @@ export default async function OrderBridgeArticle({
               <p>{t('painPoint.p2')}</p>
             </div>
 
-            <div className="my-8 bg-[#d6b46b]/5 border-l-2 border-[#d6b46b] rounded-r-xl p-6">
-              <p className="font-mono text-sm text-[#9ea0a8] mb-1">{t('painPoint.mathLabel')}</p>
-              <p className="text-[#e6e7ea] text-lg leading-relaxed">
-                {t('painPoint.mathPre')}{' '}
-                <span className="text-[#d6b46b] font-bold">{t('painPoint.mathHighlight')}</span>{' '}
-                {t('painPoint.mathPost')}
-              </p>
-            </div>
+            <ArticleCallout label={t('painPoint.mathLabel')}>
+              {t('painPoint.mathPre')}{' '}
+              <span className="text-gold font-bold">{t('painPoint.mathHighlight')}</span>{' '}
+              {t('painPoint.mathPost')}
+            </ArticleCallout>
           </section>
 
           {/* Screenshot: Orders page */}
@@ -336,7 +322,7 @@ export default async function OrderBridgeArticle({
               className="w-full object-cover"
               itemProp="url contentUrl"
             />
-            <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
+            <figcaption className="font-mono text-xs text-text-secondary text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
               {t('figOrders')}
             </figcaption>
             <meta itemProp="description" content="OrderBridge orders page interface" />
@@ -345,7 +331,7 @@ export default async function OrderBridgeArticle({
           {/* Section: Engineering the Pipeline */}
           <section>
             <SectionLabel>{t('engineering.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('engineering.heading')}
             </h2>
             <div className="prose-article">
@@ -362,7 +348,7 @@ export default async function OrderBridgeArticle({
                 className="w-full object-cover"
                 itemProp="url contentUrl"
               />
-              <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
+              <figcaption className="font-mono text-xs text-text-secondary text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
                 {t('engineering.figDiagram')}
               </figcaption>
               <meta itemProp="description" content="OrderBridge system architecture diagram" />
@@ -370,10 +356,10 @@ export default async function OrderBridgeArticle({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
               {steps.map((s) => (
-                <div key={s.n} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/30 transition-colors group">
-                  <div className="font-mono text-3xl font-bold text-[#d6b46b]/20 group-hover:text-[#d6b46b]/40 transition-colors mb-3">{s.n}</div>
-                  <h3 className="text-sm font-bold text-[#e6e7ea] mb-1">{s.title}</h3>
-                  <p className="text-xs text-[#9ea0a8] leading-relaxed">{s.desc}</p>
+                <div key={s.n} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-gold/30 transition-colors group">
+                  <div className="font-mono text-3xl font-bold text-gold/20 group-hover:text-gold/40 transition-colors mb-3">{s.n}</div>
+                  <h3 className="text-sm font-bold text-text-primary mb-1">{s.title}</h3>
+                  <p className="text-xs text-text-secondary leading-relaxed">{s.desc}</p>
                 </div>
               ))}
             </div>
@@ -382,7 +368,7 @@ export default async function OrderBridgeArticle({
           {/* Section: The SRS */}
           <section>
             <SectionLabel>{t('process.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('process.heading')}
             </h2>
             <div className="prose-article mb-8">
@@ -391,12 +377,12 @@ export default async function OrderBridgeArticle({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {requirements.map((r) => (
-                <div key={r.label} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/30 transition-colors">
+                <div key={r.label} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-gold/30 transition-colors">
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="font-mono text-xs text-[#d6b46b] bg-[#d6b46b]/10 px-2 py-0.5 rounded">{r.label}</span>
-                    <span className="text-sm font-bold text-[#e6e7ea]">{r.title}</span>
+                    <span className="font-mono text-xs text-gold bg-gold/10 px-2 py-0.5 rounded">{r.label}</span>
+                    <span className="text-sm font-bold text-text-primary">{r.title}</span>
                   </div>
-                  <p className="text-xs text-[#9ea0a8] leading-relaxed">{r.desc}</p>
+                  <p className="text-xs text-text-secondary leading-relaxed">{r.desc}</p>
                 </div>
               ))}
             </div>
@@ -413,7 +399,7 @@ export default async function OrderBridgeArticle({
               className="w-full object-cover"
               itemProp="url contentUrl"
             />
-            <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
+            <figcaption className="font-mono text-xs text-text-secondary text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
               {t('figDashboard')}
             </figcaption>
             <meta itemProp="description" content="OrderBridge monitoring dashboard interface" />
@@ -422,16 +408,16 @@ export default async function OrderBridgeArticle({
           {/* Section: The Stack */}
           <section>
             <SectionLabel>{t('techStack.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-3">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-3">
               {t('techStack.heading')}
             </h2>
-            <p className="text-[#9ea0a8] mb-8 leading-relaxed">{t('techStack.subtitle')}</p>
+            <p className="text-text-secondary mb-8 leading-relaxed">{t('techStack.subtitle')}</p>
 
             <div className="space-y-4">
               {techItems.map((item) => (
-                <div key={item.name} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/30 transition-colors">
-                  <div className="font-mono text-sm font-semibold text-[#d6b46b] mb-2">{item.name}</div>
-                  <p className="text-sm text-[#9ea0a8] leading-relaxed">{item.body}</p>
+                <div key={item.name} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-gold/30 transition-colors">
+                  <div className="font-mono text-sm font-semibold text-gold mb-2">{item.name}</div>
+                  <p className="text-sm text-text-secondary leading-relaxed">{item.body}</p>
                 </div>
               ))}
             </div>
@@ -440,7 +426,7 @@ export default async function OrderBridgeArticle({
           {/* Section: Deployment */}
           <section>
             <SectionLabel>{t('deployment.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('deployment.heading')}
             </h2>
             <div className="prose-article mb-8">
@@ -448,36 +434,35 @@ export default async function OrderBridgeArticle({
             </div>
 
             <div className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 mb-8">
-              <p className="font-mono text-xs text-[#d6b46b] mb-5">{t('deployment.infrastructureLabel')}</p>
+              <p className="font-mono text-xs text-gold mb-5">{t('deployment.infrastructureLabel')}</p>
               <div className="space-y-3">
                 {services.map((s) => (
-                  <div key={s.service} className="flex gap-4 bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 hover:border-[#d6b46b]/30 transition-colors">
+                  <div key={s.service} className="flex gap-4 bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 hover:border-gold/30 transition-colors">
                     <div className="shrink-0 text-right w-16 pt-0.5">
-                      <span className="font-mono text-xs text-[#d6b46b]">{s.host}</span>
+                      <span className="font-mono text-xs text-gold">{s.host}</span>
                     </div>
                     <div className="w-px bg-white/[0.06] shrink-0" />
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-sm font-bold text-[#e6e7ea]">{s.service}</span>
-                        <span className="font-mono text-xs text-[#9ea0a8] border border-white/[0.06] px-2 py-0.5 rounded-full">{s.tag}</span>
+                        <span className="text-sm font-bold text-text-primary">{s.service}</span>
+                        <span className="font-mono text-xs text-text-secondary border border-white/[0.06] px-2 py-0.5 rounded-full">{s.tag}</span>
                       </div>
-                      <p className="text-xs text-[#9ea0a8] leading-relaxed">{s.detail}</p>
+                      <p className="text-xs text-text-secondary leading-relaxed">{s.detail}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-[#d6b46b]/5 border-l-2 border-[#d6b46b] rounded-r-xl p-6">
-              <p className="font-mono text-xs text-[#9ea0a8] mb-1">{t('deployment.whySeparateLabel')}</p>
-              <p className="text-[#e6e7ea] text-sm leading-relaxed">{t('deployment.whySeparate')}</p>
-            </div>
+            <ArticleCallout label={t('deployment.whySeparateLabel')}>
+              <span className="text-sm">{t('deployment.whySeparate')}</span>
+            </ArticleCallout>
           </section>
 
           {/* Section: The Hard Parts */}
           <section>
             <SectionLabel>{t('hardParts.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('hardParts.heading')}
             </h2>
             <div className="prose-article">
@@ -497,7 +482,7 @@ export default async function OrderBridgeArticle({
               className="w-full object-cover"
               itemProp="url contentUrl"
             />
-            <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
+            <figcaption className="font-mono text-xs text-text-secondary text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
               {t('figMockPos')}
             </figcaption>
             <meta itemProp="description" content="MockPOS order terminal interface" />
@@ -506,7 +491,7 @@ export default async function OrderBridgeArticle({
           {/* Section: Introducing OrderBridge */}
           <section>
             <SectionLabel>{t('portfolio.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('portfolio.heading')}
             </h2>
             <div className="prose-article">
@@ -515,14 +500,14 @@ export default async function OrderBridgeArticle({
 
             <div className="my-8 space-y-4">
               {portfolioReposWithUrls.map((repo) => (
-                <div key={repo.name} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/30 transition-colors">
+                <div key={repo.name} className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-gold/30 transition-colors">
                   <div className="flex items-center justify-between mb-2">
-                    <div className="font-mono text-sm font-semibold text-[#d6b46b]">{repo.name}</div>
-                    <a href={repo.github} target="_blank" rel="noopener noreferrer" className="text-[#9ea0a8] hover:text-[#d6b46b] transition-colors" aria-label={`View ${repo.name} on GitHub`}>
+                    <div className="font-mono text-sm font-semibold text-gold">{repo.name}</div>
+                    <a href={repo.github} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-gold transition-colors" aria-label={`View ${repo.name} on GitHub`}>
                       {githubIcon}
                     </a>
                   </div>
-                  <p className="text-sm text-[#9ea0a8] leading-relaxed">{repo.body}</p>
+                  <p className="text-sm text-text-secondary leading-relaxed">{repo.body}</p>
                 </div>
               ))}
             </div>
@@ -539,7 +524,7 @@ export default async function OrderBridgeArticle({
               className="w-full object-cover"
               itemProp="url contentUrl"
             />
-            <figcaption className="font-mono text-xs text-[#9ea0a8] text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
+            <figcaption className="font-mono text-xs text-text-secondary text-center py-3 border-t border-white/[0.06] bg-white/[0.02]">
               {t('figSimulator')}
             </figcaption>
             <meta itemProp="description" content="OrderBridge webhook simulator interface" />
@@ -548,18 +533,18 @@ export default async function OrderBridgeArticle({
           {/* Section: Source Code */}
           <section>
             <SectionLabel>{t('sourceCode.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('sourceCode.heading')}
             </h2>
-            <p className="text-[#9ea0a8] mb-8 leading-relaxed">{t('sourceCode.subtitle')}</p>
+            <p className="text-text-secondary mb-8 leading-relaxed">{t('sourceCode.subtitle')}</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               {sourceReposWithUrls.map((repo) => (
-                <a key={repo.url} href={repo.url} target="_blank" rel="noopener noreferrer" className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/50 hover:bg-white/[0.04] transition-all group">
+                <a key={repo.url} href={repo.url} target="_blank" rel="noopener noreferrer" className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-gold/50 hover:bg-white/[0.04] transition-all group">
                   <div className="flex items-start justify-between mb-2">
-                    <h3 className="text-sm font-bold text-[#e6e7ea] group-hover:text-[#d6b46b] transition-colors">{repo.title}</h3>
-                    <svg className="w-4 h-4 text-[#9ea0a8] group-hover:text-[#d6b46b] transition-colors flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <h3 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{repo.title}</h3>
+                    <svg className="w-4 h-4 text-text-secondary group-hover:text-gold transition-colors flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                   </div>
-                  <p className="text-xs text-[#9ea0a8] leading-relaxed group-hover:text-[#b8bcc4] transition-colors">{repo.desc}</p>
+                  <p className="text-xs text-text-secondary leading-relaxed group-hover:text-[#b8bcc4] transition-colors">{repo.desc}</p>
                 </a>
               ))}
             </div>
@@ -568,19 +553,19 @@ export default async function OrderBridgeArticle({
           {/* Section: Live Demos */}
           <section>
             <SectionLabel>{t('liveDemos.label')}</SectionLabel>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
               {t('liveDemos.heading')}
             </h2>
-            <p className="text-[#9ea0a8] mb-8 leading-relaxed">{t('liveDemos.subtitle')}</p>
+            <p className="text-text-secondary mb-8 leading-relaxed">{t('liveDemos.subtitle')}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               {demosWithUrls.map((demo) => (
-                <a key={demo.url} href={demo.url} target="_blank" rel="noopener noreferrer" className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/50 hover:bg-white/[0.04] transition-all group">
+                <a key={demo.url} href={demo.url} target="_blank" rel="noopener noreferrer" className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-gold/50 hover:bg-white/[0.04] transition-all group">
                   <div className="flex items-start justify-between mb-2">
-                    <h3 className="text-sm font-bold text-[#e6e7ea] group-hover:text-[#d6b46b] transition-colors">{demo.name}</h3>
+                    <h3 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{demo.name}</h3>
                     <span className="text-lg mt-0.5">🔗</span>
                   </div>
-                  <p className="text-xs text-[#9ea0a8] leading-relaxed group-hover:text-[#b8bcc4] transition-colors mb-3">{demo.desc}</p>
-                  <span className="inline-flex items-center gap-1 text-xs text-[#d6b46b] font-mono">{t('liveDemos.visitLabel')}</span>
+                  <p className="text-xs text-text-secondary leading-relaxed group-hover:text-[#b8bcc4] transition-colors mb-3">{demo.desc}</p>
+                  <span className="inline-flex items-center gap-1 text-xs text-gold font-mono">{t('liveDemos.visitLabel')}</span>
                 </a>
               ))}
             </div>
@@ -588,13 +573,13 @@ export default async function OrderBridgeArticle({
 
           {/* CTA */}
           <section className="border-t border-white/[0.06] pt-16">
-            <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-6">
+            <div className="font-mono text-sm text-text-secondary tracking-[8px] font-semibold mb-6">
               {t('cta.label')}
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#e6e7ea] mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
               {t('cta.heading')}
             </h2>
-            <p className="text-[#9ea0a8] mb-10 leading-relaxed max-w-xl">
+            <p className="text-text-secondary mb-10 leading-relaxed max-w-xl">
               {t('cta.subtitle')}
             </p>
             <div className="flex flex-wrap gap-4">
@@ -602,21 +587,21 @@ export default async function OrderBridgeArticle({
                 href="https://orderbridge.maxontorres.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#d6b46b] text-[#0a0a0c] px-6 py-3 rounded-lg font-semibold hover:bg-[#b99046] transition-colors"
+                className="inline-flex items-center gap-2 bg-gold text-bg-dark px-6 py-3 rounded-lg font-semibold hover:bg-gold-strong transition-colors"
               >
                 {t('cta.viewLiveDemo')}
                 <span aria-hidden="true">→</span>
               </a>
               <Link
                 href="/projects/orderbridge"
-                className="inline-flex items-center gap-2 border border-white/[0.06] text-[#9ea0a8] px-6 py-3 rounded-lg font-mono text-sm hover:border-[#d6b46b]/50 hover:text-[#e6e7ea] transition-all"
+                className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-6 py-3 rounded-lg font-mono text-sm hover:border-gold/50 hover:text-text-primary transition-all"
               >
                 {t('cta.fullCaseStudy')}
                 <span aria-hidden="true">↗</span>
               </Link>
               <Link
                 href="/articles"
-                className="inline-flex items-center gap-2 border border-white/[0.06] text-[#9ea0a8] px-6 py-3 rounded-lg font-mono text-sm hover:border-[#d6b46b]/50 hover:text-[#e6e7ea] transition-all"
+                className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-6 py-3 rounded-lg font-mono text-sm hover:border-gold/50 hover:text-text-primary transition-all"
               >
                 {t('cta.allArticles')}
               </Link>

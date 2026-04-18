@@ -99,7 +99,6 @@ export default async function AboutPage({
 
         <SkillsSection />
 
-        {/* CV Link Section TODO make this a component later */}
         <section className="w-[92%] max-w-[1200px] mx-auto py-16">
           <div className="relative overflow-hidden rounded-2xl border-2 border-[#d6b46b] bg-gradient-to-br from-[#d6b46b]/10 via-transparent to-[#d6b46b]/5 p-12 text-center backdrop-blur-sm">
             

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { usePathname, useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/routing';
 
 export default function Navbar() {
@@ -12,8 +12,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations('nav');
-
-  const locale = pathname?.startsWith('/lo') ? 'lo' : pathname?.startsWith('/es') ? 'es' : 'en';
+  const locale = useLocale();
 
   const normalizedPath = pathname?.replace(/\/$/, '') || '';
   const isHomePage = normalizedPath === `/${locale}` || normalizedPath === '' || normalizedPath === '/';

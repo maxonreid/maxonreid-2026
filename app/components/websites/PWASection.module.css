@@ -106,15 +106,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .phone {
   width: clamp(200px, 42vw, 260px);
   height: clamp(380px, 75vw, 510px);
-  background-color: #2a3f5f;
+  background-color: #1a1916;
   border: 0.5px solid rgba(200, 148, 58, 0.35);
   border-radius: 36px;
   position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,4 +274,65 @@
 @media (prefers-reduced-motion: reduce) {
   .contentHidden, .phoneHidden { opacity: 1; transform: none; }
   .contentVisible, .phoneVisible { animation: none; }
+}
+
+/* Ambient glow behind phone */
+.phoneGlow {
+  position: absolute;
+  width: 340px;
+  height: 420px;
+  background: radial-gradient(ellipse at center, rgba(200, 148, 58, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(32px);
+}
+
+/* Floating install badge */
+.installBadge {
+  position: absolute;
+  bottom: 40px;
+  right: -14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #0f0e0c;
+  border: 0.5px solid rgba(200, 148, 58, 0.45);
+  padding: 6px 10px;
+  z-index: 10;
+  pointer-events: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5), 0 0 12px rgba(200, 148, 58, 0.12);
+}
+
+.installBadgeIcon {
+  width: 14px;
+  height: 14px;
+  color: #c8943a;
+  flex-shrink: 0;
+}
+
+.installBadgeText {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e8e5df;
+  white-space: nowrap;
+}
+
+/* Per-child stagger animation */
+.staggerChild {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.staggerChildVisible {
+  animation: reveal-fade-up 0.55s ease-out both;
+  animation-delay: calc(var(--i, 0) * 90ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .staggerChild { opacity: 1; transform: none; }
+  .staggerChildVisible { animation: none; }
 }

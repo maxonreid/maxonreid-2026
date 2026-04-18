@@ -52,7 +52,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Terminal still looks ugly when locale is lao. ill deal with this later */}
         <div
           className={`${locale === 'lo' ? 'hidden lg:flex' : 'flex'} justify-center items-center`}
           aria-hidden="false"

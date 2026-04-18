@@ -5,7 +5,10 @@
   --font-mono: var(--font-geist-mono);
   --color-gold: #d6b46b;
   --color-gold-strong: #b99046;
-  
+  --color-text-primary: #e6e7ea;
+  --color-text-secondary: #9ea0a8;
+  --color-bg-dark: #0a0a0c;
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -55,6 +58,14 @@
     50%, 100% {
       opacity: 0;
     }
+  }
+}
+
+@layer components {
+  .card-hover {
+    @apply border border-white/[0.06] transition-all duration-300
+           hover:border-gold/50 hover:-translate-y-1
+           hover:shadow-[0_12px_40px_rgba(214,180,107,0.1)];
   }
 }
 
@@ -157,9 +168,15 @@
   }
 
   /* Gold accent text — darken for WCAG contrast on white */
-  .text-\[\#d6b46b\] {
+  .text-\[\#d6b46b\],
+  .text-gold {
     color: #8B6914 !important;
   }
+
+  /* Semantic token overrides */
+  .text-text-primary:not(.nav-link) { color: #000000 !important; }
+  .text-text-secondary:not(.nav-link) { color: #2d2f35 !important; }
+  .bg-bg-dark { background-color: #ffffff !important; }
 
   /* Step number decorators (20% / 40% opacity gold) — boost opacity on white */
   .text-\[\#d6b46b\]\/20 {
@@ -171,7 +188,8 @@
   }
 
   /* Gold hover borders — darken for visibility */
-  [class*="hover:border-[#d6b46b]"]:hover {
+  [class*="hover:border-[#d6b46b]"]:hover,
+  .card-hover:hover {
     border-color: rgba(139, 105, 20, 0.5) !important;
   }
 }

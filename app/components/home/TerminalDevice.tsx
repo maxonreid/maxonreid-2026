@@ -37,7 +37,7 @@ export default function TerminalDevice() {
         // Create terminal instance
         const term = new Terminal({
           cursorBlink: true,
-          fontFamily: 'var(--font-ibm-plex-mono), "JetBrains Mono", "Consolas", "Courier New", monospace',
+          fontFamily: '"IBM Plex Mono", "JetBrains Mono", "Consolas", "Courier New", monospace',
           fontSize: 14,
           lineHeight: 1.2,
           letterSpacing: 0,

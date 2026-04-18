@@ -1,32 +1,27 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import BlogCard from './BlogCard';
+import SectionContainer from '@/app/components/shared/SectionContainer';
 import { articles as allArticles } from '@/app/lib/articles';
 
 const articles = allArticles.slice(0, 3);
 
 export default function BlogSection() {
-  const pathname = usePathname();
-  const locale = pathname?.startsWith('/lo') ? '/lo' : '/en';
+  const locale = useLocale();
   const t = useTranslations('blog');
 
   return (
-    <section
-      id="blog"
-      className="py-24 px-0 w-[92%] max-w-[1200px] mx-auto"
-      aria-labelledby="blog-heading"
-    >
+    <SectionContainer id="blog" ariaLabelledBy="blog-heading">
       <div className="mb-12 text-center">
-        <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-4">
+        <div className="font-mono text-sm text-text-secondary tracking-[8px] font-semibold mb-4">
           {t('sectionLabel')} — {t('articleCount', { count: articles.length })}
         </div>
         <h2 id="blog-heading" className="text-4xl md:text-5xl font-bold mb-4">
           {t('title')}
         </h2>
-        <p className="text-xl text-[#9ea0a8] max-w-2xl mx-auto">
+        <p className="text-xl text-text-secondary max-w-2xl mx-auto">
           {t('subtitle')}
         </p>
       </div>
@@ -45,8 +40,8 @@ export default function BlogSection() {
 
       <div className="flex justify-center mt-12">
         <Link
-          href={`${locale}/articles`}
-          className="inline-flex items-center gap-2 py-3 px-6 rounded-lg bg-transparent border border-white/[0.06] text-[#e6e7ea] font-mono hover:border-[#d6b46b] hover:text-[#d6b46b] transition-all"
+          href={`/${locale}/articles`}
+          className="inline-flex items-center gap-2 py-3 px-6 rounded-lg bg-transparent border border-white/[0.06] text-text-primary font-mono hover:border-[#d6b46b] hover:text-gold transition-all"
           aria-label="View all articles"
         >
           <span>{t('viewAll')}</span>
@@ -68,6 +63,6 @@ export default function BlogSection() {
           </svg>
         </Link>
       </div>
-    </section>
+    </SectionContainer>
   );
 }

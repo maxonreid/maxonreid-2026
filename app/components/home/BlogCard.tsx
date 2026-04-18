@@ -2,8 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { ArrowRight } from 'lucide-react';
 
 import type { Article } from '@/app/lib/articles';
@@ -13,8 +12,7 @@ interface BlogCardProps {
 }
 
 export default function BlogCard({ article }: BlogCardProps) {
-  const pathname = usePathname();
-  const localePrefix = pathname?.startsWith('/lo') ? '/lo' : pathname?.startsWith('/es') ? '/es' : '/en';
+  const locale = useLocale();
   const t = useTranslations('blog');
   const tMeta = useTranslations('articlesMeta');
 
@@ -23,8 +21,8 @@ export default function BlogCard({ article }: BlogCardProps) {
   const excerpt = tMeta(`${slug}.excerpt`);
   
   return (
-    <Link href={`${localePrefix}/articles/${article.slug}`} className="block group">
-      <article className="relative bg-white/[0.02] border border-white/[0.06] rounded-xl overflow-hidden hover:border-[#d6b46b]/50 hover:-translate-y-1 transition-all hover:shadow-[0_12px_40px_rgba(214,180,107,0.1)]" tabIndex={0}>
+    <Link href={`/${locale}/articles/${article.slug}`} className="block group">
+      <article className="relative bg-white/[0.02] card-hover rounded-xl overflow-hidden" tabIndex={0}>
       <div className="relative aspect-video overflow-hidden">
         <Image
           fill
@@ -37,18 +35,18 @@ export default function BlogCard({ article }: BlogCardProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"></div>
       </div>
       <div className="p-6">
-        <div className="font-mono text-xs text-[#9ea0a8] mb-3 flex items-center gap-2">
+        <div className="font-mono text-xs text-text-secondary mb-3 flex items-center gap-2">
           <span>{article.date}</span>
           <span>·</span>
           <span>{t('readTime', { time: article.readTime })}</span>
         </div>
         
-        <h3 className="text-xl font-bold text-[#e6e7ea] mb-3 group-hover:text-[#d6b46b] transition-colors">
+        <h3 className="text-xl font-bold text-text-primary mb-3 group-hover:text-gold transition-colors">
           {title}
         </h3>
 
         <p
-          className="text-[#9ea0a8] leading-relaxed mb-4"
+          className="text-text-secondary leading-relaxed mb-4"
           id={`blog-excerpt-${article.id}`}
         >
           {excerpt}
@@ -67,7 +65,7 @@ export default function BlogCard({ article }: BlogCardProps) {
           </div>
           
           <div className="shrink-0">
-            <span className="font-mono text-sm text-[#d6b46b] inline-flex items-center gap-2 transition-transform duration-300 group-hover:translate-x-1">
+            <span className="font-mono text-sm text-gold inline-flex items-center gap-2 transition-transform duration-300 group-hover:translate-x-1">
               {t('readMore')}
               <ArrowRight size={13} className="transition-transform duration-300 group-hover:translate-x-0.5" />
             </span>

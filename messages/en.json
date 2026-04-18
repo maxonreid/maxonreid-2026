@@ -1060,12 +1060,19 @@
       "analyticsExplainer": "You will know who's visiting, where they're from, and what they're looking at."
     },
     "pwa": {
-      "eyebrow": "Progressive Web Apps",
+      "eyebrow": "Works like an app on your phone",
       "title": "Manage your business",
       "titleItalic": "from anywhere.",
-      "body1": "Your platform works like an app on your phone. No download required. Check listings, update inventory, and respond to customers from wherever you are.",
-      "body2": "Add it to your home screen and it opens instantly, just like any other app. Works on iPhone and Android.",
-      "chip": "No App Store needed"
+      "body1": "Your website works like an app on your phone. No download, no app store. Check your business, reply to customers, and update your info from anywhere.",
+      "body2": "Add it to your phone screen with one tap. Opens instantly. Works on iPhone and Android.",
+      "chip": "No App Store needed",
+      "features": [
+        "Works even with slow or no internet",
+        "Add to your phone — no App Store needed",
+        "Get notified when something changes",
+        "Opens instantly, every time"
+      ],
+      "cta": "Get a free demo for your business"
     },
     "pricing": {
       "eyebrow": "Investment",
@@ -1152,6 +1159,13 @@
       "sub2": "Just 10 minutes on WhatsApp and you'll know how I can help you.",
       "cta": "Message me on WhatsApp →",
       "note": "Prefer email? hello@MaxonTorres.com"
+    },
+    "meta": {
+      "title": "Web Design & Development Services in Vientiane | Maxon Torres",
+      "description": "Fast, modern websites and web apps for small businesses in Laos, Latin America, and beyond. SEO-optimised, mobile-first, multilingual. Starting at $400.",
+      "ogTitle": "Web Design & Development Services | Maxon Torres",
+      "ogDescription": "Fast, modern websites for small businesses. SEO-ready, mobile-first, multilingual. Starting at $400.",
+      "ogImageAlt": "Web Design & Development Services | Maxon Torres"
     }
   },
   "pmlaosCaseStudy": {

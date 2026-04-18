@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { articles } from '@/app/lib/articles';
-import OrderBridgeArticle from './OrderBridgeArticle';
-import YangoUniversityArticle from './YangoUniversityArticle';
+import { toISODate } from '@/app/lib/articleUtils';
+import OrderBridgeArticle from '@/app/components/articles/OrderBridgeArticle';
+import YangoUniversityArticle from '@/app/components/articles/YangoUniversityArticle';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com';
 
@@ -13,11 +14,6 @@ type ArticleRouteParams = {
 
 function getArticleBySlug(slug: string) {
   return articles.find((a) => a.slug === slug && a.published);
-}
-
-function toISODate(value: string) {
-  const parsed = new Date(value);
-  return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
 }
 
 export function generateStaticParams() {

@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import ServiceCard from './ServiceCard';
+import SectionContainer from '@/app/components/shared/SectionContainer';
 import { Globe, Monitor, Zap } from 'lucide-react';
 
 export default function ServicesSection() {
@@ -62,29 +63,22 @@ export default function ServicesSection() {
     },
   ];
 
-  const primaryServices = services;
-  const supportingServices = [];
-
   return (
-    <section
-      id="services"
-      className="py-24 px-0 w-[92%] max-w-[1200px] mx-auto"
-      aria-labelledby="services-heading"
-    >
+    <SectionContainer id="services" ariaLabelledBy="services-heading">
       <h2 id="services-heading" className="text-4xl md:text-5xl font-bold text-center mb-4">
         {t('title')}
       </h2>
-      <p className="text-xl text-[#9ea0a8] text-center max-w-2xl mx-auto mb-12">
+      <p className="text-xl text-text-secondary text-center max-w-2xl mx-auto mb-12">
         {t('subtitle')}
       </p>
       {subtitleSecondary && (
-        <p className="text-xl text-[#9ea0a8] text-center max-w-2xl mx-auto mb-12 -mt-8">
+        <p className="text-xl text-text-secondary text-center max-w-2xl mx-auto mb-12 -mt-8">
           {subtitleSecondary}
         </p>
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {primaryServices.map((service) => (
+        {services.map((service) => (
           <ServiceCard
             key={service.id}
             service={service}
@@ -93,6 +87,6 @@ export default function ServicesSection() {
           />
         ))}
       </div>
-    </section>
+    </SectionContainer>
   );
 }
