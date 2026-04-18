@@ -13,6 +13,19 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    id: 12,
+    slug: 'why-businesses-in-vientiane-need-a-website',
+    title: 'Why Businesses in Vientiane Need a Website',
+    excerpt:
+      'If your Vientiane business only has a Facebook page, you are losing customers. Here is why a proper website is no longer optional.',
+    date: 'Apr 18, 2026',
+    readTime: '4 min',
+    tags: ['Business', 'Web Design', 'Vientiane', 'SEO', 'Laos', 'Website', 'Digital Marketing'],
+    image: '/images/articles/why-businesses-in-vientiane-need-a-website/pmlaos-on-google-results.png',
+    category: 'experience',
+    published: true,
+  },
+  {
     id: 11,
     slug: 'teaching-web-development-china-yango-university',
     title: 'Teaching Web Development in China @ Yango University',

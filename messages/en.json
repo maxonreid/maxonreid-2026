@@ -12,6 +12,11 @@
     "brand": "MAXON TORRES",
     "location": "[ VIENTIANE : LAOS PDR ]  -  FREELANCE SOFTWARE DEVELOPER",
     "heroTitle": "I build websites that <highlight>get international buyers</highlight>.",
+    "heroTitlePrefix": "I build websites that",
+    "heroHighlights": [
+      "get international buyers",
+      "get worldwide customers and automate their operations"
+    ],
     "heroSub": "From high-converting websites to custom tools and automation, I help you grow without wasting time on manual work.",
     "ctaStart": "START A PROJECT",
     "ctaView": "VIEW MY WORK"
@@ -312,6 +317,10 @@
     "learnMore": "Learn More"
   },
   "articlesMeta": {
+    "why-businesses-in-vientiane-need-a-website": {
+      "title": "Why Businesses in Vientiane Need a Website",
+      "excerpt": "If you only have a Facebook page, you are losing customers. Here is why a proper website is no longer optional in a growing city like Vientiane."
+    },
     "teaching-web-development-china-yango-university": {
       "title": "Teaching Web Development in China @ Yango University",
       "excerpt": "How teaching HTML, CSS, and JavaScript fundamentals in Fuzhou, China taught me to be a better developer. Lessons on cross-cultural education, communication, and why strong fundamentals matter more than frameworks."
@@ -1068,7 +1077,7 @@
       "chip": "No App Store needed",
       "features": [
         "Works even with slow or no internet",
-        "Add to your phone — no App Store needed",
+        "Add to your phone - no App Store needed",
         "Get notified when something changes",
         "Opens instantly, every time"
       ],
@@ -1307,6 +1316,129 @@
       "subtitle": "I build web platforms for Vientiane businesses  -  property, tourism, services. Full-stack, multilingual, and built to be managed by the client, not a developer.",
       "talkButton": "Let's Talk",
       "backToWork": "← Back to Work"
+    }
+  },
+  "vientianeWebsiteArticle": {
+    "breadcrumbHome": "Home",
+    "breadcrumbArticles": "Articles",
+    "breadcrumbCurrent": "Why Vientiane Businesses Need a Website",
+    "titleMain": "Why Businesses in Vientiane",
+    "titleHighlight": "Need a Website",
+    "lede": "If you own a business in Vientiane and you only have a Facebook page, you are losing money. A lot of it.",
+    "figHero": "PM Laos appearing on Google - a real Vientiane business with a proper online presence",
+    "google": {
+      "label": "[ GOOGLE vs FACEBOOK ]",
+      "heading": "Google First, Facebook Later",
+      "p1": "The way people search for businesses in the world goes like this: when someone needs a service, a restaurant, a hotel, or a supplier, they don't scroll endlessly through Facebook. They go to Google.",
+      "p2": "Think about your own behavior. When you need something specific - \"best coffee in Vientiane\", \"apartment for rent Vientiane\", \"web developer Laos\" - you search on Google. Your customers do the same.",
+      "p3": "Facebook is where people go to socialize. Google is where people go with intention: ready to buy, ready to contact, ready to decide, ready to choose.",
+      "p4": "If your business only exists on Facebook, you are missing those high-intent customers."
+    },
+    "identity": {
+      "label": "[ THE IDENTITY PROBLEM ]",
+      "heading": "Too Many Facebook Pages, No Clear Identity",
+      "p1": "Try searching for a business on Facebook. You'll often find:",
+      "problems": [
+        "Multiple pages with similar names",
+        "Old, inactive pages",
+        "Copycat pages",
+        "Incomplete or outdated information"
+      ],
+      "p2": "It creates confusion and doubt.",
+      "p3": "Now compare that with a website. Your domain name (like PMLaos.com) is unique. No duplicates. No confusion. One official source of truth.",
+      "p4": "That clarity builds trust instantly."
+    },
+    "figCopycats": "Facebook copycat pages - one of the most common problems businesses face without a real website",
+    "ownership": {
+      "label": "[ YOU DON'T OWN IT ]",
+      "heading": "You Don't Own Facebook",
+      "p1": "This is the uncomfortable truth: your Facebook page is not really yours. At any moment:",
+      "risks": [
+        "Your account can be restricted",
+        "Your page can be reported",
+        "Your reach can drop to near zero",
+        "Your content can be hidden"
+      ],
+      "p2": "All it takes is one mistake, one misunderstanding, or even a few reports. Someone hacked your Facebook and you lost it forever.",
+      "p3": "A website is different. You own it. You control it. No algorithm decides if your customers can see your business.",
+      "p4": "When that happens with Facebook, your entire online presence can disappear overnight."
+    },
+    "figUrl": "PMLaos.com - a unique domain that can't be duplicated, reported, or taken away",
+    "friction": {
+      "label": "[ STOP THE FRICTION ]",
+      "heading": "Stop Making Customers Work to Find Information",
+      "p1": "On Facebook, information is scattered across posts and pictures, which is really annoying. A customer might have to:",
+      "painPoints": [
+        "Scroll for minutes",
+        "Click through photos",
+        "Read through comments",
+        "Still not find what they need"
+      ],
+      "p2": "Most people won't do that. They'll leave and go to a competitor.",
+      "p3": "A website organizes everything clearly: services, prices, contact details, location, and FAQs - all in one place, easy to access."
+    },
+    "figListing": "PM Laos property listing - all information organized, clear, and accessible without any scrolling",
+    "professionalism": {
+      "label": "[ PROFESSIONALISM ]",
+      "heading": "Your Business Looks More Professional",
+      "p1": "Perception matters. A business with a clean, modern website looks more established, more trustworthy, and more serious.",
+      "p2": "A business with only a Facebook page often looks small, temporary, or less reliable - even if that is not true. And in competitive markets, that perception alone can decide who gets the customer.",
+      "calloutLabel": "THE TRUTH",
+      "calloutText": "Anyone can create a Facebook page. Not everyone invests in a real website."
+    },
+    "figHomepage": "PM Laos website homepage - a clean, professional online presence that builds instant credibility",
+    "storefront": {
+      "label": "[ YOUR DIGITAL STOREFRONT ]",
+      "heading": "Your Website Is Your Digital Storefront",
+      "p1": "Imagine your website as the digital home of your business. Just like a physical shop welcomes customers, your website is where people discover your services, understand your value, and decide to contact you. It becomes the center of everything you do online.",
+      "benefits": [
+        {
+          "title": "Your Central Hub",
+          "desc": "All traffic - from Google, Facebook, TikTok, or email - leads back to your website."
+        },
+        {
+          "title": "Credibility & Trust",
+          "desc": "Showcase testimonials, portfolio, and case studies to turn visitors into customers faster."
+        },
+        {
+          "title": "24/7 Availability",
+          "desc": "Customers can learn about your business, contact you, or book services at any time."
+        },
+        {
+          "title": "Cost-Effective Marketing",
+          "desc": "SEO brings free, organic traffic from Google - often better customers than paid ads."
+        },
+        {
+          "title": "Targeted Messaging",
+          "desc": "Speak directly to your ideal customer with pages tailored to specific services and needs."
+        },
+        {
+          "title": "Email Marketing",
+          "desc": "Capture leads and turn visitors into email subscribers - and later into paying customers."
+        },
+        {
+          "title": "Data & Insights",
+          "desc": "Understand who visits your site, what they look for, and how they found you."
+        }
+      ]
+    },
+    "reality": {
+      "label": "[ THE REALITY ]",
+      "heading": "The Businesses That Win",
+      "p1": "I've been building websites and digital systems for businesses around the world since 2015. The pattern is always the same: businesses with a strong website grow faster, attract better customers, and build stronger brands.",
+      "p2": "No website? You are losing customers. Not because your business is bad - but because people can't find you, don't trust what they see, or give up before contacting you.",
+      "p3": "A website is no longer optional. It's the foundation of your online presence.",
+      "p4": "In a growing city like Vientiane, where more people rely on the internet every day to make decisions, the businesses that invest in a proper digital presence will win. The rest will slowly fall behind.",
+      "calloutLabel": "FINAL THOUGHT",
+      "calloutText": "If you're ready to build a website that actually brings you customers, that's exactly what I do.",
+      "p5": "Not sure? Ask ChatGPT: \"What opportunities does a business miss in Vientiane if it doesn't have a website?\" The answer might surprise you."
+    },
+    "cta": {
+      "label": "[ LET'S BUILD IT ]",
+      "heading": "Ready to Get Online?",
+      "subtitle": "I build websites for businesses in Vientiane and across Southeast Asia. Let's talk about your project.",
+      "contact": "Start a Project",
+      "viewAll": "← More Articles"
     }
   },
   "socialProof": {

@@ -2,113 +2,84 @@
   "nav": {
     "work": "ຜົນງານ",
     "blog": "ບົດຄວາມ",
-    "about": "ກ່ຽວກັບ",
-    "services": "ບໍລິການ",
+    "about": "ກ່ຽວກັບຂ້ອຍ",
+    "services": "ການບໍລິການ",
     "contact": "ຕິດຕໍ່",
-    "referral": "ໄດ້ເງິນ",
-    "websites": "ເວັບໄຊທ໌"
+    "referral": "ສ້າງລາຍໄດ້",
+    "websites": "ເວັບໄຊ"
   },
   "hero": {
     "brand": "MAXON TORRES",
-    "location": "[ ວຽງຈັນ : ສປປ ລາວ ] — ນັກພັດທະນາເວັບ Full Stack",
-    "heroTitle": "ພັດທະນາຊອບແວທີ່ຊ່ວຍໃຫ້ທຸລະກິດຂອງທ່ານ <highlight>ເຕີບໂຕໄປທົ່ວໂລກ</highlight>.",
-    "heroSub": "ອັດຕະໂນມັດການເຮັດວຽກ | ຍົກລະດັບຜົນລັບ.",
-    "ctaStart": "ເລີ່ມໂຄງການ",
+    "location": "[ ວຽງຈັນ : ສປປ ລາວ ]  -  ນັກພັດທະນາຊອບແວອິດສະຫຼະ (FREELANCE)",
+    "heroTitle": "ຂ້ອຍສ້າງເວັບໄຊທີ່ <highlight>ດຶງດູດລູກຄ້າຈາກຕ່າງປະເທດ</highlight>.",
+    "heroTitlePrefix": "ຂ້ອຍສ້າງເວັບໄຊທີ່",
+    "heroHighlights": [
+      "ດຶງດູດລູກຄ້າຈາກຕ່າງປະເທດ",
+      "ຊ່ວຍໃຫ້ທຸລະກິດຂອງທ່ານເຕີບໂຕດ້ວຍລະບົບອັດຕະໂນມັດ"
+    ],
+    "heroSub": "ຕັ້ງແຕ່ເວັບໄຊທີ່ສ້າງຍອດຂາຍສູງ ໄປຈົນເຖິງເຄື່ອງມື ແລະ ລະບົບອັດຕະໂນມັດ, ຂ້ອຍຊ່ວຍໃຫ້ທຸລະກິດຂອງທ່ານເຕີບໂຕໂດຍບໍ່ຕ້ອງເສຍເວລາກັບວຽກທີ່ເຮັດດ້ວຍມື.",
+    "ctaStart": "ເລີ່ມຕົ້ນໂຄງການ",
     "ctaView": "ເບິ່ງຜົນງານ"
   },
   "work": {
-    "title": "ຜົນງານທີ່ເລືອກ",
-    "subtitle": "ໂຄງການທີ່ຂ້ອຍເຄີຍເຮັດ",
+    "title": "ຜົນງານທີ່ຄັດສັນມາ",
+    "subtitle": " ໂຄງການທີ່ຂ້ອຍໄດ້ເຮັດ",
     "sectionLabel": "[ ຜົນງານຂອງຂ້ອຍ ]",
-    "caseStudy": "ກໍລະນີສຶກສາ →",
+    "caseStudy": "ເບິ່ງລາຍລະອຽດ →",
     "categories": {
       "all": "ທັງໝົດ",
-      "automation": "ອັດຕະໂນມັດ",
-      "integration": "ການເຊື່ອມຕໍ່",
+      "automation": "ລະບົບອັດຕະໂນມັດ",
+      "integration": "ການເຊື່ອມຕໍ່ລະບົບ",
       "tools": "ເຄື່ອງມື",
       "web": "ເວັບ"
     },
     "noProjects": "ຍັງບໍ່ມີໂຄງການໃນໝວດນີ້.",
     "projects": {
       "orderbridge": {
-        "desc": "ລະບົບ middleware ທີ່ເຊື່ອມຕໍ່ແພລດຟອມສັ່ງອາຫານໂດຍກົງໄປຫາ POS ຂອງຮ້ານ — ລຶບການປ້ອນຂໍ້ມູນດ້ວຍມືອອກທັງໝົດ."
+        "desc": "ລະບົບ Middleware ທີ່ເຊື່ອມຕໍ່ແພລດຟອມສັ່ງອາຫານເຊັ່ນ DoorDash ແລະ Uber Eats ເຂົ້າກັບລະບົບ POS ຂອງຮ້ານອາຫານໂດຍກົງ - ຊ່ວຍຫຼຸດຜ່ອນການປ້ອນຂໍ້ມູນດ້ວຍມື ແລະ ຂໍ້ຜິດພາດໃນເຮືອນຄົວທີ່ມີອໍເດີຈໍານວນຫຼາຍ."
       },
       "laomaitravel": {
-        "desc": "ເວັບໄຊທ໌ທ່ອງທ່ຽວສອງພາສາ (ອັງກິດ/ໄທ) ສຳລັບ operator ທ່ອງທ່ຽວໃນວຽງຈັນ — ສ້າງດ້ວຍ SEO, ລະບົບຈອງ ແລະ analytics ແບບ real-time."
+        "desc": "ເວັບໄຊການທ່ອງທ່ຽວສອງພາສາ (EN/TH) ສໍາລັບຜູ້ປະກອບການທ່ອງທ່ຽວໃນວຽງຈັນ - ສ້າງຂຶ້ນເພື່ອ SEO, ການສອບຖາມການຈອງ, ແລະ ການຕິດຕາມຂໍ້ມູນເວັບໄຊແບບ Real-time ຜ່ານ Umami."
       },
       "pmlaos": {
-        "desc": "A trilingual EN/LO/ZH real estate listing platform for a Vientiane agency  -  with a full admin dashboard, property gallery, and Google OAuth-secured CMS."
+        "desc": "ແພລດຟອມລາຍຊື່ອະສັງຫາລິມະຊັບສາມພາສາ (EN/LO/ZH) ສໍາລັບບໍລິສັດໃນວຽງຈັນ - ພ້ອມດ້ວຍລະບົບຈັດການ (Admin Dashboard), ຄັງຮູບພາບຊັບສິນ, ແລະ ລະບົບ CMS ທີ່ປອດໄພດ້ວຍ Google OAuth."
       }
     }
   },
-  "articles": {
-    "heroLabel": "[ ບົດຄວາມເທັກນິກ ]",
-    "heroTitle": "ບລອກ ແລະ ບົດຄວາມ",
-    "heroSubtitle": "ການວິເຄາະຄ້ານ web development, architecture ແລະ best practices. ຮຽນຮູ້ຈາກປະສົບການຂອງຂ້ອຍ.",
-    "searchPlaceholder": "ຄົ້ນຫາບົດຄວາມ...",
-    "sortBy": "ຈັດລຽງຕາມ:",
-    "sortOptions": {
-      "recent": "ຫຼ້າສຸດ",
-      "oldest": "ເກົ່າສຸດ",
-      "longest": "ອ່ານຍາວທີ່ສຸດ",
-      "shortest": "ອ່ານສັ້ນທີ່ສຸດ"
-    },
-    "categories": {
-      "all": "ທຸກບົດຄວາມ",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "devops": "DevOps"
-    },
-    "showing": "ສະແດງ {count} ບົດຄວາມ",
-    "showingPlural": "ສະແດງ {count} ບົດຄວາມ",
-    "articleSingular": "ບົດຄວາມ",
-    "articlePlural": "ບົດຄວາມ",
-    "noResults": {
-      "title": "ບໍ່ພົບບົດຄວາມ",
-      "message": "ລອງປ່ຽນການຄົ້ນຫາ ຫຼື ໃສ່ filter ໃໝ່.",
-      "clearFilters": "ລ້າງ filter"
-    }
-  },
-  "article": {
-    "breadcrumb": "ບົດຄວາມ",
-    "shareLabel": "ແບ່ງປັນບົດຄວາມນີ້",
-    "allArticles": "ທຸກບົດຄວາມ",
-    "readingProgress": "ຄວາມຄືບໜ້າການອ່ານ"
-  },
   "blog": {
-    "sectionLabel": "[ ບົດຄວາມລ່າສຸດ ]",
+    "sectionLabel": "[ ຄວາມຮູ້ໃໝ່ໆ ]",
     "articleCount": "{count} ບົດຄວາມ",
     "title": "ບົດຄວາມຫຼ້າສຸດ",
-    "subtitle": "ບັນທຶກທາງເທັກນິກ, ຄູ່ມື ແລະ ບົດຮຽນຈາກປະສົບການຂອງຂ້ອຍ.",
+    "subtitle": "ບັນທຶກທາງເຕັກນິກ, ຄໍາແນະນໍາ, ແລະ ບົດຮຽນຈາກປະສົບການຕົວຈິງຂອງຂ້ອຍ.",
     "viewAll": "ເບິ່ງບົດຄວາມທັງໝົດ",
-    "readMore": "ອ່ານເພີ່ມ",
+    "readMore": "ອ່ານເພີ່ມເຕີມ",
     "readTime": "ໃຊ້ເວລາອ່ານ {time}"
   },
   "aboutHome": {
     "label": "[ ຂ້ອຍແມ່ນໃຜ ]",
     "title": "ກ່ຽວກັບຂ້ອຍ",
-    "intro": "ຂ້ອຍແມ່ນ Maximiliano Torres, ນັກພັດທະນາ Software Full-Stack ຢູ່ວຽງຈັນ ປະເທດລາວ, ມຸ່ງເນັ້ນການພັດທະນາ Web Application ທີ່ແຂງແຮງ ແລະ ຂະຫຍາຍໄດ້.",
-    "description": "ຂ້ອຍຊ່ວຍທຸລະກິດປ່ຽນແນວຄິດໃຫ້ເປັນເຄື່ອງມືດິຈິຕອນທີ່ເຊື່ອຖືໄດ້ — ຈາກ dashboard ພາຍໃນ ຫາ platform ຂະໜາດໃຫຍ່ — ໂດຍເນັ້ນໂຄງສ້າງທີ່ສະອາດ, ປະສິດທິພາບ ແລະ UX ທີ່ດີ.",
-    "imageAlt": "Maximiliano Torres - ນັກພັດທະນາ Full Stack",
-    "learnMore": "ຮູ້ຈັກຂ້ອຍເພີ່ມ",
+    "intro": "ຂ້ອຍແມ່ນ Maximiliano Brito Torres, ນັກພັດທະນາຊອບແວອິດສະຫຼະໃນວຽງຈັນ, ສປປ ລາວ, ຊ່ຽວຊານໃນການສ້າງເວັບແອັບພລິເຄຊັນທີ່ທັນສະໄໝ ແລະ ສາມາດຂະຫຍາຍຕົວໄດ້ສໍາລັບທຸລະກິດທົ່ວໂລກ.",
+    "description": "ໃນຖານະນັກພັດທະນາອິດສະຫຼະທີ່ອາໄສຢູ່ໃນວຽງຈັນ, ຂ້ອຍຊ່ວຍທຸລະກິດປ່ຽນແນວຄວາມຄິດໃຫ້ເປັນເຄື່ອງມືດິຈິຕອນທີ່ເຊື່ອຖືໄດ້ - ຕັ້ງແຕ່ເວັບໄຊທີ່ສ້າງຍອດຂາຍ ໄປຈົນເຖິງລະບົບຈັດການພາຍໃນ ແລະ ແພລດຟອມເຕັມຮູບແບບ - ໂດຍເນັ້ນໃສ່ໂຄງສ້າງທີ່ສະອາດ, ປະສິດທິພາບ, ແລະ ການອອກແບບທີ່ເນັ້ນຜູ້ໃຊ້ເປັນຫຼັກ.",
+    "imageAlt": "Maximiliano Brito Torres - ນັກພັດທະນາຊອບແວອິດສະຫຼະໃນວຽງຈັນ",
+    "learnMore": "ເພີ່ມເຕີມກ່ຽວກັບຂ້ອຍ",
     "stats": {
       "experience": "10+",
-      "experienceLabel": "ປີປະສົບການ",
-      "projects": "40+",
-      "projectsLabel": "ໂຄງການສຳເລັດ",
+      "experienceLabel": "ປີຂອງປະສົບການ",
+      "projects": "5+",
+      "projectsLabel": "ໂຄງການອິດສະຫຼະທີ່ສໍາເລັດ",
       "technologies": "10+",
-      "technologiesLabel": "ເທັກໂນໂລຊີ"
+      "technologiesLabel": "ເຕັກໂນໂລຊີ"
     }
   },
   "about": {
     "heroLabel": "[ ໂປຣໄຟລ໌ນັກພັດທະນາ ]",
     "heroTitle": "ກ່ຽວກັບຂ້ອຍ",
-    "heroSubtitle": "ຜູ້ຊ່ຽວຊານ React & Next.js | Full-Stack Developer ຕັ້ງແຕ່ 2017",
+    "heroSubtitle": "ນັກພັດທະນາຊອບແວອິດສະຫຼະໃນວຽງຈັນ | ຊ່ຽວຊານ React & Next.js | ນັກພັດທະນາ Full-Stack ຕັ້ງແຕ່ປີ 2017",
     "bio": {
-      "title": "ພັດທະນາລະບົບເວັບທີ່ເຊື່ອຖືໄດ້ ແລະ ຂະຫຍາຍໄດ້",
-      "p1": "ຂ້ອຍແມ່ນ Maximiliano Torres, Full-Stack Developer ຢູ່ເອຊີຕາເວັນອອກສຽງໃຕ້, ຊ່ຽວຊານໃນການພັດທະນາ Web Application ດ້ວຍ React ແລະ Next.js.",
-      "p2": "ຂ້ອຍອອກແບບ ແລະ ພັດທະນາໂຊລູຊັນດິຈິຕອນເພື່ອອັດຕະໂນມັດ workflow ແລະ ຊ່ວຍໃຫ້ທຸລະກິດເຕີບໂຕ.",
-      "p3": "ນອກເໜືອຈາກການພັດທະນາ, ຂ້ອຍຍັງມີປະສົບການສອນດ້ານ IT ແລະ Web Design ທີ່ມະຫາວິທະຍາໄລໃນຈີນ ແລະ ລາວ."
+      "title": "ສ້າງລະບົບເວັບທີ່ເຊື່ອຖືໄດ້ ແລະ ຂະຫຍາຍຕົວໄດ້",
+      "p1": "ຂ້ອຍແມ່ນ Maximiliano Torres, ນັກພັດທະນາ Full-Stack ທີ່ອາໄສຢູ່ໃນອາຊີຕາເວັນອອກສຽງໃຕ້, ຊ່ຽວຊານໃນການສ້າງເວັບແອັບພລິເຄຊັນທີ່ພ້ອມສໍາລັບການໃຊ້ງານຈິງດ້ວຍ React ແລະ Next.js. ຕັ້ງແຕ່ປີ 2017, ຂ້ອຍໄດ້ສ້າງເຄື່ອງມື ແລະ ລະບົບທີ່ເນັ້ນໃສ່ໂຄງສ້າງທີ່ສະອາດ, ປະສິດທິພາບ, ແລະ ການບໍາລຸງຮັກສາງ່າຍ.",
+      "p2": "ໃນຖານະນັກພັດທະນາຊອບແວອິດສະຫຼະໃນວຽງຈັນ, ຂ້ອຍອອກແບບ ແລະ ພັດທະນາໂຊລູຊັ່ນດິຈິຕອນທີ່ຊ່ວຍຈັດການວຽກແບບອັດຕະໂນມັດ, ຈັດການຂໍ້ມູນທີ່ຊັບຊ້ອນ, ແລະ ສະໜັບສະໜູນການເຕີບໂຕຂອງທຸລະກິດ - ຕັ້ງແຕ່ Dashboard ພາຍໃນ ໄປຈົນເຖິງແພລດຟອມເວັບເຕັມຮູບແບບ. ຈຸດສຸມຂອງຂ້ອຍຄືການສົ່ງມອບລະບົບທີ່ເຊື່ອຖືໄດ້ ເພື່ອແກ້ໄຂສິ່ງທ້າທາຍໃນການດໍາເນີນງານຕົວຈິງ.",
+      "p3": "ນອກຈາກການພັດທະນາແລ້ວ, ຂ້ອຍຍັງມີປະສົບການສອນໄອທີ (IT) ແລະ ການອອກແບບເວັບໃນມະຫາວິທະຍາໄລຕ່າງໆໃນປະເທດຈີນ ແລະ ລາວ. ຂ້ອຍຮ່ວມງານກັບລູກຄ້າຕ່າງປະເທດ ແລະ ທີມງານແບບ Remote ເພື່ອຮັບປະກັນການສົ່ງມອບວຽກທີ່ມີຄຸນນະພາບ ແລະ ຄວາມສໍາເລັດໃນໄລຍະຍາວ."
     },
     "skills": {
       "title": "ເຕັກໂນໂລຊີ ແລະ ເຄື່ອງມື",
@@ -133,7 +104,7 @@
         ]
       },
       "tools": {
-        "title": "ເຄື່ອງມື & DevOps",
+        "title": "ເຄື່ອງມື ແລະ DevOps",
         "items": [
           "GIT",
           "AWS",
@@ -142,90 +113,126 @@
       }
     },
     "cta": {
-      "title": "ພ້ອມເລີ່ມໂຄງການຂອງທ່ານບໍ?",
-      "subtitle": "ມາລົມກັນວ່າພວກເຮົາຈະຮ່ວມມືກັນສ້າງສິ່ງທີ່ຍິ່ງໃຫຍ່ໄດ້ແນວໃດ.",
-      "contact": "ຕິດຕໍ່",
-      "services": "ເບິ່ງບໍລິການ"
+      "title": "ພ້ອມທີ່ຈະເລີ່ມໂຄງການຂອງທ່ານແລ້ວຫຼືຍັງ?",
+      "subtitle": "ມາປຶກສາກັນວ່າພວກເຮົາຈະຮ່ວມມືກັນສ້າງສິ່ງທີ່ດີເລີດໄດ້ແນວໃດ.",
+      "contact": "ຕິດຕໍ່ຂ້ອຍ",
+      "services": "ເບິ່ງການບໍລິການ"
     },
     "cv": {
-      "viewCV": "ເບິ່ງ CV ທັງໝົດ",
-      "downloadCV": "ດາວໂຫຼດ Resume"
+      "viewCV": "ເບິ່ງ CV ເຕັມ",
+      "downloadCV": "ດາວໂຫລດ Resume",
+      "experienceTitle": "ປະສົບການການເຮັດວຽກ",
+      "experienceSubtitle": "ເບິ່ງປະຫວັດການເຮັດວຽກ, ຄວາມຊ່ຽວຊານທາງເຕັກນິກ ແລະ ປະຫວັດການເຮັດວຽກທັງໝົດຂອງຂ້ອຍ"
     }
   },
+  "articles": {
+    "heroLabel": "[ ຄວາມຮູ້ທາງເຕັກນິກ ]",
+    "heroTitle": "ບົດຄວາມ ແລະ ບົດຮຽນ",
+    "heroSubtitle": "ເຈາະລຶກການພັດທະນາເວັບ, ຮູບແບບໂຄງສ້າງຊອບແວ, ແລະ ວິທີການເຮັດວຽກທີ່ດີທີ່ສຸດ. ຮຽນຮູ້ຈາກປະສົບການຕົວຈິງຂອງຂ້ອຍ.",
+    "searchPlaceholder": "ຄົ້ນຫາບົດຄວາມ...",
+    "sortBy": "ຈັດລຽງໂດຍ:",
+    "sortOptions": {
+      "recent": "ຫຼ້າສຸດ",
+      "oldest": "ເກົ່າສຸດ",
+      "longest": "ໃຊ້ເວລາອ່ານດົນສຸດ",
+      "shortest": "ໃຊ້ເວລາອ່ານສັ້ນສຸດ"
+    },
+    "categories": {
+      "all": "ບົດຄວາມທັງໝົດ",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps"
+    },
+    "showing": "ກໍາລັງສະແດງ {count} ບົດຄວາມ",
+    "showingPlural": "ກໍາລັງສະແດງ {count} ບົດຄວາມ",
+    "articleSingular": "ບົດຄວາມ",
+    "articlePlural": "ບົດຄວາມ",
+    "noResults": {
+      "title": "ບໍ່ພົບບົດຄວາມ",
+      "message": "ລອງປ່ຽນຄໍາຄົ້ນຫາ ຫຼື ໂຕກັ່ນຕອງເພື່ອຊອກຫາສິ່ງທີ່ທ່ານຕ້ອງການ.",
+      "clearFilters": "ລ້າງໂຕກັ່ນຕອງ"
+    }
+  },
+  "article": {
+    "breadcrumb": "ບົດຄວາມ",
+    "shareLabel": "ແຊຣ໌ບົດຄວາມນີ້",
+    "allArticles": "ບົດຄວາມທັງໝົດ",
+    "readingProgress": "ຄວາມຄືບໜ້າການອ່ານ"
+  },
   "services": {
-    "title": "ບໍລິການ",
-    "subtitle": "ອອກແບບ ແລະ ພັດທະນາ SaaS ແລະ Marketplace ທີ່ຂະຫຍາຍໄດ້.",
-    "subtitleSecondary": "ຕັ້ງແຕ່ MVP ໄປຫາ production, ຂ້ອຍຊ່ວຍໃຫ້ founder ປ່ຽນໄອເດຍໃຫ້ເປັນແອັບເວັບທີ່ເຊື່ອຖືໄດ້ ແລະ ຂະຫຍາຍໄດ້.",
+    "title": "ການບໍລິການ",
+    "subtitle": "ຂ້ອຍອອກແບບ ແລະ ສ້າງເຄື່ອງມືຊອບແວທີ່ຂະຫຍາຍຕົວໄດ້.",
+    "subtitleSecondary": "ຕັ້ງແຕ່ MVP ໄປຈົນເຖິງການໃຊ້ງານຈິງ, ຂ້ອຍຊ່ວຍໃຫ້ເຈົ້າຂອງທຸລະກິດປ່ຽນແນວຄວາມຄິດໃຫ້ເປັນເວັບແອັບພລິເຄຊັນທີ່ໝັ້ນຄົງ ແລະ ເຊື່ອຖືໄດ້.",
     "deliverLabel": "ສິ່ງທີ່ຂ້ອຍສົ່ງມອບ",
     "toolsLabel": "ເຄື່ອງມື:",
     "items": {
       "webApps": {
-        "valueStatement": "ຈັດການການດຳເນີນງານ, ລູກຄ້າ, ແລະ ຂໍ້ມູນຈາກທຸກບ່ອນ.",
-        "desc": "ແອັບພລິເຄຊັນເວັບທີ່ປັບແຕ່ງໄດ້ເພື່ອປັບປຸງຂະບວນການທຸລະກິດຂອງທ່ານ ແລະ ໃຫ້ການຄວບຄຸມຢ່າງສົມບູນ.",
+        "valueStatement": "ຈັດການການດໍາເນີນງານ, ລູກຄ້າ ແລະ ຂໍ້ມູນໄດ້ຈາກທຸກບ່ອນ.",
+        "desc": "ເວັບແອັບພລິເຄຊັນທີ່ປັບແຕ່ງມາໂດຍສະເພາະ ເພື່ອເຮັດໃຫ້ຂະບວນການທຸລະກິດຂອງທ່ານສະດວກຂຶ້ນ ແລະ ໃຫ້ທ່ານຄວບຄຸມໄດ້ຢ່າງສົມບູນ.",
         "details": [
-          "ລະບົບການຈັດການລູກຄ້າ ແລະ ໂຄງການ",
-          "ແຜງຂໍ້ມູນແບບເວລາຈິງ",
-          "ຂະບວນການເຮັດວຽກ ແລະ ການແຈ້ງເຕືອນອັດຕະໂນມັດ",
-          "ການຄວບຄຸມການເຂົ້າເຖິງໂດຍອີງໃສ່ບົດບາດ",
-          "ອີງໃສ່ຄລາວ - ເຂົ້າເຖິງໄດ້ຈາກທຸກອຸປະກອນ"
+          "ລະບົບຈັດການລູກຄ້າ ແລະ ໂຄງການ",
+          "Dashboard ສະແດງຂໍ້ມູນແບບ Real-time",
+          "ລະບົບການເຮັດວຽກ ແລະ ການແຈ້ງເຕືອນອັດຕະໂນມັດ",
+          "ການກວດສອບສິດການເຂົ້າເຖິງຕາມບົດບາດ",
+          "ລະບົບ Cloud - ເຂົ້າເຖິງໄດ້ຈາກທຸກອຸປະກອນ"
         ],
         "tools": "",
-        "title": "ແອັບພລິເຄຊັນເວັບສຳລັບທຸລະກິດຂອງທ່ານ"
+        "title": "ເວັບແອັບສໍາລັບທຸລະກິດຂອງທ່ານ"
       },
       "websiteDev": {
-        "valueStatement": "ເວັບໄຊທ໌ມືອາຊີບທີ່ເຮັດວຽກໃຫ້ທຸລະກິດຂອງທ່ານ 24/7.",
-        "desc": "ໃຫ້ທຸລະກິດຂອງທ່ານມີບ່ອນຢູ່ອາໄສອອນໄລນ໌ທີ່ຖາວອນ ແລະ ເຊື່ອຖືໄດ້  -  ສ້າງຂຶ້ນເພື່ອດຶງດູດລູກຄ້າ ແລະ ຂະຫຍາຍການມີຕົວຕົນຂອງທ່ານໃນທົ່ວໂລກ.",
+        "valueStatement": "ເວັບໄຊທີ່ເປັນມືອາຊີບ ເຊິ່ງເຮັດວຽກໃຫ້ທຸລະກິດຂອງທ່ານຕະຫຼອດ 24 ຊົ່ວໂມງ.",
+        "desc": "ສ້າງບ້ານທີ່ຖາວອນ ແລະ ໜ້າເຊື່ອຖືໃຫ້ກັບທຸລະກິດຂອງທ່ານທາງອອນລາຍ - ສ້າງຂຶ້ນເພື່ອດຶງດູດລູກຄ້າ ແລະ ຂະຫຍາຍຊື່ສຽງໃນລະດັບສາກົນ.",
         "details": [
-          "ເຂົ້າເຖິງລູກຄ້າໃນຕ່າງປະເທດ",
-          "ການວິເຄາະ ແລະ ຂໍ້ມູນການເຂົ້າຊົມເວັບ",
-          "ສະໜັບສະໜູນຫຼາຍພາສາ",
-          "ຂໍ້ມູນທຸລະກິດທັງໝົດຂອງທ່ານ, ອອນໄລນ໌ຕະຫຼອດເວລາ",
-          "ສ້າງຄວາມໄວ້ວາງໃຈ ແລະ ຄວາມໜ້າເຊື່ອຖື",
-          "ເສີມສ້າງອັດຕະລັກຂອງແບຣນຂອງທ່ານ"
+          "ເຂົ້າເຖິງລູກຄ້າໃນລະດັບສາກົນ",
+          "ການວິເຄາະ ແລະ ຕິດຕາມຂໍ້ມູນຜູ້ເຂົ້າຊົມເວັບ",
+          "ຮອງຮັບຫຼາຍພາສາ",
+          "ຂໍ້ມູນທຸລະກິດຂອງທ່ານທັງໝົດຢູ່ອອນລາຍຕະຫຼອດເວລາ",
+          "ສ້າງຄວາມເຊື່ອໝັ້ນ ແລະ ຄວາມໜ້າເຊື່ອຖື",
+          "ເສີມສ້າງເອກະລັກຂອງແບຣນ"
         ],
         "tools": "",
-        "title": "ການພັດທະນາເວັບໄຊທ໌"
+        "title": "ການພັດທະນາເວັບໄຊ"
       },
       "automation": {
-        "valueStatement": "ເຊື່ອມຕ່ອແພລດຟອມຂອງທ່ານ ແລະ ລົບການເຮັດວຽກດ້ວຍມື.",
-        "desc": "ຂ້ອຍເຊື່ອມຕ່ອແພລດຟອມຂອງທ່ານ ແລະ ເຮັດວຽກທີ່ຊ້ຳໆໂດຍອັດຕະໂນມັດ ເພື່ອໃຫ້ທຸລະກິດຂອງທ່ານດຳເນີນໄປຢ່າງລຽບງ່າຍໂດຍບໍ່ຕ້ອງເຮັດວຽກດ້ວຍມື.",
+        "valueStatement": "ເຊື່ອມຕໍ່ແພລດຟອມຂອງທ່ານ ແລະ ຕັດວຽກທີ່ຕ້ອງເຮັດດ້ວຍມືອອກ.",
+        "desc": "ຂ້ອຍເຊື່ອມຕໍ່ແພລດຟອມຕ່າງໆ ແລະ ຈັດການວຽກທີ່ຊໍ້າຊ້ອນໃຫ້ເປັນອັດຕະໂນມັດ ເພື່ອໃຫ້ທຸລະກິດຂອງທ່ານດໍາເນີນໄປຢ່າງຮາບລື່ນ.",
         "details": [
-          "ການເຊື່ອມໂຍງ API ລະຫວ່າງແພລດຟອມ",
-          "ການຊິງຂໍ້ມູນອັດຕະໂນມັດ",
-          "ຂະບວນການເຮັດວຽກ ແລະ ຕົວກະຕຸ້ນທີ່ກຳນົດເອງ",
-          "ຫຼຸດຂໍ້ຜິດພາດ ແລະ ປະຫຍັດເວລາ",
-          "ສຸມໃສ່ການຂະຫຍາຍຕົວ, ບໍ່ແມ່ນວຽກບໍລິຫານ"
+          "ການເຊື່ອມຕໍ່ API ລະຫວ່າງແພລດຟອມ",
+          "ການຊິງຄ໌ຂໍ້ມູນອັດຕະໂນມັດ",
+          "ລະບົບການເຮັດວຽກທີ່ປັບແຕ່ງຕາມເງື່ອນໄຂ",
+          "ຫຼຸດຜ່ອນຂໍ້ຜິດພາດ ແລະ ປະຢັດເວລາ",
+          "ເນັ້ນໃສ່ການເຕີບໂຕ, ບໍ່ແມ່ນວຽກເອກະສານ"
         ],
         "tools": "",
-        "title": "ການອັດຕະໂນມັດ ແລະ ການເຊື່ອມໂຍງ"
+        "title": "ລະບົບອັດຕະໂນມັດ ແລະ ການເຊື່ອມຕໍ່"
       }
     }
   },
   "contact": {
     "home": {
       "title": "ຕິດຕໍ່ຂ້ອຍ",
-      "subtitle": "ພ້ອມຮັບໂຄງການໃໝ່ ແລະ ການຮ່ວມມືດ້ານເທັກນິກ.",
+      "subtitle": "ພ້ອມສໍາລັບໂຄງການໃໝ່, ການໃຫ້ຄໍາປຶກສາ ແລະ ການເປັນຄູ່ຮ່ວມງານທາງເຕັກນິກ. ຕິດຕໍ່ໂດຍກົງຜ່ານອີເມວ, ໂທ ຫຼື WhatsApp.",
       "labels": {
         "email": "ອີເມວ",
         "location": "ສະຖານທີ່",
-        "connect": "ຊ່ອງທາງຕິດຕໍ່",
-        "phoneWhatsapp": "ໂທ / WhatsApp"
+        "connect": "ຕິດຕາມ",
+        "phoneWhatsapp": "ເບີໂທ / WHATSAPP"
       },
       "location": {
         "city": "ວຽງຈັນ, ສປປ ລາວ",
-        "timezone": "GMT+7 (ເຮັດວຽກໄລຍະໄກໄດ້)"
+        "timezone": "GMT+7 (ສະດວກໃນການເຮັດວຽກແບບ Remote)"
       },
       "links": {
         "linkedin": "LinkedIn"
       },
       "card": {
         "title": "ຕິດຕໍ່ໂດຍກົງ",
-        "subtitle": "ກະລຸນາຕິດຕໍ່ຜ່ານ WhatsApp, ໂທລະສັບ ຫຼື ອີເມວ.",
+        "subtitle": "ກະລຸນາຕິດຕໍ່ໂດຍກົງຜ່ານ WhatsApp, ໂທ ຫຼື ອີເມວ.",
         "numberLabel": "ເບີໂທ / WhatsApp:"
       },
       "cta": {
         "whatsapp": "WhatsApp",
-        "callNow": "ໂທດຽວນີ້"
+        "callNow": "ໂທເລີຍ"
       }
     },
     "form": {
@@ -234,57 +241,63 @@
       "subject": "ຫົວຂໍ້",
       "message": "ຂໍ້ຄວາມ",
       "send": "ສົ່ງຂໍ້ຄວາມ",
-      "sending": "ກຳລັງສົ່ງ...",
-      "reset": "ລ້າງຟອມ"
+      "sending": "ກໍາລັງສົ່ງ...",
+      "reset": "ລ້າງຂໍ້ມູນ",
+      "hint": "ໂດຍປົກກະຕິແລ້ວຂ້ອຍຈະຕອບກັບພາຍໃນ 24 ຊົ່ວໂມງ"
     },
-    "success": "ສົ່ງຂໍ້ຄວາມສຳເລັດ! ພວກເຮົາຈະຕິດຕໍ່ກັບໄປໄວໆນີ້.",
-    "error": "ສົ່ງຂໍ້ຄວາມບໍ່ສຳເລັດ. ກະລຸນາລອງອີກຄັ້ງ."
+    "success": "ສົ່ງຂໍ້ຄວາມສໍາເລັດແລ້ວ! ຂ້ອຍຈະຕິດຕໍ່ກັບຫາເຈົ້າໂດຍໄວ.",
+    "error": "ສົ່ງຂໍ້ຄວາມບໍ່ສໍາເລັດ. ກະລຸນາລອງໃໝ່ອີກຄັ້ງ.",
+    "info": {
+      "email": "ອີເມວ",
+      "location": "ສະຖານທີ່",
+      "availability": "ຄວາມພ້ອມໃນການຮັບວຽກ"
+    }
   },
   "referral": {
-    "label": "[ ໂຄງການແນະນຳ ]",
-    "title": "ແນະນຳລູກຄ້າ.",
-    "titleAlt": "ຮັບເງິນ.",
-    "desc": "ຮູ້ຈັກໃຜຕ້ອງການເວັບໄຊຫຼືການເຊື່ອມຕໍ່ລະບົບ? ສົ່ງພວກເຂົາມາຫາຂ້ອຍ — ຂ້ອຍຈະຕອບແທນຄຸນ. ບໍ່ຕ້ອງຕື່ມຟອມ, ບໍ່ຕ້ອງຜ່ານຂະບວນການ. ພຽງແຕ່ສົ່ງຂໍ້ຄວາມ.",
-    "stepsLabel": "// ວິທີການ",
+    "label": "[ ໂຄງການແນະນໍາລູກຄ້າ ]",
+    "title": "ແນະນໍາລູກຄ້າ.",
+    "titleAlt": "ຮັບເງິນລາງວັນ.",
+    "desc": "ຮູ້ຈັກໃຜທີ່ຕ້ອງການເວັບໄຊ ຫຼື ການເຊື່ອມຕໍ່ລະບົບບໍ? ແນະນໍາໃຫ້ຂ້ອຍ - ແລ້ວຂ້ອຍຈະຕອບແທນເວລາຂອງເຈົ້າ. ບໍ່ມີແບບຟອມ, ບໍ່ມີຂັ້ນຕອນທີ່ຍຸ່ງຍາກ. ພຽງແຕ່ສົ່ງຂໍ້ຄວາມຫາຂ້ອຍ.",
+    "stepsLabel": "// ມັນເຮັດວຽກແນວໃດ",
     "steps": [
-      "ແນະນຳໝູ່ໃຫ້ຮູ້ກ່ຽວກັບບໍລິການຂອງຂ້ອຍ",
-      "ເຂົາຕິດຕໍ່ Maxon ແລະ ບອກຊື່ທ່ານ",
-      "ເຂົາເຊັນ — ທ່ານຮັບລາງວັນ"
+      "ບອກໝູ່ຂອງເຈົ້າກ່ຽວກັບການບໍລິການຂອງຂ້ອຍ",
+      "ເຂົາເຈົ້າຕິດຕໍ່ຫາ Maxon ແລະ ບອກຊື່ຂອງເຈົ້າ",
+      "ເຂົາເຈົ້າເຊັນສັນຍາ - ເຈົ້າກໍໄດ້ຮັບລາງວັນ"
     ],
-    "cta": "WhatsApp Maxon",
+    "cta": "WhatsApp ຫາ Maxon",
     "phone": "+856 20 52 373 435 · maxontorres.com",
     "earn": {
-      "label": "// ສອງທາງຮັບລາງວັນ"
+      "label": "// ສອງທາງເລືອກໃນການຮັບລາງວັນ"
     },
     "optionA": {
-      "label": "ທາງເລືອກ A · ໂຄງການສ້າງເທົ່ານັ້ນ",
-      "amount": "$50",
+      "label": "ທາງເລືອກ A",
+      "amount": "$50 USD",
       "unit": "ເງິນສົດ",
-      "desc": "ແນະນຳໃຜກໍຕາມທີ່ເຊັນໂຄງການ — ຮັບ <highlight>$50 ເງິນສົດ</highlight> ເມື່ອເຂົາຈ່າຍໃບບິນທຳອິດ.",
-      "footer": "ຈ່າຍເມື່ອໃບບິນທຳອິດຊຳລະ"
+      "desc": "ແນະນໍາໃຜກໍຕາມທີ່ເຊັນສັນຍາສ້າງເວັບໄຊ ແລະ ຮັບ <highlight>ເງິນສົດ $50</highlight> ທັນທີເມື່ອເຂົາເຈົ້າຊໍາລະງວດທໍາອິດ.",
+      "footer": "ຈ່າຍເມື່ອມີການຊໍາລະງວດທໍາອິດ"
     },
     "optionB": {
-      "label": "ທາງເລືອກ B · ທຸກແພັກເກດ",
+      "label": "ທາງເລືອກ B",
       "amount": "3",
       "unit": "ເດືອນຟຣີ",
-      "desc": "ແນະນຳໃຜກໍຕາມທີ່ເຊັນແພັກເກດໃດກໍຕາມ — ຮັບ <highlight>maintenance 3 ເດືອນຟຣີ</highlight> ທັນທີ ເມື່ອເຂົາເຊັນ.",
-      "footer": "ໃຫ້ທັນທີເມື່ອເຊັນ"
+      "desc": "ແນະນໍາໃຜກໍຕາມທີ່ເລືອກແພັກເກດເວັບໄຊ - ເຈົ້າຈະໄດ້ຮັບ <highlight>ການບໍາລຸງຮັກສາຟຣີ 3 ເດືອນ</highlight> ທັນທີເມື່ອເຂົາເຈົ້າເຊັນສັນຍາ.",
+      "footer": "ໄດ້ຮັບສິດທິທັນທີເມື່ອເຊັນສັນຍາ"
     },
-    "fine": "ບໍ່ໝົດອາຍຸ · ສຳລັບລູກຄ້າທີ່ມີຢູ່ແລ້ວ · ໜຶ່ງລາງວັນຕໍ່ການແນະນຳ",
+    "fine": "ບໍ່ມີວັນໝົດອາຍຸ · ທຸກຄົນສາມາດສະໝັກໄດ້ · ໜຶ່ງລາງວັນຕໍ່ການແນະນໍາໜຶ່ງຄົນ",
     "modal": {
-      "ariaLabel": "ໂຄງການແນະນຳ",
-      "badge": "ໂຄງການແນະນຳ · ເປີດໃຊ້ງານ",
+      "ariaLabel": "ໂຄງການແນະນໍາລູກຄ້າ",
+      "badge": "ໂຄງການແນະນໍາລູກຄ້າ · ກໍາລັງດໍາເນີນການ",
       "dismiss": "ປິດ"
     }
   },
   "footer": {
-    "tagline": "Workflow Automation & Integration Development",
-    "connect": "ເຊື່ອມລະບົບ. ລຶບການເຮັດວຽກດ້ວຍມື. Remote ຈາກວຽງຈັນ, ລາວ.",
+    "tagline": "ລະບົບການເຮັດວຽກອັດຕະໂນມັດ ແລະ ການພັດທະນາການເຊື່ອມຕໍ່",
+    "connect": "ພັດທະນາຊອບແວ · ເຊື່ອມຕໍ່ລະບົບ · ຕັດວຽກທີ່ເຮັດດ້ວຍມື · ເຮັດວຽກແບບ Remote ຈາກວຽງຈັນ, ລາວ.",
     "copyright": "© {year} Maxon Torres. ສະຫງວນລິຂະສິດ.",
-    "builtWith": "ສ້າງດ້ວຍ Next.js & TypeScript"
+    "builtWith": "ສ້າງຂຶ້ນດ້ວຍ Next.js & TypeScript"
   },
   "theme": {
-    "toggle": "ປ່ຽນຮູບແບບ",
+    "toggle": "ປ່ຽນທີມ",
     "light": "ໂໝດສະຫວ່າງ",
     "dark": "ໂໝດມືດ"
   },
@@ -294,1030 +307,1154 @@
     "lao": "ລາວ",
     "spanish": "Español"
   },
-  "yangoArticle": {
-    "breadcrumbHome": "Home",
-    "breadcrumbArticles": "Articles",
-    "breadcrumbCurrent": "Teaching at Yango University",
-    "titleMain": "Teaching Web Development in China @",
-    "titleHighlight": "Yango University",
-    "lede": "Shortly after the end of the Covid Era, I spent time teaching web development at Yango University in the city of Fuzhou, Fujian. I had always wanted to try life and work in China.",
-    "curriculum": {
-      "label": "[ THE CURRICULUM ]",
-      "heading": "Teaching the Foundations of the Web",
-      "p1": "My role was to introduce students to the fundamentals of web development.",
-      "p2": "We focused on things like:",
-      "topics": [
-        "HTML and semantic page structure",
-        "CSS and responsive layout",
-        "JavaScript basics",
-        "How browsers work",
-        "What is the Internet",
-        "The client–server model behind web applications"
-      ],
-      "p3": "Instead of only teaching theory, I tried to keep things practical as much as possible, classes needed to be fun, that is what motivates students the most. The goal was always to get students building something they could see working in the browser.",
-      "p4": "Even a simple landing page or interactive UI was enough to get people excited about programming."
+  "common": {
+    "loading": "ກໍາລັງໂຫລດ...",
+    "error": "ຂໍ້ຜິດພາດ",
+    "close": "ປິດ",
+    "back": "ກັບຄືນ",
+    "next": "ຕໍ່ໄປ",
+    "previous": "ກ່ອນໜ້າ",
+    "learnMore": "ຮຽນຮູ້ເພີ່ມເຕີມ"
+  },
+  "articlesMeta": {
+    "why-businesses-in-vientiane-need-a-website": {
+      "title": "ເປັນຫຍັງທຸລະກິດໃນວຽງຈັນຈຶ່ງຕ້ອງການເວັບໄຊ",
+      "excerpt": "ຖ້າທ່ານມີພຽງແຕ່ເພຈ Facebook, ທ່ານກໍາລັງເສຍລູກຄ້າ. ນີ້ຄືເຫດຜົນທີ່ເວັບໄຊທີ່ດີບໍ່ແມ່ນທາງເລືອກອີກຕໍ່ໄປໃນເມືອງທີ່ກໍາລັງເຕີບໂຕຢ່າງວຽງຈັນ."
     },
-    "figStudentPresenting": "Student presenting their project to the class",
+    "teaching-web-development-china-yango-university": {
+      "title": "ການສອນພັດທະນາເວັບໃນປະເທດຈີນ @ Yango University",
+      "excerpt": "ການສອນພື້ນຖານ HTML, CSS, ແລະ JavaScript ໃນເມືອງຟູໂຈວ (Fuzhou) ປະເທດຈີນ ໄດ້ສອນໃຫ້ຂ້ອຍເປັນນັກພັດທະນາທີ່ດີຂຶ້ນແນວໃດ. ບົດຮຽນກ່ຽວກັບການສຶກສາຂ້າມວັດທະນະທໍາ, ການສື່ສານ, ແລະ ເປັນຫຍັງພື້ນຖານທີ່ແໜ້ນແຟ້ນຈຶ່ງສໍາຄັນກວ່າ Framework."
+    },
+    "how-i-built-orderbridge": {
+      "title": "ຂ້ອຍສ້າງ OrderBridge ແນວໃດ: ການແກ້ໄຂຊ່ອງຫວ່າງລະຫວ່າງ Delivery ແລະ POS",
+      "excerpt": "ການສ້າງລະບົບ Middleware ດ້ວຍ OAuth 2.0 ທີ່ເຊື່ອມຕໍ່ DoorDash, Uber Eats ແລະ ແພລດຟອມ Delivery ເຂົ້າກັບລະບົບ POS ຂອງຮ້ານອາຫານໂດຍອັດຕະໂນມັດ. ເຈາະລຶກທາງເຕັກນິກກ່ຽວກັບ Webhook, ການແປງ Schema, ແລະ ການຊິງຄ໌ອໍເດີແບບ Real-time."
+    }
+  },
+  "yangoArticle": {
+    "breadcrumbHome": "ໜ້າຫຼັກ",
+    "breadcrumbArticles": "ບົດຄວາມ",
+    "breadcrumbCurrent": "ການສອນຢູ່ Yango University",
+    "titleMain": "ການສອນພັດທະນາເວັບໃນປະເທດຈີນ @",
+    "titleHighlight": "Yango University",
+    "lede": "ບໍ່ດົນຫຼັງຈາກສິ້ນສຸດຍຸກ Covid, ຂ້ອຍໄດ້ໃຊ້ເວລາສອນການພັດທະນາເວັບທີ່ Yango University ໃນເມືອງຟູໂຈວ (Fuzhou), ຟູຈ້ຽນ (Fujian). ຂ້ອຍຢາກລອງໃຊ້ຊີວິດ ແລະ ເຮັດວຽກໃນປະເທດຈີນມາໂດຍຕະຫຼອດ.",
+    "curriculum": {
+      "label": "[ ຫຼັກສູດ ]",
+      "heading": "ການສອນພື້ນຖານຂອງເວັບ",
+      "p1": "ບົດບາດຂອງຂ້ອຍແມ່ນການແນະນໍານັກສຶກສາໃຫ້ຮູ້ຈັກກັບພື້ນຖານຂອງການພັດທະນາເວັບ.",
+      "p2": "ພວກເຮົາເນັ້ນໃສ່ສິ່ງຕ່າງໆເຊັ່ນ:",
+      "topics": [
+        "HTML ແລະ ໂຄງສ້າງໜ້າເວັບແບບ Semantic",
+        "CSS ແລະ ການຈັດວາງແບບ Responsive",
+        "ພື້ນຖານ JavaScript",
+        "ວິທີການເຮັດວຽກຂອງ Browser",
+        "ອິນເຕີເນັດແມ່ນຫຍັງ",
+        "ຮູບແບບ Client–Server ທີ່ຢູ່ເບື້ອງຫຼັງເວັບແອັບພລິເຄຊັນ"
+      ],
+      "p3": "ແທນທີ່ຈະສອນແຕ່ທິດສະດີ, ຂ້ອຍພະຍາຍາມເຮັດໃຫ້ມັນເປັນພາກປະຕິບັດໃຫ້ຫຼາຍທີ່ສຸດ, ຫ້ອງຮຽນຕ້ອງມີຄວາມມ່ວນ ເພາະນັ້ນຄືສິ່ງທີ່ກະຕຸ້ນນັກສຶກສາໄດ້ດີທີ່ສຸດ. ເປົ້າໝາຍແມ່ນໃຫ້ນັກສຶກສາສ້າງບາງສິ່ງທີ່ເຂົາເຈົ້າສາມາດເຫັນມັນເຮັດວຽກໄດ້ໃນ Browser.",
+      "p4": "ແມ້ແຕ່ Landing Page ແບບງ່າຍໆ ຫຼື UI ທີ່ມີການໂຕ້ຕອບ ກໍພຽງພໍທີ່ຈະເຮັດໃຫ້ນັກສຶກສາຕື່ນເຕັ້ນກັບການຂຽນໂປຣແກຣມ."
+    },
+    "figStudentPresenting": "ນັກສຶກສານໍາສະເໜີໂຄງການຂອງເຂົາເຈົ້າຕໍ່ຫ້ອງຮຽນ",
     "challenge": {
-      "label": "[ THE CHALLENGE ]",
-      "heading": "Teaching in a Different Culture",
-      "p1": "Teaching in China came with some unique challenges.",
-      "p2": "Language differences meant that long technical explanations didn't always work well, I taught my classes in English, and not every student could understand. So I relied heavily on visual demonstrations, live coding, lots of diagrams, and examples.",
-      "p3": "One thing I noticed quickly is that code itself becomes the common language. Once students start experimenting and seeing results in the browser, the barrier disappears."
+      "label": "[ ສິ່ງທ້າທາຍ ]",
+      "heading": "ການສອນໃນວັດທະນະທໍາທີ່ແຕກຕ່າງ",
+      "p1": "ການສອນໃນປະເທດຈີນມາພ້ອມກັບສິ່ງທ້າທາຍທີ່ເປັນເອກະລັກ.",
+      "p2": "ຄວາມແຕກຕ່າງທາງດ້ານພາສາໝາຍຄວາມວ່າການອະທິບາຍທາງເຕັກນິກທີ່ຍາວໆ ບໍ່ໄດ້ຜົນດີສະເໝີໄປ. ຂ້ອຍສອນເປັນພາສາອັງກິດ ແລະ ບໍ່ແມ່ນນັກສຶກສາທຸກຄົນທີ່ຈະເຂົ້າໃຈໄດ້ທັງໝົດ. ສະນັ້ນ ຂ້ອຍຈຶ່ງໃຊ້ການສາທິດດ້ວຍພາບ, ການຂຽນໂຄ້ດໃຫ້ເບິ່ງສົດໆ, ການໃຊ້ Diagram ຈໍານວນຫຼາຍ ແລະ ຕົວຢ່າງຕົວຈິງ.",
+      "p3": "ສິ່ງໜຶ່ງທີ່ຂ້ອຍສັງເກດເຫັນໄດ້ໄວຄື ໂຄ້ດ (Code) ກາຍເປັນພາສາກາງ. ເມື່ອນັກສຶກສາເລີ່ມທົດລອງ ແລະ ເຫັນຜົນໄດ້ຮັບໃນ Browser, ອຸປະສັກທາງພາສາກໍຫາຍໄປ."
     },
     "insight": {
-      "label": "[ THE INSIGHT ]",
-      "heading": "Why Teaching Makes You a Better Developer",
-      "p1": "Teaching programming forces you to understand things at a deeper level.",
-      "p2": "When you have to explain concepts like:",
+      "label": "[ ມຸມມອງ ]",
+      "heading": "ເປັນຫຍັງການສອນຈຶ່ງເຮັດໃຫ້ເຈົ້າເປັນນັກພັດທະນາທີ່ດີຂຶ້ນ",
+      "p1": "ການສອນຂຽນໂປຣແກຣມບັງຄັບໃຫ້ເຈົ້າຕ້ອງເຂົ້າໃຈສິ່ງຕ່າງໆໃນລະດັບທີ່ເລິກເຊິ່ງກວ່າເກົ່າ.",
+      "p2": "ເມື່ອເຈົ້າຕ້ອງອະທິບາຍແນວຄວາມຄິດເຊັ່ນ:",
       "concepts": [
-        "How HTTP requests work",
-        "How the DOM is manipulated",
-        "Why CSS layouts behave the way they do"
+        "HTTP Requests ເຮັດວຽກແນວໃດ",
+        "DOM ຖືກຈັດການແນວໃດ",
+        "ເປັນຫຍັງການຈັດວາງ CSS ຈຶ່ງສະແດງຜົນແບບນັ້ນ"
       ],
-      "p3": "You quickly discover which parts you truly understand and which parts you don't.",
-      "p4": "That process made me a better developer in several ways:",
+      "p3": "ເຈົ້າຈະຄົ້ນພົບໄດ້ໄວວ່າສ່ວນໃດທີ່ເຈົ້າເຂົ້າໃຈແທ້ໆ ແລະ ສ່ວນໃດທີ່ເຈົ້າຍັງບໍ່ທັນເຂົ້າໃຈດີ.",
+      "p4": "ຂະບວນການນັ້ນເຮັດໃຫ້ຂ້ອຍເປັນນັກພັດທະນາທີ່ດີຂຶ້ນໃນຫຼາຍດ້ານ:",
       "benefits": [
         {
-          "title": "Clearer Thinking",
-          "desc": "About how systems work"
+          "title": "ການຄິດທີ່ຊັດເຈນຂຶ້ນ",
+          "desc": "ກ່ຽວກັບວິທີການເຮັດວຽກຂອງລະບົບ"
         },
         {
-          "title": "Stronger Fundamentals",
-          "desc": "Core concepts over frameworks"
+          "title": "ພື້ນຖານທີ່ແໜ້ນແຟ້ນກວ່າ",
+          "desc": "ເນັ້ນແນວຄວາມຄິດຫຼັກກວ່າ Framework"
         },
         {
-          "title": "Better Communication",
-          "desc": "Of technical ideas"
+          "title": "ການສື່ສານທີ່ດີຂຶ້ນ",
+          "desc": "ໃນການຖ່າຍທອດແນວຄວາມຄິດທາງເຕັກນິກ"
         }
       ],
-      "p5": "All of those skills matter just as much as writing code."
+      "p5": "ທັກສະເຫຼົ່ານັ້ນລ້ວນແຕ່ມີຄວາມສໍາຄັນເທົ່າກັບການຂຽນໂຄ້ດ."
     },
-    "figStudentsPresenting": "Students presenting their final project",
-    "figCollaborative": "Collaborative coding session",
+    "figStudentsPresenting": "ນັກສຶກສານໍາສະເໜີໂຄງການສຸດທ້າຍ",
+    "figCollaborative": "ການຮຽນຂຽນໂຄ້ດແບບຮ່ວມມື",
     "perspective": {
-      "label": "[ PERSPECTIVE ]",
-      "heading": "A Global Industry",
-      "p1": "One thing that stood out to me while teaching in China was how global software development really is.",
-      "p2": "Students in Fuzhou were learning the same core technologies used by developers everywhere: web standards, JavaScript, APIs, and modern development tools.",
-      "p3": "The problems developers work on are surprisingly similar no matter where you are in the world.",
-      "p4": "But yeah, infrastructure is quite different and confusing."
+      "label": "[ ມຸມມອງ ]",
+      "heading": "ອຸດສາຫະກໍາລະດັບໂລກ",
+      "p1": "ສິ່ງໜຶ່ງທີ່ໂດດເດັ່ນສໍາລັບຂ້ອຍໃນຂະນະທີ່ສອນໃນປະເທດຈີນຄື ການພັດທະນາຊອບແວເປັນເລື່ອງລະດັບໂລກແທ້ໆ.",
+      "p2": "ນັກສຶກສາໃນຟູໂຈວພວມຮຽນຮູ້ເຕັກໂນໂລຊີຫຼັກອັນດຽວກັນກັບທີ່ນັກພັດທະນາທົ່ວໂລກໃຊ້: ມາດຕະຖານເວັບ, JavaScript, APIs, ແລະ ເຄື່ອງມືພັດທະນາທີ່ທັນສະໄໝ.",
+      "p3": "ບັນຫາທີ່ນັກພັດທະນາເຮັດວຽກນັ້ນຄ້າຍຄືກັນຢ່າງໜ້າປະຫຼາດໃຈ ບໍ່ວ່າເຈົ້າຈະຢູ່ໃສໃນໂລກກໍຕາມ.",
+      "p4": "ແຕ່ແມ່ນແລ້ວ, ໂຄງສ້າງພື້ນຖານທາງໄອທີອາດຈະແຕກຕ່າງ ແລະ ຊັບຊ້ອນກວ່າ."
     },
     "reflection": {
-      "label": "[ REFLECTION ]",
-      "heading": "Looking Back",
-      "p1": "Teaching web development was an experience that stayed with me. It reinforced something that I still believe strongly: strong fundamentals and clear thinking matter more than any particular framework or tool.",
-      "p2": "And those fundamentals are the same whether you are teaching in a classroom or building real software.",
-      "calloutLabel": "KEY TAKEAWAY",
-      "calloutText": "Strong fundamentals and clear thinking matter more than any particular framework or tool."
+      "label": "[ ການສະທ້ອນ ]",
+      "heading": "ເບິ່ງຢ້ອນກັບໄປ",
+      "p1": "ການສອນພັດທະນາເວັບເປັນປະສົບການທີ່ຢູ່ກັບຂ້ອຍຕະຫຼອດມາ. ມັນຢືນຢັນບາງສິ່ງທີ່ຂ້ອຍຍັງເຊື່ອຢ່າງແຮງກ້າຄື: ພື້ນຖານທີ່ແໜ້ນແຟ້ນ ແລະ ການຄິດທີ່ຊັດເຈນສໍາຄັນກວ່າ Framework ຫຼື ເຄື່ອງມືໃດໆ.",
+      "p2": "ແລະ ພື້ນຖານເຫຼົ່ານັ້ນກໍຄືກັນ ບໍ່ວ່າເຈົ້າຈະສອນໃນຫ້ອງຮຽນ ຫຼື ສ້າງຊອບແວຕົວຈິງ.",
+      "calloutLabel": "ບົດຮຽນຫຼັກ",
+      "calloutText": "ພື້ນຖານທີ່ແໜ້ນແຟ້ນ ແລະ ການຄິດທີ່ຊັດເຈນສໍາຄັນກວ່າ Framework ຫຼື ເຄື່ອງມືໃດໆ."
     },
     "cta": {
-      "label": "[ MORE ARTICLES ]",
-      "heading": "Keep Reading",
-      "subtitle": "Check out more technical notes, guides, and lessons learned from my experience.",
-      "viewAll": "View All Articles",
-      "backHome": "← Back Home"
+      "label": "[ ບົດຄວາມເພີ່ມເຕີມ ]",
+      "heading": "ອ່ານຕໍ່",
+      "subtitle": "ເບິ່ງບົດຄວາມທາງເຕັກນິກ, ຄໍາແນະນໍາ ແລະ ບົດຮຽນເພີ່ມເຕີມຈາກປະສົບການຂອງຂ້ອຍ.",
+      "viewAll": "ເບິ່ງບົດຄວາມທັງໝົດ",
+      "backHome": "← ກັບຄືນໜ້າຫຼັກ"
     }
   },
   "orderbridgeArticle": {
-    "breadcrumbHome": "Home",
-    "breadcrumbArticles": "Articles",
-    "breadcrumbCurrent": "How I Built OrderBridge",
-    "titleMain": "How I Built OrderBridge: Solving the",
-    "titleHighlight": "Delivery-to-POS Connection",
-    "lede": "A few months ago, a client came to me with a problem that was simple to describe and it seemed quite straightforward. They needed to bridge the gap between major delivery platforms and their own POS system with an automated OAuth 2.0 handshake.",
-    "introP1Pre": "This project started as a real client brief. The request came in Spanish:",
-    "introP1Post": "In short: they needed to connect their clients' delivery accounts to their POS system through StreamOrder's partner API — automatically, via OAuth, with no manual intervention. I analysed the requirements, read through the StreamOrder partner documentation, and got to work.",
+    "breadcrumbHome": "ໜ້າຫຼັກ",
+    "breadcrumbArticles": "ບົດຄວາມ",
+    "breadcrumbCurrent": "ຂ້ອຍສ້າງ OrderBridge ແນວໃດ",
+    "titleMain": "ຂ້ອຍສ້າງ OrderBridge ແນວໃດ: ການແກ້ໄຂ",
+    "titleHighlight": "ການເຊື່ອມຕໍ່ Delivery ກັບ POS",
+    "lede": "ເມື່ອບໍ່ເທົ່າໃດເດືອນກ່ອນ, ລູກຄ້າຄົນໜຶ່ງມາຫາຂ້ອຍດ້ວຍບັນຫາທີ່ເບິ່ງຄືວ່າງ່າຍ ແລະ ກົງໄປກົງມາ. ເຂົາເຈົ້າຕ້ອງການເຊື່ອມຕໍ່ຊ່ອງຫວ່າງລະຫວ່າງແພລດຟອມ Delivery ຫຼັກໆ ກັບລະບົບ POS ຂອງເຂົາເຈົ້າເອງ ດ້ວຍການເຮັດ OAuth 2.0 ແບບອັດຕະໂນມັດ.",
+    "introP1Pre": "ໂຄງການນີ້ເລີ່ມຕົ້ນຈາກຄວາມຕ້ອງການຕົວຈິງຂອງລູກຄ້າ. ຄໍາຮ້ອງຂໍມາເປັນພາສາສະເປນ:",
+    "introP1Post": "ສະຫຼຸບສັ້ນໆ: ເຂົາເຈົ້າຕ້ອງການເຊື່ອມຕໍ່ບັນຊີ Delivery ຂອງລູກຄ້າເຂົ້າກັບລະບົບ POS ຜ່ານ Partner API ຂອງ StreamOrder - ໂດຍອັດຕະໂນມັດຜ່ານ OAuth, ບໍ່ຕ້ອງມີການຈັດການດ້ວຍມື. ຂ້ອຍໄດ້ວິເຄາະຄວາມຕ້ອງການ, ອ່ານເອກະສານຂອງ StreamOrder, ແລະ ເລີ່ມເຮັດວຽກ.",
     "brief": {
-      "label": "[ THE BRIEF ]",
-      "heading": "The Client Proposal",
-      "p1": "Before writing a single line of code, I put together a formal proposal. It forced clarity on both sides — the client understood exactly what they were getting, and I understood exactly what I was building.",
-      "proposalLabel": "PROJECT PROPOSAL",
-      "proposalTitle": "Delivery Apps to POS Integration",
+      "label": "[ ລາຍລະອຽດວຽກ ]",
+      "heading": "ຂໍ້ສະເໜີຂອງລູກຄ້າ",
+      "p1": "ກ່ອນຈະຂຽນໂຄ້ດແມ້ແຕ່ແຖວດຽວ, ຂ້ອຍໄດ້ລວບລວມຂໍ້ສະເໜີທີ່ເປັນທາງການ. ມັນຊ່ວຍສ້າງຄວາມຊັດເຈນໃຫ້ທັງສອງຝ່າຍ - ລູກຄ້າເຂົ້າໃຈວ່າເຂົາເຈົ້າຈະໄດ້ຫຍັງ, ແລະ ຂ້ອຍກໍເຂົ້າໃຈວ່າຂ້ອຍພວມສ້າງຫຍັງ.",
+      "proposalLabel": "ຂໍ້ສະເໜີໂຄງການ",
+      "proposalTitle": "ການເຊື່ອມຕໍ່ Delivery Apps ກັບ POS",
       "proposalSubtitle": "Middleware API · StreamOrder · OAuth 2.0",
-      "descriptionLabel": "DESCRIPTION",
-      "descriptionText": "This project establishes a secure, automated \"Digital Bridge\" — a Middleware API between the StreamOrder aggregator and the client's Point of Sale (POS) system, enabling delivery orders to flow automatically into the POS with no manual intervention.",
-      "objectiveLabel": "OBJECTIVE",
-      "objectiveText": "Implement OAuth 2.0 as the authentication layer, ensuring data remains secure while allowing orders to sync automatically from delivery platforms into the POS.",
+      "descriptionLabel": "ຄໍາອະທິບາຍ",
+      "descriptionText": "ໂຄງການນີ້ສ້າງ \"ຂົວຕໍ່ດິຈິຕອນ\" ທີ່ມີຄວາມປອດໄພ ແລະ ເປັນອັດຕະໂນມັດ - ເປັນ Middleware API ລະຫວ່າງຕົວລວມອໍເດີ (StreamOrder aggregator) ແລະ ລະບົບ POS ຂອງລູກຄ້າ, ເຮັດໃຫ້ອໍເດີຈາກ Delivery ໄຫຼເຂົ້າສູ່ POS ໂດຍອັດຕະໂນມັດ ໂດຍບໍ່ຕ້ອງມີການປ້ອນຂໍ້ມູນດ້ວຍມື.",
+      "objectiveLabel": "ວັດຖຸປະສົງ",
+      "objectiveText": "ຕິດຕັ້ງ OAuth 2.0 ເປັນຊັ້ນການກວດສອບສິດ (Authentication layer), ເພື່ອຮັບປະກັນຄວາມປອດໄພຂອງຂໍ້ມູນ ໃນຂະນະທີ່ອະນຸຍາດໃຫ້ອໍເດີຊິງຄ໌ຈາກແພລດຟອມ Delivery ເຂົ້າສູ່ POS ໂດຍອັດຕະໂນມັດ.",
       "objectives": [
         {
-          "label": "Secure Connection",
-          "desc": "OAuth handshake — no shared passwords, data protected by encrypted digital keys."
+          "label": "ການເຊື່ອມຕໍ່ທີ່ປອດໄພ",
+          "desc": "OAuth handshake - ບໍ່ມີການແບ່ງປັນລະຫັດຜ່ານ, ຂໍ້ມູນຖືກປ້ອງກັນດ້ວຍລະຫັດດິຈິຕອນທີ່ມີການເຂົ້າລະຫັດໄວ້."
         },
         {
-          "label": "Automatic Sync",
-          "desc": "Every DoorDash and delivery platform order appears in the POS instantly."
+          "label": "ການຊິງຄ໌ອັດຕະໂນມັດ",
+          "desc": "ທຸກອໍເດີຈາກ DoorDash ແລະ ແພລດຟອມອື່ນໆ ຈະປາກົດໃນ POS ທັນທີ."
         }
       ],
-      "architectureLabel": "ARCHITECTURE FLOW",
+      "architectureLabel": "ຂະບວນການໂຄງສ້າງ",
       "archNodes": [
-        "Delivery Platforms",
+        "ແພລດຟອມ Delivery",
         "StreamOrder",
         "Middleware API",
-        "POS System",
+        "ລະບົບ POS",
         "Dashboard"
       ],
-      "timelineHeading": "4-Week Timeline",
-      "goalLabel": "Goal",
-      "resultLabel": "Result",
+      "timelineHeading": "ໄລຍະເວລາ 4 ອາທິດ",
+      "goalLabel": "ເປົ້າໝາຍ",
+      "resultLabel": "ຜົນຮັບ",
       "weeks": [
         {
-          "week": "Week 1",
-          "title": "Security & The Digital Handshake",
-          "goal": "Securely connect the client accounts.",
-          "result": "StreamOrder officially linked; data protected by encrypted OAuth keys."
+          "week": "ອາທິດທີ 1",
+          "title": "ຄວາມປອດໄພ ແລະ ການເຊື່ອມຕໍ່ດິຈິຕອນ",
+          "goal": "ເຊື່ອມຕໍ່ບັນຊີລູກຄ້າຢ່າງປອດໄພ.",
+          "result": "StreamOrder ຖືກເຊື່ອມຕໍ່ຢ່າງເປັນທາງການ; ຂໍ້ມູນຖືກປ້ອງກັນດ້ວຍຄີ OAuth ທີ່ເຂົ້າລະຫັດໄວ້."
         },
         {
-          "week": "Week 2",
-          "title": "The Automation Bridge",
-          "goal": "Make the systems communicate.",
-          "result": "Translator and webhook listener live in a test environment — orders captured and translated instantly."
+          "week": "ອາທິດທີ 2",
+          "title": "ຂົວຕໍ່ອັດຕະໂນມັດ",
+          "goal": "ເຮັດໃຫ້ລະບົບສື່ສານກັນໄດ້.",
+          "result": "ລະບົບແປງຂໍ້ມູນ (Translator) ແລະ Webhook listener ເປີດໃຊ້ໃນສະພາບແວດລ້ອມທົດສອບ - ອໍເດີຖືກຈັບ ແລະ ແປງຂໍ້ມູນໄດ້ທັນທີ."
         },
         {
-          "week": "Week 3",
-          "title": "Dashboard & Live Launch",
-          "goal": "Visibility and production readiness.",
-          "result": "Bridge active, orders printing in the POS, live monitoring dashboard delivered."
+          "week": "ອາທິດທີ 3",
+          "title": "Dashboard ແລະ ການເປີດໃຊ້ງານຈິງ",
+          "goal": "ຄວາມພ້ອມໃນການສະແດງຜົນ ແລະ ການໃຊ້ງານຈິງ.",
+          "result": "ລະບົບເຮັດວຽກແລ້ວ, ອໍເດີຖືກພິມອອກໃນ POS, Dashboard ຕິດຕາມການເຮັດວຽກຖືກສົ່ງມອບ."
         },
         {
-          "week": "Week 4",
-          "title": "Refinement & Monitoring",
-          "goal": "Stability under real-world conditions.",
-          "result": "7-day live monitoring window; API changes from StreamOrder or delivery platforms patched immediately."
+          "week": "ອາທິດທີ 4",
+          "title": "ການປັບແຕ່ງ ແລະ ການຕິດຕາມ",
+          "goal": "ຄວາມໝັ້ນຄົງພາຍໃຕ້ສະພາບການໃຊ້ງານຈິງ.",
+          "result": "ຕິດຕາມການເຮັດວຽກ 7 ວັນ; ຫາກມີການປ່ຽນແປງ API ຈາກ StreamOrder ຫຼື Delivery ຈະຖືກແກ້ໄຂທັນທີ."
         }
       ],
-      "deliverablesHeading": "Core Deliverables",
+      "deliverablesHeading": "ສິ່ງທີ່ຈະສົ່ງມອບ",
       "deliverables": [
         {
-          "name": "OAuth 2.0 Integration",
-          "desc": "Authentication layer connecting all accounts without sharing private passwords."
+          "name": "ການເຊື່ອມຕໍ່ OAuth 2.0",
+          "desc": "ຊັ້ນການກວດສອບສິດທີ່ເຊື່ອມຕໍ່ທຸກບັນຊີໂດຍບໍ່ຕ້ອງແບ່ງປັນລະຫັດຜ່ານສ່ວນຕົວ."
         },
         {
-          "name": "Real-Time Order Injection",
-          "desc": "Orders detected via webhook and pushed directly into the POS within seconds."
+          "name": "ການປ້ອນອໍເດີແບບ Real-Time",
+          "desc": "ອໍເດີຖືກກວດພົບຜ່ານ Webhook ແລະ ຖືກສົ່ງເຂົ້າ POS ພາຍໃນບໍ່ເທົ່າໃດວິນາທີ."
         },
         {
-          "name": "Automated Translator",
-          "desc": "Intelligent menu mapping ensuring every item, modifier, and customer note matches the POS format."
+          "name": "ລະບົບແປງຂໍ້ມູນອັດຕະໂນມັດ",
+          "desc": "ການຈັບຄູ່ເມນູທີ່ສະຫຼາດ ຮັບປະກັນວ່າທຸກລາຍການ, ຕົວເລືອກເພີ່ມເຕີມ ແລະ ໝາຍເຫດຂອງລູກຄ້າ ກົງກັບຮູບແບບຂອງ POS."
         },
         {
-          "name": "Automatic Token Refresh",
-          "desc": "Self-maintaining security — OAuth tokens renew automatically so the connection never expires."
+          "name": "ການ Refresh Token ອັດຕະໂນມັດ",
+          "desc": "ລະບົບຮັກສາຄວາມປອດໄພດ້ວຍຕົນເອງ - OAuth token ຈະຕໍ່ອາຍຸອັດຕະໂນມັດ ເຮັດໃຫ້ການເຊື່ອມຕໍ່ບໍ່ມີວັນໝົດອາຍຸ."
         },
         {
-          "name": "Reliability Monitoring",
-          "desc": "Error-tracking that alerts immediately if an order fails to sync."
+          "name": "ການຕິດຕາມຄວາມໜ້າເຊື່ອຖື",
+          "desc": "ລະບົບຕິດຕາມຂໍ້ຜິດພາດທີ່ຈະແຈ້ງເຕືອນທັນທີຫາກອໍເດີບໍ່ຊິງຄ໌."
         },
         {
-          "name": "Live Connection Dashboard",
-          "desc": "Web view to monitor bridge status and verify the most recent successful syncs."
+          "name": "Dashboard ຕິດຕາມການເຊື່ອມຕໍ່",
+          "desc": "ໜ້າເວັບສໍາລັບຕິດຕາມສະຖານະຂອງລະບົບ ແລະ ກວດສອບການຊິງຄ໌ທີ່ສໍາເລັດຫຼ້າສຸດ."
         }
       ],
-      "prerequisitesLabel": "PROJECT PREREQUISITES",
+      "prerequisitesLabel": "ເງື່ອນໄຂເບື້ອງຕົ້ນຂອງໂຄງການ",
       "prerequisites": [
-        "StreamOrder Developer access with Partner API enabled.",
-        "POS developer portal credentials with write permissions.",
-        "Menu / SKU list exported from the POS (CSV or Excel).",
-        "A named technical point of contact authorised to approve the OAuth handshake."
+        "ສິດການເຂົ້າເຖິງນັກພັດທະນາ StreamOrder ພ້ອມເປີດໃຊ້ Partner API.",
+        "ຂໍ້ມູນລັອກອິນ POS developer portal ພ້ອມສິດການຂຽນຂໍ້ມູນ (write permissions).",
+        "ລາຍຊື່ເມນູ / SKU ທີ່ສົ່ງອອກຈາກ POS (CSV ຫຼື Excel).",
+        "ຜູ້ປະສານງານທາງເຕັກນິກທີ່ມີສິດອະນຸມັດການເຮັດ OAuth handshake."
       ],
-      "downloadProposal": "↓ Download Original Proposal (PDF)"
+      "downloadProposal": "↓ ດາວໂຫລດຂໍ້ສະເໜີຕົ້ນສະບັບ (PDF)"
     },
     "painPoint": {
-      "label": "[ THE PAIN POINT ]",
-      "heading": "Keeping Track of All the Orders",
-      "p1": "Before we automated this, the workflow was boring and painful. Most busy kitchens have a counter full of tablets from different delivery apps.",
-      "listIntro": "A staff member has to:",
+      "label": "[ ບັນຫາທີ່ພົບ ]",
+      "heading": "ການຕິດຕາມອໍເດີທັງໝົດ",
+      "p1": "ກ່ອນທີ່ພວກເຮົາຈະເຮັດໃຫ້ມັນເປັນອັດຕະໂນມັດ, ຂະບວນການເຮັດວຽກແມ່ນໜ້າເບື່ອ ແລະ ຫຍຸ້ງຍາກ. ເຮືອນຄົວທີ່ຫຍຸ້ງຫຼາຍສ່ວນໃຫຍ່ຈະມີແທັບເລັດເຕັມໄປໝົດຈາກແອັບ Delivery ຕ່າງໆ.",
+      "listIntro": "ພະນັກງານຕ້ອງ:",
       "listItems": [
-        "Read the order off a tablet.",
-        "Manually type it into the POS.",
-        "Hope they didn't miss a \"no onions\" modifier or something."
+        "ອ່ານອໍເດີຈາກແທັບເລັດ.",
+        "ພິມມັນເຂົ້າໄປໃນ POS ດ້ວຍມື.",
+        "ຫວັງວ່າເຂົາເຈົ້າຈະບໍ່ພາດໝາຍເຫດເຊັ່ນ \"ບໍ່ໃສ່ຫົວບົ່ວ\" ຫຼື ຢ່າງອື່ນ."
       ],
-      "p2": "In a quiet shop, it's boring. In a kitchen doing 80+ orders a day, it's a painful operational problem.",
-      "mathLabel": "THE MATH",
-      "mathPre": "50 orders a day × 2.5 minutes of manual entry × $18/hr =",
-      "mathHighlight": "$1,100+ lost every month",
-      "mathPost": "to a task that shouldn't involve a human at all."
+      "p2": "ໃນຮ້ານທີ່ງຽບໆ ມັນອາດຈະເບິ່ງຄືບໍ່ມີຫຍັງ. ແຕ່ໃນເຮືອນຄົວທີ່ເຮັດ 80+ ອໍເດີຕໍ່ມື້, ມັນເປັນບັນຫາໃຫຍ່ໃນການດໍາເນີນງານ.",
+      "mathLabel": "ການຄິດໄລ່",
+      "mathPre": "50 ອໍເດີຕໍ່ມື້ × 2.5 ນາທີໃນການປ້ອນຂໍ້ມູນ × ຄ່າແຮງງານ $18/ຊົ່ວໂມງ =",
+      "mathHighlight": "ເສຍເງິນໄປກວ່າ $1,100+ ທຸກໆເດືອນ",
+      "mathPost": "ໃຫ້ກັບວຽກທີ່ບໍ່ຄວນໃຊ້ຄົນເຮັດເລີຍ."
     },
-    "figOrders": "Orders page — filterable, sortable, real-time status updates",
+    "figOrders": "ໜ້າອໍເດີ - ສາມາດກັ່ນຕອງ, ຈັດລຽງ ແລະ ອັບເດດສະຖານະແບບ Real-time",
     "engineering": {
-      "label": "[ ENGINEERING ]",
-      "heading": "Engineering the Pipeline",
-      "p1": "Once the ROI was clear, I mapped out the pipeline. The logic needed to be bulletproof:",
-      "figDiagram": "High-level flow: delivery platforms → OrderBridge → restaurant POS",
+      "label": "[ ວິສະວະກໍາ ]",
+      "heading": "ການອອກແບບລະບົບ",
+      "p1": "ເມື່ອເຫັນ ROI ທີ່ຊັດເຈນແລ້ວ, ຂ້ອຍໄດ້ວາງແຜນລະບົບ. ຕັກກະ (Logic) ຕ້ອງແໜ້ນແຟ້ນ:",
+      "figDiagram": "ຂະບວນການລະດັບສູງ: ແພລດຟອມ Delivery → OrderBridge → POS ຮ້ານອາຫານ",
       "steps": [
         {
           "n": "01",
-          "title": "Ingest delivery webhooks",
-          "desc": "Receive HTTPS POST from each delivery platform."
+          "title": "ຮັບ Webhooks ຈາກ Delivery",
+          "desc": "ຮັບ HTTPS POST ຈາກແຕ່ລະແພລດຟອມ."
         },
         {
           "n": "02",
-          "title": "Verify signatures",
-          "desc": "HMAC-SHA256 check — security before anything else."
+          "title": "ກວດສອບລາຍເຊັນ (Signature)",
+          "desc": "ກວດສອບ HMAC-SHA256 - ເນັ້ນຄວາມປອດໄພເປັນອັນດັບທໍາອິດ."
         },
         {
           "n": "03",
-          "title": "Translate schemas",
-          "desc": "Map disparate JSON payloads into a unified POS format."
+          "title": "ແປງ Schema ຂໍ້ມູນ",
+          "desc": "ແປງຂໍ້ມູນ JSON ທີ່ແຕກຕ່າງກັນໃຫ້ເປັນຮູບແບບດຽວກັນສໍາລັບ POS."
         },
         {
           "n": "04",
-          "title": "Inject the order",
-          "desc": "POST to the POS API with exponential-backoff retry."
+          "title": "ປ້ອນອໍເດີເຂົ້າລະບົບ",
+          "desc": "POST ຫາ POS API ພ້ອມລະບົບລອງໃໝ່ (exponential-backoff retry)."
         },
         {
           "n": "05",
-          "title": "Broadcast updates",
-          "desc": "WebSocket push to the live dashboard — no polling."
+          "title": "ແຈ້ງເຕືອນການອັບເດດ",
+          "desc": "ສົ່ງຂໍ້ມູນຜ່ານ WebSocket ຫາ Dashboard - ບໍ່ຕ້ອງລໍຖ້າການໂຫລດໜ້າເວັບ."
         }
       ]
     },
     "process": {
-      "label": "[ THE PROCESS ]",
-      "heading": "Writing the Spec First",
-      "p1": "I started with a Software Requirements Specification (SRS) before writing a single line of code. It's much easier to fix a mistake in a document than to rewrite production code later. The SRS forced both me and the client to agree on exactly what \"done\" looked like — no ambiguity, no scope creep.",
+      "label": "[ ຂະບວນການ ]",
+      "heading": "ການຂຽນ Spec ກ່ອນ",
+      "p1": "ຂ້ອຍເລີ່ມຕົ້ນດ້ວຍ Software Requirements Specification (SRS) ກ່ອນທີ່ຈະຂຽນໂຄ້ດແມ້ແຕ່ແຖວດຽວ. ມັນງ່າຍກວ່າຫຼາຍທີ່ຈະແກ້ໄຂຂໍ້ຜິດພາດໃນເອກະສານກ່ວາການຂຽນໂຄ້ດໃໝ່ໃນພາຍຫຼັງ. SRS ບັງຄັບໃຫ້ຂ້ອຍ ແລະ ລູກຄ້າເຫັນດີນໍາກັນວ່າຄໍາວ່າ \"ສໍາເລັດ\" ແມ່ນຫຍັງ - ບໍ່ມີຄວາມຄຸມເຄືອ, ບໍ່ມີວຽກທີ່ງອກອອກມາເກີນຂອບເຂດ.",
       "requirements": [
         {
           "label": "FR-01",
           "title": "OAuth 2.0 Server",
-          "desc": "System must act as an OAuth 2.0 provider — issuing, validating, and refreshing tokens per RFC 6749."
+          "desc": "ລະບົບຕ້ອງເຮັດໜ້າທີ່ເປັນ OAuth 2.0 provider - ອອກ, ກວດສອບ ແລະ Refresh token ຕາມ RFC 6749."
         },
         {
           "label": "FR-02",
-          "title": "Webhook Ingestion",
-          "desc": "System must accept HTTPS POST webhooks from delivery platforms and verify each request with HMAC-SHA256 signature validation."
+          "title": "ການຮັບ Webhook",
+          "desc": "ລະບົບຕ້ອງຮັບ HTTPS POST webhooks ຈາກແພລດຟອມ Delivery ແລະ ກວດສອບແຕ່ລະ request ດ້ວຍ HMAC-SHA256."
         },
         {
           "label": "FR-03",
-          "title": "Schema Translation",
-          "desc": "System must map all incoming delivery payloads to a unified POS format, with graceful failure and logging on unmapped SKUs."
+          "title": "ການແປງ Schema",
+          "desc": "ລະບົບຕ້ອງແປງຂໍ້ມູນຈາກທຸກແພລດຟອມໃຫ້ເປັນຮູບແບບ POS ດຽວກັນ, ພ້ອມລະບົບແຈ້ງເຕືອນຫາກບໍ່ພົບ SKU."
         },
         {
           "label": "FR-04",
-          "title": "POS Injection",
-          "desc": "System must POST translated orders to the POS API with exponential-backoff retry on failure — no order dropped silently."
+          "title": "ການປ້ອນຂໍ້ມູນ POS",
+          "desc": "ລະບົບຕ້ອງ POST ອໍເດີທີ່ແປງແລ້ວຫາ POS API ພ້ອມລະບົບ Retry ຫາກພົບຂໍ້ຜິດພາດ - ຈະບໍ່ມີອໍເດີໃດຫາຍໄປໂດຍບໍ່ແຈ້ງເຕືອນ."
         },
         {
           "label": "NFR-01",
-          "title": "Real-Time Updates",
-          "desc": "Dashboard must reflect order status changes via WebSocket push. No polling."
+          "title": "ການອັບເດດແບບ Real-Time",
+          "desc": "Dashboard ຕ້ອງສະແດງສະຖານະອໍເດີຜ່ານ WebSocket. ບໍ່ມີການ Polling."
         },
         {
           "label": "NFR-02",
-          "title": "Token Persistence",
-          "desc": "OAuth tokens must survive server restarts, stored encrypted at rest."
+          "title": "ການເກັບຮັກສາ Token",
+          "desc": "OAuth tokens ຕ້ອງບໍ່ຫາຍໄປເມື່ອ Server Restart ແລະ ຖືກເກັບຮັກສາແບບເຂົ້າລະຫັດ (encrypted at rest)."
         }
       ]
     },
-    "figDashboard": "Live dashboard — real-time order feed with status tracking",
+    "figDashboard": "Dashboard ສົດ - ການຕິດຕາມອໍເດີແບບ Real-time ພ້ອມການຕິດຕາມສະຖານະ",
     "techStack": {
-      "label": "[ TECH STACK ]",
-      "heading": "The Tech Stack",
-      "subtitle": "What tools would I use for this kind of project:",
+      "label": "[ ເຕັກໂນໂລຊີ ]",
+      "heading": "Tech Stack ທີ່ໃຊ້",
+      "subtitle": "ເຄື່ອງມືທີ່ຂ້ອຍໃຊ້ສໍາລັບໂຄງການປະເພດນີ້:",
       "items": [
         {
           "name": "Node.js & TypeScript",
-          "body": "I am sure that Python would've also worked wonders here. Personally I prefer working with node modules and npm over pip and virtual environments."
+          "body": "ຂ້ອຍໝັ້ນໃຈວ່າ Python ກໍເຮັດວຽກໄດ້ດີໃນສ່ວນນີ້. ແຕ່ສ່ວນຕົວຂ້ອຍມັກການເຮັດວຽກກັບ Node modules ແລະ npm ຫຼາຍກວ່າ pip ແລະ virtual environments."
         },
         {
-          "name": "Fastify (Not Express)",
-          "body": "Express is the legacy default, but Fastify is built for modern performance. Built-in JSON schema validation, lower overhead. For a middleware API where every millisecond counts, Fastify wins."
+          "name": "Fastify (ບໍ່ແມ່ນ Express)",
+          "body": "Express ເປັນມາດຕະຖານເກົ່າ, ແຕ່ Fastify ຖືກສ້າງມາເພື່ອປະສິດທິພາບທີ່ທັນສະໄໝ. ມີລະບົບກວດສອບ JSON schema ໃນຕົວ, ໃຊ້ຊັບພະຍາກອນໜ້ອຍ. ສໍາລັບ Middleware API ທີ່ທຸກໆມິນລິວິນາທີມີຄ່າ, Fastify ແມ່ນຜູ້ຊະນະ."
         }
       ]
     },
     "deployment": {
-      "label": "[ DEPLOYMENT ]",
-      "heading": "Infrastructure",
-      "p1": "The three services are independently deployed — each with its own host, its own domain, and its own responsibility. This mirrors how a real production integration would be structured.",
-      "infrastructureLabel": "INFRASTRUCTURE OVERVIEW",
+      "label": "[ ການຕິດຕັ້ງລະບົບ ]",
+      "heading": "ໂຄງສ້າງພື້ນຖານ",
+      "p1": "ທັງສາມບໍລິການຖືກຕິດຕັ້ງແຍກກັນ - ແຕ່ລະອັນມີ Host ຂອງຕົນເອງ, Domain ຂອງຕົນເອງ ແລະ ໜ້າທີ່ຂອງຕົນເອງ. ນີ້ແມ່ນການຈໍາລອງໂຄງສ້າງຂອງການເຊື່ອມຕໍ່ລະບົບໃນລະດັບການໃຊ້ງານຈິງ.",
+      "infrastructureLabel": "ພາບລວມໂຄງສ້າງ",
       "services": [
         {
           "host": "Vercel",
           "service": "OrderBridge Dashboard",
-          "detail": "Real-time monitoring UI — edge-deployed, globally available.",
+          "detail": "UI ສໍາລັບຕິດຕາມແບບ Real-time - ຕິດຕັ້ງແບບ Edge, ເຂົ້າເຖິງໄດ້ໄວທົ່ວໂລກ.",
           "tag": "Frontend"
         },
         {
           "host": "Railway",
           "service": "OrderBridge API + PostgreSQL",
-          "detail": "Core middleware engine with the OAuth server, webhook ingestion, schema translator, and POS injector. PostgreSQL stores OAuth tokens, menu mappings, and order logs.",
+          "detail": "ຫົວໃຈຫຼັກຂອງລະບົບ Middleware ພ້ອມ OAuth server, ລະບົບຮັບ Webhook, ແປງຂໍ້ມູນ ແລະ ປ້ອນຂໍ້ມູນ POS. PostgreSQL ເກັບຮັກສາ OAuth tokens, ຂໍ້ມູນການຈັບຄູ່ເມນູ ແລະ ບັນທຶກອໍເດີ.",
           "tag": "Backend"
         },
         {
           "host": "Railway",
           "service": "MockPOS Server",
-          "detail": "Isolated POS simulator running as a completely separate service — its own OAuth consent flow, its own order terminal.",
+          "detail": "ລະບົບຈໍາລອງ POS ທີ່ເຮັດວຽກແຍກເປັນບໍລິການອິດສະຫຼະ - ມີລະບົບ OAuth consent ຂອງຕົນເອງ ແລະ ໜ້າຈໍຮັບອໍເດີຂອງຕົນເອງ.",
           "tag": "Simulator"
         }
       ],
-      "whySeparateLabel": "WHY SEPARATE SERVICES",
-      "whySeparate": "Keeping MockPOS on its own Railway service wasn't just convenient — it was the point. It proves the integration works across a real network boundary, not just between two functions in the same process."
+      "whySeparateLabel": "ເປັນຫຍັງຕ້ອງແຍກບໍລິການ",
+      "whySeparate": "ການເກັບ MockPOS ໄວ້ໃນບໍລິການ Railway ແຍກຕ່າງຫາກບໍ່ແມ່ນພຽງແຕ່ເພື່ອຄວາມສະດວກ - ແຕ່ມັນຄືຈຸດປະສົງຫຼັກ. ມັນພິສູດວ່າການເຊື່ອມຕໍ່ລະບົບເຮັດວຽກໄດ້ແທ້ຜ່ານເຄືອຂ່າຍຈິງ, ບໍ່ແມ່ນພຽງແຕ່ການສົ່ງຂໍ້ມູນລະຫວ່າງສອງຟັງຊັນໃນລະບົບດຽວກັນ."
     },
     "hardParts": {
-      "label": "[ THE HARD PARTS ]",
-      "heading": "Translation and Trust",
-      "p1": "The Translator was the hardest part of this project. DoorDash, Uber Eats, and GrabFood all have wildly different ideas of how to describe a \"Cheeseburger with no pickles.\" Mapping these inconsistent payloads to a standardised POS SKU while maintaining a MenuMapping table required deep edge-case handling. If the mapping fails, the system has to fail gracefully — not drop the order into a void.",
-      "p2": "Then there was the OAuth 2.0 Server. It's one thing to use OAuth; it's another to be the provider. Building the authorization endpoints, token logic, and encrypted storage according to the RFC specs took more gray hair than the rest of the app combined."
+      "label": "[ ສ່ວນທີ່ຍາກ ]",
+      "heading": "ການແປງຂໍ້ມູນ ແລະ ຄວາມເຊື່ອໝັ້ນ",
+      "p1": "ລະບົບແປງຂໍ້ມູນ (Translator) ແມ່ນສ່ວນທີ່ຍາກທີ່ສຸດຂອງໂຄງການນີ້. DoorDash, Uber Eats, ແລະ GrabFood ລ້ວນແຕ່ມີວິທີທີ່ແຕກຕ່າງກັນໃນການອະທິບາຍ \"Cheeseburger ບໍ່ໃສ່ຜັກດອງ.\" ການຈັບຄູ່ຂໍ້ມູນທີ່ບໍ່ສອດຄ່ອງເຫຼົ່ານີ້ໃຫ້ເປັນມາດຕະຖານ POS ດຽວກັນ ໃນຂະນະທີ່ຮັກສາຕາຕະລາງ MenuMapping ຕ້ອງໃຊ້ການຈັດການກໍລະນີພິເສດ (edge-case) ຢ່າງລະອຽດ. ຫາກການຈັບຄູ່ຜິດພາດ, ລະບົບຕ້ອງແຈ້ງເຕືອນ - ບໍ່ແມ່ນປ່ອຍໃຫ້ອໍເດີຫາຍໄປ.",
+      "p2": "ນອກຈາກນັ້ນຍັງມີ OAuth 2.0 Server. ມັນເປັນເລື່ອງໜຶ່ງທີ່ຈະໃຊ້ OAuth; ແຕ່ມັນເປັນອີກເລື່ອງໜຶ່ງທີ່ຈະເປັນຜູ້ໃຫ້ບໍລິການ (Provider). ການສ້າງ Authorization endpoints, ຕັກກະຂອງ token ແລະ ການເກັບຮັກສາທີ່ເຂົ້າລະຫັດຕາມມາດຕະຖານ RFC ຕ້ອງໃຊ້ຄວາມພະຍາຍາມຫຼາຍກວ່າສ່ວນອື່ນໆທັງໝົດລວມກັນ."
     },
-    "figMockPos": "Phing Kai Kitchen [POS Simulator] — orders arriving automatically from OrderBridge",
+    "figMockPos": "Phing Kai Kitchen [POS Simulator] - ອໍເດີທີ່ເຂົ້າມາໂດຍອັດຕະໂນມັດຈາກ OrderBridge",
     "portfolio": {
-      "label": "[ THE PORTFOLIO BUILD ]",
-      "heading": "Introducing OrderBridge",
-      "p1": "I enjoyed the architecture of the client project so much that I built OrderBridge — a refined, standalone version for my portfolio. It's not just a copy; it's an evolution. A complete end-to-end demo that simulates the entire flow without needing real-world infrastructure.",
+      "label": "[ ການສ້າງຜົນງານ ]",
+      "heading": "ຂໍແນະນໍາ OrderBridge",
+      "p1": "ຂ້ອຍມັກໂຄງສ້າງຂອງໂຄງການລູກຄ້ານີ້ຫຼາຍ ຈົນຂ້ອຍໄດ້ສ້າງ OrderBridge - ເປັນເວີຊັນທີ່ປັບປຸງໃໝ່ ແລະ ເປັນອິດສະຫຼະສໍາລັບພອດຟໍລິໂອຂອງຂ້ອຍ. ມັນບໍ່ແມ່ນພຽງແຕ່ການກັອບປີ້; ມັນຄືວິັດທະນາການ. ເປັນ Demo ແບບ End-to-end ທີ່ຈໍາລອງຂະບວນການທັງໝົດໂດຍບໍ່ຕ້ອງໃຊ້ໂຄງສ້າງພື້ນຖານໃນຊີວິດຈິງ.",
       "repos": [
         {
           "name": "Backend",
-          "body": "Fastify, TypeScript, and WebSockets."
+          "body": "Fastify, TypeScript, ແລະ WebSockets."
         },
         {
           "name": "Dashboard",
-          "body": "Real-time monitoring and control UI for the OrderBridge system."
+          "body": "UI ສໍາລັບຕິດຕາມ ແລະ ຄວບຄຸມແບບ Real-time ສໍາລັບລະບົບ OrderBridge."
         },
         {
           "name": "POS Simulator (MockPOS)",
-          "body": "A secondary app representing a fictional restaurant called Phing Kai Kitchen. It acts as the 'target' POS, complete with its own OAuth consent screen and live order terminal."
+          "body": "ແອັບພລິເຄຊັນທີສອງທີ່ຕາງໜ້າໃຫ້ຮ້ານອາຫານສົມມຸດຊື່ Phing Kai Kitchen. ມັນເຮັດໜ້າທີ່ເປັນ POS 'ປາຍທາງ', ພ້ອມດ້ວຍໜ້າຈໍ OAuth consent ແລະ ໜ້າຈໍຮັບອໍເດີສົດ."
         }
       ]
     },
-    "figSimulator": "Simulator — fire test orders from any delivery platform with one click",
+    "figSimulator": "Simulator - ສົ່ງອໍເດີທົດສອບຈາກແພລດຟອມ Delivery ໃດກໍໄດ້ດ້ວຍການຄລິກດຽວ",
     "sourceCode": {
-      "label": "[ SOURCE CODE ]",
-      "heading": "The Complete Codebase",
-      "subtitle": "All three core components are open-source and available on GitHub:",
+      "label": "[ Source Code ]",
+      "heading": "ໂຄ້ດທັງໝົດຂອງລະບົບ",
+      "subtitle": "ທັງສາມສ່ວນປະກອບຫຼັກແມ່ນ Open-source ແລະ ມີໃຫ້ເບິ່ງໃນ GitHub:",
       "repos": [
         {
           "title": "OrderBridge API",
-          "desc": "Core middleware engine with OAuth 2.0, webhook ingestion, and schema translation."
+          "desc": "ຫົວໃຈຫຼັກຂອງ Middleware ພ້ອມ OAuth 2.0, ການຮັບ Webhook ແລະ ການແປງ Schema."
         },
         {
           "title": "OrderBridge Dashboard",
-          "desc": "Real-time monitoring UI with live order feed and connection status."
+          "desc": "UI ສໍາລັບຕິດຕາມແບບ Real-time ພ້ອມການສະແດງອໍເດີ ແລະ ສະຖານະການເຊື່ອມຕໍ່."
         },
         {
           "title": "MockPOS Server",
-          "desc": "POS simulator demonstrating the complete integration flow."
+          "desc": "ລະບົບຈໍາລອງ POS ທີ່ສະແດງຂະບວນການເຊື່ອມຕໍ່ທັງໝົດ."
         }
       ]
     },
     "liveDemos": {
-      "label": "[ LIVE DEMOS ]",
-      "heading": "Try It Out",
-      "subtitle": "Both services are live and ready to use:",
+      "label": "[ Live Demos ]",
+      "heading": "ທົດລອງໃຊ້ງານ",
+      "subtitle": "ທັງສອງບໍລິການເປີດໃຫ້ທົດລອງໃຊ້ແລ້ວ:",
       "demos": [
         {
           "name": "OrderBridge Dashboard",
-          "desc": "Real-time monitoring interface. Watch orders flow through the pipeline as they arrive."
+          "desc": "ອິນເຕີເຟດຕິດຕາມແບບ Real-time. ເບິ່ງອໍເດີໄຫຼຜ່ານລະບົບໃນຂະນະທີ່ພວກມັນເຂົ້າມາ."
         },
         {
           "name": "MockPOS Server",
-          "desc": "Live orders page from the fictional Phing Kai Kitchen POS system. See orders injected in real time."
+          "desc": "ໜ້າອໍເດີສົດຈາກລະບົບ POS ຂອງຮ້ານ Phing Kai Kitchen. ເບິ່ງອໍເດີທີ່ຖືກປ້ອນເຂົ້າແບບ Real-time."
         }
       ],
-      "visitLabel": "Visit →"
+      "visitLabel": "ເຂົ້າເບິ່ງ →"
     },
     "cta": {
-      "label": "[ SEE IT IN ACTION ]",
-      "heading": "Ready to Explore?",
-      "subtitle": "Dive into the source code, watch the live systems in action, or check out the full case study.",
-      "viewLiveDemo": "View Live Demo",
-      "fullCaseStudy": "Full Case Study",
-      "allArticles": "← All Articles"
+      "label": "[ ເບິ່ງການເຮັດວຽກ ]",
+      "heading": "ພ້ອມທີ່ຈະສໍາຫຼວດແລ້ວຫຼືຍັງ?",
+      "subtitle": "ເຈາະລຶກເບິ່ງ Source Code, ເບິ່ງລະບົບທີ່ເຮັດວຽກສົດໆ ຫຼື ເບິ່ງລາຍລະອຽດໂຄງການເຕັມ.",
+      "viewLiveDemo": "ເບິ່ງ Live Demo",
+      "fullCaseStudy": "ລາຍລະອຽດໂຄງການເຕັມ",
+      "allArticles": "← ບົດຄວາມທັງໝົດ"
     }
   },
   "orderbridgeCaseStudy": {
     "breadcrumbHome": "ໜ້າຫຼັກ",
     "breadcrumbWork": "ຜົນງານ",
-    "tagline": "ລະບົບ middleware ທີ່ເຊື່ອມຕໍ່ platform delivery ໄປຫາ POS ຂອງຮ້ານ — ລຶບການປ້ອນຂໍ້ມູນດ້ວຍມືທັງໝົດ.",
+    "tagline": "ລະບົບ Middleware ທີ່ເຊື່ອມຕໍ່ແພລດຟອມ Delivery ເຂົ້າກັບ POS ຂອງຮ້ານອາຫານ - ຕັດຂະບວນການປ້ອນຂໍ້ມູນດ້ວຍມືອອກຢ່າງສົມບູນ.",
     "viewLiveDemo": "ເບິ່ງ Live Demo",
-    "readBuildArticle": "ອ່ານບົດຄວາມ",
-    "diagramCaption": "ຮູບແບບລວມ: delivery platforms → OrderBridge → restaurant POS",
+    "readBuildArticle": "ອ່ານບົດຄວາມການສ້າງ",
+    "diagramCaption": "ຂະບວນການລະດັບສູງ: ແພລດຟອມ Delivery → OrderBridge → POS ຮ້ານອາຫານ",
     "outcomes": [
       {
         "value": "<800ms",
-        "label": "ການປະມວນຜົນ order ຈາກຕົ້ນຈົນຈົບ"
+        "label": "ເວລາປະມວນຜົນອໍເດີທັງໝົດ"
       },
       {
         "value": "5",
-        "label": "Delivery platforms ທີ່ຮອງຮັບ"
+        "label": "ແພລດຟອມ Delivery ທີ່ຮອງຮັບ"
       },
       {
         "value": "3",
-        "label": "POS systems ທີ່ເຊື່ອມຕໍ່"
+        "label": "ລະບົບ POS ທີ່ເຊື່ອມຕໍ່ແລ້ວ"
       },
       {
         "value": "0",
-        "label": "ຂັ້ນຕອນດ້ວຍມືທີ່ຕ້ອງການ"
+        "label": "ຂັ້ນຕອນທີ່ຕ້ອງເຮັດດ້ວຍມື"
       }
     ],
     "problem": {
       "sectionLabel": "[ ບັນຫາ ]",
-      "p1": "ທຸກຄັ້ງທີ່ order ມາຈາກ DoorDash ຫຼື Uber Eats, ພະນັກງານຕ້ອງອ່ານຈາກ tablet ແລ້ວພິມໃສ່ POS ດ້ວຍມື. ທີ 50 orders ຕໍ່ວັນ, ນັ້ນແມ່ນເວລາ 2 ຊົ່ວໂມງທຸກໆວັນ.",
-      "p2": "ການປ້ອນດ້ວຍມືນຳມາຊຶ່ງຄວາມຜິດພາດ. modifier ທີ່ພາດ, ປະລິມານຜິດ, item ທີ່ຂາດ.",
-      "p3": "ຄະນິດສາດ: 50 orders × 2.5 ນາທີ × $18/ຊົ່ວໂມງ =",
-      "p3Highlight": "ເສຍ $1,100+ ທຸກເດືອນ",
-      "p3End": "ສຳລັບວຽກທີ່ຄວນ automate."
+      "p1": "ທຸກໆຄັ້ງທີ່ມີອໍເດີມາຈາກ DoorDash, Uber Eats ຫຼື Grabhub, ພະນັກງານຢູ່ຮ້ານອາຫານຕ້ອງອ່ານຂໍ້ມູນຈາກແທັບເລັດ ແລະ ພິມເຂົ້າ POS ດ້ວຍມື. ຫາກມີ 50 ອໍເດີຕໍ່ມື້, ນັ້ນໝາຍເຖິງການເສຍເວລາໄປກວ່າ 2 ຊົ່ວໂມງ - ໃນທຸກໆມື້.",
+      "p2": "ການປ້ອນຂໍ້ມູນດ້ວຍມືເຮັດໃຫ້ເກີດຂໍ້ຜິດພາດ. ພາດຕົວເລືອກເພີ່ມເຕີມ, ໃສ່ຈໍານວນຜິດ, ຫຼື ຂ້າມບາງລາຍການ. ໃນເຮືອນຄົວທີ່ຫຍຸ້ງຫຼາຍ, ອໍເດີທີ່ຜິດພາດພຽງອັນດຽວນໍາໄປສູ່ການຮ້ອງຮຽນຈາກລູກຄ້າ, ການຄືນເງິນ ແລະ ອາຫານທີ່ເສຍໄປລ້າໆ.",
+      "p3": "ການຄິດໄລ່ທາງເສດຖະກິດນັ້ນຊັດເຈນ: ທີ່ 50 ອໍເດີຕໍ່ມື້, ໃຊ້ເວລາ 2.5 ນາທີຕໍ່ອໍເດີ ແລະ ຄ່າແຮງງານ $18/ຊົ່ວໂມງ - ນັ້ນໝາຍເຖິງ",
+      "p3Highlight": "ເສຍເງິນໄປກວ່າ $1,100 ທຸກໆເດືອນ",
+      "p3End": "ໃຫ້ກັບບັນຫາທີ່ຄວນຈະເຮັດເປັນອັດຕະໂນມັດ."
     },
     "solution": {
-      "sectionLabel": "[ ວິທີແກ້ ]",
-      "p1": "OrderBridge ຢູ່ລະຫວ່າງ delivery platforms ແລະ POS. ເມື່ອ order ມາຮອດ, ມັນຮັບ webhook, ແປ payload ໄປເປັນຮູບແບບ POS ແລະ inject order ໂດຍອັດຕະໂນມັດ — ໃນເວລາຕ່ຳກວ່າ 800ms.",
-      "archTitle": "ARCHITECTURE FLOW",
+      "sectionLabel": "[ ວິທີແກ້ໄຂ ]",
+      "p1": "OrderBridge ເຮັດໜ້າທີ່ເປັນຕົວເຊື່ອມລະຫວ່າງແພລດຟອມ Delivery ແລະ POS. ເມື່ອມີອໍເດີເຂົ້າມາ, ມັນຈະຮັບ Webhook, ແປງຂໍ້ມູນໃຫ້ເປັນຮູບແບບ POS ແລະ ປ້ອນອໍເດີເຂົ້າໄປໂດຍອັດຕະໂນມັດ - ພາຍໃນເວລາບໍ່ຮອດ 800ms ໂດຍບໍ່ຕ້ອງໃຊ້ຄົນເລີຍ.",
+      "archTitle": "ຂະບວນການໂຄງສ້າງ",
       "archNodes": [
-        "Delivery\nPlatform",
-        "Webhook\nReceiver",
-        "Translator",
-        "Injector",
-        "POS\nSystem"
+        "ແພລດຟອມ\nDelivery",
+        "ຕົວຮັບ\nWebhook",
+        "ຕົວແປງ\nຂໍ້ມູນ",
+        "ຕົວປ້ອນ\nຂໍ້ມູນ",
+        "ລະບົບ\nPOS"
       ],
-      "wsLabel": "WebSocket broadcast → Dashboard (real-time)"
+      "wsLabel": "WebSocket ແຈ້ງເຕືອນ → Dashboard (Real-time)"
     },
     "howItWorks": {
-      "sectionLabel": "[ ວິທີທີ່ໃຊ້ງານ ]",
+      "sectionLabel": "[ ມັນເຮັດວຽກແນວໃດ ]",
       "steps": [
         {
           "step": "01",
-          "title": "Webhook Reception",
-          "desc": "ແຕ່ລະ delivery platform ສົ່ງ HTTPS POST ໄປຫາ webhook endpoint. Server ກວດສອບລາຍເຊັນ HMAC-SHA256 ແລະ deduplicate ຕາມ order ID."
+          "title": "ການຮັບ Webhook",
+          "desc": "ແຕ່ລະແພລດຟອມ Delivery ສົ່ງ HTTPS POST ຫາ Webhook endpoint ດຽວກັນ. Server ຈະກວດສອບ HMAC-SHA256 signature, ປະຕິເສດຂໍ້ມູນທີ່ບໍ່ຖືກຕ້ອງທັນທີ ແລະ ກວດສອບອໍເດີທີ່ຊໍ້າກັນດ້ວຍ ID."
         },
         {
           "step": "02",
-          "title": "Translation",
-          "desc": "Handler ສະເພາະ platform ແປ schema delivery ໄປເປັນ POS payload ມາດຕະຖານ ໂດຍໃຊ້ MenuMapping table."
+          "title": "ການແປງຂໍ້ມູນ",
+          "desc": "ຕົວຈັດການສະເພາະຂອງແຕ່ລະແພລດຟອມຈະແປງ Schema ໃຫ້ເປັນຮູບແບບ POS ມາດຕະຖານ. ແຕ່ລະລາຍການຈະຖືກຈັບຄູ່ກັບຕາຕະລາງ MenuMapping ທີ່ເຊື່ອມຕໍ່ ID ຂອງແພລດຟອມກັບ SKU ຂອງ POS."
         },
         {
           "step": "03",
-          "title": "Injection",
-          "desc": "Payload ທີ່ແປແລ້ວຖືກ POST ໄປຫາ POS API ດ້ວຍ exponential backoff retry. ເມື່ອ order ລົ້ມ, ມັນຖືກ flag ສຳລັບ manual review."
+          "title": "ການປ້ອນຂໍ້ມູນ",
+          "desc": "ຂໍ້ມູນທີ່ແປງແລ້ວຈະຖືກ POST ຫາ POS API ພ້ອມລະບົບ Retry ແບບ exponential backoff. ຫາກສໍາເລັດ, ຈະເກັບ ID ຂອງ POS ໄວ້. ຫາກລົ້ມເຫຼວຫຼັງຈາກລອງໃໝ່ຄົບຈໍານວນຄັ້ງ, ອໍເດີຈະຖືກໝາຍວ່າ FAILED ແລະ ແຈ້ງເຕືອນໃຫ້ກວດສອບດ້ວຍມື."
         },
         {
           "step": "04",
-          "title": "Real-Time Sync",
-          "desc": "ທຸກການປ່ຽນແປງ state ຖືກ persist ໄປ PostgreSQL ແລະ broadcast ຜ່ານ WebSocket ໄປຫາ dashboard — ບໍ່ polling."
+          "title": "ການຊິງຄ໌ແບບ Real-Time",
+          "desc": "ທຸກການປ່ຽນແປງສະຖານະຈະຖືກບັນທຶກໃນ PostgreSQL ແລະ ແຈ້ງເຕືອນຜ່ານ WebSocket ຫາທຸກ Dashboard ທີ່ເຊື່ອມຕໍ່ຢູ່ - ບໍ່ມີການ Polling, ບໍ່ຕ້ອງ Refresh ໜ້າເວັບ."
         }
       ]
     },
     "screenshots": {
-      "sectionLabel": "[ ຮູບໜ້າຈໍ ]",
+      "sectionLabel": "[ ຮູບພາບໜ້າຈໍ ]",
       "images": [
         {
-          "alt": "OrderBridge dashboard showing live order feed",
-          "caption": "Live dashboard — real-time order feed with status tracking"
+          "alt": "OrderBridge dashboard ສະແດງອໍເດີສົດ",
+          "caption": "Dashboard ສົດ - ການຕິດຕາມອໍເດີແບບ Real-time ພ້ອມການຕິດຕາມສະຖານະ"
         },
         {
-          "alt": "OrderBridge orders page with filters",
-          "caption": "Orders page — filterable, sortable, CSV export"
+          "alt": "ໜ້າອໍເດີ OrderBridge ພ້ອມໂຕກັ່ນຕອງ",
+          "caption": "ໜ້າອໍເດີ - ສາມາດກັ່ນຕອງ, ຈັດລຽງ ແລະ ສົ່ງອອກເປັນ CSV"
         },
         {
-          "alt": "MockPOS mock terminal showing injected orders",
-          "caption": "MockPOS terminal — orders arriving automatically from OrderBridge"
+          "alt": "MockPOS mock terminal ສະແດງອໍເດີທີ່ຖືກປ້ອນເຂົ້າ",
+          "caption": "MockPOS terminal - ອໍເດີທີ່ເຂົ້າມາໂດຍອັດຕະໂນມັດຈາກ OrderBridge"
         },
         {
-          "alt": "OrderBridge simulator page",
-          "caption": "Simulator — fire test orders from any delivery platform"
+          "alt": "ໜ້າຈໍາລອງ OrderBridge",
+          "caption": "Simulator - ສົ່ງອໍເດີທົດສອບຈາກແພລດຟອມ Delivery ໃດກໍໄດ້"
         }
       ]
     },
     "techStack": {
-      "sectionLabel": "[ TECH STACK ]",
+      "sectionLabel": "[ ເຕັກໂນໂລຊີ ]",
       "items": [
         {
           "name": "React 19 + Vite",
-          "reason": "Fast dev experience, React Query for server state, no SSR overhead needed for a dashboard."
+          "reason": "ປະສົບການພັດທະນາທີ່ໄວ, ໃຊ້ React Query ສໍາລັບຈັດການສະຖານະ Server, ບໍ່ຕ້ອງການ SSR ສໍາລັບ Dashboard."
         },
         {
           "name": "Fastify + TypeScript",
-          "reason": "Lower overhead than Express, schema-based validation built in, excellent TypeScript support."
+          "reason": "ໃຊ້ຊັບພະຍາກອນໜ້ອຍກວ່າ Express, ມີລະບົບກວດສອບຂໍ້ມູນໃນຕົວ, ຮອງຮັບ TypeScript ໄດ້ດີເລີດ."
         },
         {
           "name": "PostgreSQL + Prisma",
-          "reason": "Relational data fits the order/token/mapping schema well. Prisma keeps migrations safe and typed."
+          "reason": "ຂໍ້ມູນແບບ Relational ເໝາະສົມກັບ Schema ຂອງອໍເດີ/token/mapping. Prisma ຊ່ວຍໃຫ້ການຈັດການຖານຂໍ້ມູນປອດໄພ ແລະ ມີ Type."
         },
         {
           "name": "WebSockets (ws)",
-          "reason": "Native WebSocket — no Socket.io overhead for a single broadcast channel."
+          "reason": "ໃຊ້ WebSocket ແບບ Native - ບໍ່ມີສ່ວນເກີນຂອງ Socket.io ສໍາລັບຊ່ອງທາງການແຈ້ງເຕືອນດຽວ."
         },
         {
           "name": "OAuth 2.0 + AES-256",
-          "reason": "Industry-standard POS auth flow. Tokens encrypted at rest before writing to the database."
+          "reason": "ມາດຕະຖານຄວາມປອດໄພສໍາລັບ POS. Token ຖືກເຂົ້າລະຫັດກ່ອນບັນທຶກລົງຖານຂໍ້ມູນ."
         },
         {
           "name": "HMAC-SHA256",
-          "reason": "Webhook signature verification — only legitimate delivery platform payloads are processed."
+          "reason": "ການກວດສອບລາຍເຊັນ Webhook - ປະມວນຜົນສະເພາະຂໍ້ມູນທີ່ມາຈາກແພລດຟອມ Delivery ທີ່ຖືກຕ້ອງເທົ່ານັ້ນ."
         }
       ]
     },
     "cta": {
-      "sectionLabel": "[ ເຮັດວຽກຮ່ວມກັນ ]",
-      "heading": "ມີບັນຫາ integration ຄ້າຍຄືກັນ?",
-      "subtitle": "ຂ້ອຍສ້າງລະບົບ automation ແລະ integration ສຳລັບທຸລະກິດທີ່ເບື່ອກັບ workflow ດ້ວຍມື.",
-      "talkButton": "ລົມກັນ",
-      "backToWork": "← ກັບຜົນງານ"
+      "sectionLabel": "[ ຮ່ວມງານກັນ ]",
+      "heading": "ມີບັນຫາການເຊື່ອມຕໍ່ລະບົບທີ່ຄ້າຍກັນນີ້ບໍ?",
+      "subtitle": "ຂ້ອຍສ້າງລະບົບອັດຕະໂນມັດ ແລະ ການເຊື່ອມຕໍ່ທີ່ປັບແຕ່ງມາໂດຍສະເພາະ ສໍາລັບທຸລະກິດທີ່ຕ້ອງການຫຼຸດວຽກທີ່ເຮັດດ້ວຍມື. ລາຄາຄົງທີ່, ໂຄ້ດສະອາດ, ສົ່ງມອບໄວ.",
+      "talkButton": "ມາລົມກັນ",
+      "backToWork": "← ກັບຄືນໜ້າຜົນງານ"
     }
-  },
-  "articlesMeta": {
-    "teaching-web-development-china-yango-university": {
-      "title": "ສອນພັດທະນາເວັບໃນຈີນ @ Yango University",
-      "excerpt": "ການສອນ HTML, CSS ແລະ JavaScript ຂັ້ນພື້ນຖານໃນເມືອງ Fuzhou ປະເທດຈີນ ສອນໃຫ້ຂ້ອຍເປັນນັກພັດທະນາທີ່ດີຂຶ້ນ. ບົດຮຽນກ່ຽວກັບການສຶກສາຂ້າມວັດທະນະທຳ ແລະ ເຫດຜົນທີ່ທ່ານສາດຂັ້ນພື້ນຖານມີຄວາມສຳຄັນຫຼາຍກວ່າ framework."
-    },
-    "how-i-built-orderbridge": {
-      "title": "ຂ້ອຍສ້າງ OrderBridge ແນວໃດ: ແກ້ບັນຫາ Middleware ລະຫວ່າງ Delivery ແລະ POS",
-      "excerpt": "ການສ້າງລະບົບ middleware OAuth 2.0 ທີ່ເຊື່ອມ DoorDash, Uber Eats ແລະ platform delivery ໄປຫາ POS ຂອງຮ້ານອາຫານ. ການວິເຄາະເທັກນິກຄ້ານ webhook ingestion, schema translation ແລະ real-time order sync."
-    }
-  },
-  "common": {
-    "loading": "ກຳລັງໂຫຼດ...",
-    "error": "ຜິດພາດ",
-    "close": "ປິດ",
-    "back": "ກັບ",
-    "next": "ຕໍ່ໄປ",
-    "previous": "ກ່ອນໜ້າ",
-    "learnMore": "ຮຽນຮູ້ເພີ່ມ"
   },
   "laomaitravelCaseStudy": {
     "breadcrumbHome": "ໜ້າຫຼັກ",
     "breadcrumbWork": "ຜົນງານ",
-    "tagline": "ເວັບໄຊທ໌ທ່ອງທ່ຽວສອງພາສາ (EN/TH) ສ້າງດ້ວຍ SEO, analytics ທີ່ບໍ່ໃຊ້ cookie ແລະ ລະບົບຮັບການຈອງ — ບໍ່ຕ້ອງການ backend.",
+    "tagline": "ເວັບໄຊການທ່ອງທ່ຽວສອງພາສາ (EN/TH) ທີ່ສ້າງຂຶ້ນເພື່ອ SEO, ການຕິດຕາມຂໍ້ມູນຜູ້ເຂົ້າຊົມ ແລະ ການສອບຖາມການຈອງ - ໂດຍບໍ່ຕ້ອງມີລະບົບ Backend ທີ່ຊັບຊ້ອນ.",
     "viewLive": "ເຂົ້າເບິ່ງ laomaitravel.com",
-    "heroImageAlt": "Lao Mai Travel hero section — temple at dusk with navy and gold design",
+    "heroImageAlt": "ສ່ວນ Hero ຂອງ Lao Mai Travel - ຮູບວັດໃນຍາມຄໍ່າຄືນດ້ວຍການອອກແບບສີນໍ້າເງິນ ແລະ ສີທອງ",
     "outcomes": [
       {
         "value": "EN + TH",
-        "label": "ເສັ້ນທາງສອງພາສາ"
+        "label": "ລະບົບຈັດການສອງພາສາລະດັບສູງ"
       },
       {
         "value": "100%",
-        "label": "HTML ທີ່ render ຈາກ server ເພື່ອ SEO"
+        "label": "HTML ທີ່ຖືກ Render ຈາກ Server ເພື່ອ SEO"
       },
       {
         "value": "0",
-        "label": "ປ້າຍ cookie ຫຼື popup"
+        "label": "ບໍ່ມີປ້າຍ Cookie ຫຼື ປັອບອັບຂໍຄວາມຍິນຍອມ"
       },
       {
         "value": "1 ລິ້ງ",
-        "label": "ການເຂົ້າເຖິງ dashboard analytics ຂອງລູກຄ້າ"
+        "label": "ສິດເຂົ້າເຖິງ Dashboard ການວິເຄາະຂອງລູກຄ້າ"
       }
     ],
     "problem": {
       "sectionLabel": "[ ບັນຫາ ]",
-      "p1": "ກ່ອນທີ່ຈະມີເວັບໄຊທ໌ນີ້, Lao Mai Travel ບໍ່ຮູ້ວ່າເວັບໄຊທ໌ຂອງພວກເຂົາໃຊ້ງານໄດ້ຫຼືບໍ່. ບໍ່ມີຂໍ້ມູນກ່ຽວກັບຜູ້ເຂົ້າຊົມ, ແຫຼ່ງທີ່ມາ, ສິ່ງທີ່ເຂົາເຈົ້າເບິ່ງ ຫຼື ອຸປະກອນທີ່ໃຊ້.",
-      "p2": "ນອກຈາກນັ້ນ, ບໍ່ມີການ routing ສອງພາສາ ແລະ ບໍ່ມີລະບົບຮັບການຈອງ.",
-      "p3": "ສາມບັນຫາທີ່ຕ້ອງແກ້:",
+      "p1": "ກ່ອນຈະມີເວັບໄຊນີ້, Lao Mai Travel ບໍ່ຮູ້ເລີຍວ່າເວັບໄຊຂອງເຂົາເຈົ້າໄດ້ຜົນຫຼືບໍ່. ບໍ່ມີຂໍ້ມູນວ່າໃຜມາເບິ່ງ, ມາຈາກໃສ, ເບິ່ງຫຍັງ ຫຼື ໃຊ້ອຸປະກອນໃດ. ທຸກການຕັດສິນໃຈກ່ຽວກັບເວັບໄຊແມ່ນການເດົາທັງໝົດ.",
+      "p2": "ເຂົາເຈົ້າຍັງບໍ່ມີລະບົບສອງພາສາ - ຜູ້ເຂົ້າຊົມທີ່ເວົ້າພາສາລາວ/ໄທ ບໍ່ມີທາງເລືອກໃນການອ່ານເວັບໄຊໃນພາສາຂອງຕົນເອງ. ແລະ ວິທີດຽວທີ່ຈະຕິດຕໍ່ໄດ້ຄືເບີໂທລະສັບທີ່ຢູ່ລຸ່ມສຸດຂອງໜ້າເວັບ.",
+      "p3": "ສາມບັນຫາທີ່ຕ້ອງແກ້ໄຂ:",
       "problems": [
-        "ບໍ່ມີຂໍ້ມູນກ່ຽວກັບຜູ້ໃຊ້ ຫຼື ສິ່ງທີ່ໃຊ້ງານໄດ້",
-        "ບໍ່ມີການຮອງຮັບພາສາລາວ",
-        "ບໍ່ມີລະບົບຈອງ — ມີແຕ່ເບີໂທລະສັບ"
+        "ບໍ່ມີຂໍ້ມູນວ່າໃຜເຂົ້າເບິ່ງ ຫຼື ສິ່ງໃດທີ່ກໍາລັງໄດ້ຜົນ",
+        "ບໍ່ມີການຮອງຮັບສອງພາສາສໍາລັບຜູ້ເຂົ້າຊົມທີ່ເວົ້າພາສາລາວ/ໄທ",
+        "ບໍ່ມີລະບົບສອບຖາມການຈອງ - ມີພຽງແຕ່ເບີໂທລະສັບ"
       ]
     },
     "design": {
       "sectionLabel": "[ ການອອກແບບ ]",
-      "p1": "Brief ແມ່ນ premium, local, trustworthy. ບໍ່ແມ່ນສີສົດໃສທົ່ວໄປຂອງເວັບທ່ອງທ່ຽວ.",
-      "p2": "Navy ແລະ gold — navy ເບິ່ງດູຈິງຈັງ ແລະ ເປັນມືອາຊີບ, gold ອ້າງອິງສະຖາປັດຕະຍະກຳວັດ ແລະ ມໍລະດົກພຸດທະສາສະໜາລາວ.",
-      "p3": "Typography ສາມຊັ້ນ: Cinzel ສຳລັບ navigation, Cormorant Garamond ສຳລັບ headline, Montserrat ສຳລັບ body text.",
-      "p4": "Hero section ໃຊ້ຮູບພາບວັດຕອນຕາເວັນຕົກ ພ້ອມ headline ທີ່ແຍກລະຫວ່າງສີຂາວ roman ແລະ gold italic."
+      "p1": "ໂຈດຄື: ພຣີມຽມ, ມີຄວາມເປັນທ້ອງຖິ່ນ, ໜ້າເຊື່ອຖື. ບໍ່ແມ່ນສີສັນສົດໃສແບບເວັບທ່ອງທ່ຽວທົ່ວໄປ.",
+      "p2": "ສີນໍ້າເງິນ ແລະ ສີທອງ - ສີນໍ້າເງິນໃຫ້ຄວາມຮູ້ສຶກຈິງຈັງ ແລະ ເປັນມືອາຊີບ, ສີທອງອ້າງອີງເຖິງສະຖາປັດຕະຍະກໍາວັດວາອາຮາມຂອງລາວ ແລະ ມໍລະດົກທາງພຸດທະສາສະໜາໂດຍກົງ. ການປະສົມປະສານນີ້ສ້າງຄວາມເຊື່ອໝັ້ນກ່ອນທີ່ຈະເລີ່ມອ່ານຂໍ້ຄວາມໃດໆ.",
+      "p3": "ຕົວໜັງສື (Typography) ແບ່ງເປັນສາມຊັ້ນ: Cinzel ສໍາລັບເມນູ (ໃຫ້ຄວາມຮູ້ສຶກຄືການສະລັກຫີນແບບຄລາດສິກ), Cormorant Garamond ສໍາລັບຫົວຂໍ້ (ໃຫ້ຄວາມຮູ້ສຶກຫຼູຫຼາແບບວາລະສານ), Montserrat ສໍາລັບເນື້ອຫາ (ສະອາດ, ອ່ານງ່າຍ). ແຕ່ລະຕົວມີໜ້າທີ່ຂອງຕົນເອງ.",
+      "p4": "ສ່ວນ Hero ໃຊ້ຮູບວັດແບບເຕັມໜ້າຈໍໃນຍາມຄໍ່າຄືນ ພ້ອມຫົວຂໍ້ທີ່ແບ່ງເປັນຕົວອັກສອນໂຣມັນສີຂາວ ແລະ ຕົວເນັ້ນສີທອງ. ເວັບໄຊໃຫ້ຄວາມຮູ້ສຶກຄືກັບສະຖານທີ່ທີ່ມັນກໍາລັງຂາຍທັນທີ."
     },
     "nextjs": {
-      "sectionLabel": "[ ເປັນຫຍັງຈຶ່ງໃຊ້ NEXT.JS ]",
-      "intro": "ສາມເຫດຜົນ: SEO, bilingual routing, ບໍ່ຕ້ອງ maintain backend.",
+      "sectionLabel": "[ ເປັນຫຍັງຕ້ອງ NEXT.JS ]",
+      "intro": "ສາມເຫດຜົນ: SEO, ລະບົບສອງພາສາ, ແລະ ບໍ່ມີ Backend ທີ່ຕ້ອງບໍາລຸງຮັກສາ.",
       "reasons": [
         {
-          "title": "Render ດ້ວຍ server ເພື່ອ SEO",
-          "desc": "ທຸກໜ້າ tour ແລະ destination render ເປັນ HTML ສົມບູນຈາກ server. ເຄື່ອງມືຄົ້ນຫາ index ທັງໝົດ — ບໍ່ຕ້ອງການ JavaScript."
+          "title": "ການ Render ທີ່ເນັ້ນ SEO",
+          "desc": "ທຸກໆໜ້າທົວ ແລະ ຈຸດໝາຍປາຍທາງຈະຖືກ Render ເປັນ HTML ເຕັມຮູບແບບຈາກ Server. Search engines ສາມາດເກັບຂໍ້ມູນໄດ້ທັງໝົດໂດຍບໍ່ຕ້ອງໃຊ້ JavaScript. ສໍາລັບທຸລະກິດທີ່ລູກຄ້າຄົ້ນຫາ \"Laos trekking tours\" ຫຼື \"Bolaven Plateau homestay\", ສິ່ງນີ້ກ່ຽວຂ້ອງໂດຍກົງກັບຍອດຈອງ."
         },
         {
-          "title": "Bilingual routing ທີ່ເປັນ first-class",
-          "desc": "App Router ຈັດການ bilingual routing ຢ່າງສະອາດ — ທຸກໜ້າຢູ່ພາຍໃຕ້ app/[locale]/, ດັ່ງນັ້ນ /en ແລະ /th ແມ່ນ route ທີ່ແທ້ຈິງ. next-intl ຈັດການ translations."
+          "title": "ລະບົບສອງພາສາລະດັບສູງ",
+          "desc": "App Router ຈັດການລະບົບສອງພາສາໄດ້ຢ່າງສະອາດ - ທຸກໆໜ້າຈະຢູ່ພາຍໃຕ້ app/[locale]/, ສະນັ້ນ /en ແລະ /th ຈຶ່ງເປັນເສັ້ນທາງ (Routes) ທີ່ແທ້ຈິງ ພ້ອມ Metadata ຂອງຕົນເອງ. ໃຊ້ next-intl ໃນການຈັດການຄໍາແປ."
         },
         {
-          "title": "ບໍ່ຕ້ອງ maintain backend",
-          "desc": "Resend ຈັດການ email ຈາກຟອມຈອງ. Vercel ຈັດການ deployment — ບໍ່ຕ້ອງ configure server, ບໍ່ຕ້ອງ maintenance."
+          "title": "ບໍ່ມີ Backend ທີ່ຕ້ອງບໍາລຸງຮັກສາ",
+          "desc": "Resend ຈັດການອີເມວຈາກແບບຟອມການຈອງ. Vercel ຈັດການການຕິດຕັ້ງ - ບໍ່ມີ Server ທີ່ຕ້ອງກໍາຫນົດຄ່າ, ບໍ່ມີການບໍາລຸງຮັກສາ, ບໍ່ມີບັນຫາເວັບຫຼົ້ມ. ເວັບໄຊຂອງລູກຄ້າເຮັດວຽກໄດ້ດ້ວຍຕົນເອງ."
         }
       ]
     },
     "analytics": {
-      "sectionLabel": "[ ANALYTICS ດ້ວຍ UMAMI ]",
-      "heading": "ຈາກການຄາດຄະເນ ສູ່ ການຮູ້ຂໍ້ເທັດຈິງ.",
-      "p1": "Umami track ທຸກການເຂົ້າຊົມແບບ real time — ໜ້າທີ່ເບິ່ງ, ເວລາໃນ site, ປະເທດທີ່ມາ, ແຫຼ່ງ referrer ແລະ ປະເພດອຸປະກອນ. ລູກຄ້າເຫັນທັງໝົດໃນ dashboard ທີ່ສະອາດ.",
-      "p2": "Umami ຍັງ privacy-first — ບໍ່ມີ cookie, ບໍ່ເກັບຂໍ້ມູນສ່ວນຕົວ, GDPR compliant ໂດຍ default. ບໍ່ມີ banner ທີ່ລົບກວນ site.",
-      "p3": "ລູກຄ້າເຂົ້າ dashboard ດ້ວຍລິ້ງດຽວ. ບໍ່ຕ້ອງ account, ບໍ່ຕ້ອງລະຫັດ, ບໍ່ຕ້ອງ subscription ລາຍເດືອນ.",
-      "questionsLabel": "ຄຳຖາມທີ່ UMAMI ຕອບໄດ້ດຽວນີ້:",
+      "sectionLabel": "[ ການວິເຄາະດ້ວຍ UMAMI ]",
+      "heading": "ຈາກການເດົາ ໄປສູ່ການຮູ້ຈິງ.",
+      "p1": "Umami ຕິດຕາມທຸກການເຂົ້າຊົມແບບ Real-time - ໜ້າທີ່ຖືກເບິ່ງ, ເວລາທີ່ໃຊ້ໃນເວັບ, ປະເທດຕົ້ນທາງ, ແຫຼ່ງທີ່ມາ (Google, Instagram, ລິ້ງໂດຍກົງ) ແລະ ປະເພດອຸປະກອນ. ລູກຄ້າເຫັນທັງໝົດນີ້ໃນ Dashboard ທີ່ສະອາດ ໂດຍບໍ່ຕ້ອງມີຄວາມຮູ້ທາງເຕັກນິກ.",
+      "p2": "Umami ຍັງເນັ້ນຄວາມເປັນສ່ວນຕົວ - ບໍ່ມີ Cookies, ບໍ່ມີການເກັບຂໍ້ມູນສ່ວນຕົວ, ຮອງຮັບ GDPR ຕັ້ງແຕ່ເລີ່ມຕົ້ນ. ບໍ່ມີປ້າຍຂໍຄວາມຍິນຍອມທີ່ເຮັດໃຫ້ເວັບໄຊເບິ່ງຮົກ. ສໍາລັບທຸລະກິດທີ່ບໍລິການນັກທ່ອງທ່ຽວສາກົນຈາກຢູໂຣບ ແລະ ບ່ອນອື່ນໆ, ນີ້ບໍ່ແມ່ນພຽງແຕ່ເລື່ອງຈະລິຍະທໍາ - ແຕ່ມັນຊ່ວຍຫຼີກລ່ຽງບັນຫາທາງກົດໝາຍ.",
+      "p3": "ລູກຄ້າເຂົ້າເຖິງ Dashboard ຂອງເຂົາເຈົ້າຜ່ານລິ້ງດຽວທີ່ແບ່ງປັນໄວ້. ບໍ່ຕ້ອງມີບັນຊີ, ບໍ່ຕ້ອງມີລະຫັດຜ່ານ, ບໍ່ມີຄ່າບໍລິການລາຍເດືອນ. ເຂົາເຈົ້າກວດເບິ່ງມັນຄືກັບການກວດເບິ່ງ WhatsApp - ກວດເບິ່ງເອງໄດ້ທຸກເວລາ ໂດຍບໍ່ຕ້ອງໂທຫາຂ້ອຍ.",
+      "questionsLabel": "ຄໍາຖາມທີ່ UMAMI ສາມາດຕອບໄດ້ແລ້ວ:",
       "questions": [
-        "ໜ້າ Bolaven Plateau tour ໄດ້ 600 views ຕໍ່ເດືອນ ແຕ່ແທບບໍ່ມີການຈອງ — ລາຄາສູງເກີນໄປ ຫຼື ໜ້ານັ້ນສ້າງຄວາມໄວ້ວາງໃຈບໍ່ພໍ?",
-        "65% ຂອງຜູ້ເຂົ້າຊົມໃຊ້ mobile — ຟອມຈອງງ່າຍພໍສຳລັບໂທລະສັບຫຼືບໍ່?",
-        "Traffic ເພີ່ມຂຶ້ນທຸກເດືອນພະຈິກ ແລະ ທັນວາ — ນັ້ນແມ່ນເວລາທີ່ຄວນ push promotions.",
-        "Traffic ມາຈາກ Australia ແລະ France ແຕ່ແທບບໍ່ມີຈາກ US — ຄວນ focus social media ຢູ່ໃສ?"
+        "ໜ້າທົວ Bolaven Plateau ມີຄົນເບິ່ງ 600 ຄັ້ງຕໍ່ເດືອນ ແຕ່ເກືອບບໍ່ມີຄົນສອບຖາມ - ລາຄາແພງເກີນໄປ ຫຼື ໜ້າເວັບບໍ່ດຶງດູດພໍ?",
+        "65% ຂອງຜູ້ເຂົ້າຊົມໃຊ້ໂທລະສັບມືຖື - ແບບຟອມການຈອງງ່າຍພໍທີ່ຈະປ້ອນຂໍ້ມູນໃນມືຖືຫຼືບໍ່?",
+        "ຈໍານວນຜູ້ເຂົ້າຊົມເພີ່ມຂຶ້ນສູງໃນທຸກໆເດືອນພະຈິກ ແລະ ທັນວາ - ນັ້ນຄືເວລາທີ່ຄວນຈັດໂປຣໂມຊັນ.",
+        "ຜູ້ເຂົ້າຊົມສ່ວນໃຫຍ່ມາຈາກອົດສະຕາລີ ແລະ ຝຣັ່ງ ແຕ່ເກືອບບໍ່ມີຈາກອາເມລິກາ - ຄວນເນັ້ນການຕະຫຼາດໃນໂຊຊ່ຽວມີເດຍໄປທີ່ໃສ?"
       ],
       "images": [
         {
-          "alt": "Umami analytics main dashboard",
-          "caption": "Dashboard ຫຼັກ — visits, bounce rate ແລະ session duration ແບບ real-time"
+          "alt": "Dashboard ຫຼັກຂອງ Umami analytics ສະແດງການເຂົ້າຊົມ ແລະ ການເບິ່ງໜ້າເວັບ",
+          "caption": "Dashboard ຫຼັກ - ການເຂົ້າຊົມແບບ Real-time, Bounce rate, ແລະ ໄລຍະເວລາການໃຊ້ງານ"
         },
         {
-          "alt": "Umami pages and traffic sources",
-          "caption": "ໜ້າ ແລະ ແຫຼ່ງ — tour ໃດໄດ້ traffic ແລະ ມາຈາກໃສ"
+          "alt": "ການແບ່ງໜ້າເວັບ ແລະ ແຫຼ່ງທີ່ມາຂອງຜູ້ເຂົ້າຊົມໃນ Umami",
+          "caption": "ໜ້າເວັບ ແລະ ແຫຼ່ງທີ່ມາ - ທົວໃດທີ່ໄດ້ຮັບຄວາມສົນໃຈ ແລະ ມາຈາກໃສ"
         },
         {
-          "alt": "Umami visitor locations map",
-          "caption": "ທີ່ຢູ່ຜູ້ເຂົ້າຊົມ — ຮູ້ວ່າຄວນ focus marketing ຢູ່ໃສ"
+          "alt": "ແຜນທີ່ສະຖານທີ່ຂອງຜູ້ເຂົ້າຊົມໃນ Umami",
+          "caption": "ສະຖານທີ່ຜູ້ເຂົ້າຊົມ - ເຮັດໃຫ້ຮູ້ວ່າຄວນເນັ້ນການຕະຫຼາດໄປທີ່ໃສ"
         }
       ]
     },
     "screenshots": {
-      "sectionLabel": "[ ຮູບໜ້າຈໍ ]",
+      "sectionLabel": "[ ຮູບພາບໜ້າຈໍ ]",
       "images": [
         {
-          "alt": "ໜ້າ destinations ຂອງ Lao Mai Travel",
-          "caption": "Destinations — ສະຖານທີ່ທ່ອງທ່ຽວທີ່ຫຼົງລືມໃນລາວ"
+          "alt": "ໜ້າຈຸດໝາຍປາຍທາງຂອງ Lao Mai Travel",
+          "caption": "ຈຸດໝາຍປາຍທາງ - ສະຖານທີ່ທ່ອງທ່ຽວທີ່ແຕກຕ່າງທົ່ວປະເທດລາວ"
         },
         {
-          "alt": "ໜ້າ tour packages ຂອງ Lao Mai Travel",
-          "caption": "Tour packages — trek, Mekong islands, homestay ທາງວັດທະນະທຳ"
+          "alt": "ໜ້າແພັກເກດທົວຂອງ Lao Mai Travel",
+          "caption": "ແພັກເກດທົວ - ການເດີນປ່າ, ທ່ຽວເກາະດອນຂົງ, ບ້ານພັກແບບວັດທະນະທໍາ"
         },
         {
-          "alt": "ຟອມຈອງຂອງ Lao Mai Travel",
-          "caption": "ຟອມຈອງ — ສົ່ງໄປຫາລູກຄ້າໂດຍກົງຜ່ານ Resend"
+          "alt": "ແບບຟອມສອບຖາມການຈອງຂອງ Lao Mai Travel",
+          "caption": "ແບບຟອມການຈອງ - ຂັບເຄື່ອນດ້ວຍ Resend, ສົ່ງກົງຫາອີເມວລູກຄ້າ"
         },
         {
-          "alt": "ເວັບໄຊທ໌ສະບັບພາສາໄທ",
-          "caption": "ພາສາໄທ — /th route ພ້ອມ metadata ຂອງຕົນເອງ"
+          "alt": "ເວີຊັນພາສາໄທຂອງເວັບໄຊ",
+          "caption": "ລະບົບພາສາໄທ - ເສັ້ນທາງ /th ເຕັມຮູບແບບພ້ອມ Metadata ຂອງຕົນເອງ"
         }
       ]
     },
     "techStack": {
-      "sectionLabel": "[ TECH STACK ]",
+      "sectionLabel": "[ ເຕັກໂນໂລຊີ ]",
       "items": [
         {
           "name": "Next.js 15 + App Router",
-          "reason": "ໜ້າ render ຈາກ server ເພື່ອ SEO, locale-first routing ແລະ deployment ເທິງ Vercel."
+          "reason": "Render ໜ້າເວັບຈາກ Server ເພື່ອ SEO, ລະບົບພາສາຜ່ານ app/[locale]/ ແລະ ການຕິດຕັ້ງທີ່ພ້ອມໃຊ້ງານເທິງ Vercel."
         },
         {
           "name": "TypeScript",
-          "reason": "ການພັດທະນາທີ່ type-safe ທົ່ວ codebase — ຈັບ error ກ່ອນຈະ deploy."
+          "reason": "ການພັດທະນາທີ່ມີ Type-safe ທົ່ວທັງໂຄ້ດ - ຊ່ວຍກວດຈັບຂໍ້ຜິດພາດກ່ອນຈະເຖິງມືລູກຄ້າ."
         },
         {
           "name": "CSS Modules",
-          "reason": "Styles ທີ່ scoped ໂດຍບໍ່ມີ runtime overhead. ເໝາະສຳລັບ site ທີ່ design-heavy."
+          "reason": "ຈັດການ Style ແບບແຍກສ່ວນ ໂດຍບໍ່ມີສ່ວນເກີນໃນການປະມວນຜົນ. ເໝາະສໍາລັບເວັບໄຊທີ່ເນັ້ນການອອກແບບ ແລະ Typography."
         },
         {
           "name": "next-intl",
-          "reason": "Bilingual routing first-class ພ້ອມ metadata ຕໍ່ locale ແລະ translations EN/TH ທີ່ຄົບຖ້ວນ."
+          "reason": "ລະບົບສອງພາສາລະດັບສູງພ້ອມ Metadata ຕາມພາສາ, ຮອງຮັບການແປ EN/TH ຢ່າງສົມບູນ."
         },
         {
           "name": "Resend",
-          "reason": "ຈັດການ email ຈາກຟອມຈອງ — ບໍ່ຕ້ອງການ backend server."
+          "reason": "ຈັດການອີເມວສອບຖາມການຈອງຜ່ານ API ທີ່ສະອາດ - ບໍ່ຕ້ອງມີ Backend server, ສົ່ງອີເມວໄດ້ຢ່າງໝັ້ນຄົງ."
         },
         {
           "name": "Umami",
-          "reason": "Analytics ທີ່ privacy-first — ບໍ່ມີ cookie, GDPR compliant. ລູກຄ້າເຂົ້າ dashboard ດ້ວຍລິ້ງດຽວ."
+          "reason": "ການວິເຄາະຂໍ້ມູນເວັບ - ບໍ່ມີ Cookies, ຮອງຮັບ GDPR. ລູກຄ້າເຂົ້າເຖິງ Dashboard ຜ່ານລິ້ງດຽວ."
         },
         {
           "name": "Vercel",
-          "reason": "Deployment ທີ່ zero-config ພ້ອມ auto previews ແລະ rollbacks ທັນທີ."
+          "reason": "ການຕິດຕັ້ງແບບ Zero-config ພ້ອມການສະແດງຕົວຢ່າງອັດຕະໂນມັດ ແລະ ບໍ່ມີໂຄງສ້າງພື້ນຖານທີ່ຕ້ອງຈັດການ."
         }
       ]
     },
     "cta": {
-      "sectionLabel": "[ ເຮັດວຽກຮ່ວມກັນ ]",
-      "heading": "ຕ້ອງການເວັບໄຊທ໌ທີ່ໃຊ້ງານໄດ້ຈິງສຳລັບທຸລະກິດຂອງທ່ານ?",
-      "subtitle": "ຂ້ອຍສ້າງເວັບໄຊທ໌ສອງພາສາທີ່ SEO-first ສຳລັບທຸລະກິດທີ່ຕ້ອງການ presence ທາງ web ທີ່ແທ້ຈິງ.",
-      "talkButton": "ລົມກັນ",
-      "backToWork": "← ກັບຜົນງານ"
+      "sectionLabel": "[ ຮ່ວມງານກັນ ]",
+      "heading": "ຕ້ອງການເວັບໄຊທີ່ເຮັດວຽກໃຫ້ທຸລະກິດຂອງທ່ານບໍ?",
+      "subtitle": "ຂ້ອຍສ້າງເວັບໄຊສອງພາສາທີ່ເນັ້ນ SEO ສໍາລັບທຸລະກິດທີ່ຕ້ອງການຕົວຕົນທີ່ແທ້ຈິງທາງອອນລາຍ - ໂຄ້ດສະອາດ, ບໍ່ຊັບຊ້ອນ ແລະ ມີຂໍ້ມູນການວິເຄາະຕົວຈິງຕັ້ງແຕ່ມື້ທໍາອິດ.",
+      "talkButton": "ມາລົມກັນ",
+      "backToWork": "← ກັບຄືນໜ້າຜົນງານ"
     }
   },
   "notFound": {
-    "label": "ERROR // 404",
-    "title": "ຫາຍໄປໃນ<highlight>ອະວະກາດ</highlight>",
-    "subtitle": "ບໍ່ພົບໜ້າ",
-    "description": "ໜ້ານີ້ໄດ້ລອຍໄປເກີນຂອບເຂດຈັກກະວານ. ອາດຈະຖືກຍ້າຍ, ລຶບ, ຫຼືບາງທີບໍ່ເຄີຍມີຢູ່.",
-    "ctaHome": "ກັບໄປໜ້າຫຼັກ",
+    "label": "ຂໍ້ຜິດພາດ // 404",
+    "title": "ຫຼົງທາງໃນ <highlight>ອະວະກາດ</highlight>",
+    "subtitle": "ບໍ່ພົບໜ້າເວັບນີ້",
+    "description": "ໜ້າເວັບທີ່ທ່ານກໍາລັງຊອກຫາໄດ້ຫຼຸດລອຍອອກໄປນອກຂອບເຂດຂອງຈັກກະວານແລ້ວ. ມັນອາດຈະຖືກຍ້າຍ, ລຶບຖິ້ມ ຫຼື ບາງທີມັນອາດຈະບໍ່ເຄີຍມີມາກ່ອນ.",
+    "ctaHome": "ໄປໜ້າຫຼັກ",
     "ctaWork": "ເບິ່ງຜົນງານ"
   },
   "websites": {
     "hero": {
-      "eyebrow": "ພັດທະນາເວັບ · ວຽງຈັນ, ລາວ",
-      "headline": "ຄູ່ແຂ່ງຂອງທ່ານມີເວັບໄຊທ໌.",
-      "headlineItalic": "ແລ້ວທ່ານເດ?",
-      "sub": "ໃນວຽງຈັນ, ນັກທ່ອງທ່ຽວແລະຄົນຕ່າງປະເທດຊອກຫາໃນ Google ກ່ອນຈອງ, ກິນ, ຫຼືຊື້. ຖ້າທຸລະກິດຂອງທ່ານມີພຽງແຕ່ໃນ Facebook, ພວກເຂົາກຳລັງພົບຄົນອື່ນ.",
-      "cta": "ຮັບການກວດເວັບໄຊທ໌ຟຣີ",
-      "ctaNote": "ກວດຟຣີ · ບໍ່ຕ້ອງຜູກມັດ"
+      "eyebrow": "ພັດທະນາເວັບໄຊ · ວຽງຈັນ, ລາວ",
+      "headline": "ມີເວັບໄຊທີ່ດຶງດູດ ... ເຂົ້າສູ່ທຸລະກິດຂອງທ່ານ.",
+      "headlineItalic": "ລູກຄ້າຕ່າງປະເທດ",
+      "sub": "ບໍ່ແມ່ນທຸກຄົນທີ່ຈະໃຊ້ Facebook. ເວັບໄຊຊ່ວຍໃຫ້ລູກຄ້າຄົ້ນພົບທຸລະກິດຂອງທ່ານນອກເໜືອຈາກໂຊຊ່ຽວມີເດຍ.",
+      "cta": "ຂ້ອຍຈະອອກແບບຕົວຢ່າງເວັບໄຊໃຫ້ທ່ານຟຣີ",
+      "ctaNote": "ຕົວຢ່າງຟຣີ · ບໍ່ມີພັນທະຜູກມັດ"
     },
     "urgency": {
-      "text": "ທຸກໆມື້ທີ່ບໍ່ມີເວັບໄຊທ໌ແມ່ນລູກຄ້າທີ່ທ່ານບໍ່ຮູ້ວ່າທ່ານເສຍໄປ."
+      "text": "ທຸກໆມື້ທີ່ບໍ່ມີເວັບໄຊ ຄືລູກຄ້າທີ່ທ່ານເສຍໄປໂດຍທີ່ທ່ານບໍ່ຮູ້ຕົວ."
     },
     "benefits": {
-      "eyebrow": "ສິ່ງທີ່ທ່ານໄດ້ຮັບ",
-      "title": "ເວັບໄຊທ໌ທີ່ຖືກຕ້ອງເຮັດຫຍັງໃຫ້ທຸລະກິດຂອງທ່ານ",
-      "intro": "ທ່ານຈະເຫັນວ່າມີຄົນມາຫຼາຍປານໃດ, ພວກເຂົາມາຈາກໃສ ແລະພວກເຂົາເບິ່ງຫຍັງຫຼາຍທີ່ສຸດ.",
+      "eyebrow": "ສິ່ງທີ່ທ່ານຈະໄດ້ຮັບ",
+      "title": "ສິ່ງທີ່ເວັບໄຊທີ່ດີເຮັດໃຫ້ທຸລະກິດຂອງທ່ານ",
+      "intro": "ທ່ານຈະເຫັນວ່າຄົນເຂົ້າຊົມຈັກຄົນ, ເຂົາເຈົ້າມາຈາກໃສ ແລະ ເຂົາເຈົ້າເບິ່ງຫຍັງຫຼາຍທີ່ສຸດ.",
       "items": {
         "googleFound": {
-          "title": "ພົບເຫັນໃນ Google",
-          "desc": "ລູກຄ້າຊອກຫາ \"ເຮືອນພັກວຽງຈັນ\" ຫຼື \"ທົວລ້ວງພະບາງ\" ພົບທ່ານ, ບໍ່ແມ່ນຄູ່ແຂ່ງຂອງທ່ານ. ໜ້າ Facebook ບໍ່ເຄີຍປາກົດໃນຜົນການຊອກຫານັ້ນ."
+          "title": "ຄົ້ນຫາພົບໃນ Google",
+          "desc": "ລູກຄ້າທີ່ຄົ້ນຫາ \"Guesthouse Vientiane\" ຫຼື \"Tour Luang Prabang\" ຈະພົບທ່ານ, ບໍ່ແມ່ນຄູ່ແຂ່ງ. ບໍ່ແມ່ນທຸກຄົນທີ່ມີ Facebook."
         },
         "multiLanguage": {
-          "title": "ຫຼາຍພາສາຕາມຕ້ອງການ",
-          "desc": "ເວັບໄຊທ໌ຂອງທ່ານໃຊ້ງານໄດ້ໃນລາວ, ອັງກິດ, ແລະໄທ. ທຸກປະເພດລູກຄ້າ, ທຸກຕະຫຼາດ, ຈັດການອັດຕະໂນມັດໂດຍບໍ່ຕ້ອງເຮັດວຽກຊ້ຳ."
+          "title": "ຮອງຮັບຫຼາຍພາສາຕາມທີ່ທ່ານຕ້ອງການ",
+          "desc": "ເວັບໄຊຂອງທ່ານເຮັດວຽກໄດ້ທັງພາສາລາວ, ອັງກິດ, ໄທ, ຈີນ, ສະເປນ (ຫຼືພາສາໃດກໍໄດ້). ໂດຍບໍ່ຕ້ອງເຮັດວຽກຊໍ້າຊ້ອນ."
         },
         "ownership": {
-          "title": "ທ່ານເປັນເຈົ້າຂອງມັນ",
-          "desc": "Facebook ສາມາດຈຳກັດໜ້າຂອງທ່ານໄດ້ໃນມື້ອື່ນ. ເວັບໄຊທ໌ຂອງທ່ານເປັນຂອງທ່ານ. ບໍ່ມີ algorithm, ບໍ່ມີການພຶ່ງພາ, ບໍ່ມີຄວາມສ່ຽງທີ່ຈະເສຍທຸກຢ່າງໃນຂ້າມຄືນ."
+          "title": "ທ່ານເປັນເຈົ້າຂອງມັນ 100%",
+          "desc": "Facebook ສາມາດລຶບເພຈຂອງທ່ານໄດ້ທຸກເມື່ອ. ແຕ່ເວັບໄຊເປັນຂອງທ່ານເອງ. ບໍ່ມີ Algorithm, ບໍ່ຂຶ້ນກັບໃຜ, ບໍ່ມີຄວາມສ່ຽງທີ່ຈະເສຍທຸກຢ່າງໃນຄືນດຽວ."
         },
         "analytics": {
-          "title": "ເຫັນການເຂົ້າໃຊ້ຂອງທ່ານ",
-          "desc": "ຮູ້ວ່າມີຄົນມາຫຼາຍປານໃດ, ພວກເຂົາມາຈາກໃສ, ແລະພວກເຂົາເບິ່ງຫຍັງ. Dashboard ງ່າຍໆທີ່ເປັນມິດກັບຄວາມເປັນສ່ວນຕົວຕັ້ງແຕ່ມື້ທຳອິດ."
+          "title": "ເບິ່ງຂໍ້ມູນການເຂົ້າຊົມ",
+          "desc": "ຮູ້ຈັກຈໍານວນຜູ້ເຂົ້າຊົມ, ມາຈາກໃສ ແລະ ເບິ່ງຫຍັງ. Dashboard ທີ່ງ່າຍດາຍ ແລະ ເນັ້ນຄວາມເປັນສ່ວນຕົວຖືກຕິດຕັ້ງມາໃຫ້ຕັ້ງແຕ່ມື້ທໍາອິດ."
         },
         "trust": {
-          "title": "ເບິ່ງດູຈິງຈັງ, ສ້າງຄວາມໄວ້ວາງໃຈ",
-          "desc": "ເວັບໄຊທ໌ມືອາຊີບບອກລູກຄ້າວ່າທ່ານເປັນທີ່ຍອມຮັບກ່ອນທີ່ພວກເຂົາຈະຕິດຕໍ່ທ່ານ. ຄວາມປະທັບໃຈທຳອິດເກີດຂຶ້ນອອນໄລນ໌ໃນປັດຈຸບັນ, ບໍ່ແມ່ນທີ່ປະຕູ."
+          "title": "ເບິ່ງເປັນມືອາຊີບ, ສ້າງຄວາມເຊື່ອໝັ້ນ",
+          "desc": "ເວັບໄຊທີ່ເປັນມືອາຊີບບອກລູກຄ້າວ່າທ່ານມີຕົວຕົນທີ່ໝັ້ນຄົງ ກ່ອນທີ່ເຂົາເຈົ້າຈະຕິດຕໍ່ຫາທ່ານ. ຄວາມປະທັບໃຈທໍາອິດເກີດຂຶ້ນທາງອອນລາຍແລ້ວໃນຕອນນີ້."
         },
         "delivered": {
-          "title": "ສົ່ງມອບສຳເລັດ",
-          "desc": "ບໍ່ແມ່ນ template ທີ່ທ່ານຕ້ອງຄິດເອງ. ທ່ານໄດ້ຮັບຜະລິດຕະພັນທີ່ສຳເລັດແລະໃຊ້ງານໄດ້: ການອອກແບບ, ການພັດທະນາ, ແລະ launch, ພ້ອມແຕ່ມື້ທຳອິດ."
+          "title": "ສົ່ງມອບແບບພ້ອມໃຊ້ງານ",
+          "desc": "ທ່ານຈະໄດ້ຮັບຜະລິດຕະພັນທີ່ສົມບູນ: ທັງການອອກແບບ, ການພັດທະນາ ແລະ ການເປີດຕົວ ພ້ອມໃຊ້ງານຕັ້ງແຕ່ມື້ທໍາອິດ."
         }
       }
     },
     "proof": {
       "eyebrow": "ສ້າງໃນລາວ",
-      "title": "ໂຄງການຈິງ, ຢູ່ບ່ອນນີ້ເອງໃນວຽງຈັນ",
-      "intro": "ທັງສອງ live. ທັງສອງໃຊ້ງານໄດ້. ທັງສອງສ້າງສຳລັບຕະຫຼາດລາວ.",
+      "title": "ໂຄງການຕົວຈິງ",
+      "intro": "ທັງໝົດໃຊ້ງານໄດ້ຈິງ. ທັງໝົດສ້າງຂຶ້ນເພື່ອລູກຄ້າຕົວຈິງ.",
       "projects": {
         "laomaitravel": {
           "name": "Lao Mai Travel",
-          "category": "ເວັບໄຊທ໌ທ່ອງທ່ຽວສອງພາສາ · ວຽງຈັນ"
+          "category": "ເວັບໄຊການທ່ອງທ່ຽວສອງພາສາ · ວຽງຈັນ"
         },
         "pmlaos": {
           "name": "PM Real Estate Laos",
-          "category": "Platform listing ສາມພາສາ · ວຽງຈັນ"
+          "category": "ແພລດຟອມອະສັງຫາລິມະຊັບສາມພາສາ · ວຽງຈັນ"
         }
       },
-      "analyticsTitle": "Umami Analytics · dashboard ການເຂົ້າໃຊ້ຂອງທ່ານ",
-      "analyticsAlt": "Umami analytics — dashboard ສະຖານທີ່",
-      "analyticsExplainer": "ການເຂົ້າໃຊ້ເວັບບອກທ່ານວ່າໃຜກຳລັງເຂົ້າມາ, ພວກເຂົາມາຈາກໃສ, ແລະພວກເຂົາເບິ່ງຫຍັງ. ມັນປ່ຽນການເດົາໃຫ້ກາຍເປັນການຮູ້ — ເພື່ອໃຫ້ທ່ານສາມາດເນັ້ນເວລາແລະເງິນຂອງທ່ານໃສ່ສິ່ງທີ່ແທ້ຈິງເຮັດວຽກ."
+      "analyticsTitle": "Umami Analytics · Dashboard ຕິດຕາມຂໍ້ມູນຂອງທ່ານ",
+      "analyticsAlt": "Umami analytics - Dashboard ສະຖານະ",
+      "analyticsExplainer": "ທ່ານຈະຮູ້ວ່າໃຜເຂົ້າຊົມ, ມາຈາກໃສ ແລະ ເຂົາເຈົ້າພວມເບິ່ງຫຍັງຢູ່."
     },
     "pwa": {
-      "eyebrow": "ໃຊ້ງານໄດ້ຄືກັບ app ໃນໂທລະສັບ",
+      "eyebrow": "ໃຊ້ງານໄດ້ຄືກັບແອັບໃນໂທລະສັບ",
       "title": "ຈັດການທຸລະກິດຂອງທ່ານ",
-      "titleItalic": "ຈາກທຸກບ່ອນ.",
-      "body1": "ເວັບໄຊຂອງທ່ານເຮັດວຽກຄືກັບ app ໃນໂທລະສັບ. ບໍ່ຕ້ອງດາວໂຫຼດ, ບໍ່ຕ້ອງ app store. ກວດສອບທຸລະກິດ, ຕອບລູກຄ້າ, ແລະອັບເດດຂໍ້ມູນຂອງທ່ານໄດ້ທຸກທີ່.",
-      "body2": "ເພີ່ມໃສ່ໜ້າຈໍໂທລະສັບດ້ວຍການກົດດຽວ. ເປີດທັນທີ. ໃຊ້ໄດ້ທັງ iPhone ແລະ Android.",
-      "chip": "ບໍ່ຕ້ອງມີ App Store",
+      "titleItalic": "ໄດ້ຈາກທຸກບ່ອນ.",
+      "body1": "ເວັບໄຊຂອງທ່ານເຮັດວຽກໄດ້ຄືກັບແອັບໃນໂທລະສັບ. ບໍ່ຕ້ອງດາວໂຫລດ, ບໍ່ຕ້ອງມີ App Store. ກວດເບິ່ງທຸລະກິດ, ຕອບລູກຄ້າ ແລະ ອັບເດດຂໍ້ມູນໄດ້ຈາກທຸກບ່ອນ.",
+      "body2": "ເພີ່ມມັນລົງໃນໜ້າຈໍໂທລະສັບໄດ້ດ້ວຍການແຕະຄັ້ງດຽວ. ເປີດໃຊ້ໄດ້ທັນທີ. ໃຊ້ໄດ້ທັງ iPhone ແລະ Android.",
+      "chip": "ບໍ່ຕ້ອງໃຊ້ App Store",
       "features": [
-        "ໃຊ້ງານໄດ້ແມ່ນເວລາອິນເຕີເນັດຊ້າຫຼືບໍ່ມີ",
-        "ເພີ່ມໃສ່ໂທລະສັບ — ບໍ່ຕ້ອງໃຊ້ App Store",
-        "ຮັບການແຈ້ງເຕືອນເວລາມີການປ່ຽນແປງ",
-        "ເປີດທັນທີທຸກຄັ້ງ"
+        "ເຮັດວຽກໄດ້ແມ້ແຕ່ອິນເຕີເນັດຊ້າ",
+        "ເພີ່ມລົງໃນໂທລະສັບໄດ້ - ບໍ່ຕ້ອງໂຫລດແອັບ",
+        "ຮັບການແຈ້ງເຕືອນເມື່ອມີການປ່ຽນແປງ",
+        "ເປີດໃຊ້ໄດ້ທັນທີທຸກຄັ້ງ"
       ],
-      "cta": "ຮັບ demo ຟຣີສໍາລັບທຸລະກິດຂອງທ່ານ"
+      "cta": "ຮັບຕົວຢ່າງຟຣີສໍາລັບທຸລະກິດຂອງທ່ານ"
     },
     "pricing": {
       "eyebrow": "ການລົງທຶນ",
-      "title": "ລາຄາງ່າຍໆ, ໂປ່ງໃສ",
-      "intro": "ຄ່າທຳນຽມດຽວ. ບໍ່ມີຄ່າໃຊ້ຈ່າຍເຊື່ອງໄວ້. ບໍ່ມີການປະຫລາດໃຈ.",
-      "banner": "ເພີ່ງເປີດຕົວ — ລາຄາແນະນຳ. ລາຄາເຫຼົ່ານີ້ຕ່ຳກວ່າທີ່ຈະເປັນ. ເມື່ອຊ່ອງລູກຄ້າທຳອິດເຕັມ, ລາຄາຈະຂຶ້ນ. ຖ້າທ່ານກຳລັງພິຈາລະນາ, ຕອນນີ້ແມ່ນເວລາທີ່ເໝາະສົມ.",
+      "title": "ລາຄາທີ່ງ່າຍດາຍ ແລະ ໂປ່ງໃສ",
+      "intro": "ບໍ່ມີຄ່າໃຊ້ຈ່າຍແຝງ. ບໍ່ມີສິ່ງທີ່ເຮັດໃຫ້ແປກໃຈ.",
+      "banner": "ຫາກໍເປີດຕົວ - ລາຄາພິເສດໃນຊ່ວງແນະນໍາ. ລາຄານີ້ຈະຕໍ່າກວ່າລາຄາປົກກະຕິ. ເມື່ອໄດ້ລູກຄ້າຄົບຕາມຈໍານວນທີ່ກໍານົດ, ລາຄາຈະປັບຂຶ້ນ. ຫາກທ່ານກໍາລັງພິຈາລະນາຢູ່, ຕອນນີ້ຄືເວລາທີ່ເໝາະສົມທີ່ສຸດ.",
       "tiers": {
         "website": {
-          "label": "Presence",
-          "name": "ເວັບໄຊທ໌",
+          "label": "ການມີຕົວຕົນ",
+          "name": "ເວັບໄຊ (Website)",
           "regularPrice": "$800",
           "price": "$400",
-          "tagline": "ສຳລັບໂຮງແຮມ, ຮ້ານອາຫານ, ຜູ້ດຳເນີນການທ່ອງທ່ຽວ, ແລະທຸລະກິດທີ່ຕ້ອງການຖືກພົບເຫັນອອນໄລນ໌.",
+          "tagline": "ສໍາລັບໂຮງແຮມ, ຮ້ານອາຫານ, ຜູ້ປະກອບການທ່ອງທ່ຽວ ແລະ ທຸລະກິດທີ່ຕ້ອງການໃຫ້ຄົນຄົ້ນຫາພົບທາງອອນລາຍ.",
           "includes": [
-            "5–8 ໜ້າ, ອອກແບບສຳເລັດ",
-            "ຫຼາຍພາສາຕາມຕ້ອງການ",
-            "ປັບແຕ່ງສຳລັບ SEO ໃນ Google",
-            "Umami analytics ຕິດຕັ້ງແລ້ວ",
-            "ພ້ອມສຳລັບມືຖືໃນທຸກອຸປະກອນ",
-            "ສົ່ງມອບໃນ 2–3 ອາທິດ"
+            "5–8 ໜ້າ, ອອກແບບເຕັມຮູບແບບ",
+            "ຮອງຮັບຫຼາຍພາສາຕາມຕ້ອງການ",
+            "ປັບແຕ່ງ SEO ສໍາລັບ Google",
+            "ມີລະບົບວິເຄາະຂໍ້ມູນໃນຕົວ",
+            "ຮອງຮັບມືຖື ແລະ ທຸກອຸປະກອນ",
+            "ສົ່ງມອບພາຍໃນ 2–3 ອາທິດ"
           ],
-          "cta": "ເລີ່ມເວັບໄຊທ໌ຂອງທ່ານ"
+          "cta": "ເລີ່ມສ້າງເວັບໄຊຂອງທ່ານ"
         },
         "webapp": {
-          "label": "Platform",
-          "name": "Web App",
+          "label": "ແພລດຟອມ",
+          "name": "ເວັບແອັບ (Web App)",
           "regularPrice": "$1,800",
           "price": "$900",
-          "tagline": "ສຳລັບທຸລະກິດທີ່ຈັດການຂໍ້ມູນ — listings, ການຈອງ, inventory, ການເຂົ້າເຖິງທີມງານ, ແລະ leads.",
+          "tagline": "ສໍາລັບທຸລະກິດທີ່ຈັດການຂໍ້ມູນ - ລາຍຊື່ສິນຄ້າ, ການຈອງ, ຄັງສິນຄ້າ ແລະ ລະບົບຈັດການລູກຄ້າ.",
           "includes": [
-            "ຖານຂໍ້ມູນແລະ admin panel ເຕັມຮູບແບບ",
-            "ບົດບາດຜູ້ໃຊ້ແລະ login ທີ່ປອດໄພ",
-            "ລະບົບ listings, CRM, ຫຼື inventory",
-            "ໃຊ້ງານເປັນ app ໃນໂທລະສັບຂອງທ່ານ",
-            "ຫຼາຍພາສາຕາມຕ້ອງການ",
-            "ສົ່ງມອບໃນ 4–5 ອາທິດ"
+            "ຖານຂໍ້ມູນ ແລະ ລະບົບຈັດການ (Admin Panel)",
+            "ລະບົບລັອກອິນທີ່ປອດໄພ",
+            "ລະບົບ CRM ຫຼື ຄັງສິນຄ້າ",
+            "ເຮັດວຽກເປັນແອັບໃນໂທລະສັບໄດ້",
+            "ຮອງຮັບຫຼາຍພາສາຕາມຕ້ອງການ",
+            "ສົ່ງມອບພາຍໃນ 4–5 ອາທິດ"
           ],
-          "cta": "ເລີ່ມ web app ຂອງທ່ານ"
+          "cta": "ເລີ່ມສ້າງເວັບແອັບຂອງທ່ານ"
         }
       },
-      "badge": "ນິຍົມສຸດ",
-      "priceNote": "USD · ຄັ້ງດຽວ · ຊ່ອງຈຳກັດ",
-      "platformNote": "ບໍ່ແນ່ໃຈວ່າທ່ານຕ້ອງການອັນໃດ? ສົ່ງໜ້າ Facebook ຂອງທ່ານໃນ WhatsApp ແລະຂ້ອຍຈະບອກທ່ານວ່າອັນໃດເໝາະສົມກັບທຸລະກິດຂອງທ່ານ. ຟຣີ, ບໍ່ມີພັນທະ."
+      "badge": "ຍອດນິຍົມ",
+      "priceNote": "USD · ຈ່າຍຄັ້ງດຽວ · ຈໍານວນຈໍາກັດ",
+      "platformNote": "ບໍ່ແນ່ໃຈວ່າຕ້ອງການແບບໃດ? ສົ່ງເພຈ Facebook ໃຫ້ຂ້ອຍທາງ WhatsApp ແລ້ວຂ້ອຍຈະແນະນໍາສິ່ງທີ່ເໝາະສົມກັບທຸລະກິດຂອງທ່ານ. ຟຣີ, ບໍ່ມີພັນທະຜູກມັດ."
     },
     "carePlans": {
       "eyebrow": "ການສະໜັບສະໜູນລາຍເດືອນ",
-      "title": "ຮັກສາເວັບໄຊທ໌ຂອງທ່ານໃຫ້ໃຊ້ງານໄດ້. ສະເໝີ.",
-      "subtitle": "ແຜນການດູແລທາງເລືອກເພື່ອໃຫ້ເວັບໄຊທ໌ຂອງທ່ານອັບເດດຕະຫຼອດແລະທ່ານບໍ່ຕ້ອງກັງວົນກ່ຽວກັບມັນ.",
+      "title": "ໃຫ້ເວັບໄຊຂອງທ່ານເຮັດວຽກໄດ້ຕະຫຼອດເວລາ.",
+      "subtitle": "ແຜນການເບິ່ງແຍງທີ່ເປັນທາງເລືອກ ເພື່ອໃຫ້ເວັບໄຊຂອງທ່ານອອນລາຍ ແລະ ອັບເດດຢູ່ສະເໝີ ໂດຍທີ່ທ່ານບໍ່ຕ້ອງກັງວົນ.",
+      "badge": "ຍອດນິຍົມ",
       "plans": {
         "basic": {
-          "name": "Basic Care",
+          "name": "ເບິ່ງແຍງພື້ນຖານ",
           "price": "$30",
           "period": "/ເດືອນ",
-          "for": "ສຳລັບເວັບໄຊທ໌ presence",
+          "for": "ສໍາລັບເວັບໄຊທົ່ວໄປ",
           "includes": [
-            "Hosting ຄຸ້ມຄອງແລ້ວ",
-            "ຕິດຕາມການເຮັດວຽກ",
+            "ລວມຄ່າ Hosting",
+            "ຕິດຕາມສະຖານະເວັບ (Uptime)",
             "ອັບເດດເນື້ອຫາ 1 ຄັ້ງຕໍ່ເດືອນ",
-            "ສະໜັບສະໜູນທາງອີເມລ"
+            "ການຊ່ວຍເຫຼືອຜ່ານອີເມວ"
           ],
-          "quip": "🍺 ຖືກກວ່າຄືນດຽວທີ່ MAHASAN. ເວັບໄຊທ໌ຂອງທ່ານເຮັດວຽກ 24/7 ທັງສອງທາງ ... ຢ່າງໜ້ອຍອັນໜຶ່ງຈື່ທ່ານໃນຕອນເຊົ້າ."
+          "quip": "🍺 ຖືກກວ່າການໄປດື່ມເບຍໜຶ່ງຄືນຢູ່ MAHASAN."
         },
         "active": {
-          "name": "Active Care",
+          "name": "ເບິ່ງແຍງເຕັມຮູບແບບ",
           "price": "$80",
           "period": "/ເດືອນ",
-          "for": "ສຳລັບ platform web apps",
+          "for": "ສໍາລັບເວັບແອັບ ແລະ ແພລດຟອມ",
           "includes": [
-            "Hosting ແລະຖານຂໍ້ມູນຄຸ້ມຄອງແລ້ວ",
-            "ການສະໜັບສະໜູນລຳດັບຄວາມສຳຄັນພາຍໃນ 24 ຊົ່ວໂມງ",
-            "ອັບເດດສູງສຸດ 5 ຄັ້ງຕໍ່ເດືອນ",
-            "ລາຍງານ analytics ປະຈຳເດືອນ"
+            "ລວມຄ່າ Hosting ແລະ ຖານຂໍ້ມູນ",
+            "ຊ່ວຍເຫຼືອເປັນພິເສດພາຍໃນ 24 ຊົ່ວໂມງ",
+            "ອັບເດດໄດ້ສູງສຸດ 5 ຄັ້ງຕໍ່ເດືອນ",
+            "ລາຍງານການວິເຄາະລາຍເດືອນ"
           ],
-          "quip": "ຕ່ຳກວ່າການໂພສ Facebook boosted ໜຶ່ງຄັ້ງທີ່ຫາຍໄປໃນ 3 ວັນ. ນີ້ຮັກສາ platform ຂອງທ່ານໃຫ້ເຮັດວຽກແລະອັບເດດຕະຫຼອດເດືອນ."
+          "quip": "ໜ້ອຍກວ່າການຍິງໂຄສະນາ Facebook ທີ່ຫາຍໄປພາຍໃນ 3 ວັນ."
         }
       }
     },
     "cta": {
-      "eyebrow": "ມາເຮັດວຽກຮ່ວມກັນ",
-      "title": "ພ້ອມທີ່ຈະແຂ່ງຂັນ",
-      "titleItalic": "ກັບຄູ່ແຂ່ງບໍ?",
-      "sub1": "ການກວດຄັ້ງທຳອິດແມ່ນຟຣີ. ບໍ່ມີ pitch deck, ບໍ່ມີພັນທະ.",
-      "sub2": "ພຽງແຕ່ 10 ນາທີໃນ WhatsApp ແລະທ່ານຈະຮູ້ວ່າເວັບໄຊທ໌ຂອງທ່ານຢູ່ທີ່ໃດ.",
-      "cta": "ສົ່ງຂໍ້ຄວາມຫາຂ້ອຍໃນ WhatsApp →",
-      "note": "ຕ້ອງການອີເມລ? hello@maxontorres.com"
+      "eyebrow": "ມາຮ່ວມງານກັນ",
+      "title": "ພ້ອມທີ່ຈະກ້າວນໍາ",
+      "titleItalic": "ຄູ່ແຂ່ງແລ້ວຫຼືຍັງ?",
+      "sub1": "ກວດສອບຄັ້ງທໍາອິດຟຣີ. ບໍ່ມີພັນທະຜູກມັດ.",
+      "sub2": "ພຽງແຕ່ 10 ນາທີໃນ WhatsApp ແລ້ວທ່ານຈະຮູ້ວ່າຂ້ອຍຊ່ວຍທ່ານໄດ້ແນວໃດ.",
+      "cta": "ສົ່ງຂໍ້ຄວາມຫາຂ້ອຍທາງ WhatsApp →",
+      "note": "ສະດວກທາງອີເມວບໍ? hello@MaxonTorres.com"
     },
     "meta": {
-      "title": "ບໍລິການອອກແບບ ແລະ ພັດທະນາເວັບໄຊທ໌ | Maxon Torres",
-      "description": "ເວັບໄຊທ໌ທີ່ທັນສະໄໝ ແລະ ໄວສຳລັບທຸລະກິດຂະໜາດນ້ອຍໃນລາວ ແລະ ທົ່ວໂລກ. SEO, Mobile-first, ຫຼາຍພາສາ. ເລີ່ມຕົ້ນທີ່ $400.",
-      "ogTitle": "ບໍລິການອອກແບບ ແລະ ພັດທະນາເວັບໄຊທ໌ | Maxon Torres",
-      "ogDescription": "ເວັບໄຊທ໌ທີ່ທັນສະໄໝ, Mobile-first, ຫຼາຍພາສາ. ເລີ່ມຕົ້ນທີ່ $400.",
-      "ogImageAlt": "ບໍລິການອອກແບບ ແລະ ພັດທະນາເວັບໄຊທ໌ | Maxon Torres"
+      "title": "ບໍລິການອອກແບບ ແລະ ພັດທະນາເວັບໄຊໃນວຽງຈັນ | Maxon Torres",
+      "description": "ເວັບໄຊ ແລະ ເວັບແອັບທີ່ໄວ ແລະ ທັນສະໄໝ ສໍາລັບທຸລະກິດຂະໜາດນ້ອຍໃນລາວ ແລະ ຕ່າງປະເທດ. ເນັ້ນ SEO, ຮອງຮັບມືຖື ແລະ ຫຼາຍພາສາ. ເລີ່ມຕົ້ນທີ່ $400.",
+      "ogTitle": "ບໍລິການອອກແບບ ແລະ ພັດທະນາເວັບໄຊ | Maxon Torres",
+      "ogDescription": "ເວັບໄຊທີ່ໄວ ແລະ ທັນສະໄໝສໍາລັບທຸລະກິດ. ເນັ້ນ SEO, ຮອງຮັບມືຖື ແລະ ຫຼາຍພາສາ. ເລີ່ມຕົ້ນທີ່ $400.",
+      "ogImageAlt": "ບໍລິການອອກແບບ ແລະ ພັດທະນາເວັບໄຊ | Maxon Torres"
     }
   },
   "pmlaosCaseStudy": {
     "breadcrumbHome": "ໜ້າຫຼັກ",
     "breadcrumbWork": "ຜົນງານ",
-    "tagline": "Platform ອະສັງຫາລິມະຊັບສາມພາສາ EN/LO/ZH — ຕິດຕັ້ງເປັນ PWA ໄດ້, admin ທີ່ປອດໄພດ້ວຍ Google OAuth ແລະ ໜ້າຊັບສິນທີ່ render ຈາກ server ສ້າງສຳລັບວຽງຈັນ.",
+    "tagline": "ແພລດຟອມອະສັງຫາລິມະຊັບ EN/LO/ZH. ສາມາດຕິດຕັ້ງເປັນແອັບ (PWA), ລະບົບຈັດການທີ່ປອດໄພດ້ວຍ Google OAuth ແລະ ໜ້າເວັບຊັບສິນທີ່ Render ຈາກ Server ສໍາລັບທຸລະກິດໃນວຽງຈັນ.",
     "viewLive": "ເຂົ້າເບິ່ງ pmlaos.com",
-    "heroImageAlt": "ໜ້າຫຼັກ PM Real Estate Laos — ລາຍຊື່ຊັບສິນດ້ວຍ layout ສະອາດແລະເປັນມືອາຊີບ",
+    "heroImageAlt": "ໜ້າຫຼັກ PM Real Estate Laos - ລາຍຊື່ອະສັງຫາລິມະຊັບດ້ວຍການຈັດວາງທີ່ສະອາດ ແລະ ເປັນມືອາຊີບ",
     "outcomes": [
       {
         "value": "EN + LO + ZH",
-        "label": "ເສັ້ນທາງສາມພາສາແບບ first-class"
-      },
-      {
-        "value": "100%",
-        "label": "ໜ້າ listing ທີ່ render ຈາກ server"
+        "label": "ສາມພາສາ ຫຼື ຫຼາຍກວ່ານັ້ນຕາມຕ້ອງການ"
       },
       {
         "value": "Google OAuth",
-        "label": "ການ login admin ທີ່ປອດໄພ"
+        "label": "ເຂົ້າສູ່ລະບົບໄດ້ງ່າຍດ້ວຍບັນຊີ Google"
       },
       {
         "value": "PWA",
-        "label": "ຕິດຕັ້ງໄດ້ຄືກັບ app ທຳມະດາ"
+        "label": "ທ່ານສາມາດຕິດຕັ້ງເວັບໄຊນີ້ໄດ້ຄືກັບແອັບ"
       }
     ],
     "problem": {
       "sectionLabel": "[ ບັນຫາ ]",
-      "p1": "ກ່ອນທີ່ຈະມີ platform ນີ້, PM Real Estate Laos ຈັດການລາຍຊື່ຂອງພວກເຂົາຜ່ານ posts ໃນ social media ແລະ catalog PDF. ບໍ່ມີສະຖານທີ່ສູນກາງທີ່ຜູ້ຊື້ສາມາດຊອກຫາຊັບສິນທັງໝົດທີ່ມີຢູ່, filter ຕາມພື້ນທີ່ ຫຼື ເບິ່ງຮູບພາບຄຸນນະພາບສູງ — ແລະທຸກການອັບເດດໝາຍຄວາມວ່າຕ້ອງແກ້ໄຂໄຟລ໌ ແລະ ສົ່ງຄືນດ້ວຍມື.",
-      "p2": "ຫ້ອງການຍັງບໍ່ມີລະບົບຕິດຕາມລູກຄ້າ ຫຼື ການເຈລະຈາ. ສະຖານະ pipeline ຢູ່ໃນ spreadsheet, ການຕິດຕາມຖືກພາດ ແລະ ບໍ່ມີວິທີເບິ່ງຢ່າງໄວວ່າຊັບສິນໃດກຳລັງມີການເຄື່ອນໄຫວ, pending ຫຼື ຂາຍແລ້ວ.",
+      "p1": "ກ່ອນຈະມີແພລດຟອມນີ້, PM Real Estate Laos ຈັດການລາຍຊື່ອະສັງຫາລິມະຊັບຜ່ານການໂພສໃນໂຊຊ່ຽວມີເດຍ. ບໍ່ມີບ່ອນລວມສູນທີ່ຜູ້ຊື້ສາມາດຄົ້ນຫາຊັບສິນທັງໝົດ, ກັ່ນຕອງຕາມພື້ນທີ່ ຫຼື ເບິ່ງຮູບພາບທີ່ມີຄຸນນະພາບສູງ - ແລະ ທຸກການອັບເດດໝາຍເຖິງການແກ້ໄຂໄຟລ໌ ແລະ ສົ່ງໃຫ້ກັນດ້ວຍມື.",
+      "p2": "ບໍລິສັດຍັງບໍ່ມີລະບົບຕິດຕາມລູກຄ້າ ຫຼື ດີລການຂາຍ. ສະຖານະຂອງວຽກຢູ່ໃນ Excel ແລະ WhatsApp (ເຊິ່ງເປັນແນວຄິດທີ່ບໍ່ດີ), ການຕິດຕາມລູກຄ້າຖືກຂ້າມໄປ ແລະ ບໍ່ມີທາງທີ່ຈະເຫັນໄດ້ທັນທີວ່າຊັບສິນໃດກໍາລັງຂາຍຢູ່, ກໍາລັງລໍຖ້າ ຫຼື ຂາຍໄປແລ້ວ.",
       "p3": "ສາມບັນຫາທີ່ຕ້ອງແກ້ໄຂ:",
       "problems": [
-        "ບໍ່ມີ platform ລາຍຊື່ສູນກາງ — ຊັບສິນກະແຈກກະຈາຍຢູ່ໃນ Facebook ແລະ ໄຟລ໌ PDF",
-        "ບໍ່ມີ pipeline ຂອງລູກຄ້າ ຫຼື ການເຈລະຈາ — ທຸກຢ່າງຖືກຕິດຕາມໃນ spreadsheet ທີ່ບໍ່ເຊື່ອມຕໍ່ກັນ",
-        "ບໍ່ມີການຮອງຮັບຫຼາຍພາສາ — ພາດກຸ່ມຜູ້ຊື້ທີ່ເວົ້າພາສາຈີນ ແລະ ສາກົນທັງໝົດ"
+        "ບໍ່ມີແພລດຟອມລວມສູນ - ຊັບສິນກະຈັດກະຈາຍຢູ່ໃນ Facebook ແລະ WhatsApp",
+        "ບໍ່ມີລະບົບຈັດການລູກຄ້າ ຫຼື ດີລ - ທຸກຢ່າງຕິດຕາມໃນ Excel ທີ່ແຍກກັນ",
+        "ບໍ່ມີການຮອງຮັບຫຼາຍພາສາ - ພາດກຸ່ມລູກຄ້າທີ່ເວົ້າພາສາຈີນ ແລະ ຕ່າງປະເທດຢ່າງສິ້ນເຊີງ"
       ]
     },
     "design": {
       "sectionLabel": "[ ການອອກແບບ ]",
-      "p1": "Brief ແມ່ນເປັນມືອາຊີບ, ໜ້າເຊື່ອຖື ແລະ ສ້າງສຳລັບຜູ້ຊົມສາກົນ. ຜູ້ຊື້ອະສັງຫາລິມະຊັບ — ໂດຍສະເພາະນັກລົງທຶນຕ່າງປະເທດ — ຕັດສິນໃຈໂດຍອີງໃສ່ຄວາມຖືກຕ້ອງທີ່ຮັບຮູ້ກ່ອນທີ່ພວກເຂົາຈະເຫັນຊັບສິນ.",
-      "p2": "Layout ທີ່ສະອາດພ້ອມຮູບຖ່າຍຊັບສິນຂະໜາດໃຫຍ່ຢູ່ກາງ. UI ຢູ່ນອກທາງ ແລະ ປ່ອຍໃຫ້ລາຍຊື່ເຮັດວຽກ. ລຳດັບຊັ້ນ typography ທີ່ສອດຄ່ອງຮັບປະກັນວ່າລາຍລະອຽດຊັບສິນສາມາດສະແກນໄດ້ໃນເບິ່ງດຽວ.",
-      "p3": "Dashboard admin ສະທ້ອນພາສາການອອກແບບທີ່ຫັນໄປຫາສາທາລະນະ — ມືດ, ນ້ອຍທີ່ສຸດ, ໜາແໜ້ນດ້ານຂໍ້ມູນ. ການໃຊ້ລະບົບພາບດຽວກັນສຳລັບສອງດ້ານໝາຍຄວາມວ່າລູກຄ້າຮູ້ສຶກເໝືອນຢູ່ບ້ານໃນ CMS ຕັ້ງແຕ່ມື້ທຳອິດ."
+      "p1": "ໂຈດຄື: ເປັນມືອາຊີບ, ໜ້າເຊື່ອຖື ແລະ ສ້າງຂຶ້ນສໍາລັບກຸ່ມລູກຄ້າສາກົນ. ຜູ້ຊື້ອະສັງຫາລິມະຊັບ - ໂດຍສະເພາະນັກລົງທຶນຕ່າງປະເທດ - ຕັດສິນໃຈໂດຍອີງໃສ່ຄວາມໜ້າເຊື່ອຖືທີ່ເຫັນໄດ້ ກ່ອນທີ່ຈະໄປເບິ່ງຊັບສິນຕົວຈິງ.",
+      "p2": "ການຈັດວາງທີ່ສະອາດ ພ້ອມຮູບພາບຊັບສິນຂະໜາດໃຫຍ່ເປັນຈຸດເດັ່ນ. UI ຖືກອອກແບບມາໃຫ້ລຽບງ່າຍເພື່ອໃຫ້ລາຍຊື່ອະສັງຫາລິມະຊັບໂດດເດັ່ນ. ການຈັດລຽງຕົວໜັງສືທີ່ເປັນລະບົບຮັບປະກັນວ່າລາຍລະອຽດຊັບສິນສາມາດອ່ານໄດ້ໄວ.",
+      "p3": "Dashboard ສໍາລັບຜູ້ຈັດການ (Admin) ໃຊ້ຮູບແບບການອອກແບບດຽວກັນກັບໜ້າເວັບທົ່ວໄປ - ໂທນມືດ, ລຽບງ່າຍ ແລະ ເຕັມไปด้วยຂໍ້ມູນ. ການໃຊ້ລະບົບດຽວກັນທັງສອງດ້ານເຮັດໃຫ້ລູກຄ້າຮູ້ສຶກຄຸ້ນເຄີຍໃນການໃຊ້ງານ CMS ຕັ້ງແຕ່ມື້ທໍາອິດ."
     },
     "nextjs": {
-      "sectionLabel": "[ ເປັນຫຍັງຈຶ່ງໃຊ້ NEXT.JS ]",
-      "intro": "ສາມເຫດຜົນ: SEO ສຳລັບ listing ແຕ່ລະອັນ, routing ສາມພາສາ ແລະ backend API ໂດຍບໍ່ມີ server ແຍກຕ່າງຫາກ.",
+      "sectionLabel": "[ ເປັນຫຍັງຕ້ອງ NEXT.JS ]",
+      "intro": "ສາມເຫດຜົນ: SEO ສໍາລັບແຕ່ລະລາຍການ, ລະບົບສາມພາສາ ແລະ ມີ Backend API ໂດຍບໍ່ຕ້ອງມີ Server ແຍກ.",
       "reasons": [
         {
-          "title": "ໜ້າ listing ທີ່ SEO-first",
-          "desc": "ທຸກໜ້າຊັບສິນຖືກ render ຈາກ server ດ້ວຍ metadata ສົມບູນ, ຂໍ້ມູນທີ່ມີໂຄງສ້າງ ແລະ Open Graph tags. ເມື່ອຜູ້ຊື້ຊອກຫາ 'ອາພາດເມັນສຳລັບເຊົ່າວຽງຈັນ' ຫຼື 'ທີ່ດິນຂາຍລາວ', ໜ້າ listing ແຕ່ລະອັນຈະປາກົດ — ບໍ່ແມ່ນພຽງແຕ່ໜ້າຫຼັກ."
+          "title": "ໜ້າລາຍການທີ່ເນັ້ນ SEO",
+          "desc": "ທຸກໆໜ້າຊັບສິນຈະຖືກ Render ຈາກ Server ພ້ອມ Metadata, ຂໍ້ມູນໂຄງສ້າງ ແລະ Open Graph tags. ເມື່ອຜູ້ຊື້ຄົ້ນຫາ 'apartment for rent Vientiane' ຫຼື 'land for sale Laos', ໜ້າຊັບສິນແຕ່ລະອັນຈະປາກົດຂຶ້ນ - ບໍ່ແມ່ນພຽງແຕ່ໜ້າຫຼັກ."
         },
         {
-          "title": "Routing ສາມພາສາທີ່ເປັນ first-class",
-          "desc": "ໜ້າທັງໝົດຢູ່ພາຍໃຕ້ app/[locale]/ ດ້ວຍ EN, LO ແລະ ZH ເປັນ route ທີ່ເໝາະສົມແບບ first-class. next-intl ຈັດການການແປ ແລະ ການກວດຫາ locale. ບໍ່ມີ redirect hacks, ບໍ່ມີ template ທີ່ຊ້ຳກັນ."
+          "title": "ລະບົບຫຼາຍພາສາ",
+          "desc": "ທຸກໜ້າຢູ່ພາຍໃຕ້ app/[locale]/ ໂດຍມີ EN, LO, ແລະ ZH ເປັນເສັ້ນທາງທີ່ແທ້ຈິງ. next-intl ຈັດການຄໍາແປ ແລະ ການກວດສອບພາສາ. ບໍ່ມີການ Redirect ທີ່ຍຸ່ງຍາກ, ບໍ່ມີ Template ທີ່ຊໍ້າຊ້ອນ."
         },
         {
-          "title": "Admin API ໃນ codebase ດຽວກັນ",
-          "desc": "Next.js Route Handlers ຂັບເຄື່ອນ CMS backend ທັງໝົດ. ບໍ່ມີ Express server ແຍກຕ່າງຫາກເພື່ອ deploy, ບໍ່ມີ CORS ທີ່ຕ້ອງກຳນົດຄ່າ. Dashboard admin ແມ່ນສ່ວນໜຶ່ງຂອງການ deploy ດຽວກັນກັບ site ສາທາລະນະ."
+          "title": "Admin API ໃນໂຄ້ດດຽວກັນ",
+          "desc": "Next.js Route Handlers ຂັບເຄື່ອນ Backend ຂອງ CMS ທັງໝົດ. ບໍ່ຕ້ອງຕິດຕັ້ງ Express server ແຍກ, ບໍ່ຕ້ອງຕັ້ງຄ່າ CORS. Dashboard ຈັດການເປັນສ່ວນໜຶ່ງຂອງການຕິດຕັ້ງດຽວກັນກັບເວັບໄຊທົ່ວໄປ."
         }
       ]
     },
     "screenshots": {
-      "sectionLabel": "[ ເວັບໄຊທ໌ ]",
+      "sectionLabel": "[ ເວັບໄຊ ]",
       "images": [
         {
-          "alt": "ໜ້າຫຼັກ PM Real Estate Laos ດ້ວຍລາຍຊື່ຊັບສິນ",
-          "caption": "ໜ້າຫຼັກ — ລາຍຊື່ຊັບສິນດ້ວຍການຊອກຫາ ແລະ filter"
+          "alt": "ໜ້າຫຼັກ PM Real Estate Laos ພ້ອມລາຍຊື່ອະສັງຫາລິມະຊັບ",
+          "caption": "ໜ້າຫຼັກ - ລາຍຊື່ອະສັງຫາລິມະຊັບພ້ອມລະບົບຄົ້ນຫາ ແລະ ກັ່ນຕອງ"
         },
         {
-          "alt": "ລາຍຊື່ຊັບສິນຫຼາຍອັນໃນມຸມມອງ gallery",
-          "caption": "Gallery ລາຍຊື່ — ມຸມມອງຕາຕະລາງດ້ວຍ thumbnail ຊັບສິນ"
+          "alt": "ລາຍຊື່ອະສັງຫາລິມະຊັບໃນຮູບແບບ Gallery",
+          "caption": "ຄັງລາຍຊື່ຊັບສິນ - ຮູບແບບຕາຕະລາງພ້ອມຮູບພາບຕົວຢ່າງ"
         },
         {
-          "alt": "ໜ້າລາຍຊື່ຊັບສິນແຕ່ລະອັນເຕັມ",
-          "caption": "ໜ້າລາຍລະອຽດລາຍຊື່ — ຮູບພາບ, ຂໍ້ກຳນົດ ແລະ ຟອມຕິດຕໍ່"
+          "alt": "ໜ້າລາຍລະອຽດຊັບສິນແຕ່ລະອັນ",
+          "caption": "ໜ້າລາຍລະອຽດ - ຮູບພາບ, ຂໍ້ມູນສະເພາະ ແລະ ແບບຟອມຕິດຕໍ່"
         }
       ]
     },
     "admin": {
-      "sectionLabel": "[ DASHBOARD ADMIN ]",
-      "heading": "CMS ເຕັມຮູບແບບ, ສ້າງຂຶ້ນ",
-      "p1": "ຫ້ອງການຕ້ອງການຫຼາຍກວ່າເວັບໄຊທ໌ — ພວກເຂົາຕ້ອງການລະບົບ. Dashboard admin ແມ່ນເຄື່ອງມືຄຸ້ມຄອງຊັບສິນທີ່ສົມບູນ: ເພີ່ມ ແລະ ແກ້ໄຂລາຍຊື່, ຄຸ້ມຄອງລູກຄ້າ, ຕິດຕາມ pipeline ການເຈລະຈາ ແລະ ຄວບຄຸມພື້ນທີ່ໃດປາກົດຢູ່ໃນ site.",
-      "p2": "ການກວດສອບສິດຖືກຈັດການຜ່ານ Google OAuth ຫຼື ຊື່ຜູ້ໃຊ້ ແລະ ລະຫັດຜ່ານ. ທີມສາມາດເຂົ້າສູ່ລະບົບດ້ວຍບັນຊີ Google ທີ່ມີຢູ່ແລ້ວຂອງພວກເຂົາ.",
+      "sectionLabel": "[ DASHBOARD ຈັດການ ]",
+      "heading": "ລະບົບ CMS ເຕັມຮູບແບບ",
+      "p1": "ບໍລິສັດຕ້ອງການຫຼາຍກວ່າເວັບໄຊ - ເຂົາເຈົ້າຕ້ອງການລະບົບ. Dashboard ຈັດການແມ່ນເຄື່ອງມືຈັດການຊັບສິນເຕັມຮູບແບບ: ເພີ່ມ ແລະ ແກ້ໄຂລາຍຊື່, ຈັດການລູກຄ້າ, ຕິດຕາມດີລການຂາຍ ແລະ ຄວບຄຸມພື້ນທີ່ທີ່ຈະສະແດງໃນເວັບໄຊ.",
+      "p2": "ການກວດສອບສິດເຂົ້າໃຊ້ງານຜ່ານຊື່ຜູ້ໃຊ້ ແລະ ລະຫັດຜ່ານ ພ້ອມທັງ Google OAuth. ທີມງານສາມາດເຂົ້າສູ່ລະບົບດ້ວຍບັນຊີ Google ທີ່ມີຢູ່ແລ້ວ.",
       "images": [
         {
-          "alt": "ພາບລວມ dashboard admin ຫຼັກ",
+          "alt": "ພາບລວມ Dashboard ຫຼັກ",
           "caption": "Dashboard ຫຼັກ"
         },
         {
-          "alt": "ໜ້າການຄຸ້ມຄອງການເຈລະຈາຂອງ admin",
-          "caption": "ຕິດຕາມທຸກທຸລະກຳຊັບສິນ"
+          "alt": "ໜ້າຈັດການດີລການຂາຍ",
+          "caption": "ຕິດຕາມທຸກການຊື້-ຂາຍຊັບສິນ"
         },
         {
-          "alt": "ໜ້າການຄຸ້ມຄອງລູກຄ້າຂອງ admin",
-          "caption": "ການຄຸ້ມຄອງລູກຄ້າ — ຖານຂໍ້ມູນຜູ້ຊື້ ແລະ ຜູ້ຂາຍ"
+          "alt": "ໜ້າຈັດການລູກຄ້າ",
+          "caption": "ການຈັດການລູກຄ້າ - ຖານຂໍ້ມູນຜູ້ຊື້ ແລະ ຜູ້ຂາຍ"
         },
         {
-          "alt": "ໜ້າການຄຸ້ມຄອງພື້ນທີ່ຂອງ admin",
-          "caption": "ການຄຸ້ມຄອງພື້ນທີ່ — ຄວບຄຸມໂຊນໃດປາກົດຢູ່ໃນ site"
+          "alt": "ໜ້າຈັດການພື້ນທີ່",
+          "caption": "ການຈັດການພື້ນທີ່ - ຄວບຄຸມເຂດຕ່າງໆທີ່ຈະສະແດງໃນເວັບ"
         },
         {
-          "alt": "ໜ້າຈໍ login Google OAuth ຂອງ admin",
-          "caption": "Google OAuth login"
+          "alt": "ໜ້າຈໍລັອກອິນ Google OAuth",
+          "caption": "ການລັອກອິນດ້ວຍ Google OAuth"
         },
         {
-          "alt": "ມຸມມອງ mobile ຂອງ dashboard admin",
-          "caption": "Admin ທີ່ຕອບສະໜອງ mobile — ຄຸ້ມຄອງລາຍຊື່ຈາກທຸກບ່ອນ"
+          "alt": "Dashboard ໃນຮູບແບບມືຖື",
+          "caption": "ລະບົບຈັດການທີ່ຮອງຮັບມືຖື - ຈັດການລາຍຊື່ໄດ້ຈາກທຸກບ່ອນ"
         }
       ]
     },
     "techStack": {
-      "sectionLabel": "[ TECH STACK ]",
+      "sectionLabel": "[ ເຕັກໂນໂລຊີ ]",
       "items": [
         {
           "name": "Next.js 15 + TypeScript",
-          "reason": "ໜ້າ listing ທີ່ render ຈາກ server ດ້ວຍ App Router. TypeScript ທົ່ວ codebase ທັງໝົດ — ບໍ່ມີການປະຫລາດໃຈ runtime ໃນ admin ຫຼື API."
+          "reason": "ໜ້າລາຍຊື່ທີ່ Render ຈາກ Server ດ້ວຍ App Router. ໃຊ້ TypeScript ທົ່ວທັງລະບົບ - ບໍ່ມີຂໍ້ຜິດພາດທີ່ບໍ່ຄາດຄິດໃນລະບົບຈັດການ ຫຼື API."
         },
         {
           "name": "next-intl",
-          "reason": "Routing ສາມພາສາ EN/LO/ZH ຕິດຕັ້ງມາແຕ່ມື້ທຳອິດ. ແຕ່ລະ locale ແມ່ນ route ແບບ first-class ດ້ວຍ metadata ແລະ ເນື້ອຫາທີ່ແປແລ້ວຂອງຕົນເອງ."
+          "reason": "ລະບົບສາມພາສາ EN/LO/ZH ທີ່ຕິດຕັ້ງມາແຕ່ມື້ທໍາອິດ. ແຕ່ລະພາສາມີ Metadata ແລະ ເນື້ອຫາທີ່ແປແລ້ວຂອງຕົນເອງ."
         },
         {
           "name": "Prisma + PostgreSQL",
-          "reason": "Schema ການເຊື່ອມໂຍງສຳລັບຊັບສິນ, ລູກຄ້າ, ການເຈລະຈາ ແລະ ພື້ນທີ່. Prisma ຮັກສາການ migrate ໃຫ້ປອດໄພ ແລະ typed — ບໍ່ມີ SQL raw ໃນ codebase."
+          "reason": "Schema ແບບ Relational ສໍາລັບຊັບສິນ, ລູກຄ້າ, ດີລ ແລະ ພື້ນທີ່. Prisma ຊ່ວຍໃຫ້ການຈັດການຖານຂໍ້ມູນປອດໄພ."
         },
         {
           "name": "Google OAuth",
-          "reason": "ການກວດສອບສິດ admin ດ້ວຍ Google OAuth ຫຼື ຊື່ຜູ້ໃຊ້ ແລະ ລະຫັດຜ່ານ."
+          "reason": "ລູກຄ້າໃຊ້ບັນຊີ Google ທີ່ມີຢູ່ແລ້ວ ຫຼື ຊື່ຜູ້ໃຊ້ ແລະ ລະຫັດຜ່ານ."
         },
         {
           "name": "CSS Modules",
-          "reason": "Styles ທີ່ scoped ຕໍ່ component. ບໍ່ມີ Tailwind"
+          "reason": "ຈັດການ Style ແຍກຕາມ Component. ບໍ່ໃຊ້ Tailwind"
         },
         {
           "name": "PWA + Service Worker",
-          "reason": "Site ຕິດຕັ້ງໄປຫາໜ້າຈໍຫຼັກຄືກັບ app ທຳມະດາ. ຕົວແທນຊັບສິນໃນພາກສະໜາມເປີດມັນໂດຍບໍ່ມີ browser — ແລະ ລາຍຊື່ທີ່ cached ໂຫຼດແມ້ແຕ່ໃນສັນຍານ 4G ທີ່ອ່ອນແອຂອງລາວ."
+          "reason": "ເວັບໄຊສາມາດຕິດຕັ້ງລົງໜ້າຈໍໄດ້ຄືກັບແອັບ. ຕົວແທນຂາຍໃນພາກສະໜາມສາມາດເປີດເບິ່ງໄດ້ໂດຍບໍ່ຕ້ອງຜ່ານ Browser - ແລະ ລາຍຊື່ທີ່ເກັບໄວ້ໃນ Cache ຈະໂຫລດໄດ້ແມ້ແຕ່ໃນບ່ອນທີ່ສັນຍານອ່ອນ."
         }
       ]
     },
     "cta": {
-      "sectionLabel": "[ ເຮັດວຽກຮ່ວມກັນ ]",
-      "heading": "ຕ້ອງການ platform ແບບນີ້?",
-      "subtitle": "ຂ້ອຍສ້າງ platform ເວັບສຳລັບທຸລະກິດໃນວຽງຈັນ — ຊັບສິນ, ການທ່ອງທ່ຽວ, ບໍລິການ. Full-stack, ຫຼາຍພາສາ ແລະ ສ້າງເພື່ອໃຫ້ລູກຄ້າຄຸ້ມຄອງເອງ, ບໍ່ແມ່ນນັກພັດທະນາ.",
-      "talkButton": "ລົມກັນ",
-      "backToWork": "← ກັບຜົນງານ"
+      "sectionLabel": "[ ຮ່ວມງານກັນ ]",
+      "heading": "ຕ້ອງການແພລດຟອມແບບນີ້ບໍ?",
+      "subtitle": "ຂ້ອຍສ້າງເວັບແພລດຟອມສໍາລັບທຸລະກິດໃນວຽງຈັນ - ອະສັງຫາລິມະຊັບ, ການທ່ອງທ່ຽວ, ການບໍລິການ. ລະບົບເຕັມຮູບແບບ, ຮອງຮັບຫຼາຍພາສາ ແລະ ສ້າງມາເພື່ອໃຫ້ລູກຄ້າຈັດການເອງໄດ້ ໂດຍບໍ່ຕ້ອງເພິ່ງນັກພັດທະນາຕະຫຼອດເວລາ.",
+      "talkButton": "ມາລົມກັນ",
+      "backToWork": "← ກັບຄືນໜ້າຜົນງານ"
+    }
+  },
+  "vientianeWebsiteArticle": {
+    "breadcrumbHome": "ໜ້າຫຼັກ",
+    "breadcrumbArticles": "ບົດຄວາມ",
+    "breadcrumbCurrent": "ເປັນຫຍັງທຸລະກິດໃນວຽງຈັນຈຶ່ງຕ້ອງການເວັບໄຊ",
+    "titleMain": "ເປັນຫຍັງທຸລະກິດໃນວຽງຈັນ",
+    "titleHighlight": "ຈຶ່ງຕ້ອງການເວັບໄຊ",
+    "lede": "ຖ້າທ່ານເປັນເຈົ້າຂອງທຸລະກິດໃນວຽງຈັນ ແລະ ທ່ານມີພຽງແຕ່ເພຈ Facebook, ທ່ານກໍາລັງເສຍເງິນ. ເສຍເງິນຈໍານວນຫຼາຍ.",
+    "figHero": "PM Laos ປາກົດໃນ Google - ທຸລະກິດໃນວຽງຈັນທີ່ມີຕົວຕົນທາງອອນລາຍທີ່ດີ",
+    "google": {
+      "label": "[ GOOGLE vs FACEBOOK ]",
+      "heading": "Google ມາກ່ອນ, Facebook ມາທີຫຼັງ",
+      "p1": "ວິທີທີ່ຜູ້ຄົນຄົ້ນຫາທຸລະກິດໃນໂລກແມ່ນແບບນີ້: ເມື່ອໃຜຜູ້ໜຶ່ງຕ້ອງການການບໍລິການ, ຮ້ານອາຫານ, ໂຮງແຮມ ຫຼື ຜູ້ສະໜອງສິນຄ້າ, ເຂົາເຈົ້າບໍ່ໄດ້ເລື່ອນເບິ່ງ Facebook ໄປເລື້ອຍໆ. ແຕ່ເຂົາເຈົ້າໄປທີ່ Google.",
+      "p2": "ລອງຄິດເບິ່ງພຶດຕິກໍາຂອງຕົວທ່ານເອງ. ເມື່ອທ່ານຕ້ອງການບາງສິ່ງທີ່ສະເພາະເຈາະຈົງ - \"ກາເຟທີ່ດີທີ່ສຸດໃນວຽງຈັນ\", \"ອາພາດເມັ້ນໃຫ້ເຊົ່າໃນວຽງຈັນ\", \"ນັກພັດທະນາເວັບໃນລາວ\" - ທ່ານຄົ້ນຫາໃນ Google. ລູກຄ້າຂອງທ່ານກໍເຮັດແບບດຽວກັນ.",
+      "p3": "Facebook ແມ່ນບ່ອນທີ່ຄົນໄປເພື່ອເຂົ້າສັງຄົມ. ແຕ່ Google ແມ່ນບ່ອນທີ່ຄົນໄປດ້ວຍຄວາມຕັ້ງໃຈ: ພ້ອມທີ່ຈະຊື້, ພ້ອມທີ່ຈະຕິດຕໍ່, ພ້ອມທີ່ຈະຕັດສິນໃຈ ແລະ ພ້ອມທີ່ຈະເລືອກ.",
+      "p4": "ຖ້າທຸລະກິດຂອງທ່ານມີພຽງແຕ່ໃນ Facebook, ທ່ານກໍາລັງພາດລູກຄ້າທີ່ມີຄວາມຕັ້ງໃຈຊື້ສູງເຫຼົ່ານັ້ນ."
+    },
+    "identity": {
+      "label": "[ ບັນຫາດ້ານຕົວຕົນ ]",
+      "heading": "ເພຈ Facebook ຫຼາຍເກີນໄປ, ບໍ່ມີຕົວຕົນທີ່ຊັດເຈນ",
+      "p1": "ລອງຄົ້ນຫາທຸລະກິດໃນ Facebook. ທ່ານມັກຈະພົບກັບ:",
+      "problems": [
+        "ຫຼາຍເພຈທີ່ມີຊື່ຄ້າຍໆກັນ",
+        "ເພຈເກົ່າທີ່ບໍ່ມີການເຄື່ອນໄຫວແລ້ວ",
+        "ເພຈປອມທີ່ກັອບປີ້ມາ",
+        "ຂໍ້ມູນທີ່ບໍ່ຄົບຖ້ວນ ຫຼື ຫຼ້າສະໄໝ"
+      ],
+      "p2": "ມັນສ້າງຄວາມສັບສົນ ແລະ ຄວາມບໍ່ໝັ້ນໃຈ.",
+      "p3": "ຕອນນີ້ລອງປຽບທຽບກັບເວັບໄຊ. ຊື່ໂດເມນຂອງທ່ານ (ເຊັ່ນ PMLaos.com) ແມ່ນມີພຽງໜຶ່ງດຽວ. ບໍ່ມີຊໍ້າ. ບໍ່ມີຄວາມສັບສົນ. ເປັນແຫຼ່ງຂໍ້ມູນທີ່ເປັນທາງການພຽງບ່ອນດຽວ.",
+      "p4": "ຄວາມຊັດເຈນນັ້ນສ້າງຄວາມເຊື່ອໝັ້ນໄດ້ທັນທີ."
+    },
+    "figCopycats": "ເພຈປອມໃນ Facebook - ໜຶ່ງໃນບັນຫາທົ່ວໄປທີ່ທຸລະກິດພົບພໍ້ຫາກບໍ່ມີເວັບໄຊຕົວຈິງ",
+    "ownership": {
+      "label": "[ ທ່ານບໍ່ໄດ້ເປັນເຈົ້າຂອງ ]",
+      "heading": "ທ່ານບໍ່ໄດ້ເປັນເຈົ້າຂອງ Facebook",
+      "p1": "ນີ້ຄືຄວາມຈິງທີ່ໜ້າຕົກໃຈ: ເພຈ Facebook ຂອງທ່ານບໍ່ແມ່ນຂອງທ່ານແທ້ໆ. ໃນຊ່ວງເວລາໃດໜຶ່ງ:",
+      "risks": [
+        "ບັນຊີຂອງທ່ານອາດຈະຖືກຈໍາກັດ",
+        "ເພຈຂອງທ່ານອາດຈະຖືກລາຍງານ",
+        "ການເຂົ້າເຖິງ (Reach) ອາດຈະຫຼຸດລົງເຫຼືອເກືອບສູນ",
+        "ເນື້ອຫາຂອງທ່ານອາດຈະຖືກປິດບັງ"
+      ],
+      "p2": "ທຸກຢ່າງສາມາດເກີດຂຶ້ນໄດ້ຈາກຄວາມຜິດພາດພຽງຄັ້ງດຽວ, ຄວາມເຂົ້າໃຈຜິດ ຫຼື ແມ່ນແຕ່ການຖືກລາຍງານຈາກຜູ້ອື່ນ. ຫຼື ຫາກມີໃຜແຮັກ Facebook ທ່ານໄປ ທ່ານກໍອາດຈະເສຍມັນໄປຕະຫຼອດການ.",
+      "p3": "ເວັບໄຊແມ່ນແຕກຕ່າງ. ທ່ານເປັນເຈົ້າຂອງມັນ. ທ່ານຄວບຄຸມມັນ. ບໍ່ມີ Algorithm ໃດມາກໍານົດວ່າລູກຄ້າຈະເຫັນທຸລະກິດຂອງທ່ານໄດ້ຫຼືບໍ່.",
+      "p4": "ເມື່ອສິ່ງນັ້ນເກີດຂຶ້ນກັບ Facebook, ຕົວຕົນອອນລາຍທັງໝົດຂອງທ່ານອາດຈະຫາຍໄປໃນຄືນດຽວ."
+    },
+    "figUrl": "PMLaos.com - ຊື່ໂດເມນທີ່ເປັນເອກະລັກ ບໍ່ສາມາດຖືກກັອບປີ້, ລາຍງານ ຫຼື ແຍ່ງໄປໄດ້",
+    "friction": {
+      "label": "[ ຫຼຸດຄວາມຍຸ່ງຍາກ ]",
+      "heading": "ຢຸດເຮັດໃຫ້ລູກຄ້າຕ້ອງລໍາບາກໃນການຫາຂໍ້ມູນ",
+      "p1": "ໃນ Facebook, ຂໍ້ມູນຈະກະຈັດກະຈາຍຢູ່ໃນໂພສ ແລະ ຮູບພາບຕ່າງໆ ເຊິ່ງມັນໜ້າເບື່ອຫຼາຍ. ລູກຄ້າອາດຈະຕ້ອງ:",
+      "painPoints": [
+        "ເລືອກເບິ່ງເປັນເວລາຫຼາຍນາທີ",
+        "ຄລິກເບິ່ງຮູບພາບຈໍານວນຫຼາຍ",
+        "ອ່ານຜ່ານຄອມເມັ້ນ",
+        "ແຕ່ກໍຍັງຫາສິ່ງທີ່ຕ້ອງການບໍ່ພົບ"
+      ],
+      "p2": "ຄົນສ່ວນໃຫຍ່ຈະບໍ່ເຮັດແບບນັ້ນ. ເຂົາເຈົ້າຈະອອກໄປ ແລະ ໄປຫາຄູ່ແຂ່ງແທນ.",
+      "p3": "ເວັບໄຊຈັດລະບຽບທຸກຢ່າງຢ່າງຊັດເຈນ: ການບໍລິການ, ລາຄາ, ລາຍລະອຽດການຕິດຕໍ່, ສະຖານທີ່ ແລະ ຄໍາຖາມທີ່ພົບເລື້ອຍ - ທຸກຢ່າງຢູ່ບ່ອນດຽວ, ເຂົ້າເຖິງໄດ້ງ່າຍ."
+    },
+    "figListing": "ລາຍຊື່ຊັບສິນ PM Laos - ທຸກຂໍ້ມູນຖືກຈັດລະບຽບ, ຊັດເຈນ ແລະ ເຂົ້າເຖິງໄດ້ໂດຍບໍ່ຕ້ອງເລື່ອນຫາໃຫ້ລໍາບາກ",
+    "professionalism": {
+      "label": "[ ຄວາມເປັນມືອາຊີບ ]",
+      "heading": "ທຸລະກິດຂອງທ່ານເບິ່ງເປັນມືອາຊີບຂຶ້ນ",
+      "p1": "ພາບລັກແມ່ນສໍາຄັນ. ທຸລະກິດທີ່ມີເວັບໄຊທີ່ສະອາດ ແລະ ທັນສະໄໝ ຈະເບິ່ງຄືວ່າມີຄວາມໝັ້ນຄົງກວ່າ, ໜ້າເຊື່ອຖືກວ່າ ແລະ ຈິງຈັງກວ່າ.",
+      "p2": "ທຸລະກິດທີ່ມີພຽງແຕ່ເພຈ Facebook ມັກຈະເບິ່ງຄືວ່າເປັນທຸລະກິດຂະໜາດນ້ອຍ, ຊົ່ວຄາວ ຫຼື ໜ້າເຊື່ອຖື່ໜ້ອຍກວ່າ - ແມ້ວ່າມັນຈະບໍ່ແມ່ນຄວາມຈິງກໍຕາມ. ແລະ ໃນຕະຫຼາດທີ່ມີການແຂ່ງຂັນສູງ, ພາບລັກນັ້ນພຽງຢ່າງດຽວກໍສາມາດຕັດສິນໄດ້ວ່າໃຜຈະໄດ້ລູກຄ້າໄປ.",
+      "calloutLabel": "ຄວາມຈິງ",
+      "calloutText": "ໃຜໆກໍສ້າງເພຈ Facebook ໄດ້. ແຕ່ບໍ່ແມ່ນທຸກຄົນທີ່ຈະລົງທຶນກັບເວັບໄຊຕົວຈິງ."
+    },
+    "figHomepage": "ໜ້າຫຼັກເວັບໄຊ PM Laos - ຕົວຕົນອອນລາຍທີ່ສະອາດ ແລະ ເປັນມືອາຊີບ ທີ່ສ້າງຄວາມເຊື່ອໝັ້ນໄດ້ທັນທີ",
+    "storefront": {
+      "label": "[ ໜ້າຮ້ານດິຈິຕອນ ]",
+      "heading": "ເວັບໄຊຂອງທ່ານຄືໜ້າຮ້ານດິຈິຕອນ",
+      "p1": "ລອງຈິນຕະນາການວ່າເວັບໄຊຄືບ້ານດິຈິຕອນຂອງທຸລະກິດທ່ານ. ຄືກັນກັບຮ້ານຄ້າຕົວຈິງທີ່ຕ້ອນຮັບລູກຄ້າ, ເວັບໄຊແມ່ນບ່ອນທີ່ຜູ້ຄົນຄົ້ນພົບການບໍລິການຂອງທ່ານ, ເຂົ້າໃຈມູນຄ່າຂອງທ່ານ ແລະ ຕັດສິນໃຈຕິດຕໍ່ຫາທ່ານ. ມັນກາຍເປັນສູນກາງຂອງທຸກຢ່າງທີ່ທ່ານເຮັດທາງອອນລາຍ.",
+      "benefits": [
+        {
+          "title": "ສູນກາງຂອງທຸກຢ່າງ",
+          "desc": "ການເຂົ້າຊົມທັງໝົດ - ຈາກ Google, Facebook, TikTok ຫຼື ອີເມວ - ຈະນໍາກັບມາຫາເວັບໄຊຂອງທ່ານ."
+        },
+        {
+          "title": "ຄວາມໜ້າເຊື່ອຖື ແລະ ຄວາມໄວ້ວາງໃຈ",
+          "desc": "ສະແດງຄໍາຍ້ອງຍໍຈາກລູກຄ້າ, ຜົນງານ ແລະ ລາຍລະອຽດໂຄງການເພື່ອປ່ຽນຜູ້ເຂົ້າຊົມໃຫ້ເປັນລູກຄ້າໄດ້ໄວຂຶ້ນ."
+        },
+        {
+          "title": "ເປີດບໍລິການ 24/7",
+          "desc": "ລູກຄ້າສາມາດຮຽນຮູ້ກ່ຽວກັບທຸລະກິດຂອງທ່ານ, ຕິດຕໍ່ ຫຼື ຈອງການບໍລິການໄດ້ທຸກເວລາ."
+        },
+        {
+          "title": "ການຕະຫຼາດທີ່ຄຸ້ມຄ່າ",
+          "desc": "SEO ນໍາພາຜູ້ຄົນມາຈາກ Google ຟຣີ - ເຊິ່ງມັກຈະເປັນລູກຄ້າທີ່ມີຄຸນນະພາບກວ່າການຍິງໂຄສະນາ."
+        },
+        {
+          "title": "ການສື່ສານທີ່ກົງກຸ່ມເປົ້າໝາຍ",
+          "desc": "ເວົ້າກັບລູກຄ້າທີ່ທ່ານຕ້ອງການໂດຍກົງ ດ້ວຍໜ້າເວັບທີ່ປັບແຕ່ງມາສໍາລັບການບໍລິການ ແລະ ຄວາມຕ້ອງການສະເພາະ."
+        },
+        {
+          "title": "ການຕະຫຼາດຜ່ານອີເມວ",
+          "desc": "ເກັບຂໍ້ມູນລູກຄ້າ ແລະ ປ່ຽນຜູ້ເຂົ້າຊົມໃຫ້ເປັນຜູ້ຕິດຕາມ - ແລະ ກາຍເປັນລູກຄ້າໃນອະນາຄົດ."
+        },
+        {
+          "title": "ຂໍ້ມູນ ແລະ ຄວາມເຂົ້າໃຈ",
+          "desc": "ເຂົ້າໃຈວ່າໃຜມາເບິ່ງເວັບໄຊຂອງທ່ານ, ເຂົາເຈົ້າຊອກຫາຫຍັງ ແລະ ເຂົາເຈົ້າພົບທ່ານໄດ້ແນວໃດ."
+        }
+      ]
+    },
+    "reality": {
+      "label": "[ ຄວາມເປັນຈິງ ]",
+      "heading": "ທຸລະກິດທີ່ເປັນຜູ້ຊະນະ",
+      "p1": "ຂ້ອຍໄດ້ສ້າງເວັບໄຊ ແລະ ລະບົບດິຈິຕອນສໍາລັບທຸລະກິດທົ່ວໂລກມາຕັ້ງແຕ່ປີ 2015. ຮູບແບບແມ່ນຄືກັນສະເໝີ: ທຸລະກິດທີ່ມີເວັບໄຊທີ່ແຂງແກ່ນຈະເຕີບໂຕໄວຂຶ້ນ, ດຶງດູດລູກຄ້າທີ່ດີກວ່າ ແລະ ສ້າງແບຣນທີ່ເຂັ້ມແຂງກວ່າ.",
+      "p2": "ບໍ່ມີເວັບໄຊບໍ? ທ່ານກໍາລັງເສຍລູກຄ້າ. ບໍ່ແມ່ນຍ້ອນທຸລະກິດຂອງທ່ານບໍ່ດີ - ແຕ່ຍ້ອນຄົນຄົ້ນຫາທ່ານບໍ່ພົບ, ບໍ່ເຊື່ອໃນສິ່ງທີ່ເຂົາເຈົ້າເຫັນ ຫຼື ຖອດໃຈກ່ອນທີ່ຈະຕິດຕໍ່ຫາທ່ານ.",
+      "p3": "ເວັບໄຊບໍ່ແມ່ນທາງເລືອກອີກຕໍ່ໄປ. ມັນຄືພື້ນຖານຂອງຕົວຕົນອອນລາຍຂອງທ່ານ.",
+      "p4": "ໃນເມືອງທີ່ກໍາລັງເຕີບໂຕຢ່າງວຽງຈັນ, ບ່ອນທີ່ມີຄົນເພິ່ງພາອິນເຕີເນັດຫຼາຍຂຶ້ນໃນທຸກໆມື້ເພື່ອຕັດສິນໃຈ, ທຸລະກິດທີ່ລົງທຶນກັບຕົວຕົນດິຈິຕອນທີ່ດີຈະເປັນຜູ້ຊະນະ. ສ່ວນທີ່ເຫຼືອຈະຄ່ອຍໆຫຼ້າຫຼັງໄປ.",
+      "calloutLabel": "ຄວາມຄິດສຸດທ້າຍ",
+      "calloutText": "ຖ້າທ່ານພ້ອມທີ່ຈະສ້າງເວັບໄຊທີ່ນໍາລູກຄ້າມາໃຫ້ທ່ານແທ້ໆ, ນັ້ນຄືສິ່ງທີ່ຂ້ອຍເຮັດ.",
+      "p5": "ບໍ່ແນ່ໃຈບໍ? ລອງຖາມ ChatGPT ວ່າ: \"ທຸລະກິດໃນວຽງຈັນຈະພາດໂອກາດຫຍັງແດ່ຫາກບໍ່ມີເວັບໄຊ?\" ຄໍາຕອບອາດຈະເຮັດໃຫ້ທ່ານແປກໃຈ."
+    },
+    "cta": {
+      "label": "[ ມາສ້າງມັນນໍາກັນ ]",
+      "heading": "ພ້ອມທີ່ຈະໄປອອນລາຍແລ້ວຫຼືຍັງ?",
+      "subtitle": "ຂ້ອຍສ້າງເວັບໄຊສໍາລັບທຸລະກິດໃນວຽງຈັນ ແລະ ທົ່ວອາຊີຕາເວັນອອກສຽງໃຕ້. ມາລົມກັນກ່ຽວກັບໂຄງການຂອງທ່ານ.",
+      "contact": "ເລີ່ມຕົ້ນໂຄງການ",
+      "viewAll": "← ບົດຄວາມເພີ່ມເຕີມ"
     }
   },
   "socialProof": {
-    "label": "[ ຜົນລັບລູກຄ້າ ]",
+    "label": "[ ຜົນລັບຈາກລູກຄ້າ ]",
     "title": "ສິ່ງທີ່ລູກຄ້າເວົ້າ.",
-    "subtitle": "ໂຄງການຈິງ. ຜົນລັບທີ່ວັດແທກໄດ້. ລູກຄ້າທີ່ສາມາດເວົ້າໄດ້ດ້ວຍຕົນເອງ.",
+    "subtitle": "ໂຄງການຕົວຈິງ. ຜົນລັບທີ່ວັດແທກໄດ້. ລູກຄ້າທີ່ພິສູດຜົນງານໄດ້ດ້ວຍຕົນເອງ.",
     "testimonials": [
       {
-        "quote": "ດຽວນີ້ເຮົາຮູ້ວ່າໃຜເຂົ້າຊົມເວັບໄຊຂອງເຮົາ, ມາຈາກໃສ, ແລະເບິ່ງຫຍັງ. Dashboard ການວິເຄາະໄດ້ປ່ຽນວິທີທີ່ເຮົາຄິດກ່ຽວກັບການຕະຫຼາດຂອງເຮົາຢ່າງສິ້ນເຊີງ.",
-        "author": "ທ. ລາດ",
+        "quote": "Max ຊ່ວຍພວກເຮົາສ້າງເວັບໄຊທີ່ເປັນມືອາຊີບສໍາລັບທຸລະກິດຂອງພວກເຮົາ. ຂໍ້ມູນການວິເຄາະເວັບມີປະໂຫຍດຫຼາຍ, ຕອນນີ້ພວກເຮົາຮູ້ແລ້ວວ່າຄົນເຂົ້າເບິ່ງພວກເຮົາຈາກໃສ ແລະ ເຂົາເຈົ້າສົນໃຈຫຍັງ.",
+        "author": "ທ່ານ ລາດ",
         "role": "ຜູ້ກໍ່ຕັ້ງ, Lao Mai Travel"
       },
       {
-        "quote": "ກ່ອນໜ້ານີ້ ເຮົາຈັດການທຸກຢ່າງໃນ WhatsApp ແລະ spreadsheet. ດຽວນີ້ທີມງານທັງໝົດ login, ອັບເດດລາຍການ, ແລະຕິດຕາມໂຄງການຈາກສະຖານທີ່ດຽວ.",
-        "author": "Ping Silavong",
-        "role": "ຜູ້ອຳນວຍການ, PM Real Estate"
+        "quote": "ດ້ວຍແພລດຟອມທີ່ Max ສ້າງໃຫ້, ຕອນນີ້ຂ້ອຍສາມາດຈັດການທຸລະກິດອະສັງຫາລິມະຊັບໄດ້ຈາກມືຖື ແລະ ລູກຄ້າສາມາດເບິ່ງຊັບສິນໄດ້ດ້ວຍຕົນເອງ ພ້ອມທັງດາວໂຫລດແອັບໄດ້ເລີຍ.",
+        "author": "ຜິງ",
+        "role": "ຕົວແທນຫຼັກ, PM Real Estate"
       }
     ],
     "viewProject": "ເບິ່ງໂຄງການ"

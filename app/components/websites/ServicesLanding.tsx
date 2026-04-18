@@ -5,6 +5,7 @@ import HeroSection from './HeroSection';
 import UrgencyStrip from './UrgencyStrip';
 import BenefitsGrid from './BenefitsGrid';
 import ProofSection from './ProofSection';
+import SocialProofSection from '@/app/components/home/SocialProofSection';
 import PWASection from './PWASection';
 import PricingSection from './PricingSection';
 import CarePlans from './CarePlans';
@@ -22,20 +23,24 @@ export default function ServicesLanding({ locale }: Props) {
 
       {/* The Navbar */}
       <ServicesNav locale={locale} />
-      
+
       <main className={styles.main}>
-        
+
         <HeroSection />
 
         {/* The component with the Marquee */}
         <UrgencyStrip />
-        
+
         <BenefitsGrid />
 
+        {/* Testimonials */}
+        <SocialProofSection />
+
+        {/* The Projects */}
         <ProofSection />
-        
+
         <PWASection />
-        
+
         {/* Build Pricing */}
         <PricingSection />
 
@@ -43,7 +48,7 @@ export default function ServicesLanding({ locale }: Props) {
         <CarePlans />
 
         <CTASection />
-        
+
       </main>
       <ServicesFooter locale={locale} />
     </div>

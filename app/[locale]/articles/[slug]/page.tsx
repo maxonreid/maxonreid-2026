@@ -4,6 +4,7 @@ import { articles } from '@/app/lib/articles';
 import { toISODate } from '@/app/lib/articleUtils';
 import OrderBridgeArticle from '@/app/components/articles/OrderBridgeArticle';
 import YangoUniversityArticle from '@/app/components/articles/YangoUniversityArticle';
+import VientianWebsiteArticle from '@/app/components/articles/VientianWebsiteArticle';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com';
 
@@ -61,6 +62,7 @@ export async function generateMetadata({
     alternates: {
       canonical: canonicalPath,
       languages: {
+        'x-default': `/en/articles/${article.slug}`,
         en: `/en/articles/${article.slug}`,
         lo: `/lo/articles/${article.slug}`,
         es: `/es/articles/${article.slug}`,
@@ -72,7 +74,7 @@ export async function generateMetadata({
       title: article.title,
       description: article.excerpt,
       siteName: 'Maxon Torres',
-      locale: locale === 'lo' ? 'lo_LA' : 'en_US',
+      locale: locale === 'lo' ? 'lo_LA' : locale === 'es' ? 'es_MX' : 'en_US',
       publishedTime,
       modifiedTime: publishedTime,
       authors: ['Maximiliano Brito Torres'],
@@ -83,7 +85,7 @@ export async function generateMetadata({
           width: 1200,
           height: 630,
           alt: article.title,
-          type: 'image/jpeg',
+          type: absoluteImageUrl.endsWith('.png') ? 'image/png' : 'image/jpeg',
         },
       ],
     },
@@ -117,6 +119,10 @@ export default async function ArticlePage({
 
   if (slug === 'teaching-web-development-china-yango-university') {
     return <YangoUniversityArticle locale={locale} article={article} />;
+  }
+
+  if (slug === 'why-businesses-in-vientiane-need-a-website') {
+    return <VientianWebsiteArticle locale={locale} article={article} />;
   }
 
   notFound();

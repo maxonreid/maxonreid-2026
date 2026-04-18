@@ -12,6 +12,11 @@
     "brand": "MAXON TORRES",
     "location": "[ VIENTIANE : LAOS PDR ] — DESARROLLADOR WEB FULL STACK",
     "heroTitle": "Yo <highlight>automatizo</highlight> el trabajo que tu equipo no debería estar haciendo a mano.",
+    "heroTitlePrefix": "Construyo sitios web que",
+    "heroHighlights": [
+      "consiguen compradores internacionales",
+      "automatizan las operaciones de tu negocio"
+    ],
     "heroSub": "Integraciones personalizadas, automatización de flujos y herramientas internas.",
     "ctaStart": "INICIAR UN PROYECTO",
     "ctaView": "VER MI TRABAJO"
@@ -312,6 +317,10 @@
     "learnMore": "Saber Más"
   },
   "articlesMeta": {
+    "why-businesses-in-vientiane-need-a-website": {
+      "title": "Por Qué los Negocios en Vientiane Necesitan un Sitio Web",
+      "excerpt": "Si solo tienes una página de Facebook, estás perdiendo clientes. Aquí está la razón por la que tener un sitio web ya no es opcional en una ciudad en crecimiento como Vientiane."
+    },
     "teaching-web-development-china-yango-university": {
       "title": "Enseñando Desarrollo Web en China @ Universidad Yango",
       "excerpt": "Cómo enseñar fundamentos de HTML, CSS y JavaScript en Fuzhou, China me enseñó a ser mejor desarrollador. Lecciones sobre educación intercultural, comunicación y por qué los fundamentos sólidos importan más que cualquier framework."
@@ -319,6 +328,129 @@
     "how-i-built-orderbridge": {
       "title": "Cómo Construí OrderBridge: Resolviendo el Gap de Middleware Delivery-a-POS",
       "excerpt": "Construyendo un sistema middleware OAuth 2.0 que conecta automáticamente DoorDash, Uber Eats y plataformas de delivery a los sistemas POS de restaurantes. Análisis técnico de ingesta de webhooks, traducción de schemas y sincronización de pedidos en tiempo real."
+    }
+  },
+  "vientianeWebsiteArticle": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbArticles": "Artículos",
+    "breadcrumbCurrent": "Por Qué los Negocios en Vientiane Necesitan un Sitio Web",
+    "titleMain": "Por Qué los Negocios en Vientiane",
+    "titleHighlight": "Necesitan un Sitio Web",
+    "lede": "Si tienes un negocio en Vientiane y solo tienes una página de Facebook, estás perdiendo dinero. Mucho dinero.",
+    "figHero": "PM Laos apareciendo en Google — ejemplo real de un negocio en Vientiane con presencia digital profesional",
+    "google": {
+      "label": "[ GOOGLE vs FACEBOOK ]",
+      "heading": "Primero Google, Después Facebook",
+      "p1": "La forma en que la gente busca negocios en el mundo es así: cuando alguien necesita un servicio, un restaurante, un hotel o un proveedor, no hace scroll interminable en Facebook. Va a Google.",
+      "p2": "Piensa en tu propio comportamiento. Cuando necesitas algo específico — \"mejor café en Vientiane\", \"apartamento en alquiler Vientiane\", \"desarrollador web Laos\" — buscas en Google. Tus clientes hacen lo mismo.",
+      "p3": "Facebook es donde la gente va a socializar. Google es donde la gente va con intención: lista para comprar, lista para contactar, lista para decidir.",
+      "p4": "Si tu negocio solo existe en Facebook, estás perdiendo a esos clientes con alta intención de compra."
+    },
+    "identity": {
+      "label": "[ EL PROBLEMA DE IDENTIDAD ]",
+      "heading": "Demasiadas Páginas de Facebook, Sin Identidad Clara",
+      "p1": "Intenta buscar un negocio en Facebook. A menudo encontrarás:",
+      "problems": [
+        "Múltiples páginas con nombres similares",
+        "Páginas viejas e inactivas",
+        "Páginas de imitadores",
+        "Información incompleta o desactualizada"
+      ],
+      "p2": "Eso genera confusión y dudas.",
+      "p3": "Ahora compara eso con un sitio web. Tu nombre de dominio (como PMLaos.com) es único. Sin duplicados. Sin confusión. Una fuente oficial de verdad.",
+      "p4": "Esa claridad genera confianza al instante."
+    },
+    "figCopycats": "Páginas de Facebook imitadoras — uno de los problemas más comunes que enfrentan los negocios sin un sitio web real",
+    "ownership": {
+      "label": "[ NO ES TUYO ]",
+      "heading": "No Eres Dueño de Facebook",
+      "p1": "Esta es la verdad incómoda: tu página de Facebook no es realmente tuya. En cualquier momento:",
+      "risks": [
+        "Tu cuenta puede ser restringida",
+        "Tu página puede ser reportada",
+        "Tu alcance puede caer a casi cero",
+        "Tu contenido puede ser ocultado"
+      ],
+      "p2": "Basta con un error, un malentendido, o incluso algunos reportes. Alguien hackea tu Facebook y lo pierdes para siempre.",
+      "p3": "Un sitio web es diferente. Lo posees. Lo controlas. Ningún algoritmo decide si tus clientes pueden ver tu negocio.",
+      "p4": "Cuando eso pasa con Facebook, toda tu presencia online puede desaparecer de la noche a la mañana."
+    },
+    "figUrl": "PMLaos.com — un dominio único que no puede ser duplicado, reportado ni quitado",
+    "friction": {
+      "label": "[ ELIMINA LA FRICCIÓN ]",
+      "heading": "Deja de Hacer que los Clientes Trabajen para Encontrar Información",
+      "p1": "En Facebook, la información está dispersa entre publicaciones y fotos, lo cual es muy molesto. Un cliente tendría que:",
+      "painPoints": [
+        "Hacer scroll durante minutos",
+        "Hacer clic entre fotos",
+        "Leer comentarios",
+        "Y aún no encontrar lo que necesita"
+      ],
+      "p2": "La mayoría de las personas no hará eso. Se irán con la competencia.",
+      "p3": "Un sitio web organiza todo claramente: servicios, precios, datos de contacto, ubicación y preguntas frecuentes — todo en un solo lugar, fácil de acceder."
+    },
+    "figListing": "Página de listado de PM Laos — toda la información organizada, clara y accesible sin necesidad de hacer scroll",
+    "professionalism": {
+      "label": "[ PROFESIONALISMO ]",
+      "heading": "Tu Negocio Se Ve Más Profesional",
+      "p1": "La percepción importa. Un negocio con un sitio web limpio y moderno se ve más establecido, más confiable y más serio.",
+      "p2": "Un negocio con solo una página de Facebook muchas veces parece pequeño, temporal o menos confiable — incluso si eso no es verdad. Y en mercados competitivos, esa percepción sola puede decidir quién se queda con el cliente.",
+      "calloutLabel": "LA VERDAD",
+      "calloutText": "Cualquiera puede crear una página de Facebook. No todos invierten en un sitio web real."
+    },
+    "figHomepage": "Página de inicio del sitio web de PM Laos — una presencia online limpia y profesional que genera credibilidad al instante",
+    "storefront": {
+      "label": "[ TU VITRINA DIGITAL ]",
+      "heading": "Tu Sitio Web Es Tu Vitrina Digital",
+      "p1": "Imagina tu sitio web como el hogar digital de tu negocio. Así como una tienda física recibe clientes, tu sitio web es donde las personas descubren tus servicios, entienden tu valor y deciden contactarte. Se convierte en el centro de todo lo que haces online.",
+      "benefits": [
+        {
+          "title": "Tu Hub Central",
+          "desc": "Todo el tráfico — desde Google, Facebook, TikTok o email — lleva de regreso a tu sitio web."
+        },
+        {
+          "title": "Credibilidad y Confianza",
+          "desc": "Muestra testimonios, portafolio y casos de estudio para convertir visitantes en clientes más rápido."
+        },
+        {
+          "title": "Disponible 24/7",
+          "desc": "Los clientes pueden aprender sobre tu negocio, contactarte o reservar servicios a cualquier hora."
+        },
+        {
+          "title": "Marketing Rentable",
+          "desc": "El SEO atrae tráfico orgánico gratuito de Google — frecuentemente mejores clientes que los anuncios pagados."
+        },
+        {
+          "title": "Mensajes Dirigidos",
+          "desc": "Crea páginas adaptadas a servicios y necesidades específicas para guiar a los visitantes hacia la acción."
+        },
+        {
+          "title": "Email Marketing",
+          "desc": "Capta leads y convierte visitantes en suscriptores de email — y luego en clientes que pagan."
+        },
+        {
+          "title": "Datos e Insights",
+          "desc": "Entiende quién visita tu sitio, qué buscan y cómo te encontraron."
+        }
+      ]
+    },
+    "reality": {
+      "label": "[ LA REALIDAD ]",
+      "heading": "Los Negocios que Ganan",
+      "p1": "He estado construyendo sitios web y sistemas digitales para negocios de todo el mundo desde 2015. El patrón siempre es el mismo: los negocios con un sitio web sólido crecen más rápido, atraen mejores clientes y construyen marcas más fuertes.",
+      "p2": "¿Sin sitio web? Estás perdiendo clientes. No porque tu negocio sea malo — sino porque la gente no puede encontrarte, no confía en lo que ve, o se rinde antes de contactarte.",
+      "p3": "Un sitio web ya no es opcional. Es la base de tu presencia online.",
+      "p4": "En una ciudad en crecimiento como Vientiane, donde más personas dependen del internet cada día para tomar decisiones, los negocios que invierten en una presencia digital adecuada ganarán. Los demás se quedarán atrás poco a poco.",
+      "calloutLabel": "REFLEXIÓN FINAL",
+      "calloutText": "Si estás listo para construir un sitio web que realmente te traiga clientes, eso es exactamente lo que yo hago.",
+      "p5": "¿No estás seguro? Pregúntale a ChatGPT: \"¿Qué oportunidades pierde un negocio en Vientiane si no tiene un sitio web?\" La respuesta podría sorprenderte."
+    },
+    "cta": {
+      "label": "[ CONSTRUYAMOS ]",
+      "heading": "¿Listo para Estar Online?",
+      "subtitle": "Construyo sitios web para negocios en Vientiane y en todo el Sudeste Asiático. Hablemos de tu proyecto.",
+      "contact": "Iniciar un Proyecto",
+      "viewAll": "← Más Artículos"
     }
   },
   "yangoArticle": {

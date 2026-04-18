@@ -9,10 +9,7 @@ export default function HeroSection() {
   const t = useTranslations('hero');
   const locale = useLocale();
   
-  const highlightTexts = [
-    'get international buyers',
-    'get worldwide customers and automate their operations'
-  ];
+  const highlightTexts = t.raw('heroHighlights') as string[];
   const typewriterText = useTypewriter(highlightTexts, 80, 3000, 15);
 
   return (
@@ -24,9 +21,9 @@ export default function HeroSection() {
             {t('location')}
           </div>
 
-          {/* The Main Webasite Headline */}
+          {/* The Main Website Headline */}
           <h1 id="hero-heading" className="text-[52px] leading-tight my-1.5 font-bold tracking-tight">
-            I build websites that{' '}
+            {t('heroTitlePrefix')}{' '}
             <span className="text-[#d6b46b] inline-block min-w-[420px]">
               {typewriterText}
               <span className="inline-block w-[3px] h-[1.1em] bg-[#d6b46b] ml-[2px] align-middle animate-[blink_1s_step-end_infinite]"></span>
