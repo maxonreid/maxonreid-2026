@@ -50,7 +50,6 @@ export async function generateMetadata({
   const canonicalPath = `/${locale}/articles/${article.slug}`;
   const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
   const publishedTime = toISODate(article.date);
-  const absoluteImageUrl = new URL(article.image, SITE_URL).toString();
 
   return {
     title: `${article.title} | Maxon Torres`,
@@ -79,23 +78,6 @@ export async function generateMetadata({
       modifiedTime: publishedTime,
       authors: ['Maximiliano Brito Torres'],
       tags: article.tags,
-      images: [
-        {
-          url: absoluteImageUrl,
-          width: 1200,
-          height: 630,
-          alt: article.title,
-          type: absoluteImageUrl.endsWith('.png') ? 'image/png' : 'image/jpeg',
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      site: '@maxonreid',
-      creator: '@maxonreid',
-      title: article.title,
-      description: article.excerpt,
-      images: [absoluteImageUrl],
     },
   };
 }
