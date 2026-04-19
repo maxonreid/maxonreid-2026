@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inter, IBM_Plex_Mono, Noto_Sans_Lao } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
+import MetaPixel from '@/app/components/MetaPixel';
 import { getMessages } from 'next-intl/server';
 import "@/app/globals.css";
 import "xterm/css/xterm.css";
@@ -115,6 +116,7 @@ export default async function LocaleLayout({
           color: 'var(--text-primary)'
         }}
       >
+        <MetaPixel />
         <NextIntlClientProvider messages={messages}>
           {children}
           <WhatsAppWidget />
